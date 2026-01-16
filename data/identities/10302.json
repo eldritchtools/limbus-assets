@@ -1,0 +1,290 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1030201"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Spend 10 {status:Charge} Count on her S3 to gain Coin Power. Gains Count from her S1, S2, or passively with {keyword:Gloom} Res.",
+      "Her S2 applies 2 {status:Vulnerable} on the last coin if it rolls heads."
+    ]
+  },
+  "passiveData": {
+    "1030201": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "At the start of the combat phase, gain [Charge] Count by (Gloom Reson. / 3).",
+      "name": "Quick Recharge"
+    },
+    "1030221": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "1 ally with the fastest Speed gains +1 final Power for their first skill.",
+      "name": "Broken Spirit"
+    }
+  },
+  "skills": {
+    "1030201": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Rip",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]",
+                "[OnSucceedAttackHead] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Rip",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "",
+          "name": "Rip",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]",
+                "[OnSucceedAttackHead] Gain +4 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 5+ [Charge] Count, Coin Power +2",
+          "name": "Rip",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1030202": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Vulnerable]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Leap",
+          "uptie": 1
+        },
+        {
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Vulnerable]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Leap",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Vulnerable]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Leap",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "At 7+ [Charge] Count, Coin Power +1",
+          "name": "Leap",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1030203": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 1,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 4
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 5 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Spend 10 [Charge] Count to gain +4 Coin Power\nAt less than 10 [Charge] Count, lose 20% HP",
+          "levelCorrection": 3,
+          "name": "Rip Space",
+          "uptie": 3
+        }
+      ],
+      "tier": 3
+    },
+    "1030204": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Evade",
+          "uptie": 1
+        },
+        {
+          "affinity": "gloom",
+          "desc": "",
+          "name": "Evade",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1030221"
+      ],
+      "uptie": 3
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+name: Update datetime JSON
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/**"
+  workflow_dispatch:
+
+
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js (optional, just to use date command)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Create or update meta.json
+        run: |
+          echo "{\"datetime\": \"$(date -u +"%Y-%m-%dT%H:%M:%SZ")\"}" > meta.json
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add meta.json
+          # Only commit if there are changes
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update meta.json [skip ci]"
+            git push
+          fi

@@ -1,0 +1,288 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1060201"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Low clashing but high damage (for its time) S2 due to coin reuses. Only works at low {status:Laceration} count",
+      "S3 inflicts a lot of {status:Paralysis}"
+    ]
+  },
+  "passiveData": {
+    "1060201": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "The last Coin on the last skill in the chain inflicts 3 [Laceration].",
+      "name": "Hēiyúndào"
+    },
+    "1060221": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the fastest Speed inflicts +1 [Laceration].",
+      "name": "Syndicate Payback"
+    }
+  },
+  "skills": {
+    "1060201": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Cleave",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Cleave",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Cleave",
+          "uptie": 3
+        },
+        {
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Cleave",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1060202": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Cloud Cutter",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] If target has less than 4 [Laceration] Count, use Coin 1 and 2 an additional time",
+          "name": "Cloud Cutter",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "[BeforeAttack] If target has less than 4 [Laceration] Count, use Coin 1 and 2 an additional time",
+          "name": "Cloud Cutter",
+          "uptie": 3
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] If target has less than 4 [Laceration] Count, use Coin 1 and 2 an additional time",
+          "name": "Cloud Cutter",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1060203": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Paralysis]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] This skill inflicts 1 additional [Laceration] and [Paralysis]",
+          "levelCorrection": 0,
+          "name": "Cloudburst",
+          "uptie": 3
+        },
+        {
+          "baseValue": 7,
+          "desc": "[StartBattle] This skill inflicts 1 additional [Laceration] and [Paralysis]",
+          "name": "Cloudburst",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1060204": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 9,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Guard",
+          "uptie": 1
+        },
+        {
+          "affinity": "sloth",
+          "desc": "",
+          "name": "Guard",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1060221"
+      ],
+      "uptie": 3
+    }
+  ]
+}

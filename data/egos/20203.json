@@ -1,0 +1,154 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 14,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [PenetrateTakeDamageUp]",
+                "[OnSucceedAttack] Inflict 1 [VioletTakeDamageUp]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Hex Nail",
+          "uptie": 1
+        },
+        {
+          "baseValue": 16,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [PenetrateTakeDamageUp]",
+                "[OnSucceedAttack] Inflict 1 [VioletTakeDamageUp]",
+                "[OnSucceedAttackHead] Inflict 3 [Curse]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Hex Nail",
+          "uptie": 3
+        },
+        {
+          "coinValue": 10,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [PenetrateTakeDamageUp]",
+                "[OnSucceedAttack] Inflict 1 [VioletTakeDamageUp]",
+                "[OnSucceedAttackHead] Inflict 3 [Curse]",
+                "[OnSucceedAttackHead] Inflict 3 [NailPersonality]",
+                "[OnSucceedAttack] If target has [Curse], +50% Damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Hex Nail",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 18,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [PenetrateTakeDamageUp]",
+                "[OnSucceedAttack] Inflict 1 [VioletTakeDamageUp]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly",
+          "levelCorrection": 0,
+          "name": "Hex Nail",
+          "uptie": 1
+        },
+        {
+          "baseValue": 20,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [PenetrateTakeDamageUp]",
+                "[OnSucceedAttack] Inflict 3 [VioletTakeDamageUp]",
+                "[OnSucceedAttack] Inflict 3 [Curse]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly",
+          "name": "Hex Nail",
+          "uptie": 3
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [PenetrateTakeDamageUp]",
+                "[OnSucceedAttack] Inflict 3 [VioletTakeDamageUp]",
+                "[OnSucceedAttack] Inflict 3 [Curse]",
+                "[OnSucceedAttack] Inflict 3 [NailPersonality]",
+                "[OnSucceedAttack] If target has [Curse], +50% Damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly",
+          "name": "Hex Nail",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "Deal +10% damage for every negative status effect on this unit. (Up to 50%)",
+      "name": "It Hurts!"
+    }
+  ]
+}

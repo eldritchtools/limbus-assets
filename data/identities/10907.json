@@ -1,0 +1,377 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1090701"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Her skills trigger a {status:Discard} which sets her {status:KnowledgeExplored}.",
+      "Her {status:KnowledgeExplored} only buffs her S1 with Coin Power, so it's generally not worth worrying about the value too much."
+    ],
+    "other": [
+      "All her skills give her {status:Aggro} and shields based on her {status:KnowledgeExplored} (before {status:Discard} changes it) and the rank of the skill that was discarded.",
+      "Her passive gives her {status:HitDamageUp} depending on the damage she took on the previous turn."
+    ]
+  },
+  "passiveData": {
+    "1090701": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Gain [HitDamageUp] next turn based on the damage that this unit took this turn.\n(Shield damage included in the calculation. Maxes out when taking damage equal to 25% of Max HP at turn start. Max [HitDamageUp] gained by this effect: 5)\nIf this unit has 3 [KnowledgeExplored] at the end of the turn, remove 1 negative effect applied to self",
+      "name": "Incandescent Enlightenment"
+    },
+    "1090721": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the highest Max HP gains [HitDamageUp] next turn based on the damage that they took this turn.\n(Shield damage included in the calculation. Maxes out when taking damage equal to 15% of Max HP at turn start. Max [HitDamageUp] gained by this effect: 3)",
+      "name": "Missionary of Knowledge"
+    }
+  },
+  "skills": {
+    "1090701": {
+      "bonusNotes": "Assumes max insight",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 1,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by 5"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Gain ([KnowledgeExplored] x 3% of Max HP) Shield if this Skill is Discarded",
+          "levelCorrection": -1,
+          "name": "Illuminate Thy Vacuity",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 1,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by 8"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Gain ([KnowledgeExplored] x 4% of Max HP) Shield if this Skill is Discarded\n[WhenUse] If [KnowledgeExplored] is 2 or higher, gain Coin Power by ([KnowledgeExplored] -1)",
+          "name": "Illuminate Thy Vacuity",
+          "uptie": 2
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by 8"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Gain ([KnowledgeExplored] x 4% of Max HP) Shield if this Skill is Discarded\n[WhenUse] If [KnowledgeExplored] is 2 or higher, gain Coin Power by ([KnowledgeExplored] -1)",
+          "name": "Illuminate Thy Vacuity",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by 10"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Gain ([KnowledgeExplored] x 5% of Max HP) Shield if this Skill is Discarded\n[WhenUse] If [KnowledgeExplored] is 2 or higher, gain Coin Power by ([KnowledgeExplored] -1)",
+          "name": "Illuminate Thy Vacuity",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1090702": {
+      "bonusNotes": "Assumes max insight",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Gain ([KnowledgeExplored] x 5% of Max HP) Shield if this Skill is Discarded\n[WhenUse] [Discard] 1 Skill of the lowest rank in all of this unit's Skill Slots\n[WhenUse] This Slot gains 2 [Aggro] next turn",
+          "levelCorrection": 1,
+          "name": "Weight of Knowledge",
+          "uptie": 1
+        },
+        {
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Gain ([KnowledgeExplored] x 8% of Max HP) Shield if this Skill is Discarded\n[WhenUse] [Discard] 1 Skill of the lowest rank in all of this unit's Skill Slots\n[WhenUse] This Slot gains 3 [Aggro] next turn",
+          "name": "Weight of Knowledge",
+          "uptie": 2
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Gain ([KnowledgeExplored] x 8% of Max HP) Shield if this Skill is Discarded\n[WhenUse] [Discard] 1 Skill of the lowest rank in all of this unit's Skill Slots\n[WhenUse] This Slot gains 3 [Aggro] next turn",
+          "name": "Weight of Knowledge",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Gain ([KnowledgeExplored] x 10% of Max HP) Shield if this Skill is Discarded\n[WhenUse] [Discard] 1 Skill of the lowest rank in all of this unit's Skill Slots\n[WhenUse] This Slot gains 5 [Aggro] next turn\n[WhenUse] If target has 5+ [Sinking], gain Clash Power +2",
+          "name": "Weight of Knowledge",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1090703": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict +4 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Gain ([KnowledgeExplored] x 15% of Max HP) Shield if this Skill is Discarded\n[WhenUse] [Discard] 2 Skills of the lowest ranks in all of this unit's Skill Slots\n[WhenUse] This Slot gains 3 [Aggro] next turn",
+          "levelCorrection": 2,
+          "name": "Excruciating Study",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +4 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Gain ([KnowledgeExplored] x 20% of Max HP) Shield if this Skill is Discarded\n[WhenUse] [Discard] 2 Skills of the lowest ranks in all of this unit's Skill Slots\n[WhenUse] This Slot gains 5 [Aggro] next turn\n[WhenUse] If target has 7+ [Sinking], gain Coin Power +1",
+          "name": "Excruciating Study",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1090704": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 12,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "levelCorrection": 5,
+          "uptie": 1
+        },
+        {
+          "affinity": "gloom",
+          "baseValue": 15,
+          "desc": "[WhenUse] [Discard] 1 Skill of the highest rank in all of this unit's Skill Slots\n[WhenUse] This Slot gains 5 [Aggro] next turn",
+          "name": "Fixated Study",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1090721"
+      ],
+      "uptie": 3
+    }
+  ]
+}

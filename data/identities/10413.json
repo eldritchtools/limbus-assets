@@ -1,0 +1,433 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1041302"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1041302",
+        "1041301"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Gains {status:ProtectStanceRyoshu} for 2 turns with S3 or defense. Gives her damage mitigation, {status:Aggro}, and bonus {status:Breath} per turn.",
+      "Uses S1 as a follow up to an ally's attack (once per turn). Deals bonus crit damage and heals an ally's SP if passive is active.",
+      "Passive uses S3 against enemies that kill or damage allies to below 25% HP (once per turn). {identity:10613} can trigger a 2nd time."
+    ],
+    "other": [
+      "{identity:10613}'s passive counts her as a Jia Family identity. Uses S3 instead of S1 and heals more SP on substitute/return."
+    ]
+  },
+  "passiveData": {
+    "1041301": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "If an ally is killed by enemy attack, or if the attacked ally's HP is at less than 25% after the attack: After that Attack, Drifting Blade of Hongyuan Ryōshū uses \"Aiding Strike\" as an Unopposed Attack against that enemy (once per Encounter)\n- The Lord of Hongyuan Hong Lu may activate this effect 1 more time past its usage limit\n\nIf \"Hey, Back Off\" is activated via the Passive 'I.L.T.L.T', the Skill deals +30% damage on Critical Hit and heals 2~4 SP for 1 other ally with the lowest SP (once per turn; excluding allies at -40 or lower SP)",
+      "name": "Loyal Warrior"
+    },
+    "1041302": {
+      "desc": "When another ally's Skill hits an enemy: After that Attack, use \"Hey, Back Off\" as an Unopposed Attack against the enemy (once per turn)\n\nIn the same turn this unit Substituted in or Returned to the battlefield, gain 2 [ProtectStanceRyoshu]\nWhen this unit activates an Unopposed Attack due to The Lord of Hongyuan Hong Lu's \"The Heishou Lord\" Passive, treat this unit as if it has \"Heishou Pack\" or \"Jia Family\" Trait Keywords",
+      "name": "I.L.T.L.T.\n(I would've Liked to walk The Lord's path Together)"
+    },
+    "1041321": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 3
+          },
+          {
+            "type": "pride",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Combat Start: The ally with the earliest Deployment order gains 1 Shield for every [Breath] on self (max 10)",
+      "name": "Drifter"
+    }
+  },
+  "skills": {
+    "1041301": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +1 [Breath] Count\n[OnDirectAttack] Inflict +1 [Burst] Count",
+          "levelCorrection": 1,
+          "name": "Hey, Back Off",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 6+ ([Breath] on self + [Burst] on target), Coin Power +1\n[WhenUse] Gain +1 [Breath] Count\n[OnDirectAttack] Inflict +1 [Burst] Count",
+          "name": "Hey, Back Off",
+          "uptie": 2
+        },
+        {
+          "baseValue": 6,
+          "desc": "[WhenUse] At 6+ ([Breath] on self + [Burst] on target), Coin Power +1\n[WhenUse] Gain +1 [Breath] Count\n[OnDirectAttack] Inflict +1 [Burst] Count",
+          "name": "Hey, Back Off",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 7,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "+20% Damage on Critical Hit",
+                "[OnSucceedAttack] Inflict 2 [Burst]",
+                "[CriticalOnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Coin Power +1 for every 6 ([Breath] on self + [Burst] on target) (max 2)\n[WhenUse] Gain +1 [Breath] Count\n[OnDirectAttack] Inflict +1 [Burst] Count",
+          "name": "Hey, Back Off",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1041302": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain [Breath] equal to (([Burst] on target / 5) + 1) (max 6; rounded down)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]",
+                "[CriticalOnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "levelCorrection": 2,
+          "name": "Engraved in Flesh and Bone [銘肌鏤骨]",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain [Breath] equal to (([Burst] on target / 5) + 1) (max 6; rounded down)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]",
+                "[CriticalOnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 6+ ([Breath] on self + [Burst] on target), Coin Power +1\n[WhenUse] Gain +2 [Breath] Count",
+          "name": "Engraved in Flesh and Bone [銘肌鏤骨]",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "[WhenUse] At 6+ ([Breath] on self + [Burst] on target), Coin Power +1\n[WhenUse] Gain +2 [Breath] Count",
+          "name": "Engraved in Flesh and Bone [銘肌鏤骨]",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain [Breath] equal to (([Burst] on target / 5) + 2) (max 6; rounded down)"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "+20% Damage on Critical Hit",
+                "[OnSucceedAttack] Inflict 2 [Burst]",
+                "[CriticalOnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Coin Power +1 for every 6 ([Breath] on self + [Burst] on target) (max 2)\n[WhenUse] Gain +2 [Breath] Count",
+          "name": "Engraved in Flesh and Bone [銘肌鏤骨]",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1041303": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]",
+                "[CriticalOnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]",
+                "[CriticalOnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 1.0
+                }
+              ],
+              "descs": [
+                "[OnStartCoin] Deal +2% damage on Critical Hit for every ([Breath] on self + [Burst] on target) (max 100%)",
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 2 [ProtectStanceRyoshu]\n[WhenUse] If target has 3+ types of negative effects, Final Power +1\n[WhenUse] At 6+ ([Breath] on self + [Burst] on target), Coin Power +1\n[WhenUse] Gain +3 [Breath] Count\n[WhenUse] Gain 3 [Breath]",
+          "levelCorrection": 5,
+          "name": "Aiding Strike [加斥我援]",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]",
+                "[CriticalOnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]",
+                "[CriticalOnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 1.2
+                }
+              ],
+              "descs": [
+                "[OnStartCoin] Deal +2% damage on Critical Hit for every ([Breath] on self + [Burst] on target) (max 120%)",
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 2 [ProtectStanceRyoshu]\n[WhenUse] If target has 3+ types of negative effects, Final Power +1\n[WhenUse] Coin Power +1 for every 6 ([Breath] on self + [Burst] on target) (max 2)\n[WhenUse] Gain +3 [Breath] Count\n[WhenUse] Gain 3 [Breath]",
+          "name": "Aiding Strike [加斥我援]",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1041304": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "bonuses": [
+            {
+              "type": "skilllevel",
+              "value": 6
+            }
+          ],
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[CanDuelGuard]\n[StartBattle] Gain 2 [ProtectStanceRyoshu]\n[WhenUse] This Skill gains +1 Defense Level for every 10% HP this unit has cumulatively lost in this Encounter (max 6; based on max HP at the time of activation)\n[WinDuel] Gain [Breath] by [Burst] on target (max 5; once per turn)",
+          "levelCorrection": 4,
+          "name": "Sentinel",
+          "uptie": 1
+        },
+        {
+          "affinity": "pride",
+          "baseValue": 3,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CanDuelGuard]\n[StartBattle] Gain 2 [ProtectStanceRyoshu]\n[WhenUse] This Skill gains +1 Defense Level for every 10% HP this unit has cumulatively lost in this Encounter (max 6; based on max HP at the time of activation)\n[WinDuel] Gain [Breath] by [Burst] on target (max 5; once per turn)",
+          "name": "Sentinel",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1041321"
+      ],
+      "uptie": 3
+    }
+  ]
+}

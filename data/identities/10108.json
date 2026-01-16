@@ -1,0 +1,371 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1010801"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1010811"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "{status:Aggro} and shield tank.",
+      "Except S3, skills {status:Discard} other skills to generate shield and set his {status:KnowledgeExplored}. Higher {status:KnowledgeExplored} increases shield generation on {status:Discard} and {status:Sinking} application on S2."
+    ],
+    "other": [
+      "Defend trick can be used to maintain his {status:KnowledgeExplored}. Generate the defense skill and use the skill that wasn't replaced. This will stop skills from being discarded, but also prevent you from gaining the shields from discarding skills."
+    ]
+  },
+  "passiveData": {
+    "1010801": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When attacked, inflict 1 [Sinking] to the attacker (4 times max)",
+      "name": "Sinking Knowledge"
+    },
+    "1010811": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When attacked, inflict 1 [Sinking] on the attacker. When attacked while Shielded, inflict 1 additional [Sinking] on the attacker. (4 times max)",
+      "name": "Sinking Knowledge"
+    },
+    "1010821": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When 1 ally with the fastest Speed Discards a Skill, gain (3 x Discarded Skill rank)% of the Max HP as Shield (Once per turn)",
+      "name": "Reviewed Knowledge"
+    },
+    "1010831": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When 1 ally with the fastest Speed Discards a Skill, gain (5 x Discarded Skill rank)% of the Max HP as Shield (2 times per turn)",
+      "name": "Reviewed Knowledge"
+    }
+  },
+  "skills": {
+    "1010801": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Lower user’s Stagger Threshold by [KnowledgeExplored]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Lower user’s Stagger Threshold by [KnowledgeExplored]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Gain ([KnowledgeExplored] x 2% of Max HP) Shield if this Skill is Discarded\n[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots",
+          "levelCorrection": -1,
+          "name": "Expend Knowledge",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by [KnowledgeExplored]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by [KnowledgeExplored]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Gain ([KnowledgeExplored] x 3% of Max HP) Shield if this Skill is Discarded\n[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots",
+          "name": "Expend Knowledge",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "Gain ([KnowledgeExplored] x 3% of Max HP) Shield if this Skill is Discarded\n[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots",
+          "name": "Expend Knowledge",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by [KnowledgeExplored]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by [KnowledgeExplored]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Gain ([KnowledgeExplored] x 3% of Max HP) Shield if this Skill is Discarded\n[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots\n[WhenUse] If target has 5+ [Sinking], Coin Power +1",
+          "name": "Expend Knowledge",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1010802": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict [Sinking] equal to [KnowledgeExplored]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict [Sinking] equal to [KnowledgeExplored]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Gain ([KnowledgeExplored] x 4% of Max HP) Shield if this Skill is Discarded\n[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots",
+          "levelCorrection": -1,
+          "name": "Seal Shut",
+          "uptie": 1
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict [Sinking] equal to [KnowledgeExplored]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict [Sinking] equal to [KnowledgeExplored]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Gain ([KnowledgeExplored] x 5% of Max HP) Shield if this Skill is Discarded\n[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots\n[WhenUse] Gain +3 Aggro to this Skill Slot next turn",
+          "name": "Seal Shut",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "Gain ([KnowledgeExplored] x 5% of Max HP) Shield if this Skill is Discarded\n[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots\n[WhenUse] Gain +3 Aggro to this Skill Slot next turn",
+          "name": "Seal Shut",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [Sinking] equal to [KnowledgeExplored]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [Sinking] equal to [KnowledgeExplored]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Gain ([KnowledgeExplored] x 6% of Max HP) Shield if this Skill is Discarded\n[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots\n[WhenUse] If target has 5+ [Sinking], Coin Power +1\n[WhenUse] Gain +3 Aggro to this Skill Slot next turn",
+          "name": "Seal Shut",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1010803": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Gain ([KnowledgeExplored] x 9% of Max HP) Shield if this Skill is Discarded\n[WhenUse] Gain +8 Aggro to this Skill Slot next turn",
+          "levelCorrection": 3,
+          "name": "Grace of Knowledge",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Gain ([KnowledgeExplored] x 12% of Max HP) Shield if this Skill is Discarded\n[WhenUse] Gain +10 Aggro to this Skill Slot next turn\n[WhenUse] At 50%- HP, Coin Power +1",
+          "name": "Grace of Knowledge",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1010804": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 6,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[WhenUse] Randomly Discard 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots\n[WhenUse] Gain +3 Aggro to this Skill Slot next turn",
+          "levelCorrection": 3,
+          "name": "Fixated Study",
+          "uptie": 1
+        },
+        {
+          "affinity": "sloth",
+          "baseValue": 12,
+          "coinValue": 6,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Randomly Discard 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots\n[WhenUse] Gain +5 Aggro to this Skill Slot next turn",
+          "name": "Fixated Study",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1010821"
+      ],
+      "uptie": 3
+    },
+    {
+      "passives": [
+        "1010831"
+      ],
+      "uptie": 4
+    }
+  ]
+}

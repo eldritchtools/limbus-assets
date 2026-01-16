@@ -1,0 +1,132 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 26,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [AmberTakeDamageUp] next turn",
+                "[EndSkill] Heal 2 other allies with the least HP percentage for 15% of this unit's Max HP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Pursuance",
+          "uptie": 1
+        },
+        {
+          "atkWeight": 2,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [AmberTakeDamageUp] next turn",
+                "[EndSkill] Heal 2 other allies with the least HP percentage for 25% of this unit's Max HP",
+                "[EndSkillHead] If target is Staggered or defeated, apply 10% of this unit's Max HP as Shield to allies that this unit healed"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Pursuance",
+          "uptie": 3
+        },
+        {
+          "atkWeight": 3,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [AmberTakeDamageUp] next turn",
+                "[EndSkill] Heal 2 other allies with the least HP percentage for 30% of this unit's Max HP",
+                "[EndSkillHead] If target is Staggered or defeated, apply 15% of this unit's Max HP as Shield to allies that this unit healed"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Pursuance",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 34,
+          "coinValue": -12,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger Tremor Burst",
+                "[OnSucceedAttack] Deal 15 SP damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly",
+          "levelCorrection": -1,
+          "name": "Pursuance",
+          "uptie": 1
+        },
+        {
+          "coinValue": -12,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger Tremor Burst",
+                "[OnSucceedAttack] Deal 20 SP damage",
+                "[OnSucceedAttackTail] If target is Staggered or defeated, heal 5 SP on self"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets Randomly\n[BeforeAttack] At 50%- HP, Atk Weight +1",
+          "name": "Pursuance",
+          "uptie": 3
+        },
+        {
+          "coinValue": -12,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger Tremor Burst",
+                "[OnSucceedAttack] Deal 20 SP damage",
+                "[OnSucceedAttack] If target is Staggered or defeated, heal 7 SP on self"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets Randomly\n[BeforeAttack] At 50%- HP, Atk Weight +2",
+          "name": "Pursuance",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "Whenever an enemy is Staggered, the ally with the least HP percentage heals 4% of their Max HP. (Once per turn)",
+      "name": "Sentencing from Above"
+    }
+  ]
+}

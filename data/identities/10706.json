@@ -1,0 +1,372 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1070601"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1070611"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Straightforward {status:Burst} identity with decent Count application with S2."
+    ],
+    "other": [
+      "Applies additional {status:Burst} when hitting with a Fatal damage type on the target.",
+      "Applies additional {status:Burst} with 4 or more Seven Association identities deployed."
+    ]
+  },
+  "passiveData": {
+    "1070601": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When attacking a target with a damage type the target is \"Fatal\" (Resistance>x1.5) to, inflict +1 more [Burst] with Skill effects",
+      "name": "Instinctive Read"
+    },
+    "1070611": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When attacking a target with a damage type the target is \"Fatal\" (Resistance>x1.5) to, inflict +1 more [Burst] with Skill effects\nIf 4 or more surviving units, including this unit, are Seven Association Fixers, additional +1 more [Burst]",
+      "name": "Instinctive Read"
+    },
+    "1070621": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the highest Max HP inflicts +1 more [Burst] with Skill effects when attacking a target with a damage type that the target is \"Fatal\"(Resistance>x1.5) to",
+      "name": "Connect The Dots"
+    },
+    "1070631": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the highest Max HP inflicts +1 more [Burst] with Skill effects when attacking a target with a damage type that the target is \"Fatal\"(Resistance>x1.5) to\nIf the ally is a Seven Association Fixer, additional +1 more [Burst]",
+      "name": "Connect The Dots"
+    }
+  },
+  "skills": {
+    "1070601": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Intuition",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Intuition",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "",
+          "name": "Intuition",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]",
+                "[OnSucceedAttackHead] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]",
+                "[OnSucceedAttackHead] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ [Burst], Coin Power +1",
+          "name": "Intuition",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1070602": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "The Wrap-up",
+          "uptie": 1
+        },
+        {
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [DefenseDown] next turn",
+                "[OnSucceedAttack] Inflict +2 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WinDuel] Inflict +1 [Burst] Count",
+          "name": "The Wrap-up",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [DefenseDown] next turn",
+                "[OnSucceedAttack] Inflict +2 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WinDuel] Inflict +1 [Burst] Count",
+          "name": "The Wrap-up",
+          "uptie": 3
+        },
+        {
+          "baseValue": 6,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [DefenseDown] next turn",
+                "[OnSucceedAttack] Inflict +2 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WinDuel] Inflict +1 [Burst] Count",
+          "name": "The Wrap-up",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1070603": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Burst]",
+                "[EnemyKill] Inflict +2 [Burst] Count against the enemy with the lowest [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Forensics",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Burst]",
+                "[EnemyKill] Inflict +2 [Burst] Count against the enemy with the lowest [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ [Burst], Coin Power +1",
+          "name": "Forensics",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1070604": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Guard",
+          "uptie": 1
+        },
+        {
+          "affinity": "wrath",
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Guard",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1070621"
+      ],
+      "uptie": 3
+    },
+    {
+      "passives": [
+        "1070631"
+      ],
+      "uptie": 4
+    }
+  ]
+}

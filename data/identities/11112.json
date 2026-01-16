@@ -1,0 +1,479 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1111201"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Standard Heishou mechanic: Using S3 or defense gives a 3 turn buff corresponding to their Heishou Pack. {status:LegStrength} gives her 5 {status:Agility} every turn. All her skills gain more Power or damage based on speed and some get additional buffs at 10+ speed (S1 and S3 gain coin reuse, S2 and S3 gain more damage, S3 inflicts an additional {status:BurstAgility}).",
+      "Standard Heishou mechanic: Combos with {identity:10613}'s S3. The buff gives him {status:Burst} Count on hit with an unopposed attack (once per turn)."
+    ],
+    "other": [
+      "Inflicts {status:BurstAgility} with her S3, which inflicts +1 {status:Burst} Count when triggering {status:Burst} at 10+ speed and deals additional {keyword:Gluttony} damage based on {status:Burst} when fully consumed. The coin reuse on her S3 inflicts an additional stack of {status:BurstAgility} after she fully consumes the stack inflicted by the first coin.",
+      "Her passive gives bonus damage if she has {status:LegStrength} and her target has {status:BurstAgility}.",
+      "Her S2 and S3 inflict more {status:Burst} Count if she uses it unopposed."
+    ]
+  },
+  "passiveData": {
+    "1111201": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "If this unit has [LegStrength] and the target has [BurstAgility], deal +5% damage for every [LegStrength] (max 15%)",
+      "name": "Heishou Mutation [Mao]"
+    },
+    "1111221": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "1 ally with the fastest Speed: when attacking targets with [Burst], deal +10% damage\nGain 1 [Agility] next turn (once per turn)",
+      "name": "A Husk of Hares"
+    }
+  },
+  "skills": {
+    "1111201": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 6+ [Burst], Coin Power +1",
+          "levelCorrection": 2,
+          "name": "Blinkstep",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]",
+                "[OnSucceedAttack] At 12+ Speed, Reuse Coin once (once per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 4+ [Burst], Coin Power +1",
+          "name": "Blinkstep",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "[WhenUse] If target has 4+ [Burst], Coin Power +1",
+          "name": "Blinkstep",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]",
+                "[OnSucceedAttack] At 10+ Speed, Reuse Coin once (once per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's by 3 or more, Coin Power +1\n[WhenUse] If target has 4+ [Burst], Coin Power +1",
+          "name": "Blinkstep",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1111202": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.1
+                }
+              ],
+              "descs": [
+                "At 10+ Speed, deal +10% damage",
+                "[OnSucceedAttack] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 6+ [Burst], Coin Power +1",
+          "levelCorrection": 3,
+          "name": "Perforating Kill",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "At 10+ Speed, deal +20% damage",
+                "[OnSucceedAttack] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 4+ [Burst], Coin Power +1\n[OnDirectAttack] Inflict +1 [Burst] Count",
+          "name": "Perforating Kill",
+          "uptie": 2
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "At 10+ Speed, deal +20% damage",
+                "[OnSucceedAttack] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 4+ [Burst], Coin Power +1\n[OnDirectAttack] Inflict +1 [Burst] Count",
+          "name": "Perforating Kill",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count",
+                "[OnSucceedAttack] Gain 1 [Agility] next turn (2 times per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "At 10+ Speed, deal +30% damage",
+                "[OnSucceedAttack] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's by 3 or more, Coin Power +1\n[WhenUse] If target has 4+ [Burst], Coin Power +1\n[OnDirectAttack] Inflict +1 [Burst] Count",
+          "name": "Perforating Kill",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1111203": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]",
+                "[OnSucceedAttack] Inflict [BurstAgility]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]",
+                "[OnSucceedAttack] At 10+ Speed, Reuse Coin once (once per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If this unit's Speed is faster than the target's, deal +(Speed difference x [Burst] Potency on target)% damage (max 50%)\nIf this unit's Speed is faster than the target's by 2 or more, Coin Power +1\n[WhenUse] Gain 3 [LegStrength]\n[OnDirectAttack] Inflict +2 [Burst] Count",
+          "levelCorrection": 5,
+          "name": "Cursewrit Butcherblade",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            },
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]",
+                "[OnSucceedAttack] Inflict [BurstAgility]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]",
+                "[OnSucceedAttack] At 10+ Speed, Reuse Coin once (once per Skill)",
+                "[ReUseOnSucceedAttack] Inflict [BurstAgility]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's, deal +(Speed difference x [Burst] Potency on target)% damage (max 50%)\nIf this unit's Speed is faster than the target's, gain Coin Power based on Speed difference (Coin Power +1 for every 2 Speed difference; max 2)\n[WhenUse] If target has 15+ [Burst], Coin Power +1\n[WhenUse] Gain 3 [LegStrength]\n[OnDirectAttack] Inflict +2 [Burst] Count",
+          "name": "Cursewrit Butcherblade",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1111204": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 1
+            }
+          ],
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\n[WhenUse] Gain 3 [LegStrength]\n[WhenUse] If this unit's Speed is faster than the target's by 2 or more, Base Power +1",
+          "levelCorrection": 0,
+          "name": "Partial Heishou Mutation",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 2
+            }
+          ],
+          "desc": "[DuelCounter]\n[WhenUse] Gain 3 [LegStrength]\n[WhenUse] If this unit's Speed is faster than the target's, gain Base Power based on Speed difference (Base Power +1 for every 2 Speed difference; max 2)",
+          "name": "Partial Heishou Mutation",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1111221"
+      ],
+      "uptie": 3
+    }
+  ]
+}

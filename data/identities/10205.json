@@ -1,0 +1,326 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1020501"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1020511"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Passively applies {status:DefenseUp} to herself and allies with both her skills and her passive."
+    ]
+  },
+  "passiveData": {
+    "1020501": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "At the start of the combat phase, apply 2 [DefenseUp] to the 2 allies adjacent to this unit on the Dashboard.",
+      "name": "Territory Protection"
+    },
+    "1020511": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "At the start of the combat phase, apply 2 [DefenseUp] to the 2 allies adjacent to this unit on the Dashboard.\nIf the allies' HP is below 50%, apply an additional 2 [DefenseUp]",
+      "name": "Territory Protection"
+    },
+    "1020521": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 2
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "At the start of the combat phase, apply 2 [DefenseUp] to the ally with the lowest HP percentage\nIf target's HP is below 50%, apply an additional 2 [DefenseUp]",
+      "name": "Protection Request Received"
+    }
+  },
+  "skills": {
+    "1020501": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [DefenseUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[DefeatDuel] Gain 2 [DefenseUp]",
+          "levelCorrection": -1,
+          "name": "Patrolling",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [DefenseUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[DefeatDuel] Gain 3 [DefenseUp]",
+          "name": "Patrolling",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "[DefeatDuel] Gain 3 [DefenseUp]",
+          "name": "Patrolling",
+          "uptie": 3
+        },
+        {
+          "desc": "[WhenUse] Gain +2 Aggro to this Skill Slot next turn\n[DefeatDuel] Gain 3 [DefenseUp]",
+          "name": "Patrolling",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1020502": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 1 [DefenseUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 1 [DefenseUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 1 [DefenseUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Apply 2 [DefenseUp] to the ally with the lowest HP percentage (3 times per turn)",
+          "levelCorrection": -1,
+          "name": "Client Protection",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [DefenseUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [DefenseUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [DefenseUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Apply 3 [DefenseUp] to the ally with the lowest HP percentage (3 times per turn)\nAt 5+ [DefenseUp], Clash Power +1",
+          "name": "Client Protection",
+          "uptie": 2
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [DefenseUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [DefenseUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [DefenseUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Apply 3 [DefenseUp] to the ally with the lowest HP percentage (3 times per turn)\nAt 5+ [DefenseUp], Clash Power +1",
+          "name": "Client Protection",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "desc": "[WhenUse] Apply 4 [DefenseUp] to the ally with the lowest HP percentage (3 times per turn)\nAt 5+ [DefenseUp], Clash Power +2",
+          "name": "Client Protection",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1020503": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Apply 1 [Agility] and 2 [DefenseUp] to the ally with the lowest HP percentage next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At 5+ [DefenseUp], Coin Power +1\n[WinDuel] Heal 2 HP",
+          "levelCorrection": -1,
+          "name": "Law and Order",
+          "uptie": 3
+        },
+        {
+          "baseValue": 6,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Apply 1 [Agility] and 2 [DefenseUp] to the ally with the lowest HP percentage next turn",
+                "If the ally is a Zwei Association Fixer, apply an additional 1 [Agility], 1 [DefenseUp]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 5+ [DefenseUp], Coin Power +1\n[WinDuel] Heal 4 HP",
+          "name": "Law and Order",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1020504": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 6,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Guard",
+          "uptie": 1
+        },
+        {
+          "affinity": "gloom",
+          "baseValue": 12,
+          "desc": "[WhenUse] Gain +3 Aggro to this Skill Slot next turn",
+          "name": "Guard",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1020521"
+      ],
+      "uptie": 3
+    }
+  ]
+}

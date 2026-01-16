@@ -1,0 +1,138 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 5,
+          "baseValue": 20,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain +3 [Charge] Count",
+                "[OnSucceedAttack] Give +1 [Breath] Count to 1 random ally"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[EndSkill] Heal 15 SP for 4 allies with the least SP",
+          "levelCorrection": 0,
+          "name": "Blind Obsession",
+          "uptie": 1
+        },
+        {
+          "baseValue": 20,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain +4 [Charge] Count",
+                "[OnSucceedAttack] Give +1 [Breath] Count to 1 random ally",
+                "[EndSkillHead] Apply 1 [PenetrateResultUp] and 1 [AttackDmgUp] to 4 allies with the highest SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[EndSkill] Heal 20 SP for 4 allies with the least SP",
+          "name": "Blind Obsession",
+          "uptie": 3
+        },
+        {
+          "atkWeight": 7,
+          "baseValue": 20,
+          "coinValue": 15,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +6 [Charge] Count",
+                "[OnSucceedAttack] Give +2 [Breath] Count to 1 random ally",
+                "[EndSkill] Apply 2 [PenetrateResultUp] and 2 [AttackDmgUp] to 4 allies with the highest SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[EndSkill] Heal 25 SP for 4 allies with the least SP",
+          "name": "Blind Obsession",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 5,
+          "baseValue": 30,
+          "coinValue": -10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath] and +1 [Breath] Count",
+                "[OnSucceedAttack] Inflict 2 [IndigoTakeDamageUp] this turn and next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly",
+          "levelCorrection": 0,
+          "name": "Blind Obsession",
+          "uptie": 1
+        },
+        {
+          "baseValue": 30,
+          "coinValue": -10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Heal 3% of Max HP on self",
+                "[OnSucceedAttack] Gain 1 [Breath] and +1 [Breath] Count",
+                "[OnSucceedAttack] Inflict 2 [IndigoTakeDamageUp] this turn and next turn",
+                "[EndSkillTail] Apply 2 [AttackDmgUp] this turn and next turn to 4 allies with the least SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly",
+          "name": "Blind Obsession",
+          "uptie": 3
+        },
+        {
+          "atkWeight": 7,
+          "baseValue": 35,
+          "coinValue": -10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal 3% of Max HP on self",
+                "[OnSucceedAttack] Gain 1 [Breath] and +1 [Breath] Count",
+                "[OnSucceedAttack] Inflict 3 [IndigoTakeDamageUp] this turn and next turn",
+                "[EndSkill] Apply 2 [AttackDmgUp] this turn and next turn to 4 allies with the least SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly",
+          "name": "Blind Obsession",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "At the end of the turn, inflict 5 [Sinking] to 1 other ally with the lowest HP; Apply 1 [Agility] and 3 [AttackUp] next turn",
+      "name": "Temeritous Voyage"
+    }
+  ]
+}

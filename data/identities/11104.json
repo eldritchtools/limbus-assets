@@ -1,0 +1,293 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1110401"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Has +2 Clash Power on her skills (or rather enemies have -2 Clash Power but only when clashing with her skills).",
+      "Inflicts debuffs. S1 inflicts {status:Paralysis}. S2 inflicts {status:DefenseDown}. S3 inflicts {status:AttackDown} and {status:WeaknessAnalysis} weakening a random Endure or Normal resistance by a +0.2 multiplier for a turn."
+    ]
+  },
+  "passiveData": {
+    "1110401": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "When attacking a target with a damage type the target is “Weak” or “Fatal” to, deal +10% damage.",
+      "name": "Grasping Vulnerabilities"
+    },
+    "1110421": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the fastest Speed deals +10% damage when attacking a target with a damage type the target is “Weak” or “Fatal” to.",
+      "name": "Relay Intelligence"
+    }
+  },
+  "skills": {
+    "1110401": {
+      "bonusNotes": "Clash Power reduction on the enemy means she clashes better than what's stated",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "In a clash, opponent has -1 Clash Power",
+          "levelCorrection": 0,
+          "name": "Predictive Analysis",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "In a clash, opponent has -2 Clash Power",
+          "name": "Predictive Analysis",
+          "uptie": 2
+        },
+        {
+          "baseValue": 6,
+          "desc": "In a clash, opponent has -2 Clash Power",
+          "name": "Predictive Analysis",
+          "uptie": 3
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Paralysis] next turn",
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "In a clash, opponent has -2 Clash Power",
+          "name": "Predictive Analysis",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1110402": {
+      "bonusNotes": "Clash Power reduction on the enemy means she clashes better than what's stated",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict +1 [Burst] Count",
+                "[OnSucceedAttackHead] Inflict 2 [DefenseDown] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict +1 [Burst] Count",
+                "[OnSucceedAttackHead] Inflict 2 [DefenseDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "In a clash, opponent has -1 Clash Power",
+          "levelCorrection": 0,
+          "name": "Field Command",
+          "uptie": 1
+        },
+        {
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count",
+                "[OnSucceedAttack] Inflict 2 [DefenseDown] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count",
+                "[OnSucceedAttack] Inflict 2 [DefenseDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "In a clash, opponent has -2 Clash Power",
+          "name": "Field Command",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "In a clash, opponent has -2 Clash Power",
+          "name": "Field Command",
+          "uptie": 3
+        },
+        {
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count",
+                "[OnSucceedAttack] Inflict 2 [DefenseDown] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                "[OnSucceedAttack] Inflict 2 [DefenseDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "In a clash, opponent has -2 Clash Power",
+          "name": "Field Command",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1110403": {
+      "bonusNotes": "Clash Power reduction on the enemy means she clashes better than what's stated",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [AttackDown] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "slash"
+                  },
+                  "type": "damage",
+                  "value": 0.15
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Deal bonus Slash damage by 15% of damage dealt",
+                "[OnSucceedAttack] Inflict [WeaknessAnalysis] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "In a clash, opponent has -2 Clash Power",
+          "levelCorrection": 0,
+          "name": "Exploit the Gap",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "desc": "In a clash, opponent has -2 Clash Power\nIf target has 7+ [Burst], Coin Power +2",
+          "name": "Exploit the Gap",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1110404": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 13,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[WhenUse] Gain 1 [Agility] and 1 [Endurance] next turn",
+          "levelCorrection": 5,
+          "name": "I'll Take the Lead",
+          "uptie": 1
+        },
+        {
+          "affinity": "gluttony",
+          "coinValue": 7,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 1 [Agility] and 1 [Endurance] next turn",
+          "name": "I'll Take the Lead",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1110421"
+      ],
+      "uptie": 3
+    }
+  ]
+}

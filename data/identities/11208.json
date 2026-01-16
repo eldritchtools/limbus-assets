@@ -1,0 +1,332 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1120801"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Inflicts offensive debuffs on enemies, stronger if the enemies have 7+ {status:Laceration}.",
+      "Inflicts {status:AttackDown} on his S2 and at 7+ {status:Laceration} on the target, inflict an additional {status:Reduction}.",
+      "Inflicts 2 {status:AttackDown} on his S3 and at 7+ {status:Laceration} on the target, inflicts an additional 2 {status:AttackDown} and 1 {status:PlusCoinValueDown}."
+    ]
+  },
+  "passiveData": {
+    "1120801": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Clash Win: inflict 1 [Laceration] (3 times per turn)",
+      "name": "Dark Cloud Blade"
+    },
+    "1120821": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When 1 ally with the slowest Speed hits an enemy with 10+ [Laceration], inflict 1 [AttackDown] next turn (3 times per turn)",
+      "name": "Dark Cloud Style"
+    },
+    "1120831": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When 1 ally with the slowest Speed hits an enemy with 7+ [Laceration], inflict 1 [AttackDown] next turn (3 times per turn)",
+      "name": "Dark Cloud Style"
+    }
+  },
+  "skills": {
+    "1120801": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Inflict 1 [Laceration]",
+          "levelCorrection": 1,
+          "name": "Lenticular Rend",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 7+ [Laceration], Clash Power +1\n[WinDuel] Inflict 1 [Laceration]",
+          "name": "Lenticular Rend",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "[WhenUse_Force] If target has 7+ [Laceration], Clash Power +1\n[WinDuel] Inflict 1 [Laceration]",
+          "name": "Lenticular Rend",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 7+ [Laceration], Clash Power +2\n[WinDuel] Inflict 1 [Laceration]",
+          "name": "Lenticular Rend",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1120802": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [AttackDown]",
+                "[OnSucceedAttack] If target has 10+ [Laceration], inflict 1 [Reduction] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Shadow Cloud",
+          "uptie": 1
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Shadow Cloud",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [AttackDown]",
+                "[OnSucceedAttack] If target has 7+ [Laceration], inflict 1 [Reduction] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 7+ [Laceration], Clash Power +2",
+          "name": "Shadow Cloud",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1120803": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [AttackDown]",
+                "[OnSucceedAttack] If target has 7+ [Laceration], inflict 1 [AttackDown] next turn "
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [AttackDown]",
+                "[OnSucceedAttack] If target has 7+ [Laceration], inflict 1 [AttackDown] next turn "
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 10+ [Laceration], inflict 1 [PlusCoinValueDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 7+ [Laceration], Clash Power +1",
+          "levelCorrection": 2,
+          "name": "Shadowcloud Shattercleave",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [AttackDown]",
+                "[OnSucceedAttack] If target has 7+ [Laceration], inflict 1 [AttackDown] next turn "
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [AttackDown]",
+                "[OnSucceedAttack] If target has 7+ [Laceration], inflict 1 [AttackDown] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 3 [Laceration]",
+                "[OnSucceedAttack] If target has 7+ [Laceration], inflict 1 [PlusCoinValueDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 7+ [Laceration], Clash Power +1\n[WhenUse] If target has 10+ [Laceration], Coin Power +1",
+          "name": "Shadowcloud Shattercleave",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1120804": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Guard",
+          "uptie": 1
+        },
+        {
+          "affinity": "lust",
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Guard",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1120821"
+      ],
+      "uptie": 3
+    },
+    {
+      "passives": [
+        "1120831"
+      ],
+      "uptie": 4
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 2,
+          "baseValue": 20,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count",
+                "[OnSucceedAttackHead] Inflict 2 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Effervescent Corrosion",
+          "uptie": 1
+        },
+        {
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration] and +5 [Vibration] Count",
+                "[OnSucceedAttackHead] Inflict 2 [Binding] next turn",
+                "[OnSucceedAttackHead] Trigger [VibrationExplosion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] If main target has 50%+ HP, Atk Weight +1",
+          "name": "Effervescent Corrosion",
+          "uptie": 3
+        },
+        {
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration] and +7 [Vibration] Count",
+                "[OnSucceedAttackHead] Inflict 2 [Binding] next turn",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] If main target has 50%+ HP, Atk Weight +1;\nIf main target has 75%+ HP, additional Atk Weight +1",
+          "name": "Effervescent Corrosion",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 2,
+          "baseValue": 27,
+          "coinValue": -10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal 30% of damage dealt",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly",
+          "levelCorrection": 1,
+          "name": "Effervescent Corrosion",
+          "uptie": 1
+        },
+        {
+          "coinValue": -10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal 30% of damage dealt",
+                "[OnSucceedAttack] Inflict 3 [DefenseDown]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets Randomly\n[BeforeAttack] If main target has 50%+ HP, Atk Weight +1",
+          "name": "Effervescent Corrosion",
+          "uptie": 3
+        },
+        {
+          "coinValue": -10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal 30% of damage dealt",
+                "[OnSucceedAttack] Inflict 5 [DefenseDown]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets Randomly\n[BeforeAttack] If main target has 50%+ HP, Atk Weight +1;\nIf main target has 75%+ HP, additional Atk Weight +1",
+          "name": "Effervescent Corrosion",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "On Heads Hit with a Pierce Skill, inflict 1 [Binding] (2 times per turn)",
+      "name": "Sticky Filth"
+    }
+  ]
+}

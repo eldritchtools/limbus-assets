@@ -1,0 +1,299 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1010501"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Except S1, skills trigger {status:Discard} to generate {status:Vibration} Count. At 5+ Count, S1 gets Coin Power and S2 gets {status:VibrationExplosion}. At 10+ Count, S3 consumes 10 to get Coin Power and 2 {status:VibrationExplosion}s.",
+      "Passive applies {status:DefenseDown} on {status:VibrationExplosion}."
+    ]
+  },
+  "passiveData": {
+    "1010501": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Upon triggering [VibrationExplosion] on an enemy, inflict 1 [DefenseDown] per 4 Stagger Threshold raised (Max 5 per 1 enemy every turn)",
+      "name": "In Times Like These..."
+    },
+    "1010521": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When 1 ally with the lowest Max HP triggers [VibrationExplosion] on an enemy, inflict 1 [DefenseDown] next turn per 4 Stagger Threshold raised (Max 3 per 1 enemy every turn)",
+      "name": "Cleaning Up the Mess"
+    }
+  },
+  "skills": {
+    "1010501": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Gain +3 [Vibration] Count if this Skill is Discarded",
+          "levelCorrection": -2,
+          "name": "Stay Calm",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this Skill is Discarded, gain +4 [Vibration] Count\n[WhenUse] Gain +2 [Vibration] Count",
+          "name": "Stay Calm",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "If this Skill is Discarded, gain +4 [Vibration] Count\n[WhenUse] Gain +2 [Vibration] Count",
+          "name": "Stay Calm",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this Skill is Discarded, gain +4 [Vibration] Count\n[WhenUse] Gain +2 [Vibration] Count\nAt 5+ [Vibration] Count, gain Coin Power +1",
+          "name": "Stay Calm",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1010502": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 12,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] At 5+ [Vibration] Count, trigger [VibrationExplosion]. Reduce target's [Vibration] Count by 2"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If this Skill is Discarded, gain +3 [Vibration] Count\n[WhenUse] Discard 1 Skill of the lowest rank in all of this unit's Skill Slots",
+          "levelCorrection": 2,
+          "name": "Gamble",
+          "uptie": 1
+        },
+        {
+          "coinValue": 12,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count",
+                "[OnSucceedAttack] At 5+ [Vibration] Count, trigger [VibrationExplosion]. Reduce target's [Vibration] Count by 2"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this Skill is Discarded, gain +4 [Vibration] Count\n[WhenUse] Discard 1 Skill of the lowest rank in all of this unit's Skill Slots",
+          "name": "Gamble",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "If this Skill is Discarded, gain +4 [Vibration] Count\n[WhenUse] Discard 1 Skill of the lowest rank in all of this unit's Skill Slots",
+          "name": "Gamble",
+          "uptie": 3
+        },
+        {
+          "coinValue": 12,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count",
+                "[OnSucceedAttack] At 5+ [Vibration] Count, trigger [VibrationExplosion]. Reduce target's [Vibration] Count by 2"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this Skill is Discarded, gain +4 [Vibration] Count\n[WhenUse] Discard 1 Skill of the lowest rank in all of this unit's Skill Slots",
+          "name": "Gamble",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1010503": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Vibration]",
+                "[OnSucceedAttack] If the Skill spent [Vibration] Count, trigger [VibrationExplosion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [DefenseDown]",
+                "[OnSucceedAttack] If the Skill spent [Vibration] Count, trigger [VibrationExplosion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Discard 1 Skill of the lowest rank in all of this unit's Skill Slots\n[WhenUse] Spend 10 [Vibration] Count to gain Coin Power +1",
+          "levelCorrection": 5,
+          "name": "Grinding the Molars",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Vibration]",
+                "[OnSucceedAttack] If the Skill spent [Vibration] Count, trigger [VibrationExplosion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [DefenseDown]",
+                "[OnSucceedAttack] If the Skill spent [Vibration] Count, trigger [VibrationExplosion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Discard 1 Skill of the lowest rank in all of this unit's Skill Slots\n[WhenUse] Spend 10 [Vibration] Count to gain Coin Power +2",
+          "name": "Grinding the Molars",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1010504": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[WhenUse] Discard 1 Skill of the lowest rank in all of this unit's Skill Slots",
+          "levelCorrection": 0,
+          "name": "Guard",
+          "uptie": 1
+        },
+        {
+          "affinity": "sloth",
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Discard 1 Skill of the lowest rank in all of this unit's Skill Slots",
+          "name": "Guard",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1010521"
+      ],
+      "uptie": 3
+    }
+  ]
+}

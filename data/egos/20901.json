@@ -1,0 +1,94 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1
+            }
+          ],
+          "coinValue": 13,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target’s HP is above 50%, deal +10% damage",
+          "levelCorrection": 0,
+          "name": "What is Cast",
+          "uptie": 1
+        },
+        {
+          "baseValue": 15,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": 13,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target’s HP is above 50%, deal +30% damage",
+          "name": "What is Cast",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": 13,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]",
+                "[OnSucceedAttack] Gain +2 [MentalSystemResultIncrease_Typo] next turn",
+                "[OnSucceedAttack] Gain -2 [MentalSystemResultDecrease_Typo] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target’s HP is above 50%, deal +30% damage",
+          "name": "What is Cast",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "+1 [MentalSystemResultIncrease_Typo], -1 [MentalSystemResultDecrease_Typo]",
+      "name": "Severance"
+    }
+  ]
+}

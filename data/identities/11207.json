@@ -1,0 +1,399 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1120701"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1120702"
+      ],
+      "uptie": 3
+    }
+  ],
+  "notes": {
+    "main": [
+      "Starts encounters with 7 {status:Bullet}.",
+      "When his passive is active he gains 1 {status:Unjust_Enrichment} on Heads hit against targets with {status:Laceration}, stacking up to 4.",
+      "S3 consumes 1 {status:Bullet} on its 2nd coin, then he consumes all stacks of {status:Unjust_Enrichment} to deal bonus damage on that coin. At 0 {status:Bullet}, his 2nd coin will only consume {status:Unjust_Enrichment} if it crits and its bonus damage will be reduced."
+    ],
+    "other": [
+      "Gains {status:PlusCoinValueUp} on kill with the second coin of his S3."
+    ]
+  },
+  "passiveData": {
+    "1120701": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "- On Heads Hit against target with [Laceration], gain [Unjust_Enrichment]. (Max 4)\n- If this unit Critical Hits when out of [Bullet], spend all [Unjust_Enrichment] and deal additional (5 x [Unjust_Enrichment] consumed)% of damage dealt as bonus damage.",
+      "name": "Bullets are Pricey"
+    },
+    "1120702": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "- Always Active : begin encounters with 7 [Bullet]\n- On Heads Hit against target with [Laceration], gain [Unjust_Enrichment]. (Max 4)\n If a Coin that uses [Bullet] Hits, consume all [Unjust_Enrichment] and deal additional (25 x [Unjust_Enrichment] consumed)% of damage as bonus damage.\n- If this unit Critical Hits when out of [Bullet], consume all [Unjust_Enrichment] and deal additional (5 x [Unjust_Enrichment] consumed)% of damage dealt as bonus damage.",
+      "name": "Bullets are Pricey"
+    },
+    "1120721": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "If 1 ally with the most [Breath] defeats an enemy, gain 1 Pierce DMG Up next turn. (Once per turn)",
+      "name": "New Breathing Hole"
+    }
+  },
+  "skills": {
+    "1120701": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 2 [Breath]",
+          "levelCorrection": 2,
+          "name": "Negotiation Start",
+          "uptie": 1
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count",
+                "[CriticalOnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 3 [Breath]",
+          "name": "Negotiation Start",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "[WhenUse] Gain 3 [Breath]",
+          "name": "Negotiation Start",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count",
+                "[CriticalOnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 3 [Breath]\nIf target has 7+ [Laceration], Coin Power +1",
+          "name": "Negotiation Start",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1120702": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 3 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[CriticalOnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "levelCorrection": 3,
+          "name": "Unilateral Business",
+          "uptie": 1
+        },
+        {
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 4 [Breath]",
+                "[CriticalOnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[CriticalOnSucceedAttack] Inflict 2 [Laceration]",
+                "+30% Damage on Critical Hit"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +3 [Breath] Count",
+          "name": "Unilateral Business",
+          "uptie": 2
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 4 [Breath]",
+                "[CriticalOnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[CriticalOnSucceedAttack] Inflict 2 [Laceration]",
+                "+30% Damage on Critical Hit"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +3 [Breath] Count",
+          "name": "Unilateral Business",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 4 [Breath]",
+                "[CriticalOnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[CriticalOnSucceedAttack] Inflict 2 [Laceration]",
+                "+50% Damage on Critical Hit"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Coin Power +1 for every 7 [Laceration] on target (Max 2)\n[WhenUse] Gain +3 [Breath] Count",
+          "name": "Unilateral Business",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1120703": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "Spend 1 [Bullet]",
+                "+50% Damage on Critical Hit"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 1 [Breath] per 3 [Laceration] on target (Max 5)\nAt 7+ [Breath], Coin Power +1",
+          "levelCorrection": 5,
+          "name": "Foregone Conclusion",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "Spend 1 [Bullet]",
+                "+100% Damage on Critical Hit",
+                "[EnemyKill] Gain 1 [PlusCoinValueUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 1 [Breath] for every 3 [Laceration] on target (Max 10)\nGain Coin Power +1 for every 7 [Breath] on self (Max +3)",
+          "name": "Foregone Conclusion",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1120704": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[OnSucceedEvade] Gain 1 [Breath] (Max 3 per turn)",
+          "levelCorrection": -3,
+          "name": "Take a Breather",
+          "uptie": 1
+        },
+        {
+          "affinity": "gloom",
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[OnSucceedEvade] Gain 1 [Breath] (Max 5 per turn)",
+          "name": "Take a Breather",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1120721"
+      ],
+      "uptie": 3
+    }
+  ]
+}

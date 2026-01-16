@@ -1,0 +1,274 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1050501"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "S3 coins generate {status:Charge} Count on Heads Hit then spends it all to raise the target's Stagger Threshold.",
+      "Consumes 3 {status:Vibration} Count when triggering {status:VibrationExplosion} on his S3."
+    ]
+  },
+  "passiveData": {
+    "1050501": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "In a clash, the opponent has -1 Clash Power if they have 5+ [Vibration].\nWhen recovering from Stagger, heal 5% of Max HP.",
+      "name": "Chronic Fatigue"
+    },
+    "1050521": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "1 ally with the fastest Speed lowers the Clash Power of opponents with [Vibration] by 1.",
+      "name": "Leave by Suggestion"
+    }
+  },
+  "skills": {
+    "1050501": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Saddled Tasks",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Vibration]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Saddled Tasks",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Saddled Tasks",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "desc": "If target has 5+ [Vibration] Count, Coin Power +2",
+          "name": "Saddled Tasks",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1050502": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 5+ [Vibration], inflict 1 [Reduction] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Forced Break",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Vibration]",
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 5+ [Vibration], inflict 1 [Reduction] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Forced Break",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "",
+          "name": "Forced Break",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            }
+          ],
+          "desc": "If target has 7+ [Vibration] Count, Final Power +1",
+          "name": "Forced Break",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1050503": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain +1 [Charge] Count",
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain +2 [Charge] Count",
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain +2 [Charge] Count",
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]\nWhen triggering [VibrationExplosion], reduce [Vibration] Count by 3, then spend all [Charge] Count to further raise Stagger Threshold by ([Charge] Count x 5)% (Max 50%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Finishing Runup",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "If target has 10+ [Vibration] Count, Coin Power +1",
+          "name": "Finishing Runup",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1050504": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Guard",
+          "uptie": 1
+        },
+        {
+          "affinity": "sloth",
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Guard",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1050521"
+      ],
+      "uptie": 3
+    }
+  ]
+}

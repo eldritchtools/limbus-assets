@@ -1,0 +1,93 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 15,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target’s HP is below 50%, +10% Damage",
+          "levelCorrection": 3,
+          "name": "To Páthos Máthos",
+          "uptie": 1
+        },
+        {
+          "baseValue": 20,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target’s HP is below 50%, +30% Damage",
+          "name": "To Páthos Máthos",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Burst]",
+                "[EnemyKill] Give 1 [AttackDmgUp] to a random ally"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target’s HP is below 50%, +30% Damage",
+          "name": "To Páthos Máthos",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "If the unit did not get hit at all during a turn, gain 1 [AttackDmgUp] next turn. (Max 3 stacks)",
+      "name": "Tactical Perfection"
+    }
+  ]
+}

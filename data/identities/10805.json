@@ -1,0 +1,249 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1080501"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1080511"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "{status:Aggro} tank that inflicts most of its {status:Vibration} and {status:Burst} on Clash Lose.",
+      "Her S3 triggers {status:VibrationExplosion} but consumes 4 {status:Vibration} Count instead of the typical 1.",
+      "Her passive gives her shields whenever she fails to deal damage on the previous turn, helping her survive the damage from repeated clash losses."
+    ]
+  },
+  "passiveData": {
+    "1080501": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "If this unit fails to deal HP damage using attack skills in a turn, gain a Shield equal to 5% of Max HP next turn. (Max 30)",
+      "name": "Filling Fluid"
+    },
+    "1080511": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "If this unit fails to deal HP damage using attack skills in a turn, gain a Shield equal to 10% of Max HP next turn. (Max 30)",
+      "name": "Filling Fluid"
+    },
+    "1080521": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When 1 ally with the fastest Speed triggers [VibrationExplosion], they inflict 2 [Burst].",
+      "name": "Corrosive Slime"
+    }
+  },
+  "skills": {
+    "1080501": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "It's Heavy...!",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Vibration]",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "It's Heavy...!",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "It's Heavy...!",
+          "uptie": 3
+        },
+        {
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[DefeatDuel] Inflict 2 [Vibration] and 2 [Burst]",
+          "name": "It's Heavy...!",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1080502": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "It's Churning...!",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "It's Churning...!",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "",
+          "name": "It's Churning...!",
+          "uptie": 3
+        },
+        {
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[DefeatDuel] Inflict 3 [Vibration] and 3 [Burst]",
+          "name": "It's Churning...!",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1080503": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 16,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]\nAfter triggering [VibrationExplosion], reduce [Vibration] Count by 4. Inflict 5 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Corrosive Splash",
+          "uptie": 3
+        },
+        {
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[DefeatDuel] Inflict 5 [Vibration] and 5 [Burst]",
+          "name": "Corrosive Splash",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1080504": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 12,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "Guard",
+          "uptie": 1
+        },
+        {
+          "affinity": "gloom",
+          "baseValue": 15,
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn",
+          "name": "Guard",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1080521"
+      ],
+      "uptie": 3
+    }
+  ]
+}

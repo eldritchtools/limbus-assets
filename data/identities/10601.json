@@ -1,0 +1,273 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1060101"
+      ],
+      "uptie": 1
+    }
+  ],
+  "notes": {
+    "main": [
+      "Base identity, simple, straightforward.",
+      "Useful support passive heals SP every turn."
+    ]
+  },
+  "passiveData": {
+    "1060101": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 2
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "Heal 6 SP next turn.",
+      "name": "Entertainment"
+    },
+    "1060121": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "At the start of the combat phase, the ally with the least SP heals 6 SP.",
+      "name": "Frivolous Jokes"
+    }
+  },
+  "skills": {
+    "1060101": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Downward Cleave",
+          "uptie": 1
+        },
+        {
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Downward Cleave",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "",
+          "name": "Downward Cleave",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Downward Cleave",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1060102": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Dual Strike",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If user took no damage last turn, Coin Power +1",
+          "name": "Dual Strike",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "If user took no damage last turn, Coin Power +1",
+          "name": "Dual Strike",
+          "uptie": 3
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If user took no damage last turn, Coin Power +1",
+          "name": "Dual Strike",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1060103": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Reduction]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If user took no damage last turn, Coin Power +2",
+          "levelCorrection": 2,
+          "name": "Whirlwind",
+          "uptie": 3
+        },
+        {
+          "baseValue": 6,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Reduction]",
+                "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If user took no damage last turn, Coin Power +2",
+          "name": "Whirlwind",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1060104": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "",
+          "levelCorrection": -2,
+          "name": "Evade",
+          "uptie": 1
+        },
+        {
+          "affinity": "sloth",
+          "desc": "",
+          "name": "Evade",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1060121"
+      ],
+      "uptie": 3
+    }
+  ]
+}

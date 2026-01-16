@@ -1,0 +1,420 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1110701"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1110711"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Gains {status:FreischutzShotCount} from her skills.",
+      "Her S3's Base and Coin Power changes depending on her number of stacks. At 0-3, it's 15 +4. At 4-6, it's 17 +6. At 7, it's 30 +10. It also changes its atk weight to the value of her stacks, but she loses 5 SP per stack above 1 and if her SP hits 10 or lower, she has a 50% chance to attack indiscriminately. This means at 7 stacks, she needs to be at 41 or above SP for her not to attack indiscriminately. It will also consume all her {status:FreischutzShotCount} if she uses it at 7 stacks. This counts as 'spending' her last ammo for any relevant passives from other identities.",
+      "Her skills also inflict {status:DarkFlame} (1 from S1, and equal to her {status:FreischutzShotCount} stacks for S2 and S3), which inflicts {status:DefenseDown} and {keyword:Pride} damage based on {status:Combustion} Potency depending on the stacks of {status:DarkFlame}."
+    ],
+    "other": [
+      "Her passive gives her {status:Breath} before attacking based on the enemy's {status:Combustion} if they have 4 or more {status:DefenseDown}.",
+      "{ego:21108} interacts with her mechanics, generating {status:FreischutzShotCount} based on Reson and inflicting {status:DarkFlame}."
+    ]
+  },
+  "passiveData": {
+    "1110701": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "If the main target's Defense Level is currently lowered by 4 or more, gain ([Combustion] on main target/2) [Breath] Before Attack (Max 20 per turn)",
+      "name": "The Marksman's Smoking Pipe"
+    },
+    "1110711": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "If the main target's Defense Level is currently lowered by 4 or more, gain ([Combustion] on main target) [Breath] Before Attack (Max 20 per turn)",
+      "name": "The Marksman's Smoking Pipe"
+    },
+    "1110721": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "1 ally with the most SP deals +10% damage with E.G.O Skills",
+      "name": "Request Work"
+    },
+    "1110731": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "1 ally with the most SP deals +10% damage with E.G.O Skills\nIf the E.G.O Skill consumes 7+ E.G.O resources, deal additional +5% damage",
+      "name": "Request Work"
+    }
+  },
+  "skills": {
+    "1110701": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [DarkFlame] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [Combustion] equal to [DarkFlame] on target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Ignition",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [DarkFlame] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [Combustion] equal to [DarkFlame] on target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Coin Power +1 for every 3 [Combustion] on target (Max 2)",
+          "name": "Ignition",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "Coin Power +1 for every 3 [Combustion] on target (Max 2)",
+          "name": "Ignition",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [DarkFlame] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [Combustion] equal to [DarkFlame] on target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Coin Power +1 for every 3 [Combustion] on target (Max 3)",
+          "name": "Ignition",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1110702": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] At less than 4 [FreischutzShotCount], gain 1 [FreischutzShotCount]; then, inflict [DarkFlame] equal to [FreischutzShotCount] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict [Combustion] equal to [DarkFlame] on target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has 6+ [Combustion], Coin Power +1",
+          "levelCorrection": 3,
+          "name": "Detonate Magic Bullet",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] At less than 4 [FreischutzShotCount], gain 1 [FreischutzShotCount]; then, inflict [DarkFlame] equal to [FreischutzShotCount] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [Combustion] equal to [DarkFlame] on target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Coin Power +1 for every 6 [Combustion] on target (Max 2)",
+          "name": "Detonate Magic Bullet",
+          "uptie": 2
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] At less than 4 [FreischutzShotCount], gain 1 [FreischutzShotCount]; then, inflict [DarkFlame] equal to [FreischutzShotCount] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [Combustion] equal to [DarkFlame] on target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Coin Power +1 for every 6 [Combustion] on target (Max 2)",
+          "name": "Detonate Magic Bullet",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] At less than 4 [FreischutzShotCount], gain 1 [FreischutzShotCount]; then, inflict [DarkFlame] equal to [FreischutzShotCount] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [Combustion] equal to [DarkFlame] on target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Coin Power +1 for every 6 [Combustion] on target (Max 3)",
+          "name": "Detonate Magic Bullet",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1110703": {
+      "bonusNotes": "Assumes 7 Magic Bullet\nIgnores SP loss when computing average",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 15,
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 15
+            },
+            {
+              "type": "coin",
+              "value": 6
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [DarkFlame] equal to [FreischutzShotCount] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +0.5% damage for every [Combustion] on target (Max 15%)\n\n[BeforeAttack] Gain 1 [FreischutzShotCount]\n- Lose (([FreischutzShotCount] -1)x5) SP\n- Atk Weight becomes equal to [FreischutzShotCount] value\n- At 10 or less SP, 50% chance to attack indiscriminately\n\n[EndSkill] If at 7 [FreischutzShotCount], reset to 0 (Counts as spending the last Ammo)",
+          "levelCorrection": 5,
+          "name": "Magic Bullet Fire",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 15
+            },
+            {
+              "type": "coin",
+              "value": 6
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [DarkFlame] equal to [FreischutzShotCount] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Deal +1% damage for every [Combustion] on target (Max 30%)\n\n[BeforeAttack] Gain 1 [FreischutzShotCount]\n- Lose (([FreischutzShotCount] -1)x5) SP\n- Atk Weight becomes equal to [FreischutzShotCount] value\n- At 10 or less SP, 50% chance to attack indiscriminately\n\n[EndSkill] If at 7 [FreischutzShotCount], reset to 0 (Counts as spending the last Ammo)",
+          "name": "Magic Bullet Fire",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1110704": {
+      "bonusNotes": "Assumes 7 Magic Bullet",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[WhenUse] Gain 1 [FreischutzShotCount] (Once per turn)\n[EndSkillAll] Lose SP equal to [FreischutzShotCount]",
+          "levelCorrection": -3,
+          "name": "The Price of a Bullet",
+          "uptie": 1
+        },
+        {
+          "affinity": "pride",
+          "baseValue": 10,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 14
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 1 [FreischutzShotCount] (Once per turn)\n[WhenUse] Gain Final Power equal to ([FreischutzShotCount] x2)\n[EndSkillAll] Lose SP equal to [FreischutzShotCount]",
+          "name": "The Price of a Bullet",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1110721"
+      ],
+      "uptie": 3
+    },
+    {
+      "passives": [
+        "1110731"
+      ],
+      "uptie": 4
+    }
+  ]
+}

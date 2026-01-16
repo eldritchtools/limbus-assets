@@ -1,0 +1,268 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1110201"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Straightforward {status:Breath} identity."
+    ]
+  },
+  "passiveData": {
+    "1110201": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 2
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "Deal +20% damage to targets below 25% HP.",
+      "name": "Levelheaded"
+    },
+    "1110221": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the most SP deals +30% damage to enemies below 25% HP.",
+      "name": "Double Tap"
+    }
+  },
+  "skills": {
+    "1110201": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Draw of the Sword",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 4 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Draw of the Sword",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Draw of the Sword",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 4 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 5+ [Breath], Coin Power +1",
+          "name": "Draw of the Sword",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1110202": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 1 [SlashDamageUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Acupuncture",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [SlashDamageUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WinDuel] Gain +1 [Breath] Count",
+          "name": "Acupuncture",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "[WinDuel] Gain +1 [Breath] Count",
+          "name": "Acupuncture",
+          "uptie": 3
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [SlashDamageUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WinDuel] Gain +2 [Breath] Count",
+          "name": "Acupuncture",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1110203": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Raise first Stagger Threshold by 20% of damage dealt"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target’s HP is below 25%, Final Power +2",
+          "levelCorrection": 1,
+          "name": "Decisive Dive",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "desc": "If target’s HP is below 50%, Final Power +2",
+          "name": "Decisive Dive",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1110204": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Evade",
+          "uptie": 1
+        },
+        {
+          "affinity": "pride",
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            }
+          ],
+          "desc": "At 6+ [Breath], Coin Power +3",
+          "name": "Evade",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1110221"
+      ],
+      "uptie": 3
+    }
+  ]
+}

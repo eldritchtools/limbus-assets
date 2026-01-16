@@ -1,0 +1,272 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1120401"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Inflicts {status:Laceration} and {status:Paralysis} and heals self on his S3.",
+      "Passive heals him every turn. Support passive heals an ally every turn."
+    ]
+  },
+  "passiveData": {
+    "1120401": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Heal 8 HP at the start of the combat phase.",
+      "name": "Packed Pies"
+    },
+    "1120421": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "At the start of the combat phase, the ally with the least HP heals 5 HP.\nBoost the healing of R.B. Chef de Cuisine Ryōshū’s Passive ‘Rustle Up’ by 5.",
+      "name": "Culinary Aid"
+    }
+  },
+  "skills": {
+    "1120401": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Paralysis]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Keep It Fresh",
+          "uptie": 1
+        },
+        {
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Paralysis]; if target has [Laceration], inflict 1 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Keep It Fresh",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Keep It Fresh",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "desc": "If target has 4+ [Binding], deal +30% damage",
+          "name": "Keep It Fresh",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1120402": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count; Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "You Fresh Enough?",
+          "uptie": 1
+        },
+        {
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count; Inflict 2 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "You Fresh Enough?",
+          "uptie": 2
+        },
+        {
+          "baseValue": 6,
+          "desc": "",
+          "name": "You Fresh Enough?",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            }
+          ],
+          "desc": "If user's Speed is faster than target's by 3+, Coin Power +3",
+          "name": "You Fresh Enough?",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1120403": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Paralysis]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Paralysis]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal HP based on target’s [Laceration] (Max 20%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Butcher Viand",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "If target has 10+ [Laceration] Count, Coin Power +1",
+          "name": "Butcher Viand",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1120404": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Guard",
+          "uptie": 1
+        },
+        {
+          "affinity": "lust",
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Guard",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1120421"
+      ],
+      "uptie": 3
+    }
+  ]
+}

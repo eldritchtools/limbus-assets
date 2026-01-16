@@ -1,0 +1,184 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 13,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1
+            }
+          ],
+          "coinValue": 15,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Trigger Tremor Burst",
+                "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target’s HP is above 50%, deal +10% damage",
+          "levelCorrection": 1,
+          "name": "Rime Shank",
+          "uptie": 1
+        },
+        {
+          "baseValue": 15,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": 15,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger Tremor Burst",
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target’s HP is above 50%, deal +30% damage",
+          "name": "Rime Shank",
+          "uptie": 3
+        },
+        {
+          "baseValue": 15,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": 15,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger Tremor Burst",
+                "[OnSucceedAttack] Inflict 5 [Sinking]\n[OnSucceedAttack] Inflict +5 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target’s HP is above 50%, deal +30% damage",
+          "name": "Rime Shank",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 17,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Trigger Tremor Burst",
+                "[OnSucceedAttack] Inflict +4 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets the unit with the most HP\nIf target’s HP is above 50%, +10% Damage",
+          "levelCorrection": 1,
+          "name": "Rime Shank",
+          "uptie": 1
+        },
+        {
+          "baseValue": 21,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger Tremor Burst",
+                "[OnSucceedAttack] Inflict +6 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets the unit with the most HP\nIf target’s HP is above 50%, +30% Damage",
+          "name": "Rime Shank",
+          "uptie": 3
+        },
+        {
+          "atkWeight": 3,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger Tremor Burst",
+                "[OnSucceedAttack] Inflict 10 [Sinking]\n[OnSucceedAttack] Inflict +8 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets the unit with the most HP\nIf target’s HP is above 50%, +30% Damage",
+          "name": "Rime Shank",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "On hit, if the target has 5+ [Sinking], inflict 1 [Binding] and [Reduction] next turn\n(3 times per unit)",
+      "name": "Coldness"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 17,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Combustion]",
+                "[OnSucceedAttack] Deal 7 SP damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[EndSkill] Apply 1 [CrimsonDamageUp] to all allies next turn",
+          "levelCorrection": 0,
+          "name": "Capote",
+          "uptie": 1
+        },
+        {
+          "baseValue": 20,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Combustion]",
+                "[OnSucceedAttack] Deal 15 SP damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[EndSkill] Apply 1 [CrimsonDamageUp] to all allies next turn",
+          "name": "Capote",
+          "uptie": 3
+        },
+        {
+          "atkWeight": 2,
+          "desc": "[EndSkill] Apply 1 [CrimsonDamageUp] to all allies next turn",
+          "name": "Capote",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 24,
+          "coinValue": -7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Combustion]",
+                "[OnSucceedAttack] Deal 7 SP damage",
+                "[OnSucceedAttack] Trigger [VibrationExplosion], then reduce target's Tremor Count by 2"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly\n[EndSkill] Give 1 [CrimsonTakeDamageUp], and 1 [CrimsonDamageUp] to all units next turn",
+          "levelCorrection": 3,
+          "name": "Capote",
+          "uptie": 1
+        },
+        {
+          "baseValue": 27,
+          "coinValue": -7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Combustion]",
+                "[OnSucceedAttack] Deal 15 SP damage",
+                "[OnSucceedAttack] Trigger [VibrationExplosion], then reduce Tremor Count by 2; if the [VibrationExplosion] Staggered the target, inflict +2 [Combustion] Count on 3 random units"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\n[EndSkill] Give 1 [CrimsonTakeDamageUp], and 1 [CrimsonDamageUp] to all units next turn",
+          "name": "Capote",
+          "uptie": 3
+        },
+        {
+          "atkWeight": 4,
+          "desc": "[CantIdentify]\nTargets randomly\n[EndSkill] Give 1 [CrimsonTakeDamageUp], and 1 [CrimsonDamageUp] to all units next turn",
+          "name": "Capote",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "When attacking a target with less than 30% HP, Wrath skills deal +20% damage.",
+      "name": "Slaying Amid Cheers"
+    }
+  ]
+}

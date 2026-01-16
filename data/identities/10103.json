@@ -1,0 +1,307 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1010301"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1010311"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Gains Coin Power with {status:Breath} Count but has slow Count generation, so try to use him with other ids and EGOs that can provide Count."
+    ]
+  },
+  "passiveData": {
+    "1010301": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "On clash win, gain +1 [Breath] Count.",
+      "name": "Poised"
+    },
+    "1010311": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "On clash win, gain +1 [Breath] Count.\nCoin Power +1 for every 5 [Breath] Count. (Max 3)",
+      "name": "Poised"
+    },
+    "1010321": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the most SP gains +1 [Breath] Count from skills.",
+      "name": "Bestow"
+    }
+  },
+  "skills": {
+    "1010301": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 1 [Breath] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "Striker’s Stance",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Striker’s Stance",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "",
+          "name": "Striker’s Stance",
+          "uptie": 3
+        },
+        {
+          "baseValue": 6,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "name": "Striker’s Stance",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1010302": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 1,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Gain +1 [Breath] Count next turn",
+          "levelCorrection": 5,
+          "name": "Heel Turn",
+          "uptie": 1
+        },
+        {
+          "coinValue": 1,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WinDuel] Gain +2 [Breath] Count next turn",
+          "name": "Heel Turn",
+          "uptie": 2
+        },
+        {
+          "baseValue": 7,
+          "desc": "[WinDuel] Gain +2 [Breath] Count next turn",
+          "name": "Heel Turn",
+          "uptie": 3
+        },
+        {
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WinDuel] Gain +2 [Breath] Count next turn",
+          "name": "Heel Turn",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1010303": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [Breath] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "+50% Damage on Critical Hit"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "Flank Thrust",
+          "uptie": 3
+        },
+        {
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [Breath] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.7
+                }
+              ],
+              "descs": [
+                "+70% Damage on Critical Hit"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 2 [Breath]",
+          "name": "Flank Thrust",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1010304": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "Counter",
+          "uptie": 1
+        },
+        {
+          "baseValue": 10,
+          "coinValue": 8,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.7
+                }
+              ],
+              "descs": [
+                "+70% Damage on Critical Hit"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Counter",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1010321"
+      ],
+      "uptie": 3
+    }
+  ]
+}

@@ -1,0 +1,750 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1071002"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1071002",
+        "1071001"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1071002",
+        "1071011"
+      ],
+      "uptie": 3
+    },
+    {
+      "passives": [
+        "1071002",
+        "1071012"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Using his defense skill or having 3 allies die lets him mount {status:NightPathfinding} giving him {status:AttackUp} and Speed, but also making him lose SP every turn. If he drops below -25 SP, he automatically unmounts {status:NightPathfinding}.",
+      "While mounted, his S3 and his defense skill (at 15+ SP) is converted into his S3-2, which is a minus coin skill that consumes {status:NightPathfinding} but deals significantly more damage and inflicts more {status:Sinking} than his regular S3. He then heals back to positive SP afterwards. Every turn he's mounted, {status:NightPathfinding} gains +1 stack going up to 3, increasing the damage his S3-2 deals."
+    ],
+    "other": [
+      "Builds {status:Coffin} whenever he kills an enemy or uses his S3, giving him passive {status:AttackDmgUp}, speed, and {status:ParryingResultUp} depending on the stacks. If his passive is active and an ally dies, he consumes 2 {status:Coffin} to revive them at 50% HP and 0 SP for 1 turn. They get {status:AttackDmgUp} and Wuthering Heights/Edgar Family identities gain an additional {status:Enhancement} for that turn, but they immediately die afterwards. Every stack of {status:Coffin}also increases the damage either version of his S3 deals.",
+      "His S2 gains +1 atk weight for every 4 {status:Coffin} stacks and another +1 if he has {status:NightPathfinding} for up to +3 weight. It inflicts {status:WanderingFootsteps} which applies additional {status:Sinking} and {status:ParryingResultDown} when enemies hit low SP or panic. Enemies without SP get a -10% chance to flip Heads."
+    ]
+  },
+  "passiveData": {
+    "1071001": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "- Deal +1% damage for every 1 [Sinking] on target (max 15%)",
+      "name": "Call of the Erlking"
+    },
+    "1071002": {
+      "desc": "- Turn Start: if this unit has [NightPathfinding], mount [NightPathfinding].\n- Lose 5 SP every time this unit mounts [NightPathfinding]\n- If 3+ allies have been defeated in this Encounter, gain [NightPathfinding] next turn. (once per Encounter)\n- If this unit gets Staggered due to damage or raised Stagger Threshold when mounting [NightPathfinding], recover from Stagger. If the Stagger is something that cannot be naturally recovered from, this unit does not mount [NightPathfinding].\n\n- Gain 1 [Coffin] when killing the target.",
+      "name": "Dullahan"
+    },
+    "1071011": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "- Deal +1% damage for every 1 [Sinking] on target (max 15%)\n\n- When, during combat, 1 ally takes damage that would kill them, consume 2 [Coffin] to apply [WildHunt] to them (once per turn)\n\n- Apply 2 [AttackDmgUp] next turn to the ally with [WildHunt]\n- If the said ally is from Wuthering Heights or Edgar Family, apply 1 [Enhancement] next turn as well",
+      "name": "Call of the Erlking"
+    },
+    "1071012": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "- Deal +1% damage for every 1 [Sinking] on target (max 15%)\n\n- When, during combat, 1 ally takes damage that would kill them, consume 2 [Coffin] to apply [WildHunt] to them (2 times per turn)\n\n- Apply 2 [AttackDmgUp] next turn to the ally with [WildHunt]\n- If the said ally is from Wuthering Heights or Edgar Family, apply 1 [Enhancement] next turn as well",
+      "name": "Call of the Erlking"
+    },
+    "1071021": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "1 ally with the highest SP deals +5% damage to targets with less than 0 SP\nIf the target has less than 0 SP: deal even more damage the further the target's SP is from 0 (+0.5% damage per SP, max 20%)\nIf the target does not have SP, the said ally inflicts +1 more [Sinking] Potency and Count with their Skill and Coin Effects of their Attack Skills (2 times per turn)",
+      "name": "Endless Lamentation"
+    }
+  },
+  "skills": {
+    "1071001": {
+      "bonusNotes": "Ignores bonuses from Coffin or Dullahan",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 8+ [Sinking], Clash Power +1",
+          "levelCorrection": 2,
+          "name": "Beheading",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 6+ [Sinking], Clash Power +1\n[WhenUse] If target has 3+ [Sinking] Count, Coin Power +1",
+          "name": "Beheading",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 6+ [Sinking], Clash Power +1\n[WhenUse] If target has 3+ [Sinking] Count, Coin Power +1",
+          "name": "Beheading",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 6+ [Sinking], Clash Power +1\n[WhenUse] Coin Power +1 for every 3 [Sinking] Count on target (max 2)",
+          "name": "Beheading",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1071002": {
+      "bonusNotes": "Ignores bonuses from Coffin or Dullahan",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "[OnSucceedAttack] Inflict 2 [WanderingFootsteps] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 5+ [Sinking], Coin Power +1\n[EndSkill] If this unit has [NightPathfinding], lose 10 SP",
+          "levelCorrection": 2,
+          "name": "Memorial Procession",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "[OnSucceedAttack] Inflict 2 [WanderingFootsteps] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 5+ [Sinking], Coin Power +1\n[WhenUse] At 4+ [Coffin], Atk Weight +1\n[WhenUse] If this unit has [NightPathfinding], Atk Weight +1\n[EndSkill] If this unit has [NightPathfinding], lose 10 SP",
+          "name": "Memorial Procession",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "[WhenUse] If target has 5+ [Sinking], Coin Power +1\n[WhenUse] At 4+ [Coffin], Atk Weight +1\n[WhenUse] If this unit has [NightPathfinding], Atk Weight +1\n[EndSkill] If this unit has [NightPathfinding], lose 10 SP",
+          "name": "Memorial Procession",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Sinking]",
+                "[OnSucceedAttack] Inflict 2 [WanderingFootsteps] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Coin Power +1 for every 5 [Sinking] on target (max 2)\n[WhenUse] Atk Weight +1 for every 4 [Coffin] on self (max 2)\n[WhenUse] If this unit has [NightPathfinding], Atk Weight +1\n[EndSkill] If this unit has [NightPathfinding], lose 10 SP",
+          "name": "Memorial Procession",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1071003": {
+      "bonusNotes": "Ignores bonuses from Coffin or Dullahan, but applies the skill's max damage bonus from Coffin",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.7
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count",
+                "[OnSucceedAttack] If target has [WanderingFootsteps], inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "[EnemyKill] Inflict ([Sinking] on killed target/3) [Sinking] on 2 random enemies (max 3)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Heal 10 SP\n[BeforeUse] If this unit has [NightPathfinding], activate 'Lament, Mourn, and Despair' instead\n[WhenUse] Coin Power +1 for every 6 [Sinking] on target (max 2)\nDeal +7% damage for every [Coffin] on self (max 70%)\n[WhenUse] Gain 1 [Coffin]\n[EndSkill] If this Skill attack kills the target, gain 2 [Coffin]",
+          "levelCorrection": 5,
+          "name": "Requiem",
+          "uptie": 3
+        },
+        {
+          "baseValue": 6,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 4
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1.2
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +4 [Sinking] Count",
+                "[OnSucceedAttack] If target has [WanderingFootsteps], inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Sinking]",
+                "[EnemyKill] Inflict ([Sinking] on killed target/2) [Sinking] on 2 random enemies (max 5)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WinDuel] Heal 10 SP\n[BeforeUse] If this unit has [NightPathfinding], activate 'Lament, Mourn, and Despair' instead\n[WhenUse] Coin Power +1 for every 3 [Sinking] on target (max 4)\nDeal +12% damage for every [Coffin] on self (max 120%)\n[WhenUse] Gain 1 [Coffin]\n[EndSkill] If this Skill attack kills the target, gain 2 [Coffin]",
+          "name": "Requiem",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1071004": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\n[StartBattle] If this unit does not have [NightPathfinding], gain 1 [NightPathfinding] next turn (once per turn)\n[EndBattle] If this unit has [NightPathfinding], lose [NightPathfinding]",
+          "levelCorrection": 3,
+          "name": "O Dullahan...!",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[DuelCounter]\n[BeforeUse] If this unit has [NightPathfinding] and has 15+ SP, use 'Lament, Mourn, and Despair' as Counter (once per turn)\n[StartBattle] If this unit does not have [NightPathfinding], gain 1 [NightPathfinding] next turn (once per turn)\n[WhenUse] If target has 6+ [Sinking], Coin Power +1\n[EndBattle] If this unit has [NightPathfinding], lose [NightPathfinding]",
+          "name": "O Dullahan...!",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking] and +1 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[DuelCounter]\n[BeforeUse] If this unit has [NightPathfinding] and has 15+ SP, use 'Lament, Mourn, and Despair' as Counter (once per turn)\n[StartBattle] If this unit does not have [NightPathfinding], gain 1 [NightPathfinding] next turn (once per turn)\n[WhenUse] Coin Power +1 for every 3 [Sinking] on target (max 2)\n[WinDuel] Gain [AttackUp] next turn equal to (# of Clashes/3) (max 3, once per turn)\n[EndBattle] If this unit has [NightPathfinding], lose [NightPathfinding]",
+          "name": "O Dullahan...!",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1071005": {
+      "bonusNotes": "Ignores bonuses from Coffin or Dullahan, but applies the skill's maximum damage bonus from having them",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 31,
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.21
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.7
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": -13,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Sinking] and +1 [Sinking] Count",
+                "[OnSucceedAttack] Raise the target's Stagger Threshold by 20% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add",
+                    "type": "gloom"
+                  },
+                  "type": "damage",
+                  "value": 15
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict Gloom Affinity damage equal to [Sinking] on target (max 15)",
+                "[EnemyKill] Inflict ([Sinking] on killed target/3) [Sinking] on 2 random enemies (max 4)",
+                "[EnemyKill] Heal 15 SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Lose 15 SP\n[WhenUse] Base Power +1 for every 5 [Sinking] on target (max 2)\n[WhenUse] Deal more damage the further this unit's SP value is from 45 (+0.3% damage for every missing SP, max 21%)\nDeal +7% damage for every [Coffin] on self (max 70%)\nDeal +10% damage for every [NightPathfinding] on self (max 30%)\n[WhenUse] Gain 1 [Coffin]\n[EndSkill] If this Skill attack kills the target, gain 2 [Coffin]\n[EndSkill] At less than 0 SP, heal 10 SP. When at less than 0 SP, heal more SP the further this unit's SP value is from 0 (heal 1 additional SP for every missing SP; max 25)\n[EndBattle] Lose [NightPathfinding]",
+          "levelCorrection": 5,
+          "name": "Lament, Mourn, and Despair",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 4
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.21
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.6
+            }
+          ],
+          "coinValue": -13,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Sinking] and +2 [Sinking] Count",
+                "[OnSucceedAttack] Raise the target's Stagger Threshold by 30% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add",
+                    "type": "gloom"
+                  },
+                  "type": "damage",
+                  "value": 30
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict Gloom Affinity damage equal to [Sinking] on target (max 30)",
+                "[EnemyKill] Inflict ([Sinking] on killed target/2) [Sinking] on 2 random enemies (max 8)",
+                "[EnemyKill] Heal 15 SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Lose 15 SP\n[WhenUse] Base Power +1 for every 5 [Sinking] on target (max 4)\n[WhenUse] Deal more damage the further this unit's SP value is from 45 (+0.3% damage for every missing SP, max 21%)\nDeal +10% damage for every [Coffin] on self (max 100%)\nDeal +20% damage for every [NightPathfinding] on self (max 60%)\n[WhenUse] Gain 2 [Coffin]\n[EndSkill] If this Skill attack kills the target, gain 3 [Coffin]\n[EndSkill] At less than 0 SP, heal 10 SP. When at less than 0 SP, heal more SP the further this unit's SP value is from 0 (heal 2 additional SP for every missing SP; max 50)\n[EndBattle] Lose [NightPathfinding]",
+          "name": "Lament, Mourn, and Despair",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1071006": {
+      "bonusNotes": "Ignores bonuses from Coffin or Dullahan, but applies the skill's maximum damage bonus from having them",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 31,
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.21
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.7
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": -13,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Sinking] and +1 [Sinking] Count",
+                "[OnSucceedAttack] Raise the target's Stagger Threshold by 20% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add",
+                    "type": "gloom"
+                  },
+                  "type": "damage",
+                  "value": 15
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict Gloom Affinity damage equal to [Sinking] on target (max 15)",
+                "[EnemyKill] Inflict ([Sinking] on killed target/3) [Sinking] on 2 random enemies (max 4)",
+                "[EnemyKill] Heal 15 SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] Lose 15 SP\n[WhenUse] Base Power +1 for every 5 [Sinking] on target (max 2)\n[WhenUse] Deal more damage the further this unit's SP value is from 45 (+0.3% damage for every missing SP, max 21%)\nDeal +7% damage for every [Coffin] on self (max 70%)\nDeal +10% damage for every [NightPathfinding] on self (max 30%)\n[WhenUse] Gain 1 [Coffin]\n[EndSkill] If this Skill attack kills the target, gain 2 [Coffin]\n[EndSkill] At less than 0 SP, heal 10 SP. When at less than 0 SP, heal more SP the further this unit's SP value is from 0 (heal 1 additional SP for every missing SP; max 25)\n[EndBattle] Lose [NightPathfinding]",
+          "levelCorrection": 5,
+          "name": "Lament, Mourn, and Despair",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 4
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.21
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.6
+            }
+          ],
+          "coinValue": -13,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Sinking] and +2 [Sinking] Count",
+                "[OnSucceedAttack] Raise the target's Stagger Threshold by 30% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add",
+                    "type": "gloom"
+                  },
+                  "type": "damage",
+                  "value": 30
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict Gloom Affinity damage equal to [Sinking] on target (max 30)",
+                "[EnemyKill] Inflict ([Sinking] on killed target/2) [Sinking] on 2 random enemies (max 8)",
+                "[EnemyKill] Heal 15 SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Lose 15 SP\n[WhenUse] Base Power +1 for every 5 [Sinking] on target (max 4)\n[WhenUse] Deal more damage the further this unit's SP value is from 45 (+0.3% damage for every missing SP, max 21%)\nDeal +10% damage for every [Coffin] on self (max 100%)\nDeal +20% damage for every [NightPathfinding] on self (max 60%)\n[WhenUse] Gain 2 [Coffin]\n[EndSkill] If this Skill attack kills the target, gain 3 [Coffin]\n[EndSkill] At less than 0 SP, heal 10 SP. When at less than 0 SP, heal more SP the further this unit's SP value is from 0 (heal 2 additional SP for every missing SP; max 50)\n[EndBattle] Lose [NightPathfinding]",
+          "name": "Lament, Mourn, and Despair",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1071021"
+      ],
+      "uptie": 3
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1090601"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Gains {status:Aggro} from her skills. Gains shield based on {status:Breath} Count.",
+      "S3 inflicts {status:Vulnerable}."
+    ]
+  },
+  "passiveData": {
+    "1090601": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "At the start of the combat phase, gain 2 Shield per 1 [Breath] Count. (Max 20)",
+      "name": "Defensive Breathing"
+    },
+    "1090621": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "At the start of the combat phase, 1 ally with the lowest HP percentage gains 1 Shield per 1 [Breath] Count next turn. (Max 10)",
+      "name": "Designated Protection"
+    }
+  },
+  "skills": {
+    "1090601": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -2,
+          "name": "Careful Obstruction",
+          "uptie": 1
+        },
+        {
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Careful Obstruction",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Careful Obstruction",
+          "uptie": 3
+        },
+        {
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +2 [Aggro] to this Skill Slot next turn\n[DefeatDuel] Gain +2 [Breath] Count",
+          "name": "Careful Obstruction",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1090602": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 15+ Shield, gain +2 [Breath] Count",
+          "levelCorrection": -2,
+          "name": "Focused Defense",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 15+ Shield, gain +2 [Breath] Count",
+          "name": "Focused Defense",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "[WhenUse] At 15+ Shield, gain +2 [Breath] Count",
+          "name": "Focused Defense",
+          "uptie": 3
+        },
+        {
+          "baseValue": 6,
+          "desc": "[WhenUse] At 15+ Shield, gain +2 [Breath] Count\n[WhenUse] Gain +4 [Aggro] to this Skill Slot next turn\n[WhenUse] Gain +2 [Breath] Count",
+          "name": "Focused Defense",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1090603": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Inflict 1 [Vulnerable] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At 15+ shield, Coin Power +1",
+          "levelCorrection": -2,
+          "name": "Subdue Threat",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "desc": "At 15+ Shield, Coin Power +2",
+          "name": "Subdue Threat",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1090604": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Guard",
+          "uptie": 1
+        },
+        {
+          "affinity": "wrath",
+          "baseValue": 15,
+          "desc": "",
+          "name": "Guard",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1090621"
+      ],
+      "uptie": 3
+    }
+  ]
+}

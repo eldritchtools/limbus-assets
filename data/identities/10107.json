@@ -1,0 +1,368 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1010701"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "S2 reuses the 2nd coin on crit up to 3 times (5 coin skill at max reuses).",
+      "Low {status:Breath} generation, needs external support.",
+      "Passive lets him inflict a lot of {status:Laceration} with his skills if he crits a lot."
+    ]
+  },
+  "passiveData": {
+    "1010701": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "On Crit, inflict 2 more [Laceration] Potency with a Skill (6 times per turn)",
+      "name": "The First Mate's Harpoon"
+    },
+    "1010721": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "On Crit, 1 ally with the most [Breath] inflicts 2 additional [Laceration] Potency with a Skill (6 times per turn)",
+      "name": "The First Mate's Acumen"
+    }
+  },
+  "skills": {
+    "1010701": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "levelCorrection": 2,
+          "name": "Impale",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "name": "Impale",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "name": "Impale",
+          "uptie": 3
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "name": "Impale",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1010702": {
+      "bonusNotes": "Max coin reuses if crit is applied",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +2 [Breath] Count\nAt 5+ [Breath], Clash Power +2",
+          "levelCorrection": 2,
+          "name": "Relentless Stabbing",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "crit"
+                  },
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[CriticalOnSucceedAttack] Reuse this Coin (1 time max)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +2 [Breath] Count\nAt 5+ [Breath], Clash Power +2",
+          "name": "Relentless Stabbing",
+          "uptie": 2
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "crit"
+                  },
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[CriticalOnSucceedAttack] Reuse this Coin (1 time max)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +2 [Breath] Count\nAt 5+ [Breath], Clash Power +2",
+          "name": "Relentless Stabbing",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 3
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "crit"
+                  },
+                  "type": "reuse",
+                  "value": 3
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[CriticalOnSucceedAttack] Reuse this Coin (3 times max)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +2 [Breath] Count\nAt 5+ [Breath], Clash Power +3",
+          "name": "Relentless Stabbing",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1010703": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain +2 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]",
+                "[CriticalOnSucceedAttack] Inflict +4 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 5 [Breath]",
+          "levelCorrection": 2,
+          "name": "Ambush",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]",
+                "[CriticalOnSucceedAttack] Inflict +6 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 5 [Breath]\nAt 7+ [Breath], Coin Power +1",
+          "name": "Ambush",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1010704": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "",
+          "levelCorrection": -3,
+          "name": "Evade",
+          "uptie": 1
+        },
+        {
+          "affinity": "pride",
+          "baseValue": 3,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Evade",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1010721"
+      ],
+      "uptie": 3
+    }
+  ]
+}

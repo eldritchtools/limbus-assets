@@ -1,0 +1,258 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1090301"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Inflicts various debuffs on her targets. {status:Paralysis} with her S1 and S3. {status:Disarming} with her S2 and S3. {status:DefenseDown} with her S3."
+    ]
+  },
+  "passiveData": {
+    "1090301": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "Deal +10% damage to enemies that used defense skills this turn.",
+      "name": "Breach Defense"
+    },
+    "1090321": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the most HP deals +20% damage to enemies that used defense skills this turn.",
+      "name": "Breaching"
+    }
+  },
+  "skills": {
+    "1090301": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Paralysis]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "Bludgeon",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 3 [Paralysis]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Bludgeon",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Bludgeon",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "desc": "If the next skill on the Dashboard does Blunt DMG, this skill's Coin Power +2",
+          "name": "Bludgeon",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1090302": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 1,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Disarming]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "Thrust",
+          "uptie": 1
+        },
+        {
+          "coinValue": 1,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Disarming]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Thrust",
+          "uptie": 2
+        },
+        {
+          "baseValue": 6,
+          "desc": "",
+          "name": "Thrust",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "desc": "If the next skill on the Dashboard does Blunt DMG, this skill's Coin Power +2",
+          "name": "Thrust",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1090303": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 4 [Disarming]",
+                "[OnSucceedAttack] Inflict 4 [DefenseDown]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 3 [Paralysis]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target took no damage from attacks this turn, Coin Power +2",
+          "levelCorrection": 5,
+          "name": "Suppress",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            }
+          ],
+          "desc": "If target took no damage from attacks this turn, Coin Power +3",
+          "name": "Suppress",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1090304": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": -2,
+          "name": "Guard",
+          "uptie": 1
+        },
+        {
+          "affinity": "envy",
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Guard",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1090321"
+      ],
+      "uptie": 3
+    }
+  ]
+}

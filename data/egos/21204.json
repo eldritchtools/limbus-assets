@@ -1,0 +1,123 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 20,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [EmittedCurrent]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[BeforeAttack] Gain +5 [Charge] Count",
+          "levelCorrection": 0,
+          "name": "AEDD",
+          "uptie": 1
+        },
+        {
+          "baseValue": 22,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 10 [EmittedCurrent]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] Gain +7 [Charge] Count",
+          "name": "AEDD",
+          "uptie": 3
+        },
+        {
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 15 [EmittedCurrent]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] Gain +10 [Charge] Count",
+          "name": "AEDD",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 22,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [EmittedCurrent] and +5 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nPrioritizes units with [Charge]\n[BeforeAttack] Gain +5 [Charge] Count",
+          "levelCorrection": 0,
+          "name": "AEDD",
+          "uptie": 1
+        },
+        {
+          "baseValue": 24,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 10 [EmittedCurrent] and +5 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nPrioritizes units with [Charge]\n[BeforeAttack] Gain +7 [Charge] Count",
+          "name": "AEDD",
+          "uptie": 3
+        },
+        {
+          "atkWeight": 3,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 15 [EmittedCurrent] and +7 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nPrioritizes units with [Charge]\n[BeforeAttack] Gain +10 [Charge] Count",
+          "name": "AEDD",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "On hit with a Heads coin, spend 2 [Charge] Count to give +1 [Charge] Count to the [Charge]-possessing ally with the lowest [Charge] Count",
+      "name": "Alternating Discharge"
+    }
+  ]
+}

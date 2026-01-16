@@ -1,0 +1,305 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1100601"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Gains {status:Talisman} with his skills. At 5 stacks, his S3 can pass his stacks to his target.",
+      "Assuming his passive isn't activated, using his S2 when the target is at 0 or low {status:Burst} count is enough to give him exactly 5 {status:Talisman} which should let him use his S3's effect on the following turn."
+    ],
+    "other": [
+      "{status:Talisman} causes attacks to inflict half of the target's current {status:Burst} stack as additional Potency at the cost of {status:Burst} Count, but it also causes hits received to inflict the same {status:Burst} on self at the cost of a stack of {status:Talisman} instead of {status:Burst} Count. At 6+ stacks, it expires at the end of the turn and deals damage equal to the stack."
+    ]
+  },
+  "passiveData": {
+    "1100601": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "On hit, if the target had [Burst], gain 1 [Talisman].",
+      "name": "Unfixing Talismans"
+    },
+    "1100621": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the highest current HP inflicts +1 more [Burst] Potency with Attack and Counter Skills",
+      "name": "Wishing Talisman"
+    }
+  },
+  "skills": {
+    "1100601": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Magnify Wound",
+          "uptie": 1
+        },
+        {
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]",
+                "[OnSucceedAttackHead] If target has 5+ [Burst], gain 1 [Talisman]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Magnify Wound",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "",
+          "name": "Magnify Wound",
+          "uptie": 3
+        },
+        {
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]",
+                "[OnSucceedAttack] If target has 5+ [Burst], gain 1 [Talisman]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Magnify Wound",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1100602": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 1 [Talisman]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 1 [Talisman]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Talisman]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Proliferating Talismans",
+          "uptie": 1
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Talisman]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Talisman]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Talisman]",
+                "[OnSucceedAttack] If target has 3+ [Burst], gain 1 [Talisman]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Proliferating Talismans",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Proliferating Talismans",
+          "uptie": 3
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Talisman]",
+                "[OnSucceedAttack] If target has [Burst], gain 1 [Talisman]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Talisman]",
+                "[OnSucceedAttack] If target has [Burst], gain 1 [Talisman]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Talisman]",
+                "[OnSucceedAttack] If target has [Burst], gain 1 [Talisman]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Proliferating Talismans",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1100603": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Spend 5 [Talisman] on self; Give 5 [Talisman]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has [Talisman], inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Rupturing Talisman",
+          "uptie": 3
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Spend 5 [Talisman] on self; Give 5 [Talisman]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has [Talisman], inflict +3 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Rupturing Talisman",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1100604": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[WhenUse] Gain 1 [Talisman]",
+          "levelCorrection": 1,
+          "name": "Guard",
+          "uptie": 1
+        },
+        {
+          "affinity": "gluttony",
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 1 [Talisman]",
+          "name": "Guard",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1100621"
+      ],
+      "uptie": 3
+    }
+  ]
+}

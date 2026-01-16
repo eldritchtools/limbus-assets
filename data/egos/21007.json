@@ -1,0 +1,171 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Curse]\n- Inflict 1 additional [Curse] for every 3 negative effect on target that aren't [Curse] or [NailPersonality] (max 2)",
+                "[OnSucceedAttack] Inflict 2 [NailPersonality]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[EndSkill] If target has [Curse], immediately activate it twice and reduce it by 2",
+          "levelCorrection": 0,
+          "name": "Hex Nail",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Curse]\n- Inflict 1 additional [Curse] for every 3 negative effect on target that aren't [Curse] or [NailPersonality] (max 2)",
+                "[OnSucceedAttack] Inflict 3 [NailPersonality]",
+                "[OnSucceedAttackHead] Inflict 2 [Binding] next turn (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] At 4+ Envy Reson. including this Skill, Atk Weight +1\n[EndSkill] If target has [Curse], immediately activate it twice and reduce it by 2",
+          "name": "Hex Nail",
+          "uptie": 3
+        },
+        {
+          "baseValue": 9,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Curse]\n- Inflict 1 additional [Curse] for every 2 negative effect on target that aren't [Curse] or [NailPersonality] (max 2)",
+                "[OnSucceedAttack] Inflict 3 [NailPersonality]",
+                "[OnSucceedAttack] At 4+ [Curse], inflict 1 [ParryingResultDown] (once per turn)",
+                "[OnSucceedAttackHead] Inflict 2 [Binding] next turn (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] For every 3 Envy Reson. including this Skill, Atk Weight +1 (max 2)\n[EndSkill] If target has [Curse], immediately activate it twice and reduce it by 2",
+          "name": "Hex Nail",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 3,
+          "baseValue": 22,
+          "coinValue": -6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Curse]",
+                "[OnSucceedAttack] Inflict 2 [NailPersonality]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly\n[EndSkill] If target has [Curse], immediately activate it twice and reduce it by 2",
+          "levelCorrection": 2,
+          "name": "Hex Nail",
+          "uptie": 1
+        },
+        {
+          "coinValue": -6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Curse]",
+                "[OnSucceedAttack] Inflict 3 [NailPersonality]",
+                "[OnSucceedAttackTail] Inflict 2 [Binding] next turn (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\n[EndSkill] If target has [Curse], immediately activate it twice and reduce it by 2",
+          "name": "Hex Nail",
+          "uptie": 3
+        },
+        {
+          "baseValue": 25,
+          "coinValue": -6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Curse]",
+                "[OnSucceedAttack] Inflict 3 [NailPersonality]",
+                "[OnSucceedAttack] At 4+ Envy Reson. including this Skill, inflict 1 [ParryingResultDown] (once per turn)",
+                "[OnSucceedAttackTail] Inflict 2 [Binding] next turn (once per turn)",
+                "[OnSucceedAttackTail] Inflict 2 [DefenseDown] next turn (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\n[EndSkill] If target has [Curse], immediately activate it twice and reduce it by 2",
+          "name": "Hex Nail",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "Combat Start: if this unit has a negative effect, gain 1 [ParryingResultUp] and 1 [Endurance]\n- Gain 1 [Protection] for every 3 negative effect on self (max 2)",
+      "name": "Grimy Hide"
+    }
+  ]
+}

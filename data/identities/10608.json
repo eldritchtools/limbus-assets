@@ -1,0 +1,370 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1060801"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1060811"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "{status:Discard}s skills to set his {status:KnowledgeExplored} to the rank of the discarded skill. S1 gains Clash Power and Coin Reuse, and S2 and S3 gain Coin Power depending on the value."
+    ],
+    "other": [
+      "You can use the discard trick if you want him to preserve his {status:KnowledgeExplored} level. Generate his defense skill, then use the skill that wasn't replaced. This prevents him from discarding any skill.",
+      "His passive gives him {status:AttackDmgUp} when discarding skills and when an ally discards a skill of a rank higher than his {status:KnowledgeExplored}, he gains +1 stack."
+    ]
+  },
+  "passiveData": {
+    "1060801": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "When Discarding a Skill, gain [AttackDmgUp] equal to the Discarded Skill's Rank. (Max 3 per turn)",
+      "name": "Peering Through a Key"
+    },
+    "1060811": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "When Discarding a Skill, gain [AttackDmgUp] equal to the Discarded Skill Rank. (Max 3 per turn)\nWhen other allies Discard a Skill, and if the ally's Discarded Skill Rank is higher than this unit's [KnowledgeExplored] value, this unit gains +1 [KnowledgeExplored].",
+      "name": "Peering Through a Key"
+    },
+    "1060821": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "After Attack: If the target is in a staggered or defeated state by an attack from 1 ally with the least SP, the ally heals 7 SP.",
+      "name": "Enlightenment"
+    }
+  },
+  "skills": {
+    "1060801": {
+      "bonusNotes": "Assumes max insight",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict +1 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots",
+          "levelCorrection": 2,
+          "name": "Expend Knowledge",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttackHead] Inflict +1 [Sinking] Count",
+                "[OnSucceedAttack] At 3+ [KnowledgeExplored], reuse Coin once"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots\n[WhenUse] At 3+ [KnowledgeExplored], Clash Power +1",
+          "name": "Expend Knowledge",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots\n[WhenUse] At 3+ [KnowledgeExplored], Clash Power +1",
+          "name": "Expend Knowledge",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 2
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttackHead] Inflict +1 [Sinking] Count",
+                "[OnSucceedAttack] Reuse Coin ([KnowledgeExplored] - 1) times"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots\n[WhenUse] Clash Power +([KnowledgeExplored] - 1)",
+          "name": "Expend Knowledge",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1060802": {
+      "bonusNotes": "Assumes max insight",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 3 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Randomly Discard 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots",
+          "levelCorrection": 2,
+          "name": "Unveil",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Randomly Discard 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots\n[WhenUse] At 3+ [KnowledgeExplored], Coin Power +1",
+          "name": "Unveil",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "[WhenUse] Randomly Discard 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots\n[WhenUse] At 3+ [KnowledgeExplored], Coin Power +1",
+          "name": "Unveil",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Randomly Discard 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots\n[WhenUse] Coin Power +([KnowledgeExplored] - 1)",
+          "name": "Unveil",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1060803": {
+      "bonusNotes": "Assumes max insight",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count",
+                "[EndSkill] If target is Staggered or defeated, heal 10 SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 2+ [KnowledgeExplored], gain Coin Power equal to [KnowledgeExplored]\nDeal +1.5% damage per [Sinking] on target (Max 15%)",
+          "levelCorrection": 4,
+          "name": "Cyclical Knowledge",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +4 [Sinking] Count",
+                "[EndSkill] If target is Staggered or defeated, heal 10 SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 2+ [KnowledgeExplored], gain Coin Power equal to [KnowledgeExplored]\nDeal +3% damage per [Sinking] on target (Max 30%)",
+          "name": "Cyclical Knowledge",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1060804": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[WhenUse] Randomly Discard 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots",
+          "levelCorrection": -3,
+          "name": "Guiding Steps",
+          "uptie": 1
+        },
+        {
+          "affinity": "gloom",
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Randomly Discard 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots",
+          "name": "Guiding Steps",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1060821"
+      ],
+      "uptie": 3
+    }
+  ]
+}

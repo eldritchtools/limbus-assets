@@ -1,0 +1,244 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1110301"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Provides buffs and debuffs. S1 gives an ally {status:Protection}. S2 gives an ally {status:Enhancement} and {status:AttackDmgUp}. S3 inflicts {status:Reduction}.",
+      "Her passive gives herself and adjacent allies {status:Agility}.",
+      "Her support passive is alright if you don't have anything else to use."
+    ]
+  },
+  "passiveData": {
+    "1110301": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 2
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "Next turn, apply 2 Haste to self and allies who are adjacent to this unit on the Dashboard this turn.",
+      "name": "Morale Boost"
+    },
+    "1110321": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the most HP randomly gains 1 [Enhancement], 1 Defense Power Up, or 1 [Protection] at the start of the combat phase.",
+      "name": "Valor"
+    }
+  },
+  "skills": {
+    "1110301": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Apply 1 [Protection] to the ally with the slowest Speed"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Order",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Apply 2 [Protection] to the ally with the slowest Speed"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Order",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Order",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 2
+            }
+          ],
+          "desc": "If target has 5+ [Sinking], Coin Power +2",
+          "name": "Order",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1110302": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Apply 1 [AttackDmgUp] to the ally with the slowest Speed"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Onslaught Command",
+          "uptie": 1
+        },
+        {
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Apply 2 [AttackDmgUp] to the ally with the slowest Speed"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Apply 1 [Enhancement] to the ally with the slowest Speed",
+          "name": "Onslaught Command",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "[WhenUse] Apply 1 [Enhancement] to the ally with the slowest Speed",
+          "name": "Onslaught Command",
+          "uptie": 3
+        },
+        {
+          "baseValue": 6,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Apply 2 [AttackDmgUp] to the ally with the slowest Speed"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Apply 1 [Enhancement] to the ally with the slowest Speed",
+          "name": "Onslaught Command",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1110303": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 16,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Sinking]",
+                "[OnSucceedAttack] Inflict 2 [Reduction]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Focus",
+          "uptie": 3
+        },
+        {
+          "coinValue": 16,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Sinking]",
+                "[OnSucceedAttack] Inflict 2 [Reduction]",
+                "[OnSucceedAttackHead] Inflict 4 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Focus",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1110304": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 9,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Guard",
+          "uptie": 1
+        },
+        {
+          "affinity": "sloth",
+          "desc": "",
+          "name": "Guard",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1110321"
+      ],
+      "uptie": 3
+    }
+  ]
+}

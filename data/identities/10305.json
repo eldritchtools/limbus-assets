@@ -1,0 +1,322 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1030501"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "S3 inflicts {status:DuelDeclaration_DonQuixote} which increases her own Clash Power and gives her {status:Agility} on hit against that target. It can only be on one enemy at a time, so using her S3 again on a different target will cause the first instance to expire.",
+      "S1 and S2 gives her {status:Agility} and inflicts {status:Binding}. Her S1 and S3 gain Coin Power at 7+ and 10+ speed. Her passive gives her more damage if the entire party is faster than the entire enemy party."
+    ]
+  },
+  "passiveData": {
+    "1030501": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "If Speed of all allies is higher than Speed of all enemies, this unit deals more damage based on the Speed difference between it and the slowest enemy. (+6% per 1 point of difference, Max 30%)",
+      "name": "A Noble Duel"
+    },
+    "1030521": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "If Speed of all allies is higher than Speed of all enemies, the fastest ally deals more damage based on the Speed difference between it and the slowest enemy. (+3% per 1 point of difference, Max 15%)",
+      "name": "Dueling Request"
+    }
+  },
+  "skills": {
+    "1030501": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[WinDuelAttackHead] Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At 7+ Speed, Coin Power +1",
+          "levelCorrection": 4,
+          "name": "Remise",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[WinDuelAttackHead] Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 7+ Speed, Coin Power +1\n[WinDuel] Gain 1 [Agility] next turn",
+          "name": "Remise",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "At 7+ Speed, Coin Power +1\n[WinDuel] Gain 1 [Agility] next turn",
+          "name": "Remise",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[WinDuelAttack] Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 7+ Speed, Coin Power +2\n[WinDuel] Gain 1 [Agility] next turn",
+          "name": "Remise",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1030502": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 1 [Agility] next turn",
+          "levelCorrection": 4,
+          "name": "Flèche",
+          "uptie": 1
+        },
+        {
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 2 [Agility] next turn",
+          "name": "Flèche",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "[WhenUse] Gain 2 [Agility] next turn",
+          "name": "Flèche",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 2 [Agility] next turn\n[WinDuel] Deal more damage based on Clash count (+5% per Clash count, Max 50%)",
+          "name": "Flèche",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1030503": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [DuelDeclaration_DonQuixote]"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At 10+ Speed, Coin Power +2\n[WinDuel] Deal more damage based on Clash count (+5% per Clash count, Max 50%)",
+          "levelCorrection": 4,
+          "name": "Salut!",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [DuelDeclaration_DonQuixote]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[EnemyKill] Heal 15 SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 10+ Speed, Coin Power +3\n[WinDuel] Deal more damage based on Clash count (+10% per Clash count, Max 100%)",
+          "name": "Salut!",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1030504": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[OnSucceedEvade] Target loses 3 SP",
+          "levelCorrection": 0,
+          "name": "Défensive",
+          "uptie": 1
+        },
+        {
+          "affinity": "pride",
+          "desc": "[OnSucceedEvade] Target loses 3 SP",
+          "name": "Défensive",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1030521"
+      ],
+      "uptie": 3
+    }
+  ]
+}

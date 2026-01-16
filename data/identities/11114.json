@@ -1,0 +1,443 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1111402"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1111402",
+        "1111401"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1111412",
+        "1111401"
+      ],
+      "uptie": 3
+    }
+  ],
+  "notes": {
+    "main": [
+      "Gains {status:TheUdjatOutis} with her passive on 3x Gloom Res or if an enemy has a panic changing debuff. This is basically a constant in a Sinking team. The buff gives her more damage, {status:Protection}, speed, and better clashing against enemies. It also lets her inflict {status:SheutFracture} on hit.",
+      "Her S3 inflicts {status:BlueSand} which is a panic changing debuff that reduces clash power and speed and inflicts {status:Sinking} Count when the enemy loses the clash. It also inflicts {status:AzureResistDown} and {status:AzureTakeDamageUp}."
+    ],
+    "other": [
+      "Her S3 consumes 4 {status:LCA_Bullet} inflicting more damage and additional {status:SheutFracture} on hit if she has {status:TheUdjatOutis}. She has 16 ammo and reloads automatically up to 5 times, making it functionally infinite in most cases. You'll need to use her S3 24 times to run out."
+    ]
+  },
+  "passiveData": {
+    "1111401": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "Deal +5% damage for every [Protection] on self (max 15%)\n\nCombat Start: gain 2 [TheUdjatOutis]",
+      "name": "Vanguard Team"
+    },
+    "1111402": {
+      "desc": "Turn Start: If an enemy has any of the Panic type changing effects, gain 1 [TheUdjatOutis]\n\nIf this unit has [TheUdjatOutis], inflict 1 [SheutFracture] On Hit with a Base Attack Skill (15 per turn)\n\n[Protection] Stack gained from this unit's Base Skills and [TheUdjatOutis] effect is capped at 5 per turn",
+      "name": "The Scepter of Horus - Replica"
+    },
+    "1111412": {
+      "desc": "Turn Start: If an enemy has any of the Panic type changing effects, gain 1 [TheUdjatOutis]\n\nIf this unit has [TheUdjatOutis], inflict 1 [SheutFracture] On Hit with a Base Attack Skill (15 per turn)\n- If [LCA_Bullet] was spent, inflict additional [SheutFracture] per [LCA_Bullet] spent\n\n[Protection] Stack gained from this unit's Base Skills and [TheUdjatOutis] effect is capped at 5 per turn",
+      "name": "The Scepter of Horus - Replica"
+    },
+    "1111421": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "Combat Start: apply 1 [Protection] next turn to 1 ally with the lowest HP percentage",
+      "name": "Eagle Eye"
+    }
+  },
+  "skills": {
+    "1111401": {
+      "bonusNotes": "Her passive will give her better clashing than what's listed",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Sinking] Count",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn",
+          "levelCorrection": 1,
+          "name": "Khopesh Swordplay",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "desc": "[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn\n[WhenUse] Coin Power +1 for every 6 ([Sinking] + [Vibration]) on target (max 2)",
+          "name": "Khopesh Swordplay",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Sinking] Count",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn\n[WhenUse] Coin Power +1 for every 6 ([Sinking] + [Vibration]) on target (max 2)",
+          "name": "Khopesh Swordplay",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Sinking] Count",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Protection] next turn (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn\n[WhenUse] Coin Power +1 for every 6 ([Sinking] + [Vibration]) on target (max 2)\n[WhenUse] If this unit has [TheUdjatOutis], Clash Power +1\n[WinDuel] Inflict 2 [SheutFracture]",
+          "name": "Khopesh Swordplay",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1111402": {
+      "bonusNotes": "Her passive will give her better clashing than what's listed",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +5 [Aggro] to this Skill Slot next turn",
+          "levelCorrection": 2,
+          "name": "Mirage Incision",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "desc": "[WhenUse] Gain +5 [Aggro] to this Skill Slot next turn\n[WhenUse] Coin Power +1 for every 6 ([Sinking] + [Vibration]) on target (max 2)",
+          "name": "Mirage Incision",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +5 [Aggro] to this Skill Slot next turn\n[WhenUse] Coin Power +1 for every 6 ([Sinking] + [Vibration]) on target (max 2)",
+          "name": "Mirage Incision",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "type": "clash",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]",
+                "[OnSucceedAttack] Gain 1 [Protection] next turn (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +5 [Aggro] to this Skill Slot next turn\n[WhenUse] Coin Power +1 for every 6 ([Sinking] + [Vibration]) on target (max 2)\n[WhenUse] If this unit has [TheUdjatOutis], Clash Power +2 and deal +30% damage\n[WinDuel] Inflict 2 [SheutFracture]",
+          "name": "Mirage Incision",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1111403": {
+      "bonusNotes": "Her passive will give her better clashing than what's listed",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 4
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "Spend 2 [LCA_Bullet]",
+                "[OnSucceedAttack] Inflict +2 [Sinking] Count",
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "[OnSucceedAttack] Inflict 3 [BlueSand] next turn",
+                "[OnSucceedAttack] Inflict 1 [AzureResistDown] (once per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 2 [LCA_Bullet]",
+                "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +8 [Aggro] to this Skill Slot next turn\n[WhenUse] Base Power +1 for every [LCA_Bullet] about to be spent by this Skill\n[EndSkill] Gain 2 [Protection] next turn (once per turn)\n[EndSkill] At 2 or fewer [LCA_Bullet], [FullReload] (5 times per Encounter)",
+          "levelCorrection": 3,
+          "name": "The Vanguard will See it Done",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "base",
+              "value": 4
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.6
+                }
+              ],
+              "descs": [
+                "Spend 2 [LCA_Bullet]",
+                "Deal +([LCA_Bullet] spent x 30)% damage",
+                "[OnSucceedAttack] Inflict +2 [Sinking] Count",
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "[OnSucceedAttack] Inflict 3 [BlueSand] next turn",
+                "[OnSucceedAttack] Inflict 1 [AzureResistDown] (once per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.6
+                }
+              ],
+              "descs": [
+                "Spend 2 [LCA_Bullet]",
+                "Deal +([LCA_Bullet] spent x 30)% damage",
+                "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] If target has SP, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1\nIf target has less than 0 SP, inflict 1 [AzureTakeDamageUp] (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit has [TheUdjatOutis], deal +50% damage\n[WhenUse] Gain +8 [Aggro] to this Skill Slot next turn\n[WhenUse] At 6+ ([Sinking] + [Vibration]) on target, Coin Power +1\n[WhenUse] Base Power +1 for every [LCA_Bullet] about to be spent by this Skill\n[EndSkill] Gain 2 [Protection] next turn (once per turn)\n[EndSkill] At 2 or fewer [LCA_Bullet], [FullReload] (5 times per Encounter)",
+          "name": "The Vanguard will See it Done",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1111404": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 12,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "When hit while this unit has Shield, inflict 3 [Sinking] against the attacker (3 times per turn)\n[WhenUse] For every [Protection] on self, gain Shield equal to 5% of this unit's max HP (max 15%; once per turn)",
+          "levelCorrection": 5,
+          "name": "Composure",
+          "uptie": 1
+        },
+        {
+          "affinity": "gloom",
+          "baseValue": 15,
+          "desc": "When hit while this unit has Shield, inflict 3 [Sinking] against the attacker (3 times per turn)\n[WhenUse] If this unit has [TheUdjatOutis], gain 1 [Protection] (once per turn)\n[WhenUse] For every [Protection] on self, gain Shield equal to 5% of this unit's max HP (max 15%; once per turn)",
+          "name": "Composure",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1111421"
+      ],
+      "uptie": 3
+    }
+  ]
+}

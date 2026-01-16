@@ -1,0 +1,136 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 20,
+          "coinValue": 11,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]",
+                "[EndSkill] Apply 1 'Damage Up' for the Affinity with the highest Resonance count to 2 allies with the least SP",
+                "[EndSkill] Heal 20 SP for 2 allies with the least SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -2,
+          "name": "Holiday",
+          "uptie": 1
+        },
+        {
+          "coinValue": 11,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]",
+                "[EndSkill] Apply 1 'Damage Up' for the Affinity with the highest Resonance count to 3 allies with the least SP",
+                "[EndSkill] Heal 20 SP for 3 allies with the least SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Holiday",
+          "uptie": 3
+        },
+        {
+          "coinValue": 11,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]",
+                "[EndSkill] Apply 1 'Damage Up' for the Affinity with the highest Resonance count to 4 allies with the least SP",
+                "[EndSkill] Heal 20 SP for 4 allies with the least SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Holiday",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 34,
+          "coinValue": -15,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Target loses 10 SP",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]",
+                "[OnSucceedAttackTail] Inflict 1 Fragility to the Affinity with the highest Resonance count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets Randomly\n[BeforeAttack] This unit loses 10% HP",
+          "levelCorrection": 3,
+          "name": "Holiday",
+          "uptie": 1
+        },
+        {
+          "atkWeight": 4,
+          "coinValue": -15,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Target loses 10 SP",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]",
+                "[OnSucceedAttackTail] Inflict 2 Fragility for the Affinity with the highest Resonance count",
+                "[EndSkillTail] Gain 1 'Damage Up' to the Affinity with the highest Resonance count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets Randomly\n[BeforeAttack] This unit loses 10% HP",
+          "name": "Holiday",
+          "uptie": 3
+        },
+        {
+          "atkWeight": 5,
+          "coinValue": -15,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Target loses 10 SP",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]",
+                "[OnSucceedAttack] Inflict 2 Fragility for the Affinity with the highest Resonance count",
+                "[EndSkillTail] Gain 1 'Damage Up' to the Affinity with the highest Resonance count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets Randomly\n[BeforeAttack] This unit loses 10% HP",
+          "name": "Holiday",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "When applying positive effects to other allies with Skill effects or Coin effects, randomly select one of the following effects: [Combustion], [Laceration], [Vibration], [Burst], or [Sinking].\nThen, inflict 1 Potency of the selected effect to 1 random enemy. (Activates 5 times per Turn. Can be applied up to 5 times per enemy. For abnormalities, applied to a random Part.)",
+      "name": "Fair Presents"
+    }
+  ]
+}

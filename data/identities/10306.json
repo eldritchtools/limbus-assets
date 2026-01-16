@@ -1,0 +1,475 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1030601"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1030611"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Counter turns into a free S3 with 6+ {keyword:Envy} A-Reson.",
+      "S2 and S3 gain Offense Level by A-Reson, double when it's {keyword:Envy}."
+    ],
+    "other": [
+      "Every turn, her passive inflicts {status:RetaliationBook} on the enemy that dealt the most damage to allies on the previous turn, giving her bonus Coin Power against that enemy.",
+      "Her passive also gives her {status:VioletDamageUp} for every 3 hits that enemies deal against allies."
+    ]
+  },
+  "passiveData": {
+    "1030601": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "- Gain 1 [VioletDamageUp] next turn every time the enemies strike an ally(including this unit) 3 times. (Max 5)\n- Apply [RetaliationBook] to the unit that dealt the most Skill damage to an ally.\n- If the main target has [RetaliationBook], Final Power +1",
+      "name": "Vengeance Tattoo"
+    },
+    "1030611": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "- Gain 1 [VioletDamageUp] next turn every time the enemies strike an ally(including this unit) 3 times. (Max 5)\n- Apply [RetaliationBook] to the unit that dealt the most Skill damage to an ally.\n- If the main target has [RetaliationBook], Coin Power +1",
+      "name": "Vengeance Tattoo"
+    },
+    "1030621": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the lowest Max HP gains 1 Blunt DMG Up next turn every time the enemies strike an ally(not including this unit) 6 times. (Max 2)",
+      "name": "Favoritism"
+    }
+  },
+  "skills": {
+    "1030601": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Checking the Book",
+          "uptie": 1
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Heal 5 SP on self",
+          "name": "Checking the Book",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "[WhenUse] Heal 5 SP on self",
+          "name": "Checking the Book",
+          "uptie": 3
+        }
+      ],
+      "tier": 1
+    },
+    "1030602": {
+      "bonusNotes": "Applies max possible offense level bonus (even if unrealistic)",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "skilllevel",
+              "value": 4
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[OnSucceedAttackHead] Inflict 1 [AttackDmgDown]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] This Skill gains 1 Offense Level by (highest A-Reson./3) (Max 4)",
+          "levelCorrection": 3,
+          "name": "Proof of Loyalty",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "skilllevel",
+              "value": 6
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[OnSucceedAttackHead] Inflict 1 [AttackDmgDown]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] This Skill gains 1 Offense Level by (highest A-Reson./3) (Max 4)\nIf the highest A-Reson is Envy A-Reson, Gain 50% additional Offense Level to the Offense Level gained by the above effect (rounded down)",
+          "name": "Proof of Loyalty",
+          "uptie": 2
+        },
+        {
+          "bonuses": [
+            {
+              "type": "skilllevel",
+              "value": 6
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[OnSucceedAttackHead] Inflict 1 [AttackDmgDown]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] This Skill gains 1 Offense Level by (highest A-Reson./3) (Max 4)\nIf the highest A-Reson is Envy A-Reson, Gain 50% additional Offense Level to the Offense Level gained by the above effect (rounded down)",
+          "name": "Proof of Loyalty",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "skilllevel",
+              "value": 9
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[OnSucceedAttack] Inflict 1 [AttackDmgDown]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] This Skill gains 1 Offense Level by (highest A-Reson./2) (Max 6)\nIf the highest A-Reson is Envy A-Reson., boost the Offense Level gained by the above effect by 50% (rounded down)\nGain double the Offense Level from the above effects in Focused Encounters with 7 or fewer Participant Limits.",
+          "name": "Proof of Loyalty",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1030603": {
+      "bonusNotes": "Applies max possible offense level bonus (even if unrealistic)",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "skilllevel",
+              "value": 6
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[EndSkill] If target is defeated, 1 ally with the least SP heals 6 SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] This Skill gains 1 Offense Level by (highest A-Reson./3) (Max 4)\nIf the highest A-Reson is Envy A-Reson, Gain 50% additional 'Offense Level' to the 'Offense Level' gained by the above effect (rounded down)",
+          "levelCorrection": 3,
+          "name": "A Just Vengeance",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "skilllevel",
+              "value": 9
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[EndSkill] If target is defeated, 1 ally with the least SP heals 6 SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] This Skill gains 1 Offense Level by (highest A-Reson./2) (Max 6)\nIf the highest A-Reson is Envy A-Reson., boost the Offense Level gained by the above effect by 50% (rounded down)\nGain double the Offense Level from the above effects in Focused Encounters with 7 or fewer Participant Limits.",
+          "name": "A Just Vengeance",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1030604": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by 3"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by 3"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "Multifold Retribution",
+          "uptie": 1
+        },
+        {
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by 5"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by 5"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] At 6+ sum of Envy A-Reson., use 'A Just Vengeance' as Counter.\nUpon activating the above effect, the Skill's affinity is changed to Envy.\n(Leftmost 'Multifold Retribution' is activated first. Activates 2 times per turn)",
+          "name": "Multifold Retribution",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1030605": {
+      "bonusNotes": "Applies max possible offense level bonus (even if unrealistic)",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "skilllevel",
+              "value": 6
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[EndSkill] If target is defeated, 1 ally with the least SP heals 6 SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[StartBattle] This Skill gains 1 Offense Level by (highest A-Reson./3) (Max 4)\nIf the highest A-Reson is Envy A-Reson, Gain 50% additional 'Offense Level' to the 'Offense Level' gained by the above effect (rounded down)",
+          "levelCorrection": 3,
+          "name": "A Just Vengeance",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "skilllevel",
+              "value": 9
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[EndSkill] If target is defeated, 1 ally with the least SP heals 6 SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] This Skill gains 1 Offense Level by (highest A-Reson./2) (Max 6)\nIf the highest A-Reson is Envy A-Reson., boost the Offense Level gained by the above effect by 50% (rounded down)\nGain double the Offense Level from the above effects in Focused Encounters with 7 or fewer Participant Limits.",
+          "name": "A Just Vengeance",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1030621"
+      ],
+      "uptie": 3
+    }
+  ]
+}

@@ -1,0 +1,503 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1031101"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1031111"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Her passive inflicts {status:DianxueDonQuixote} on the last enemy she hits every turn. This stacks up to 3 times if you keep applying it on the same enemy. Applying it on another enemy, the stack on the previous enemy expires, and it restarts at 1 stack on the new one.",
+      "Skills gain bonus Clash and/or Base Power against the enemy with {status:DianxueDonQuixote} depending on how many stacks it has. S2 and S3 also gets additional {status:Breath} generation and inflicts additional {status:DefenseDown}."
+    ],
+    "other": [
+      "Her Coin Power conditionals are based on her speed over her target's. Her passive provides {status:Agility} to help with that as long as you keep her {status:Breath} up. All her conditionals max out at 4 speed higher than her target's.",
+      "{status:DianxueDonQuixote} increases her max damage bonus against targets with {status:Combustion}."
+    ]
+  },
+  "passiveData": {
+    "1031101": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 2
+          },
+          {
+            "type": "pride",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Turn End: gain 1 [Agility] next turn for every 5 [Breath] Potency on self (max 2)\n\nAgainst the target(or the Part) a Base Attack Skill hit last, inflict [DianxueDonQuixote] next turn (once per turn)\n\nDeal +([Combustion] Potency on the target)% damage on Critical Hit (max 15%)",
+      "name": "Virescent Pyrojade"
+    },
+    "1031111": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 2
+          },
+          {
+            "type": "pride",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Turn End: gain 1 [Agility] next turn for every 3 [Breath] Potency on self (max 2)\n\nAgainst the target(or the Part) a Base Attack Skill hit last, inflict [DianxueDonQuixote] next turn (once per turn)\n\nDeal +([Combustion] Potency on the target)% damage on Critical Hit (max 15%)\n- Increase max cap by 5% for every 1 [DianxueDonQuixote] on the target",
+      "name": "Virescent Pyrojade"
+    },
+    "1031121": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "1 ally with the fastest Speed : On Clash Win against enemies with [Combustion] or 'Unique Burn', gain 1 [Agility] next turn (once per turn)",
+      "name": "Featherstride Technique"
+    },
+    "1031131": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "1 ally with the fastest Speed : On Clash Win against enemies with [Combustion] or 'Unique Burn', gain 1 [Agility] next turn (once per turn)\n- If the target has 20+ [Combustion] Potency, gain 1 additional [Agility]",
+      "name": "Featherstride Technique"
+    }
+  },
+  "skills": {
+    "1031101": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If this unit's Speed is faster than the target's by 3 or more, Coin Power +1\n[WhenUse] Gain +2 [Breath] Count",
+          "levelCorrection": 2,
+          "name": "Fa Jin",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's by 2 or more, Coin Power +1\n[WhenUse] Gain +2 [Breath] Count",
+          "name": "Fa Jin",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's by 2 or more, Coin Power +1\n[WhenUse] Gain +2 [Breath] Count",
+          "name": "Fa Jin",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[CriticalOnSucceedAttack] Inflict +1 [Combustion] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's, gain Coin Power based on Speed difference (Coin Power +1 for every 2 Speed difference; max 2)\n[WhenUse] Gain +3 [Breath] Count",
+          "name": "Fa Jin",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1031102": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain +2 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [DefenseDown] for every 6 [Combustion] on target (max 2, once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If this unit's Speed is faster than the target's by 3 or more, Coin Power +1\n[WinDuel] Gain 3 [Breath]",
+          "levelCorrection": 2,
+          "name": "Virescent Flame Palm",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [DefenseDown] for every 6 [Combustion] on target (max 3, once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's by 2 or more, Coin Power +1\n[WinDuel] Gain 3 [Breath]",
+          "name": "Virescent Flame Palm",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [DefenseDown] for every 6 [Combustion] on target (max 3, once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's by 2 or more, Coin Power +1\n[WinDuel] Gain 3 [Breath]",
+          "name": "Virescent Flame Palm",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [DefenseDown] for every 6 [Combustion] on target (max 5, once per turn)\n- Inflict additional [DefenseDown] equal to [DianxueDonQuixote] on target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's, gain Coin Power based on Speed difference (Coin Power +1 for every 2 Speed difference; max 2)\n[WinDuel] Gain 3 [Breath]\n- Gain additional [Breath] Count equal to [DianxueDonQuixote] on target",
+          "name": "Virescent Flame Palm",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1031103": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "Deal +([Breath] on self + [Combustion] on target)% damage on Critical Hit (max 30%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +10% damage for every 1 [DianxueDonQuixote] on target (max 30%)\nIf this unit's Speed is faster than the target's by 2 or more, Coin Power +1\n[WinDuel] Gain 5 [Breath]\n- If target has [DianxueDonQuixote], gain 3 additional [Breath]",
+          "levelCorrection": 3,
+          "name": "Prithee, let this be an enlightening bout",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.45
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "Deal +([Breath] on self + [Combustion] on target)% damage on Critical Hit (max 50%)",
+                "[OnSucceedAttack] If target has [DianxueDonQuixote], inflict 3 [DefenseDown]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Deal +15% damage for every 1 [DianxueDonQuixote] on target (max 45%)\nIf this unit's Speed is faster than the target's, gain Coin Power based on Speed difference (Coin Power +1 for every 2 Speed difference; max 2)\n[WinDuel] Gain 5 [Breath]\n- If target has [DianxueDonQuixote], gain 3 additional [Breath]",
+          "name": "Prithee, let this be an enlightening bout",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1031104": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Thou'rt in dire need of a lesson in table manners!",
+          "uptie": 1
+        },
+        {
+          "affinity": "wrath",
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's, gain +1 Coin Power for every 2 Speed difference (max 2)",
+          "name": "Thou'rt in dire need of a lesson in table manners!",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1031121"
+      ],
+      "uptie": 3
+    },
+    {
+      "passives": [
+        "1031131"
+      ],
+      "uptie": 4
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1020301"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "S3 gains Coin Power if she didn't take damage on the previous turn.",
+      "Unusually high rolls for an old 00. Was very strong on launch but is outdated now."
+    ]
+  },
+  "passiveData": {
+    "1020301": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 2
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "At the start of the turn, if at 4+ [Breath] Count, gain 2 [Agility].",
+      "name": "Resolution"
+    },
+    "1020321": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 2
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "1 ally with the lowest Max HP gains +2 defense skill final Power.",
+      "name": "Backing"
+    }
+  },
+  "skills": {
+    "1020301": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Sole Strike",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Sole Strike",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "",
+          "name": "Sole Strike",
+          "uptie": 3
+        },
+        {
+          "baseValue": 3,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "name": "Sole Strike",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1020302": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 1 [Breath] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 1 [Breath] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [Agility] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Deep Cuts",
+          "uptie": 1
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 4 [Agility] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Deep Cuts",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Deep Cuts",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 4 [Agility] next turn",
+                "[OnSucceedAttack] Gain 1 [Breath] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Deep Cuts",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1020303": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            }
+          ],
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 5 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If user took no damage last turn, Coin Power +3",
+          "levelCorrection": 3,
+          "name": "Opportunistic Slash",
+          "uptie": 3
+        }
+      ],
+      "tier": 3
+    },
+    "1020304": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Evade",
+          "uptie": 1
+        },
+        {
+          "affinity": "envy",
+          "desc": "",
+          "name": "Evade",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1020321"
+      ],
+      "uptie": 3
+    }
+  ]
+}

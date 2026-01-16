@@ -1,0 +1,148 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 19,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Paralysis]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[BeforeAttack] Gain +1 [Charge] Count for every 10% of missing HP (Max 5)\nGain 2 [Agility] next turn",
+          "levelCorrection": 0,
+          "name": "AEDD",
+          "uptie": 1
+        },
+        {
+          "baseValue": 22,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Paralysis] and 1 [AzureTakeDamageUp]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] Gain +1 [Charge] Count for every 10% of missing HP (Max 7)\nGain 2 [Agility] next turn",
+          "name": "AEDD",
+          "uptie": 3
+        },
+        {
+          "atkWeight": 3,
+          "desc": "[BeforeAttack] Gain +1 [Charge] Count for every 10% of missing HP (Max 7)\nGain 2 [Agility] next turn",
+          "name": "AEDD",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 26,
+          "coinValue": -7,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "gloom"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Spend all [Charge] Count to deal bonus Gloom damage by ([Charge] Count * 1.5)% of damage dealt (Max 30%)",
+                "[OnSucceedAttackTail] After the attack, lose 10% of Max HP to gain +7 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly\n[BeforeAttack] Gain +1 [Charge] Count for every 10% of missing HP (Max 5)\nGain 2 [Agility] next turn",
+          "levelCorrection": 2,
+          "name": "AEDD",
+          "uptie": 1
+        },
+        {
+          "baseValue": 29,
+          "coinValue": -7,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "gloom"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Spend all [Charge] Count to deal bonus Gloom damage by ([Charge] Count * 2.5)% of damage dealt (Max 50%)",
+                "[OnSucceedAttackTail] After the attack, lose 10% of Max HP to gain +10 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\n[BeforeAttack] Gain +1 [Charge] Count for every 10% of missing HP (Max 7)\nGain 2 [Agility] next turn",
+          "name": "AEDD",
+          "uptie": 3
+        },
+        {
+          "coinValue": -7,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "gloom"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Spend all [Charge] Count to deal bonus Gloom damage by ([Charge] Count * 2.5)% of damage dealt (Max 50%)",
+                "[EndSkill] Spend all [Charge] Count",
+                "[EndSkillTail] Lose HP by 10% of Max HP to gain +10 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\n[BeforeAttack] Gain +1 [Charge] Count for every 10% of missing HP (Max 7)\nGain 2 [Agility] next turn",
+          "name": "AEDD",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "When hit, spend 1 [Charge] Count to heal 2.5% of Max HP\nAt less than 40% HP, gain 1 [Charge] Count before activating the healing effect. (Can gain up to 10 [Charge] Count per turn)",
+      "name": "Temperamental Discharge"
+    }
+  ]
+}

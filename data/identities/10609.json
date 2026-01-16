@@ -1,0 +1,364 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1060901"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "His S3 consumes 10 or 15 {status:Vibration} Count to gain +2 or +3 Coin Power and trigger {status:FusionVibration} into {status:VibrationEcho}. Consuming Count also lets him trigger 3 {status:VibrationExplosion}s instead of 1, but consuming only 10 instead of 15 will trigger one on himself."
+    ],
+    "other": [
+      "{status:VibrationEcho} deals additional {keyword:Sloth} damage based on {status:Vibration} Potency on every {status:VibrationExplosion}.",
+      "{status:FusionVibration} allows multiple {status:Vibration} types to combine through {status:Switch_Vibration} or more {status:FusionVibration} and all their effects will be active at the same time, but will convert them back to the default version at the end of the turn. It is different from only using {status:Switch_Vibration} which permanently converts {status:Vibration} but only allows one at a time, replacing the older version with the new one if another one is applied.",
+      "His passive gives him {status:AttackDmgUp} for each {status:VibrationExplosion} he triggers on the previous turn."
+    ]
+  },
+  "passiveData": {
+    "1060901": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 6
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Turn End: gain [AttackDmgUp] next turn equal to the number of times this unit triggered [VibrationExplosion] this turn (max 3)",
+      "name": "Vibroweld Morph-combat Cane (Unauthorized Invention)"
+    },
+    "1060921": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "When #1 Deployed Identity triggers [VibrationExplosion] with Skill or Coin effects, 25% chance to trigger an additional [VibrationExplosion] (once per turn)",
+      "name": "In the Culprit's Shoes"
+    }
+  },
+  "skills": {
+    "1060901": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +2 [Vibration] Count",
+          "levelCorrection": 2,
+          "name": "Deduction Start",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +2 [Vibration] Count",
+          "name": "Deduction Start",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "[WhenUse] Gain +2 [Vibration] Count",
+          "name": "Deduction Start",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "[WhenUse] Gain +2 [Vibration] Count\nAt 6+ [Vibration] Count, Coin Power +1",
+          "name": "Deduction Start",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1060902": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 9+ [Vibration], trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +3 [Vibration] Count",
+          "levelCorrection": 2,
+          "name": "Morph Cane Technique",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 7+ [Vibration], trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 8+ [Vibration], Clash Power +1\n[WhenUse] Gain +3 [Vibration] Count\nAt 6+ [Vibration] Count, Coin Power +1",
+          "name": "Morph Cane Technique",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "[WhenUse] If target has 8+ [Vibration], Clash Power +1\n[WhenUse] Gain +3 [Vibration] Count\nAt 6+ [Vibration] Count, Coin Power +1",
+          "name": "Morph Cane Technique",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 6+ [Vibration], trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 6+ [Vibration], Clash Power +1\n[WhenUse] Gain +3 [Vibration] Count\nAt 5+ [Vibration] Count, Coin Power +1",
+          "name": "Morph Cane Technique",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1060903": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If this Skill consumed [Vibration] Count on use, trigger [FusionVibration] into [VibrationEcho]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1\n- If this unit did not consume [Vibration] Count with Skill use, activate the above effect, then trigger [VibrationExplosion] on self"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 6+ [Vibration], Clash Power +1\n[WhenUse] Consume 10 [Vibration] Count on self to gain Coin Power +2",
+          "levelCorrection": 4,
+          "name": "You're the Culprit!",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            },
+            {
+              "type": "coin",
+              "value": 3
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If this Skill consumed [Vibration] Count on use, trigger [FusionVibration] into [VibrationEcho]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If this Skill consumed 10+ [Vibration] Count on Skill Use, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If this Skill consumed 10+ [Vibration] Count on Skill Use, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1\n- If this unit consumed less than 15 [Vibration] Count, trigger [VibrationExplosion] on self after activating the above effect"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Clash Power +1 for every 6 [Vibration] on target (max 2)\n[WhenUse] At  less than 15 [Vibration] Count on self, consume 10 [Vibration] Count to gain Coin Power +2\n[WhenUse] Consume 15 [Vibration] Count on self to gain Coin Power +3",
+          "name": "You're the Culprit!",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1060904": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[WhenUse] Gain 2 x ([Vibration] Count on target) as Shield HP (max 7)",
+          "levelCorrection": 0,
+          "name": "Wait?!",
+          "uptie": 1
+        },
+        {
+          "affinity": "sloth",
+          "desc": "[WhenUse] Gain 2 x ([Vibration] Count on target) as Shield HP (max 13)",
+          "name": "Wait?!",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1060921"
+      ],
+      "uptie": 3
+    }
+  ]
+}

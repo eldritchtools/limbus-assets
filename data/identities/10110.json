@@ -1,0 +1,404 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1011002"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1011002",
+        "1011001"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1011002",
+        "1011011"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "{status:BulletLament} has 2 types corresponding to the Potency and Count. Each stack consumed randomly chooses between the two types and applies the corresponding {status:SinkingWhite} on the target. Potency heals SP of attackers on hit. Count deals additional {keyword:Gloom} damage whenever {status:Sinking} is triggered. At turn end, Count expires and Potency is converted into Count (stacks with any Count applied on the next turn)."
+    ],
+    "other": [
+      "Skills are automatically cancelled once out of {status:BulletLament}, then he automatically consumes SP to {status:ReloadLament}. He also uses it at the end of his S3 or at 4+ A-Reson with his S2. Gains more Count at 0+ SP and more Potency at negative SP. Consumes less SP per {status:BulletLament} he had remaining before using {status:ReloadLament}.",
+      "Deals more damage per remaining {status:BulletLament} when using his S3.",
+      "Passive causes him to automatically use {status:ReloadLament} on kill."
+    ]
+  },
+  "passiveData": {
+    "1011001": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "When this unit gains [BulletLament], gain 2 [Agility] next turn (once per turn)",
+      "name": "Fire.IShallFire."
+    },
+    "1011002": {
+      "desc": "Begin encounters with 10 of each of [BulletLament]\n\nWhen consuming [BulletLament], select randomly between The Living(Potency) and The Departed(Count) for each [BulletLament] value.\n\nWhen inflicting [SinkingWhite], inflict the same amount of The Living and The Departed as they were consumed. Example below:\n- If this unit consumed X Living, inflict X Living\n- If this unit consumed Y Departed, inflict Y Departed\n\nIf this unit runs out of [BulletLament] midway through Skill use, cancel all subsequent Coins and [ReloadLament]\n\nWhen [ReloadLament]ing, or when gaining [BulletLament], gain either The Living or The Departed based on this unit's current SP\n- At 0 or higher SP: 30% chance to gain The Living; 70% chance to gain The Departed.\n- At less than 0 SP: 70% chance to gain The Living; 30% chance to gain The Departed.\n- The probabilities are calculated separately for each ammo consumed.",
+      "name": "ISeeTheDyingButterfly."
+    },
+    "1011011": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "After Attack: if this unit killed the target with its Skill, [ReloadLament]\nWhen this unit gains [BulletLament], gain 2 [Agility] next turn (once per turn)",
+      "name": "Fire.IShallFire."
+    },
+    "1011021": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 6
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When an ally hits with a Skill, consume 2 [Sinking] on the target to inflict them with 1 [SinkingWhite] (3 times per turn)",
+      "name": "Hand of Salvation"
+    }
+  },
+  "skills": {
+    "1011001": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "Consume 1 of [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Consume 1 of [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Celebration for the Departed",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "If the sum of the target's [Sinking] and both [SinkingWhite] is 6 or higher, Coin Power +1\n[WinDuel] Inflict +2 [Sinking] Count",
+          "name": "Celebration for the Departed",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "If the sum of the target's [Sinking] and both [SinkingWhite] is 6 or higher, Coin Power +1\n[WinDuel] Inflict +2 [Sinking] Count",
+          "name": "Celebration for the Departed",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "At 10+ [BulletLament], Clash Power +1\nIf the sum of the target's [Sinking] and both [SinkingWhite] is 6 or higher, Coin Power +1\n[WinDuel] Inflict +2 [Sinking] Count",
+          "name": "Celebration for the Departed",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1011002": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "Consume 5 of [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Consume 1 of [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Solemn Lament for the Living",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "If the sum of the target's [Sinking] and both [SinkingWhite] is 6 or higher, Coin Power +1\n[WinDuel] Inflict +1 [Sinking] Count\n[EndSkill] Gain (highest Reson.) of [BulletLament] (max 6)\n- If the said Reson. was an A-Reson., gain (highest Reson. x 2) of [BulletLament] (max 12)",
+          "name": "Solemn Lament for the Living",
+          "uptie": 2
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "Consume 5 of [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Consume 1 of [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If the sum of the target's [Sinking] and both [SinkingWhite] is 6 or higher, Coin Power +1\n[WinDuel] Inflict +1 [Sinking] Count\n[EndSkill] Gain (highest Reson.) of [BulletLament] (max 6)\n- If the said Reson. was an A-Reson., gain (highest Reson. x 2) of [BulletLament] (max 12)",
+          "name": "Solemn Lament for the Living",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "desc": "At 10+ [BulletLament], Clash Power +1\nCoin Power +1 for every 6 value of the sum of the target's [Sinking] and both [SinkingWhite] (max 2)\n[WinDuel] Inflict +1 [Sinking] Count\n[EndSkill] Gain (highest Reson.) of [BulletLament] (max 6)\n- If the said Reson. was an A-Reson., gain (highest Reson. x 2) of [BulletLament] (max 12)\n - If the said Reson. was at 4+ A-Reson., [ReloadLament] instead",
+          "name": "Solemn Lament for the Living",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1011003": {
+      "bonusNotes": "Bonus damage assumes 20 total ammo used and butterflies applied",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "Consume 1 of [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Consume 6 of [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.4
+                }
+              ],
+              "descs": [
+                "Consume all of [BulletLament] on self",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed",
+                "[OnSucceedAttack] Deal +2% damage for every value of [BulletLament] consumed by this Skill"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add",
+                    "type": "gloom"
+                  },
+                  "type": "damage",
+                  "value": 20
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict Gloom damage equal to \"All\" [SinkingWhite] on target\n- \"All\" = the sum of both The Living and The Departed on target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Base Power +1 for every 10 value of [BulletLament] (max 2)\n[WinDuel] Inflict +3 [Sinking] Count\n[EndSkill] [ReloadLament]",
+          "levelCorrection": 5,
+          "name": "Goodbye Now, A Sorrow In You",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 4
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "Consume 1 of [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Consume 6 of [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.8
+                }
+              ],
+              "descs": [
+                "Consume all of [BulletLament] on self",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed",
+                "[OnSucceedAttack] Deal +4% damage for every value of [BulletLament] consumed by this Skill"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add",
+                    "type": "gloom"
+                  },
+                  "type": "damage",
+                  "value": 20
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict Gloom damage equal to \"All\" [SinkingWhite] on target\n- \"All\" = the sum of both The Living and The Departed on target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Base Power +1 for every 5 value of [BulletLament] (max 4)\nCoin Power +1 for every 6 value of the sum of the target's [Sinking] and both [SinkingWhite] (max 2)\n[WinDuel] Inflict +3 [Sinking] Count\n[EndSkill] [ReloadLament]",
+          "name": "Goodbye Now, A Sorrow In You",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1011004": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[StartBattle] [ReloadLament] (once per turn)",
+          "levelCorrection": 1,
+          "name": "FromTheCoffinAButterflyTakesFlight",
+          "uptie": 1
+        },
+        {
+          "affinity": "gloom",
+          "desc": "[StartBattle] [ReloadLament] (once per turn)\n[StartBattle] Gain Shield equal to (the sum of both [SinkingWhite] on the selected target)% HP. (max 20% per turn)",
+          "name": "FromTheCoffinAButterflyTakesFlight",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1011021"
+      ],
+      "uptie": 3
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1070301"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1070311"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Starts with 16 {status:Bullet} (13 at Uptie III and below). Coins that use {status:Bullet} don't deal damage when out of {status:Bullet}, but still clash normally.",
+      "S3 gains Coin Power at 6+ speed and inflicts 4 {status:Vulnerable} at the cost of 2 {status:Bullet}."
+    ],
+    "other": [
+      "S2 gains Coin Power at 6+ speed.",
+      "You can use {ego:20701} for its {status:Agility} to guarantee his 6+ speed next turn.",
+      "At 5+ {status:Charge} Count, he gains {status:Agility} and {status:Enhancement}. Count gained from S1, defense, or on 3+ {keyword:Wrath} Reson. "
+    ]
+  },
+  "passiveData": {
+    "1070301": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "Gain (Wrath Reson.) [Charge] Count next turn.\nAt 5+ [Charge] Count, gain 1 [Agility] and [Enhancement].",
+      "name": "Raring to Graze"
+    },
+    "1070311": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "Gain (Wrath Reson.) [Charge] Count next turn.\nAt 5+ [Charge] Count, gain 1 [Agility] and [Enhancement].\nAlways Activate: At the start of the stage, gain +3 [Bullet].",
+      "name": "Raring to Graze"
+    },
+    "1070321": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the fastest Speed deals +10% Pierce damage.",
+      "name": "Doggedness"
+    }
+  },
+  "skills": {
+    "1070301": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "Spend 1 [Bullet]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [Bullet]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "Graze the Grass",
+          "uptie": 1
+        },
+        {
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "Spend 1 [Bullet]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [Bullet]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Graze the Grass",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Graze the Grass",
+          "uptie": 3
+        }
+      ],
+      "tier": 1
+    },
+    "1070302": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "Spend 1 [Bullet]\n[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [Bullet]\n[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [Bullet]\n[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "Concentrated Fire",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "Spend 1 [Bullet]\n[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [Bullet]\n[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [Bullet]\n[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "Coin Power +1 at 6+ Speed",
+          "name": "Concentrated Fire",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "Coin Power +1 at 6+ Speed",
+          "name": "Concentrated Fire",
+          "uptie": 3
+        }
+      ],
+      "tier": 2
+    },
+    "1070303": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "Spend 1 [Bullet]\n[OnSucceedAttack] Inflict 2 [Vulnerable]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [Bullet]\n[OnSucceedAttack] Inflict 2 [Vulnerable]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Coin Power +2 at 6+ Speed",
+          "levelCorrection": 5,
+          "name": "Quick Suppression",
+          "uptie": 3
+        }
+      ],
+      "tier": 3
+    },
+    "1070304": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "",
+          "levelCorrection": -2,
+          "name": "Evade",
+          "uptie": 1
+        },
+        {
+          "affinity": "wrath",
+          "desc": "[WhenUse] Gain +1 [Charge] Count",
+          "name": "Evade",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1070321"
+      ],
+      "uptie": 3
+    }
+  ]
+}

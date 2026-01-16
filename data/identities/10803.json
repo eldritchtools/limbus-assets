@@ -1,0 +1,316 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1080301"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Skills gain buffs at low HP.",
+      "Her S1 gives additional {status:Breath} at less than 50% HP",
+      "Her S2's coins gain Coin Reuse, and she gains additional {status:Breath} generation at less than 50% HP.",
+      "Her S3 heals her on crit at less than 25% HP."
+    ]
+  },
+  "passiveData": {
+    "1080301": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "At less than 50% HP, gain 1 additional [Breath] from skills.",
+      "name": "Walking the Line of Death"
+    },
+    "1080321": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 2
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "1 ally with the least HP gains +2 counter skill final Power.",
+      "name": "Strife"
+    }
+  },
+  "skills": {
+    "1080301": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Flying Sword",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At less than 50% HP, this skill gives 1 additional [Breath]",
+          "name": "Flying Sword",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "At less than 50% HP, this skill gives 1 additional [Breath]",
+          "name": "Flying Sword",
+          "uptie": 3
+        },
+        {
+          "desc": "At less than 50% HP, this skill gives 3 additional [Breath]",
+          "name": "Flying Sword",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1080302": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Flashing Strike",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At less than 50% HP, use Coin 1 and 2 an additional time",
+          "name": "Flashing Strike",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "[WhenUse] At less than 50% HP, use Coin 1 and 2 an additional time",
+          "name": "Flashing Strike",
+          "uptie": 3
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Breath] Count "
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Breath] Count "
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At less than 50% HP, use Coin 1 and 2 an additional time",
+          "name": "Flashing Strike",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1080303": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] At less than 25% HP, heal 100% of damage dealt"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Catch Breath",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "critdamage",
+              "value": 0.5
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] At less than 25% HP, heal 100% of damage dealt"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 5+ [Breath] Count, +50% Critical Damage",
+          "name": "Catch Breath",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1080304": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Counter",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "critdamage",
+              "value": 0.5
+            }
+          ],
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 5+ [Breath] Count, +50% Critical Damage",
+          "name": "Counter",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1080321"
+      ],
+      "uptie": 3
+    }
+  ]
+}

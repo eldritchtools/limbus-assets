@@ -1,0 +1,260 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1030301"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Gains {status:Agility} on her S1, S2 or passively with {keyword:Wrath} Res. Gains more on her S2 at less than 50% HP.",
+      "S3 has a 10+ speed conditional for additional Power. If she uses her S2 in the previous turn, this is guaranteed at less than 50% HP, but rare otherwise."
+    ]
+  },
+  "passiveData": {
+    "1030301": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "Gain [Agility] by (Wrath Reson. / 3) next turn.",
+      "name": "Prepared Mind"
+    },
+    "1030321": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the fastest Speed deals +10% Slash damage.",
+      "name": "Divide in Two"
+    }
+  },
+  "skills": {
+    "1030301": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [Breath] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Catch Breath",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Catch Breath",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Catch Breath",
+          "uptie": 3
+        },
+        {
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 2 [Agility] next turn",
+          "name": "Catch Breath",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1030302": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 1 [Breath] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Agility] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Dual Strike",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Agility] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At less than 50% HP, gain 2 [Agility] next turn",
+          "name": "Dual Strike",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "[WhenUse] At less than 50% HP, gain 2 [Agility] next turn",
+          "name": "Dual Strike",
+          "uptie": 3
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Agility] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At less than 50% HP, gain 4 [Agility] next turn",
+          "name": "Dual Strike",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1030303": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 3
+            }
+          ],
+          "coinValue": 21,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At 10+ Speed, Skill Power +3",
+          "levelCorrection": 3,
+          "name": "Overbreathe",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 5
+            }
+          ],
+          "desc": "At 10+ Speed, Skill Power +5",
+          "name": "Overbreathe",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1030304": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Evade",
+          "uptie": 1
+        },
+        {
+          "affinity": "wrath",
+          "desc": "",
+          "name": "Evade",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1030321"
+      ],
+      "uptie": 3
+    }
+  ]
+}

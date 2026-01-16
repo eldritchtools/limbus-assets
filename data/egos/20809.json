@@ -1,0 +1,130 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 10,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]",
+                "[OnSucceedAttack] At 4+ Gluttony or Gloom Reson., inflict [CentipedePoison] by Reson. (max 4)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[EndSkill] Inflict [CentipedePoison] equal to the sum of the types of negative effects on self and the main target (max 5)",
+          "levelCorrection": 2,
+          "name": "Hundred-Footed Death Maggot [蝍蛆殺]",
+          "uptie": 1
+        },
+        {
+          "desc": "[EndSkill] Inflict [CentipedePoison] equal to the sum of the types of negative effects on self and the main target (max 8)",
+          "name": "Hundred-Footed Death Maggot [蝍蛆殺]",
+          "uptie": 3
+        },
+        {
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]",
+                "[OnSucceedAttack] At 4+ Gluttony or Gloom Reson., inflict [CentipedePoison] by Reson. (max 5)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[EndSkill] Inflict [CentipedePoison] equal to the sum of the types of negative effects on self and the main target (max 10)",
+          "name": "Hundred-Footed Death Maggot [蝍蛆殺]",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 16,
+          "coinValue": -7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]",
+                "[OnSucceedAttack] At 4+ Gluttony or Gloom Reson., inflict [CentipedePoison] by Reson. (max 4)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly\n[EndSkill] Inflict [CentipedePoison] equal to the sum of the types of negative effects on self and the main target (max 8)",
+          "levelCorrection": 3,
+          "name": "Hundred-Footed Death Maggot [蝍蛆殺]",
+          "uptie": 1
+        },
+        {
+          "desc": "[CantIdentify]\nTargets randomly\n[EndSkill] Inflict [CentipedePoison] equal to the sum of the types of negative effects on self and the main target (max 10)",
+          "name": "Hundred-Footed Death Maggot [蝍蛆殺]",
+          "uptie": 3
+        },
+        {
+          "coinValue": -7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]",
+                "[OnSucceedAttack] At 4+ Gluttony or Gloom Reson., inflict [CentipedePoison] by Reson. (max 5)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\n[EndSkill] Inflict [CentipedePoison] equal to the sum of the types of negative effects on self and the main target (max 10)",
+          "name": "Hundred-Footed Death Maggot [蝍蛆殺]",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "Whenever this unit inflicts [Sinking] Potency, [Sinking] Count, or 'Unique Sinking' using its Attack Skills, gain 1 [AttackUp] next turn (max 2)\n- At 3+ A-Reson., with the same conditionals, gain 1 [AttackUp] next turn instead (max 3)",
+      "name": "Reversal Death by Gu Poison"
+    }
+  ]
+}

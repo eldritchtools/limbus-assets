@@ -1,0 +1,171 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 15,
+          "coinValue": 18,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Trigger [VibrationExplosion]",
+                "[OnSucceedAttack] Deal 15 SP damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Fluid Sac",
+          "uptie": 1
+        },
+        {
+          "baseValue": 20,
+          "coinValue": 18,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]",
+                "[OnSucceedAttack] Deal 25 SP damage",
+                "If target is Staggered, in Low Morale, or in Panic, deal 30% of damage dealt as bonus damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Fluid Sac",
+          "uptie": 3
+        },
+        {
+          "atkWeight": 3,
+          "coinValue": 18,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]",
+                "[OnSucceedAttack] Deal 25 SP damage",
+                "If target is Staggered, in Low Morale, or in Panic, deal 30% of damage dealt as bonus damage",
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Fluid Sac",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 37,
+          "coinValue": -25,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Vibration]",
+                "[OnSucceedAttack] Inflict 5 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly",
+          "levelCorrection": 0,
+          "name": "Fluid Sac",
+          "uptie": 1
+        },
+        {
+          "baseValue": 42,
+          "coinValue": -25,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 7 [Vibration]",
+                "[OnSucceedAttack] Inflict 7 [Sinking]",
+                "If target is NOT Staggered, in Low Morale, nor in Panic, deal 50% of damage dealt as bonus damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly",
+          "name": "Fluid Sac",
+          "uptie": 3
+        },
+        {
+          "atkWeight": 3,
+          "coinValue": -25,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 10 [Vibration]",
+                "[OnSucceedAttack] Inflict 10 [Sinking]",
+                "If target is NOT Staggered, in Low Morale, nor in Panic, deal 50% of damage dealt as bonus damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly",
+          "name": "Fluid Sac",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "The target of the rightmost skill on the Dashboard loses SP by (2x Gloom A-Reson.) after the attack.\n(Targets without SP values take Gloom damage instead.)",
+      "name": "Wave of Depression"
+    }
+  ]
+}

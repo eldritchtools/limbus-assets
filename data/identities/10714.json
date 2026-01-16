@@ -1,0 +1,654 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1071402",
+        "1071403"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1071402",
+        "1071403",
+        "1071401"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Standard Heishou mechanic: Using S3 or defense gives a 3 turn buff corresponding to their Heishou Pack. {status:ChickenStance} him increased {status:Combustion} and {status:Burst} application, SP healing on staggering or killing his target, and {status:AttackUp} and {status:Agility} at max SP. Having the buff, or alternatively being below 50% HP, also gives him a Coin Reuse on his S2 on heads hit of the last coin and turns all the coins on his base S3 into {status:SuperCoin}.",
+      "Standard Heishou mechanic: Combos with {identity:10613}'s S3. The buff gives him 5% bonus {keyword:Wrath} damage when he deals {keyword:Gluttony} damage. His sources of {keyword:Gluttony} damage include his S2 and E.G.Os like {ego:20608}.",
+      "Standard Heishou Adept mechanic: Having her passive active lets her generate a resource that can be consumed upgrade her S3. He gains 3 {status:ChickenFightlust} per clash start, 1 per hit on his target with a base attack skill, 1 whenever he takes {status:Combustion} damage (2 at less than 50% HP), and 5 per kill, up to a total of 10 per turn. He needs 20 stacks to use his S3-2."
+    ],
+    "other": [
+      "{status:ChickenFightlust} gives him additional damage per stack and 1 {status:Agility} per 10 stacks.",
+      "Both versions of his S3 have 3 atk weight and {status:WideAreaRampage}, which means he attacks 1 random target for each coin instead of hitting all of them. The base version repeatedly applies and triggers {status:Combustion} on himself at 50+% HP to help him generate {status:ChickenFightlust} and bring him closer to 50% HP, then deals up to 20% of the final coin's damage as {keyword:Gluttony} damage to all targets. His S3-2 deals bonus damage based on his (and his target's) missing HP, then deals 20% of the final coin's damage as {keyword:Wrath} damage to all targets. At 20+ {status:Combustion}, his final coin gets reused then he consumes any {status:Combustion} he had over 20 to heal himself. The coin reuse can also be triggered by being under 50% HP.",
+      "His passive gives him some bonus {status:AttackUp} and {status:DefenseUp} based on missing HP.",
+      "Ignores death once and will consume all {status:Combustion} on himself to heal when it happens."
+    ]
+  },
+  "passiveData": {
+    "1071401": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Combat Start: gain 1 Offense Level Up and 1 Defense Level Up for every 20% missing HP on self (max 3)\n\nGain [ChickenFightlust] when meeting one of the following conditions: (10 per turn)\n- Gain 3 at Clash Start\n- Gain 1 when this unit hits with a Base Attack Skill or when this unit takes [Combustion] damage\nAt less than 50% HP, gain 1 more [ChickenFightlust]\n- Gain 5 On Kill",
+      "name": "Bloody Storm of Blades"
+    },
+    "1071402": {
+      "desc": "When activating [HeishouCombo], The Lord of Hongyuan Hong Lu gains the following effect as the [HeishouComboCountHonglu] effect:\n- On Hit with this unit's Base Attack Skill: Deal 5% of Gluttony damage dealt as Wrath damage\n\nCannot be Staggered or fall below 1 HP due to [Combustion] damage.\n\nGain 3 [ChickenStance] and +3 [Combustion] Count in the same turn it Substitutes or Returns in.",
+      "name": "Gamefowl"
+    },
+    "1071403": {
+      "desc": "In this Encounter, when this unit takes damage that brings their HP down to 0, nullify that damage; then, this unit's HP cannot drop below 1 for the turn.\nThen, at the next Turn Start, heal (20 + [Combustion] on self)% HP, and remove all [Combustion] on self (max 49%; once per Encounter)",
+      "name": "Flame Rooster's Death Defiance [炎鳥不死戰]"
+    },
+    "1071421": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 3
+          },
+          {
+            "type": "gluttony",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Turn End: if an ally with the lowest current HP percentage has less than 50% HP, that unit gains 1 [ParryingResultUp] next turn",
+      "name": "Backed Against a River"
+    }
+  },
+  "skills": {
+    "1071401": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartDuel] Apply 1 [Combustion] and +1 [Combustion] Count to target and self",
+          "levelCorrection": 1,
+          "name": "Peck 'em",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "[WhenUse] If target has 6+ ([Combustion] + [Burst]), Coin Power +1\n[StartDuel] Apply 1 [Combustion] and +1 [Combustion] Count to target and self",
+          "name": "Peck 'em",
+          "uptie": 2
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 6+ ([Combustion] + [Burst]), Coin Power +1\n[StartDuel] Apply 1 [Combustion] and +1 [Combustion] Count to target and self",
+          "name": "Peck 'em",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttackHead] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 6+ ([Combustion] + [Burst]), Coin Power +1\n[WhenUse] Clash Power +1 for every 10 [Combustion] on self (max 2)\n[StartDuel] Apply 1 [Combustion] and +1 [Combustion] Count to target and self",
+          "name": "Peck 'em",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1071402": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "heads"
+                  },
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Combustion] and +1 [Combustion] Count",
+                "[OnSucceedAttackHead] If this unit has [ChickenStance], or if this unit has less than 50% HP, Reuse this Coin (once per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartDuel] Apply 1 [Combustion] and +1 [Combustion] Count to target and self",
+          "levelCorrection": 2,
+          "name": "Mutilating Talons",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "[WhenUse] If target has 6+ ([Combustion] + [Burst]), Coin Power +1\n[StartDuel] Apply 1 [Combustion] and +1 [Combustion] Count to target and self",
+          "name": "Mutilating Talons",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "heads"
+                  },
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Combustion] and +1 [Combustion] Count",
+                "[OnSucceedAttackHead] If this unit has [ChickenStance], or if this unit has less than 50% HP, Reuse this Coin (once per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 6+ ([Combustion] + [Burst]), Coin Power +1\n[StartDuel] Apply 1 [Combustion] and +1 [Combustion] Count to target and self",
+          "name": "Mutilating Talons",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]",
+                "[OnSucceedAttackHead] Inflict +1 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttackHead] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "wrath"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                },
+                {
+                  "extra": {
+                    "cond": "heads"
+                  },
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Combustion] and +1 [Combustion] Count",
+                "[OnSucceedAttack] Deal (([Combustion] on self x 2)% of this Coin's final damage) Wrath damage (max 20%)",
+                "[OnSucceedAttackHead] If this unit has [ChickenStance], or if this unit has less than 50% HP, Reuse this Coin (once per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 6+ ([Combustion] + [Burst]), Coin Power +1\n[WhenUse] Clash Power +1 for every 10 [Combustion] on self (max 2)\n[StartDuel] Apply 1 [Combustion] and +1 [Combustion] Count to target and self",
+          "name": "Mutilating Talons",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1071403": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 3,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Apply 2 [Combustion] to target and self",
+                "[OnSucceedAttackHead] At 50%+ HP, take [Combustion] damage by [Combustion] Potency on self"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Apply 2 [Combustion] to target and self",
+                "[OnSucceedAttackHead] At 50%+ HP, take [Combustion] damage by [Combustion] Potency on self"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Apply 2 [Combustion] to target and self",
+                "[OnSucceedAttackHead] At 50%+ HP, take [Combustion] damage by [Combustion] Potency on self"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WideAreaRampage]\n[StartBattle] If this unit has [ChickenStance], or if this unit has less than 50% HP, convert all Coins to [SuperCoin]s\n[BeforeUse] At 20 [ChickenFightlust], activate 'Rooster's Rampaging Blades Under the Ensanguined Heaven' instead\n[WhenUse] Gain 3 [ChickenStance]\n[EndSkill] Gain +2 [Combustion] Count",
+          "levelCorrection": 3,
+          "name": "Bloodflame Massacre [血炎亂舞]",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            },
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "type": "clash",
+              "value": 3
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Apply 2 [Combustion] to target and self",
+                "[OnSucceedAttackHead] At 50%+ HP, take [Combustion] damage by [Combustion] Potency on self"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Apply 2 [Combustion] to target and self",
+                "[OnSucceedAttackHead] At 50%+ HP, take [Combustion] damage by [Combustion] Potency on self"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Apply 2 [Combustion] to target and self",
+                "[OnSucceedAttackHead] At 50%+ HP, take [Combustion] damage by [Combustion] Potency on self"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "gluttony"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Burst] Count",
+                "[OnSucceedAttack] Deal (([Combustion] on self + [Combustion] on the main target)% of this Coin's final damage) Gluttony damage against all targets (max 20%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WideAreaRampage]\nDeal +1.5% damage for every [Combustion] on self (max 30%)\n[StartBattle] If this unit has [ChickenStance], or if this unit has less than 50% HP, convert all Coins to [SuperCoin]s\n[BeforeUse] At 20 [ChickenFightlust], activate 'Rooster's Rampaging Blades Under the Ensanguined Heaven' instead\n[WhenUse] Gain 3 [ChickenStance]\n[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Burst]) on the main target (max 2)\n[WhenUse] Clash Power +1 for every 20% missing HP on self (max 3)\n[EndSkill] Gain +2 [Combustion] Count",
+          "name": "Bloodflame Massacre [血炎亂舞]",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1071404": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\n[WhenUse] Gain 3 [ChickenStance] next turn\n[WhenUse] If this unit has [ChickenStance], Coin Power +1\n[StartDuel] Gain +3 [Combustion] Count (once per turn)",
+          "levelCorrection": 2,
+          "name": "More Grub for Us",
+          "uptie": 1
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[DuelCounter]\n[WhenUse] Gain 3 [ChickenStance] next turn\n[WhenUse] If target has 10+ ([Combustion] + [Burst]), Base Power +1\n[WhenUse] If this unit has [ChickenStance], Coin Power +1\n[WhenUse] This Skill deals +1% damage for every 3% HP this unit cumulatively lost in this Encounter (max 30%)\n[StartDuel] Gain +3 [Combustion] Count (once per turn)",
+          "name": "More Grub for Us",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1071405": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 3,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Burst] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] If this unit has 20+ [Combustion], or if this unit has less than 50% HP, Reuse this Coin (once per Skill)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WideAreaRampage]\n[WhenUse] Gain 3 [ChickenStance]\n[WinDuel] Gain 10 [Combustion]\n[EndSkill] Consume all [ChickenFightlust]\n[EndSkill] At more than 20 [Combustion], consume up to 25 excess [Combustion] and heal ([Combustion] consumed x 2)% HP",
+          "levelCorrection": 5,
+          "name": "Rooster's Rampaging Blades Under the Ensanguined Heaven [血天下鷄舞亂刀]",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.6
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            },
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "type": "clash",
+              "value": 3
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Burst] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                },
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "wrath"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] If this unit has 20+ [Combustion], or if this unit has less than 50% HP, Reuse this Coin (once per Skill)",
+                "[OnSucceedAttack] Deal (20% of this Coin's final damage) Wrath damage against all targets\n- If this is the final Coin, heal HP by the amount of damage the above effect dealt"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[WideAreaRampage]\nDeal +3% damage for every [Combustion] on self (max 60%)\nDeal +1% damage for every 2% (missing HP percentage on target + missing HP percentage on self) (max 50%)\n[WhenUse] Gain 3 [ChickenStance]\n[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Burst]) on the main target (max 2)\n[WhenUse] Clash Power +1 for every 20% missing HP on self (max 3)\n[WinDuel] Gain 10 [Combustion]\n[EndSkill] Consume all [ChickenFightlust]\n[EndSkill] At more than 20 [Combustion], consume up to 25 excess [Combustion] and heal ([Combustion] consumed x 2)% HP",
+          "name": "Rooster's Rampaging Blades Under the Ensanguined Heaven [血天下鷄舞亂刀]",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1071421"
+      ],
+      "uptie": 3
+    }
+  ]
+}

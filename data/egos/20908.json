@@ -1,0 +1,177 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 4,
+          "baseValue": 8,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 6 [Combustion]",
+                "[OnSucceedAttack] If this hits the main target, inflict (1 + (Wrath Reson. / 3)) [BirdCage] next turn on main target (max 2; rounded down)"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[EndSkill] Heal (1 + highest Reson.) allies with the least HP percentages for 15% of their max HP (max 3 allies)\n[EndSkill] For 3 turns, lose 10 SP at Turn End",
+          "levelCorrection": 3,
+          "name": "Indicant's Trial",
+          "uptie": 1
+        },
+        {
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 8 [Combustion]",
+                "[OnSucceedAttack] If this hits the main target, inflict (1 + (Wrath Reson. / 3)) [BirdCage] next turn on main target (max 3; rounded down)"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] Gain (highest Reson. / 2) Atk Weight (max 3; rounded down)\n[EndSkill] Heal (1 + highest Reson.) allies with the least HP percentage for 18% of their max HP (max 3 allies)\n[EndSkill] For 3 turns, lose 10 SP at Turn End",
+          "name": "Indicant's Trial",
+          "uptie": 3
+        },
+        {
+          "desc": "[BeforeAttack] Gain (highest Reson. / 2) Atk Weight (max 3; rounded down)\n[EndSkill] Heal (1 + highest Reson.) allies with the least HP percentage for 20% of their max HP (max 3 allies)\n[EndSkill] For 3 turns, lose 10 SP at Turn End",
+          "name": "Indicant's Trial",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 4,
+          "baseValue": 8,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 6 [Combustion]",
+                "[UnBrokenCoinOnSucceedAttack] If this hits the main target, inflict (1 + Wrath Reson.) [BirdCage] on main target (max 3)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "Deal +1% damage on main target for every [Combustion] Potency on main target (max 50%)",
+                "[EnemyKill] Apply 1 [CrimsonResultUp] and 1 [CrimsonDamageUp] to (1 + highest Reson.) allies with the least HP percentages (max 4 allies; once per Skill)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets Randomly\n[BeforeAttack] Gain (highest Reson. / 2) Atk Weight (max 3; rounded down)",
+          "levelCorrection": 5,
+          "name": "Indicant's Trial",
+          "uptie": 1
+        },
+        {
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 8 [Combustion]",
+                "[UnBrokenCoinOnSucceedAttack] If this hits the main target, inflict (1 + Wrath Reson.) [BirdCage] on main target (max 4)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "Deal +1% damage on main target for every [Combustion] Potency on main target (max 50%)",
+                "[EnemyKill] Apply 1 [CrimsonResultUp] and 1 [CrimsonDamageUp] to (1 + highest Reson.) allies with the least HP percentages (max 5 allies; once per Skill)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets Randomly\n[BeforeAttack] Gain (highest Reson. / 2) Atk Weight (max 3; rounded down)",
+          "name": "Indicant's Trial",
+          "uptie": 3
+        },
+        {
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 10 [Combustion]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict +1 [Combustion] Count",
+                "[UnBrokenCoinOnSucceedAttack] If this hits the main target, inflict (1 + Wrath Reson.) [BirdCage] on main target (max 5)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 1.0
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "Deal +2% damage on the main target for every [Combustion] Potency on the main target (max 100%)",
+                "[EnemyKill] Apply 1 [CrimsonResultUp] and 1 [CrimsonDamageUp] to (1 + highest Reson.) allies with the least HP percentages (max 6 allies; once per Skill)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets Randomly\n[BeforeAttack] Gain (highest Reson. / 2) Atk Weight (max 3; rounded down)",
+          "name": "Indicant's Trial",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "When a target with 10+ [Combustion] Count is defeated, inflict the [Combustion] Count on target between all enemies and heal SP 8 on self (in Focused Encounters, between all Parts; 3 max per target, 2 times per turn)\n- At max SP, heal 5 SP for 1 ally with the least SP instead",
+      "name": "Blazing Amusement"
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1030101"
+      ],
+      "uptie": 1
+    }
+  ],
+  "notes": {
+    "main": [
+      "Base identity, simple, straightforward.",
+      "Buffs herself when winning clashes. S3 10+ speed conditional is unrealistic without external help."
+    ]
+  },
+  "passiveData": {
+    "1030101": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "Skills deal +10% damage in a won clash.",
+      "name": "Righteous Retribution"
+    },
+    "1030121": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the most SP deals +10% Pierce damage.",
+      "name": "Support"
+    }
+  },
+  "skills": {
+    "1030101": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 7,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Gain 1 [Agility] next turn",
+          "levelCorrection": 2,
+          "name": "Joust",
+          "uptie": 1
+        },
+        {
+          "coinValue": 7,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WinDuel] Gain 2 [Agility] next turn",
+          "name": "Joust",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "[WinDuel] Gain 2 [Agility] next turn",
+          "name": "Joust",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "desc": "[WinDuel] Gain 2 [Agility] next turn",
+          "name": "Joust",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1030102": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Gain 1 [Enhancement] next turn",
+          "levelCorrection": 2,
+          "name": "Galloping Tilt",
+          "uptie": 1
+        },
+        {
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WinDuel] Gain 2 [Enhancement] next turn",
+          "name": "Galloping Tilt",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WinDuel] Gain 2 [Enhancement] next turn",
+          "name": "Galloping Tilt",
+          "uptie": 3
+        },
+        {
+          "coinValue": 12,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WinDuel] Gain 2 [Enhancement] next turn",
+          "name": "Galloping Tilt",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1030103": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At 10+ Speed, Coin Power +2",
+          "levelCorrection": 2,
+          "name": "For Justice!",
+          "uptie": 3
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 10+ Speed, Coin Power +2",
+          "name": "For Justice!",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1030104": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "",
+          "levelCorrection": -2,
+          "name": "Evade",
+          "uptie": 1
+        },
+        {
+          "affinity": "lust",
+          "desc": "",
+          "name": "Evade",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1030121"
+      ],
+      "uptie": 3
+    }
+  ]
+}

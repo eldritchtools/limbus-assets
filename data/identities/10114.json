@@ -1,0 +1,561 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1011402",
+        "1011403"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1011402",
+        "1011403",
+        "1011401"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1011402",
+        "1011403",
+        "1011411"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Standard Heishou mechanic: Using S3 or defense gives a 3 turn buff corresponding to their Heishou Pack. {status:LegStrengthHorseYisang} gives {status:Agility}, {status:Aggro}, and bonus {status:Vibration} application.",
+      "Standard Heishou mechanic: Combos with {identity:10613}'s S3. The buff gives him one {status:VibrationExplosion} per turn when attacking.",
+      "Standard Heishou Adept mechanic: Having his passive active lets him generate a resource that can be consumed upgrade his S3. {status:BreakthroughHorse} is gained when attacking slower enemies, triggering {status:VibrationExplosion}, or winning a clash with {status:LegStrengthHorseYisang} (max 3 per turn). He needs 5 stacks to use his S3-2."
+    ],
+    "other": [
+      "Both S3 versions (or S2 when the target doesn't have Deathrite) apply {status:ConcussionYisang}, buffing the effects of {status:VibrationExplosion} and {status:Burst} by 20%.",
+      "S3-2 applies {status:BattlefieldHorse} to all allies next turn, giving everyone {status:ParryingResultUp} and {status:DefenseUp}.",
+      "Passively gives bonus {status:Breath} and {status:Enhancement} to {identity:10812}, as well as triggering her S3 for free whenever he uses his S3-2."
+    ]
+  },
+  "passiveData": {
+    "1011401": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Gain 1 [BreakthroughHorse] when meeting one of the following conditions:\n- Attack Start: when this unit's Speed is faster than the target's by 2 or more\n- When this unit triggers [VibrationExplosion] twice with its Skills (including E.G.O Skills)\n- When this unit wins a Clash while having [LegStrengthHorseYisang]\n※ Only 3 [BreakthroughHorse] can be gained per turn; cannot gain [BreakthroughHorse] with the Skill \"Obsidian Stormrider's Crescent Decapitator\"",
+      "name": "Obsidian Stormrider [黑風馬脚]"
+    },
+    "1011402": {
+      "desc": "When activating [HeishouCombo], The Lord of Hongyuan Hong Lu gains the following effect as the [HeishouComboCountHonglu] effect:\n- On Hit with a Base Skill's Final Coin, trigger [VibrationExplosion] once (once per turn)\n\nIf Family Hierarch Candidate Ishmael is an Actively participating unit, activate the following:\n- When Family Hierarch Candidate Ishmael inflicts [Burst] or [Burst] Count with its Skill effects, that unit gains 3 [Breath] Potency (2 times per turn; excluding E.G.O Skills)\n- Turn Start: apply 1 [Enhancement] to Family Hierarch Candidate Ishmael. If Ishmael has 10+ [Breath] Potency, apply 1 more [Enhancement]\n- After this unit uses the Skill \"Obsidian Stormrider's Crescent Decapitator\", Family Hierarch Candidate Ishmael uses \"Crimson Spring\" as Assist Attack[TabExplain] (once per turn)",
+      "name": "The Steed's Houndlike Loyalty [狗馬之心]"
+    },
+    "1011403": {
+      "desc": "When applying [BattlefieldHorse], gain 3 [AttackUp] this turn and next turn\n(If this unit has already gained [AttackUp] from this passive, gain it only for the next turn)",
+      "name": "Adept Vanguard"
+    },
+    "1011411": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Gain 1 [BreakthroughHorse] when meeting one of the following conditions:\n- Attack Start: when this unit's Speed is faster than the target's by 2 or more\n- When this unit triggers [VibrationExplosion] twice with its Skills (including E.G.O Skills)\n- When this unit wins a Clash while having [LegStrengthHorseYisang]\n※ Only 3 [BreakthroughHorse] can be gained per turn; cannot gain [BreakthroughHorse] with the Skill \"Obsidian Stormrider's Crescent Decapitator\"\n\nWhen this unit has Shield, gain (Shield HP / 10) Defense Level (max 5; rounded down)",
+      "name": "Obsidian Stormrider [黑風馬脚]"
+    },
+    "1011421": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Apply the following effect to 1 ally with the highest max HP\n- Combat Start: gain (affected unit's Speed difference between this turn and last turn x 2) Defense Level (max 5; if the affected unit was not an Active participant last turn, use its minimum base Speed value to calculate)\n- Combat Start: if the affected unit is at less than 50% HP, and if the Speed difference between this turn and last turn is 3 or higher, heal 50 HP (once per Encounter)",
+      "name": "Obsidian exoskeleton shall rend and protect my flesh"
+    }
+  },
+  "skills": {
+    "1011401": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 5+ ([Burst] + [Vibration]), Coin Power +1",
+          "levelCorrection": 1,
+          "name": "Cut Down and Trample",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count",
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's, Coin Power +1\n[WhenUse] If target has 5+ ([Burst] + [Vibration]), Coin Power +1",
+          "name": "Cut Down and Trample",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "If this unit's Speed is faster than the target's, Coin Power +1\n[WhenUse] If target has 5+ ([Burst] + [Vibration]), Coin Power +1",
+          "name": "Cut Down and Trample",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count",
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's, Coin Power +1\n[WhenUse] If target has 5+ ([Burst] + [Vibration]), Coin Power +1\n[WinDuel] Inflict 1 [Binding] next turn (2 times per turn)",
+          "name": "Cut Down and Trample",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1011402": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 5 ([Burst] + [Vibration]) on target (max 2)\n[WhenUse] Gain 1 [Agility] next turn (once per turn)",
+          "levelCorrection": 2,
+          "name": "Crescent Blade Strike [月刀擊]",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] If target does not have Deathrite, inflict 1 [ConcussionYisang]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's, Coin Power +1\n[WhenUse] Coin Power +1 for every 5 ([Burst] + [Vibration]) on target (max 2)\n[WhenUse] Gain 2 [Agility] next turn (once per turn)",
+          "name": "Crescent Blade Strike [月刀擊]",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "If this unit's Speed is faster than the target's, Coin Power +1\n[WhenUse] Coin Power +1 for every 5 ([Burst] + [Vibration]) on target (max 2)\n[WhenUse] Gain 2 [Agility] next turn (once per turn)",
+          "name": "Crescent Blade Strike [月刀擊]",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1.0
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] If target doesn't have Deathrite, inflict 1 [ConcussionYisang]",
+                "[OnSucceedAttack] If target has Deathrite, inflict 3 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's:\n- Coin Power +1\n- If this unit's Speed is faster than the target's by 2 or more, deal +([BreakthroughHorse] on self x 20)% damage (max 100%)\n\n[WhenUse] Coin Power +1 for every 5 ([Burst] + [Vibration]) on target (max 2)\n[WhenUse] Gain 2 [Agility] next turn (once per turn)",
+          "name": "Crescent Blade Strike [月刀擊]",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1011403": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.4
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] At 2+ [LegStrengthHorseYisang], inflict 1 [ConcussionYisang]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If this unit's Speed is faster than the target's:\n- Final Power +1\n- Deal +([BreakthroughHorse] on self x 10)% damage (max 40%)\n\nDeal +(Shield HP on self x 2)% damage (max 50%)\n\n[BeforeUse] At 5 [BreakthroughHorse], consume all of it to activate 'Obsidian Stormrider's Crescent Decapitator' instead\n[WhenUse] Gain 3 [LegStrengthHorseYisang]\n[WhenUse] Coin Power +1 for every 5 ([Burst] + [Vibration]) on target (max 2)",
+          "levelCorrection": 3,
+          "name": "Cavalry's Vanguard Charge",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.8
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "- At 3+ [BreakthroughHorse], inflict additional 1 [Binding]",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] At 2+ [LegStrengthHorseYisang], inflict 2 [ConcussionYisang]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's:\n- Final Power +1\n- Deal +([BreakthroughHorse] on self x 20)% damage (max 80%)\n\nDeal +(Shield HP on self x 2)% damage (max 50%)\n\n[BeforeUse] At 5 [BreakthroughHorse], consume all of it to activate 'Obsidian Stormrider's Crescent Decapitator' instead\n[WhenUse] Gain 3 [LegStrengthHorseYisang]\n[WhenUse] Coin Power +1 for every 5 ([Burst] + [Vibration]) on target (max 2)\n[WhenUse] At 3+ [BreakthroughHorse], convert all Coins to [SuperCoin]s",
+          "name": "Cavalry's Vanguard Charge",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1011404": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[CanDuelGuard] \n[StartBattle] Gain 3 [LegStrengthHorseYisang] next turn",
+          "levelCorrection": 2,
+          "name": "Preparation Afore the Charge.",
+          "uptie": 1
+        },
+        {
+          "affinity": "gluttony",
+          "desc": "[CanDuelGuard]\n[StartBattle] Gain 3 [LegStrengthHorseYisang] next turn\n[EndBattle] Remove 1 random removable negative effect applied to self (once per turn)",
+          "name": "Preparation Afore the Charge.",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1011405": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 3,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Burst]",
+                "[OnSucceedAttack] Inflict 4 [Vibration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 1 [ConcussionYisang]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If this unit's Speed is faster than the target's, Final Power +1\n[WhenUse] Apply 1 [BattlefieldHorse] to all other allies next turn (once per turn)\n[WhenUse] Gain 3 [LegStrengthHorseYisang]\n[WhenUse] Coin Power +1 for every 5 ([Burst] + [Vibration]) on target (max 2)\n[WinDuel] If this unit's Speed is faster than the target's, deal +50% damage",
+          "levelCorrection": 4,
+          "name": "Obsidian Stormrider's Crescent Decapitator [黑風馬脚月斬]",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's, Final Power +1\n[WhenUse] Apply 1 [BattlefieldHorse] to all other allies next turn (once per turn)\n[WhenUse] Gain 3 [LegStrengthHorseYisang]\n[WhenUse] Coin Power +1 for every 5 ([Burst] + [Vibration]) on target (max 2)\n[WinDuel] If this unit's Speed is faster than the target's, deal +50% damage\n[WinDuel] Inflict 1 [ConcussionYisang] against the main target",
+          "name": "Obsidian Stormrider's Crescent Decapitator [黑風馬脚月斬]",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1011421"
+      ],
+      "uptie": 3
+    }
+  ]
+}

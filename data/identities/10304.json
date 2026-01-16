@@ -1,0 +1,315 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1030401"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Inflicts {status:Vibration} and {status:NailPersonality}.",
+      "Triggers {status:VibrationExplosion} on S2",
+      "S3 inflicts {status:Reduction} and {status:Paralysis} on heads hit if the target has 5+ {status:NailPersonality}."
+    ]
+  },
+  "passiveData": {
+    "1030401": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "If the target has [NailPersonality], inflict +1 [Vibration] Count.\nIf this unit is Fanatic, inflict +1 [NailPersonality].",
+      "name": "Thou Shalt Hammer!"
+    },
+    "1030421": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 Fanatic ally with the least SP deals +10% damage.",
+      "name": "Hammer of Zealotry"
+    }
+  },
+  "skills": {
+    "1030401": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [NailPersonality]",
+                "[OnSucceedAttackHead] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Rightful Purge",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [NailPersonality]",
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Rightful Purge",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "",
+          "name": "Rightful Purge",
+          "uptie": 3
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [NailPersonality]",
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Rightful Purge",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1030402": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 12,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Enactment!",
+          "uptie": 1
+        },
+        {
+          "coinValue": 12,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]",
+                "+20% Damage to targets with 5+ [NailPersonality]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Enactment!",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Enactment!",
+          "uptie": 3
+        },
+        {
+          "coinValue": 12,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]",
+                "+30% damage to targets with 5+ [NailPersonality]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Enactment!",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1030403": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [NailPersonality]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [NailPersonality]",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] If target has 5+ [NailPersonality], inflict 1 [Reduction] next turn",
+                "[OnSucceedAttackHead] If target has 5+ [NailPersonality], inflict 2 [Paralysis] next turn",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Fanatical Judgement",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [NailPersonality]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [NailPersonality]",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] If target has 5+ [NailPersonality], inflict 1 [Reduction] next turn",
+                "[OnSucceedAttackHead] If target has 5+ [NailPersonality], inflict 2 [Paralysis] next turn",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Fanatical Judgement",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1030404": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Guard",
+          "uptie": 1
+        },
+        {
+          "affinity": "lust",
+          "desc": "",
+          "name": "Guard",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1030421"
+      ],
+      "uptie": 3
+    }
+  ]
+}

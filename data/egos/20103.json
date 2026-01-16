@@ -1,0 +1,111 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 18,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [AmberTakeDamageUp]",
+                "[OnSucceedAttackHead] Inflict 2 [Paralysis]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Targets the rearmost unit (In regular encounters)",
+          "levelCorrection": -2,
+          "name": "Wishing Cairn",
+          "uptie": 1
+        },
+        {
+          "baseValue": 22,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [AmberTakeDamageUp]",
+                "[OnSucceedAttackHead] Inflict 3 [Paralysis]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Targets the rearmost unit (In regular encounters)",
+          "name": "Wishing Cairn",
+          "uptie": 3
+        },
+        {
+          "atkWeight": 3,
+          "desc": "Targets the rearmost unit (In regular encounters)",
+          "name": "Wishing Cairn",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 20,
+          "coinValue": -10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [AmberTakeDamageUp]",
+                "[OnSucceedAttackHead] Inflict 2 [Paralysis]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly",
+          "levelCorrection": -2,
+          "name": "Wishing Cairn",
+          "uptie": 1
+        },
+        {
+          "baseValue": 24,
+          "coinValue": -10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [AmberTakeDamageUp]",
+                "[OnSucceedAttack] Inflict 2 [Paralysis]",
+                "[OnSucceedAttackHead] Inflict 3 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly",
+          "name": "Wishing Cairn",
+          "uptie": 3
+        },
+        {
+          "baseValue": 29,
+          "desc": "[CantIdentify]\nTargets randomly",
+          "name": "Wishing Cairn",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "At the start of the turn, gain 3 [HitTakeDamageDown] and [AmberTakeDamageDown].",
+      "name": "Dol Hareubang"
+    }
+  ]
+}

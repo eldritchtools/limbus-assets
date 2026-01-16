@@ -1,0 +1,305 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1110801"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1110811"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "S3 applies {status:EchoOfMansion}."
+    ],
+    "other": [
+      "{status:EchoOfMansion} applies bonus {status:Sinking} Count when the target gains {status:Sinking} Potency or Count and reduces Heads chance by 10% of enemies without SP. It also spreads to 2 other enemies if you trigger panic on the enemy with it.",
+      "Her passive increases her Clash Power and damage against enemies at negative SP, increases her damage against enemies with {status:EchoOfMansion}, and heals her SP if she wins a clash without losing any coins."
+    ]
+  },
+  "passiveData": {
+    "1110801": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "- When clashing against targets with less than -25 SP, Clash Power +1 and deal +10% damage\n- Deal +15% damage against targets with [EchoOfMansion]\n- When winning a Clash without losing a single Coin, heal 10 SP. If this unit is already at max SP, gain 2 [AttackUp] next turn (2 times per turn)",
+      "name": "The Mistress's Voice...!"
+    },
+    "1110811": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "- When clashing against targets with less than 0 SP, Clash Power +1 and deal +20% damage\n- Deal +30% damage against targets with [EchoOfMansion]\n- When winning a Clash without losing a single Coin, heal 10 SP. If this unit is already at max SP, gain 3 [AttackUp] next turn (2 times per turn)",
+      "name": "The Mistress's Voice...!"
+    },
+    "1110821": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Clash Power +1 to 1 ally with the most SP when clashing against targets with less than -25 SP",
+      "name": "Butler Training"
+    }
+  },
+  "skills": {
+    "1110801": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Knocking",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "[WhenUse] If target has 7+ [Sinking], Coin Power +1",
+          "name": "Knocking",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "[WhenUse] If target has 7+ [Sinking], Coin Power +1",
+          "name": "Knocking",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "[WhenUse] If target has 5+ [Sinking], Coin Power +1",
+          "name": "Knocking",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1110802": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Inflict +1 [Sinking] Count",
+          "levelCorrection": 2,
+          "name": "Dusting",
+          "uptie": 1
+        },
+        {
+          "desc": "[WinDuel] Inflict +2 [Sinking] Count",
+          "name": "Dusting",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "[WinDuel] Inflict +2 [Sinking] Count",
+          "name": "Dusting",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "[WhenUse] If target has 5+ [Sinking], Coin Power +1\n[WinDuel] Inflict +2 [Sinking] Count",
+          "name": "Dusting",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1110803": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add",
+                    "type": "gloom"
+                  },
+                  "type": "damage",
+                  "value": 20
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [EchoOfMansion] next turn",
+                "[OnSucceedAttack] If target has [EchoOfMansion], inflict Gloom Affinity damage equal to half of [Sinking] Potency on target (max 20)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Inflict +3 [Sinking] Count",
+          "levelCorrection": 4,
+          "name": "As Mistress Commands",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add",
+                    "type": "gloom"
+                  },
+                  "type": "damage",
+                  "value": 30
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [EchoOfMansion] next turn",
+                "[OnSucceedAttack] If target has [EchoOfMansion], inflict Gloom Affinity damage equal to [Sinking] Potency on target (max 30)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 7+ [Sinking], Coin Power +1\n[WinDuel] Inflict +3 [Sinking] Count",
+          "name": "As Mistress Commands",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1110804": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[OnSucceedEvade] Inflict 1 [Sinking] (3 times per turn)",
+          "levelCorrection": -3,
+          "name": "Insolent Fool...!",
+          "uptie": 1
+        },
+        {
+          "affinity": "gloom",
+          "baseValue": 4,
+          "desc": "[OnSucceedEvade] Inflict 1 [Sinking] (6 times per turn)",
+          "name": "Insolent Fool...!",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1110821"
+      ],
+      "uptie": 3
+    }
+  ]
+}

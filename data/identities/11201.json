@@ -1,0 +1,271 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1120101"
+      ],
+      "uptie": 1
+    }
+  ],
+  "notes": {
+    "main": [
+      "Base identity, simple, straightforward.",
+      "His passives give an HP heal every turn."
+    ]
+  },
+  "passiveData": {
+    "1120101": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Heal 5 HP at the start of the combat phase.",
+      "name": "Forced Survival"
+    },
+    "1120121": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "At the start of the combat phase, the ally with the least HP heals 5 HP.",
+      "name": "Gene Code G-0"
+    }
+  },
+  "skills": {
+    "1120101": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Swipe",
+          "uptie": 1
+        },
+        {
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 4 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Swipe",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "",
+          "name": "Swipe",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Swipe",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1120102": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Jag",
+          "uptie": 1
+        },
+        {
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count",
+                "[OnSucceedAttackHead] Inflict 1 [PenetrateTakeDamageUp]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Jag",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count",
+                "[OnSucceedAttackHead] Inflict 1 [PenetrateTakeDamageUp]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Jag",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count",
+                "[OnSucceedAttackHead] Inflict 1 [PenetrateTakeDamageUp]",
+                "[OnSucceedAttackHead] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Jag",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1120103": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] If target has [Burst], +10% Damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] If target has [Burst], +10% Damage",
+                "[OnSucceedAttackHead] Heal by 30% of damage dealt"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Chop Up",
+          "uptie": 3
+        },
+        {
+          "baseValue": 6,
+          "desc": "",
+          "name": "Chop Up",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1120104": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Guard",
+          "uptie": 1
+        },
+        {
+          "affinity": "gloom",
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Guard",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1120121"
+      ],
+      "uptie": 3
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1010201"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "S3 can inflict up to 3 {status:PenetrateTakeDamageUp} if no coins were lost.",
+      "S2 inflicts {status:Paralysis} on clash win."
+    ]
+  },
+  "passiveData": {
+    "1010201": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 4
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "In a clash, the opponent has -2 Clash Power.",
+      "name": "Acute Studies"
+    },
+    "1010221": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "1 ally with the highest Max HP gains +1 clash Power in a clash.",
+      "name": "Observational Eye"
+    }
+  },
+  "skills": {
+    "1010201": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Flèche",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Flèche",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Flèche",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Flèche",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1010202": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Final Coin inflicts +1 more Stack of its effect"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Final Coin inflicts +1 more Stack of its effect"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [PenetrateTakeDamageUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Moulinet",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Final Coin inflicts +1 more Stack of its effect"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Final Coin inflicts +1 more Stack of its effect"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [PenetrateTakeDamageUp] next turn",
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Moulinet",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1010203": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Inflict 3 [Paralysis] next turn",
+          "levelCorrection": 0,
+          "name": "Riposte",
+          "uptie": 1
+        },
+        {
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vulnerable] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WinDuel] Inflict 3 [Paralysis] next turn",
+          "name": "Riposte",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "[WinDuel] Inflict 3 [Paralysis] next turn",
+          "name": "Riposte",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vulnerable] next turn",
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WinDuel] Inflict 3 [Paralysis] next turn\n[WinDuel] Inflict 1 [Burst] Count",
+          "name": "Riposte",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1010204": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 9,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Guard",
+          "uptie": 1
+        },
+        {
+          "affinity": "gluttony",
+          "desc": "",
+          "name": "Guard",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1010221"
+      ],
+      "uptie": 3
+    }
+  ]
+}

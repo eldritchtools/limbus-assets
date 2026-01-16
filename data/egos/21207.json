@@ -1,0 +1,216 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusNotes": "Does not consider the SP loss when computing for average",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 8,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 random [SinkingWhite]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 random [SinkingWhite]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 5
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1~2 random [SinkingWhite]",
+                "[OnSucceedAttack] Lose 2~6 SP",
+                "[OnSucceedAttack] At 0+ SP, Reuse this Coin (5 times max per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "When this Skill flips Coins, each Coin flips against a random enemy among its targets.\n- The first Coin always targets the main target.\n- All 'On Hit' effects and all damage dealt by each Coin are inflicted only against the random target the Coin selected.\nWhen inflicting [SinkingWhite] with this Skill effects: (Chance to flip Heads)% chance to inflict The Departed. If this unit did not inflict The Departed, inflict The Living instead. (calculates every [SinkingWhite] stack independently)",
+          "levelCorrection": 2,
+          "name": "Solemn Lament",
+          "uptie": 1
+        },
+        {
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 random [SinkingWhite]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 random [SinkingWhite]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 5
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1~2 random [SinkingWhite]",
+                "[OnSucceedAttack] Lose 2~6 SP",
+                "[OnSucceedAttack] At 0+ SP, Reuse this Coin (5 times max per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "When this Skill flips Coins, each Coin flips against a random enemy among its targets.\n- The first Coin always targets the main target.\n- All 'On Hit' effects and all damage dealt by each Coin are inflicted only against the random target the Coin selected.\nWhen inflicting [SinkingWhite] with this Skill effects: (Chance to flip Heads)% chance to inflict The Departed. If this unit did not inflict The Departed, inflict The Living instead. (calculates every [SinkingWhite] stack independently)\n[EndSkill] Heal (# of Coin 3 hits x 2) SP",
+          "name": "Solemn Lament",
+          "uptie": 3
+        },
+        {
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 random [SinkingWhite]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 random [SinkingWhite]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 5
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1~2 random [SinkingWhite]",
+                "[OnSucceedAttack] Lose 2~6 SP",
+                "[OnSucceedAttack] At 0+ SP, Reuse this Coin (5 times max per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "When this Skill flips Coins, each Coin flips against a random enemy among its targets.\n- The first Coin always targets the main target.\n- All 'On Hit' effects and all damage dealt by each Coin are inflicted only against the random target the Coin selected.\nWhen inflicting [SinkingWhite] with this Skill effects: (Chance to flip Heads)% chance to inflict The Departed. If this unit did not inflict The Departed, inflict The Living instead. (calculates every [SinkingWhite] stack independently)\n[EndSkill] Heal (# of Coin 3 hits x 3) SP",
+          "name": "Solemn Lament",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusNotes": "Assumes 5 The Living and 5 The Departed for the final bonus Gloom damage",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 5,
+          "baseValue": 32,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "add"
+              },
+              "type": "damage",
+              "value": 0.45
+            }
+          ],
+          "coinValue": -8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [SinkingWhite](The Living)",
+                "[OnSucceedAttack] Inflict 4 [SinkingWhite](The Departed)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly\nIf target has less than 0 SP, deal more damage the further their SP value is from 0 (+1% damage for every missing SP, max 45%)\nAgainst targets without SP: deal +1% damage for every 2 [Sinking] on target (max 45%)",
+          "levelCorrection": 0,
+          "name": "Solemn Lament",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "add"
+              },
+              "type": "damage",
+              "value": 0.45
+            }
+          ],
+          "coinValue": -8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [SinkingWhite](The Living)",
+                "[OnSucceedAttack] Inflict 4 [SinkingWhite](The Departed)",
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\nIf target has less than 0 SP, deal more damage the further their SP value is from 0 (+1% damage for every missing SP, max 45%)\nAgainst targets without SP: deal +1% damage for every 2 [Sinking] on target (max 45%)\n[EnemyKill] Heal 5 SP",
+          "name": "Solemn Lament",
+          "uptie": 3
+        },
+        {
+          "coinValue": -8,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add",
+                    "type": "gloom"
+                  },
+                  "type": "damage",
+                  "value": 10
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [SinkingWhite](The Living)",
+                "[OnSucceedAttack] Inflict 5 [SinkingWhite](The Departed)",
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count",
+                "[OnSucceedAttack] If target has 50%- HP, inflict Gloom Damage equal to \"All\" [SinkingWhite] values on target\n- \"All\" = the sum of both The Living and The Departed on target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\nIf target has less than 0 SP, deal more damage the further their SP value is from 0 (+1% damage for every missing SP, max 45%)\nAgainst targets without SP: deal +1% damage for every 2 [Sinking] on target (max 45%)\n[EnemyKill] Heal 5 SP",
+          "name": "Solemn Lament",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "Turn End: if this unit has a negative effect, gain 1 [Enhancement] next turn\nWhen attacking targets that are either in Panic or in E.G.O Corrosion: deal +15% damage",
+      "name": "Lament"
+    }
+  ]
+}

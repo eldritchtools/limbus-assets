@@ -1,0 +1,353 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1060301"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "S2 gets reuse coin on heads hit if its target is below 25% HP.",
+      "S3 gets reused if it kills its target."
+    ],
+    "other": [
+      "Has additional SP healing on evade and on {keyword:Gluttony} Res with his passive."
+    ]
+  },
+  "passiveData": {
+    "1060301": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 2
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "Heal (2x Gluttony Reson.) SP next turn.",
+      "name": "Gaiety"
+    },
+    "1060321": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the most SP deals +20% damage with Heads Coins.",
+      "name": "Gambit"
+    }
+  },
+  "skills": {
+    "1060301": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Throat Slit",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 4 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Throat Slit",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "",
+          "name": "Throat Slit",
+          "uptie": 3
+        },
+        {
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 4 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Throat Slit",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1060302": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 5,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add"
+                  },
+                  "type": "damage",
+                  "value": 2
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttackHead] Damage +2"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add"
+                  },
+                  "type": "damage",
+                  "value": 2
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttackHead] Damage +2"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Shank",
+          "uptie": 1
+        },
+        {
+          "coinValue": 5,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add"
+                  },
+                  "type": "damage",
+                  "value": 3
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttackHead] Damage +3"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add"
+                  },
+                  "type": "damage",
+                  "value": 3
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttackHead] Damage +3"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "heads",
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                },
+                {
+                  "type": "reuse",
+                  "value": 1
+                },
+                {
+                  "extra": {
+                    "cond": "reuse",
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttackHead] If target is below 25% HP, use this Coin an additional time if target survives\nHeads: +50% Damage for this Coin",
+                "[ReUseOnSucceedAttackHead] +50% Damage for this Coin"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Shank",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "",
+          "name": "Shank",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            }
+          ],
+          "desc": "If target has 7+ [Laceration], deal +20% damage",
+          "name": "Shank",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1060303": {
+      "bonusNotes": "Does not count bonus damage when reused",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 25,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add"
+                  },
+                  "type": "damage",
+                  "value": 7
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttackHead] Damage +7",
+                "[ReUseOnSucceedAttackHead] +100% Damage for this Coin"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[EnemyKill] Use this skill 1 more time",
+          "levelCorrection": 3,
+          "name": "Mutilate",
+          "uptie": 3
+        },
+        {
+          "coinValue": 25,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add"
+                  },
+                  "type": "damage",
+                  "value": 7
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttackHead] Damage +7",
+                "[ReUseOnSucceedAttackHead] +100% damage for this Coin",
+                "[ReUseOnSucceedAttackHead] If target has 10+ [Laceration], deal +50% damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[EnemyKill] Use this skill 1 more time",
+          "name": "Mutilate",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1060304": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 14,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Evade",
+          "uptie": 1
+        },
+        {
+          "affinity": "gluttony",
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "desc": "If target has 5+ [Laceration], Coin Power +2\n[OnSucceedEvade] Heal 3 SP",
+          "name": "Evade",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1060321"
+      ],
+      "uptie": 3
+    }
+  ]
+}

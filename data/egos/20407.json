@@ -1,0 +1,166 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 6,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[EndSkill] Evenly inflict 10 [Laceration] between all targets"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[BeforeAttack] Gain (highest Reson.) Atk Weight (max 2)\n[BeforeAttack] Gain (highest Reson. + 1) [GazePersonality] (max 7)\n[EndSkill] For 2 turns, lose 10 SP at Turn End",
+          "levelCorrection": 0,
+          "name": "Contempt, Awe",
+          "uptie": 1
+        },
+        {
+          "baseValue": 8,
+          "coinValue": 6,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[EndSkill] Evenly inflict 15 [Laceration] between all targets"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] Gain (highest Reson.) Atk Weight (max 4)\n[BeforeAttack] Gain (highest Reson. + 1) [GazePersonality] (max 7)\n[EndSkill] For 2 turns, lose 10 SP at Turn End",
+          "name": "Contempt, Awe",
+          "uptie": 3
+        },
+        {
+          "baseValue": 10,
+          "coinValue": 7,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[EndSkill] Evenly inflict 15 [Laceration] between all targets"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] Gain (highest Reson.) Atk Weight (max 6)\n[BeforeAttack] Gain (highest Reson. + 1) [GazePersonality] this turn and next turn (max 7)\n[EndSkill] If this Skill was part of a Lust Reson., gain 1 E.G.O resource in Affinities corresponding to each of this unit's Attack Skills\n[EndSkill] For 2 turns, lose 10 SP at Turn End",
+          "name": "Contempt, Awe",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 40,
+          "coinValue": -18,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] If target has [Laceration], deal +([Laceration] on target + [Laceration] Count on target)% damage (max 20%)",
+                "[OnSucceedAttack] Inflict (1 + (highest Reson. x 1.5)) [Laceration] (max 10, rounded down)",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets Randomly\n[BeforeAttack] Gain 7 [GazePersonality]",
+          "levelCorrection": 3,
+          "name": "Contempt, Awe",
+          "uptie": 1
+        },
+        {
+          "baseValue": 40,
+          "coinValue": -18,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.4
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] If target has [Laceration], deal +([Laceration] on target + [Laceration] Count on target)% damage (max 40%)",
+                "[OnSucceedAttack] Inflict (3 + (highest Reson. x 2)) [Laceration] (max 15, rounded down)",
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets Randomly\n[BeforeAttack] Gain 7 [GazePersonality]",
+          "name": "Contempt, Awe",
+          "uptie": 3
+        },
+        {
+          "baseValue": 44,
+          "coinValue": -20,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.6
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] If target has [Laceration], deal +([Laceration] on target + [Laceration] Count on target)% damage (max 60%)",
+                "[OnSucceedAttack] Inflict (10 + (highest Reson. x 2.5)) [Laceration] (max 25, rounded down)",
+                "[OnSucceedAttack] Inflict +5 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets Randomly\n[BeforeAttack] Gain 7 [GazePersonality]\n[EndSkill] If this Skill was a part of a Lust Reson., gain 1 E.G.O resource in Affinities corresponding to each of this unit's Attack Skills",
+          "name": "Contempt, Awe",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "Whenever this unit uses a base Attack Skill against an enemy, gain 1 additional E.G.O resource for a random, least-owned Affinity that doesn't correspond to the Affinity of the Attack Skill used (2 times per turn)",
+      "name": "Mark of the Gaze"
+    }
+  ]
+}

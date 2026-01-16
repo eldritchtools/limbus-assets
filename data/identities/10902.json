@@ -1,0 +1,313 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1090201"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Gains {status:Breath} Potency with S1 and S2, but only gains Count with her S2 and Counter.",
+      "At 5+ {status:Breath} Potency, her counter is upgraded to her S3. Her S3 gains double crit chance if her target has 6+ {status:Laceration}."
+    ]
+  },
+  "passiveData": {
+    "1090201": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "At 5+ [Breath], counter skills use Skill 3.",
+      "name": "Dark Cloud Blade"
+    },
+    "1090221": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the slowest Speed deals +10% Slash damage.",
+      "name": "Dark Cloud Swordsmanship"
+    }
+  },
+  "skills": {
+    "1090201": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Sharpened Blade",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 4 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Sharpened Blade",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "",
+          "name": "Sharpened Blade",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 4 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 4+ [Breath], Coin Power +2",
+          "name": "Sharpened Blade",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1090202": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 1 [Breath]",
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [Breath]",
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Scattering Slash",
+          "uptie": 1
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +1 [Breath] Count",
+          "name": "Scattering Slash",
+          "uptie": 2
+        },
+        {
+          "baseValue": 6,
+          "desc": "[WhenUse] Gain +1 [Breath] Count",
+          "name": "Scattering Slash",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "desc": "[WhenUse] Gain +2 [Breath] Count\nAt 5+ [Breath], Coin Power +2",
+          "name": "Scattering Slash",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1090203": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 16,
+          "coins": [
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Inflict 10 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has 6+ [Laceration], double the crit chance",
+          "levelCorrection": 2,
+          "name": "Sky-clearing Cut",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "critdamage",
+              "value": 1.0
+            }
+          ],
+          "coinValue": 18,
+          "coins": [
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Inflict 10 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ [Laceration], double the crit chance\nAt 10+ [Breath], +100% Critical Damage",
+          "name": "Sky-clearing Cut",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1090204": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 9,
+          "coinValue": 6,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] Gain 1 [Protection]",
+          "levelCorrection": 2,
+          "name": "Counter",
+          "uptie": 1
+        },
+        {
+          "desc": "[WhenUse] Gain 1 [Protection]\n[WhenUse] Gain +2 [Breath] Count",
+          "name": "Counter",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1090205": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 16,
+          "coins": [
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Inflict 10 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "If target has 6+ [Laceration], double the crit chance",
+          "levelCorrection": 2,
+          "name": "Sky-clearing Cut",
+          "uptie": 2
+        },
+        {
+          "bonuses": [
+            {
+              "type": "critdamage",
+              "value": 1.0
+            }
+          ],
+          "coinValue": 18,
+          "coins": [
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Inflict 10 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ [Laceration], double the crit chance\nAt 10+ [Breath], +100% Critical Damage",
+          "name": "Sky-clearing Cut",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1090221"
+      ],
+      "uptie": 3
+    }
+  ]
+}

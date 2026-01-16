@@ -1,0 +1,394 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1081102"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1081102",
+        "1081101"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1081102",
+        "1081111"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Gains {status:BlackCloudBlade} if there are 2 or more Kurokumo identities on the field (including herself so she only needs 1 more).",
+      "Gains {status:EngageToBattle}, if 3 or more Kurokumo allies have died.",
+      "When triggering her passive at 3 {keyword:Lust} Res., she gives one Kurokumo ally {status:BlackCloud}. At 4 Res., she gives it to all Kurokumo allies instead of only 1.",
+      "S3 triggers {status:Laceration} an additional 3 times, making it very strong if the enemy has a high {status:Laceration} stack, but also risks breaking the stack early."
+    ],
+    "other": [
+      "{status:BlackCloudBlade} gives him {status:SlashResultUp} and bonus {status:Laceration} application.",
+      "Each Kurokumo ally that dies gives her a {status:SlashResultUp} for the rest of the fight.",
+      "{status:EngageToBattle} gives her more {status:SlashResultUp}, some {status:SlashDamageUp} and more bonus {status:Laceration} application",
+      "{status:BlackCloud} converting the unit's skills to {status:SuperCoin}, increases their {status:Laceration} application, and nullifies Stagger on them.",
+      "S2 gives {status:AttackDmgUp} to 2 Kurokumo allies, and if 6+ Kurokumo units are deployed (including herself), she gives 4 stacks to all 5 of the others instead. Having 6+ Kurokumo units also adds {status:Vulnerable} application to it."
+    ]
+  },
+  "passiveData": {
+    "1081101": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "Combat Start: if there are 2+ allied Kurokumo Clan Identities in this Encounter, including this unit, gain 1 [BlackCloudBlade]\n\nCombat Start: apply 1 [BlackCloud] to Kurokumo Clan Identities adjacent to this unit on the Dashboard",
+      "name": "Gathering Dark Clouds"
+    },
+    "1081102": {
+      "desc": "When a Kurokumo Clan ally dies, gain 1 [SlashResultUp] for this Encounter\n\nWhen 3 or more Kurokumo Clan allies are defeated, gain [EngageToBattle] for this Encounter",
+      "name": "Battle Ready"
+    },
+    "1081111": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "Combat Start: if there are 2+ allied Kurokumo Clan Identities in this Encounter, including this unit, gain 1 [BlackCloudBlade]\n\nCombat Start: apply 1 [BlackCloud] to Kurokumo Clan Identities adjacent to this unit on the Dashboard\n- At 4+ Lust Reson., apply 1 [BlackCloud] to all other Kurokumo Clan allies",
+      "name": "Gathering Dark Clouds"
+    },
+    "1081121": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "1 ally with the fastest Speed inflicts +1 more [Laceration] Potency or Count with Skill and Coin effects against enemies",
+      "name": "Cloud Workshop Blade"
+    }
+  },
+  "skills": {
+    "1081101": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 1 [AttackDown]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Clean Up",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "If target has 6+ [Laceration], Coin Power +1",
+          "name": "Clean Up",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 1 [AttackDown]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ [Laceration], Coin Power +1",
+          "name": "Clean Up",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "desc": "Coin Power +1 for every 6 [Laceration] on target (max 2)\nDeal +10% damage for every type of negative effect on target (max 30%)",
+          "name": "Clean Up",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1081102": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] On 2 other allied Kurokumo Clan Identities with the fastest Speed: apply 1 [AttackDmgUp] (once per turn)\n- If there are 6+ Kurokumo Clan allies, including this unit, apply 2 [AttackDmgUp] to 5 allies instead",
+          "levelCorrection": 3,
+          "name": "Sharpened Blade",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttackHead] Inflict 1 [SlashTakeDamageUp] (once per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                "[OnSucceedAttack] Gain 1 [SlashResultUp] next turn (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ [Laceration], Coin Power +1\n[StartBattle] On 2 other allied Kurokumo Clan Identities with the fastest Speed: apply 2 [AttackDmgUp] (once per turn)\n- If there are 6+ Kurokumo Clan units, including this unit, apply 3 [AttackDmgUp] to 5 allies instead",
+          "name": "Sharpened Blade",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "If target has 6+ [Laceration], Coin Power +1\n[StartBattle] On 2 other allied Kurokumo Clan Identities with the fastest Speed: apply 2 [AttackDmgUp] (once per turn)\n- If there are 6+ Kurokumo Clan units, including this unit, apply 3 [AttackDmgUp] to 5 allies instead",
+          "name": "Sharpened Blade",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttackHead] Inflict 1 [SlashTakeDamageUp] (once per turn)",
+                "- If there are 6+ Kurokumo Clan units, including this unit, inflict 2 [Vulnerable] instead"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                "[OnSucceedAttack] Gain 1 [SlashResultUp] next turn (2 times per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Coin Power +1 for every 6 [Laceration] on target (max 2)\nDeal +10% damage for every type of negative effect on target (max 50%)\n[StartBattle] On 2 other allied Kurokumo Clan Identities with the fastest Speed: apply 2 [AttackDmgUp] (once per turn)\n- If there are 6+ Kurokumo Clan units, including this unit, apply 4 [AttackDmgUp] to 5 allies instead",
+          "name": "Sharpened Blade",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1081103": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Activate [Laceration] on target 3 times; then, reduce their [Laceration] Count by 3"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has 6+ [Laceration], Coin Power +1",
+          "levelCorrection": 5,
+          "name": "Ink Over",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "Deal +10% damage for every type of negative effect on target (max 100%)",
+                "[OnSucceedAttack] Activate [Laceration] on target 3 times; then, reduce their [Laceration] Count by 3"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Coin Power +1 for every 6 [Laceration] on target (max 2)\n[EnemyKill] Gain 2 [SlashResultUp] next turn (once per turn)",
+          "name": "Ink Over",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1081104": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[StartBattle] Gain 1 [Protection] (once per turn)",
+          "levelCorrection": 1,
+          "name": "Scattering Slash",
+          "uptie": 1
+        },
+        {
+          "affinity": "lust",
+          "desc": "[StartBattle] Gain 1 [Protection] (once per turn)\n[StartBattle] On (2 + highest Reson.) allied Kurokumo Clan Identities, including this unit, with the fastest Speed: apply 2 [Endurance] (once per turn)",
+          "name": "Scattering Slash",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1081121"
+      ],
+      "uptie": 3
+    }
+  ]
+}

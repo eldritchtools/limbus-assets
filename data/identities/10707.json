@@ -1,0 +1,410 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1070701"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1070711"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Deals bonus damage based on missing HP%.",
+      "S2 gives {status:Breath} and inflicts {status:Laceration} Count based on {status:Laceration} Potency on the target.",
+      "S3 gains Power with {keyword:Envy} Reson and even more at 6 A-Reson and inflicts more {status:Laceration} at lower HP%."
+    ],
+    "other": [
+      "Gains {status:Aggro} on skills.",
+      "Passive gives him {status:AttackUp} and {status:DefenseUp} whenever allies are attacked."
+    ]
+  },
+  "passiveData": {
+    "1070701": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Gain 1 [AttackUp] and 1 [DefenseUp] next turn every time an ally (including this unit) is attacked. (Max 6)\nDeal more damage at less HP.\n- Deal +0.4% damage for every 1% missing HP",
+      "name": "Mutilated Tattoos"
+    },
+    "1070711": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Gain 1 [AttackUp] and 1 [DefenseUp] next turn every time an ally (including this unit) is attacked. Gain 2 of each instead if the ally is from The Pequod. (Max 9)\nDeal more damage the less HP this unit has.\n- Deal +1% damage for every 1% missing HP",
+      "name": "Mutilated Tattoos"
+    },
+    "1070721": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the highest max HP deals more Pierce Damage at less HP\n- Deal +0.15% damage for every 1% missing HP (Max 15%)",
+      "name": "Desperation"
+    },
+    "1070731": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the highest max HP deals more Pierce Damage at less HP\n- Deal +0.3% damage for every 1% missing HP (Max 30%)",
+      "name": "Desperation"
+    }
+  },
+  "skills": {
+    "1070701": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +2 [Breath] Count\n[WhenUse] Gain +2 Aggro to this Skill Slot next turn",
+          "levelCorrection": 1,
+          "name": "Stalk Prey",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +3 [Breath] Count\n[WhenUse] Gain +3 Aggro to this Skill Slot next turn",
+          "name": "Stalk Prey",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "[WhenUse] Gain +3 [Breath] Count\n[WhenUse] Gain +3 Aggro to this Skill Slot next turn",
+          "name": "Stalk Prey",
+          "uptie": 3
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +4 [Breath] Count\n[WhenUse] Gain +5 Aggro to this Skill Slot next turn",
+          "name": "Stalk Prey",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1070702": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Inflict [Laceration] Count equal to 1/4 of [Laceration] Potency on target (Max 10)"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +2 Aggro to this Skill Slot next turn",
+          "levelCorrection": 1,
+          "name": "Snagharpoon",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Inflict [Laceration] Count equal to 1/4 of [Laceration] Potency on target (Max 10)"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +3 Aggro to this Skill Slot next turn\n[WhenUse] Gain 1 [Breath] for every 3 [Laceration] on target (Max 10)",
+          "name": "Snagharpoon",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "[WhenUse] Gain +3 Aggro to this Skill Slot next turn\n[WhenUse] Gain 1 [Breath] for every 3 [Laceration] on target (Max 10)",
+          "name": "Snagharpoon",
+          "uptie": 3
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Inflict [Laceration] Count equal to 1/3 of [Laceration] Potency on target (Max 10)"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +5 Aggro to this Skill Slot next turn\n[WhenUse] Gain 1 [Breath] for every 3 [Laceration] on target (Max 10)",
+          "name": "Snagharpoon",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1070703": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] At 50%- HP, inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] At 50%- HP, inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "[CriticalOnSucceedAttack] +30% Damage on Critical Hit"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At 3+ Envy Reson., Clash Power +1\nAt 4+ Envy Reson., Coin Power +1",
+          "levelCorrection": 3,
+          "name": "Sever Knot",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] At 75%- HP, inflict 1 [Laceration]",
+                "[OnSucceedAttack] At 50%- HP, inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] At 75%- HP, inflict 1 [Laceration]",
+                "[OnSucceedAttack] At 50%- HP, inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "[CriticalOnSucceedAttack] +50% Damage on Critical Hit"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 3+ Envy Reson., Clash Power +1\nAt 4+ Envy Reson., Coin Power +1\nAt 6+ Envy A-Reson., Coin Power +1",
+          "name": "Sever Knot",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1070704": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "skilllevel",
+              "value": 10
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] Gain +2 Aggro to this Skill Slot next turn\n[StartBattle] Gain [DefenseUp] for every [Breath] on self (Max 10)",
+          "levelCorrection": 5,
+          "name": "Payback",
+          "uptie": 1
+        },
+        {
+          "affinity": "wrath",
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "skilllevel",
+              "value": 10
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +5 Aggro to this Skill Slot next turn\n[StartBattle] Gain [DefenseUp] for every [Breath] on self (Max 10)",
+          "name": "Payback",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1070721"
+      ],
+      "uptie": 3
+    },
+    {
+      "passives": [
+        "1070731"
+      ],
+      "uptie": 4
+    }
+  ]
+}

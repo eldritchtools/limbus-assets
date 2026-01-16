@@ -1,0 +1,129 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 26,
+          "coinValue": -10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has no [Combustion], inflict 4 [Combustion]",
+                "[OnSucceedAttack] Inflict 4 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "9:2",
+          "uptie": 1
+        },
+        {
+          "coinValue": -10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has no [Combustion], inflict 4 [Combustion]",
+                "[OnSucceedAttack] Inflict 4 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] At 4+ (Lust Reson.), Atk Weight +1",
+          "name": "9:2",
+          "uptie": 3
+        },
+        {
+          "coinValue": -10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has no [Combustion], inflict 4 [Combustion]",
+                "[OnSucceedAttack] Inflict 4 [Combustion]",
+                "[OnSucceedAttackTail] If target has 10+ [Combustion], inflict 1 [Reduction] and 1 [Disarming] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] At 4+ (Lust Reson.), Atk Weight +1\n[BeforeAttack] At 4+ (Highest Lust A-Reson.), additional Atk Weight +1",
+          "name": "9:2",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 33,
+          "coinValue": -16,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has no [Combustion], inflict 6 [Combustion]",
+                "[OnSucceedAttack] Inflict 4 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly",
+          "levelCorrection": 0,
+          "name": "9:2",
+          "uptie": 1
+        },
+        {
+          "coinValue": -16,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has no [Combustion], inflict 6 [Combustion]",
+                "[OnSucceedAttack] Inflict 4 [Combustion]",
+                "[OnSucceedAttackTail] If target has 10+ [Combustion], inflict 1 [ScarletTakeDamageUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets Randomly\n[BeforeAttack] At 4+ (Lust Reson.), Atk Weight +1",
+          "name": "9:2",
+          "uptie": 3
+        },
+        {
+          "coinValue": -16,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has no [Combustion], inflict 6 [Combustion]",
+                "[OnSucceedAttack] Inflict 4 [Combustion]",
+                "[OnSucceedAttackTail] If target has 10+ [Combustion], inflict 2 [ScarletTakeDamageUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets Randomly\n[BeforeAttack] At 4+ (Lust Reson.), Atk Weight +1\n[BeforeAttack] At 4+ (Highest Lust A-Reson), additional Atk Weight +1",
+          "name": "9:2",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "On Heads Hit with a Lust affinity Skill, lower this unit and the target's SP by 4.\n(Does not work against targets without Sanity)\nGain 5 Lust E.G.O resources On Kill with a Lust affinity Skill",
+      "name": "Prophecy of Ruin"
+    }
+  ]
+}

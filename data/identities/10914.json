@@ -1,0 +1,487 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1091401"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1091411"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Standard {status:Charge} build up (+1 Potency every 10 Count consumed, Potency increases damage dealt).",
+      "Generates {status:Charge} Count on S1 and S2 and consumes it on S3. S2 consumes some but it's always a net gain.",
+      "S3 gets Indiscriminate, {status:WideAreaRampage}, and +1 atk weight at 5-9 (status:Charge) Count, making it hit randomly between the main target and another random target (either an ally or enemy). At 3+ Potency, it loses Indiscriminate, so it will only target enemies.",
+      "Her passive doubles her {status:Sinking} application against targets without {status:Sinking}."
+    ],
+    "other": [
+      "She can gain {status:Sinking} from losing clashes, triggering the downside of her S2 or S3 (not enough {status:Charge}), or when triggering her passive. She doesn't do anything with it, so it's purely a downside. Be careful of the stack building up especially if she never gets hit because {status:Sinking} doesn't decay naturally."
+    ]
+  },
+  "passiveData": {
+    "1091401": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 2
+          },
+          {
+            "type": "envy",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Gain 1 [Charge] every time this unit consumes 10 cumulative [Charge] Count in this Encounter\n\nWhen using a Base Attack Skill that inflicts [Sinking] Potency, if the main target does not have [Sinking], this unit gains 5 [Sinking] and doubles the amount of [Sinking] Potency the Skill applies (once per turn; in Focused Encounters, the Part)",
+      "name": "Jolly Antlers"
+    },
+    "1091411": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 2
+          },
+          {
+            "type": "envy",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Gain 1 [Charge] every time this unit consumes 10 cumulative [Charge] Count in this Encounter\n\nWhen using a Base Attack Skill that inflicts [Sinking] Potency, if the main target does not have [Sinking], this unit gains 5 [Sinking] and doubles the amount of [Sinking] Potency the Skill applies (once per turn; in Focused Encounters, the Part)\n\nAt less than 35% HP, Base Attack Skills gain Final Power +1",
+      "name": "Jolly Antlers"
+    },
+    "1091421": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the lowest SP: Skills that consume [Charge] or Unique Charge[TabExplain] and have effects that inflict [Sinking] against enemies deal +10% damage (except E.G.O Skills)",
+      "name": "Carol of Dying Comrades"
+    }
+  },
+  "skills": {
+    "1091401": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Energy Strike - 'That's What You Get for Giving Us Holiday Shifts!'",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 5+ [Charge] Count, Coin Power +1\n[DefeatDuel] Gain 4 [Sinking] and +3 [Charge] Count",
+          "name": "Energy Strike - 'That's What You Get for Giving Us Holiday Shifts!'",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 5+ [Charge] Count, Coin Power +1\n[DefeatDuel] Gain 4 [Sinking] and +3 [Charge] Count",
+          "name": "Energy Strike - 'That's What You Get for Giving Us Holiday Shifts!'",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[OnSucceedAttack] Gain +3 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Deal +12.5% damage for every [Charge] on self (max 50%)\nAt 2+ [Charge], Coin Power +1\nAt 5+ [Charge] Count, Coin Power +1\n[DefeatDuel] Gain 4 [Sinking] and +4 [Charge] Count",
+          "name": "Energy Strike - 'That's What You Get for Giving Us Holiday Shifts!'",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1091402": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking] and +1 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Concentration - 'Burst and Pop with Christmas Colors!\"",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking] and +2 [Sinking] Count",
+                "[OnSucceedAttack] Gain +3 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] At less than 8 [Charge] Count, gain 5 [Sinking] and +4 [Charge] Count (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Coin Power +1 for every 5 [Charge] Count (max 2)\n[DefeatDuel] Gain 5 [Sinking] and +2 [Charge] Count",
+          "name": "Concentration - 'Burst and Pop with Christmas Colors!\"",
+          "uptie": 2
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking] and +2 [Sinking] Count",
+                "[OnSucceedAttack] Gain +3 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] At less than 8 [Charge] Count, gain 5 [Sinking] and +4 [Charge] Count (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Coin Power +1 for every 5 [Charge] Count (max 2)\n[DefeatDuel] Gain 5 [Sinking] and +2 [Charge] Count",
+          "name": "Concentration - 'Burst and Pop with Christmas Colors!\"",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.6
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking] and +2 [Sinking] Count",
+                "[OnSucceedAttack] Gain +6 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] At less than 8 [Charge] Count, gain 5 [Sinking] and +4 [Charge] Count (once per turn)",
+                "[OnSucceedAttack] At 8+ [Charge] Count, consume 4 [Charge] Count and inflict 1 [HitTakeDamageUp] next turn (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Deal +15% damage for every [Charge] on self (max 60%)\nCoin Power +1 for every 5 [Charge] Count (max 2)\n[DefeatDuel] Gain 5 [Sinking] and +5 [Charge] Count",
+          "name": "Concentration - 'Burst and Pop with Christmas Colors!\"",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1091403": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count",
+                "[OnSucceedAttack] Raise Stagger Threshold by 10% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[OnSucceedAttack] Raise Stagger Threshold by 10% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[OnSucceedAttack] Raise Stagger Threshold by 10% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[OnSucceedAttack] Raise Stagger Threshold by 5% of damage dealt"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +5% damage for every [Charge] (max 20%)\n[WhenUse] At 5~9 [Charge] Count:\n- Gain 5 [Sinking] and +5 [Charge] Count\n- This Skill gains the following attributes: [CantIdentify], [WideAreaRampage], and Atk Weight +1\n- [BeforeUse] At 3+ [Charge], this Skill does not gain the [CantIdentify] effect\n[WhenUse] At 10+ [Charge] Count, consume all [Charge] Count to gain the following effects:\n- Coin Power +1\n- Deal +6% damage for every 1 excess [Charge] Count consumed past 10 (max 30%)",
+          "levelCorrection": 3,
+          "name": "Mind Whip - 'Ahaha... Look, Everyone! We're the Fireworks this Christmas!'",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.6
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.4
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count",
+                "[OnSucceedAttack] Raise Stagger Threshold by 10% of damage dealt",
+                "- At 3+ [Charge], raise Stagger Threshold by 20% of damage dealt instead"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[OnSucceedAttack] Raise Stagger Threshold by 10% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[OnSucceedAttack] Raise Stagger Threshold by 10% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[OnSucceedAttack] Raise Stagger Threshold by 5% of damage dealt"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Deal +10% damage for every [Charge] (max 40%)\n[WhenUse] At 5~9 [Charge] Count:\n- Gain 5 [Sinking] and +5 [Charge] Count\n- This Skill gains the following attributes: [CantIdentify], [WideAreaRampage], and Atk Weight +1\n- [BeforeUse] At 3+ [Charge], this Skill does not gain the [CantIdentify] effect\n[WhenUse] At 10+ [Charge] Count, consume all [Charge] Count to gain the following effects:\n- Coin Power +2\n- Deal +12% damage for every 1 excess [Charge] Count consumed past 10 (max 60%)",
+          "name": "Mind Whip - 'Ahaha... Look, Everyone! We're the Fireworks this Christmas!'",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1091404": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[WhenUse] Gain +3 [Charge] Count (once per turn)",
+          "levelCorrection": 2,
+          "name": "Energy Condensation - 'Haha! Everybody's Sparkling and Glittering!'",
+          "uptie": 1
+        },
+        {
+          "affinity": "envy",
+          "baseValue": 10,
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 2
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 5+ [Charge] Count, Base Power +2\n[WhenUse] Gain +3 [Charge] Count (2 times per turn)",
+          "name": "Energy Condensation - 'Haha! Everybody's Sparkling and Glittering!'",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1091421"
+      ],
+      "uptie": 3
+    }
+  ]
+}

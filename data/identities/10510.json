@@ -1,0 +1,292 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1051001"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "S1 and S2 {status:Discard} skills to set {status:KnowledgeExplored} to whatever rank the discarded skill was. S1 gets clash Power, and S2 and S3 get bonus damage and {status:Sinking} application depending on the value.",
+      "Gains {status:KnowledgeTraining} on his S1 and S2 (S2 also grants it to allies), which gives shields and clash power when discarding skills. It's reduced when taking damage and completely expires when staggered. His passive also gives himself and his allies {status:KnowledgeTraining} when an ally discards a skill (and gives him damage up).",
+      "S3 consumes all his {status:KnowledgeTraining} to temporarily grant him additional {status:KnowledgeExplored}, increasing its damage and {status:Sinking} application. At the end of the skill, it automatically resets to 1 (or 3 if the skill kills its target) if it ended up being 4 or higher."
+    ],
+    "other": [
+      "S1 gives some shields if ever it's discarded.",
+      "Use the discard trick if you want to maintain his {status:KnowledgeExplored} level. Generate his defense skill, then use the upper skill (the one that wasn't replaced by the defense skill). This stops him from discarding any skills."
+    ]
+  },
+  "passiveData": {
+    "1051001": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 2
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "Every time an other ally Discards a Skill, apply 1 [KnowledgeTraining] to the ally and self (once per Skill, 3 times per turn)\nTurn End: next turn, gain Pierce DMG Up and Blunt DMG Up equal to the number of other allies that Discarded Skills (max 3)",
+      "name": "Study Hall"
+    },
+    "1051021": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When 1 ally with the highest max HP Discards a Skill, gain (5 x Discarded Skill rank)% of the max HP as Shield (once per turn)\nIf the unit has [KnowledgeExplored], multiply the above Shield value by 1.5",
+      "name": "Diligent Learning"
+    }
+  },
+  "skills": {
+    "1051001": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Gain ([KnowledgeExplored] x 3% of Max HP) Shield if this Skill is Discarded\n[WhenUse] [Discard] 1 Skill of the lowest rank in all of this unit's Skill Slots",
+          "levelCorrection": 0,
+          "name": "Studious Dedication",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "desc": "Gain ([KnowledgeExplored] x 4% of Max HP) Shield if this Skill is Discarded\n[WhenUse] [Discard] 1 Skill of the lowest rank in all of this unit's Skill Slots\n[WhenUse] At 2+ [KnowledgeExplored], Clash Power +1\n[WinDuel] Gain 2 [KnowledgeTraining] (once per turn)",
+          "name": "Studious Dedication",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "Gain ([KnowledgeExplored] x 4% of Max HP) Shield if this Skill is Discarded\n[WhenUse] [Discard] 1 Skill of the lowest rank in all of this unit's Skill Slots\n[WhenUse] At 2+ [KnowledgeExplored], Clash Power +1\n[WinDuel] Gain 2 [KnowledgeTraining] (once per turn)",
+          "name": "Studious Dedication",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "desc": "Gain ([KnowledgeExplored] x 5% of Max HP) Shield if this Skill is Discarded\n[WhenUse] [Discard] 1 Skill of the lowest rank in all of this unit's Skill Slots\n[WhenUse] Gain ([KnowledgeExplored] - 1) Clash Power (max 2)\n[WinDuel] Gain 2 [KnowledgeTraining] (once per turn)",
+          "name": "Studious Dedication",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1051002": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 6,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [Sinking] equal to [KnowledgeExplored]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] Gain [KnowledgeTraining] equal to [KnowledgeExplored] on self\n[WhenUse] [Discard] 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots",
+          "levelCorrection": 1,
+          "name": "Moment of Erudition",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.09
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "Deal +3% damage for every [KnowledgeExplored] on self (max 9%)\n[StartBattle] Apply [KnowledgeTraining] equal to [KnowledgeExplored] on self  to a random ally and on self (prioritizes allies with [Discard] that has the least [KnowledgeTraining])\n[WhenUse] [Discard] 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots\n[WhenUse] If target has 6+ [Sinking], Coin Power +1",
+          "name": "Moment of Erudition",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "Deal +3% damage for every [KnowledgeExplored] on self (max 9%)\n[StartBattle] Apply [KnowledgeTraining] equal to [KnowledgeExplored] on self  to a random ally and on self (prioritizes allies with [Discard] that has the least [KnowledgeTraining])\n[WhenUse] [Discard] 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots\n[WhenUse] If target has 6+ [Sinking], Coin Power +1",
+          "name": "Moment of Erudition",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [Sinking] equal to ([KnowledgeExplored] x 2)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Deal +5% damage for every [KnowledgeExplored] on self (max 15%)\n[StartBattle] Apply [KnowledgeTraining] equal to [KnowledgeExplored] on self to 2 random allies and on self (prioritizes allies with [Discard] that has the least [KnowledgeTraining])\n[WhenUse] [Discard] 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots\n[WhenUse] Coin Power +1 for every 6 [Sinking] on target (max 2)",
+          "name": "Moment of Erudition",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1051003": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.18
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [Sinking] Potency/Count equal to [KnowledgeExplored] value against the target (how much of that [Sinking] is Potency or Count is randomly determined)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +3% damage for every [KnowledgeExplored] on self (max 18%)\n[WhenUse] If target has 6+ [Sinking], Coin Power +1\n[BeforeAttack] Consume all [KnowledgeTraining] on self and gain half of that value as additional [KnowledgeExplored] (rounded down)\n[EndSkill] At 4+ [KnowledgeExplored], reset value to 1 (if this Skill defeats an enemy, reset value to 3 instead)",
+          "levelCorrection": 3,
+          "name": "Scorch Knowledge",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.45
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "desc": "Deal +5% damage for every [KnowledgeExplored] (max 45%)\n[WhenUse] Coin Power +1 for every 6 [Sinking] on target (max 2)\n[BeforeAttack] Consume all [KnowledgeTraining] on self and gain the same value as additional [KnowledgeExplored]\n[EndSkill] At 4+ [KnowledgeExplored], reset value to 1 (if this Skill defeats an enemy, reset value to 3 instead)",
+          "name": "Scorch Knowledge",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1051004": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 12,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[WhenUse] [Discard] 1 Skill of the highest rank in all of this unit's Skill Slots",
+          "levelCorrection": 4,
+          "name": "Fixated Study",
+          "uptie": 1
+        },
+        {
+          "affinity": "gloom",
+          "baseValue": 15,
+          "desc": "[WhenUse] [Discard] 1 Skill of the highest rank in all of this unit's Skill Slots\n[WhenUse] Gain +6 Aggro to this Skill Slot next turn",
+          "name": "Fixated Study",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1051021"
+      ],
+      "uptie": 3
+    }
+  ]
+}

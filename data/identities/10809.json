@@ -1,0 +1,318 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1080901"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Gains {status:Agility} and inflicts {status:Binding}. Stronger against slower enemies.",
+      "Evade heals SP on evade."
+    ]
+  },
+  "passiveData": {
+    "1080901": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "If this unit Critically Hits against targets with Slower Speed than this unit's, inflict 1 additional Potency for negative effects with its Skills (3 times per turn)",
+      "name": "Deep Cleaning"
+    },
+    "1080921": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When 1 ally with the fastest Speed attacks a target with [Sinking], deal +0.5% damage for every 1 [Sinking] on target (max 10%)",
+      "name": "Loyal Supporter"
+    },
+    "1080931": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When 1 ally with the fastest Speed attacks a target with [Sinking], deal +1% damage for every 1 [Sinking] on target (max 20%)",
+      "name": "Loyal Supporter"
+    }
+  },
+  "skills": {
+    "1080901": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Sweeping Redirection",
+          "uptie": 1
+        },
+        {
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "name": "Sweeping Redirection",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "name": "Sweeping Redirection",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "[CriticalOnSucceedAttack] Gain 1 [Agility] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's, Coin Power +1\n[WhenUse] Gain +2 [Breath] Count",
+          "name": "Sweeping Redirection",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1080902": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Agility] next turn",
+                "[OnSucceedAttack] Inflict 2 [DefenseDown]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "levelCorrection": 1,
+          "name": "Housekeeping",
+          "uptie": 1
+        },
+        {
+          "desc": "[WhenUse] Gain +2 [Breath] Count\n[WinDuel] Gain 2 [Breath]",
+          "name": "Housekeeping",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "[WhenUse] Gain +2 [Breath] Count\n[WinDuel] Gain 2 [Breath]",
+          "name": "Housekeeping",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Agility] next turn",
+                "[CriticalOnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] Inflict 2 [DefenseDown]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's, Coin Power +1\n[WhenUse] Gain +2 [Breath] Count\n[WinDuel] Gain 2 [Breath]",
+          "name": "Housekeeping",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1080903": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] Inflict 1 [SlashTakeDamageUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 6 [Breath]",
+          "levelCorrection": 3,
+          "name": "Restraining Technique",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "[OnSucceedAttack] Inflict 2 [Binding] next turn",
+                "[OnSucceedAttack] Inflict 1 [SlashTakeDamageUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's, Coin Power +1\n[WhenUse] Gain 6 [Breath]",
+          "name": "Restraining Technique",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1080904": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Evade",
+          "uptie": 1
+        },
+        {
+          "affinity": "gloom",
+          "baseValue": 3,
+          "desc": "[OnSucceedEvade] Heal 5 SP (once per turn)",
+          "name": "Evade",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1080921"
+      ],
+      "uptie": 3
+    },
+    {
+      "passives": [
+        "1080931"
+      ],
+      "uptie": 4
+    }
+  ]
+}

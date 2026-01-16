@@ -1,0 +1,812 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1101201"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1101211"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "When his passive is active, enemies that attack him or other Middle identities gain 5 {status:VendettaMark} and enemies that attack other allies gain 2.",
+      "{status:VendettaMark} increases damage taken from Middle identities and applies {status:RetaliationBookFamily} on the enemy with the highest stack, triggering other Middle identity {status:RetaliationBook} effects on them.",
+      "Attacking enemies consumes their {status:VendettaMark} to gain {status:VengeanceBookSinclair}, increasing his damage based on the stack and giving him 1 speed and {status:ResultEnhancement} at 20+ stacks.",
+      "His counter turns into his S2 at 4+ A-Reson or his S3 at 6+ A-Reson."
+    ],
+    "other": [
+      "Gains {status:Aggro} on his S1 and S2.",
+      "S2 and S3 gain {status:AttackUp} based on Reson, double with A-Reson."
+    ]
+  },
+  "passiveData": {
+    "1101201": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When hit by an enemy, inflict 3 [VendettaMark] against the attacker(or Part) (once per turn)\n\nWhen an other ally is hit by an enemy, inflict 2 [VendettaMark] against the attacker(or Part) (once per turn per Identity)\n\nAfter Attacking with Base Attack Skills or Counter Skills, consume all [VendettaMark] on the target\n- Every time the target consumes [VendettaMark], gain [VengeanceBookSinclair] equal to the amount consumed",
+      "name": "The Middle Never Forgets"
+    },
+    "1101211": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When hit by an enemy, inflict 5 [VendettaMark] against the attacker(or Part) (once per turn)\n\nWhen an other ally is hit by an enemy, inflict 2 [VendettaMark] against the attacker(or Part) (once per turn per Identity)\n- If the said ally is from the Middle, inflict 3 additional [VendettaMark]\n\nAfter Attacking with Base Attack Skills or Counter Skills, consume all [VendettaMark] on the target\n- Every time the target consumes [VendettaMark], gain [VengeanceBookSinclair] equal to the amount consumed",
+      "name": "The Middle Never Forgets"
+    },
+    "1101221": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Combat Start: 1 ally with the least current HP percentage gains 2 [DefenseUp]",
+      "name": "We've Got Your Back"
+    },
+    "1101231": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Combat Start: 1 ally with the least current HP percentage gains 2 [DefenseUp]\n- If the said ally is from the Middle, also gain 2 [AttackUp]",
+      "name": "We've Got Your Back"
+    }
+  },
+  "skills": {
+    "1101201": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +2 [Aggro] to this Skill Slot next turn\n[WhenUse] Heal 5 SP on self",
+          "levelCorrection": 2,
+          "name": "Is it You?!",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ [Laceration], Coin Power +1\n[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn\n[WhenUse] Heal 5 SP on self",
+          "name": "Is it You?!",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ [Laceration], Coin Power +1\n[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn\n[WhenUse] Heal 5 SP on self",
+          "name": "Is it You?!",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "desc": "If target has 6+ [Laceration], Coin Power +1\n[WhenUse] Gain +5 [Aggro] to this Skill Slot next turn\n[WhenUse] Heal 5 SP on self\n- At max SP, gain Clash Power +1 instead",
+          "name": "Is it You?!",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1101202": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "skilllevel",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.1
+                }
+              ],
+              "descs": [
+                "At 4+ Reson. that includes this Skill, deal +10% damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +2 [Aggro] to this Skill Slot next turn\n[StartBattle] This Skill gains (highest Reson. / 3) Offense Level (max 2, rounded down)",
+          "levelCorrection": 3,
+          "name": "Payback with Interest",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "skilllevel",
+              "value": 3
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.15
+                }
+              ],
+              "descs": [
+                "At 4+ Reson. that includes this Skill, deal +15% damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ [Laceration], Coin Power +1\n[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn\n[StartBattle] This Skill gains (highest Reson. / 2) Offense Level (max 3, rounded down)",
+          "name": "Payback with Interest",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.15
+                }
+              ],
+              "descs": [
+                "At 4+ Reson. that includes this Skill, deal +15% damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ [Laceration], Coin Power +1\n[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn\n[StartBattle] This Skill gains (highest Reson. / 2) Offense Level (max 3, rounded down)",
+          "name": "Payback with Interest",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "skilllevel",
+              "value": 6
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "At 3+ Reson. that includes this Skill, deal +20% damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ [Laceration], Coin Power +1\n[WhenUse] Gain +5 [Aggro] to this Skill Slot next turn\n[StartBattle] This Skill gains (highest Reson. / 2) Offense Level (max 3, rounded down)\n- If the said Reson. includes an A-Reson., double the Offense Level gained from the above effect",
+          "name": "Payback with Interest",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1101203": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "skilllevel",
+              "value": 3
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.15
+                },
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.225
+                }
+              ],
+              "descs": [
+                "Deal +2.5% damage for every Reson. that includes this Skill (max 15%)",
+                "Deal +7.5% damage for every 10 [VengeanceBookSinclair] (max 22.5%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +1% damage for every 2 [VengeanceBookSinclair] (max 15%)\nIf target has 6+ [Laceration], Coin Power +1\n[StartBattle] This Skill gains (highest Reson. / 2) Offense Level (max 3, rounded down)",
+          "levelCorrection": 4,
+          "name": "Write 'em all down",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            },
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "type": "skilllevel",
+              "value": 6
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                },
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.45
+                }
+              ],
+              "descs": [
+                "Deal +5% damage for every Reson. that includes this Skill (max 30%)",
+                "Deal +15% damage for every 10 [VengeanceBookSinclair] (max 45%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Deal +1% damage for every 1 [VengeanceBookSinclair] (max 30%)\nCoin Power +1 for every 6 [Laceration] on target (max 2)\n[StartBattle] This Skill gains (highest Reson. / 2) Offense Level (max 3, rounded down)\n- If the said Reson. includes an A-Reson., double the Offense Level gained from the above effect",
+          "name": "Write 'em all down",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1101204": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[StartBattle] Gain 20% of missing HP as Shield (once per turn)",
+          "levelCorrection": 5,
+          "name": "Warmup in the East",
+          "uptie": 1
+        },
+        {
+          "desc": "[StartBattle] Skill behavior changes based on the sum of Envy A-Reson.:\n- At 4+ sum of A-Reson., use 'Payback with Interest' as Counter\n- At 6+ sum of A-Reson., use 'Write 'em all down' as Counter\n(Activates from the leftmost Skill Slot. Activates 2 times per turn)\n[StartBattle] Gain 30% of missing HP as Shield (once per turn)",
+          "name": "Warmup in the East",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1101205": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "skilllevel",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.1
+                }
+              ],
+              "descs": [
+                "At 4+ Reson. that includes this Skill, deal +10% damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] Gain +2 [Aggro] to this Skill Slot next turn\n[StartBattle] This Skill gains (highest Reson. / 3) Offense Level (max 2, rounded down)",
+          "levelCorrection": 3,
+          "name": "Payback with Interest",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "skilllevel",
+              "value": 3
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.15
+                }
+              ],
+              "descs": [
+                "At 4+ Reson. that includes this Skill, deal +15% damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ [Laceration], Coin Power +1\n[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn\n[StartBattle] This Skill gains (highest Reson. / 2) Offense Level (max 3, rounded down)",
+          "name": "Payback with Interest",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.15
+                }
+              ],
+              "descs": [
+                "At 4+ Reson. that includes this Skill, deal +15% damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ [Laceration], Coin Power +1\n[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn\n[StartBattle] This Skill gains (highest Reson. / 2) Offense Level (max 3, rounded down)",
+          "name": "Payback with Interest",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "skilllevel",
+              "value": 6
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "At 3+ Reson. that includes this Skill, deal +20% damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ [Laceration], Coin Power +1\n[WhenUse] Gain +5 [Aggro] to this Skill Slot next turn\n[StartBattle] This Skill gains (highest Reson. / 2) Offense Level (max 3, rounded down)\n- If the said Reson. includes an A-Reson., double the Offense Level gained from the above effect",
+          "name": "Payback with Interest",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1101206": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "skilllevel",
+              "value": 3
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.15
+                },
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.225
+                }
+              ],
+              "descs": [
+                "Deal +2.5% damage for every Reson. that includes this Skill (max 15%)",
+                "Deal +7.5% damage for every 10 [VengeanceBookSinclair] (max 22.5%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "Deal +1% damage for every 2 [VengeanceBookSinclair] (max 15%)\nIf target has 6+ [Laceration], Coin Power +1\n[StartBattle] This Skill gains (highest Reson. / 2) Offense Level (max 3, rounded down)",
+          "levelCorrection": 4,
+          "name": "Write 'em all down",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            },
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "type": "skilllevel",
+              "value": 6
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                },
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.45
+                }
+              ],
+              "descs": [
+                "Deal +5% damage for every Reson. that includes this Skill (max 30%)",
+                "Deal +15% damage for every 10 [VengeanceBookSinclair] (max 45%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Deal +1% damage for every 1 [VengeanceBookSinclair] (max 30%)\nCoin Power +1 for every 6 [Laceration] on target (max 2)\n[StartBattle] This Skill gains (highest Reson. / 2) Offense Level (max 3, rounded down)\n- If the said Reson. includes an A-Reson., double the Offense Level gained from the above effect",
+          "name": "Write 'em all down",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1101221"
+      ],
+      "uptie": 3
+    },
+    {
+      "passives": [
+        "1101231"
+      ],
+      "uptie": 4
+    }
+  ]
+}

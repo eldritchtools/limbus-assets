@@ -1,0 +1,143 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 16,
+          "coinValue": -8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] If target is an ally, heal them for 5% of user’s Max HP",
+                "[OnSucceedAttackTail] Inflict 7 [Combustion]; if target is an ally, give 2 [Agility] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets the unit with the least HP\nIf target is an ally, this deals 0 damage",
+          "levelCorrection": -2,
+          "name": "Lifetime Stew",
+          "uptie": 1
+        },
+        {
+          "baseValue": 18,
+          "coinValue": -8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] If target is an ally, heal them for 10% of user’s Max HP",
+                "[OnSucceedAttackTail] Inflict 7 [Combustion]; if target is an ally, give 2 [Agility] and 1 [GainSinStockAdder] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets the unit with the least HP\nIf target is an ally, this deals 0 damage",
+          "name": "Lifetime Stew",
+          "uptie": 3
+        },
+        {
+          "atkWeight": 7,
+          "desc": "[CantIdentify]\nTargets the unit with the least HP\nIf target is an ally, this deals 0 damage",
+          "name": "Lifetime Stew",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 20,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1
+            }
+          ],
+          "coinValue": -12,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets the unit with the least HP\n\n[BeforeAttack] Spend 3 random E.G.O resources to boost damage by 10%",
+          "levelCorrection": 1,
+          "name": "Lifetime Stew",
+          "uptie": 1
+        },
+        {
+          "baseValue": 24,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            }
+          ],
+          "coinValue": -12,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets the unit with the least HP\n\n[BeforeAttack] Spend 3 random E.G.O resources to boost damage by 20%",
+          "name": "Lifetime Stew",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": -12,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets the unit with the least HP\n\n[BeforeAttack] Spend 3 random E.G.O resources to boost damage by 30%",
+          "name": "Lifetime Stew",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "Tails Coins inflict 1 [Combustion] if hitting an enemy.",
+      "name": "Stew Spewage"
+    }
+  ]
+}

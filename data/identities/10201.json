@@ -1,0 +1,230 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1020101"
+      ],
+      "uptie": 1
+    }
+  ],
+  "notes": {
+    "main": [
+      "Base identity, simple, straightforward.",
+      "Applies a bunch of offensive debuffs ({status:Paralysis}, {status:AttackDown}, {status:Reduction}."
+    ]
+  },
+  "passiveData": {
+    "1020101": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 2
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "Deal +10% damage to units with negative status effects.",
+      "name": "Analytic Eye"
+    },
+    "1020121": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the highest Max HP inflicts 2 [AttackDown] with attacks at a 25% chance.",
+      "name": "Keen Observation"
+    }
+  },
+  "skills": {
+    "1020101": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Paralysis]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Downward Slash",
+          "uptie": 1
+        },
+        {
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Paralysis]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Downward Slash",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "",
+          "name": "Downward Slash",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Downward Slash",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1020102": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [AttackDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Upward Slash",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [AttackDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Upward Slash",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Upward Slash",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "desc": "",
+          "name": "Upward Slash",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1020103": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Reduction] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Reduction] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Drilling Stab",
+          "uptie": 3
+        },
+        {
+          "baseValue": 7,
+          "desc": "",
+          "name": "Drilling Stab",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1020104": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Evade",
+          "uptie": 1
+        },
+        {
+          "affinity": "pride",
+          "desc": "",
+          "name": "Evade",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1020121"
+      ],
+      "uptie": 3
+    }
+  ]
+}

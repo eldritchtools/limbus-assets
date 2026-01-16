@@ -1,0 +1,320 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1100201"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1100211"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "When his passive is active, 50% chance to gain {status:Breath} Count when allies gain {status:Breath} Count. (2x {keyword:Pride} Res is very common in a Blade Lineage team.)",
+      "S3 is a high rolling single coin skill with high {status:Paralysis} application."
+    ]
+  },
+  "passiveData": {
+    "1100201": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 2
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "The last Coin on the last skill in the chain deals +20% damage.",
+      "name": "Slayer"
+    },
+    "1100211": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 2
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "The last Coin on the last skill in the chain deals +20% damage.\nWhenever an ally other than this unit gains [Breath] Count, this unit gains +1 [Breath] Count at a 50% chance.",
+      "name": "Slayer"
+    },
+    "1100221": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "1 ally with the slowest Speed gains +1 final Power for their last skill.",
+      "name": "Bloodied Hands"
+    }
+  },
+  "skills": {
+    "1100201": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 1,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Slice then Stab",
+          "uptie": 1
+        },
+        {
+          "coinValue": 1,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Breath] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Slice then Stab",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "",
+          "name": "Slice then Stab",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Breath] Count "
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If at 3+ [Breath] Count, Coin Power +1",
+          "name": "Slice then Stab",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1100202": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Slash Series",
+          "uptie": 1
+        },
+        {
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[DefeatDuel] Gain 2 [Enhancement] next turn",
+          "name": "Slash Series",
+          "uptie": 2
+        },
+        {
+          "baseValue": 6,
+          "desc": "[DefeatDuel] Gain 2 [Enhancement] next turn",
+          "name": "Slash Series",
+          "uptie": 3
+        },
+        {
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[DefeatDuel] Gain 2 [Enhancement] next turn\n[WinDuel] Do not spend [Breath] Count with critical attacks landed with this skill",
+          "name": "Slash Series",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1100203": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 14,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Paralysis]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "To Claim Their Bones",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "critdamage",
+              "value": 1.5
+            }
+          ],
+          "coinValue": 18,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Paralysis]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 10+ [Breath] Count, +150% Critical Damage",
+          "name": "To Claim Their Bones",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1100204": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 9,
+          "coinValue": 6,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] Gain 1 [AttackDmgUp] next turn",
+          "levelCorrection": 2,
+          "name": "Newsprung Counter",
+          "uptie": 1
+        },
+        {
+          "desc": "[WhenUse] Gain 1 [AttackDmgUp] next turn\n[WhenUse] Gain +3 [Breath] Count",
+          "name": "Newsprung Counter",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1100221"
+      ],
+      "uptie": 3
+    }
+  ]
+}

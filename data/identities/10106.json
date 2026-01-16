@@ -1,0 +1,360 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1010601"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1010611"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "S3 Consumes 10 or 15 {status:Charge} Count for +1 or +2 Coin Power respectively. Inflicts more {status:Burst} Potency per 5 {status:Charge} Count consumed and even more Count at 15 {status:Charge} Count consumed.",
+      "Generate {status:Charge} Count with S1 and S2. Having 10+ {status:Charge} gives them Coin power and gives S2 more {status:Burst} application."
+    ]
+  },
+  "passiveData": {
+    "1010601": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "- At Turn End, gain 1 Haste per 5 [Charge] Count on self next turn. (Max 2)\n- If this unit's Skill consumed [Charge] Count, apply 3 [ChargeForceField] to 1 ally with the lowest HP percentage",
+      "name": "Emptied Thought"
+    },
+    "1010611": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "- At Turn End, gain 1 Haste per 5 [Charge] Count on self next turn. (Max 3)\n- If this unit's Skill consumed [Charge] Count, apply 3 [ChargeForceField] to 1 ally with the lowest HP percentage",
+      "name": "Emptied Thought"
+    },
+    "1010621": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 Ally with the highest [Charge] Count deals more damage against targets with [Burst] based on [Burst] on target (+1.5% per [Burst]. Max +15% damage)",
+      "name": "Cleanup Demonstration"
+    }
+  },
+  "skills": {
+    "1010601": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +2 [Charge] Count",
+          "levelCorrection": 3,
+          "name": "Dimensional Slit",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count",
+                "[OnSucceedAttackHead] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +2 [Charge] Count",
+          "name": "Dimensional Slit",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "[WhenUse] Gain +2 [Charge] Count",
+          "name": "Dimensional Slit",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count",
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +2 [Charge] Count\nAt 10+ [Charge] Count, Coin Power +2",
+          "name": "Dimensional Slit",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1010602": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +5 [Charge] Count",
+          "levelCorrection": 3,
+          "name": "Energy Cycle",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Burst]",
+                "[OnSucceedAttack] At 10+ [Charge] Count, inflict 3 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +6 [Charge] Count\nAt 10+ [Charge] Count, Coin Power +1",
+          "name": "Energy Cycle",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "[WhenUse] Gain +6 [Charge] Count\nAt 10+ [Charge] Count, Coin Power +1",
+          "name": "Energy Cycle",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Burst]",
+                "[OnSucceedAttack] At 10+ [Charge] Count, inflict 3 [Burst] and +2 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +7 [Charge] Count\nAt 10+ [Charge] Count, Coin Power +1",
+          "name": "Energy Cycle",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1010603": {
+      "bonusNotes": "Assumes 15+ Charge Count",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst] for every 5 [Charge] Count consumed by the Skill (Max 6)",
+                "[OnSucceedAttack] If the Skill consumed 15 [Charge] Count upon use, inflict 2 [DimensionRift]",
+                "[EnemyKill] Gain 3 [ChargeForceField]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At less than 15 [Charge] Count, consume 10 [Charge] Count to gain +1 Coin Power\n[WhenUse] Consume 15 [Charge] Count to gain +2 Coin Power",
+          "levelCorrection": 5,
+          "name": "Dimensional Rift",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Burst] for every 5 [Charge] Count consumed by the Skill (Max 9)",
+                "[OnSucceedAttack] If the Skill consumed 15 [Charge] Count upon use, inflict 2 [DimensionRift]",
+                "[EnemyKill] Gain 5 [ChargeForceField]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At less than 15 [Charge] Count, consume 10 [Charge] Count to gain +1 Coin Power\n[WhenUse] Consume 15 [Charge] Count to gain +2 Coin Power\n[BeforeAttack] If 15 [Charge] Count has been consumed, inflict +3 [Burst] Count",
+          "name": "Dimensional Rift",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1010604": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 2
+            }
+          ],
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "Base Power +1 per 5 [Charge] Count (Max 2)",
+          "levelCorrection": 0,
+          "name": "Hollow Dimension",
+          "uptie": 1
+        },
+        {
+          "affinity": "gloom",
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 2
+            }
+          ],
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "Base Power +1 per 5 [Charge] Count (Max 2)\n[OnSucceedEvade] +1 Potency when applying [Burst] for the first time with a Skill effect next turn (Max +3 per turn)",
+          "name": "Hollow Dimension",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1010621"
+      ],
+      "uptie": 3
+    }
+  ]
+}

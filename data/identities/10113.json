@@ -1,0 +1,552 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1011302"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1011302",
+        "1011301"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Except for S3, skills generate {status:BoseProjektil} up to 7 for his S3. {ego:20107} also generates it but his passive needs to be active otherwise the E.G.O will consume all the stacks.",
+      "S3 targets 1 main and 1-3 sub targets. It normally prioritizes the target with the least HP for its main target. Having 7 {status:BoseProjektil} causes it to prioritize allies. Targeting allies forces it to deal fatal damage. Killing allies causes its 2nd coin to deal more damage and to hit all sub targets. Failing to kill the ally or targeting an enemy causes the 2nd coin to deal damage against one random sub target."
+    ],
+    "other": [
+      "Using his S3 while {identity:10412} is on the field and has {status:ContemptPersonality} will trigger an additional attack that's similar to his S3 but targeting {sinner:4} instead."
+    ]
+  },
+  "passiveData": {
+    "1011301": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 6
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "If this unit killed an allied unit with its attack, gain [FellBulletPersonality] for the next turn (including with this unit's 'E.G.O Corrosion' and attacks against allies)\nIf this unit uses its E.G.O 'Fell Bullet' and consumes [BoseProjektil]: next turn, gain [BoseProjektil] equal to the amount of it consumed by the end of the last turn.",
+      "name": "Fell Bullet"
+    },
+    "1011302": {
+      "desc": "Turn End: lose all [BoseProjektil] on self. Next turn, gain [BoseProjektil] equal to the amount lost.",
+      "name": "Volatilized Memory"
+    },
+    "1011321": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 4
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "When the ally with the slowest Speed attacked an ally: After Attack, gain 1 [AttackDmgUp] next turn (2 times per turn)\n- If the attacked ally is killed by this attack, gain 1 [AttackDmgUp] for the whole Encounter instead (max 2 per Stage per Identity)\n- Can gain only up to 2 [AttackDmgUp] from the above effect.",
+      "name": "Designate Target"
+    }
+  },
+  "skills": {
+    "1011301": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.49
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +7% damage for every [BoseProjektil] on self (max 49%)\n[WhenUse] Gain +1 [BoseProjektil] Count",
+          "levelCorrection": 1,
+          "name": "See Through Defenses",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.7
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "base",
+              "value": 1
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count",
+                "[CriticalOnSucceedAttackHead] Inflict +1 [Laceration] Count",
+                "[CriticalOnSucceedAttackHead] Gain 1 [BoseProjektil]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Deal +10% damage for every [BoseProjektil] on self (max 70%)\n[WhenUse] At 5+ [Breath], Coin Power +1\n[WhenUse] At 3+ [Breath] Count, Base Power +1 \n[WhenUse] Gain +1 [Breath] Count and 1 [BoseProjektil]",
+          "name": "See Through Defenses",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "Deal +10% damage for every [BoseProjektil] on self (max 70%)\n[WhenUse] At 5+ [Breath], Coin Power +1\n[WhenUse] At 3+ [Breath] Count, Base Power +1 \n[WhenUse] Gain +1 [Breath] Count and 1 [BoseProjektil]",
+          "name": "See Through Defenses",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1.05
+            },
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "type": "base",
+              "value": 2
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count",
+                "[CriticalOnSucceedAttack] Inflict +1 [Laceration] Count",
+                "[CriticalOnSucceedAttack] Gain 1 [BoseProjektil]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Deal +15% damage for every [BoseProjektil] on self (max 105%)\n[WhenUse] Coin Power +1 for every 5 [Breath] on self (max 2)\n[WhenUse] Base Power +1 for every 3 [Breath] Count on self (max 2)\n[WhenUse] Gain +2 [Breath] Count and 1 [BoseProjektil]",
+          "name": "See Through Defenses",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1011302": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.7
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Gain 1 [BoseProjektil]",
+                "[CriticalOnSucceedAttack] Gain 2 [BoseProjektil]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Deal +10% damage for every [BoseProjektil] on self (max 70%)\n[WhenUse] Gain 2 [Breath]",
+          "levelCorrection": 3,
+          "name": "Punch Through",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.7
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[CriticalOnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Gain 1 [BoseProjektil]",
+                "[CriticalOnSucceedAttack] Inflict 1 [Laceration]",
+                "[CriticalOnSucceedAttack] Gain 2 [BoseProjektil]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[WhenUse] Deal +10% damage for every [BoseProjektil] on self (max 70%)\n[WhenUse] At 5+ [Breath], Coin Power +1\n[WhenUse] Gain 2 [Breath]",
+          "name": "Punch Through",
+          "uptie": 2
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[CriticalOnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Gain 1 [BoseProjektil]",
+                "[CriticalOnSucceedAttack] Inflict 1 [Laceration]",
+                "[CriticalOnSucceedAttack] Gain 2 [BoseProjektil]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[WhenUse] Deal +10% damage for every [BoseProjektil] on self (max 70%)\n[WhenUse] At 5+ [Breath], Coin Power +1\n[WhenUse] Gain 2 [Breath]",
+          "name": "Punch Through",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1.05
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[CriticalOnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Gain 1 [BoseProjektil]",
+                "[CriticalOnSucceedAttack] Inflict 2 [Laceration]",
+                "[CriticalOnSucceedAttack] Gain 2 [BoseProjektil]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[WhenUse] Deal +15% damage for every [BoseProjektil] on self (max 105%)\n[WhenUse] Coin Power +1 for every 5 [Breath] on self (max 2)\n[WhenUse] Gain 2 [Breath]",
+          "name": "Punch Through",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1011303": {
+      "bonusNotes": "Assumes the first coin kills an ally from 100%, but ignores the Pierce resist modifier. Uses the target's Pierce resist setting.\nComputed damage is the sum of the ally and enemy damage between the two coins.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 2,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "base",
+              "value": 1
+            }
+          ],
+          "coinValue": 7,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.35
+                },
+                {
+                  "type": "critdamage",
+                  "value": 0.4
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "This Coin deals damage only against the main target",
+                "If the main target is an ally, activate the following effects:\n- The main target's Pierce Resistance becomes Fatal against this attack",
+                "- Deal +5% damage for every [BoseProjektil] on self (max 35%)",
+                "- +2% Damage on Critical Hit for every [Breath] on self (max 40%)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 2.1
+                },
+                {
+                  "type": "critdamage",
+                  "value": 0.25
+                },
+                {
+                  "type": "critdamage",
+                  "value": 0.49
+                },
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "This Coin deals damage only against the sub-targets",
+                "- However, if the main target was an enemy, deal damage against the main target",
+                "- If the first Coin failed to kill an ally, 1 random sub-target takes damage\n",
+                "Deal +15% damage for every [BoseProjektil] on self (max 105%)",
+                "- If the first Coin killed an ally, deal +30% damage for every [BoseProjektil] on self instead (max 210%)\n",
+                "+2.5% Damage on Critical Hit for every [Breath] Potency (max 25%)",
+                "+7% Damage on Critical Hit for every [BoseProjektil] on self (max 49%)",
+                "Deal +(HP percentage the first Coin removed from the main target)% damage (max 100%)",
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "- If the first Coin killed an ally, inflict 3 [Laceration] and +1 [Laceration] Count instead"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] Targets the unit with the least HP\n- At 7 [BoseProjektil], primarily targets among allies as the main target\n[StartBattle] Gain +1 Atk Weight for every 3 [BoseProjektil] on self (max 2)\n[WhenUse] At 5+ [Breath], Coin Power +1\n[WhenUse] At 3+ [Breath] Count, Base Power +1\n[WhenUse] Gain 1 [Breath] for every [BoseProjektil] on self (max 7)\n[EndSkill] Lose ([BoseProjektil] on self x 2) SP (max 14)\n[EndSkill] If this unit has 7 [BoseProjektil] at Combat Start, lose them all\n- If this unit lost all [BoseProjektil], and if an ally is killed, heal 20 SP on self",
+          "levelCorrection": 5,
+          "name": "Target Readjustment Fire",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "type": "base",
+              "value": 2
+            }
+          ],
+          "coinValue": 7,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.49
+                },
+                {
+                  "type": "critdamage",
+                  "value": 0.6
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "This Coin deals damage only against the main target",
+                "If the main target is an ally, activate the following effects:\n- The main target's Pierce Resistance becomes Fatal against this attack",
+                "- Deal +7% damage for every [BoseProjektil] on self (max 49%)",
+                "- +3% Damage on Critical Hit for every [Breath] on self (max 60%)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 2.8
+                },
+                {
+                  "type": "critdamage",
+                  "value": 0.5
+                },
+                {
+                  "type": "critdamage",
+                  "value": 0.7
+                },
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "This Coin deals damage only against the sub-targets",
+                "- However, if the main target was an enemy, deal damage against the main target",
+                "- If the first Coin failed to kill an ally, 1 random sub-target takes damage\n",
+                "Deal +20% damage for every [BoseProjektil] on self (max 140%)",
+                "- If the first Coin killed an ally, deal +40% damage for every [BoseProjektil] on self instead (max 280%)\n",
+                "+5% Damage on Critical Hit for every [Breath] Potency (max 50%)",
+                "+10% Damage on Critical Hit for every [BoseProjektil] on self (max 70%)",
+                "Deal +(HP percentage the first Coin removed from the main target)% damage (max 100%)",
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "- If the first Coin killed an ally, inflict 5 [Laceration] and +2 [Laceration] Count instead"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[StartBattle] Targets the unit with the least HP\n- At 7 [BoseProjektil], primarily targets among allies as the main target\n[StartBattle] Gain +1 Atk Weight for every 3 [BoseProjektil] on self (max 2)\n[WhenUse] Coin Power +1 for every 5 [Breath] on self (max 2)\n[WhenUse] Base Power +1 for every 3 [Breath] Count on self (max 2)\n[WhenUse] Gain 1 [Breath] for every [BoseProjektil] on self (max 7)\n[EndSkill] Lose ([BoseProjektil] on self x 2) SP (max 14)\n[EndSkill] If this unit has 7 [BoseProjektil] at Combat Start, lose them all\n- If this unit lost all [BoseProjektil], and if an ally is killed, heal 20 SP on self",
+          "name": "Target Readjustment Fire",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1011304": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Gain +2 [Breath] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\n[WhenUse] Coin Power +1 for every 2 [Breath] on self (max 2)\n[WhenUse] Gain 2 [BoseProjektil]",
+          "levelCorrection": 2,
+          "name": "Front Line Support",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            }
+          ],
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Gain +2 [Breath] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[DuelCounter]\n[WhenUse] Coin Power +1 for every 2 [Breath] on self (max 3)\n[WhenUse] Gain 2 [BoseProjektil]",
+          "name": "Front Line Support",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1011321"
+      ],
+      "uptie": 3
+    }
+  ]
+}

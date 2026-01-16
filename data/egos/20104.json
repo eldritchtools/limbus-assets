@@ -1,0 +1,190 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 15,
+          "coinValue": 18,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pride"
+                  },
+                  "type": "damage",
+                  "value": 0.75
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Deal bonus Pride damage by (Target’s [Burst] x 7.5)% of the damage dealt, and reduce [Burst] Count by 5 (Max 75%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Targets the rearmost unit (In regular encounters)\n\n[BeforeAttack] Spend [Charge] Count to deal more damage (Max 50%)",
+          "levelCorrection": 3,
+          "name": "Dimension Shredder",
+          "uptie": 1
+        },
+        {
+          "baseValue": 20,
+          "coinValue": 18,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pride"
+                  },
+                  "type": "damage",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] If [Charge] Count was spent, inflict 3 [DimensionRift]",
+                "[OnSucceedAttack] Deal bonus Pride damage by (Target’s [Burst] x 10)% of the damage dealt, and reduce [Burst] Count by 5 (Max 100%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Targets the rearmost unit (In regular encounters)\n\n[BeforeAttack] Spend [Charge] Count to deal more damage (Max 75%)",
+          "name": "Dimension Shredder",
+          "uptie": 3
+        },
+        {
+          "coinValue": 18,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pride"
+                  },
+                  "type": "damage",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] If [Charge] Count was spent, inflict 5 [DimensionRift]",
+                "[OnSucceedAttack] Deal bonus Pride damage by (Target’s [Burst] x 10)% of the damage dealt, and reduce [Burst] Count by 5 (Max 100)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Targets the rearmost unit (In regular encounters)\n\n[BeforeAttack] Spend [Charge] Count to deal more damage (Max 75%)",
+          "name": "Dimension Shredder",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 36,
+          "coinValue": -24,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pride"
+                  },
+                  "type": "damage",
+                  "value": 0.75
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Burst]",
+                "[OnSucceedAttack] Deal bonus Pride damage by (Target’s [Burst] x 7.5)% of the damage dealt, and reduce [Burst] Count by 5 (Max 75%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets a random unit\n\n[BeforeAttack] Spend [Charge] Count to deal more damage (Max 50%)",
+          "levelCorrection": 5,
+          "name": "Dimension Shredder",
+          "uptie": 1
+        },
+        {
+          "baseValue": 42,
+          "coinValue": -24,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pride"
+                  },
+                  "type": "damage",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] If [Charge] Count was spent, inflict 3 [DimensionRift]",
+                "[OnSucceedAttack] Inflict 6 [Burst]",
+                "[OnSucceedAttack] Deal bonus Pride damage by (Target’s [Burst] x 10)% of the damage dealt, and reduce [Burst] Count by 5 (Max 100%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets a random unit\n\n[BeforeAttack] Spend [Charge] Count to deal more damage (Max 75%)",
+          "name": "Dimension Shredder",
+          "uptie": 3
+        },
+        {
+          "baseValue": 42,
+          "coinValue": -24,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pride"
+                  },
+                  "type": "damage",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] If [Charge] Count was spent, inflict 5 [DimensionRift]",
+                "[OnSucceedAttack] Inflict 6 [Burst]",
+                "[OnSucceedAttack] Deal bonus Pride damage by (Target’s [Burst] x 10)% of the damage dealt, and reduce [Burst] Count by 5 (Max 100)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets a random unit\n\n[BeforeAttack] Spend [Charge] Count to deal more damage (Max 75%)",
+          "name": "Dimension Shredder",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "At the start of the turn, if this unit took no damage last turn, gain +4 [Charge] Count.\nAfter successfully hitting an enemy with lower Speed, inflict +1 [Burst] Count. (3 times per turn)",
+      "name": "Rambling Man"
+    }
+  ]
+}

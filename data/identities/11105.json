@@ -1,0 +1,362 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1110501"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "{status:Discard}s skills.",
+      "S3 triggers 3 {status:VibrationExplosion}s."
+    ],
+    "other": [
+      "Gains {status:Vibration} Count from using or discarding S1.",
+      "S3 can consume 10 {status:Vibration} Count to gain Coin Power and additional {status:Vibration} Count application.",
+      "If her passive is active, every {status:VibrationExplosion} deals bonus {keyword:Sloth} damage."
+    ]
+  },
+  "passiveData": {
+    "1110501": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Upon triggering [VibrationExplosion] on an enemy, inflict 30% of Raised Stagger Threshold as Sloth damage (Max 20; rounded down)",
+      "name": "Drinking Boast"
+    },
+    "1110521": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the most [Vibration] Count gains +1 more [Vibration] Count from Skill effects",
+      "name": "Carrot & Stick"
+    }
+  },
+  "skills": {
+    "1110501": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Lower user's Stagger Threshold for every [Vibration] Count on self (Max 10) "
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If this Skill is Discarded, gain +3 [Vibration] Count",
+          "levelCorrection": 1,
+          "name": "Wait Up!",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold for every [Vibration] Count on self (Max 10) "
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this Skill is Discarded, gain +4 [Vibration] Count\n[WhenUse] Gain +2 [Vibration] Count\nAt 6+ [Vibration] Count, gain Final Power +1",
+          "name": "Wait Up!",
+          "uptie": 2
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            }
+          ],
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold for every [Vibration] Count on self (Max 10) "
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this Skill is Discarded, gain +4 [Vibration] Count\n[WhenUse] Gain +2 [Vibration] Count\nAt 6+ [Vibration] Count, gain Final Power +1",
+          "name": "Wait Up!",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold for every [Vibration] Count on self (Max 10) "
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this Skill is Discarded, gain +4 [Vibration] Count\n[WhenUse] Gain +2 [Vibration] Count\nAt 6+ [Vibration] Count, gain Final Power +2",
+          "name": "Wait Up!",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1110502": {
+      "bonusNotes": "Does not count the additional damage from her passive",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] At 6+ [Vibration] Count, trigger [VibrationExplosion]. Reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots",
+          "levelCorrection": 4,
+          "name": "Slice",
+          "uptie": 1
+        },
+        {
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] At 6+ [Vibration] Count, trigger [VibrationExplosion]. Reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this Skill is Discarded, gain 1 [AttackUp]\n[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots",
+          "name": "Slice",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "If this Skill is Discarded, gain 1 [AttackUp]\n[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots",
+          "name": "Slice",
+          "uptie": 3
+        },
+        {
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] At 6+ [Vibration] Count, trigger [VibrationExplosion]. Reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this Skill is Discarded, gain 1 [AttackUp]\n[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots",
+          "name": "Slice",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1110503": {
+      "bonusNotes": "Does not count the additional damage from her passive",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Vibration]",
+                "[OnSucceedAttack] If the Skill spent [Vibration] Count, inflict +3 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Trigger [VibrationExplosion]; after [VibrationExplosion], reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Trigger [VibrationExplosion]; after [VibrationExplosion], reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Trigger [VibrationExplosion]; after [VibrationExplosion], reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Discard this unit's Skills in descending order of ranks from all of its Skill Slots\nSpend 10 [Vibration] Count to gain Coin Power +1",
+          "levelCorrection": 5,
+          "name": "Daring Decision",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Vibration]",
+                "[OnSucceedAttack] If the Skill spent [Vibration] Count, inflict +3 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; after [VibrationExplosion], reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; after [VibrationExplosion], reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; after [VibrationExplosion], reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Discard this unit's Skills in descending order of ranks from all of its Skill Slots\nSpend 10 [Vibration] Count to gain Coin Power +2",
+          "name": "Daring Decision",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1110504": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots",
+          "levelCorrection": 0,
+          "name": "Hangover Cure",
+          "uptie": 1
+        },
+        {
+          "affinity": "sloth",
+          "baseValue": 12,
+          "desc": "[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots",
+          "name": "Hangover Cure",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1110521"
+      ],
+      "uptie": 3
+    }
+  ]
+}

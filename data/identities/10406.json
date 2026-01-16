@@ -1,0 +1,381 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1040601"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1040602"
+      ],
+      "uptie": 3
+    },
+    {
+      "passives": [
+        "1040611"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Mainly relevant for her Support Passive which gives {status:Breath} to allies that spend {status:Bullet} and bonus damage when spending their last {status:Bullet}."
+    ],
+    "other": [
+      "Gains {status:Breath} and applies various debuffs on her target (SP loss on S1, {status:AttackDown} on S2, {status:Vibration} and {status:Burst} on S3)."
+    ]
+  },
+  "passiveData": {
+    "1040601": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "If this unit has 7+ [Breath] at Turn End, heal 8 SP.",
+      "name": "A S.B."
+    },
+    "1040602": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "- Always Active : Begin encounters with 7 [Bullet]\n- If this unit has 7+ [Breath] at Turn End, heal 8 SP.",
+      "name": "A S.B."
+    },
+    "1040611": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "- Always Active : Begin encounters with 7 [Bullet]\n- If this unit has 7+ [Breath] at Turn End, heal 8 SP.\n- If this unit already has max SP upon meeting the above condition, gain 1 [Breath] next turn",
+      "name": "A S.B."
+    },
+    "1040621": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "If 1 ally with the least [Bullet] uses up their last [Bullet] with a Coin, deal 50% of the damage dealt by that Coin attack against each target as bonus damage against each individual target. (rounded up)",
+      "name": "The Lucky Cig"
+    },
+    "1040631": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "- If 1 ally with the least [Bullet] uses a Skill that spends [Bullet], gain 3 [Breath]. (once per turn; does not apply to allies without [Bullet])\n- If 1 ally with the least [Bullet] uses up their last [Bullet] with a Coin, deal 50% of the damage dealt by that Coin attack against each target as bonus damage against each individual target. (rounded up)",
+      "name": "The Lucky Cig"
+    }
+  },
+  "skills": {
+    "1040601": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Target loses 4 SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "levelCorrection": 1,
+          "name": "Shove",
+          "uptie": 1
+        },
+        {
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Target loses 6 SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "name": "Shove",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "name": "Shove",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Target loses 8 SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 2 [Breath] Count\nAt 7+ [Breath], Coin Power +1",
+          "name": "Shove",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1040602": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]",
+                "[CriticalOnSucceedAttack] Inflict 1 [AttackDown]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]",
+                "[CriticalOnSucceedAttack] Inflict 1 [AttackDown]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "T.N.",
+          "uptie": 1
+        },
+        {
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[CriticalOnSucceedAttack] Inflict 1 [AttackDown]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]",
+                "[CriticalOnSucceedAttack] Inflict 1 [AttackDown]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "T.N.",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "T.N.",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[CriticalOnSucceedAttack] Inflict 2 [AttackDown]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]",
+                "[CriticalOnSucceedAttack] Inflict 1 [AttackDown]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 7+ [Breath], Coin Power +1",
+          "name": "T.N.",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1040603": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [Bullet]",
+                "[CriticalOnSucceedAttack] Double the application of [Vibration] & [Burst] Potency and Count",
+                "[OnSucceedAttack] Inflict 3 [Vibration] and +1 [Vibration] Count",
+                "[OnSucceedAttack] Inflict 3 [Burst] and +1 [Burst] Count",
+                "[OnSucceedAttackHead] Trigger [VibrationExplosion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 4 [Breath]\nAt 10+ [Breath], Coin Power +1",
+          "levelCorrection": 3,
+          "name": "O.O.F.",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [Bullet]",
+                "[CriticalOnSucceedAttack] Double the application of [Vibration] & [Burst] Potency and Count",
+                "[OnSucceedAttack] Inflict 4 [Vibration] and +2 [Vibration] Count",
+                "[OnSucceedAttack] Inflict 4 [Burst] and +2 [Burst] Count",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 4 [Breath]\nGain +1 Coin Power for every 7 [Breath] on self (max 2)",
+          "name": "O.O.F.",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1040604": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Guard",
+          "uptie": 1
+        },
+        {
+          "affinity": "gluttony",
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Guard",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1040621"
+      ],
+      "uptie": 3
+    },
+    {
+      "passives": [
+        "1040631"
+      ],
+      "uptie": 4
+    }
+  ]
+}

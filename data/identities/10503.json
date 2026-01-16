@@ -1,0 +1,346 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1050301"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1050311"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Spends up to 8 {status:Charge} Count on S3 to inflict 2 {status:DefenseDown} for every 2 Count spent.",
+      "Spends 3 {status:Charge} Count on S2 to apply 2 {status:SlashTakeDamageUp}"
+    ],
+    "other": [
+      "Gains {status:Charge} Count from S1 or defense.",
+      "Passive gives additional {status:Charge} Count when hit or when losing clashes."
+    ]
+  },
+  "passiveData": {
+    "1050301": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When attacked, gain +1 [Charge] Count.\n(Up to 6 times)",
+      "name": "Enduring Spirit"
+    },
+    "1050311": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When attacked, gain +1 [Charge] Count. (Up to 6 times)\nAfter losing a clash, gain +1 [Charge] Count. (Up 6 times, counted independently of hits taken)",
+      "name": "Enduring Spirit"
+    },
+    "1050321": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the slowest Speed inflicts +1 [Burst].",
+      "name": "Taciturn"
+    }
+  },
+  "skills": {
+    "1050301": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 1 [SlashTakeDamageDown]",
+          "levelCorrection": 0,
+          "name": "Rip",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 2 [SlashTakeDamageDown]",
+          "name": "Rip",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "[WhenUse] Gain 2 [SlashTakeDamageDown]",
+          "name": "Rip",
+          "uptie": 3
+        },
+        {
+          "desc": "[WhenUse] Gain 2 [SlashTakeDamageDown]\nGain +3 [Charge] Count",
+          "name": "Rip",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1050302": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Energy Cycle",
+          "uptie": 1
+        },
+        {
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Burst]",
+                "[OnSucceedAttack] Spend 3 [Charge] Count to inflict 2 [SlashTakeDamageUp]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Energy Cycle",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "",
+          "name": "Energy Cycle",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Burst]",
+                "[OnSucceedAttack] Spend 3 [Charge] Count to inflict 2 [SlashTakeDamageUp]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If at 5+ [Charge] Count, Coin Power +1",
+          "name": "Energy Cycle",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1050303": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Spend 2 [Charge] Count to inflict 2 [DefenseDown]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Spend 2 [Charge] Count to inflict 2 [DefenseDown]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Spend 2 [Charge] Count to inflict 2 [DefenseDown]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Spend 2 [Charge] Count to inflict 2 [DefenseDown]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Energy Current",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Spend 2 [Charge] Count to inflict 2 [DefenseDown]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Spend 2 [Charge] Count to inflict 2 [DefenseDown]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Spend 2 [Charge] Count to inflict 2 [DefenseDown]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Spend 2 [Charge] Count to inflict 2 [DefenseDown]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If at 5+ [Charge] Count, Coin Power +1",
+          "name": "Energy Current",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1050304": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 12,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "Guard",
+          "uptie": 1
+        },
+        {
+          "affinity": "envy",
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] Gain +2 [Charge] Count",
+          "name": "Guard",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1050321"
+      ],
+      "uptie": 3
+    }
+  ]
+}

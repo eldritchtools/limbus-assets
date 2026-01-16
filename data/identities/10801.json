@@ -1,0 +1,227 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1080101"
+      ],
+      "uptie": 1
+    }
+  ],
+  "notes": {
+    "main": [
+      "Base identity, simple, straightforward.",
+      "Has some {status:Vibration} application and increased Clash Power at low HP."
+    ]
+  },
+  "passiveData": {
+    "1080101": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "At less than 25% HP, gain +1 clash Power in a clash.",
+      "name": "Last-ditch Struggle"
+    },
+    "1080121": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 6
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the least HP and less than 50% of Max HP gains +1 Clash Power in a clash.",
+      "name": "Determination to Survive"
+    }
+  },
+  "skills": {
+    "1080101": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Loggerhead",
+          "uptie": 1
+        },
+        {
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Loggerhead",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "",
+          "name": "Loggerhead",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Loggerhead",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1080102": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Inflict 1 [Disarming]",
+          "levelCorrection": -1,
+          "name": "Slide",
+          "uptie": 1
+        },
+        {
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WinDuel] Inflict 3 [Disarming]",
+          "name": "Slide",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WinDuel] Inflict 3 [Disarming]",
+          "name": "Slide",
+          "uptie": 3
+        },
+        {
+          "baseValue": 6,
+          "coinValue": 9,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WinDuel] Inflict 3 [Disarming]",
+          "name": "Slide",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1080103": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 12,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; Inflict 1 [HitTakeDamageUp]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Shield Bash",
+          "uptie": 3
+        },
+        {
+          "baseValue": 8,
+          "desc": "",
+          "name": "Shield Bash",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1080104": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Guard",
+          "uptie": 1
+        },
+        {
+          "affinity": "wrath",
+          "desc": "",
+          "name": "Guard",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1080121"
+      ],
+      "uptie": 3
+    }
+  ]
+}

@@ -1,0 +1,408 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1120601"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Gains {status:Aggro} and {status:DefenseUp} from skills.",
+      "Gains {status:DefenseUp} from his passive if targeted by 2 or more attacks or if at 50% or less HP.",
+      "S3 gives {status:DefenseUp} and {status:Endurance} to the entire party.",
+      "At 6+ {status:DefenseUp}, his S2 gains Clash Power and damage and his S3 gains Coin Power. At 10+ stacks, his S3 deals more damage."
+    ]
+  },
+  "passiveData": {
+    "1120601": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "If targeted by 2 or more attacks at the start of the combat phase, gain 2 [DefenseUp].\nIf at 50% or less HP at the start of the combat phase, gain 3 [DefenseUp].",
+      "name": "Combat Shield"
+    },
+    "1120621": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "If 1 ally with the highest Max HP is targeted by 2 or more attacks, gain 3 [DefenseUp]",
+      "name": "Your Shield"
+    }
+  },
+  "skills": {
+    "1120601": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 1 [Agility] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 2 [DefenseUp]",
+          "levelCorrection": 0,
+          "name": "Standoff",
+          "uptie": 1
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Agility] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 2 [DefenseUp]\n[DefeatDuel] Gain Shield by (3 * [DefenseUp] on self); Gain 1 [DefenseUp] next turn",
+          "name": "Standoff",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "[WhenUse] Gain 2 [DefenseUp]\n[DefeatDuel] Gain Shield by (3 * [DefenseUp] on self); Gain 1 [DefenseUp] next turn",
+          "name": "Standoff",
+          "uptie": 3
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Agility] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 2 [DefenseUp]\n[DefeatDuel] Gain Shield by (5 * [DefenseUp] on self); Gain 2 [DefenseUp] next turn",
+          "name": "Standoff",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1120602": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 1 [DefenseUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 1 [DefenseUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "At 6+ [DefenseUp], deal +20% damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 2 [DefenseUp]",
+          "levelCorrection": 0,
+          "name": "Flexible Suppression",
+          "uptie": 1
+        },
+        {
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [DefenseUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [DefenseUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "At 6+ [DefenseUp], deal +30% damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 3 [DefenseUp]\n[WhenUse] Gain +2 [Aggro] to this Skill Slot next turn",
+          "name": "Flexible Suppression",
+          "uptie": 2
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [DefenseUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [DefenseUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "At 6+ [DefenseUp], deal +30% damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 3 [DefenseUp]\n[WhenUse] Gain +2 [Aggro] to this Skill Slot next turn",
+          "name": "Flexible Suppression",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [DefenseUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [DefenseUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.4
+                }
+              ],
+              "descs": [
+                "At 6+ [DefenseUp], deal +40% damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 3 [DefenseUp]\n[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn\nAt 6+ [DefenseUp], Clash Power +1",
+          "name": "Flexible Suppression",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1120603": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Apply 3 [DefenseUp] to all allies next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Apply 2 [Endurance] and 3 [DefenseUp] to all allies\nAt 6+ [DefenseUp], Coin Power +1\nAt 10+ [DefenseUp], deal +30% damage",
+          "levelCorrection": 0,
+          "name": "Guardian",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Apply 3 [DefenseUp] to all allies next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Apply 2 [Endurance] and 3 [DefenseUp] to all allies\nCoin Power +1 per 6 [DefenseUp] (Max 3)\nAt 10+ [DefenseUp], deal +50% damage",
+          "name": "Guardian",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1120604": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 12,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[StartBattle] Gain Shield by (2 * [DefenseUp] on self)",
+          "levelCorrection": 5,
+          "name": "The Best Defense",
+          "uptie": 1
+        },
+        {
+          "affinity": "sloth",
+          "baseValue": 15,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] Gain Shield by (2 * [DefenseUp] on self)\n[WhenUse] Gain +5 [Aggro] to this Skill Slot next turn",
+          "name": "The Best Defense",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1120621"
+      ],
+      "uptie": 3
+    }
+  ]
+}

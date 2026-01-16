@@ -1,0 +1,561 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1040501"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1040511"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Spend 15 {status:Charge} Count with her S3 to gain Coin Power. At 7-14 Count, she spends HP to cover for the missing Count. Applies {status:ChargeForceField} to herself and an ally if she spent the full 15 Count and killed with her last coin."
+    ],
+    "other": [
+      "Generates {status:Charge} Count with her S1 and S2. If her passive is active, she gets another +3 on kills.",
+      "S2 inflicts {status:SlashTakeDamageUp} at 10+ Count. Can be used to setup for her S3."
+    ]
+  },
+  "passiveData": {
+    "1040501": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Upon defeating an enemy, gain +2 [Charge] Count (3 times per turn)",
+      "name": "Dimensional Demon Edge"
+    },
+    "1040511": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Upon defeating an enemy, gain +3 [Charge] Count (3 times per turn)",
+      "name": "Dimensional Demon Edge"
+    },
+    "1040521": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When an ally with the lowest Max HP defeats an enemy, they gain +2 [Charge] Count (Once per turn)",
+      "name": "Dimensional Refraction Edge - Type: Blade Mk7"
+    },
+    "1040531": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When an ally with the lowest Max HP defeats an enemy, they gain +3 [Charge] Count (Once per turn)",
+      "name": "Dimensional Refraction Edge - Type: Blade Mk7"
+    }
+  },
+  "skills": {
+    "1040501": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "E.C.",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1
+            }
+          ],
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "At 10+ [Charge] Count, deal +10% damage",
+          "name": "E.C.",
+          "uptie": 2
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "At 10+ [Charge] Count, deal +10% damage",
+          "name": "E.C.",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "At 10+ [Charge] Count, deal +10% damage\nAt 15+ [Charge] Count, deal additional +10% damage",
+          "name": "E.C.",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1040502": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 1,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] At 10+ [Charge] Count, inflict 1 [SlashTakeDamageUp]"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.15
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] If target’s HP is below 30%, deal +15% damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +5 [Charge] Count",
+          "levelCorrection": 5,
+          "name": "Leap",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] At 10+ [Charge] Count, inflict 1 [SlashTakeDamageUp]"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] If target’s HP is below 30%, deal +20% damage",
+                "[EnemyKill] Gain 1 [Agility] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +6 [Charge] Count\nAt 10+ [Charge] Count, gain +1 Coin Power",
+          "name": "Leap",
+          "uptie": 2
+        },
+        {
+          "baseValue": 2,
+          "desc": "[WhenUse] Gain +6 [Charge] Count\nAt 10+ [Charge] Count, gain +1 Coin Power",
+          "name": "Leap",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] At 10+ [Charge] Count, inflict 2 [SlashTakeDamageUp]"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] If target’s HP is below 30%, deal +30% damage",
+                "[EnemyKill] Gain 3 [Agility] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +7 [Charge] Count\nAt 10+ [Charge] Count, gain +1 Coin Power\nAt 15+ [Charge] Count, gain additional +1 Coin Power",
+          "name": "Leap",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1040503": {
+      "bonusNotes": "Assumes max coin power bonus and last coin damage bonus.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "tolastcoin",
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.05
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttackHead] The final Coin deals +5% damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "tolastcoin",
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.05
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttackHead] The final Coin deals +5% damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "tolastcoin",
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.05
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttackHead] The final Coin deals +5% damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[EnemyKill] If the skill consumed 15 [Charge] Count upon use, apply 5 [ChargeForceField] to self and 1 other ally"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 7~14 [Charge] Count\nConsume all [Charge] Count,\nAnd consume 3 x (15 - [Charge] Count Consumed)% HP to gain +3 Coin Power\n[WhenUse] Consume 15 [Charge] Count to gain +3 Coin Power",
+          "levelCorrection": 5,
+          "name": "D.D.E.D.R.",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 5
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "tolastcoin",
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttackHead] The final Coin deals +10% damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "tolastcoin",
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttackHead] The final Coin deals +10% damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "tolastcoin",
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttackHead] The final Coin deals +10% damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[EnemyKill] If the skill consumed 15 [Charge] Count upon use, apply 7 [ChargeForceField] to self and 1 other ally"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 7~14 [Charge] Count\nConsume all [Charge] Count,\nAnd consume 3 x (15 - [Charge] Count Consumed)% HP to gain +5 Coin Power\n[WhenUse] Consume 15 [Charge] Count to gain +5 Coin Power",
+          "name": "D.D.E.D.R.",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1040504": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 2
+            }
+          ],
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "Base Power +1 per 5 [Charge] Count (max 2)",
+          "levelCorrection": -4,
+          "name": "Charged Evade",
+          "uptie": 1
+        },
+        {
+          "affinity": "lust",
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 3
+            }
+          ],
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "Base Power +1 per 5 [Charge] Count (max 3)",
+          "name": "Charged Evade",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1040521"
+      ],
+      "uptie": 3
+    },
+    {
+      "passives": [
+        "1040531"
+      ],
+      "uptie": 4
+    }
+  ]
+}

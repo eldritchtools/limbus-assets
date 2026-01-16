@@ -1,0 +1,415 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1020701"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1020711"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Consume 5 {status:Vibration} Count to get +1 atk weight for S2 (max +1) and S3 (max +2). Count gained from S1 and S2.",
+      "S2 inflicts {status:PlusCoinValueDown}.",
+      "S3 triggers 3 {status:VibrationExplosion}s and deals some bonus {keyword:Wrath} damage."
+    ]
+  },
+  "passiveData": {
+    "1020701": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 6
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "- In a clash, the target has -1 Clash Power if they have 3+ types of negative effects\n- When this unit is alive, enemies affected by [VibrationExplosion] gain 2 Defense Level Down. (Once per enemy per turn)\n- Mental Corruption: If at less than -25 SP at Turn End, gain 2 Bind and 1 Blunt Power Up next turn",
+      "name": "Coerced Regret"
+    },
+    "1020711": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 6
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "- In a clash, the target has -1 Clash Power for every 3 types of negative effects it has (Max -2 Clash Power)\n- When this unit is alive, enemies affected by [VibrationExplosion] gain 2 Defense Level Down. (3 times per enemy per turn)\n- Mental Corruption: If at less than -25 SP at Turn End, gain 2 Bind and 1 Blunt Power Up next turn",
+      "name": "Coerced Regret"
+    },
+    "1020721": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "In a clash, the target of the slowest ally has -1 Clash Power if they have 3+ types of negative effects",
+      "name": "Repression Work"
+    }
+  },
+  "skills": {
+    "1020701": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [Vibration] Count",
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +3 [Vibration] Count",
+          "levelCorrection": 3,
+          "name": "Contracting Straight-jacket",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [Vibration] Count",
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +3 [Vibration] Count",
+          "name": "Contracting Straight-jacket",
+          "uptie": 2
+        },
+        {
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [Vibration] Count",
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +3 [Vibration] Count",
+          "name": "Contracting Straight-jacket",
+          "uptie": 3
+        },
+        {
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [Vibration] Count",
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +3 [Vibration] Count\n[DefeatDuel] Gain +3 [Vibration] Count",
+          "name": "Contracting Straight-jacket",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1020702": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [AttackDown] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +4 [Vibration] Count",
+          "levelCorrection": 3,
+          "name": "Metallic Ringing",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain +1 [Vibration] Count",
+                "[OnSucceedAttackHead] Inflict 1 [AttackDown] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Vibration]",
+                "[OnSucceedAttackHead] Inflict 1 [PlusCoinValueDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] Spend 5 [Vibration] Count and gain +1 Atk Weight for this Skill\n[WhenUse] Gain +4 [Vibration] Count",
+          "name": "Metallic Ringing",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "[StartBattle] Spend 5 [Vibration] Count and gain +1 Atk Weight for this Skill\n[WhenUse] Gain +4 [Vibration] Count",
+          "name": "Metallic Ringing",
+          "uptie": 3
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain +1 [Vibration] Count",
+                "[OnSucceedAttack] Inflict 1 [AttackDown] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Vibration]",
+                "[OnSucceedAttack] Inflict 1 [PlusCoinValueDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] Spend 5 [Vibration] Count and gain +1 Atk Weight for this Skill\n[WhenUse] Gain +4 [Vibration] Count",
+          "name": "Metallic Ringing",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1020703": {
+      "bonusNotes": "Assumes max bonus Wrath damage from Tremor Burst",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add",
+                    "type": "wrath"
+                  },
+                  "type": "damage",
+                  "value": 13
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion],\nThen deal Wrath Damage by 20% of the final Stagger Threshold Raised by [VibrationExplosion]. (Max 13)"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add",
+                    "type": "wrath"
+                  },
+                  "type": "damage",
+                  "value": 13
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion],\nThen deal Wrath Damage by 20% of the final Stagger Threshold Raised by [VibrationExplosion]. (Max 13)"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add",
+                    "type": "wrath"
+                  },
+                  "type": "damage",
+                  "value": 13
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion],\nThen deal Wrath Damage by 20% of the final Stagger Threshold Raised by [VibrationExplosion]. (Max 13)\nReduce [Vibration] Count by 3"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] Spend 5 [Vibration] Count and gain +1 Atk Weight for this Skill (Max +2)\n[DefeatDuel] Lose 20 SP\nDeal +3% Damage for every type of negative effect on target (Max 15%)\n[EnemyKill] Gain +2 [Vibration] Count",
+          "levelCorrection": 3,
+          "name": "Unleashed Violence",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add",
+                    "type": "wrath"
+                  },
+                  "type": "damage",
+                  "value": 20
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion],\nThen deal Wrath Damage by 30% of the final Stagger Threshold Raised by [VibrationExplosion]. (Max 20)"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add",
+                    "type": "wrath"
+                  },
+                  "type": "damage",
+                  "value": 20
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion],\nThen deal Wrath Damage by 30% of the final Stagger Threshold Raised by [VibrationExplosion]. (Max 20)"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add",
+                    "type": "wrath"
+                  },
+                  "type": "damage",
+                  "value": 20
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion],\nThen deal Wrath Damage by 30% of the final Stagger Threshold Raised by [VibrationExplosion]. (Max 20)\nReduce [Vibration] Count by 3"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] Spend 5 [Vibration] Count and gain +1 Atk Weight for this Skill (Max +2)\n[DefeatDuel] Lose 20 SP\nDeal +6% Damage for every type of negative effect on target (Max 30%)\n[EnemyKill] Gain +2 [Vibration] Count",
+          "name": "Unleashed Violence",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1020704": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 9,
+          "coinValue": 6,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] Gain +3 [Vibration] Count",
+          "levelCorrection": 5,
+          "name": "Gathering Spite",
+          "uptie": 1
+        },
+        {
+          "affinity": "gloom",
+          "coinValue": 6,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +6 [Vibration] Count",
+          "name": "Gathering Spite",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1020721"
+      ],
+      "uptie": 3
+    }
+  ]
+}

@@ -1,0 +1,369 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1100501"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1100511"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "High damaging S2 and S3, but inconsistent due to being negative SP. No SP safeguard means the need to be careful with SP management.",
+      "Defense skill heals SP if he gets too low, though it's usually better to get SP support from other sources."
+    ]
+  },
+  "passiveData": {
+    "1100501": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Heal 50% less SP from winning a clash or defeating an enemy.",
+      "name": "Mad Flame"
+    },
+    "1100511": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Heal 50% less SP from winning a clash or defeating an enemy.\nIf 5 or more surviving units, including this unit, are 'N Corp. Fanatics', they deal +10% damage.",
+      "name": "Mad Flame"
+    },
+    "1100521": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 6
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the least SP deals +10% Blunt damage.\nIf said ally is below 0 SP, further boost their Blunt damage the lower their SP is. (Max 10%)",
+      "name": "Cornering"
+    }
+  },
+  "skills": {
+    "1100501": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": -2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Lose 7 SP",
+          "levelCorrection": 4,
+          "name": "Coerced Judgement",
+          "uptie": 1
+        },
+        {
+          "coinValue": -2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Gain 1 [AssemblePersonality] next turn",
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Lose 7 SP",
+          "name": "Coerced Judgement",
+          "uptie": 2
+        },
+        {
+          "baseValue": 8,
+          "desc": "[WhenUse] Lose 7 SP",
+          "name": "Coerced Judgement",
+          "uptie": 3
+        },
+        {
+          "coinValue": -2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Gain 1 [AssemblePersonality] next turn",
+                "[OnSucceedAttack] Inflict 3 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Lose 7 SP",
+          "name": "Coerced Judgement",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1100502": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 12,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.05
+            }
+          ],
+          "coinValue": -3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Lose 10 SP\nIf this unit is [AssemblePersonality], deal +5% damage",
+          "levelCorrection": 5,
+          "name": "Amoral Enactment",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1
+            }
+          ],
+          "coinValue": -3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict +1 [Combustion] Count",
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Lose 10 SP\nIf this unit is [AssemblePersonality], deal +10% damage",
+          "name": "Amoral Enactment",
+          "uptie": 2
+        },
+        {
+          "baseValue": 16,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1
+            }
+          ],
+          "coinValue": -4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict +1 [Combustion] Count",
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Lose 10 SP\nIf this unit is [AssemblePersonality], deal +10% damage",
+          "name": "Amoral Enactment",
+          "uptie": 3
+        }
+      ],
+      "tier": 2
+    },
+    "1100503": {
+      "bonusNotes": "Ignores the damage boost against Mechanical Amalgams",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 30,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            }
+          ],
+          "coinValue": -12,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Raise Stagger Threshold by 50% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 5+ [Laceration], inflict 5 [Combustion]",
+                "[EnemyKill] Gain 1 [HitResultUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Lose 15 SP\nIf this unit is [AssemblePersonality], deal +15% damage\nIf target is a <Mechanical Amalgam>, deal +10% damage",
+          "levelCorrection": 5,
+          "name": "Self-destructive Purge",
+          "uptie": 3
+        },
+        {
+          "coinValue": -12,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Raise Stagger Threshold by 50% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 5+ [Laceration], inflict 7 [Combustion]",
+                "[EnemyKill] Gain 1 [HitResultUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "- [WhenUse] Lose 15 SP\n- If this unit is [AssemblePersonality], deal +15% damage\n- If target is a <Mechanical Amalgam>, deal +10% damage",
+          "name": "Self-destructive Purge",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1100504": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkWeight": 1,
+          "baseValue": 17,
+          "coinValue": -7,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[StartBattle] Heal 5~10 SP",
+          "levelCorrection": 2,
+          "name": "Enough…",
+          "uptie": 1
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1100521"
+      ],
+      "uptie": 3
+    }
+  ]
+}

@@ -1,0 +1,392 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1091201"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Standard Heishou mechanic: Using S3 or defense gives a 3 turn buff corresponding to their Heishou Pack. {status:SnakeStance} which gives her a passive {status:Breath} generation per turn and gives her additional {status:Breath} Potency generation when using skills against enemies with {status:Burst}.",
+      "Standard Heishou mechanic: Combos with {identity:10613}'s S3. The buff gives him {status:Burst} application on crit (3 per turn).",
+      "S2 and S3 both get Coin reuses based on {status:Breath}, with the S2 gaining it at 30+ Potency by consuming 10 and the S3 gaining it on crit with her last coin.",
+      "S3 is an {status:WideAreaRampage} with atk weight 3, which means it picks 2 targets along with its main target, then each coin on her attack will choose a random target from the 3 to hit."
+    ],
+    "other": [
+      "{status:SnakeStance} gives her additional {status:Burst} application on her S1 and Clash Power on her S3. Her S2's final coin also lets her generate an extra stack of the buff on crit.",
+      "S2 inflicts {status:BurstPoison} which applies {status:AttackDown} and {status:DefenseDown} on the enemy whenever their {status:Burst} stack is triggered by a crit up to 5 times. When the debuff is fully consumed, it deals additional {keyword:Gluttony} damage based on the enemy's {status:Burst} Potency.",
+      "Her passive increases her damage dealt slightly when she has {status:SnakeStance} or if the enemy has {status:BurstPoison}"
+    ]
+  },
+  "passiveData": {
+    "1091201": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "If this unit has [SnakeStance], deal +5% damage\nIf target has [BurstPoison], deal +5% damage",
+      "name": "Heishou Mutation [Si]"
+    },
+    "1091221": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When 1 ally with the fastest Speed inflicts [Burst] damage to an enemy, inflict 1 [AttackDown] and 1 [DefenseDown] next turn (once per turn)",
+      "name": "Intravascular Venom"
+    }
+  },
+  "skills": {
+    "1091201": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +1 [Breath] Count",
+          "levelCorrection": 1,
+          "name": "Serpent Glint",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]",
+                "[CriticalOnSucceedAttack] If this unit has [SnakeStance], inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 10+ ([Breath] on self + [Burst] on target), Coin Power +1\n[WhenUse] Gain +2 [Breath] Count",
+          "name": "Serpent Glint",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "[WhenUse] At 10+ ([Breath] on self + [Burst] on target), Coin Power +1\n[WhenUse] Gain +2 [Breath] Count",
+          "name": "Serpent Glint",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]",
+                "[CriticalOnSucceedAttack] If this unit has [SnakeStance], inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Coin Power +1 for every 10 ([Breath] on self + [Burst] on target) (max 2)\n[WhenUse] Gain +2 [Breath] Count",
+          "name": "Serpent Glint",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1091202": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [BurstPoison]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Inflict +2 [Burst] Count\n[WinDuel] Gain +1 [Breath] Count",
+          "levelCorrection": 2,
+          "name": "Snake Fang",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] At 30+ [Breath], consume 10 [Breath] on self to Reuse Coin once (1 time max)",
+                "[OnSucceedAttack] Inflict [BurstPoison]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 10+ ([Breath] on self + [Burst] on target), Coin Power +1\n[WinDuel] Inflict +2 [Burst] Count\n[WinDuel] Gain +2 [Breath] Count",
+          "name": "Snake Fang",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "[WhenUse] At 10+ ([Breath] on self + [Burst] on target), Coin Power +1\n[WinDuel] Inflict +2 [Burst] Count\n[WinDuel] Gain +2 [Breath] Count",
+          "name": "Snake Fang",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] At 30+ [Breath], consume 10 [Breath] on self to Reuse Coin once (1 time max)",
+                "[OnSucceedAttack] Inflict [BurstPoison]",
+                "[CriticalOnSucceedAttack] Gain 1 [SnakeStance]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Coin Power +1 for every 10 ([Breath] on self + [Burst] on target) (max 2)\n[WinDuel] Inflict +2 [Burst] Count\n[WinDuel] Gain +2 [Breath] Count",
+          "name": "Snake Fang",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1091203": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 3,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 3
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "crit"
+                  },
+                  "type": "reuse",
+                  "value": 2
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count",
+                "[CriticalOnSucceedAttack] Reduce [BurstPoison] on target by 1",
+                "[CriticalOnSucceedAttack] Reuse this Coin once (2 times per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WideAreaRampage]\n[WhenUse] At 10+ ([Breath] on self + [Burst] on the main target), Coin Power +1\n[WhenUse] Gain Clash Power equal to [SnakeStance] on self\n[WhenUse] Gain 3 [SnakeStance]\n[WinDuel] Inflict +1 [Burst] Count against all targets",
+          "levelCorrection": 5,
+          "name": "Serpent's Mortal Flurry",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 3
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "desc": "[WideAreaRampage]\n[WhenUse] Coin Power +1 for every 10 ([Breath] on self + [Burst] on the main target) (max 2)\n[WhenUse] Gain Clash Power equal to [SnakeStance] on self\n[WhenUse] Gain 3 [SnakeStance]\n[WinDuel] Inflict +1 [Burst] Count on all targets",
+          "name": "Serpent's Mortal Flurry",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1091204": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[CanDuelGuard] \n[StartBattle] Gain 3 [SnakeStance] next turn",
+          "levelCorrection": 0,
+          "name": "Reversal Kick",
+          "uptie": 1
+        },
+        {
+          "affinity": "gluttony",
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CanDuelGuard]\n[StartBattle] Gain 3 [SnakeStance] next turn\n[WhenUse] At 10+ [Breath] Count, Coin Power +1",
+          "name": "Reversal Kick",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1091221"
+      ],
+      "uptie": 3
+    }
+  ]
+}

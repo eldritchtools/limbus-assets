@@ -1,0 +1,307 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] Inflict 2 [IDMicroChip]",
+                "[OnSucceedAttack] Gain +1~2 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[BeforeAttack] Gain +(highest Reson. + 1) [Charge] Count (max 7)\n- At 4+ Envy Reson., gain +7 [Charge] Count instead\n[BeforeAttack] Consume all [Charge] Count on self. Deal +2% damage for every [Charge] Count consumed (max 30%)",
+          "levelCorrection": 3,
+          "name": "Move-in Reg.",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.45
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] Inflict 2 [IDMicroChip]",
+                "[OnSucceedAttack] Gain +1~2 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] Gain +(highest Reson. + 1) [Charge] Count (max 7)\n- At 4+ Envy Reson., gain +7 [Charge] Count instead\n[BeforeAttack] Consume all [Charge] Count on self. Deal +3% damage for every [Charge] Count consumed (max 45%)\n- If this consumed 5+ [Charge] Count, Base Power +1",
+          "name": "Move-in Reg.",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 3
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.45
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] Inflict 2 [IDMicroChip]",
+                "[OnSucceedAttack] Gain +1~3 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Coin Power +1 for every 6 [Combustion] on the main target (max 3)\n[BeforeAttack] Gain +(highest Reson. + 1) [Charge] Count (max 7)\n- At 4+ Envy Reson., gain +7 [Charge] Count instead\n[BeforeAttack] Consume all [Charge] Count on self. Deal +3% damage for every [Charge] Count consumed (max 45%)\n- If this consumed 5+ [Charge] Count, Base Power +1",
+          "name": "Move-in Reg.",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "If target has [IDMicroChip], deal +20% damage",
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] Inflict 2 [IDMicroChip]",
+                "[OnSucceedAttack] Gain +1~2 [Charge] Count",
+                "[EnemyKill] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nPrioritizes targets with the most HP\n[BeforeAttack] At less than 10 [Charge] Count, take 10% HP damage and gain +10 [Charge] Count\n(this effect does not kill or Stagger this unit)\n[BeforeAttack] Gain +(highest Reson. + 1) [Charge] Count (max 8)\n- At 5+ Envy Reson., gain +8 [Charge] Count instead\n[BeforeAttack] Consume all [Charge] Count on self. Deal +3% damage for every [Charge] Count consumed (max 50%)",
+          "levelCorrection": 3,
+          "name": "Move-in Reg.",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.55
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "If target has [IDMicroChip], deal +20% damage",
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] Inflict 2 [IDMicroChip]",
+                "[OnSucceedAttack] Gain +1~2 [Charge] Count",
+                "[EnemyKill] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nPrioritizes targets with the most HP\n[BeforeAttack] At less than 10 [Charge] Count, take 10% HP damage and gain +10 [Charge] Count\n(this effect does not kill or Stagger this unit)\n[BeforeAttack] Gain +(highest Reson. + 2) [Charge] Count (max 8)\n- At 5+ Envy Reson., gain +8 [Charge] Count instead\n[BeforeAttack] Consume all [Charge] Count on self. Deal +3% damage for every [Charge] Count consumed (max 55%)",
+          "name": "Move-in Reg.",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.6
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "If target has [IDMicroChip], deal +20% damage",
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] Inflict 2 [IDMicroChip]",
+                "[OnSucceedAttack] Gain +1~3 [Charge] Count",
+                "[EnemyKill] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nPrioritizes targets with the most HP\nCoin Power +1 for every 6 [Combustion] on the main target (max 3)\n[BeforeAttack] At less than 10 [Charge] Count, take 10% HP damage and gain +10 [Charge] Count\n(this effect does not kill or Stagger this unit)\n[BeforeAttack] Gain +(highest Reson. + 3) [Charge] Count (max 10)\n- At 5+ Envy Reson., gain +10 [Charge] Count instead\n[BeforeAttack] Consume all [Charge] Count on self. Deal +3% damage for every [Charge] Count consumed (max 60%)",
+          "name": "Move-in Reg.",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "On Hit with Skills that apply [Combustion] Potency or 'Unique Burn[TabExplain]', or On Hit with Envy Skills: Inflict additional [Combustion] Potency on target by half of the Skill's total Coins (rounded up; max 3 times per turn)",
+      "name": "Circuit Wiring"
+    }
+  ]
+}

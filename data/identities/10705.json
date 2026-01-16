@@ -1,0 +1,309 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1070501"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Negative coin identity who loses SP by gaining {status:Sinking}.",
+      "Passive automatically triggers {status:Sinking} and gives him {status:Protection} equal to his {status:Sinking} (up to 5). Defense is a counter that gives him more {status:Sinking}.",
+      "S2 gains more Power below -15SP and even more below -25SP. Also consumes 5 {status:Sinking} for more damage.",
+      "S3 and counter can be used as setup since they give him {status:Paralysis} on Tails Hit. S3 inflicts {status:Vulnerable} and counter gives him {status:HitDamageUp} thanks to his passive."
+    ]
+  },
+  "passiveData": {
+    "1070501": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "At the start of the combat phase, spend 1 [Sinking] Count and lose SP by the current amount of [Sinking].\nBefore being hit by an attack, gain [Protection] equal to this unit's [Sinking]. (Up to 5 [Protection] can be gained per turn)\nWhen hit, gain 1 [HitDamageUp] next turn. (3 per turn)",
+      "name": "Rain of Tears"
+    },
+    "1070521": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the least SP loses 10 SP when hit by an attack and gains 1 [HitDamageUp] next turn. (Once per turn)",
+      "name": "Ragged Umbrella"
+    }
+  },
+  "skills": {
+    "1070501": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": -2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[OnSucceedAttackTail] Inflict +1 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +1 [Sinking] Count",
+          "levelCorrection": 2,
+          "name": "Umbrella Thwack",
+          "uptie": 1
+        },
+        {
+          "coinValue": -2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "[OnSucceedAttackTail] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +1 [Sinking] Count",
+          "name": "Umbrella Thwack",
+          "uptie": 2
+        },
+        {
+          "baseValue": 6,
+          "desc": "[WhenUse] Gain +1 [Sinking] Count",
+          "name": "Umbrella Thwack",
+          "uptie": 3
+        },
+        {
+          "desc": "[WhenUse] Gain +1 [Sinking] Count\n[DefeatDuel] Gain 3 [Sinking]",
+          "name": "Umbrella Thwack",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1070502": {
+      "bonusNotes": "Assumes max power regardless of SP set when using the Average setting",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "coinValue": -3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Trigger [VibrationExplosion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] When below -15 SP, Final Power +2",
+          "levelCorrection": 3,
+          "name": "Puddle Stomp",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "coinValue": -3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict 3 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict 3 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "Spend 5 [Sinking] to deal +20% damage",
+                "[OnSucceedAttackTail] Trigger [VibrationExplosion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] When below -15 SP, Final Power +2",
+          "name": "Puddle Stomp",
+          "uptie": 2
+        },
+        {
+          "baseValue": 10,
+          "desc": "[WhenUse] When below -15 SP, Final Power +2",
+          "name": "Puddle Stomp",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 3
+            },
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "desc": "[WhenUse] When below -15 SP, Final Power +3\n[WhenUse] When below -25 SP, Final Power +2",
+          "name": "Puddle Stomp",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1070503": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 18,
+          "coinValue": -7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict 1 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Burst]",
+                "[OnSucceedAttackTail] Inflict 1 [Vulnerable] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 6 [Sinking] and +3 [Sinking] Count",
+          "levelCorrection": 3,
+          "name": "Spread Out!",
+          "uptie": 3
+        }
+      ],
+      "tier": 3
+    },
+    "1070504": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": -5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Gain 1 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Sinking]",
+                "[OnSucceedAttack] Inflict 5 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] Gain 3 [Sinking]",
+          "levelCorrection": 5,
+          "name": "Warning",
+          "uptie": 1
+        },
+        {
+          "desc": "[WhenUse] Gain 5 [Sinking]",
+          "name": "Warning",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1070521"
+      ],
+      "uptie": 3
+    }
+  ]
+}

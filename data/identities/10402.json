@@ -1,0 +1,249 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1040201"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Inflicts a lot of {status:SlashTakeDamageUp} with her S3.",
+      "Has a {keyword:Blunt} skill named 'Slash' because why not."
+    ]
+  },
+  "passiveData": {
+    "1040201": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Deal +10% Slash damage this turn.",
+      "name": "C. I. H."
+    },
+    "1040221": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gluttony",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the lowest Max HP inflicts +1 [Burst].",
+      "name": "Ice Breaker"
+    }
+  },
+  "skills": {
+    "1040201": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "Slash",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Slash",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Slash",
+          "uptie": 3
+        },
+        {
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Slash",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1040202": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 12,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [DefenseDown]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Gain 1 [Enhancement] next turn",
+          "levelCorrection": 5,
+          "name": "Upper Slash",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 2.0
+            }
+          ],
+          "coinValue": 12,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [DefenseDown]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Skill Power +2 against units with [SlashTakeDamageUp]\n[WinDuel] Gain 1 [Enhancement] next turn",
+          "name": "Upper Slash",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "Skill Power +2 against units with [SlashTakeDamageUp]\n[WinDuel] Gain 1 [Enhancement] next turn",
+          "name": "Upper Slash",
+          "uptie": 3
+        },
+        {
+          "coinValue": 14,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [DefenseDown]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Skill Power +2 against units with [SlashTakeDamageUp]\n[WinDuel] Gain 1 [Enhancement] next turn",
+          "name": "Upper Slash",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1040203": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [SlashTakeDamageUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] This skill inflicts 2 additional [SlashTakeDamageUp]",
+          "levelCorrection": 5,
+          "name": "Swash",
+          "uptie": 3
+        }
+      ],
+      "tier": 3
+    },
+    "1040204": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "Counter",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [SlashTakeDamageUp]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Counter",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1040221"
+      ],
+      "uptie": 3
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 2,
+          "baseValue": 18,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Reduction] next turn",
+                "[EndSkill] Heal 12 SP for 4 other allies with the least SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Ya Śūnyatā Tad Rūpam",
+          "uptie": 1
+        },
+        {
+          "atkWeight": 3,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Reduction] next turn",
+                "[EndSkill] Heal 17 SP for 4 other allies with the least SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] At 15+ SP, Atk Weight +1",
+          "name": "Ya Śūnyatā Tad Rūpam",
+          "uptie": 3
+        },
+        {
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Reduction] next turn",
+                "[EndSkill] Heal 25 SP for 4 other allies with the least SP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] At 15+ SP, Atk Weight +2",
+          "name": "Ya Śūnyatā Tad Rūpam",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 2,
+          "baseValue": 33,
+          "coinValue": -15,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [DefenseDown] to 1 random other ally",
+                "[OnSucceedAttack] Gain 2 [DefenseUp] next turn.",
+                "[OnSucceedAttack] Gain 1 [AttackDmgUp] next turn."
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly",
+          "levelCorrection": -1,
+          "name": "Ya Śūnyatā Tad Rūpam",
+          "uptie": 1
+        },
+        {
+          "atkWeight": 3,
+          "coinValue": -15,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [DefenseDown] to 1 random other ally",
+                "[OnSucceedAttack] Gain 2 [DefenseUp] next turn.",
+                "[OnSucceedAttack] Gain 1 [AttackDmgUp] next turn.",
+                "[OnSucceedAttackTail] Heal 4 SP on self"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets Randomly\n[BeforeAttack] At -15 or lower SP, Atk Weight +1",
+          "name": "Ya Śūnyatā Tad Rūpam",
+          "uptie": 3
+        },
+        {
+          "coinValue": -15,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [DefenseDown] to 1 random other ally",
+                "[OnSucceedAttack] Gain 2 [DefenseUp] next turn.",
+                "[OnSucceedAttack] Gain 1 [AttackDmgUp] next turn.",
+                "[OnSucceedAttackTail] Heal 4 SP on self",
+                "[OnSucceedAttackTail] Inflict 1 [Vulnerable]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets Randomly\n[BeforeAttack] At -15 or lower SP, Atk Weight +2",
+          "name": "Ya Śūnyatā Tad Rūpam",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "Raise Max HP by 15% of this Identity's base Max HP when recovering from Staggered state.\nThen, heal by 15% of current Max HP. If at less than 30% of current Max HP, heal by 25% instead.\n(3 times per encounter. At Encounter End, revert to base Max HP. Current HP value will be adjusted to reflect the HP percentage at the time of Encounter End.)",
+      "name": "Dhyāna"
+    }
+  ]
+}

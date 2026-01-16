@@ -1,0 +1,500 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1050802"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1050802",
+        "1050801"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1050802",
+        "1050811"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "S1 and S2 buff other Blade Lineage allies' corresponding skills with +1 Power (+2 if 6 Blade Lineage identities are deployed) through {status:BladeResultUpTier1} and {status:BladeResultUpTier2}. A-Reson Blade Lineage allies are buffed and prioritizes slower allies first.",
+      "S3 is a negative coin skill that wants to lose clashes because he'll use a much stronger 4-coin high damage skill with atk weight and {status:Paralysis} application after the enemy attacks him. His S3 prevents stagger and he has a 1 time death nullification from his passive so he can pull off his damage skill regardless of how much the enemy's attack damages him.",
+      "His passive applies {status:SwordPlayOfTheHomeland} to all Blade Lineage allies when you trigger 3 {keyword:Pride} Res. giving their S1 and S2 coin power, their S3 damage, and all their skills crit damage. His passive also provides {status:Breath} Potency and Count to Blade Lineage allies whenever he gains {status:Breath} himself. He also applies the same effects to himself if enough Blade Lineage allies die."
+    ]
+  },
+  "passiveData": {
+    "1050801": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "In this Encounter, when this unit takes damage that brings their HP down to 0, nullify that damage; then, this unit's HP cannot drop below 1 for the turn. (Once per Encounter)\n\nWhen this unit gains [Breath] Potency/Count with its own Skill or Coin effects: give 1 [Breath] Potency and +1 [Breath] Count to 2 other Blade Lineage allies with no [Breath] or with the least [Breath]\n- If there are 6 or more Blade Lineage allies participating in this Encounter, give 2 [Breath] Potency and +2 [Breath] Count instead",
+      "name": "Swordplay of the Homeland"
+    },
+    "1050802": {
+      "desc": "When 3 or more other Blade Lineage allies are defeated:\n- When gaining [Breath] Potency/Count with this unit's own Skills and Coin effects: gain 1 more of each\n- When 5 or more other Blade Lineage allies are defeated, gain 2 more of each instead\n- Combat Start: Apply [SwordPlayOfTheHomeland] on self",
+      "name": "In Memoriam"
+    },
+    "1050811": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "In this Encounter, when this unit takes damage that brings their HP down to 0, nullify that damage; then, this unit's HP cannot drop below 1 for the turn. (Once per Encounter)\n\nWhen this unit gains [Breath] Potency/Count with its own Skill or Coin effects: give 1 [Breath] Potency and +1 [Breath] Count to 2 other Blade Lineage allies with no [Breath] or with the least [Breath]\n- If there are 6 or more Blade Lineage allies participating in this Encounter, give 2 [Breath] Potency and +2 [Breath] Count instead\n\nCombat Start: Apply [SwordPlayOfTheHomeland] buff to all other Blade Lineage allies",
+      "name": "Swordplay of the Homeland"
+    },
+    "1050821": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Combat Start: 1 ally with the most [Breath] deals +15% damage on Critical Hit with Slash Skills",
+      "name": "Swordplay of the Homeland"
+    }
+  },
+  "skills": {
+    "1050801": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "levelCorrection": 3,
+          "name": "Draw of the Sword",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] Apply 1 [BladeResultUpTier1] to (highest A-Reson.) other Blade Lineage allies in ascending order of Speeds (slowest to fastest, 2 times max)\n[WhenUse] Gain +2 [Breath] Count",
+          "name": "Draw of the Sword",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "[StartBattle_Force] Apply 1 [BladeResultUpTier1] to (highest A-Reson.) other Blade Lineage allies in ascending order of Speeds (slowest to fastest, 2 times max)\n[WhenUse] Gain +2 [Breath] Count",
+          "name": "Draw of the Sword",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 5+ [Breath], Coin Power +1\n[StartBattle] Apply 1 [BladeResultUpTier1] to (highest A-Reson.) other Blade Lineage allies in ascending order of Speeds (slowest to fastest, 2 times max)\n- If there are 6 or more allied Blade Lineage Identities in the Encounter, apply 2 instead\n[WhenUse] Gain +2 [Breath] Count",
+          "name": "Draw of the Sword",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1050802": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 3 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "+30% Damage on Critical Hit"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +2 [Breath] Count\n[WinDuel] Gain 1 [SlashResultUp] next turn",
+          "levelCorrection": 3,
+          "name": "Acupuncture",
+          "uptie": 1
+        },
+        {
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.4
+                }
+              ],
+              "descs": [
+                "+40% Damage on Critical Hit"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] Apply 1 [BladeResultUpTier2] to (highest A-Reson.) other Blade Lineage allies in ascending order of Speeds (slowest to fastest, 2 times max)\n[WhenUse] Gain +2 [Breath] Count\n[WinDuel] Gain 1 [SlashResultUp] next turn",
+          "name": "Acupuncture",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "[StartBattle_Force] Apply 1 [BladeResultUpTier2] to (highest A-Reson.) other Blade Lineage allies in ascending order of Speeds (slowest to fastest, 2 times max)\n[WhenUse] Gain +2 [Breath] Count\n[WinDuel] Gain 1 [SlashResultUp] next turn",
+          "name": "Acupuncture",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.6
+                }
+              ],
+              "descs": [
+                "+60% Damage on Critical Hit"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 7+ [Breath], Coin Power +1\n[StartBattle] Apply 1 [BladeResultUpTier2] to (highest A-Reson.) other Blade Lineage allies in ascending order of Speeds (slowest to fastest, 2 times max)\n- If there are 6 or more allied Blade Lineage Identities in the Encounter, apply 2 instead\n[WhenUse] Gain +3 [Breath] Count\n[WinDuel] Gain 1 [SlashResultUp] next turn",
+          "name": "Acupuncture",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1050803": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 20,
+          "bonuses": [
+            {
+              "type": "critdamage",
+              "value": 0.5
+            },
+            {
+              "type": "critdamage",
+              "value": 0.15
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.25
+            }
+          ],
+          "coinValue": -8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +3 Aggro to this Skill Slot next turn\n[WhenUse] Until this Skill ends, this unit cannot be Staggered from taking damage\n[WinDuel] Gain 5 [Breath]\n[DefeatDuel] After getting hit, use 'To Claim Their Bones' Skill\n[CriticalActivated] Deal +2% damage on Critical Hit for every [Breath] Potency on self (Max 50%)\n+15% Damage on Critical Hit\nDeal +0.5% damage per 1% missing HP on self (Max 25%)",
+          "levelCorrection": 0,
+          "name": "Yield My Flesh",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "critdamage",
+              "value": 0.75
+            },
+            {
+              "type": "critdamage",
+              "value": 0.3
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.25
+            }
+          ],
+          "coinValue": -8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +3 Aggro to this Skill Slot next turn\n[WhenUse] Until this Skill ends, this unit cannot be Staggered from taking damage\n[WinDuel] Gain 5 [Breath]\n[DefeatDuel] After getting hit, use 'To Claim Their Bones' Skill\n[CriticalActivated] Deal +3% damage on Critical Hit for every [Breath] Potency on self (Max 75%)\n+30% Damage on Critical Hit\nDeal +0.5% damage per 1% missing HP on self (Max 25%)",
+          "name": "Yield My Flesh",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1050804": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] Gain 1 [SlashResultUp] next turn (1 time max)",
+          "levelCorrection": 5,
+          "name": "Overthrow",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.25
+            }
+          ],
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain 1 [SlashResultUp] next turn (1 time max)\nDeal +0.5% damage for every 1% missing HP on self (Max 25%)",
+          "name": "Overthrow",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1050805": {
+      "bonusNotes": "Applies the single target damage bonus.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "critdamage",
+              "value": 0.5
+            },
+            {
+              "type": "critdamage",
+              "value": 0.2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.25
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[OnSucceedAttack] Inflict 5 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[BeforeAttack] At 10+ [Breath], Atk Weight +1\n[WhenUse] Until this Skill ends, this unit cannot be Staggered from taking damage\n[WhenUse] Deal +2% damage on Critical Hit for every [Breath] Potency on self (Max 50%)\n+20% Damage on Critical Hit\nDeal +0.5% damage per 1% missing HP on self (Max 25%)",
+          "levelCorrection": 5,
+          "name": "To Claim Their Bones",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "critdamage",
+              "value": 0.5
+            },
+            {
+              "type": "critdamage",
+              "value": 0.3
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.25
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[OnSucceedAttack] Inflict 5 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] For every 7 [Breath] on self, Atk Weight +1 (Max +2)\n[WhenUse] Until this Skill ends, this unit cannot be Staggered from taking damage\n[WhenUse] Deal +2% damage on Critical Hit for every [Breath] Potency on self (Max 50%)\n+30% Damage on Critical Hit\nDeal +0.5% damage for every 1% missing HP on self (Max 25%)\nIf this Skill targets only a single enemy, deal +100% damage (In Focused Encounters, a single Part)",
+          "name": "To Claim Their Bones",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1050821"
+      ],
+      "uptie": 3
+    }
+  ]
+}

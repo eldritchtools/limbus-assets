@@ -1,0 +1,557 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1071202"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1071202",
+        "1071201"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1071202",
+        "1071211"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Gains {status:BlackCloudBlade} if there are 2 or more Kurokumo identities on the field (including himself so he only needs 1 more).",
+      "Gains {status:EngageToBattle}, if 3 or more Kurokumo allies have died.",
+      "Both {status:BlackCloudBlade} and {status:EngageToBattle} each give his Counter a Coin Reuse, bringing it from 1 Coin to 3 Coins instead.",
+      "Using his S3 gives him {status:CloudWall} for a turn which forces his Counter to trigger both Coin Reuses regardless of whether he has the other two buffs. It's consumed on use, so it won't work for a 2nd counter in the same turn.",
+      "If {identity:10811} is on the field, the counter gets {status:SuperCoin} and +4 Final Power on Clash Lose.",
+      "If his passive is active (3 {keyword:Lust} Res.), he attacks enemies that attacks his allies. If the ally drops below 25% HP or dies, he uses his counter (once per ally, up to 2 times per turn). This version of the counter doesn't count as a defense skill so it doesn't benefit from {status:Endurance}, but it can still benefit from {status:CloudWall}. If the ally stays above 25% HP, he uses his S1 instead (once per turn)."
+    ],
+    "other": [
+      "{status:BlackCloudBlade} gives him {status:SlashResultUp} and bonus {status:Laceration} application.",
+      "Each Kurokumo ally that dies gives him a {status:SlashResultUp} for the rest of the fight.",
+      "{status:EngageToBattle} gives him more {status:SlashResultUp}, some {status:SlashDamageUp} and more bonus {status:Laceration} application",
+      "All his attack skills also him {status:Endurance} for a turn making his counter stronger."
+    ]
+  },
+  "passiveData": {
+    "1071201": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "When there are 2+ allied Kurokumo Clan Identities on the field, including this unit, gain 1 [BlackCloudBlade] (max 1)\n\nAgainst enemies that, in this turn, used Defense Skills or were at max HP before attacking: deal +10% damage\n\nIf an enemy attacked an other ally with a Skill and dealt damage this turn: use an Unopposed Attack against the attacker with Skill 1 (once per turn)",
+      "name": "Dark Cloud Blade"
+    },
+    "1071202": {
+      "desc": "When a Kurokumo Clan ally dies, gain 1 [SlashResultUp] for this Encounter\n\nWhen 3 or more Kurokumo Clan allies are defeated, gain [EngageToBattle] for this Encounter",
+      "name": "Battle Ready"
+    },
+    "1071211": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "When there are 2+ allied Kurokumo Clan Identities on the field, including this unit, gain 1 [BlackCloudBlade] (max 1)\n\nAgainst enemies that, in this turn, used Defense Skills or were at max HP before attacking: deal +10% damage\n\nIf an enemy attacked an other ally with a Skill and dealt damage this turn: use an Unopposed Attack against the attacker with Skill 1 (once per turn)\n\nIf the enemy killed an other ally, or if the said ally's HP is at less than 25% after the enemy's attack, use an Unopposed Attack against the attacker with <Rules of the Backstreets> instead (once per ally; 2 times per turn; the Skill activated with this effect counts as an Attack Skill)",
+      "name": "Dark Cloud Blade"
+    },
+    "1071221": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the fastest Speed: against enemies that used Defense Skills or were at max HP before attacking this turn: deal +10% damage",
+      "name": "Impale"
+    }
+  },
+  "skills": {
+    "1071201": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] Inflict 1 [AttackDown]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 1 [Endurance] next turn (once per turn)",
+          "levelCorrection": 2,
+          "name": "Lenticular Rend",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "If target has 6+ [Laceration], Coin Power +1\n[WhenUse] Gain 1 [Endurance] next turn (once per turn)",
+          "name": "Lenticular Rend",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] Inflict 1 [AttackDown]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ [Laceration], Coin Power +1\n[WhenUse] Gain 1 [Endurance] next turn (once per turn)",
+          "name": "Lenticular Rend",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "desc": "Coin Power +1 for every 6 [Laceration] on target (max 2)\n[WhenUse] Gain 2 [Endurance] next turn (once per turn)",
+          "name": "Lenticular Rend",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1071202": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                "[OnSucceedAttack] Inflict 1 [Reduction] (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Stormcloud",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttackHead] Inflict 1 [SlashTakeDamageUp]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                "[OnSucceedAttack] Inflict 1 [Reduction] (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ [Laceration], Coin Power +1",
+          "name": "Stormcloud",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "If target has 6+ [Laceration], Coin Power +1",
+          "name": "Stormcloud",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttackHead] Inflict 1 [SlashTakeDamageUp]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                "[OnSucceedAttack] Inflict 1 [Reduction] (2 times per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Coin Power +1 for every 6 [Laceration] on target (max 2)\n[WhenUse] Gain 1 [Endurance] next turn (once per turn)",
+          "name": "Stormcloud",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1071203": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "tolastcoin",
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] The final Coin deals +10% damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "tolastcoin",
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [SlashTakeDamageUp]",
+                "[OnSucceedAttack] The final Coin deals +10% damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "Deal +10% damage for every type of negative effect on target (max 30%)",
+                "[OnSucceedAttack] Inflict 6 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has 6+ [Laceration], Coin Power +1\n[StartBattle] Gain 1 [CloudWall] next turn\n[WhenUse] Gain 1 [Endurance] next turn (once per turn)",
+          "levelCorrection": 5,
+          "name": "Thundercleave",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "tolastcoin",
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] The final Coin deals +10% damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "tolastcoin",
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [SlashTakeDamageUp]",
+                "[OnSucceedAttack] The final Coin deals +10% damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "Deal +10% damage for every type of negative effect on target (max 100%)",
+                "[OnSucceedAttack] Inflict 6 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Coin Power +1 for every 6 [Laceration] on target (max 2)\n[StartBattle] Gain 1 [CloudWall] next turn\n[WhenUse] Gain 1 [Endurance] next turn (once per turn)\n[WinDuel] Gain 1 [BlackCloudBlade] next turn (once per turn)",
+          "name": "Thundercleave",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1071204": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                },
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] If this unit has [BlackCloudBlade], Reuse Coin once (once per Skill)",
+                "[OnSucceedAttack] If this unit has [EngageToBattle], Reuse Coin once (once per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\nIf Kurokumo Clan Captain Ishmael is on the field, activate the following:\n- Convert all Coins in this Skill into [SuperCoin]s\n- Final Power +3 to this Skill upon Clash Lose\n[WhenUse] If this unit has [CloudWall], unconditionally activate all Reuse effects on this Skill's Coins",
+          "levelCorrection": 4,
+          "name": "Rules of the Backstreets",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                },
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] If this unit has [BlackCloudBlade], Reuse Coin once (once per Skill)",
+                "[OnSucceedAttack] If this unit has [EngageToBattle], Reuse Coin once (once per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[DuelCounter]\nIf Kurokumo Clan Captain Ishmael is on the field, activate the following:\n- Convert all Coins in this Skill into [SuperCoin]s\n- Final Power +4 to this Skill upon Clash Lose\nDeal +10% damage for every type of negative effect on target (max 100%)\n[WhenUse] If this unit has [CloudWall], unconditionally activate all Reuse effects on this Skill's Coins",
+          "name": "Rules of the Backstreets",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1071205": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                },
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] If this unit has [BlackCloudBlade], Reuse Coin once (once per Skill)",
+                "[OnSucceedAttack] If this unit has [EngageToBattle], Reuse Coin once (once per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If this unit has [CloudWall], unconditionally activate all Reuse effects on this Skill's Coins",
+          "levelCorrection": 4,
+          "name": "Rules of the Backstreets",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                },
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] If this unit has [BlackCloudBlade], Reuse Coin once (once per Skill)",
+                "[OnSucceedAttack] If this unit has [EngageToBattle], Reuse Coin once (once per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ [Laceration], Coin Power +1\nDeal +10% damage for every type of negative effect on target (max 100%)\n[WhenUse] If this unit has [CloudWall], unconditionally activate all Reuse effects on this Skill's Coins",
+          "name": "Rules of the Backstreets",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1071221"
+      ],
+      "uptie": 3
+    }
+  ]
+}

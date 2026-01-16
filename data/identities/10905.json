@@ -1,0 +1,292 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1090501"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Her S2's 2nd coin gets reused up to 2 times on a Heads Hit if she has at least 3 {status:Charge} Count. If it is reused twice, it triggers {status:VibrationExplosion}.",
+      "Her {status:Charge} Count is only consumed when she triggers {status:VibrationExplosion}. Count is consumed to increase the stagger threshold increased."
+    ],
+    "other": [
+      "Her passive gives her {status:Agility} and {status:HitDamageUp} on {status:VibrationExplosion}."
+    ]
+  },
+  "passiveData": {
+    "1090501": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "On [VibrationExplosion], spend 3 [Charge] Count to increase the Stagger Threshold raise by +40%.\nAfter triggering [VibrationExplosion], gain 1 Haste and 1 Blunt DMG Up next turn.",
+      "name": "Here’s to Getting Off Early~"
+    },
+    "1090521": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When 1 ally with the slowest Speed triggers [VibrationExplosion], increase the Stagger Threshold raise by +20%.",
+      "name": "Resonant Spanner"
+    }
+  },
+  "skills": {
+    "1090501": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Vibration]",
+                "[OnSucceedAttack] Gain +4 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Rev Up",
+          "uptie": 1
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Vibration]",
+                "[OnSucceedAttack] Gain +4 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Rev Up",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Rev Up",
+          "uptie": 3
+        },
+        {
+          "desc": "[WhenUse] Gain +2 [Charge] Count",
+          "name": "Rev Up",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1090502": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "heads"
+                  },
+                  "type": "reuse",
+                  "value": 2
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]\nAt 3+ [Charge] Count, reuse this Coin if it lands Heads (Up to 2 times)\nIf the Coin is reused twice, inflict [Vibration], then trigger [VibrationExplosion]\nAfter [VibrationExplosion], reduce [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Vibration Compression",
+          "uptie": 1
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "heads"
+                  },
+                  "type": "reuse",
+                  "value": 2
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]\nAt 3+ [Charge] Count, reuse this Coin if it lands Heads (Up to 2 times)\nInflict 2 more [Vibration] each time the Coin is reused\nIf the Coin is reused twice, inflict [Vibration], then trigger [VibrationExplosion]\nAfter [VibrationExplosion], reduce [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Vibration Compression",
+          "uptie": 2
+        },
+        {
+          "baseValue": 6,
+          "desc": "",
+          "name": "Vibration Compression",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "If target has 10+ [Vibration] Count, Coin Power +1",
+          "name": "Vibration Compression",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1090503": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Vibration]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion].\nAfter [VibrationExplosion], reduce [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.25
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion].\nAfter [VibrationExplosion], reduce [Vibration] Count by 1",
+                "[OnSucceedAttack] If target is Staggered, deal 25% of damage dealt as bonus damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +6 [Charge] Count",
+          "levelCorrection": 3,
+          "name": "Let’s Rack Up Some Scores",
+          "uptie": 3
+        }
+      ],
+      "tier": 3
+    },
+    "1090504": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[StartBattle] Gain +2 [Charge] Count",
+          "levelCorrection": 0,
+          "name": "Preheat",
+          "uptie": 1
+        },
+        {
+          "affinity": "sloth",
+          "coinValue": 6,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] Gain +2 [Charge] Count",
+          "name": "Preheat",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1090521"
+      ],
+      "uptie": 3
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 3,
+          "baseValue": 15,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 6+ [Sinking], inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[EndSkill] Randomly inflict (6 + Gloom Reson.) [Sinking] between targets",
+          "levelCorrection": 0,
+          "name": "Bygone Days",
+          "uptie": 1
+        },
+        {
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 6+ [Sinking], inflict 2 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[EndSkill] Randomly inflict (6 + Gloom Reson.) [Sinking] between targets",
+          "name": "Bygone Days",
+          "uptie": 3
+        },
+        {
+          "desc": "[EndSkill] Randomly inflict (6 + (Gloom Reson. x1.5)) [Sinking] between targets",
+          "name": "Bygone Days",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 22,
+          "coinValue": -6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]. Inflict 2 [Binding] next turn",
+                "[OnSucceedAttack] If target has 6+ [Sinking], inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly",
+          "levelCorrection": 0,
+          "name": "Bygone Days",
+          "uptie": 1
+        },
+        {
+          "desc": "[CantIdentify]\nTargets Randomly\n[BeforeAttack] At 3+ (Gloom Reson.), Atk Weight +1",
+          "name": "Bygone Days",
+          "uptie": 3
+        },
+        {
+          "coinValue": -6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]. Inflict 2 [Binding] next turn",
+                "[OnSucceedAttack] If target has 6+ [Sinking], inflict 2 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets Randomly\n[BeforeAttack] At 3+ (Gloom Reson.), Atk Weight +1\n[BeforeAttack] At 5+ (Gloom Reson.), additional Atk Weight +1",
+          "name": "Bygone Days",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "If the target has 6+ [Sinking] Potency, Clash Power +1\nIf the target has 4+ [Sinking] Count, Clash Power +1",
+      "name": "Fractured Yesterday"
+    }
+  ]
+}

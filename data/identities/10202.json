@@ -1,0 +1,292 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1020201"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1020211"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Spend 5 {status:Charge} Count on S3 to apply {status:Reduction} and {status:Paralysis}. Gains it from S1 and S2.",
+      "Passive gives +1 {status:Charge} Count to herself and an ally when attacking."
+    ]
+  },
+  "passiveData": {
+    "1020201": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Gain +1 [Charge] Count after an attack.",
+      "name": "Self-charging"
+    },
+    "1020211": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Gain +1 [Charge] Count after an attack.\nA random ally gains +1 [Charge] Count after an attack.",
+      "name": "Self-charging"
+    },
+    "1020221": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "1 ally with the lowest Max HP gains +1 [Charge] Count.",
+      "name": "Radio Comms"
+    }
+  },
+  "skills": {
+    "1020201": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Energy Cycle",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Energy Cycle",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "",
+          "name": "Energy Cycle",
+          "uptie": 3
+        },
+        {
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +2 [Charge] Count",
+          "name": "Energy Cycle",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1020202": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Spend 3 [Charge] Count to inflict 4 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Leap",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Spend 3 [Charge] Count to inflict 4 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Leap",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "",
+          "name": "Leap",
+          "uptie": 3
+        },
+        {
+          "baseValue": 6,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Spend 3 [Charge] Count to inflict 4 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +3 [Charge] Count",
+          "name": "Leap",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1020203": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Spend 5 [Charge] Count to inflict 2 [Reduction] and 3 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Overcharge",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Spend 5 [Charge] Count to inflict 2 [Reduction] and 3 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 5+ [Charge] Count, Clash Power +2",
+          "name": "Overcharge",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1020204": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "Guard",
+          "uptie": 1
+        },
+        {
+          "affinity": "envy",
+          "desc": "",
+          "name": "Guard",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1020221"
+      ],
+      "uptie": 3
+    }
+  ]
+}

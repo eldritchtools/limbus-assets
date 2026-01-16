@@ -1,0 +1,361 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 7,
+          "baseValue": 18,
+          "coinValue": 6,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.56
+                }
+              ],
+              "descs": [
+                "This Coin deals damage only against the main target.",
+                "If the main target is an ally, deal +8% damage for every [BoseProjektil] (max 56%)",
+                "[AllyKill] Apply 2 [Breath] to self and 2 random allies",
+                "[AllyKillFail] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.14
+                }
+              ],
+              "descs": [
+                "This Coin deals damage only against the sub-targets\n- If the first Coin failed to kill the ally, 1 random sub-target takes damage",
+                "+2% Damage on Critical Hit for every [BoseProjektil] (max 14%)",
+                "[CriticalOnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes targets with the least HP (prioritizes allies)\n[BeforeAttack] Gain (highest Reson. + 1) [BoseProjektil] (max 7)\n[BeforeAttack] Gain 1 [Breath] for every [BoseProjektil] (max 7)\n[EndSkill] Lose every [BoseProjektil]",
+          "levelCorrection": 5,
+          "name": "Fell Bullet",
+          "uptie": 1
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.7
+                }
+              ],
+              "descs": [
+                "This Coin deals damage only against the main target.",
+                "If the main target is an ally, deal +10% damage for every [BoseProjektil] (max 70%)",
+                "[AllyKill] Apply 3 [Breath] to self and 2 random allies",
+                "[AllyKill] +1 E.G.O resource for the killed ally's Skill 1 Affinity",
+                "[AllyKillFail] Gain 3 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.35
+                }
+              ],
+              "descs": [
+                "This Coin deals damage only against the sub-targets\n- If the first Coin failed to kill the ally, 1 random sub-target takes damage",
+                "+5% Damage on Critical Hit for every [BoseProjektil] (max 35%)",
+                "[CriticalOnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Prioritizes targets with the least HP (prioritizes allies)\n[BeforeAttack] Gain (highest Reson. + 1) [BoseProjektil] (max 7)\n[BeforeAttack] Gain 1 [Breath] for every [BoseProjektil] (max 7)\n[EndSkill] Lose every [BoseProjektil]",
+          "name": "Fell Bullet",
+          "uptie": 3
+        },
+        {
+          "coinValue": 6,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 1.05
+                }
+              ],
+              "descs": [
+                "This Coin deals damage only against the main target.",
+                "If the main target is an ally, deal +15% damage for every [BoseProjektil] (max 105%)",
+                "[AllyKill] Apply 3 [Breath] to self and 2 random allies",
+                "[AllyKill] +1 E.G.O resource for the killed ally's Skill 1 and 2 Affinities",
+                "[AllyKillFail] Gain 3 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.63
+                }
+              ],
+              "descs": [
+                "This Coin deals damage only against the sub-targets\n- If the first Coin failed to kill the ally, 1 random sub-target takes damage",
+                "+9% Damage on Critical Hit for every [BoseProjektil] (max 63%)",
+                "[CriticalOnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Prioritizes targets with the least HP (prioritizes allies)\n[BeforeAttack] Gain (highest Reson. + 1) [BoseProjektil] (max 7)\n- If the said Reson. was a Pride Reson., gain (highest Reson. x 2) [BoseProjektil] instead (max 7)\n[BeforeAttack] Gain 1 [Breath] for every [BoseProjektil] (max 7)\n[EndSkill] Lose every [BoseProjektil]",
+          "name": "Fell Bullet",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 7,
+          "baseValue": 30,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.14
+            }
+          ],
+          "coinValue": -8,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.7
+                },
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "This Coin deals damage only against the main target.",
+                "If the main target is an ally, deal +10% damage for every [BoseProjektil] (max 70%)",
+                "If the main target is an ally, deal +2% damage for every [Breath] on self (max 50%)",
+                "[AllyKill] Apply 2 [Breath] to self and 3 random allies",
+                "[AllyKill] The next Coin deals +2% damage for every [BoseProjektil] (max 14%)",
+                "[AllyKill] +1 E.G.O resource for the killed ally's Skill 1 and 2 Affinities",
+                "[AllyKillFail] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.14
+                },
+                {
+                  "type": "critdamage",
+                  "value": 0.14
+                }
+              ],
+              "descs": [
+                "This Coin deals damage only against the sub-targets\n- If the first Coin failed to kill the ally, 1 random sub-target takes damage",
+                "+2% Damage on Critical Hit for every [BoseProjektil] (max 14%)",
+                "[CriticalOnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nPrioritizes targets with the least HP (prioritizes allies)\n[BeforeAttack] Gain (highest Reson. + 1) [BoseProjektil] (max 7)\n[BeforeAttack] Deal +2% damage for every [BoseProjektil] (max 14%)\n[BeforeAttack] Gain 1 [Breath] for every [BoseProjektil] (max 7)\n[EndSkill] Lose every [BoseProjektil]",
+          "levelCorrection": 5,
+          "name": "Fell Bullet",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.21
+            }
+          ],
+          "coinValue": -8,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add"
+                  },
+                  "type": "damage",
+                  "value": 0.84
+                },
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "This Coin deals damage only against the main target.",
+                "If the main target is an ally, deal +12% damage for every [BoseProjektil] (max 84%)",
+                "If the main target is an ally, deal +2% damage for every [Breath] on self (max 50%)",
+                "[AllyKill] Apply 3 [Breath] to self and 3 random allies",
+                "[AllyKill] The next Coin deals +5% damage for every [BoseProjektil] (max 35%)",
+                "[AllyKill] +1 E.G.O resource for the killed ally's Skill 1, 2, and 3 Affinities",
+                "[AllyKillFail] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.35
+                },
+                {
+                  "type": "critdamage",
+                  "value": 0.21
+                }
+              ],
+              "descs": [
+                "This Coin deals damage only against the sub-targets\n- If the first Coin failed to kill the ally, 1 random sub-target takes damage",
+                "+3% Damage on Critical Hit for every [BoseProjektil] (max 21%)",
+                "[CriticalOnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nPrioritizes targets with the least HP (prioritizes allies)\n[BeforeAttack] Gain (highest Reson. + 1) [BoseProjektil] (max 7)\n[BeforeAttack] Deal +3% damage for every [BoseProjektil] (max 21%)\n[BeforeAttack] Gain 1 [Breath] for every [BoseProjektil] (max 7)\n[EndSkill] Lose every [BoseProjektil]",
+          "name": "Fell Bullet",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.28
+            }
+          ],
+          "coinValue": -8,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 1.05
+                },
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                },
+                {
+                  "type": "critdamage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "This Coin deals damage only against the main target.",
+                "If the main target is an ally, deal +15% damage for every [BoseProjektil] (max 105%)",
+                "If the main target is an ally, deal +2% damage for every [Breath] on self (max 50%)",
+                "+30% Damage on Critical Hit",
+                "[AllyKill] Apply 3 [Breath] to self and 4 random allies",
+                "[AllyKill] The next Coin deals +7% damage for every [BoseProjektil] (max 49%)",
+                "[AllyKill] +1 E.G.O resource for the killed ally's Skill 1, 2, and 3 Affinities",
+                "[AllyKillFail] Gain 3 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.49
+                },
+                {
+                  "type": "critdamage",
+                  "value": 0.28
+                }
+              ],
+              "descs": [
+                "This Coin deals damage only against the sub-targets\n- If the first Coin failed to kill the ally, 1 random sub-target takes damage",
+                "+4% Damage on Critical Hit for every [BoseProjektil] (max 28%)",
+                "[CriticalOnSucceedAttack] Inflict 5 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nPrioritizes targets with the least HP (prioritizes allies)\n[BeforeAttack] Gain (highest Reson. + 1) [BoseProjektil] (max 7)\n- If the said Reson. was a Pride Reson., gain (highest Reson. x 2) [BoseProjektil] instead (max 7)\n[BeforeAttack] Deal +4% damage for every [BoseProjektil] (max 28%)\n[BeforeAttack] Gain 1 [Breath] for every [BoseProjektil] (max 7)\n[EndSkill] Lose every [BoseProjektil]",
+          "name": "Fell Bullet",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "After Attack: if the target is killed, gain +2 [Breath] Count (2 times per turn)",
+      "name": "Next"
+    }
+  ]
+}

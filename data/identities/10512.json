@@ -1,0 +1,642 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1051202"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1051202",
+        "1051201"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1051202",
+        "1051211"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Starts the battle with 12 {status:BulletPropellantAlly}. S1 consumes 1 ammo, S2 consumes 2, S3 consumes 3. Skills or coins are not cancelled when running out of ammo, but they lose the buffs from the ammo and stop inflicting {status:Combustion}. When out of {status:BulletPropellantAlly}, he reloads 8 {status:BulletPropellantSpecialAlly} and converts all his coins to {status:SuperCoin}s.",
+      "His reload can be forced sooner by defending or by getting staggered, but this exhausts all of his regular ammo. If he's forced to reload due to stagger, he automatically recovers from the stagger.",
+      "Using his S3 while having {status:BulletPropellantSpecialAlly} uses his S3-2 instead.",
+      "Upon loading {status:BulletPropellantSpecialAlly}, he gains {status:IrritationAlly}.",
+      "When using his last {status:BulletPropellantSpecialAlly}, the skill that uses the last stack gains +2 atk weight and he gains {status:BeastEyesAlly} on the next turn. The coins on his skills that don't spend ammo also lose their {status:SuperCoin} status."
+    ],
+    "other": [
+      "Coins that consume {status:BulletPropellantAlly} get +1 Power and +10% damage. When he has {status:BulletPropellantSpecialAlly}, it gives +2 Power, +30% damage, and +2 {status:Combustion} Potency and Count application instead.",
+      "{status:IrritationAlly} gives him more speed, damage based on speed difference, and bonus {status:Vibration} application. It's upgraded to {status:HugeIrritationAlly} which is just a stronger variant when he consumes 8 or more ammo in total (of either type).",
+      "{status:BeastEyesAlly} reduces his Clash Power by 1 for every 2 ammo he spent during the fight for a total of -10 Clash Power if he managed to spend all 12 {status:BulletPropellantAlly} and 8 {status:BulletPropellantSpecialAlly}. In return he gains buffs depending on how much total ammo he spent.\nAt 8+ ammo spent, he gets {status:Protection} every turn for every 10% HP missing (max 5 at half life).\nAt 14+ ammo spent, his {status:SuperCoin}s deal more damage based on missing HP% when he loses clashes.\nAt 20 ammo spent, he deals even more damage based on the difference between his missing HP% and his target's missing HP%.",
+      "Both S3s trigger a {status:Switch_Vibration} into {status:VibrationIgnition} inflicting bonus {keyword:Wrath} damage based on the average of {status:Combustion} and {status:Vibration} Potencies on {status:VibrationExplosion}. Both also trigger {status:VibrationExplosion} 3 times when consuming 3 ammo."
+    ]
+  },
+  "passiveData": {
+    "1051201": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When this unit has [BulletPropellantAlly]:\n- At 1+ [BulletPropellantAlly], convert all Coins of 'Tanglecleaver' into [SuperCoin]s\n- Skill Coins that spend [BulletPropellantAlly] gain +1 Power (activates only as long as the Coin has Rounds left to spend)\n\nWhen this unit has [BulletPropellantSpecialAlly]:\n- At 1+ [BulletPropellantSpecialAlly], convert all Coins of this unit's Base Attack Skills to [SuperCoin]s\n- At 0 [BulletPropellantSpecialAlly], convert all Coins of this unit's Base Attack Skills that spend 'Unique Ammo' to [SuperCoin]s\n- Skill Coins that spend [BulletPropellantSpecialAlly] gain +2 Power (activates only as long as the Coin has Rounds left to spend)",
+      "name": "Tiantui Star's Blade [天退星刀]"
+    },
+    "1051202": {
+      "desc": "Always Active: begin Encounters with 12 [BulletPropellantAlly]\n\nWhen flipping a Coin that consumes [BulletPropellantAlly] or [BulletPropellantSpecialAlly]: while not having those 'Unique Ammo' does not cancel this unit's attacks, the Coin's On Hit \"inflict [Combustion]\" and \"inflict [Combustion] Count\" effects do not activate\n\nIf this unit equipped Defense Skills for the first time in this Encounter, or if this unit spent all of his [BulletPropellantAlly], or if this unit is Staggered: at the end of that turn, reload 8 [BulletPropellantSpecialAlly] and gain 1 [IrritationAlly] (once per Encounter)\n- If this effect activates while this unit is Staggered, recover from Stagger (unless it's a forced Stagger)\n- Remove all [BulletPropellantAlly] if this unit has any leftover [BulletPropellantAlly]\n- At 8+ (sum of [BulletPropellantAlly] and [BulletPropellantSpecialAlly] spent), convert [IrritationAlly] to [HugeIrritationAlly]\n\nWhen this unit uses a Base Attack Skill that spends the final Round of [BulletPropellantSpecialAlly]...\n- Gain Atk Weight +2 before attacking\n- Gain 1 [BeastEyesAlly] next turn",
+      "name": "Chachihu [揷翅虎]"
+    },
+    "1051211": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When this unit has [BulletPropellantAlly]:\n- At 1+ [BulletPropellantAlly], convert all Coins of 'Tanglecleaver' into [SuperCoin]s\n- Skill Coins that spend [BulletPropellantAlly] gain +1 Power and deal +10% damage (activates only as long as the Coin has Rounds left to spend)\n\nWhen this unit has [BulletPropellantSpecialAlly]:\n- At 1+ [BulletPropellantSpecialAlly], convert all Coins of this unit's Base Attack Skills to [SuperCoin]s\n- At 0 [BulletPropellantSpecialAlly], convert all Coins of this unit's Base Attack Skills that spend 'Unique Ammo' to [SuperCoin]s\n- Skill Coins that spend [BulletPropellantSpecialAlly] gain +2 Power, deal +30% damage, and inflict +2 more [Combustion] Potency and [Combustion] Count On Hit with those Coins (activates only as long as the Coin has Rounds left to spend)",
+      "name": "Tiantui Star's Blade [天退星刀]"
+    },
+    "1051221": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When 1 ally with the fastest Speed uses a Skill that spends [Bullet], if their Speed is faster than the target's by 3 or more, deal +(Speed difference × 2)% more damage (max 10%).\n(This effect does not activate if the affected unit lacks the [Bullet] buff entirely. However, it will activate if they have the [Bullet] buff, even if they have 0 rounds left)",
+      "name": "Savage Tiger's Lunge"
+    },
+    "1051231": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When 1 ally with the fastest Speed uses a Skill that spends [Bullet], if their Speed is faster than the target's by 3 or more, deal +(Speed difference × 3)% more damage (max 15%).\n(This effect does not activate if the affected unit lacks the [Bullet] buff entirely. However, it will activate if they have the [Bullet] buff, even if they have 0 rounds left)",
+      "name": "Savage Tiger's Lunge"
+    }
+  },
+  "skills": {
+    "1051201": {
+      "bonusNotes": "Does not account for his passive",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantAlly]",
+                "[OnSucceedAttack] Inflict 1 [Vibration]",
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Double Slash - Blast [爆]",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantAlly]",
+                "[OnSucceedAttack] Inflict 1 [Vibration]",
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Final Power +1 for every 4 ([Combustion] + [Vibration]) on the main target (max 2)",
+          "name": "Double Slash - Blast [爆]",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "Final Power +1 for every 4 ([Combustion] + [Vibration]) on the main target (max 2)",
+          "name": "Double Slash - Blast [爆]",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 3
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantAlly]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Final Power +1 for every 4 ([Combustion] + [Vibration]) on the main target (max 3)",
+          "name": "Double Slash - Blast [爆]",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1051202": {
+      "bonusNotes": "Does not account for his passive",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantAlly]",
+                "[OnSucceedAttack] Inflict 1 [Vibration]",
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantAlly]",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count",
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 4,
+          "name": "Triple Slash - Blast [爆]",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantAlly]",
+                "[OnSucceedAttack] Inflict 1 [Vibration]",
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantAlly]",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count",
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count",
+                "[OnSucceedAttack] If target has 3+ [Vibration] Count, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Final Power +1 for every 4 ([Combustion] + [Vibration]) on the main target (max 2)",
+          "name": "Triple Slash - Blast [爆]",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantAlly]",
+                "[OnSucceedAttack] Inflict 1 [Vibration]",
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantAlly]",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count",
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count",
+                "[OnSucceedAttack] If target has 3+ [Vibration] Count, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Final Power +1 for every 4 ([Combustion] + [Vibration]) on the main target (max 2)",
+          "name": "Triple Slash - Blast [爆]",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 4
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantAlly]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantAlly]",
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count",
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count",
+                "[OnSucceedAttack] If target has 3+ [Vibration] Count, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Final Power +1 for every 4 ([Combustion] + [Vibration]) on the main target (max 4)",
+          "name": "Triple Slash - Blast [爆]",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1051203": {
+      "bonusNotes": "Does not account for his passive",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantAlly]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantAlly]",
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count",
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "Spend 1 [BulletPropellantAlly]",
+                "If this unit spent [BulletPropellantAlly] due to this Coin's effect, deal +20% damage",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1\n- When spending [BulletPropellantAlly], activate the above effect once more"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If this unit has [BulletPropellantSpecialAlly], activate 'Savage Tigerslayer's Perfected Flurry of Blades' instead\n- [BeforeUse] If this unit does not have [BulletPropellantSpecialAlly], cancel activation\nIf the main target has 8+ ([Combustion] + [Vibration]), Coin Power +1",
+          "levelCorrection": 5,
+          "name": "Tanglecleaver [快刀亂麻]",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantAlly]",
+                "[OnSucceedAttack] Inflict 3 [Vibration]",
+                "[OnSucceedAttack] Inflict 3 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantAlly]",
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count",
+                "[OnSucceedAttack] Inflict +3 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "Spend 1 [BulletPropellantAlly]",
+                "If this unit spent [BulletPropellantAlly] due to this Coin's effect, deal +50% damage",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1\n- When spending [BulletPropellantAlly], activate the above effect 2 more times"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit has [BulletPropellantSpecialAlly], activate 'Savage Tigerslayer's Perfected Flurry of Blades' instead\n- [BeforeUse] If this unit does not have [BulletPropellantSpecialAlly], cancel activation\nCoin Power +1 for every 8 ([Combustion] + [Vibration]) on the main target, (max 2)",
+          "name": "Tanglecleaver [快刀亂麻]",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1051204": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count (2 times per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\nIf the main target has 4+ ([Combustion] + [Vibration]), Final Power +1\nIf [BulletPropellantAlly] (or [BulletPropellantSpecialAlly]) is at 0, Clash Power +1",
+          "levelCorrection": 3,
+          "name": "I'm Burning Up.",
+          "uptie": 1
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration] (2 times per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count (2 times per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[DuelCounter]\nFinal Power +1 for every 4 ([Combustion] + [Vibration]) on the main target (max 2)\nIf [BulletPropellantAlly] (or [BulletPropellantSpecialAlly]) is at 0, Clash Power +2",
+          "name": "I'm Burning Up.",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1051205": {
+      "bonusNotes": "Does not account for his passive",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantSpecialAlly]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantSpecialAlly]",
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantSpecialAlly]",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1\n- When spending [BulletPropellantSpecialAlly], activate the above effect once more"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If the main target has 8+ ([Combustion] + [Vibration]), Coin Power +1",
+          "levelCorrection": 6,
+          "name": "Savage Tigerslayer's Perfected Flurry of Blades [超絕猛虎殺擊亂斬]",
+          "uptie": 3
+        },
+        {
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantSpecialAlly]",
+                "[OnSucceedAttack] Inflict 3 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantSpecialAlly]",
+                "[OnSucceedAttack] Inflict +3 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellantSpecialAlly]",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1\n- When spending [BulletPropellantSpecialAlly], activate the above effect 2 more times"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Coin Power +1 for every 8 ([Combustion] + [Vibration]) on the main target (max 2)",
+          "name": "Savage Tigerslayer's Perfected Flurry of Blades [超絕猛虎殺擊亂斬]",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1051221"
+      ],
+      "uptie": 3
+    },
+    {
+      "passives": [
+        "1051231"
+      ],
+      "uptie": 4
+    }
+  ]
+}

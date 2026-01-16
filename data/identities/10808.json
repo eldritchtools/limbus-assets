@@ -1,0 +1,381 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1080802"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1080802",
+        "1080801"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1080802",
+        "1080811"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Loses SP when allies kill an enemy of a higher level.",
+      "S1 and S2 give defensive and offensive buffs respectively to the allies adjacent to her in the dashboard. Stronger buffs applied at 4+ A-Reson.",
+      "S2 has a 20% chance per Reson (100% at 5-Res) to trigger {status:CoverAttack} on the ally that comes immediately after her on the dashboard, giving them a free S1 on the same target after {sinner:8} attacks.",
+      "S3 heals SP for allies and gives them {status:Breath} if it kills its target. The number of allies affected increases with A-Reson.",
+      "Defense heals SP for her allies adjacent on the dashboard."
+    ],
+    "other": [
+      "If her passive is active, kills will give her {status:Breath} and give allies {status:Breath} and SP healing. Pequod identities heal more SP and get {status:PenetrateResultUp}. She also gains {status:OverHeatedGasHarpoon} for a turn, inflicting additional {status:Combustion} on Hit. Kills with her S3 still provide its regular bonuses on top of these."
+    ]
+  },
+  "passiveData": {
+    "1080801": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "After Attack: if the enemy is defeated after this unit's attack,\n- gain [HeatedGasHarpoon] next turn.\n- 1 other ally with the least SP heals 7 SP.\n- If the ally is from The Pequod, heal an additional 5 SP.",
+      "name": "Captain of the Pequod"
+    },
+    "1080802": {
+      "desc": "If the target is a <Lake Entity>, deal +10% damage",
+      "name": "Hour of the Hunt"
+    },
+    "1080811": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "- After Attack: if the enemy is defeated after this unit's attack,\n- gain 4 [Breath], +2 [Breath] Count. Then, gain [OverHeatedGasHarpoon] next turn.\n- 2 other allies with the least SP heal 7 SP and gain 4 [Breath].\n- If the allies are from The Pequod, heal an additional 5 SP. Then, once per turn, apply 1 Pierce Power Up next turn.",
+      "name": "Captain of the Pequod"
+    },
+    "1080821": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "1 ally with the highest SP gains 2 [Breath] when the target is defeated after that unit's attack (2 times per turn)",
+      "name": "Captain's Orders"
+    },
+    "1080831": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "After Attack: 1 ally with the highest SP gains 2 [Breath] and +2 [Breath] Count when the target is defeated after that unit's attack (2 times per turn)",
+      "name": "Captain's Orders"
+    }
+  },
+  "skills": {
+    "1080801": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Next turn, the leftmost Skill Slot of 1 other ally with the highest Max HP gains +(highest Reson.) [Aggro] (Once per turn)",
+          "levelCorrection": 3,
+          "name": "To Me!",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Next turn, the leftmost Skill Slot of 1 other ally with the highest Max HP gains +(highest Reson.) [Aggro] (Once per turn)\n- At 4+ highest A-Reson., apply 1 [Protection] to the ally next turn when they gain [Aggro] (Once per turn)",
+          "name": "To Me!",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "[WhenUse] Next turn, the leftmost Skill Slot of 1 other ally with the highest Max HP gains +(highest Reson.) [Aggro] (Once per turn)\n- At 4+ highest A-Reson., apply 1 [Protection] to the ally next turn when they gain [Aggro] (Once per turn)",
+          "name": "To Me!",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] Apply 2 [DefenseUp] to 2 allies adjacent to this unit on the Dashboard\n[WhenUse] Next turn, the leftmost Skill Slot of 1 other ally with the highest Max HP gains +(highest Reson.) [Aggro] (Once per turn)\n- At 4+ highest A-Reson., apply 1 [Protection] to the ally next turn when they gain [Aggro] (Once per turn)",
+          "name": "To Me!",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1080802": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Every Reson. of the highest Reson. adds 10% chance that this unit orders the ally on its immediate right(on the Dashboard) to use [CoverAttack] this turn.",
+          "levelCorrection": 3,
+          "name": "Pursue Them to the End!",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Every Reson. of the highest Reson. adds 15% chance that this unit orders the ally on its immediate right(on the Dashboard) to use [CoverAttack] this turn.\n- At 4+ highest A-Reson., apply 1 [AttackDmgUp] to the ally\n- At 4+ Pride A-Reson., apply 1 additional Pride Power Up",
+          "name": "Pursue Them to the End!",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] Apply 3 [AttackUp] to 2 allies adjacent to this unit on the Dashboard\n[WhenUse] Every Reson. of the highest Reson. adds 20% chance that this unit orders the ally on its immediate right(on the Dashboard) to use [CoverAttack] this turn.\n- At 4+ highest A-Reson., apply 2 [AttackDmgUp] to the ally\n- At 4+ Pride A-Reson., apply 2 additional Pride Power Up",
+          "name": "Pursue Them to the End!",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1080803": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal more damage based on target's missing HP (+0.2% damage per 1% missing HP, max +20%)\n[EndSkill] If target is Staggered or defeated, (1+(highest A-Reson./2)) allies with the least SP heal 10 SP, gain 2 [Breath], and +4 [Breath] Count. (2 times max. Max # of allies that can be healed: 4)",
+          "levelCorrection": 3,
+          "name": "Harpoon of Obsession",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Deal more damage based on target's missing HP (+0.3% damage per 1% missing HP, max +30%)\nCoin Power +1 for every 5 [Laceration] on target (Max 2)\n[EndSkill] If target is Staggered or defeated, (1+(highest A-Reson./2)) allies with the least SP heal 10 SP, gain 2 [Breath], and gain +4 [Breath] Count. (4 times max. Max # of allies that can be healed: 4)",
+          "name": "Harpoon of Obsession",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1080804": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[WhenUse] Heal 3 SP for 2 allies adjacent to this unit on the Dashboard (2 times max)",
+          "levelCorrection": -3,
+          "name": "Do Not Fear",
+          "uptie": 1
+        },
+        {
+          "affinity": "pride",
+          "desc": "[WhenUse] Heal 5 SP for 2 allies adjacent to this unit on the Dashboard (2 times max)",
+          "name": "Do Not Fear",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1080821"
+      ],
+      "uptie": 3
+    },
+    {
+      "passives": [
+        "1080831"
+      ],
+      "uptie": 4
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 18,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Convert 2 [Combustion] on target to 1 [DefenseDown] (Max 10)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "9:2",
+          "uptie": 1
+        },
+        {
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 3 [Combustion]",
+                "[OnSucceedAttack] Convert 2 [Combustion] on target to 1 [DefenseDown] (Max 10)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] At 4+ (Highest Lust A-Reson), Atk Weight +1",
+          "name": "9:2",
+          "uptie": 3
+        },
+        {
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Combustion]",
+                "[OnSucceedAttack] Convert 2 [Combustion] on target to 1 [DefenseDown] (Max 10)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] At 4+ (Highest Lust A-Reson), Atk Weight +1\nAt 6+ (Highest Lust A-Reson), additional Atk Weight +1",
+          "name": "9:2",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 28,
+          "coinValue": -12,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict 4 [Combustion]",
+                "[OnSucceedAttack] Convert 2 [Combustion] on target to 1 [DefenseDown] (Max 10)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly",
+          "levelCorrection": 2,
+          "name": "9:2",
+          "uptie": 1
+        },
+        {
+          "coinValue": -12,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict 2 [Binding] next turn",
+                "[OnSucceedAttack] Inflict 4 [Combustion]",
+                "[OnSucceedAttack] Convert 2 [Combustion] on target to 1 [DefenseDown] (Max 10)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\n[BeforeAttack] At 4+ (Highest Lust A-Reson), Atk Weight +1",
+          "name": "9:2",
+          "uptie": 3
+        },
+        {
+          "coinValue": -12,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackTail] Inflict 2 [Binding] next turn",
+                "[OnSucceedAttack] Inflict 4 [Combustion]",
+                "[OnSucceedAttack] Convert 2 [Combustion] on target to 1 [DefenseDown] (Max 10)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\n[BeforeAttack] At 4+ (Highest Lust A-Reson), Atk Weight +1\nAt 6+ (Highest Lust A-Reson), additional Atk Weight +1",
+          "name": "9:2",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "On Heads Hit with a Lust affinity Skill, inflict 1 [Combustion] on target (6 times per turn)",
+      "name": "Flamebrand"
+    }
+  ]
+}

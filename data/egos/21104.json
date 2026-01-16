@@ -1,0 +1,136 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 19,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Binding] next turn",
+                "[CriticalOnSucceedAttack] Trigger Tremor Burst"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[BeforeAttack] Gain +4 [Breath] Count",
+          "levelCorrection": 2,
+          "name": "Sunshower",
+          "uptie": 1
+        },
+        {
+          "baseValue": 26,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Sinking]",
+                "[OnSucceedAttack] Inflict 2 [Binding] next turn",
+                "[CriticalOnSucceedAttack] Trigger Tremor Burst; Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] Gain +6 [Breath] Count",
+          "name": "Sunshower",
+          "uptie": 3
+        },
+        {
+          "atkWeight": 2,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 6 [Sinking]",
+                "[OnSucceedAttack] Inflict 3 [Binding] next turn",
+                "[CriticalOnSucceedAttack] Trigger Tremor Burst; Inflict +3 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] Gain +7 [Breath] Count",
+          "name": "Sunshower",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 22,
+          "coinValue": -7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Binding] next turn",
+                "[CriticalOnSucceedAttack] Trigger Tremor Burst"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets the unit with the least HP\n[BeforeAttack] Gain +5 [Breath] Count",
+          "levelCorrection": 2,
+          "name": "Sunshower",
+          "uptie": 1
+        },
+        {
+          "baseValue": 29,
+          "coinValue": -7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Sinking]",
+                "[OnSucceedAttack] Inflict 4 [Burst]",
+                "[OnSucceedAttack] Inflict 2 [Binding] next turn",
+                "[CriticalOnSucceedAttack] Trigger Tremor Burst; Inflict +2 [Sinking] Count and [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets the unit with the least HP\n[BeforeAttack] Gain +7 [Breath] Count",
+          "name": "Sunshower",
+          "uptie": 3
+        },
+        {
+          "atkWeight": 2,
+          "coinValue": -7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 6 [Sinking]",
+                "[OnSucceedAttack] Inflict 6 [Burst]",
+                "[OnSucceedAttack] Inflict 3 [Binding] next turn",
+                "[CriticalOnSucceedAttack] Trigger Tremor Burst; Inflict +3 [Sinking] Count and [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets the unit with the least HP\n[BeforeAttack] Gain +7 [Breath] Count",
+          "name": "Sunshower",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "After a clash, gain 2 [Breath]\nWhen staggered, gain 2 [Protection]; when recovering from stagger, gain 5 [Breath]",
+      "name": "Breath of the Hunt"
+    }
+  ]
+}

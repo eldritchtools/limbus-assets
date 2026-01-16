@@ -1,0 +1,283 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1090401"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Inflicts some {status:NailPersonality} on her skills and {status:Paralysis} on her S2.",
+      "Gains {status:AssemblePersonality} on S2 clash win or on kill when her passive is active.",
+      "Her passive gives her {status:Agility} and {status:AttackDmgUp} after any enemy death, not necessarily by her."
+    ]
+  },
+  "passiveData": {
+    "1090401": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "After an enemy is defeated, gain 1 Haste and 1 Damage Up next turn.\nIf this unit defeated an enemy, also gain 1 [AssemblePersonality]. (Once per turn.)",
+      "name": "Joy of Execution"
+    },
+    "1090421": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "After an enemy is defeated, apply 1 Haste and 1 Damage Up next turn to the ally with the most SP. (Once per turn.)",
+      "name": "Rising Faith"
+    }
+  },
+  "skills": {
+    "1090401": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Devoted Hammering",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Devoted Hammering",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "",
+          "name": "Devoted Hammering",
+          "uptie": 3
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] If target has [NailPersonality], inflict 1 [NailPersonality]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] If target has [NailPersonality], inflict 1 [NailPersonality]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Devoted Hammering",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1090402": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [NailPersonality] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Zealous Purge",
+          "uptie": 1
+        },
+        {
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [NailPersonality] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WinDuel] Gain 1 [AssemblePersonality] next turn",
+          "name": "Zealous Purge",
+          "uptie": 2
+        },
+        {
+          "baseValue": 6,
+          "desc": "[WinDuel] Gain 1 [AssemblePersonality] next turn",
+          "name": "Zealous Purge",
+          "uptie": 3
+        }
+      ],
+      "tier": 2
+    },
+    "1090403": {
+      "bonusNotes": "Ignores the damage bonus from the number of N Corp. allies present",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "+15% Damage while this unit is [AssemblePersonality]",
+          "levelCorrection": 3,
+          "name": "Ironclad Retribution",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            }
+          ],
+          "desc": "If this unit is [AssemblePersonality], deal +15% damage\nDeal +5% damage for each 'N Corp. Fanatic' present in the party",
+          "name": "Ironclad Retribution",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1090404": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 6,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Counter",
+          "uptie": 1
+        },
+        {
+          "desc": "",
+          "name": "Counter",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1090421"
+      ],
+      "uptie": 3
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 20,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Trigger Tremor Burst"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[EndSkill] Heal 2 other allies with the least HP for 15% of Max HP",
+          "levelCorrection": -1,
+          "name": "Pursuance",
+          "uptie": 1
+        },
+        {
+          "baseValue": 26,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger Tremor Burst"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[EndSkill] Heal 2 other allies with the least HP for 30% of Max HP; Apply 2 [Protection] next turn",
+          "name": "Pursuance",
+          "uptie": 3
+        },
+        {
+          "atkWeight": 3,
+          "desc": "[EndSkill] Heal 2 other allies with the least HP for 30% of Max HP; Apply 2 [Protection] next turn",
+          "name": "Pursuance",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 28,
+          "coinValue": -8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Trigger Tremor Burst"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify] Targets randomly\n[EndSkill] Apply 1 [Vulnerable] and 2 [AttackDmgUp] next turn to 2 other allies with the least HP",
+          "levelCorrection": -1,
+          "name": "Pursuance",
+          "uptie": 1
+        },
+        {
+          "baseValue": 34,
+          "coinValue": -8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger Tremor Burst"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify] Targets randomly\n[EndSkill] Apply 2 [Vulnerable] and 3 [AttackDmgUp] next turn to 2 other allies with the least HP",
+          "name": "Pursuance",
+          "uptie": 3
+        },
+        {
+          "atkWeight": 3,
+          "desc": "[CantIdentify] Targets randomly\n[EndSkill] Apply 2 [Vulnerable] and 3 [AttackDmgUp] next turn to 2 other allies with the least HP",
+          "name": "Pursuance",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "After winning a clash with the leftmost skill on the Dashboard, apply 1 [Enhancement] or [Endurance] to a random ally next turn.",
+      "name": "Revelation from Above"
+    }
+  ]
+}

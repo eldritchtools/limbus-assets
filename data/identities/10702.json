@@ -1,0 +1,283 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1070201"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Skills gain buffs at below 50% HP. S3 gains atk weight."
+    ]
+  },
+  "passiveData": {
+    "1070201": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "After taking damage from attacks this turn, deal +10% damage.",
+      "name": "Respiration"
+    },
+    "1070221": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "1 ally with the least HP deals and takes +20% damage.",
+      "name": "Self-neglect"
+    }
+  },
+  "skills": {
+    "1070201": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 1
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At less than 25% HP, +1 Skill Power",
+          "levelCorrection": 1,
+          "name": "Extreme Edge",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 2
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "At less than 25% HP, +2 Skill Power",
+          "name": "Extreme Edge",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "At less than 25% HP, +2 Skill Power",
+          "name": "Extreme Edge",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "desc": "At less than 50% HP, Skill Power +2\n[WhenUse] Gain +3 [Breath] Count",
+          "name": "Extreme Edge",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1070202": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 1
+            }
+          ],
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At less than 25% HP, +1 Skill Power",
+          "levelCorrection": 1,
+          "name": "Flying Sword",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 2
+            }
+          ],
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "At less than 25% HP, +2 Skill Power",
+          "name": "Flying Sword",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "At less than 25% HP, +2 Skill Power",
+          "name": "Flying Sword",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "desc": "At less than 50% HP, +2 Skill Power\n[WhenUse] Gain 3 [Breath]",
+          "name": "Flying Sword",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1070203": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 2
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "[BeforeAttack] Lose 5 HP; +50% Skill Damage for this Coin"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "[BeforeAttack] Lose 5 HP; +50% Skill Damage for this Coin"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At less than 25% HP, +2 Skill Power",
+          "levelCorrection": 1,
+          "name": "Flashing Strike",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 2.0
+            }
+          ],
+          "desc": "At 10+ [Breath] Count, Skill Power +2\nAt less than 50% HP, Atk Weight +1",
+          "name": "Flashing Strike",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1070204": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Counter",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            }
+          ],
+          "desc": "[WhenUse] Lose 5 HP\nAt 3+ [Breath] Count, Damage +50%",
+          "name": "Counter",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1070221"
+      ],
+      "uptie": 3
+    }
+  ]
+}

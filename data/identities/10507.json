@@ -1,0 +1,317 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1050701"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1050711"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Passive inflicts {status:RetaliationBook} on the enemy that dealt the most damage to allies on the previous turn, same with other Middle identities. He gains Final Power when targeting enemies with {status:RetaliationBook}",
+      "S2 applies {status:VioletResultUp} to his adjacent allies on the dashboard.",
+      "S3 applies {status:PlusCoinValueDown} and {status:VioletTakeDamageUp} to the target if it has {status:RetaliationBook} and is stronger with {keyword:Envy} Reson."
+    ],
+    "other": [
+      "His passive also heals SP for himself and another Middle ally, if any are active.",
+      "His support passive heals SP for the lowest SP sinner if there is another active sinner from the same Faction."
+    ]
+  },
+  "passiveData": {
+    "1050701": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "- Apply [RetaliationBook] to the unit that dealt the most Skill damage to an ally.\n- If the main target has [RetaliationBook], Final Power +1\n- If there is another surviving ally from the Middle, heal 6 SP at every Turn End",
+      "name": "Loyalty"
+    },
+    "1050711": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "- Apply [RetaliationBook] to the unit that dealt the most Skill damage to an ally.\n- If the main target has [RetaliationBook], Final Power +1\n- If there is another surviving ally from the Middle other than this unit, this unit and the surviving ally from the Middle with the least SP both heal 6 SP at every Turn End",
+      "name": "Loyalty"
+    },
+    "1050721": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "The 1 ally with the least SP heals 10 SP at Turn End if there is another ally from the same Faction",
+      "name": "One Family"
+    }
+  },
+  "skills": {
+    "1050701": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "We Remember",
+          "uptie": 1
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[DefeatDuel] Gain 1 [VioletDamageUp] next turn",
+          "name": "We Remember",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "[DefeatDuel] Gain 1 [VioletDamageUp] next turn",
+          "name": "We Remember",
+          "uptie": 3
+        }
+      ],
+      "tier": 1
+    },
+    "1050702": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] Apply 1 [VioletResultUp] to 2 allies adjacent to this unit on the Dashboard.",
+          "levelCorrection": 1,
+          "name": "Chains of Loyalty",
+          "uptie": 1
+        },
+        {
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] Apply 1 [VioletResultUp] to 2 allies adjacent to this unit on the Dashboard.",
+          "name": "Chains of Loyalty",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "[StartBattle] Apply 1 [VioletResultUp] to 2 allies adjacent to this unit on the Dashboard.",
+          "name": "Chains of Loyalty",
+          "uptie": 3
+        },
+        {
+          "desc": "[StartBattle] Apply 1 [VioletResultUp] to 2 allies adjacent to this unit on the Dashboard\nApply 1 [VioletDamageUp] as well when selecting Envy affinity Skills from the affected Skill Slots",
+          "name": "Chains of Loyalty",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1050703": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has [RetaliationBook], inflict 1 [PlusCoinValueDown] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has [RetaliationBook], inflict 1 [VioletTakeDamageUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At 4+ Envy Reson., Coin Power +1",
+          "levelCorrection": 3,
+          "name": "Recording",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has [RetaliationBook], inflict 1 [PlusCoinValueDown] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has [RetaliationBook], inflict 2 [VioletTakeDamageUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 4+ Envy Reson., Coin Power +1\nAt 6+ Envy A-Reson., Coin Power +1",
+          "name": "Recording",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1050704": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Multifold Retribution",
+          "uptie": 1
+        },
+        {
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "At 4+ Envy Reson., Coin Power +1",
+          "name": "Multifold Retribution",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1050721"
+      ],
+      "uptie": 3
+    }
+  ]
+}

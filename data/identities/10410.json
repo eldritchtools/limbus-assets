@@ -1,0 +1,555 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1041002"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1041002",
+        "1041001"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1041002",
+        "1041011"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "main": [
+      "Has 2 unique Charges. {status:RedEyeFirst} gives bonus {status:Laceration} application. {status:PenanceFirst} gives SP healing on hit and a passive HP shield every turn.",
+      "At 15+ of both Charges, S3 consumes all of both to use S3-2 instead. S3-2 inflicts additional {status:Laceration}, deals more damage, and heals more HP and SP for herself and an ally based on how much of the two Charges she consumed (base S3 does the same but with lower values and without consuming either Charge). Using it with Res also increases the number of allies healed. It also inflicts {status:Binding} and {status:Reduction} next turn. After using S3-2, she gains {status:Emptiness} preventing her from building either Charge versions for a turn. Gaining {status:RedEyeFirst} will instead heal her and an ally's HP, while gaining {status:PenanceFirst} heals their SP. Both versions will drain her SP by 15 on use."
+    ],
+    "other": [
+      "Both Charge versions give bonus damage and increase their effects based on their stage. The stages correspond to 1-7, 8-15, and 16-20 Count. All skills generate both Charges. If her passive is active, {status:RedEyeFirst} generation is increased against targets with {status:Laceration} and {status:PenanceFirst} generation is increased at 20+ SP. Gaining {status:Charge} Count from external sources will randomly assign it to one of the two."
+    ]
+  },
+  "passiveData": {
+    "1041001": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 3
+          },
+          {
+            "type": "gloom",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When hitting an enemy with a Coin that gains [RedEyeFirst]:\n- Deal +([RedEyeFirst]/2)% damage\n- If the target has [Laceration], gain 1 [RedEyeFirst] (3 times per turn)\n\nWhen hitting an enemy with a Coin that gains [PenanceFirst]:\n- Deal +([PenanceFirst]/2)% damage\n- At 20+ SP, gain 1 [PenanceFirst] (3 times per turn)",
+      "name": "Spiderhead/Skullface"
+    },
+    "1041002": {
+      "desc": "When gaining [Charge] Count, gain [RedEyeFirst] or [PenanceFirst] instead\n- [RedEyeFirst] and [PenanceFirst] are unaffected by [Charge] Potency",
+      "name": "E.G.O Assimilation"
+    },
+    "1041011": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 3
+          },
+          {
+            "type": "gloom",
+            "value": 3
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When hitting an enemy with a Coin that gains [RedEyeFirst]:\n- Deal +([RedEyeFirst]/2)% damage\n- If this unit's Speed is faster than the target's by 3 or more, deal an additional +([RedEyeFirst]/2)% damage\n- If the target has [Laceration], gain 1 [RedEyeFirst] (3 times per turn)\n\nWhen hitting an enemy with a Coin that gains [PenanceFirst]:\n- Deal +([PenanceFirst]/2)% damage\n- If the target's SP is lower than this unit's, deal an additional +([PenanceFirst]/2)% damage(targets without SP: their SP counts as 0)\n- At 20+ SP, gain 1 [PenanceFirst] (3 times per turn)\n\nWhen hit by an enemy, gain 1 [PenanceFirst] (max 3)",
+      "name": "Spiderhead/Skullface"
+    },
+    "1041021": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "Combat Start:\n- 1 ally with the lowest HP percentage heals 3 HP\n- 1 ally with the least SP heals 3 SP",
+      "name": "Eat and Sleep"
+    }
+  },
+  "skills": {
+    "1041001": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [PenanceFirst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [RedEyeFirst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Both of You, Shut Up",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [PenanceFirst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [RedEyeFirst]",
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 7+ [RedEyeFirst], Coin Power +1\nAt 7+ [PenanceFirst], Clash Power +1",
+          "name": "Both of You, Shut Up",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "At 7+ [RedEyeFirst], Coin Power +1\nAt 7+ [PenanceFirst], Clash Power +1",
+          "name": "Both of You, Shut Up",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [PenanceFirst]\n[OnSucceedAttackHead] Gain 1 [PenanceFirst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [RedEyeFirst]",
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "At 7+ [RedEyeFirst], Coin Power +1\nAt 7+ [PenanceFirst], Clash Power +2",
+          "name": "Both of You, Shut Up",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1041002": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 4 [PenanceFirst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [RedEyeFirst]",
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If the sum of [RedEyeFirst] and [PenanceFirst] is 20 or higher, Coin Power +1",
+          "levelCorrection": 2,
+          "name": "S.H. / S.F.",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 4 [PenanceFirst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [RedEyeFirst]",
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain [RedEyeFirst] equal to ([Laceration] on target/3) (max 2)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If the sum of [RedEyeFirst] and [PenanceFirst] is 20 or higher, Coin Power +1\nIf target has 6+ [Laceration], Coin Power +1",
+          "name": "S.H. / S.F.",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "If the sum of [RedEyeFirst] and [PenanceFirst] is 20 or higher, Coin Power +1\nIf target has 6+ [Laceration], Coin Power +1",
+          "name": "S.H. / S.F.",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 4 [PenanceFirst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [RedEyeFirst]",
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain [RedEyeFirst] equal to ([Laceration] on target/2) (max 3)",
+                "[OnSucceedAttackHead] At 7+ [RedEyeFirst], gain 1 [Agility] next turn (2 times per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If the sum of [RedEyeFirst] and [PenanceFirst] is 15 or higher, Coin Power +1\nIf target has 6+ [Laceration], Coin Power +1",
+          "name": "S.H. / S.F.",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1041003": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 7 [RedEyeFirst]",
+                "[OnSucceedAttack] Gain 7 [PenanceFirst]",
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal self and 1 ally with the lowest HP percentage by ([PenanceFirst]/3)% of each unit's max HP",
+                "[OnSucceedAttack] Heal self and 1 ally with the least SP by ([PenanceFirst] - 10) SP (min 0)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[BeforeUse] If [RedEyeFirst] and [PenanceFirst] are both at 15+, activate 'Serious Skullbuster' instead\nIf this unit's Speed is faster than the target's by 3 or more, Coin Power +1\n[WhenUse] At max SP, Coin Power +1\n- [EndSkill] If this effect activated, lose 15 SP",
+          "levelCorrection": 3,
+          "name": "Skullbuster",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 2
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 7 [RedEyeFirst]",
+                "[OnSucceedAttack] Gain 7 [PenanceFirst]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [PenanceFirst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal self and 1 ally with the lowest HP percentage by ([PenanceFirst]/2)% of each unit's max HP",
+                "[OnSucceedAttack] Heal self and 1 ally with the least SP by ([PenanceFirst] - 10) SP (min 0)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeUse] If [RedEyeFirst] and [PenanceFirst] are both at 15+, activate 'Serious Skullbuster' instead\nIf this unit's Speed is faster than the target's, Coin Power +1\n[WhenUse] At max SP, Clash Power +2 and Coin Power +1\n- [EndSkill] If this effect activated, lose 15 SP",
+          "name": "Skullbuster",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1041004": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [RedEyeFirst] (once per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [PenanceFirst] (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Mealtime, Bedtime",
+          "uptie": 1
+        },
+        {
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [RedEyeFirst] (once per turn)\n- At less than 7 [RedEyeFirst], gain +1 additional [RedEyeFirst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [PenanceFirst] (once per turn)\n- At less than 7 [PenanceFirst], gain +1 additional [PenanceFirst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "",
+          "name": "Mealtime, Bedtime",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1041005": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 4
+            },
+            {
+              "type": "base",
+              "value": 4
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [Laceration] equal to ([RedEyeFirst] consumed - 15) on target (max 5)"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "Deal +2.5% damage for every [RedEyeFirst] and [PenanceFirst] consumed (max 100%)",
+                "[OnSucceedAttack] Heal self and 1 ally with the lowest HP percentage by ([PenanceFirst] consumed / 2)% of each unit's max HP\n- Heal 1 additional ally for every 2 highest Reson. (max 2 more allies)",
+                "[OnSucceedAttack] Heal self and 1 ally with the least SP by ([PenanceFirst] consumed - 10) SP\n- Heal 1 additional ally for every 2 highest Reson. (max 2 more allies)",
+                "[OnSucceedAttack] Inflict 3 [Binding] and 2 [Reduction] next turn (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Consume all [RedEyeFirst] and [PenanceFirst] on self\n- Coin Power +1 for every 5 [RedEyeFirst] consumed (max 4)\n- Base Power +1 for every 5 [PenanceFirst] consumed (max 4)\n[EndSkill] Lose 15 SP and gain [Emptiness] next turn",
+          "levelCorrection": 5,
+          "name": "Serious Skullbuster",
+          "uptie": 3
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [Laceration] equal to ([RedEyeFirst] consumed - 15) on target (max 5)"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 1.6
+                }
+              ],
+              "descs": [
+                "Deal +4% damage for every [RedEyeFirst] and [PenanceFirst] consumed (max 160%)",
+                "[OnSucceedAttack] Heal self and 1 ally with the lowest HP percentage by ([PenanceFirst] consumed)% of each unit's max HP\n- Heal 1 additional ally for every 2 highest Reson. (max 2 more allies)",
+                "[OnSucceedAttack] Heal self and 1 ally with the least SP by ([PenanceFirst] consumed - 5) SP\n- Heal 1 additional ally for every 2 highest Reson. (max 2 more allies)",
+                "[OnSucceedAttack] Inflict 3 [Binding] and 2 [Reduction] next turn (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Consume all [RedEyeFirst] and [PenanceFirst] on self\n- Coin Power +1 for every 5 [RedEyeFirst] consumed (max 4)\n- Base Power +1 for every 5 [PenanceFirst] consumed (max 4)\n[EndSkill] Lose 15 SP and gain [Emptiness] next turn",
+          "name": "Serious Skullbuster",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1041021"
+      ],
+      "uptie": 3
+    }
+  ]
+}

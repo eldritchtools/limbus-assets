@@ -1,0 +1,139 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 17,
+          "coinValue": 9,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Sinking] Count",
+                "[OnSucceedAttack] Inflict 1 [Curse]",
+                "[OnSucceedAttack] Inflict 2 [UninvitedGuestPersonality]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[BeforeAttack] At 4+ highest Reson., gain +1 Atk Weight\n[EndSkill] Heal 2 allies with the lowest HP percentages by (5 + ([Sinking] on the main target + [Sinking] Count on the main target)/3)% HP (max 15%)",
+          "levelCorrection": 2,
+          "name": "Bygone Days",
+          "uptie": 1
+        },
+        {
+          "coinValue": 9,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Sinking] Count",
+                "[OnSucceedAttack] Inflict 1 [Curse]",
+                "[OnSucceedAttack] At 4+ Gloom Reson., inflict 1 [AzureTakeDamageUp]",
+                "[OnSucceedAttack] Inflict 2 [UninvitedGuestPersonality]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] At 4+ highest Reson., gain +1 Atk Weight\n- If the said Reson. was a Gloom Reson., gain +1 Atk Weight\n[EndSkill] Heal 2 allies with the lowest HP percentages by (10 + ([Sinking] on the main target + [Sinking] Count on the main target)/3)% HP (max 15%)",
+          "name": "Bygone Days",
+          "uptie": 3
+        },
+        {
+          "coinValue": 9,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count",
+                "[OnSucceedAttack] Inflict 2 [Curse]",
+                "[OnSucceedAttack] At 4+ Gloom Reson., inflict 1 [AzureTakeDamageUp]",
+                "[OnSucceedAttack] Inflict 2 [UninvitedGuestPersonality]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] At 4+ highest Reson., gain +1 Atk Weight\n- If the said Reson. was a Gloom Reson., gain +1 Atk Weight\n[EndSkill] Heal 2 allies with the lowest HP percentages by (10 + ([Sinking] on the main target + [Sinking] Count on the main target)/3)% HP (max 20%)\n- If the highest Reson. was a 4+ Gloom Reson., heal 10% more of the max HP",
+          "name": "Bygone Days",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 3,
+          "baseValue": 28,
+          "coinValue": -10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Sinking] Count",
+                "[OnSucceedAttack] Inflict 1 [Curse]",
+                "[OnSucceedAttack] At 3+ Gloom Reson., inflict 1 [AzureTakeDamageUp]",
+                "[OnSucceedAttack] Inflict 2 [UninvitedGuestPersonality]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nPrioritizes targets with the most [Sinking]\n[BeforeAttack] Lose HP by 10% of Max HP (does not get Staggered due to this effect)\n[EndSkill] Heal 3 other allies with the lowest HP percentages by (5 + (([Sinking] on the main target + [Sinking] Count on the main target))/3)% HP (max 10%)\n- At 4+ highest Reson., heal 1 additional ally",
+          "levelCorrection": -3,
+          "name": "Bygone Days",
+          "uptie": 1
+        },
+        {
+          "coinValue": -10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Sinking] Count",
+                "[OnSucceedAttack] Inflict 2 [Curse]",
+                "[OnSucceedAttack] At 3+ Gloom Reson., inflict 1 [AzureTakeDamageUp]",
+                "[OnSucceedAttack] Inflict 2 [UninvitedGuestPersonality]",
+                "[OnSucceedAttack] Inflict 2 [EchoOfMansion] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nPrioritizes targets with the most [Sinking]\n[BeforeAttack] Lose HP by 10% of Max HP (does not get Staggered due to this effect)\n[EndSkill] Heal 3 other allies with the lowest HP percentages by (10 + ([Sinking] on the main target + [Sinking] Count on the main target)/3)% HP (max 15%)\n- At 4+ highest Reson., heal 1 additional ally",
+          "name": "Bygone Days",
+          "uptie": 3
+        },
+        {
+          "coinValue": -10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count",
+                "[OnSucceedAttack] Inflict 2 [Curse]",
+                "[OnSucceedAttack] For every 3 Gloom Reson., inflict 1 [AzureTakeDamageUp] (max 2)",
+                "[OnSucceedAttack] Inflict 2 [UninvitedGuestPersonality]",
+                "[OnSucceedAttack] Inflict 2 [EchoOfMansion] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nPrioritizes targets with the most [Sinking]\n[BeforeAttack] Lose HP by 10% of Max HP (does not get Staggered due to this effect)\n[EndSkill] Heal 3 other allies with the lowest HP percentages by (10 + ([Sinking] on the main target + [Sinking] Count on the main target)/3)% HP (max 15%)\n- At 4+ highest Reson., heal 1 additional ally\n- If the said Reson. was a Gloom Reson., heal an additional 5% HP",
+          "name": "Bygone Days",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "If the target has [UninvitedGuestPersonality] or any of the Panic Type changing effects, Clash Power +1.\nOn Hit against the said target, heal 1 ally with the least SP for 5 SP. (once per turn)",
+      "name": "Interloper Reception"
+    }
+  ]
+}

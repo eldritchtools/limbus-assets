@@ -1,0 +1,131 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 14,
+          "coinValue": 22,
+          "coins": [
+            {
+              "descs": [
+                "Inflict [Combustion] by half of Wrath Reson.",
+                "[OnSucceedAttackHead] Inflict 3 [Combustion] on 3 random enemies"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Targets the rearmost unit (In regular encounters)",
+          "levelCorrection": 3,
+          "name": "Ardor Blossom Star",
+          "uptie": 1
+        },
+        {
+          "baseValue": 19,
+          "coinValue": 22,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Raise Stagger Threshold by 40% of damage dealt",
+                "[OnSucceedAttack] Inflict [Combustion] by Wrath Reson.",
+                "[OnSucceedAttackHead] Inflict 3 [Combustion] on 3 random enemies"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Targets the rearmost unit (In regular encounters)",
+          "name": "Ardor Blossom Star",
+          "uptie": 3
+        },
+        {
+          "atkWeight": 3,
+          "coinValue": 22,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Raise Stagger Threshold by 40% of damage dealt",
+                "[OnSucceedAttack] Inflict [Combustion] by Wrath Reson.",
+                "[EndSkillHead] Inflict 5 [Combustion] on 3 random enemies"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Targets the rearmost unit (In regular encounters)",
+          "name": "Ardor Blossom Star",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 36,
+          "coinValue": -22,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [Combustion] by Wrath Reson. on all units"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly\n[WhenUse] Lose HP by 10% of Max HP",
+          "levelCorrection": 3,
+          "name": "Ardor Blossom Star",
+          "uptie": 1
+        },
+        {
+          "baseValue": 41,
+          "coinValue": -22,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [Combustion] by (2x) Wrath Reson. on all units",
+                "[OnSucceedAttack] Raise Stagger Threshold by 60% of damage dealt"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\n[WhenUse] Lose HP by 10% of Max HP",
+          "name": "Ardor Blossom Star",
+          "uptie": 3
+        },
+        {
+          "atkWeight": 5,
+          "coinValue": -22,
+          "coins": [
+            {
+              "descs": [
+                "[EndSkill] Inflict [Combustion] by (2 * Wrath Reson.) on all units",
+                "[OnSucceedAttack] Raise Stagger Threshold by 60% of damage dealt"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\n[WhenUse] Lose HP by 10% of Max HP",
+          "name": "Ardor Blossom Star",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "passiveList": [
+    {
+      "desc": "On hit, if the target had [Combustion], inflict 1 [Combustion] on 3 random enemies.",
+      "name": "Shower of Fire"
+    }
+  ]
+}
