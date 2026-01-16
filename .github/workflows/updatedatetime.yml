@@ -17,11 +17,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js (optional, just to use date command)
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-
       - name: Create or update meta.json
         run: |
           echo "{\"datetime\": \"$(date -u +"%Y-%m-%dT%H:%M:%SZ")\"}" > meta.json
