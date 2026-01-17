@@ -36,35 +36,40 @@ jobs:
       - name: Install rclone
         run: curl https://rclone.org/install.sh | sudo bash
 
-      # Configure temporary rclone remote for R2
-      - name: Configure rclone for Cloudflare R2
+      - name: Create rclone config
         run: |
           mkdir -p ~/.config/rclone
-          echo "[r2]" > ~/.config/rclone/rclone.conf
-          echo "type = s3" >> ~/.config/rclone/rclone.conf
-          echo "provider = Cloudflare" >> ~/.config/rclone/rclone.conf
-          echo "access_key_id = ${{ secrets.R2_ACCESS_KEY_ID }}" >> ~/.config/rclone/rclone.conf
-          echo "secret_access_key = ${{ secrets.R2_SECRET_ACCESS_KEY }}" >> ~/.config/rclone/rclone.conf
-          echo "endpoint = ${{ secrets.R2_JURISDICTION_SPECIFIC_ENDPOINT }}" >> ~/.config/rclone/rclone.conf
+          cat > ~/.config/rclone/rclone.conf <<'EOF'
+          [r2json]
+          type = s3
+          provider = Cloudflare
+          access_key_id = ${{ secrets.R2_ACCESS_KEY_ID }}
+          secret_access_key = ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          endpoint = ${{ secrets.R2_JURISDICTION_SPECIFIC_ENDPOINT }}
+
+          [r2assets]
+          type = s3
+          provider = Cloudflare
+          access_key_id = ${{ secrets.R2_ACCESS_KEY_ID }}
+          secret_access_key = ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          endpoint = ${{ secrets.R2_JURISDICTION_SPECIFIC_ENDPOINT }}
+          upload_headers = Cache-Control:public,max-age=604800,immutable
+          EOF
 
       # - name: List R2 buckets
       #   run: rclone ls "r2:${{ secrets.R2_BUCKET }}"
 
       - name: Sync assets to R2 (checksum-based)
         run: |
-          rclone sync assets r2:$BUCKET/assets \
-            --checksum \
-            --fast-list \
-            --s3-upload-headers "Cache-Control: public, max-age=2592000, immutable" \
-            --s3-metadata-directive REPLACE
+          rclone sync assets r2assets:$BUCKET/assets --checksum --fast-list --ignore-existing=false
 
       - name: Sync data to R2 (checksum-based)
         run: |
-          rclone sync data r2:${{ secrets.R2_BUCKET }}/data --checksum --fast-list
+          rclone sync data r2json:${{ secrets.R2_BUCKET }}/data --checksum --fast-list
 
       - name: Sync meta to R2 (checksum-based)
         run: |
-          rclone copyto meta.json r2:${{ secrets.R2_BUCKET }}/meta.json
+          rclone copyto meta.json r2json:${{ secrets.R2_BUCKET }}/meta.json
 
       - name: Purge Cloudflare cache (only changed JSON files)
         run: |
