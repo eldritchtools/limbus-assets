@@ -47,8 +47,8 @@ jobs:
           echo "secret_access_key = ${{ secrets.R2_SECRET_ACCESS_KEY }}" >> ~/.config/rclone/rclone.conf
           echo "endpoint = ${{ secrets.R2_JURISDICTION_SPECIFIC_ENDPOINT }}" >> ~/.config/rclone/rclone.conf
 
-      - name: List R2 buckets
-        run: rclone ls "r2:${{ secrets.R2_BUCKET }}"
+      # - name: List R2 buckets
+      #   run: rclone ls "r2:${{ secrets.R2_BUCKET }}"
 
       - name: Sync assets to R2 (checksum-based)
         run: |
@@ -60,7 +60,7 @@ jobs:
 
       - name: Sync meta to R2 (checksum-based)
         run: |
-          rclone copy meta.json r2:${{ secrets.R2_BUCKET }}/meta.json
+          rclone copyto meta.json r2:${{ secrets.R2_BUCKET }}/meta.json
 
       - name: Purge Cloudflare cache (only changed JSON files)
         run: |
