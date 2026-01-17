@@ -61,7 +61,7 @@ jobs:
 
       - name: Sync assets to R2 (checksum-based)
         run: |
-          rclone sync assets r2assets:${{ secrets.R2_BUCKET }}/assets --checksum --fast-list --ignore-existing=false
+          rclone sync assets r2assets:${{ secrets.R2_BUCKET }}/assets --checksum --fast-list --ignore-checksum
 
       - name: Sync data to R2 (checksum-based)
         run: |
