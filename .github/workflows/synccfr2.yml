@@ -5,7 +5,8 @@ on:
     branches:
       - main
     paths:
-      - "public/data/**"
+      - "data/**"
+      - "assets/**"
   workflow_dispatch:
 
 jobs:
@@ -44,8 +45,8 @@ jobs:
           BUCKET="${{ secrets.R2_BUCKET }}"
 
           # Sync assets/ and data/ folders
-          aws s3 sync public/assets s3://$BUCKET/assets --endpoint-url $ENDPOINT --delete
-          aws s3 sync public/data s3://$BUCKET/data --endpoint-url $ENDPOINT --delete
+          aws s3 sync assets s3://$BUCKET/assets --endpoint-url $ENDPOINT --delete
+          aws s3 sync data s3://$BUCKET/data --endpoint-url $ENDPOINT --delete
 
           # Upload meta.json
           aws s3 cp meta.json s3://$BUCKET/meta.json --endpoint-url $ENDPOINT
