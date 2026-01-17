@@ -72,7 +72,11 @@ jobs:
           AFTER="${{ github.sha }}"
 
           # Find changed JSON files in data/ across the entire push
-          CHANGED_JSON=$(git diff --name-only "$BEFORE" "$AFTER" | grep '^data/.*\.json$' || true)
+          if [ -n "$BEFORE" ] && [ -n "$AFTER" ]; then
+            CHANGED_JSON=$(git diff --name-only "$BEFORE" "$AFTER" | grep '^data/.*\.json$' || true)
+          else
+            CHANGED_JSON=""
+          fi
 
           # Always include meta.json
           FILES=("$DOMAIN/meta.json")
