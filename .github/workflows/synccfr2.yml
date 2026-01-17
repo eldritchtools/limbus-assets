@@ -33,32 +33,52 @@ jobs:
             git push
           fi
 
-      - name: Configure AWS CLI for R2
+      - name: Install rclone
+        run: curl https://rclone.org/install.sh | sudo bash
+
+      - name: Configure rclone for Cloudflare R2
+        env:
+          RCLONE_CONFIG_R2_TYPE: s3
+          RCLONE_CONFIG_R2_PROVIDER: Cloudflare
+          RCLONE_CONFIG_R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          RCLONE_CONFIG_R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          RCLONE_CONFIG_R2_ENDPOINT: ${{ secrets.R2_JURISDICTION_SPECIFIC_ENDPOINT }}
+        run: rclone lsd r2:${{ secrets.R2_BUCKET }}
+
+      - name: Sync assets and data to R2 (checksum-based)
         run: |
-          aws configure set aws_access_key_id ${{ secrets.R2_ACCESS_KEY_ID }}
-          aws configure set aws_secret_access_key ${{ secrets.R2_SECRET_ACCESS_KEY }}
-          aws configure set default.region auto
+          rclone sync assets r2:${{ secrets.R2_BUCKET }}/assets --checksum --fast-list
+          rclone sync data r2:${{ secrets.R2_BUCKET }}/data --checksum --fast-list
+          rclone copy meta.json r2:${{ secrets.R2_BUCKET }}/meta.json
 
-      - name: Upload assets, data, and meta.json to R2
-        run: |
-          ENDPOINT="${{ secrets.R2_JURISDICTION_SPECIFIC_ENDPOINT }}"
-          BUCKET="${{ secrets.R2_BUCKET }}"
-
-          # Sync assets/ and data/ folders
-          aws s3 sync assets s3://$BUCKET/assets --endpoint-url $ENDPOINT --delete
-          aws s3 sync data s3://$BUCKET/data --endpoint-url $ENDPOINT --delete
-
-          # Upload meta.json
-          aws s3 cp meta.json s3://$BUCKET/meta.json --endpoint-url $ENDPOINT
-
-      - name: Purge Cloudflare cache
+      - name: Purge Cloudflare cache (only changed JSON files)
         run: |
           DOMAIN="${{ secrets.R2_CUSTOM_DOMAIN }}"
+          ZONE_ID="${{ secrets.CF_ZONE_ID }}"
+          TOKEN="${{ secrets.CF_PURGE_API_TOKEN }}"
 
-          curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CF_ZONE_ID }}/purge_cache" \
-            -H "Authorization: Bearer ${{ secrets.CF_PURGE_API_TOKEN }}" \
+          BEFORE="${{ github.event.before }}"
+          AFTER="${{ github.sha }}"
+
+          # Find changed JSON files in data/ across the entire push
+          CHANGED_JSON=$(git diff --name-only "$BEFORE" "$AFTER" | grep '^data/.*\.json$' || true)
+
+          # Always include meta.json
+          FILES=("$DOMAIN/meta.json")
+
+          # Convert paths to full URLs
+          for file in $CHANGED_JSON; do
+            FILES+=("$DOMAIN/$file")
+          done
+
+          printf 'Purging the following files:\n'
+          printf ' - %s\n' "${FILES[@]}"
+
+          # Build JSON payload safely
+          PAYLOAD=$(jq -n --argjson files "$(printf '%s\n' "${FILES[@]}" | jq -R . | jq -s .)" \
+            '{files: $files}')
+
+          curl -X POST "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/purge_cache" \
+            -H "Authorization: Bearer $TOKEN" \
             -H "Content-Type: application/json" \
-            --data '{
-              "prefixes": ["'"$DOMAIN"'/data/"],
-              "files": ["'"$DOMAIN"'/meta.json"]
-            }'
+            --data "$PAYLOAD"
