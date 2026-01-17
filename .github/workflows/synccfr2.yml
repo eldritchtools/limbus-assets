@@ -36,19 +36,32 @@ jobs:
       - name: Install rclone
         run: curl https://rclone.org/install.sh | sudo bash
 
+      # Configure temporary rclone remote for R2
       - name: Configure rclone for Cloudflare R2
-        env:
-          RCLONE_CONFIG_R2_TYPE: s3
-          RCLONE_CONFIG_R2_PROVIDER: Cloudflare
-          RCLONE_CONFIG_R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
-          RCLONE_CONFIG_R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
-          RCLONE_CONFIG_R2_ENDPOINT: ${{ secrets.R2_JURISDICTION_SPECIFIC_ENDPOINT }}
-        run: rclone lsd r2:${{ secrets.R2_BUCKET }}
+        run: |
+          mkdir -p ~/.config/rclone
+          cat <<EOF > ~/.config/rclone/rclone.conf
+[r2]
+type = s3
+provider = Cloudflare
+access_key_id = ${{ secrets.R2_ACCESS_KEY_ID }}
+secret_access_key = ${{ secrets.R2_SECRET_ACCESS_KEY }}
+endpoint = ${{ secrets.R2_JURISDICTION_SPECIFIC_ENDPOINT }}
+EOF
 
-      - name: Sync assets and data to R2 (checksum-based)
+      - name: List R2 buckets
+        run: rclone lsd r2:
+
+      - name: Sync assets to R2 (checksum-based)
         run: |
           rclone sync assets r2:${{ secrets.R2_BUCKET }}/assets --checksum --fast-list
+
+      - name: Sync data to R2 (checksum-based)
+        run: |
           rclone sync data r2:${{ secrets.R2_BUCKET }}/data --checksum --fast-list
+
+      - name: Sync meta to R2 (checksum-based)
+        run: |
           rclone copy meta.json r2:${{ secrets.R2_BUCKET }}/meta.json
 
       - name: Purge Cloudflare cache (only changed JSON files)
