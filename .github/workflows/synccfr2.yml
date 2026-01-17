@@ -52,7 +52,11 @@ jobs:
 
       - name: Sync assets to R2 (checksum-based)
         run: |
-          rclone sync assets r2:${{ secrets.R2_BUCKET }}/assets --checksum --fast-list
+          rclone sync assets r2:$BUCKET/assets \
+            --checksum \
+            --fast-list \
+            --cache-control "public, max-age=2592000, immutable" \
+            --s3-metadata-directive REPLACE
 
       - name: Sync data to R2 (checksum-based)
         run: |
