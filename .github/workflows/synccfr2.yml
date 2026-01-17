@@ -48,7 +48,7 @@ jobs:
           echo "endpoint = ${{ secrets.R2_JURISDICTION_SPECIFIC_ENDPOINT }}" >> ~/.config/rclone/rclone.conf
 
       - name: List R2 buckets
-        run: rclone lsd r2:
+        run: "rclone lsd r2:"
 
       - name: Sync assets to R2 (checksum-based)
         run: |
