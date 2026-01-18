@@ -53,7 +53,7 @@ jobs:
 
       - name: Delete assets
         run: |
-          rclone purge r2:assets
+          rclone delete r2:assets --fast-list
 
       - name: Sync assets to R2 (checksum-based)
         run: |
