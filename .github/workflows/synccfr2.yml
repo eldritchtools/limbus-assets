@@ -17,19 +17,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Create or update meta.json
+      - name: Create or update data/meta.json
         run: |
-          echo "{\"datetime\": \"$(date -u +"%Y-%m-%dT%H:%M:%SZ")\"}" > meta.json
+          echo "{\"datetime\": \"$(date -u +"%Y-%m-%dT%H:%M:%SZ")\"}" > data/meta.json
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add meta.json
+          git add data/meta.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update meta.json [skip ci]"
+            git commit -m "Update data/meta.json [skip ci]"
             git push
           fi
 
@@ -40,20 +40,12 @@ jobs:
         run: |
           mkdir -p ~/.config/rclone
           cat > ~/.config/rclone/rclone.conf <<'EOF'
-          [r2json]
+          [r2]
           type = s3
           provider = Cloudflare
           access_key_id = ${{ secrets.R2_ACCESS_KEY_ID }}
           secret_access_key = ${{ secrets.R2_SECRET_ACCESS_KEY }}
           endpoint = ${{ secrets.R2_JURISDICTION_SPECIFIC_ENDPOINT }}
-
-          [r2assets]
-          type = s3
-          provider = Cloudflare
-          access_key_id = ${{ secrets.R2_ACCESS_KEY_ID }}
-          secret_access_key = ${{ secrets.R2_SECRET_ACCESS_KEY }}
-          endpoint = ${{ secrets.R2_JURISDICTION_SPECIFIC_ENDPOINT }}
-          upload_headers = Cache-Control:public,max-age=604800,immutable
           EOF
 
       # - name: List R2 buckets
@@ -61,17 +53,15 @@ jobs:
 
       - name: Sync assets to R2 (checksum-based)
         run: |
-          mkdir -p empty_assets
-          rclone sync empty_assets r2assets:${{ secrets.R2_BUCKET }}/assets --delete-excluded --fast-list -P
-          rclone sync assets r2assets:${{ secrets.R2_BUCKET }}/assets --checksum --fast-list
+          rclone sync assets r2:${{ secrets.R2_BUCKET }}/assets/limbus --checksum --fast-list
 
       - name: Sync data to R2 (checksum-based)
         run: |
-          rclone sync data r2json:${{ secrets.R2_BUCKET }}/data --checksum --fast-list
+          rclone sync data r2:${{ secrets.R2_BUCKET }}/data/limbus --checksum --fast-list
 
-      - name: Sync meta to R2 (checksum-based)
-        run: |
-          rclone copyto meta.json r2json:${{ secrets.R2_BUCKET }}/meta.json
+      # - name: Sync data/meta to R2 (checksum-based)
+      #   run: |
+      #     rclone copyto meta.json r2:${{ secrets.R2_BUCKET }}/data/meta.json
 
       - name: Purge Cloudflare cache (only changed JSON files)
         run: |
@@ -90,7 +80,7 @@ jobs:
           fi
 
           # Always include meta.json
-          FILES=("$DOMAIN/meta.json")
+          # FILES=("$DOMAIN/meta.json")
 
           # Convert paths to full URLs
           for file in $CHANGED_JSON; do
