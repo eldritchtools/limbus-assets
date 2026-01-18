@@ -53,7 +53,8 @@ jobs:
 
       - name: Delete assets
         run: |
-          rclone delete r2:assets --fast-list
+          mkdir -p empty
+          rclone sync empty r2:assets --delete-excluded --fast-list -P
 
       - name: Sync assets to R2 (checksum-based)
         run: |
