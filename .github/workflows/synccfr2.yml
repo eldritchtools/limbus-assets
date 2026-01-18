@@ -51,9 +51,9 @@ jobs:
       # - name: List R2 buckets
       #   run: rclone ls "r2:${{ secrets.R2_BUCKET }}"
 
-      - name: Sync assets to R2 (checksum-based)
+      - name: Delete assets
         run: |
-          rclone delete assets r2:assets --checksum --fast-list
+          rclone purge r2:assets
 
       - name: Sync assets to R2 (checksum-based)
         run: |
