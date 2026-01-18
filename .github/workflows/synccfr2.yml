@@ -53,6 +53,10 @@ jobs:
 
       - name: Sync assets to R2 (checksum-based)
         run: |
+          rclone delete assets r2:assets --checksum --fast-list
+
+      - name: Sync assets to R2 (checksum-based)
+        run: |
           rclone sync assets r2:${{ secrets.R2_BUCKET }}/assets --checksum --fast-list
 
       - name: Sync data to R2 (checksum-based)
