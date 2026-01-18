@@ -17,19 +17,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Create or update data/meta.json
+      - name: Create or update meta.json
         run: |
-          echo "{\"datetime\": \"$(date -u +"%Y-%m-%dT%H:%M:%SZ")\"}" > data/meta.json
+          echo "{\"datetime\": \"$(date -u +"%Y-%m-%dT%H:%M:%SZ")\"}" > meta.json
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add data/meta.json
+          git add meta.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update data/meta.json [skip ci]"
+            git commit -m "Update meta.json [skip ci]"
             git push
           fi
 
@@ -53,15 +53,15 @@ jobs:
 
       - name: Sync assets to R2 (checksum-based)
         run: |
-          rclone sync assets r2:${{ secrets.R2_BUCKET }}/assets/limbus --checksum --fast-list
+          rclone sync assets r2:${{ secrets.R2_BUCKET }}/assets --checksum --fast-list
 
       - name: Sync data to R2 (checksum-based)
         run: |
-          rclone sync data r2:${{ secrets.R2_BUCKET }}/data/limbus --checksum --fast-list
+          rclone sync data r2:${{ secrets.R2_BUCKET }}/data --checksum --fast-list
 
-      # - name: Sync data/meta to R2 (checksum-based)
-      #   run: |
-      #     rclone copyto meta.json r2:${{ secrets.R2_BUCKET }}/data/meta.json
+      - name: Sync meta to R2 (checksum-based)
+        run: |
+          rclone copyto meta.json r2:${{ secrets.R2_BUCKET }}/meta.json
 
       - name: Purge Cloudflare cache (only changed JSON files)
         run: |
@@ -80,7 +80,7 @@ jobs:
           fi
 
           # Always include meta.json
-          # FILES=("$DOMAIN/meta.json")
+          FILES=("$DOMAIN/meta.json")
 
           # Convert paths to full URLs
           for file in $CHANGED_JSON; do
