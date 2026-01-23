@@ -65,38 +65,11 @@ jobs:
         run: |
           rclone copyto meta.json r2:${{ secrets.R2_BUCKET }}/meta.json
 
-      - name: Purge Cloudflare cache (only changed JSON files)
-        run: |
-          DOMAIN="${{ secrets.R2_CUSTOM_DOMAIN }}"
-          ZONE_ID="${{ secrets.CF_ZONE_ID }}"
-          TOKEN="${{ secrets.CF_PURGE_API_TOKEN }}"
-
-          BEFORE="${{ github.event.before }}"
-          AFTER="${{ github.sha }}"
-
-          # Find changed JSON files in data/ across the entire push
-          if [ -n "$BEFORE" ] && [ -n "$AFTER" ]; then
-            CHANGED_JSON=$(git diff --name-only "$BEFORE" "$AFTER" | grep '^data/.*\.json$' || true)
-          else
-            CHANGED_JSON=""
-          fi
-
-          # Always include meta.json
-          FILES=("$DOMAIN/meta.json")
-
-          # Convert paths to full URLs
-          for file in $CHANGED_JSON; do
-            FILES+=("$DOMAIN/$file")
-          done
-
-          printf 'Purging the following files:\n'
-          printf ' - %s\n' "${FILES[@]}"
-
-          # Build JSON payload safely
-          PAYLOAD=$(jq -n --argjson files "$(printf '%s\n' "${FILES[@]}" | jq -R . | jq -s .)" \
-            '{files: $files}')
-
-          curl -X POST "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/purge_cache" \
-            -H "Authorization: Bearer $TOKEN" \
-            -H "Content-Type: application/json" \
-            --data "$PAYLOAD"
+      - name: Purge Cloudflare cache
+        run: python3 .github/scripts/purge_json_cache.py
+        env:
+          R2_CUSTOM_DOMAIN: ${{ secrets.R2_CUSTOM_DOMAIN }}
+          CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+          CF_PURGE_API_TOKEN: ${{ secrets.CF_PURGE_API_TOKEN }}
+          GITHUB_BEFORE: ${{ github.event.before }}
+          GITHUB_AFTER: ${{ github.sha }}
