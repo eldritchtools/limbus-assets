@@ -13,6 +13,7 @@ GITHUB_AFTER = os.environ.get("GITHUB_AFTER", "")
 ORIGINS = [
     "https://limbus-teams.eldritchtools.com",
     "https://limbus-md.eldritchtools.com",
+    "http://localhost:3000"
 ]
 
 
