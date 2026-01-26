@@ -411,6 +411,14 @@
       "type": "corrosion"
     }
   ],
+  "notes": {
+    "main": [
+      "The first consumes less E.G.O resources, refunds part of the SP cost, and gives him {status:MlynarWaiting}, along with {status:AttackUp} and {status:AttackDmgUp}. {status:MlynarWaiting} gives him {status:Aggro} and {status:Protection} and increases every turn. By default it increases by 10 per turn, but the amount goes up faster when taking damage or when allies are staggered or killed.",
+      "On his second and further uses, he triggers the regular attack portion of the E.G.O, which is an unclashable attack that's buffed with more damage, atk weight, and coin reuses depending on his {status:MlynarWaiting} stacks. At 40 stacks, it becomes clashable and gains +20 Clash Power. Higher stacks will also refund some E.G.O resources and give him {status:DefenseUp}. Afterwards, it gets reset to 1 stack.",
+      "The corroded version immediately hits with 4 coins, but {status:MlynarWaiting} still gives him more power and damage, then gets set to 1 afterwards.",
+      "Both versions of the E.G.O deal increased damage if he hits at least 3 targets."
+    ]
+  },
   "passiveList": [
     {
       "desc": "Gain [MlynarWaiting] when meeting one of the following conditions:\n- Gain 1 for every 3 HP damage taken\n- Gain 1 for every 5 Shield HP damage taken\n- Gain 10 per Staggered ally when other allies become Staggered\n- Gain 20 per dead ally when other allies are killed\n\nTurn Start: if this unit is Staggered due to damage, and if this unit has 40+ [MlynarWaiting], fix all of this unit's Resistance values to 2 for the turn and recover from Stagger (once per Encounter; unless it's a forced Stagger)",
