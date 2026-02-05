@@ -285,7 +285,7 @@
   },
   "BlackCloud": {
     "buffType": "Neutral",
-    "desc": "Max Stack: 1\nConverts all of this unit's Base Attack Skill Coins used this turn to [Unbreakable Coins], prevents damage from Staggering this unit until Skill End, and inflict +1 more of Bleed effects\nOn Clash Lose: gain Final Power +3\nTurn End: this effect expires",
+    "desc": "Max Stack: 1\nConverts all of this unit's Base Attack Skill Coins used this turn to Unbreakable Coins, prevents damage from Staggering this unit until Skill End, and inflict +1 more of Bleed effects\nOn Clash Lose: gain Final Power +3\nTurn End: this effect expires",
     "name": "Dark Cloud"
   },
   "BlackCloudBlade": {
@@ -1105,6 +1105,12 @@
     "buffType": "Positive",
     "desc": "- Max Value: 2\n- This effect does not compound in potency; stacking it only extends its duration.\n- Reduced by 1 at Turn End\n- When a unit gains this effect, gain the following effects next turn:\n  · Fix this unit's Speed to its minimum value\n  · Gain 5 Defense Level Up\n  · Each of this unit's Slots gain +(10 / this unit's # of Slots) Aggro\n  · When chaining Skills, this unit can draw enemies' attack toward this unit regardless of Speed (Focused Encounters only)\n  · Upon Clash Win, trigger Tremor Burst\n  · Cannot be Staggered by damage",
     "name": "Defensive Stance"
+  },
+  "DelusionGregBigBird": {
+    "buffType": "Negative",
+    "desc": "- For every 1 (Sinking + Burn), take +0.5% damage from Base Attack Skills (max 10%)\n- Units with SP: Change their Panic Type to \"Dazzle\"\n- Units without SP: Defense Level -2\n- Turn End: Lose 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Units without SP\" conditional to certain enemies that have SP but can't change their Panic Types\n\n※ Dazzle Panic-type Effects\n- Low Morale: Turn End: Gain 1 Bind and 2 Offense Level Down next turn\n- Panic: Turn End: Gain 1 Bind and 4 Offense Level Down next turn",
+    "imageOverride": "DelusionHohenheimBigBird",
+    "name": "Dazzle"
   },
   "DelusionHohenheimBigBird": {
     "buffType": "Negative",
@@ -2215,6 +2221,12 @@
     "desc": "When tossing an attack Coin, take fixed damage by the effect’s Potency.\nThen, reduce its Count by 1.",
     "name": "Bleed"
   },
+  "LanternGregBigBird": {
+    "buffType": "Neutral",
+    "desc": "- Max Stack: 8\n- Turn End: Gain 1 Bind next turn for every 2 Stack (max 4)\n- Turn End: At max Stack, if there are enemies on the field, consume all Stack to activate the following effects next turn:\n• Gain +10 Aggro to the leftmost Slot\n• Inflict 3 Dazzle to the enemy(Core) with the most current HP",
+    "imageOverride": "LanternHohenheimBigBird",
+    "name": "Lamp"
+  },
   "LanternHohenheimBigBird": {
     "buffType": "Neutral",
     "desc": "- Max Stack: 20\n- Gain 1 Bind for every 2 Stack next turn (max 10)\n- Turn End: Gain +(Stack / # of this unit's Slot) Aggro to each of this unit's Skill Slot next turn",
@@ -2255,6 +2267,12 @@
     "buffType": "Positive",
     "desc": "- Max Stack: 3\n- Turn Start: Apply the following effects\n· Gain 5 Poise Potency and +1 Poise Count for every Stack\n· Gain 1 Slash DMG Up for every 15% missing HP on self (max 5)",
     "name": "Shin (心) - Dihui Star"
+  },
+  "LittleFingerID": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 20\n- Turn Start: Gain 2 Shield for every Stack\n- Deal +1% damage on Critical Hit for every Stack",
+    "imageOverride": "DicipleLittleFinger",
+    "name": "Moonlit Azure Blade"
   },
   "LivingSpecimenTheRings": {
     "buffType": "Negative",
@@ -3115,6 +3133,11 @@
     "desc": "- For this turn, this unit uses Minus Coin Base Attack Skills",
     "name": "Regressive Transformation - Reversed"
   },
+  "ObedienceGregBigBird": {
+    "buffType": "Positive",
+    "desc": "Before Attack, activate the following effects:\n- Plus Coin Skills heal 4 SP (if already at max SP, gain 2 Offense Level Up next turn)\n- Minus Coin Skills lose 8 SP (this effect cannot reduce the unit's SP below -40)\n- Lose this effect",
+    "name": "Guardians of the Forest"
+  },
   "Obedient": {
     "buffType": "Negative",
     "desc": "- Clash Power -2 in Clashes against Jia Mu\n- Expires when this unit's SP reaches 45, or when the Stack drops to 0\n- Turn End: lose 1 Stack",
@@ -3130,7 +3153,7 @@
     "categoryKeywordList": [
       "IGNORE_CHECED_CORRECTION_EXCLUSION"
     ],
-    "desc": "- Base Offense Level -20\n- Base Defense Level -20\n- Turn Start: Gain 7 Protection if The Ring Apprentice has not retreated from this Encounter",
+    "desc": "- Base Offense Level -20\n- Base Defense Level -20\n- The Sinners & Assist Units' Retreat-related abilities do not activate\n- Turn Start: Gain 7 Protection if The Ring Apprentice has not retreated from this Encounter",
     "name": "Viewing the Tableau"
   },
   "ObsessionAndGreed": {
@@ -3665,12 +3688,12 @@
   },
   "RienWeapon09Scythe": {
     "buffType": "Neutral",
-    "desc": "- Deals Slash damage\n- This Coin deals +20% damage\n- On Hit without Cracking, it hits a guaranteed Crit; if target's base Slash Resist. is lower than 1, treat it as \"Normal\" (1.0)",
+    "desc": "- Deals Slash damage\n- This Coin deals +20% damage\n- On Hit without Cracking, it hits a guaranteed Crit",
     "name": "When lacerating through space itself with a scythe, like a certain someone..."
   },
   "RienWeapon09Scythe2phase": {
     "buffType": "Neutral",
-    "desc": "- Deals Slash damage\n- This Coin deals +30% damage\n- On Hit without Cracking, it hits a guaranteed Crit; if target's base Slash Resist. is lower than 1.5, treat it as \"Weak\" (1.5)",
+    "desc": "- Deals Slash damage\n- This Coin deals +30% damage\n- On Hit without Cracking, it hits a guaranteed Crit",
     "name": "When lacerating through space itself with a scythe, like a certain someone..."
   },
   "RighteousFeeling": {

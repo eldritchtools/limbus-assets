@@ -1,0 +1,501 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1101502"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1101502",
+        "1101501"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "main": [
+      "Any {status:Breath} above 25 is automatically converted to {status:LittleFingerID} giving him bonus shield and crit damage. At 10+ his S2 gains an additional coin reuse. It also buffs his S3 with more power and atk weight and {status:SuperCoin}s at 20.",
+      "Very reliant on crits to get his bonuses off, but has good {status:Breath} generation. May struggle with count if you don't trigger his 2 {keyword:Pride} RES passive or defend, but is easily self-sustaining with those. Defending once at the start may be useful to get him rolling."
+    ],
+    "other": [
+      "S2 can go up to 4 hits consistently once you build {status:Breath} and SP.",
+      "Primarily a {status:Breath} id. His {status:Laceration} is minimal."
+    ]
+  },
+  "passiveData": {
+    "1101501": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 2
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "Combat Start: Gain ((Pride Reson. / 2) + 1) [Breath] (max 4, rounded down)\n\nCombat End: At 20+ [Breath], gain +1 [Breath] Count",
+      "name": "The Orthodox Blade [整劍]"
+    },
+    "1101502": {
+      "desc": "Turn End: Any excess [Breath] Potency gained past 25 will be converted to [LittleFingerID] (max 15)\n\nCombat Start: If this unit did not equip Attack Skills (including E.G.O Skills) this turn, heal 5 SP and gain 1 [SlashResultUp] next turn",
+      "name": "Singular Focus of the Mind"
+    },
+    "1101521": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 2
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "The ally with the fastest Speed heals 5 SP and gains 5 Shield when starting combat with a Defense Skill equipped",
+      "name": "Tranquility [靜念]"
+    }
+  },
+  "skills": {
+    "1101501": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "levelCorrection": 1,
+          "name": "Chainstrike [連擊]",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count",
+                "[OnSucceedAttack] Gain 1 [Agility] next turn (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +3 [Breath] Count\n[WhenUse] At 6+ [Breath], Coin Power +1",
+          "name": "Chainstrike [連擊]",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count",
+                "[OnSucceedAttack] Gain 1 [Agility] next turn (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +3 [Breath] Count\n[WhenUse] At 6+ [Breath], Coin Power +1",
+          "name": "Chainstrike [連擊]",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                "[OnSucceedAttack] Gain 1 [Agility] next turn (once per turn)",
+                "[CriticalOnSucceedAttackHead] Gain 1 [Agility] next turn (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain +3 [Breath] Count\n[WhenUse] Coin Power +1 for every 6 [Breath] on self (max 2)",
+          "name": "Chainstrike [連擊]",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1101502": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 3,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath]",
+                "[OnSucceedAttack] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.1
+                }
+              ],
+              "descs": [
+                "Deal +10% damage on Critical Hit",
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WideAreaRampage]",
+          "levelCorrection": 3,
+          "name": "Nameless Slash [無名斬]",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath]",
+                "[OnSucceedAttack] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.1
+                },
+                {
+                  "extra": {
+                    "cond": "heads-crit"
+                  },
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "Deal +10% damage on Critical Hit",
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[CriticalOnSucceedAttackHead] Reuse this Coin (once per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WideAreaRampage]\n[WhenUse] At 6+ [Breath], Base Power +1",
+          "name": "Nameless Slash [無名斬]",
+          "uptie": 2
+        },
+        {
+          "baseValue": 6,
+          "desc": "[WideAreaRampage]\n[WhenUse] At 6+ [Breath], Base Power +1",
+          "name": "Nameless Slash [無名斬]",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 2
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath]",
+                "[OnSucceedAttack] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.1
+                },
+                {
+                  "extra": {
+                    "cond": "heads-crit"
+                  },
+                  "type": "reuse",
+                  "value": 1
+                },
+                {
+                  "extra": {
+                    "cond": "reroll-heads"
+                  },
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "Deal +10% damage on Critical Hit",
+                "[OnSucceedAttack] Gain +1 [Breath] Count",
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[CriticalOnSucceedAttackHead] Reuse this Coin (once per Skill)",
+                "[ReUseOnSucceedAttackHead] At 10+ [LittleFingerID], Reuse this Coin (once per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WideAreaRampage]\n[WhenUse] Base Power +1 for every 6 [Breath] on self (max 2)",
+          "name": "Nameless Slash [無名斬]",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1101503": {
+      "bonusNotes": "Assumes a single target.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "bonuses": [
+            {
+              "type": "damage",
+              "value": 0.6
+            },
+            {
+              "type": "coin",
+              "value": 3
+            },
+            {
+              "type": "base",
+              "value": 3
+            },
+            {
+              "type": "atkweight",
+              "value": 2
+            }
+          ],
+          "coinValue": 12,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.5
+                },
+                {
+                  "extra": {
+                    "cond": "heads",
+                    "op": "mul",
+                    "type": "slash"
+                  },
+                  "type": "damage",
+                  "value": 0.25
+                }
+              ],
+              "descs": [
+                "Deal +50% damage on Critical Hit",
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[CriticalOnSucceedAttackHead] Deal (25% of this Coin's final damage) Slash damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +30% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Part)\n[WhenUse] At 20 [LittleFingerID], convert all Coins of this Skill into [SuperCoin]s\n[WhenUse] Coin Power +1 for every 4 [Breath] on self (max 3)\n[WhenUse] Base Power +1 for every 4 [LittleFingerID] on self (max 3)\n[WhenUse] Gain 5 [Breath]\n\n[BeforeAttack] Atk Weight +1 for every 10 [LittleFingerID] on self (max 2)\n[EndSkill] Consume 7 [LittleFingerID] for every Atk Weight gained due to this Skill's effect",
+          "levelCorrection": 5,
+          "name": "Fallstar Slayer [落星一殺]",
+          "uptie": 3
+        },
+        {
+          "baseValue": 8,
+          "bonuses": [
+            {
+              "type": "damage",
+              "value": 1.0
+            },
+            {
+              "type": "coin",
+              "value": 5
+            },
+            {
+              "type": "base",
+              "value": 5
+            },
+            {
+              "type": "atkweight",
+              "value": 2
+            }
+          ],
+          "coinValue": 14,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.7
+                },
+                {
+                  "extra": {
+                    "cond": "heads",
+                    "op": "mul",
+                    "type": "slash"
+                  },
+                  "type": "damage",
+                  "value": 0.25
+                }
+              ],
+              "descs": [
+                "Deal +70% damage on Critical Hit",
+                "[OnSucceedAttack] Inflict 5 [Laceration]",
+                "[CriticalOnSucceedAttackHead] Deal (25% of this Coin's final damage) Slash damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Deal +50% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Part)\n[WhenUse] At 20 [LittleFingerID], convert all Coins of this Skill into [SuperCoin]s\n[WhenUse] Coin Power +1 for every 4 [Breath] on self (max 5)\n[WhenUse] Base Power +1 for every 4 [LittleFingerID] on self (max 5)\n[WhenUse] Gain 7 [Breath]\n\n[BeforeAttack] Atk Weight +1 for every 10 [LittleFingerID] on self (max 2)\n[EndSkill] Consume 5 [LittleFingerID] for every Atk Weight gained due to this Skill's effect",
+          "name": "Fallstar Slayer [落星一殺]",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1101504": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[CanDuelGuard]\nTurn Start: At 25+ [Breath], change this Skill to 'Swerve'\n\n[StartBattle] Gain 6 [Breath] (once per turn)\n[StartBattle] Gain +1 [Breath] Count (once per turn)",
+          "levelCorrection": 2,
+          "name": "Defend [守]",
+          "uptie": 1
+        },
+        {
+          "affinity": "pride",
+          "baseValue": 3,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CanDuelGuard]\nTurn Start: At 25+ [Breath], change this Skill to 'Swerve'\n\n[StartBattle] Gain 8 [Breath] (once per turn)\n[StartBattle] Gain +2 [Breath] Count (once per turn)",
+          "name": "Defend [守]",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1101505": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[StartBattle] Gain Shield equal to [LittleFingerID] Stack (once per turn)\n[StartBattle] Gain +4 [Breath] Count (once per turn)",
+          "levelCorrection": 3,
+          "name": "Swerve [回]",
+          "uptie": 1
+        },
+        {
+          "affinity": "pride",
+          "desc": "[StartBattle] Gain Shield equal to [LittleFingerID] Stack (once per turn)\n[StartBattle] Gain +4 [Breath] Count (once per turn)\n[OnSucceedEvade] Gain 1 [CriticalDamageUp] next turn (max 2 times per turn)",
+          "name": "Swerve [回]",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1101521"
+      ],
+      "uptie": 3
+    }
+  ]
+}
