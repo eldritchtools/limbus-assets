@@ -25,21 +25,20 @@
     }
   ],
   "notes": {
-    "main": [
-      "Attack skills apply {status:GazeRyoshu}. Her passive also inflicts additional {status:GazeRyoshu} on hit and when hit. At 7 stacks, it converts into {status:ContemptRyoshu} next turn, then it flips between the two statuses every turn until either one is consumed. Both statuses are transferred to other enemies if the unit dies while having them unless they're consumed by her S3-2.",
-      "If enemies collectively have 7+ total {status:GazeRyoshu} or at least 1 enemy has {status:ContemptRyoshu}, her S3 triggers S3-2 instead. S3-2 has 3 atk weight and prioritizes enemies with either status as sub-targets (sub-targets receive 50% damage and the main target receives 200% damage if it's the only target). Her S3-2 will consume all {status:GazeRyoshu} and {status:ContemptRyoshu} on the targets hit, significantly increasing damage dealt, especially to enemies with {status:ContemptRyoshu}.",
-      "Gains {status:GazePersonality} when using her S3-2 to consume {status:GazeRyoshu} or {status:ContemptRyoshu}. She gains 1 stack for every 2 {status:GazeRyoshu} and 3 stacks for every {status:ContemptRyoshu} consumed. If she gains 7 {status:GazePersonality}, it converts into {status:ContemptPersonality} on the following turn, but expires otherwise. To get the 7 stacks you need to consume a total of 14 {status:GazeRyoshu} between the 3 targets, with each {status:ContemptRyoshu} counting as 6.",
-      "While she has {status:ContemptPersonality} (and isn't staggered or otherwise disabled), if {identity:10113} uses his S3, he gets a free cast of {sinner:4}'s S4, which is a similar skill to his S3, but targeting {sinner:4} instead.",
-      "As long as she isn't staggered or otherwise disabled, she uses a free unopposed S1 on the main target of {identity:10113} whenever he uses his S3 regardless of whether she has {status:ContemptPersonality}. This version deals 50% damage and can't kill the target."
-    ],
     "other": [
+      "As long as she isn't staggered or otherwise disabled, she uses a free unopposed S1 on the main target of {identity:10113} whenever he uses his S3 regardless of whether she has {status:ContemptPersonality}. This version deals 50% damage and can't kill the target.",
+      "Both versions of S3 trigger {status:Switch_Vibration} into {status:VibrationBleeding} causing any {status:VibrationExplosion} to deal bonus {keyword:Lust} damage based on the average of their {status:Vibration} and {status:Laceration} Potencies.",
       "{status:GazeRyoshu} increases damage dealt to and received from {sinner:4} by 10% per stack (70% at max stacks).",
       "{status:ContemptRyoshu} reduces damage dealt to and received from {sinner:4} by 50%.",
       "{status:GazePersonality} increases any damage she deals by 7% per stack (49% at max stacks) and increases her {status:GazeRyoshu} on hit by +1.",
-      "{status:ContemptPersonality} gives her 7 {status:Protection} and {status:AttackDmgDown} and 20 {status:Aggro} for a turn, making her very weak but tanky during that turn. She also reflects a bit of damage taken as {keyword:Sloth} damage.",
-      "Both versions of S3 trigger {status:Switch_Vibration} into {status:VibrationBleeding} causing any {status:VibrationExplosion} to deal bonus {keyword:Lust} damage based on the average of their {status:Vibration} and {status:Laceration} Potencies.",
-      "Her defense skill gets a significant buff while she has {status:ContemptPersonality} if you want to use it to help her tank the damage for that turn. She can also gain {status:ContemptPersonality} by using it (if she didn't already have it) when the enemies have the 7 cumulative {status:GazeRyoshu} or at least 1 {status:ContemptRyoshu}.",
-      "She also gets {status:ContemptPersonality} the first time she gets staggered."
+      "{status:ContemptPersonality} gives her 7 {status:Protection} and {status:AttackDmgDown} and 20 {status:Aggro} for a turn, making her very weak but tanky during that turn. She also reflects a bit of damage taken as {keyword:Sloth} damage."
+    ],
+    "usage": [
+      "Using her skills will passively inflict {status:GazeRyoshu} on enemies, which increases damage both to and from {sinner:4}. At 7 stacks, it gets converted to {status:ContemptRyoshu}, which reduces damage instead. Then it flips between the two statuses every turn. Both statuses are automatically transferred to other enemies on death unless consumed by {sinner:4}.",
+      "Her S3 gets upgraded once enemies have a total of 7+ {status:GazeRyoshu} or at least one {status:ContemptRyoshu}. It gets 3 Atk Weight and consumes the statuses to deal much higher damage. Sub-targets will receive 50% damage and the main target will receive 200% damage if it's the only target.",
+      "She gains {status:GazePersonality} when her S3-2 consumes the debuffs: 1 stack for every 2 {status:GazeRyoshu} and 3 stacks for every {status:ContemptRyoshu}. If you want to trigger her combo with {identity:10113}, you'll need her to gain 7 stacks. She's limited to only generating 6 stacks per turn this way, so you'll need to use {ego:20407} to cover the missing stacks.",
+      "{status:GazePersonality} increases her damage for a turn. If she has 7, it converts to {status:ContemptPersonality} the following turn. This drastically reduces her damage dealt and taken for that turn, but if {identity:10113} uses his S3, he gets a free cast of {sinner:4}'s S4, which is a similar skill to his S3, but targeting {sinner:4} instead.",
+      "She can also force herself to gain {status:ContemptPersonality} by using her defense skill if the enemies have enough of the statuses. She also gets it the first time she's staggered."
     ]
   },
   "passiveData": {

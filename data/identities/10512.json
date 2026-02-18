@@ -22,18 +22,17 @@
     }
   ],
   "notes": {
-    "main": [
-      "Starts the battle with 12 {status:BulletPropellantAlly}. S1 consumes 1 ammo, S2 consumes 2, S3 consumes 3. Skills or coins are not cancelled when running out of ammo, but they lose the buffs from the ammo and stop inflicting {status:Combustion}. When out of {status:BulletPropellantAlly}, he reloads 8 {status:BulletPropellantSpecialAlly} and converts all his coins to {status:SuperCoin}s.",
-      "His reload can be forced sooner by defending or by getting staggered, but this exhausts all of his regular ammo. If he's forced to reload due to stagger, he automatically recovers from the stagger.",
-      "Using his S3 while having {status:BulletPropellantSpecialAlly} uses his S3-2 instead.",
-      "Upon loading {status:BulletPropellantSpecialAlly}, he gains {status:IrritationAlly}.",
-      "When using his last {status:BulletPropellantSpecialAlly}, the skill that uses the last stack gains +2 atk weight and he gains {status:BeastEyesAlly} on the next turn. The coins on his skills that don't spend ammo also lose their {status:SuperCoin} status."
-    ],
     "other": [
-      "Coins that consume {status:BulletPropellantAlly} get +1 Power and +10% damage. When he has {status:BulletPropellantSpecialAlly}, it gives +2 Power, +30% damage, and +2 {status:Combustion} Potency and Count application instead.",
-      "{status:IrritationAlly} gives him more speed, damage based on speed difference, and bonus {status:Vibration} application. It's upgraded to {status:HugeIrritationAlly} which is just a stronger variant when he consumes 8 or more ammo in total (of either type).",
-      "{status:BeastEyesAlly} reduces his Clash Power by 1 for every 2 ammo he spent during the fight for a total of -10 Clash Power if he managed to spend all 12 {status:BulletPropellantAlly} and 8 {status:BulletPropellantSpecialAlly}. In return he gains buffs depending on how much total ammo he spent.\nAt 8+ ammo spent, he gets {status:Protection} every turn for every 10% HP missing (max 5 at half life).\nAt 14+ ammo spent, his {status:SuperCoin}s deal more damage based on missing HP% when he loses clashes.\nAt 20 ammo spent, he deals even more damage based on the difference between his missing HP% and his target's missing HP%.",
+      "His S1 consumes 1 ammo, S2 consumes 2, S3 consumes 3. Skills or coins are not cancelled when running out of ammo, but they lose the buffs from the ammo and stop inflicting {status:Combustion}. Coins that consume {status:BulletPropellantAlly} get +1 Power and +10% damage. When he has {status:BulletPropellantSpecialAlly}, it gives +2 Power, +30% damage, and +2 {status:Combustion} Potency and Count application instead.",
+      "He gains {status:IrritationAlly} when loading {status:BulletPropellantSpecialAlly} giving him more speed, damage based on speed difference, and bonus {status:Vibration} application. It's upgraded to {status:HugeIrritationAlly} which is just a stronger variant when he consumes 8 or more ammo in total (of either type).",
+      "He gains {status:BeastEyesAlly} when running out of {status:BulletPropellantSpecialAlly} reducing his Clash Power by 1 for every 2 ammo he spent during the fight for a total of -10 Clash Power if he managed to spend all 12 {status:BulletPropellantAlly} and 8 {status:BulletPropellantSpecialAlly}. In return he gains buffs depending on how much total ammo he spent.\nAt 8+ ammo spent, he gets {status:Protection} every turn for every 10% HP missing (max 5 at half life).\nAt 14+ ammo spent, his {status:SuperCoin}s deal more damage based on missing HP% when he loses clashes.\nAt 20 ammo spent, he deals even more damage based on the difference between his missing HP% and his target's missing HP%.",
       "Both S3s trigger a {status:Switch_Vibration} into {status:VibrationIgnition} inflicting bonus {keyword:Wrath} damage based on the average of {status:Combustion} and {status:Vibration} Potencies on {status:VibrationExplosion}. Both also trigger {status:VibrationExplosion} 3 times when consuming 3 ammo."
+    ],
+    "usage": [
+      "Starts out with 12 {status:BulletPropellantAlly} in his default mode. When he runs out, he reloads  8 {status:BulletPropellantSpecialAlly} and goes into a stronger phase with {status:SuperCoin}s, more damage, and more {status:Combustion} application. After running out, he goes into a defensive phase where his attacks are much weaker, but he gains {status:Protection} and bonus damage based on his missing HP.",
+      "His reload can be forced sooner by defending or by getting staggered, but this exhausts all of his regular ammo. If he's forced to reload due to stagger, he automatically recovers from the stagger.",
+      "Using his S3 while having {status:BulletPropellantSpecialAlly} upgrades it to his S3-2 instead.",
+      "When using his last {status:BulletPropellantSpecialAlly}, the skill that uses the last stack gains +2 atk weight. Try lining this up with his S3 if you're fighting multiple targets."
     ]
   },
   "passiveData": {

@@ -28,17 +28,15 @@
     }
   ],
   "notes": {
-    "main": [
-      "Checks her SP at turn start. At 0+ SP, gains {status:BlessingAlly} triggering her positive SP mode for the turn. At less than 0 SP, gains {status:DespairAlly} triggering her negative SP mode for the turn. All skills in both modes do roughly the same thing, but with slightly different numbers. Generally speaking, her positive SP mode is more defensive giving her damage mitigation and having slightly more consistent clashing (slightly higher maximum coin values and 45 SP cap), while her negative SP mode is more offensive giving her bonus damage at the cost of less consistent clashing (slightly lower maximum coin values and -40 SP cap) and the inability to use E.G.Os without corroding.",
-      "It is best to keep her as far from 0 SP as possible at all times because both modes gain buffs that are stronger the further her SP is from 0.",
-      "At positive SP she gains {status:ProtectiveSword} increasing her Clash Power, {status:BlackTearsAlly} generation, and {status:Sinking} application on her S3. She also applies {status:Sinking} Potency on clashes and whenever she's hit. If her passive is active, she gains more damage mitigation the higher her SP is and at 40+ gains an additional {status:ParryingResultUp}.",
-      "At negative SP she gains {status:PenetratingSword} increasing her {status:BlackTearsAlly} generation and applying additional {status:Sinking} on her hits. She also applies {status:Sinking} Count on clashes and on hitting the enemy. If her passive is active, she gains more damage the lower her SP is and at -40 gains an additional {status:ResultEnhancement}.",
-      "Using her defense skill in either mode gives her a stack of {status:SwordCutwithTear}, which drains her SP every turn, eventually forcing her into her negative SP mode. At 3 stacks, her next skill's final coin will consume all 3 stacks to inflict additional {status:Sinking} and damage, then bring her back up to 30SP. If this was with her negative SP mode S3, it regains a Coin Reuse."
-    ],
     "other": [
-      "Has a Unique Charge {status:BlackTearsAlly}. She typically generates more than enough for her skills without too much monitoring, just know that it's mainly consumed by the S3.",
-      "{status:SwordCutwithTear} gives her 5 {status:BlackTearsAlly} per turn (10 at 3 stacks), bonus damage per stack, and an additional {status:ParryingResultUp} at positive SP and {status:PenetrateResultUp} at negative SP",
+      "Has a Unique Charge {status:BlackTearsAlly}. She typically generates more than enough for her skills without too much monitoring so you can mostly ignore it, just know that it's mainly consumed by the S3.",
+      "{status:SwordCutwithTear} gives her 5 {status:BlackTearsAlly} per turn (10 at 3 stacks), bonus damage per stack, and an additional {status:ParryingResultUp} at positive SP and {status:PenetrateResultUp} at negative SP.",
       "Her SP cannot go below than -40 using her own effects (SP loss from skills or {status:SwordCutwithTear}) or from allies, but it can still drop below -40 from SP reducing effects from enemies or from E.G.O usage. She has a one time protection from hitting -45 SP every encounter, but it only works against SP damage effects from enemies."
+    ],
+    "usage": [
+      "She'll use positive coin skills at 0+ SP and negative coin skills at negative SP. The check for this happens at turn start, so if her SP crosses the threshold during the turn, her skills won't change to the other type. The skills in both modes are roughly the same but with slightly different numbers. Her positive SP mode gets more defensive buffs and slightly more consistent clashing, while her negative SP mode gets more offensive buffs but has slightly less consistent clashing. ",
+      "Both modes increase in power the further she is from 0 SP. Her positive SP mode gives more Clash Power, {status:Protection}, {status:DefenseUp} and {status:Sinking} Potency application, while her negative SP mode gives more Power, {status:AttackDmgUp}, {status:AttackUp}, and {status:Sinking} Count application.",
+      "Using her defense skill in either mode gives her a stack of {status:SwordCutwithTear}, which drains her SP every turn, eventually forcing her into her negative SP mode. At 3 stacks, her next skill's final coin will consume all 3 stacks to inflict additional {status:Sinking} and damage, then bring her back up to 30SP. If this was with her negative SP mode S3, it regains a Coin Reuse."
     ]
   },
   "passiveData": {

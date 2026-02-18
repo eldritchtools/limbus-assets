@@ -17,13 +17,14 @@
     }
   ],
   "notes": {
-    "main": [
-      "Every turn, the following happens as long as Faust isn't disabled (staggered, paniced, corroded, etc):\n{status:IndexPrescriptTargetToEnemy} is assigned to a random enemy, increasing damage taken from Index identities.\n{status:IndexPrescriptTargetMarkToEnemy} is assigned to a random skill (1 per slot, 2 skills max, prioritizes S3 at 6+ {status:BlessingOfIndexPrescriptAlly}).\nGain a {status:IndexPrescript_Base}",
-      "The {status:IndexPrescript_Base} gained depends on her {status:BlessingOfIndexPrescriptAlly}.\n0-2: {status:IndexPrescriptFaust_0} (use a marked skill)\n3-5: {status:IndexPrescriptFaust_1} (hit a target with a marked skill)\n6-8: {status:IndexPrescriptFaust_2} (hit a target with an ego awakening or a marked S3)\n9+: {status:IndexPrescriptFaust_3} (no condition)\nFollowing the Prescript gives her SP and {status:BlessingOfIndexPrescriptAlly}, more if her target had {status:IndexPrescriptTargetToEnemy}. Failure to follow the {status:IndexPrescript_Base} will give her {status:KarmaOfIndexAlly} instead."
-    ],
     "other": [
-      "Her skills are pretty straightforward, just follow the {status:IndexPrescript_Base} and save her S3 for when she reaches 6-8 {status:BlessingOfIndexPrescriptAlly}.",
+      "The following happens every turn:\n{status:IndexPrescriptTargetToEnemy} is assigned to a random enemy, increasing damage taken from Index identities.\n{status:IndexPrescriptTargetMarkToEnemy} is assigned to a random skill (1 per slot, 2 skills max, prioritizes S3 at 6+ {status:BlessingOfIndexPrescriptAlly}).\nGain a {status:IndexPrescript_Base} depending on her {status:BlessingOfIndexPrescriptAlly}. The prescript gets stricter the higher her stacks, but effectively always boils down to using her marked skill. Following the Prescript gives her SP and {status:BlessingOfIndexPrescriptAlly}, more if her target is marked.",
       "Her passive increases her damage and status application when she follows the {status:IndexPrescriptTargetToEnemy} and {status:IndexPrescriptTargetMarkToEnemy} mechanics."
+    ],
+    "usage": [
+      "Follow the {status:IndexPrescript_Base}: Use her marked skill (ideally) against the marked target. All her conditionals and effects naturally follow if you keep doing this.",
+      "Failing to follow the prescript gives her  {status:KarmaOfIndexAlly}, a stacking debuff that makes her more fragile and lasts for the rest of the encounter. She stops gaining more of the debuff when she hits 9 {status:BlessingOfIndexPrescriptAlly}.",
+      "If possible, save her S3 for when she has 6+ {status:BlessingOfIndexPrescriptAlly}."
     ]
   },
   "passiveData": {

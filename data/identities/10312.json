@@ -22,17 +22,19 @@
     }
   ],
   "notes": {
-    "main": [
-      "Checks SP at turn start. At 0+ SP, gains {status:MagicalGirlAppear} triggering her positive SP mode. At negative SP, gains {status:NoVillain} triggering her negative SP mode.",
-      "In her positive SP mode, she uses plus coins and inflicts {status:Burst}. Her S3 gives her {status:ArcanaQueenOfHate} which increases all her damage, and at 3 stacks, will force her SP to be -25 or lower every turn.",
-      "In her negative SP mode, she uses minus coins and inflicts {status:Sinking} instead. All her skills will cause her to lose SP, but she can't go below -40 from her skills. Other sources of SP loss like E.G.O usage can still make her go below -45. Her S3 in this mode consumes all her {status:ArcanaQueenOfHate} and heals her back to positive SP assuming she didn't hit -45 SP before the turn ended.",
-      "Using {ego:20309} gives her an additional S3 use in her skill rotation, which is important to get her to cycle between her modes faster. It also interacts with her mechanics giving her {status:ArcanaQueenOfHate} on the Awakening and {status:HystericGauge} on the Corrosion, as well as inflicting {status:VillainMark} on the main target."
-    ],
     "other": [
-      "Has a {status:HystericGauge} that goes up by 1 per turn in negative SP mode and goes down by 1 per turn in positive SP mode. Each stack of {status:HystericGauge} buffs her negative SP skills with damage or power. Provides +1 atk weight to her negative S2 and S3 at 3 stacks. All stacks of {status:HystericGauge} are consumed when using the negative S3.",
+      "Her negative coin skills make her lose SP, but her passive prevents her from bringing herself below -40. She can still go lower and corrode from using E.G.Os or getting SP damage.",
+      "She has a {status:HystericGauge} buff that goes up by 1 per turn in negative SP mode and goes down by 1 per turn in positive SP mode. Each stack of {status:HystericGauge} buffs her negative SP skills with damage or power. It provides +1 atk weight to her negative S2 and S3 at 3 stacks. All stacks of {status:HystericGauge} are consumed when using the negative S3.",
       "Both versions of S2 inflicts {status:VillainMark} on the main target next turn, increasing her damage to it by 10%.",
+      "{ego:20309} interacts with her mechanics giving her {status:ArcanaQueenOfHate} on the Awakening and {status:HystericGauge} on the Corrosion, as well as inflicting {status:VillainMark} on the main target.",
       "Negative S3 deals bonus damage on the target if there is only one target.",
       "Has a unique Charge called {status:ThePowerOfLoveAndHate}. Gains 1 Potency for every 10 cumulative Count consumed. Potency passively increases the damage and/or Power on all of her skills. Both versions of her S1 and S2 both consume and produce Count, and both produce more than they consume, so you can expect the Count to gradually go up even if you don't pay attention. Her positive S3 produces some Count, but both versions of her S3 consume as much Count as it can in multiples of 5."
+    ],
+    "usage": [
+      "She'll use positive coin skills at 0+ SP and negative coin skills at negative SP. The check for this happens at turn start, so if her SP crosses the threshold during the turn, her skills won't change to the other type. She'll naturally go back and forth between the two modes throughout the fight.",
+      "Her positive coin skills inflict {status:Burst} and her S3 gives her {status:ArcanaQueenOfHate} which will force her SP to drop to -25 at 3 stacks.",
+      "Her negative coin skills inflict {status:Sinking} and her S3 consumes her {status:ArcanaQueenOfHate}  and brings back to positive SP.",
+      "Use {ego:20309} as early as possible to give her an additional S3 use in her skill rotation, which is important to get her to cycle between her modes faster."
     ]
   },
   "passiveData": {
