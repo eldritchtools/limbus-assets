@@ -298,6 +298,11 @@
     "desc": "- Inflict +2 more Sinking Potency and Count\n- Expires at Turn End; then, gain (number of Skills that lost a Clash this turn x 5) Karmic Consequence",
     "name": "Indulgence in Prescripts"
   },
+  "BlackNightmareYisang": {
+    "buffType": "Positive",
+    "desc": "- Min & Max Speed +5\n- Apply the following effects to 'Furioso-Replica':\n· On Hit, inflict +1 more Sinking Potency and gain +1 more Poise Potency\n· On Hit, inflict +3 Sinking Count (once per target)\n· Deal +30% damage\n- Expires at Turn End",
+    "name": "Indulgence in Prescripts"
+  },
   "BlackTearsAlly": {
     "buffType": "Positive",
     "categoryKeywordList": [
@@ -320,6 +325,11 @@
     "buffType": "Positive",
     "desc": "- Min & Max Speed +1\n- Offense Level +2, Defense Level +2\n- Gain 1 more Poise Potency from Base Skills\n- This unit's SP does not drop below -15 from SP loss effects on this unit's Base Attack Skills\n- Max Stack: 1",
     "name": "Faith Beyond Question"
+  },
+  "BlandishmentShinEnemyDelete": {
+    "buffType": "Positive",
+    "desc": "- Min & Max Speed +1\n- Offense Level +2, Defense Level +2\n- Gain +1 more Poise Potency and Poise Count from Skills\n- Deal +(missing HP percentage + 25)% damage (max 100%)",
+    "name": "Shin (心) - ???"
   },
   "Blandishment_Enemy": {
     "buffType": "Positive",
@@ -651,6 +661,16 @@
     "buffType": "Negative",
     "desc": "- Offense Level -5, Defense Level -5\n- For every Stack, take +5% damage from Skills that inflict Burn or Bleed (includes Potency, Count, and Unique variants)\n· If the Skill inflicts both Burn and Bleed, take +7.5% damage for every Stack instead\n- Max Stack: 1",
     "name": "Rien's Mask"
+  },
+  "BurningWoundYisang": {
+    "buffType": "Positive",
+    "desc": "- Offense Level +3, Defense Level -3\n- Take -25% damage from Unopposed Attacks\n- Turn Start: Gain 1 Burn and 1 Bleed\n- Deal +15% damage with Base Attack Skill's Unbreakable Coins",
+    "name": "Sizzling Wound"
+  },
+  "BurningWoundYisangMask": {
+    "buffType": "Positive",
+    "desc": "- Offense Level +2, Defense Level -2\n- Take -10% damage from Unopposed Attacks\n",
+    "name": "Wound-casing Mask"
   },
   "Burst": {
     "buffType": "Negative",
@@ -1402,6 +1422,11 @@
     "desc": "Max Value: 1\nBleed Potency and Count inflicted with this unit's Skill or Coin effects: +1\nGain 1 Slash Power Up and 3 Slash DMG Up for the duration of this Encounter",
     "name": "Battle Ready"
   },
+  "EnhanceRoseSign": {
+    "buffType": "Positive",
+    "desc": "- All allies gain ((current Floor - 4) x 10)% max HP (max 60%)\n- All allies gain Offense Level +(current Floor - 4) (max 5)",
+    "name": "Bridle"
+  },
   "EnhanceZilu": {
     "buffType": "Neutral",
     "desc": "- Max Stack: 20\n- At 10+ Stack: at Turn End, gain 1 Haste next turn\n- Used for certain Skills",
@@ -1505,7 +1530,7 @@
   },
   "FocusOnActing": {
     "buffType": "Positive",
-    "desc": "- Max Stack: 3\n- <La Manchaland> Identities only; includes Empowered Skills\n- Skill 1 and Skill 2 gain Final Power +1; deal +5% damage for every Stack (max 15%)\n- Skill 3 gains Final Power +2; deals +10% damage for every Stack (max 30%)\n- After attacking with Skill 3, or at Turn Start, if this unit does not have Hardblood Armor, lose 1 Stack",
+    "desc": "- Max Stack: 3\n- <La Manchaland> Identities only; includes Empowered Skills\n- Skill 1 and Skill 2 gain Final Power +1; deal +5% damage for every Stack (max 15%)\n- Skill 3 gains Final Power +2; deals +10% damage for every Stack (max 30%)\n- Lose 1 Stack when:\n  1) After attacking with Skill 3\n  2) If this unit does not have Hardblood Armor at Turn Start",
     "name": "Focused Performance"
   },
   "ForwardToTheBoundKing": {
@@ -1660,6 +1685,16 @@
     "desc": "- Convert all Skill Coins into Unbreakable Coins\n- Deal +100% damage\n- Plus Coin Skills gain Coin Power +1; Minus Coin Skills gain Final Power +1\n- For this turn, this unit cannot be Staggered from all sources of damage\n- At less than 10 HP, heal to 10 HP\n- For this turn, this unit's HP does not drop below 10\n- For this turn, every Coin Hit from Base Attack Skills and Counter Skills heals 10% of the damage dealt (max healing from each Skill: 100)\n- Expires at Turn End",
     "name": "Gebura's Blade"
   },
+  "GiftCannon": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 10\n- Deal +10% damage for every Stack",
+    "name": "Firepower"
+  },
+  "GiftGlass": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 10\n- Take +10% damage for every Stack",
+    "name": "Delicateness"
+  },
   "GiveMeCandy": {
     "buffType": "Negative",
     "desc": "Max Stack: 99\n- Are you hoarding candy all for yourself?",
@@ -1696,6 +1731,11 @@
     "buffType": "Negative",
     "desc": "- Max Stack: 4\n- Turn End: gain 10 Bind next turn\n- Turn End: lose 1 Stack",
     "name": "Grasp"
+  },
+  "GreatAesthetics": {
+    "buffType": "Positive",
+    "desc": "- Plus Coin Skills gain Coin Power +1\n- Minus Coin Skills gain Base Power +(4 / # of Coins)\n- Deal +30% damage with Skills",
+    "name": "Exquisite Aesthetics"
   },
   "Greedy": {
     "buffType": "Neutral",
@@ -2082,6 +2122,26 @@
     "desc": "Skill Power -2 against and take +20% damage from The Index enemies",
     "name": "The Prescript's Target - The Index"
   },
+  "IndexPrescriptYi_0": {
+    "buffType": "Neutral",
+    "desc": "Use a Skill marked with Mark of the Prescript or hit a target with a marked Skill.\n\n- Turn Start: Gain this effect when this unit has no Unlock\n- Maximum stackable Grace of the Prescript with this Prescript is limited to 3",
+    "name": "Prescript: [Device] I"
+  },
+  "IndexPrescriptYi_1": {
+    "buffType": "Neutral",
+    "desc": "Hit a target with a Skill marked with Mark of the Prescript.\n\n- Turn Start: Gain this effect if this unit has Unlock - I\n- Maximum stackable Grace of the Prescript with this Prescript is limited to 6",
+    "name": "Prescript: [Device] II"
+  },
+  "IndexPrescriptYi_2": {
+    "buffType": "Neutral",
+    "desc": "Gain Procuration [Hermes]. Repeat this Prescript until Procuration [Hermes] reaches 9 Stacks.\n\n- Turn Start: Gain this effect if this unit has Unlock - II\n- Maximum stackable Grace of the Prescript with this Prescript is limited to 9",
+    "name": "Prescript: [Device] III"
+  },
+  "IndexPrescriptYi_3": {
+    "buffType": "Neutral",
+    "desc": "Eliminate all enemies before the next Prescript arrives.\n\n- Turn Start: Gain this effect if this unit has Unlock - III",
+    "name": "Prescript: [Device] IV"
+  },
   "IndexPrescript_Base": {
     "buffType": "Neutral",
     "desc": "- Receive 'Prescript: [Paper Slip]' under specific conditions",
@@ -2132,6 +2192,11 @@
     "buffType": "Negative",
     "desc": "Take more damage from Pride skills based on the effect’s Count for one turn. (Max 10)",
     "name": "Pride Fragility"
+  },
+  "Inspire": {
+    "buffType": "Positive",
+    "desc": "Deal +10% damage against targets with Art Medium",
+    "name": "Spark of Inspiration"
   },
   "InterlockingTime": {
     "buffType": "Negative",
@@ -3143,6 +3208,11 @@
     "desc": "- Clash Power -2 in Clashes against Jia Mu\n- Expires when this unit's SP reaches 45, or when the Stack drops to 0\n- Turn End: lose 1 Stack",
     "name": "Hollow Obedience"
   },
+  "ObjectOfExploration": {
+    "buffType": "Neutral",
+    "desc": "When certain conditions are fulfilled, replace this effect with 'Art Medium'",
+    "name": "Curio"
+  },
   "ObservationMoses": {
     "buffType": "Positive",
     "desc": "- Cannot be targeted for Charmed\n- Deal +25% damage to Fairy",
@@ -3195,6 +3265,11 @@
     "buffType": "Neutral",
     "desc": "- Turn Start: At 40+ value, gain (value - 40)/10 Offense Level Up & Defense Level Up.\n- Turn Start: At less than 40 value, gain (40 - value)/10 Offense Level Down & Defense Level Down.",
     "name": "Shared Time"
+  },
+  "PaintingMaterial": {
+    "buffType": "Negative",
+    "desc": "Take +10% damage from Lust Skills if this unit has Bleed",
+    "name": "Art Medium"
   },
   "ParadeConcentration": {
     "buffType": "Negative",
@@ -3792,6 +3867,11 @@
     "desc": "- Max Value: 1\n- Clash Power +1\n- Deal +20% damage\n- Take +20% damage",
     "name": "Responsibility"
   },
+  "SatisfyingEsteemNeeds": {
+    "buffType": "Positive",
+    "desc": "- Deal +7.5% damage with Skills marked with Mark of the Prescript\n- Deal +7.5% damage against The Prescript's Targets",
+    "name": "Desire for Acknowledgement Sated"
+  },
   "Scared": {
     "buffType": "Negative",
     "desc": "Turn End: At -20 SP or lower, gain 1 Protection next turn.",
@@ -3912,6 +3992,11 @@
     ],
     "desc": "- This effect counts as a 'Shield Management' effect.\n- Turn End: Reduce Count by 1\n- This unit does not lose Shield at Turn End as long as it has the Blubberbubble effect (unless depleted by damage or effect)\n- If the Shield affected by Blubberbubble breaks due to taking damage, inflict 4 Sinking Potency/Count against the attacker. (How much of that '4' value is Potency or Count is randomly determined)\n- This unit can stack their Shield value by using this effect. However, as long as Blubberbubble is in effect, the Shield value cannot exceed 60% of this unit's Max HP.",
     "name": "Blubberbubble"
+  },
+  "Shin_IndexFingerYisang": {
+    "buffType": "Positive",
+    "desc": "- Min & Max Speed +1\n- Gain +1 more Poise Potency and Count from Base Skills\n- If this unit's SP is higher than the target's, deal +1% damage for every 3 SP difference (max 15%; units without SP are considered to be at 0 SP)",
+    "name": "Shin (心) - Fate"
   },
   "Shin_Rien": {
     "buffType": "Positive",
@@ -4049,6 +4134,11 @@
   "StackRienSpecialSkill": {
     "buffType": "Neutral",
     "desc": "- Gain 1 Stack when using an Attack Skill (once per Skill; does not gain Stack from the same Skill twice)\n- Turn Start: at 9 Stack, use a powerful Skill\n- Consumed when using a certain Skill",
+    "name": "Procuration [Hermes]"
+  },
+  "StackYisangSpecialSkill": {
+    "buffType": "Neutral",
+    "desc": "- Turn Start: At 9 Stack, a powerful Skill becomes available\n- Can be gained up to (Unlock stage + 2) Stack per turn\n- Max Stack: 9\n· At below Unlock - II, this effect's maximum Stack is limited to 8",
     "name": "Procuration [Hermes]"
   },
   "StartXichun": {
@@ -4714,6 +4804,51 @@
     "buffType": "Positive",
     "desc": "In Clashes against Gubo, Clash Power +2",
     "name": "Responsibility"
+  },
+  "YisangWeapon01Hatchet": {
+    "buffType": "Positive",
+    "desc": "- This Coin deals Blunt damage\n- On Hit without Cracking, gain 2 Poise",
+    "name": "When hacking through the ribs with a hatchet..."
+  },
+  "YisangWeapon02Stiletto": {
+    "buffType": "Positive",
+    "desc": "- This Coin deals Pierce damage\n- On Hit without Cracking, inflict 2 Sinking",
+    "name": "When penetrating the lungs with a stiletto..."
+  },
+  "YisangWeapon03Greatsword": {
+    "buffType": "Positive",
+    "desc": "- This Coin deals Slash damage\n- This Coin deals +5% damage\n- On Hit without Cracking, gain 1 Offense Level Up next turn (2 times per turn)",
+    "name": "When cleaving through the shoulder and the skull with a bastard sword..."
+  },
+  "YisangWeapon04Rapier": {
+    "buffType": "Positive",
+    "desc": "- This Coin deals Pierce damage\n- This Coin deals +5% damage\n- On Hit without Cracking, inflict 1 Defense Level Down next turn (2 times per turn)",
+    "name": "When punching 10 or more holes in the torso with a rapier..."
+  },
+  "YisangWeapon05Sledgehammer": {
+    "buffType": "Positive",
+    "desc": "- This Coin deals Blunt damage\n- This Coin deals +5% damage\n- On Hit without Cracking, raise target's Stagger Threshold by 3",
+    "name": "When caving in the back of the skull with a hammer..."
+  },
+  "YisangWeapon06Ultragreatsword": {
+    "buffType": "Positive",
+    "desc": "- This Coin deals Slash damage\n- This Coin deals +15% damage\n- On Hit without Cracking, inflict 1 Slash Fragility until next turn (2 times per turn)",
+    "name": "When rending the body with a great sword..."
+  },
+  "YisangWeapon07Lance": {
+    "buffType": "Positive",
+    "desc": "- This Coin deals Pierce damage\n- This Coin deals +15% damage\n- On Hit without Cracking, inflict 1 Pierce Fragility until next turn (2 times per turn)",
+    "name": "When boring a 20-inch hole with a lance..."
+  },
+  "YisangWeapon08Chain": {
+    "buffType": "Positive",
+    "desc": "- This Coin deals Blunt damage\n- This Coin deals +15% damage\n- On Hit without Cracking, inflict 1 Blunt Fragility until next turn (2 times per turn)",
+    "name": "When ripping the flesh to ten thousand strips with a whip..."
+  },
+  "YisangWeapon09Scythe": {
+    "buffType": "Positive",
+    "desc": "- This Coin deals Slash damage\n- This Coin deals +30% damage\n- On Hit without Cracking, it hits a guaranteed Crit",
+    "name": "When lacerating through space itself with a scythe, like a certain someone..."
   },
   "Zazen": {
     "buffType": "Positive",
