@@ -265,7 +265,7 @@
   },
   "BigWelcome": {
     "buffType": "Positive",
-    "desc": "After Attack: if the target is Staggered or defeated, gain +1 Pride E.G.O resource and +1 E.G.O resource for 1 other random Affinity (3 times per turn)",
+    "desc": "Attack End: If the target is Staggered or defeated, gain +1 Pride E.G.O resource and +1 E.G.O resource for 1 other random Affinity (3 times per turn)",
     "name": "Grand Welcome"
   },
   "Binding": {
@@ -369,7 +369,7 @@
   },
   "BloodArmorMeursault": {
     "buffType": "Positive",
-    "desc": "- Max Stack: 5\n- If this unit isn't at max HP: after its Skill attack, heal 10% of HP damage dealt (once per turn; max 40 healing)\n- After Attack: if this unit dealt HP damage, lose 1 Stack (once per turn)\n• If Lust Reson. was activated, halve the amount of HP healed, but do not lose any Hardblood Armor Stack",
+    "desc": "- Max Stack: 5\n- If this unit isn't at max HP: after its Skill attack, heal 10% of HP damage dealt (once per turn; max 40 healing)\n- Attack End: If this unit dealt HP damage, lose 1 Stack (once per turn)\n• If Lust Reson. was activated, halve the amount of HP healed, but do not lose any Hardblood Armor Stack",
     "name": "Hardblood Armor"
   },
   "BloodArmorPersonalityFirst": {
@@ -855,7 +855,7 @@
   },
   "CloudWall": {
     "buffType": "Positive",
-    "desc": "Max Stack: 1\nDefense Skill Final Power +1\nThis effect expires at Turn End or after attack of the following: 'Rules of the Backstreets'",
+    "desc": "Max Stack: 1\nDefense Skill Final Power +1\nThis effect expires at Turn End or Attack End of the following: 'Rules of the Backstreets'",
     "name": "Cumulus Wall"
   },
   "Coffin": {
@@ -894,7 +894,7 @@
   },
   "CommonExit": {
     "buffType": "Neutral",
-    "desc": "- Turn End: recover from Stagger and escape from the Encounter (unless it's a forced Stagger; does not count as death)",
+    "desc": "- Turn End: recover from Stagger and escape from the Encounter (excluding forced Staggers; does not count as death)",
     "name": "Escape Battlefield"
   },
   "Complacency": {
@@ -1219,7 +1219,7 @@
   },
   "DisengageCombat": {
     "buffType": "Neutral",
-    "desc": "- Turn End: recover from Stagger and escape from the Encounter (unless it's a forced Stagger; does not count as death)",
+    "desc": "- Turn End: recover from Stagger and escape from the Encounter (excluding forced Staggers; does not count as death)",
     "name": "Escape Battle"
   },
   "DistortedDongrangEarnestAchievement": {
@@ -1530,7 +1530,7 @@
   },
   "FocusOnActing": {
     "buffType": "Positive",
-    "desc": "- Max Stack: 3\n- <La Manchaland> Identities only; includes Empowered Skills\n- Skill 1 and Skill 2 gain Final Power +1; deal +5% damage for every Stack (max 15%)\n- Skill 3 gains Final Power +2; deals +10% damage for every Stack (max 30%)\n- Lose 1 Stack when:\n  1) After attacking with Skill 3\n  2) If this unit does not have Hardblood Armor at Turn Start",
+    "desc": "- Max Stack: 3\n- <La Manchaland> Identities only; includes Empowered Skills\n- Skill 1 and Skill 2 gain Final Power +1; deal +5% damage for every Stack (max 15%)\n- Skill 3 gains Final Power +2; deals +10% damage for every Stack (max 30%)\n- Lose 1 Stack when:\n  1) Skill 3 Attack End\n  2) If this unit does not have Hardblood Armor at Turn Start",
     "name": "Focused Performance"
   },
   "ForwardToTheBoundKing": {
@@ -1622,7 +1622,7 @@
     "categoryKeywordList": [
       "FREISHUTZ_OUTIS_EGO_BULLET"
     ],
-    "desc": "- Deal +200% damage\n- Deal +2.5% damage for every 1% missing HP on target (max 200%)\n- Before Attack: for this attack, if the Pierce Damage Res. on target or on self are less than 2.0, change them to Fatal(x2.0)\n- After Attack: kills this unit",
+    "desc": "- Deal +200% damage\n- Deal +2.5% damage for every 1% missing HP on target (max 200%)\n- Before Attack: for this attack, if the Pierce Damage Res. on target or on self are less than 2.0, change them to Fatal(x2.0)\n- Attack End: kills this unit",
     "name": "The Seventh Magic Bullet"
   },
   "Fugacious": {
@@ -3138,7 +3138,7 @@
   },
   "MuscleContraction": {
     "buffType": "Positive",
-    "desc": "- Max Stack: 2\n- Deal +15% damage per Stack\n- Combat Start: At 2 Stacks, convert all Coins of this unit's Attack Skills into Unbreakable Coins.\n- After Attack: Lose this effect",
+    "desc": "- Max Stack: 2\n- Deal +15% damage per Stack\n- Combat Start: At 2 Stacks, convert all Coins of this unit's Attack Skills into Unbreakable Coins.\n- Attack End: Lose this effect",
     "name": "Automated Myofiber Activity"
   },
   "Nail": {
@@ -3272,7 +3272,7 @@
   },
   "PaintingMaterial": {
     "buffType": "Negative",
-    "desc": "Take +10% damage from Lust Skills if this unit has Bleed",
+    "desc": "If this unit has Bleed (in Focused Encounters, count Bleed on each Part separately), take +10% damage from Lust Skills",
     "name": "Art Medium"
   },
   "ParadeConcentration": {
@@ -3672,17 +3672,17 @@
   },
   "Retreat": {
     "buffType": "Neutral",
-    "desc": "- Turn End: recover from Stagger and Retreat from the Encounter (unless it's a forced Stagger; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
+    "desc": "- Turn End: recover from Stagger and Retreat from the Encounter (excluding forced Staggers; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
     "name": "Strategic R&R Mode"
   },
   "RetreatForCommon": {
     "buffType": "Neutral",
-    "desc": "- Turn End: recover from Stagger and Retreat from the Encounter (unless it's a forced Stagger; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
+    "desc": "- Turn End: recover from Stagger and Retreat from the Encounter (excluding forced Staggers; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
     "name": "Battlefield Retreat"
   },
   "Retreat_FullStop": {
     "buffType": "Neutral",
-    "desc": "- Turn End: recover from Stagger and Retreat from the Encounter (unless it's a forced Stagger; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
+    "desc": "- Turn End: recover from Stagger and Retreat from the Encounter (excluding forced Staggers; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
     "name": "Overwatch Assignment"
   },
   "RienWeapon01Hatchet": {
@@ -4015,7 +4015,7 @@
   },
   "SignOfDespair": {
     "buffType": "Positive",
-    "desc": "After Attack: if there are targets without Cold, Black Tears, removes this effect next turn\n\nGain 1 Clash Power Up and 1 Damage Up\nInflict +1 more Cold, Black Tears",
+    "desc": "Attack End: If there are targets without Cold, Black Tears, removes this effect next turn\n\nGain 1 Clash Power Up and 1 Damage Up\nInflict +1 more Cold, Black Tears",
     "name": "Blessing of Despair"
   },
   "SingBulletSupport": {
