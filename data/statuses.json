@@ -98,6 +98,16 @@
     "desc": "- Max Stack: 4\n- Expires if this unit does not have \"Ready to Loose\"",
     "name": "Target Aim"
   },
+  "AlriuneEGOThey": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 30\n- Gain 1 Stack if this unit takes Sinking damage\n- Upon Tremor Burst, apply 1~2 Faint Aroma on 3 other random allies (for Abnormalities, the Part)\n- At max Stack, gain 2 Tremor and trigger Tremor Burst on self; then, take Gloom damage equal to Sinking on self and lose all Faint Aroma. Cannot gain Faint Aroma for the rest of the turn.\n- If this unit is killed, inflict (remaining Faint Aroma on this unit / 2) Faint Aroma randomly between this unit's allies (rounded down)",
+    "name": "Faint Aroma"
+  },
+  "AlriuneEGOWe": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 30\n- Offense Level +1 for every 10 Stack\n- Can be gained up to 15 Stacks per turn",
+    "name": "Petals"
+  },
   "AmberDamageDown": {
     "buffType": "Negative",
     "desc": "Deal less damage with Sloth skills based on the effect’s Count for one turn. (Max 10)",
@@ -257,6 +267,11 @@
     "buffType": "Positive",
     "desc": "At the start of the turn, heal 10 HP per Count.",
     "name": "Golden Sheen"
+  },
+  "BestWelfareTeamCaptain": {
+    "buffType": "Neutral",
+    "desc": "  - Skill Slot +1\n  - Modify Skill pool: Gain 1 copy of Skill 3, but lose 1 copy of Skill 1\n- Increase the amount of Burn, Bleed, Rupture, Sinking, or Tremor Potency inflicted with Skills by +2 (including 'Unique Status Effects')\n- Base Skills that gain or spend Ammo deal +30% damage\n- On Use with Base Skills that gain or spend Ammo, heal 10 SP for 1 ally with the lowest SP (including this unit)\n- On Kill, activate the following:\n· E.G.O Resource +2 to the Affinity that killed the enemy; E.G.O Resource +1 to all Affinities\n· Next turn, inflict the remaining Burn, Bleed, Rupture, Sinking, and Tremor Potency and Count on the said enemy randomly between all enemies (min 1)",
+    "name": "Welfare Team Captain"
   },
   "BestWelfareTeamMember": {
     "buffType": "Neutral",
@@ -590,6 +605,16 @@
     ],
     "desc": "Spent by certain skills.\nSome attacks cancel if lacking Ammo.",
     "name": "Ammo"
+  },
+  "BulletGodok": {
+    "buffType": "Neutral",
+    "categoryKeywordList": [
+      "RESOURCE",
+      "BULLET",
+      "CAN_GET_ONLY_BY_SYSTEM"
+    ],
+    "desc": "- Unique Ammo\n- Max Capacity: 6\nSpent when using certain Skills\n\n- This Ammo's count cannot be gained or lost due to external effects",
+    "name": "Bullet - Solitude"
   },
   "BulletLament": {
     "buffType": "Neutral",
@@ -1152,6 +1177,11 @@
     "desc": "- Turn Start: gain 1 Piercing Sword for every -8 SP (max 5)\n- When Clash ends, inflict +1 Sinking Count (once per turn)\n- On Hit with the first Coin of a Base Attack Skill, inflict +1 Sinking Count (once per turn)\n- For every -20 SP, inflict +1 more Sinking Count with above effects (max 2)\n- Replace this unit's Base Skills with Minus Coin Skills",
     "name": "Despair"
   },
+  "DesperadoBuff": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 2\n- For every Stack, Base Attack Skill Clash Power +1, Base Power +1\n- At 2 Stack, Base Attack Skill Plus Coin Power +1, Minus Coin Power -1\n- Expires at Turn End",
+    "name": "Desperado"
+  },
   "DevyatDimensionalSack": {
     "buffType": "Neutral",
     "desc": "- Base Value: 0\n- Turn Start: gain 3 Stack\n- Stack does not expire upon Retreat; it is stored instead\n- At 10+ Stack: raise Min & Max Speed values by 1\n- At 20+ Stack: Gain 1 Clash Power Up and 1 Slash Damage Up\n- At 30+ Stack:\n· On Skill Use, take (Stack/3)% HP damage and (Stack/3) SP damage\n· On Turn End, take (Stack/2)% HP damage and (Stack/2) SP damage (applies before Retreat)",
@@ -1515,7 +1545,7 @@
       "RESOURCE",
       "BULLET"
     ],
-    "desc": "- Max Capacity: 15\n- Unique Ammo\n- Spent by certain Skills",
+    "desc": "- Unique Ammo\n- Max Stack : 15\n- Consumed when using certain Skills",
     "name": "Scorch Propellant Ammo"
   },
   "FirePunchFuel": {
@@ -1705,6 +1735,11 @@
     "desc": "- Max Stack: 5\n- Turn Start: leftmost Slot on the Dashboard gains +10 Aggro\n- Take +50% damage\n- When hit, inflict 1 Rupture against the Attacker (3 times per target's Skill)\n· At less than 50% HP, inflict 1 additional Rupture\n· If the target has 15+ Rupture, this effect does not inflict Rupture\n- Reduced by 1 at Turn End",
     "imageOverride": "GlowingLantern",
     "name": "Fairy Lure"
+  },
+  "GodokPanicType": {
+    "buffType": "Negative",
+    "desc": "- Take +10% damage from Gloom Skills\n- Units with SP: Change their Panic Type to 'Solitude'\n- Units without SP: Gain +2 Sinking Count at Turn End\n\n- Turn End: Lose 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Units without SP\" conditional to certain enemies that have SP but cannot change their Panic Types\n\n※ Solitude Panic Effect:\n- Low Morale: Gain +2 Sinking Count at Turn End\n- Panic: Gain +3 Sinking Count at Turn End",
+    "name": "Solitude"
   },
   "GoldenBoughSync": {
     "buffType": "Positive",
@@ -2278,7 +2313,7 @@
       "BULLET",
       "RESOURCE"
     ],
-    "desc": "- Max Capacity: 16\n- Unique Ammo\n- Spent by certain Skills\n- Some attacks cancel if lacking Ammo",
+    "desc": "- Unique Ammo\n- Max Capacity: 16\n- Spent by certain Skills\n- Some attacks cancel if lacking Ammo",
     "name": "LCA Fracture Round"
   },
   "Laceration": {
@@ -3023,6 +3058,49 @@
     "desc": "Amount of SP healed due to the Identity's 'Base factors increasing Sanity(SP)'",
     "name": "SP Heal Efficiency"
   },
+  "MeursaultBeeGunLong": {
+    "buffType": "Neutral",
+    "desc": "Current Mode: Hornet [Rifle]",
+    "name": "Hornet [Rifle]"
+  },
+  "MeursaultBeeGunShort": {
+    "buffType": "Neutral",
+    "desc": "Current Mode: Hornet [Shotgun]",
+    "name": "Hornet [Shotgun]"
+  },
+  "MeursaultBeeSpore": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 15\n- Turn End: Gain +1 Burn Count for every 5 Stack\n- Gain 1 Bind next turn",
+    "name": "Spore"
+  },
+  "MeursaultSporeBulletLong": {
+    "buffType": "Neutral",
+    "categoryKeywordList": [
+      "RESOURCE",
+      "BULLET"
+    ],
+    "desc": "- Unique Ammo\n- Max Stack: 10\n- Spent when using certain Skills\n- Some attacks cancel if lacking Ammo\n- When spent, inflict 2 Spore on target On Hit",
+    "name": "Spore Round [Base]"
+  },
+  "MeursaultSporeBulletReloading": {
+    "buffType": "Neutral",
+    "desc": "- Effect applied to Spore Round (Unique Ammo)\n- Consume ((16 - sum of Spore Round) / 2) SP(rounded down), reset both Spore Round [Base] and Spore Round [Buckshot] to 0 Stacks, and gain them up to max Stacks",
+    "name": "Reload [Germination]"
+  },
+  "MeursaultSporeBulletShort": {
+    "buffType": "Neutral",
+    "categoryKeywordList": [
+      "RESOURCE",
+      "BULLET"
+    ],
+    "desc": "- Unique Ammo\n- Max Stack: 6\n- Spent when using certain Skills\n- Some attacks cancel if lacking Ammo\n- When spent, inflict 3 Spore on target On Hit",
+    "name": "Spore Round [Buckshot]"
+  },
+  "MeursaultWorkerBee": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 3\n- Gain the following effects next turn based on Stack at Turn End:\n1+ Stack: 1 Protection\n2+ Stack: 1 Haste\n3 Stack: 1 Clash Power Up",
+    "name": "Loyalty Pheromone"
+  },
   "Meursault_Last_Remodeling": {
     "buffType": "Neutral",
     "desc": "At the start of the turn, gain 3 Attack Power Up, Defense Power Up, and Haste; die after 3 turns.",
@@ -3183,6 +3261,11 @@
     "buffType": "Neutral",
     "desc": "- Sinners on top of Nethersea Brand: at Turn End, take fixed damage equal to 5% HP and gain 3 Nervous Impairment\n- Greatly increases the Nervous Impairment Stack Sea Terrors on top of Nethersea Brand inflict against Sinners\n- Nethersea Brand's influence expands toward Sinner territory with each passing turn\n· Stage 1 : Sea Terror territory\n· Stage 2 : Affects 2 frontmost Sinners\n· Stage 3 : Affects 5 frontmost Sinners\n· Stage 4 : Affects all Sinners",
     "name": "Nethersea Brand"
+  },
+  "NextHallway": {
+    "buffType": "Neutral",
+    "desc": "- Turn End: recover from Stagger and escape from the Encounter\n(Unless it's a forced Stagger; does not count as death)\n- In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order",
+    "name": "Herd Relocation"
   },
   "NiddleEGO": {
     "buffType": "Negative",
@@ -3389,6 +3472,11 @@
     "desc": "- Turn End: at 3 Stack, convert this effect to Hollow Obedience next turn",
     "name": "Heaping Obedience"
   },
+  "PinkPetals": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 30\n- For every Stack, take +1% damage when hit by Gloom Skills (max 15%)\n- For every 10 Stack, gain +1 Sinking Count when hit (2 times per turn)\n- When Tremor Burst is triggered on this unit, take ((Sinking Potency + Pink Petals) / 5) Gloom damage\n- Turn End: Lose 1 Stack",
+    "name": "Pink Petals"
+  },
   "PinkRibbon_Ishmael": {
     "buffType": "Negative",
     "desc": "Count increases by 1 whenever the affected unit tosses an attack skill Coin.\nAt the end of the turn, inflict Bind by the effect’s Count, then remove the effect.",
@@ -3451,6 +3539,21 @@
     "buffType": "Positive",
     "desc": "- Turn Start: gain 1 Defense Level Up for every Stack (max 5)\n- Turn Start: +(Stack x 3) Aggro to the leftmost Skill Slot on the Dashboard (max 15)\n- Max Stack: 5\n- Expires at Turn End",
     "name": "Protecting Sword"
+  },
+  "PumpkinJelly": {
+    "buffType": "Neutral",
+    "desc": "- Max Stack: 1\nTurn Start: At less than 60% HP, heal 30% HP and lose this effect",
+    "name": "BongBong Orange"
+  },
+  "QueenBeeMark": {
+    "buffType": "Negative",
+    "desc": "- For every 3 Burn on self, take +1% damage when hit (max 20%)\n- Expires at Turn End",
+    "name": "Pheromone Mark"
+  },
+  "QueenBeepheromone": {
+    "buffType": "Positive",
+    "desc": "- Gain +10 Aggro\n- When hit, inflict 3 Burn on target",
+    "name": "Pheromone"
   },
   "RapidGrowthApple": {
     "buffType": "Negative",
@@ -3791,6 +3894,11 @@
     "desc": "- Max Potency: 10\n- Max Count: 4\n- Gain 1 Potency every time this unit takes 10 Bleed damage\n- When gaining Bleed or 'Unique Bleed' from getting hit, gain 2 Bleed and inflict 1 Bleed against the Attacker. (5 times per turn)\n· At 10 Potency, gain +1 Bleed Count as well when triggering the above effect.\n- Turn End: lose 1 Count\n- Combat End: at 10 Potency or 1 Count, this effect expires, and this unit takes (Potency x 10) Lust damage.\n- If the unit inflicted with this effect dies, or when this effect expires: increase Bloodfeast by (Potency x 10), and deal (Potency x 2) Lust damage against all of its allies (min 1)",
     "name": "Rose Wedge"
   },
+  "RunHallway": {
+    "buffType": "Neutral",
+    "desc": "- Max Stack: 3\n- Combat Start: Lose 1 Stack\n- At 0 Stack, use 'Herd Migration' at Turn Start",
+    "name": "Preparing Herd Migration"
+  },
   "RyoshuEGOPF": {
     "buffType": "Positive",
     "desc": "Max Stack: 999\n- Gain 1 Stack for every HP damage dealt by Ryōshū's Skills\n- Deal +1% damage with Base Skills for every 33 Stack (max 10%)",
@@ -3986,7 +4094,7 @@
     "categoryKeywordList": [
       "SINKING"
     ],
-    "desc": "- Max Stack: 10\n- Unique Sinking\n- For every Stack, take +1% more damage from Sloth and Gloom Skills\n- At max Stack, gain 1 Gloom Fragility (once per turn), take Gloom damage equal to Sinking Potency on self(lose 1 Sinking Count), then expires\n- If the unit with this effect dies, transfer half of its Stack to its ally with the highest SP (rounded down)\n- Turn Start: If there are no LCA Identities on the field, expires",
+    "desc": "- Unique Sinking\n- Max Stack: 10\n- For every Stack, take +1% more damage from Sloth and Gloom Skills\n- At max Stack, gain 1 Gloom Fragility (once per turn), take Gloom damage equal to Sinking Potency on self (lose 1 Sinking Count), then expires\n- If the unit with this effect dies, transfer half of its Stack to its ally with the highest SP (rounded down)\n- Turn Start: If there are no LCA Identities on the field, expires",
     "name": "Sheut Fracture"
   },
   "ShieldManagerCryingToad": {
@@ -4272,6 +4380,16 @@
     "buffType": "Negative",
     "desc": "Fix this unit's Speed to 1; all Attack Skills of \"The Thumb Nursefather - Valencina\" targets this unit",
     "name": "Game Target"
+  },
+  "TensionUp": {
+    "buffType": "Neutral",
+    "desc": "- Max Stack: 3\n- For every Stack, deal +5% damage with Wrath and Lust Skills\n- When hit, raise this unit's Stagger Threshold by (5 x Stack)\n- Expires at Turn End",
+    "name": "Hyped-up"
+  },
+  "ThatIsRhythm": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 5\n- Deal +2% damage for every Stack (max 10%)\n- Offense Level +1 for every Stack (max 5)\n- Defense Level -1 for every Stack (max -5)\n- Turn End: This effect expires",
+    "name": "Rhythm"
   },
   "ThePowerOfLoveAndHate": {
     "buffType": "Positive",

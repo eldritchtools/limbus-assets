@@ -1,0 +1,368 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 3,
+          "baseValue": 6,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 6
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "heads"
+                  },
+                  "type": "reuse",
+                  "value": 4
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttackHead] At 10%+ HP, take 4 ~ 8 HP damage (once per Coin)\n- Then, Reuse this Coin (4 times per Skill)\n- This damage does not Stagger or reduce this unit's HP below 1",
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] A random ally gains 1 [ThatIsRhythm] next turn (once per Coin)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Clash Power +1 for every 2 ([Laceration] + [Combustion]) on the main target (max 6)\nDeal more damage based on missing HP on self (max 10%)\nDeal -50% damage against sub-targets\n[TargetKill] All allies gain 2 [ThatIsRhythm] next turn (once per Skill)\n[EndSkill] Heal 8 SP for (1 + highest Reson.) other allies with the least SP (max 4 units)\n[EndSkill] For 2 turns, lose 8 SP at Combat End",
+          "levelCorrection": 2,
+          "name": "Harmony",
+          "spCost": 10,
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 8
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "heads"
+                  },
+                  "type": "reuse",
+                  "value": 4
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttackHead] At 10%+ HP, take 4 ~ 8 HP damage (once per Coin)\n- Then, Reuse this Coin (4 times per Skill)\n- This damage does not Stagger or reduce this unit's HP below 1",
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] A random ally gains 1 ~ 2 [ThatIsRhythm] next turn (once per Coin)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Clash Power +1 for every 2 ([Laceration] + [Combustion]) on the main target (max 8)\nDeal more damage based on missing HP on self (max 15%)\nDeal -50% damage against sub-targets\n[TargetKill] All allies gain 2 [ThatIsRhythm] next turn (once per Skill)\n[EndSkill] Heal 10 SP for (1 + highest Reson.) other allies with the least SP (max 4 units)\n[EndSkill] For 2 turns, lose 8 SP at Combat End",
+          "name": "Harmony",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 10
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "heads"
+                  },
+                  "type": "reuse",
+                  "value": 4
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttackHead] At 10%+ HP, take 4 ~ 8 HP damage (once per Coin)\n- Then, Reuse this Coin (4 times per Skill)\n- This damage does not Stagger or reduce this unit's HP below 1",
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] A random ally gains 1 ~ 3 [ThatIsRhythm] next turn (once per Coin)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Clash Power +1 for every 2 ([Laceration] + [Combustion]) on the main target (max 10)\nDeal more damage based on missing HP on self (max 20%)\nDeal -50% damage against sub-targets\n[TargetKill] All allies gain 2 [ThatIsRhythm] next turn (once per Skill)\n[EndSkill] Heal 12 SP for (1 + highest Reson.) other allies with the least SP (max 4 units)\n[EndSkill] For 2 turns, lose 8 SP at Combat End",
+          "name": "Harmony",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusNotes": "Assumes all 4 coin reuses.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 3,
+          "baseValue": 14,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 6
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1
+            },
+            {
+              "type": "atkweight",
+              "value": 2
+            }
+          ],
+          "coinValue": -2,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 4
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] At 10%+ HP, take 10 ~ 20 HP damage (once per Coin)\n- Then, Reuse this Coin if the sum of HP lost due to this effect is less than 50 (4 times per Skill)\n- This damage does not Stagger or reduce this unit's HP below 1",
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] A random ally gains 1 [ThatIsRhythm] next turn (once per Coin)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly\nClash Power +1 for every 2 ([Laceration] + [Combustion]) on the main target (max 6)\nDeal more damage based on missing HP on self (max 10%)\nDeal -50% damage against sub-targets\n[BeforeAttack] Gain Atk Weight equal to (highest Reson. / 2) (max 2; rounded down)\n[BeforeAttack] Base Power -2 for every Cracked Coin (max -6)\n[EndSkill] Heal 10 SP for 4 other allies with the least SP\n[EndSkill] All allies gain 2 [ThatIsRhythm], 1 [CrimsonDamageUp], 1 [ScarletDamageUp], 1 [VioletDamageUp], 1 [Vulnerable] next turn\n- If target was killed, activate the effect above once more",
+          "levelCorrection": 4,
+          "name": "Harmony",
+          "spCost": 30,
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 8
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            },
+            {
+              "type": "atkweight",
+              "value": 2
+            }
+          ],
+          "coinValue": -2,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 4
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] At 10%+ HP, take 10 ~ 20 HP damage (once per Coin)\n- Then, Reuse this Coin if the sum of HP lost due to this effect is less than 50 (4 times per Skill)\n- This damage does not Stagger or reduce this unit's HP below 1",
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] A random ally gains 1 ~ 2 [ThatIsRhythm] next turn (once per Coin)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\nClash Power +1 for every 2 ([Laceration] + [Combustion]) on the main target (max 8)\nDeal more damage based on missing HP on self (max 15%)\nDeal -50% damage against sub-targets\n[BeforeAttack] Gain Atk Weight equal to (highest Reson. / 2) (max 2; rounded down)\n[BeforeAttack] Base Power -2 for every Cracked Coin (max -6)\n[EndSkill] Heal 12 SP for 4 other allies with the least SP\n[EndSkill] All allies gain 2 [ThatIsRhythm], 1 [CrimsonDamageUp], 1 [ScarletDamageUp], 1 [VioletDamageUp], 1 [Vulnerable] next turn\n- If target was killed, activate the effect above once more",
+          "name": "Harmony",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 10
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            },
+            {
+              "type": "atkweight",
+              "value": 2
+            }
+          ],
+          "coinValue": -2,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 4
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] At 10%+ HP, take 10 ~ 20 HP damage (once per Coin)\n- Then, Reuse this Coin if the sum of HP lost due to this effect is less than 50 (4 times per Skill)\n- This damage does not Stagger or reduce this unit's HP below 1",
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] A random ally gains 1 ~ 3 [ThatIsRhythm] next turn (once per Coin)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\nClash Power +1 for every 2 ([Laceration] + [Combustion]) on the main target (max 10)\nDeal more damage based on missing HP on self (max 20%)\nDeal -50% damage against sub-targets\n[BeforeAttack] Gain Atk Weight equal to (highest Reson. / 2) (max 2; rounded down)\n[BeforeAttack] Base Power -2 for every Cracked Coin (max -6)\n[EndSkill] Heal 15 SP for 4 other allies with the least SP\n[EndSkill] All allies gain 2 [ThatIsRhythm], 1 [CrimsonDamageUp], 1 [ScarletDamageUp], 1 [VioletDamageUp], 1 [Vulnerable] next turn\n- If target was killed, activate the effect above once more",
+          "name": "Harmony",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "notes": {
+    "main": [
+      "Gives {status:ThatIsRhythm} to himself and allies, increasing damage and offense, but reducing defense on the next turn. The passive gives him 2 stacks every turn after use. The corroded form gives everyone bonus {keyword:Wrath}, {keyword:Lust}, and {keyword:Envy} damage and a {status:Vulnerable} stack.",
+      "The 3rd coin can be reused up to 4 times, making this a 7 coin E.G.O. The awakening version triggers reuses on heads hit, while the corroded version triggers it randomly based on a randomized HP loss that he gets per coin.",
+      "Has aoe SP healing affecting up to 4 allies (based on reson for awakening and always 4 on corrosion). Reson on corrosion gives him additional atk weight.",
+      "His passive gives him automatic SP healing every turn he loses SP. The awakening form also uses the modern WAW E.G.O mechanic of costing less SP up front and triggering an SP loss for the next two turns, which can be negated by this passive effect. "
+    ],
+    "other": [
+      "He gets some bonus HP and SP healing on kill with the passive. The bonus is doubled when killing with this E.G.O."
+    ]
+  },
+  "passiveList": [
+    {
+      "desc": "Turn Start: Gain 2 [ThatIsRhythm]\n\nOn Target Kill: This unit heals 5% HP and 5 SP (once per turn)\n- If target was killed by E.G.O Skill - Harmony, double the amount this effect heals\n\nTurn End: If this unit lost SP this turn, heal (4 + sum of [Combustion] and [Laceration] on all enemies / 10) SP (max 10; rounded down)",
+      "name": "That... was Indeed a Rhythm"
+    }
+  ]
+}
