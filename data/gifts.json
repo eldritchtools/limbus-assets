@@ -1933,6 +1933,7 @@
     ],
     "enhanceable": true,
     "ingredientOf": [
+      "9248",
       "9424"
     ],
     "keyword": "Rupture",
@@ -2506,9 +2507,6 @@
     "affinity": "wrath",
     "descs": [
       "If there are no other allies remaining at Turn End, consume 5% of the remaining HP next turn to gain 2 [Enhancement]. (does not activate at 25%- HP)\n\nIf this unit has 50%- HP, gain 3 [Enhancement] instead."
-    ],
-    "ingredientOf": [
-      "9212"
     ],
     "keyword": "Keywordless",
     "names": [
@@ -3446,7 +3444,6 @@
       "1316",
       "1504"
     ],
-    "hardonly": true,
     "keyword": "Keywordless",
     "names": [
       "For You Who Love the City"
@@ -3491,7 +3488,7 @@
   "9212": {
     "affinity": "pride",
     "descs": [
-      "Activates when there are 3 or more The Pequod-faction Identities (counting Backup units)\n\nOn Hit with an Attack Skill against enemies with [Laceration]: 50% chance to gain 3 [Breath] or +2 [Breath] Count (3 times per turn for each character)\n\nOn Crit: 80% chance to not consume [Breath] Count (once per turn for each character; including E.G.O Skills and Counter Skills)\nOn Crit Heads Hit with a Base Skill: Inflict +1 more of the negative effect with that Coin (once per turn for each character; including Counter Skills and excluding E.G.O Skills)\n\nIf #1 Deployed Identity kills an enemy, The Pequod-faction Identities gain 1 [PenetrateResultUp], 1 [Protection], and 1 [CriticalDamageUp] each turn for the rest of this Encounter (max 3 times per Encounter)\n\nIf one of The Pequod-faction Identities attacks and hits an enemy, heal 7 SP for The Pequod-faction Identity with the earliest Deployment order (once per Skill)\nWhen an ally kills an enemy, heal 15 SP for The Pequod-faction Identity with the earliest Deployment order if said Identity lost SP"
+      "Activates when there are 3 or more The Pequod-faction Identities (counting Backup units)\n\nOn Hit with an Attack Skill against enemies with [Laceration] or 'Unique Bleed': Gain 3 [Breath] or +2 [Breath] Count (3 times per turn per Identity)\n\nOn Crit: 80% chance to gain 1 [PenetrateResultUp] next turn (2 times per turn per Identity; including E.G.O Skills and Counter Skills)\n- The Pequod-faction Identities gain 1 [PlusCoinValueUp] next turn as well (once per turn per Identity)\n\nOn Crit Heads Hit with a Base Skill: Inflict +1 more of the negative effect with that Coin (once per turn per Identity; including Counter Skills and excluding E.G.O Skills)\n\nOn enemy or ally death, The Pequod-faction Identities gain 1 [PenetrateResultUp], 1 [Protection], and 1 [CriticalDamageUp] each turn for the rest of this Encounter (3 times per Encounter)\n\nIf one of The Pequod-faction Identities attacks and hits an enemy, heal 7 SP for The Pequod-faction Identity with the earliest Deployment order (once per Skill)\n\nWhen an ally kills an enemy, heal 15 SP for The Pequod-faction Identity with the earliest Deployment order if said Identity lost SP"
     ],
     "exclusiveTo": [
       "1014"
@@ -3503,12 +3500,11 @@
     ],
     "recipes": [
       [
-        "9154",
         "9427",
         "9428"
       ]
     ],
-    "search_desc": "Activates when there are 3 or more The Pequod-faction Identities (counting Backup units)\n\nOn Hit with an Attack Skill against enemies with Bleed: 50% chance to gain 3 Poise or +2 Poise Count (3 times per turn for each character)\n\nOn Crit: 80% chance to not consume Poise Count (once per turn for each character; including E.G.O Skills and Counter Skills)\nOn Crit Heads Hit with a Base Skill: Inflict +1 more of the negative effect with that Coin (once per turn for each character; including Counter Skills and excluding E.G.O Skills)\n\nIf #1 Deployed Identity kills an enemy, The Pequod-faction Identities gain 1 Pierce Power Up, 1 Protection, and 1 Crit DMG Up each turn for the rest of this Encounter (max 3 times per Encounter)\n\nIf one of The Pequod-faction Identities attacks and hits an enemy, heal 7 SP for The Pequod-faction Identity with the earliest Deployment order (once per Skill)\nWhen an ally kills an enemy, heal 15 SP for The Pequod-faction Identity with the earliest Deployment order if said Identity lost SP",
+    "search_desc": "Activates when there are 3 or more The Pequod-faction Identities (counting Backup units)\n\nOn Hit with an Attack Skill against enemies with Bleed or 'Unique Bleed': Gain 3 Poise or +2 Poise Count (3 times per turn per Identity)\n\nOn Crit: 80% chance to gain 1 Pierce Power Up next turn (2 times per turn per Identity; including E.G.O Skills and Counter Skills)\n- The Pequod-faction Identities gain 1 Plus Coin Boost next turn as well (once per turn per Identity)\n\nOn Crit Heads Hit with a Base Skill: Inflict +1 more of the negative effect with that Coin (once per turn per Identity; including Counter Skills and excluding E.G.O Skills)\n\nOn enemy or ally death, The Pequod-faction Identities gain 1 Pierce Power Up, 1 Protection, and 1 Crit DMG Up each turn for the rest of this Encounter (3 times per Encounter)\n\nIf one of The Pequod-faction Identities attacks and hits an enemy, heal 7 SP for The Pequod-faction Identity with the earliest Deployment order (once per Skill)\n\nWhen an ally kills an enemy, heal 15 SP for The Pequod-faction Identity with the earliest Deployment order if said Identity lost SP",
     "tier": "4"
   },
   "9213": {
@@ -4020,6 +4016,122 @@
     "search_desc": "[Effects apply only to #1 Deployed Identity]\n\nTurn End after using an Attack Skill: Heal 5 SP\n- Then, if the affected unit is at max HP and is a Lobotomy Corp. Identity, gain 1 Plus Coin Boost next turn",
     "tier": "3"
   },
+  "9243": {
+    "affinity": "wrath",
+    "descs": [
+      "Deal +10% damage with Attack Skills that inflict [Combustion] Potency, Count, or 'Unique Burn'\n- If the Skill applies [Combustion] Count on self, Clash Power +1\n- Deal +1% damage for every 2% missing HP on self (max 15%)"
+    ],
+    "exclusiveTo": [
+      "1125"
+    ],
+    "hardonly": true,
+    "keyword": "Burn",
+    "names": [
+      "Trial Extraction : A.B.S"
+    ],
+    "search_desc": "Deal +10% damage with Attack Skills that inflict Burn Potency, Count, or 'Unique Burn'\n- If the Skill applies Burn Count on self, Clash Power +1\n- Deal +1% damage for every 2% missing HP on self (max 15%)",
+    "tier": "3"
+  },
+  "9244": {
+    "affinity": "gluttony",
+    "descs": [
+      "Deal +10% damage with Attack Skills that inflict [Burst] Potency or Count\n- At 20%+ missing HP on self, Clash Power +1\n- Deal +1% damage with Attack Skills for every 1 (sum of [Aggro] on all Skill Slots on self) (max 15%)"
+    ],
+    "exclusiveTo": [
+      "1125"
+    ],
+    "hardonly": true,
+    "keyword": "Rupture",
+    "names": [
+      "Trial Extraction : Lantern"
+    ],
+    "search_desc": "Deal +10% damage with Attack Skills that inflict Rupture Potency or Count\n- At 20%+ missing HP on self, Clash Power +1\n- Deal +1% damage with Attack Skills for every 1 (sum of Aggro on all Skill Slots on self) (max 15%)",
+    "tier": "3"
+  },
+  "9245": {
+    "affinity": "envy",
+    "descs": [
+      "If this unit gained [Charge] Count or 'Unique Charge' over maximum limit this turn, gain 1 [AttackUp] next turn for every 2 surplus Stack (2 per turn per Identity)\n- Identities with Base Skills that gain or consume [Charge] Count or 'Unique Charge': max 6 per turn per Identity instead\n- If this unit has [HighVoltageExoshell], also gain 1 [Charge] Potency (once per Encounter)"
+    ],
+    "exclusiveTo": [
+      "1125"
+    ],
+    "hardonly": true,
+    "keyword": "Charge",
+    "names": [
+      "Modified Extraction : AEDD"
+    ],
+    "search_desc": "If this unit gained Charge Count or 'Unique Charge' over maximum limit this turn, gain 1 Offense Level Up next turn for every 2 surplus Stack (2 per turn per Identity)\n- Identities with Base Skills that gain or consume Charge Count or 'Unique Charge': max 6 per turn per Identity instead\n- If this unit has High-voltage Exoskeleton, also gain 1 Charge Potency (once per Encounter)",
+    "tier": "3"
+  },
+  "9246": {
+    "affinity": "wrath",
+    "descs": [
+      "Limbus Company Identities:\n- Turn Start: Gain (# of Limbus Company Identities participating in battle / 3) [ParryingResultUp] (max 2; rounded down)\n\nLCE Identities:\n- Deal +(# of Identities in battle wearing E.G.O Gears x 10)% damage (max 30%)\n- On same-faction Ally Death: Gain 1 E.G.O resource each for all Affinities; gain 1 [PlusCoinValueUp] and 1 [MinusCoinValueUp] at Turn Start for the rest of this Encounter (2 times per Encounter per Identity)"
+    ],
+    "exclusiveTo": [
+      "1125"
+    ],
+    "hardonly": true,
+    "keyword": "Keywordless",
+    "names": [
+      "Someone's Dropped Employee Card"
+    ],
+    "search_desc": "Limbus Company Identities:\n- Turn Start: Gain (# of Limbus Company Identities participating in battle / 3) Clash Power Up (max 2; rounded down)\n\nLCE Identities:\n- Deal +(# of Identities in battle wearing E.G.O Gears x 10)% damage (max 30%)\n- On same-faction Ally Death: Gain 1 E.G.O resource each for all Affinities; gain 1 Plus Coin Boost and 1 Minus Coin Boost at Turn Start for the rest of this Encounter (2 times per Encounter per Identity)",
+    "tier": "4"
+  },
+  "9248": {
+    "affinity": "sloth",
+    "descs": [
+      "[Effects apply only to #1, #2, #3 Deployed Identities]\n\nWhen winning a Clash with an Attack Skill that inflicts [Burst] Potency or Count, inflict 5 [Burst] Potency and +3 [Burst] Count against the target (once per turn per Identity)\n\nWhen Clashing against an enemy with a slower Speed, gain Final Power +1 and deal +25% damage\n\nWhen winning a Clash against an enemy with [AttackUp] buff, gain 3 [AttackUp] for the next turn, and inflict 3 [AttackDown] on the enemy that lost the Clash (3 times per turn per Identity)\n\nEvery time Skill 1, Skill 2, or Skill 3 is used, activate the following effect (once per Skill rank):\n- The unit that used said Skill gains 1 [Agility] and 1 [SkillPowerUp] at Turn Start for this Encounter (can stack up to 3 times)"
+    ],
+    "exclusiveTo": [
+      "1010",
+      "1012"
+    ],
+    "fusion": true,
+    "keyword": "Rupture",
+    "names": [
+      "Spicebush, Glasses, and Mailed Letter"
+    ],
+    "recipes": [
+      [
+        "9419",
+        "9424"
+      ],
+      [
+        "9419",
+        "9119",
+        "9423"
+      ]
+    ],
+    "search_desc": "[Effects apply only to #1, #2, #3 Deployed Identities]\n\nWhen winning a Clash with an Attack Skill that inflicts Rupture Potency or Count, inflict 5 Rupture Potency and +3 Rupture Count against the target (once per turn per Identity)\n\nWhen Clashing against an enemy with a slower Speed, gain Final Power +1 and deal +25% damage\n\nWhen winning a Clash against an enemy with Offense Level Up buff, gain 3 Offense Level Up for the next turn, and inflict 3 Offense Level Down on the enemy that lost the Clash (3 times per turn per Identity)\n\nEvery time Skill 1, Skill 2, or Skill 3 is used, activate the following effect (once per Skill rank):\n- The unit that used said Skill gains 1 Haste and 1 Base Power Up at Turn Start for this Encounter (can stack up to 3 times)",
+    "tier": "4"
+  },
+  "9249": {
+    "affinity": "sloth",
+    "descs": [
+      "[Effects apply only to #5, #6 Deployed Identities]\n\nHeal 10% of the HP damage dealt with a Skill (max 20 per Skill)\n\nOn Clash Win: Gain 1 [AttackUp] and 1 [TakeHpHealIncrease] (2 times per turn per Identity)\n\nOn Skill Use: Gain 1 [AttackUp] and 1 [TakeHpHealIncrease] (2 times per turn per Identity)\n\nDeal +10% damage with Blunt Skills\n\nDeal +(# of Clashes x 6)% damage with the Skill that won the Clash (max 30%)"
+    ],
+    "exclusiveTo": [
+      "1016",
+      "1102"
+    ],
+    "fusion": true,
+    "keyword": "Keywordless",
+    "names": [
+      "A Small, Lovely Violin"
+    ],
+    "recipes": [
+      [
+        "9706",
+        "9707",
+        "9431"
+      ]
+    ],
+    "search_desc": "[Effects apply only to #5, #6 Deployed Identities]\n\nHeal 10% of the HP damage dealt with a Skill (max 20 per Skill)\n\nOn Clash Win: Gain 1 Offense Level Up and 1 HP Healing Boost (2 times per turn per Identity)\n\nOn Skill Use: Gain 1 Offense Level Up and 1 HP Healing Boost (2 times per turn per Identity)\n\nDeal +10% damage with Blunt Skills\n\nDeal +(# of Clashes x 6)% damage with the Skill that won the Clash (max 30%)",
+    "tier": "4"
+  },
   "9403": {
     "affinity": "gluttony",
     "descs": [
@@ -4206,6 +4318,9 @@
     "exclusiveTo": [
       "1010"
     ],
+    "ingredientOf": [
+      "9248"
+    ],
     "keyword": "Keywordless",
     "names": [
       "Spicebush Branch"
@@ -4238,6 +4353,7 @@
     ],
     "hardonly": true,
     "ingredientOf": [
+      "9248",
       "9424"
     ],
     "keyword": "Keywordless",
@@ -4250,13 +4366,16 @@
   "9424": {
     "affinity": "envy",
     "descs": [
-      "[Effects apply only to #1, #2 Deployed Identities]\n\nWhen winning a Clash with an Attack Skill that inflicts [Burst] Potency or Count, inflict 5 [Burst] Potency and +3 [Burst] Count against the target. (once per turn per Identity)\n\nWhen Clashing against an enemy with a slower Speed, gain Final Power +1 and deal +25% damage.\n\nWhen winning a Clash against an enemy with [AttackUp] buff, gain 3 [AttackUp] for the next turn, and inflict 3 [AttackDown] on the enemy that lost the Clash (absolute value 9)"
+      "[Effects apply only to #1, #2 Deployed Identities]\n\nWhen winning a Clash with an Attack Skill that inflicts [Burst] Potency or Count, inflict 5 [Burst] Potency and +3 [Burst] Count against the target (once per turn per Identity)\n\nWhen Clashing against an enemy with a slower Speed, gain Final Power +1 and deal +25% damage.\n\nWhen winning a Clash against an enemy with [AttackUp] buff, gain 3 [AttackUp] for the next turn, and inflict 3 [AttackDown] on the enemy that lost the Clash (3 times per turn per Identity)"
     ],
     "exclusiveTo": [
       "1012"
     ],
     "fusion": true,
     "hardonly": true,
+    "ingredientOf": [
+      "9248"
+    ],
     "keyword": "Rupture",
     "names": [
       "Unmailed Letter"
@@ -4267,7 +4386,7 @@
         "9423"
       ]
     ],
-    "search_desc": "[Effects apply only to #1, #2 Deployed Identities]\n\nWhen winning a Clash with an Attack Skill that inflicts Rupture Potency or Count, inflict 5 Rupture Potency and +3 Rupture Count against the target. (once per turn per Identity)\n\nWhen Clashing against an enemy with a slower Speed, gain Final Power +1 and deal +25% damage.\n\nWhen winning a Clash against an enemy with Offense Level Up buff, gain 3 Offense Level Up for the next turn, and inflict 3 Offense Level Down on the enemy that lost the Clash (absolute value 9)",
+    "search_desc": "[Effects apply only to #1, #2 Deployed Identities]\n\nWhen winning a Clash with an Attack Skill that inflicts Rupture Potency or Count, inflict 5 Rupture Potency and +3 Rupture Count against the target (once per turn per Identity)\n\nWhen Clashing against an enemy with a slower Speed, gain Final Power +1 and deal +25% damage.\n\nWhen winning a Clash against an enemy with Offense Level Up buff, gain 3 Offense Level Up for the next turn, and inflict 3 Offense Level Down on the enemy that lost the Clash (3 times per turn per Identity)",
     "tier": "4"
   },
   "9427": {
@@ -4296,7 +4415,7 @@
   "9428": {
     "affinity": "pride",
     "descs": [
-      "On Hit against enemies with [Laceration] with an Attack Skill, gain 1 [Breath]. (3 times per turn for each character)\nOn Crit, 50% chance to not consume [Breath] Count (once per turn for each character; including E.G.O Skills and Counter Skills)\nOn Crit Heads Hit with a Base Skill: inflict +1 more of the negative effect with that Coin. (once per turn for each character; including Counter Skills and excluding E.G.O Skills)"
+      "On Hit against enemies with [Laceration] or 'Unique Bleed' with an Attack Skill: Gain 1 [Breath] (3 times per turn per Identity)\n\nOn Crit: 50% chance to gain 1 [PenetrateResultUp] next turn (2 times per turn per Identity; including E.G.O Skills and Counter Skills)\n\nOn Crit Heads Hit with a Base Skill: Inflict +1 more of the negative effect with that Coin (once per turn per Identity; including Counter Skills and excluding E.G.O Skills)"
     ],
     "exclusiveTo": [
       "1014"
@@ -4308,7 +4427,7 @@
     "names": [
       "Cetacean Heart"
     ],
-    "search_desc": "On Hit against enemies with Bleed with an Attack Skill, gain 1 Poise. (3 times per turn for each character)\nOn Crit, 50% chance to not consume Poise Count (once per turn for each character; including E.G.O Skills and Counter Skills)\nOn Crit Heads Hit with a Base Skill: inflict +1 more of the negative effect with that Coin. (once per turn for each character; including Counter Skills and excluding E.G.O Skills)",
+    "search_desc": "On Hit against enemies with Bleed or 'Unique Bleed' with an Attack Skill: Gain 1 Poise (3 times per turn per Identity)\n\nOn Crit: 50% chance to gain 1 Pierce Power Up next turn (2 times per turn per Identity; including E.G.O Skills and Counter Skills)\n\nOn Crit Heads Hit with a Base Skill: Inflict +1 more of the negative effect with that Coin (once per turn per Identity; including Counter Skills and excluding E.G.O Skills)",
     "tier": "4"
   },
   "9429": {
@@ -4363,6 +4482,9 @@
     "enhanceable": true,
     "exclusiveTo": [
       "1016"
+    ],
+    "ingredientOf": [
+      "9249"
     ],
     "keyword": "Keywordless",
     "names": [
@@ -4627,6 +4749,9 @@
     "exclusiveTo": [
       "1102"
     ],
+    "ingredientOf": [
+      "9249"
+    ],
     "keyword": "Tremor",
     "names": [
       "Oil-gunked Spanner"
@@ -4641,6 +4766,9 @@
     ],
     "exclusiveTo": [
       "1102"
+    ],
+    "ingredientOf": [
+      "9249"
     ],
     "keyword": "Keywordless",
     "names": [
@@ -4673,7 +4801,6 @@
       "1103",
       "1113"
     ],
-    "hardonly": true,
     "ingredientOf": [
       "9765"
     ],
@@ -4693,7 +4820,6 @@
       "1103",
       "1113"
     ],
-    "hardonly": true,
     "ingredientOf": [
       "9765"
     ],
@@ -4713,7 +4839,6 @@
       "1103",
       "1113"
     ],
-    "hardonly": true,
     "ingredientOf": [
       "9765"
     ],
@@ -4733,7 +4858,6 @@
       "1104",
       "1116"
     ],
-    "hardonly": true,
     "keyword": "Keywordless",
     "names": [
       "Black Ledger"
@@ -4750,7 +4874,6 @@
       "1104",
       "1116"
     ],
-    "hardonly": true,
     "ingredientOf": [
       "9717",
       "9718"
@@ -4771,7 +4894,6 @@
       "1104",
       "1116"
     ],
-    "hardonly": true,
     "ingredientOf": [
       "9717",
       "9783"
@@ -4792,7 +4914,6 @@
       "1104",
       "1116"
     ],
-    "hardonly": true,
     "ingredientOf": [
       "9718",
       "9784"
@@ -4813,7 +4934,6 @@
       "1104",
       "1116"
     ],
-    "hardonly": true,
     "keyword": "Slash",
     "names": [
       "Red Tassel"
@@ -4831,7 +4951,6 @@
       "1116"
     ],
     "fusion": true,
-    "hardonly": true,
     "keyword": "Slash",
     "names": [
       "Sublimity"
@@ -4855,7 +4974,6 @@
       "1116"
     ],
     "fusion": true,
-    "hardonly": true,
     "keyword": "Slash",
     "names": [
       "Unbending"
@@ -4878,7 +4996,6 @@
       "1104",
       "1116"
     ],
-    "hardonly": true,
     "keyword": "Poise",
     "names": [
       "Ragged Bamboo Hat"
@@ -4895,7 +5012,6 @@
       "1104",
       "1116"
     ],
-    "hardonly": true,
     "keyword": "Slash",
     "names": [
       "Old Dopo Robe"
@@ -4912,7 +5028,6 @@
       "1105",
       "1120"
     ],
-    "hardonly": true,
     "ingredientOf": [
       "9728",
       "9729"
@@ -4933,7 +5048,6 @@
       "1105",
       "1120"
     ],
-    "hardonly": true,
     "ingredientOf": [
       "9730",
       "9731"
@@ -4954,7 +5068,6 @@
       "1105",
       "1120"
     ],
-    "hardonly": true,
     "keyword": "Keywordless",
     "names": [
       "Warning Notice"
@@ -4971,7 +5084,6 @@
       "1105",
       "1120"
     ],
-    "hardonly": true,
     "ingredientOf": [
       "9728",
       "9730"
@@ -4992,7 +5104,6 @@
       "1105",
       "1120"
     ],
-    "hardonly": true,
     "ingredientOf": [
       "9729",
       "9731"
@@ -5013,7 +5124,6 @@
       "1105",
       "1120"
     ],
-    "hardonly": true,
     "keyword": "Tremor",
     "names": [
       "Chalice of Trickle-down"
@@ -5030,7 +5140,6 @@
       "1105",
       "1120"
     ],
-    "hardonly": true,
     "keyword": "Keywordless",
     "names": [
       "Prepaid Time Receipt"
@@ -5048,7 +5157,6 @@
       "1120"
     ],
     "fusion": true,
-    "hardonly": true,
     "imageOverride": "Pocket Watch Type L",
     "keyword": "Tremor",
     "names": [
@@ -5073,7 +5181,6 @@
       "1120"
     ],
     "fusion": true,
-    "hardonly": true,
     "imageOverride": "Pocket Watch Type E",
     "keyword": "Tremor",
     "names": [
@@ -5098,7 +5205,6 @@
       "1120"
     ],
     "fusion": true,
-    "hardonly": true,
     "imageOverride": "Pocket Watch Type Y",
     "keyword": "Tremor",
     "names": [
@@ -5123,7 +5229,6 @@
       "1120"
     ],
     "fusion": true,
-    "hardonly": true,
     "imageOverride": "Pocket Watch Type P",
     "keyword": "Tremor",
     "names": [
@@ -5147,7 +5252,6 @@
       "1106",
       "1123"
     ],
-    "hardonly": true,
     "keyword": "Keywordless",
     "names": [
       "Economy Class Discount Voucher"
@@ -5164,7 +5268,6 @@
       "1106",
       "1123"
     ],
-    "hardonly": true,
     "keyword": "Keywordless",
     "names": [
       "Canned Ice Cream"
@@ -5181,7 +5284,6 @@
       "1106",
       "1123"
     ],
-    "hardonly": true,
     "ingredientOf": [
       "9841"
     ],
@@ -5201,7 +5303,6 @@
       "1106",
       "1123"
     ],
-    "hardonly": true,
     "ingredientOf": [
       "9841"
     ],
@@ -5221,7 +5322,6 @@
       "1106",
       "1123"
     ],
-    "hardonly": true,
     "ingredientOf": [
       "9740",
       "9741"
@@ -5242,7 +5342,6 @@
       "1106",
       "1123"
     ],
-    "hardonly": true,
     "ingredientOf": [
       "9742",
       "9743"
@@ -5263,7 +5362,6 @@
       "1106",
       "1123"
     ],
-    "hardonly": true,
     "imageOverride": "Prosthetic Join Servos",
     "ingredientOf": [
       "9740",
@@ -5285,7 +5383,6 @@
       "1106",
       "1123"
     ],
-    "hardonly": true,
     "ingredientOf": [
       "9741",
       "9743"
@@ -5307,7 +5404,6 @@
       "1123"
     ],
     "fusion": true,
-    "hardonly": true,
     "keyword": "Charge",
     "names": [
       "Automated Joints"
@@ -5331,7 +5427,6 @@
       "1123"
     ],
     "fusion": true,
-    "hardonly": true,
     "keyword": "Charge",
     "names": [
       "Overcharged Battery"
@@ -5355,7 +5450,6 @@
       "1123"
     ],
     "fusion": true,
-    "hardonly": true,
     "keyword": "Charge",
     "names": [
       "Perpetual Generator Servos"
@@ -5379,7 +5473,6 @@
       "1123"
     ],
     "fusion": true,
-    "hardonly": true,
     "keyword": "Charge",
     "names": [
       "Hearts-powered Jewel"
@@ -5793,7 +5886,6 @@
       "1113"
     ],
     "fusion": true,
-    "hardonly": true,
     "keyword": "Poise",
     "names": [
       "Jolly Plushie"
@@ -5904,7 +5996,8 @@
       "On Clash Win with a Base Attack Skill that inflicts [Combustion] Potency or 'Unique Burn', inflict 2 [Combustion] Potency (2 times per turn per Identity)\n\nOn Clash Win with a Base Attack Skill that inflicts [Combustion] Count, inflict +2 [Combustion] Count (3 times per turn per enemy)\n\nBase Attack Skills that inflict [Combustion] Potency, Count, or 'Unique Burn': each Skill gains Offense Level equal to the number of copies of each Skill(max 3).\n- If a Skill has 3+ copies, gain 2 additional Offense Level."
     ],
     "exclusiveTo": [
-      "1115"
+      "1115",
+      "1125"
     ],
     "keyword": "Burn",
     "names": [
@@ -5919,7 +6012,8 @@
       "On Clash Win with a Base Attack Skill that inflicts [Burst] Potency or Count against an enemy, inflict +3 [Burst] Count (2 times per turn per enemy)\n\nOn Hit: if the enemy does not have [Burst], Coin effects that inflict [Burst] Potency inflict [Burst] Count instead (max 4; 2 times per turn per enemy; for Abnormalities, for each Part)\n\nBase Attack Skills that inflict [Burst] Potency or Count: each Skill gains Offense Level equal to the number of copies of each Skill(max 3).\n- If a Skill has 3+ copies, gain 2 additional Offense Level."
     ],
     "exclusiveTo": [
-      "1115"
+      "1115",
+      "1125"
     ],
     "keyword": "Rupture",
     "names": [
@@ -5934,7 +6028,8 @@
       "Base Attack Skills that inflict [Combustion] Count: deal +20% damage and inflict +1 more [Combustion] Count. On Hit with these Skills against enemies with [Combustion] or 'Unique Burn': inflict 1 [DefenseDown] (2 times per turn per Identity)\n\nIdentities whose all Base Attack Skills inflict [Combustion] Potency, Count, or 'Unique Burn': at Turn Start, gain [AttackUp] equal to the number of surviving turns (except for the turn they join the Encounter; max 5)"
     ],
     "exclusiveTo": [
-      "1115"
+      "1115",
+      "1125"
     ],
     "keyword": "Burn",
     "names": [
@@ -5949,7 +6044,8 @@
       "On Hit with the final Coin against enemies with 15- [Burst] Potency when using a Base Attack Skill that inflicts [Burst] Potency or Count: inflict +3 [Burst] Count (once per turn per Identity)\n\nBase Attack Skills that inflict [Burst] Count: Clash Power +1, deal +20% damage"
     ],
     "exclusiveTo": [
-      "1115"
+      "1115",
+      "1125"
     ],
     "keyword": "Rupture",
     "names": [
@@ -5961,16 +6057,17 @@
   "9776": {
     "affinity": "wrath",
     "descs": [
-      "Turn Start: all enemies(for Abnormalities, all Parts) with 2~7 [Combustion] Count gain 1~2 [Combustion] Count.\n\nWhen enemies take 5 hits from ally Attack Skills(including E.G.O Skills) that inflict [Combustion] Potency, Count, or 'Unique Burn': trigger [Combustion] once, then reduce [Combustion] Count by 1 (2 times per turn per enemy; for Abnormalities, for each Part)"
+      "Turn Start: All enemies (for Abnormalities, all Parts) gain +1~2 [Combustion] Count\n\nWhen enemies take 5 hits from ally Attack Skills(including E.G.O Skills) that inflict [Combustion] Potency, Count, or 'Unique Burn': Trigger [Combustion] once, then reduce [Combustion] Count by 1 (2 times per turn per enemy; for Abnormalities, for each Part)"
     ],
     "exclusiveTo": [
-      "1115"
+      "1115",
+      "1125"
     ],
     "keyword": "Burn",
     "names": [
       "Embers"
     ],
-    "search_desc": "Turn Start: all enemies(for Abnormalities, all Parts) with 2~7 Burn Count gain 1~2 Burn Count.\n\nWhen enemies take 5 hits from ally Attack Skills(including E.G.O Skills) that inflict Burn Potency, Count, or 'Unique Burn': trigger Burn once, then reduce Burn Count by 1 (2 times per turn per enemy; for Abnormalities, for each Part)",
+    "search_desc": "Turn Start: All enemies (for Abnormalities, all Parts) gain +1~2 Burn Count\n\nWhen enemies take 5 hits from ally Attack Skills(including E.G.O Skills) that inflict Burn Potency, Count, or 'Unique Burn': Trigger Burn once, then reduce Burn Count by 1 (2 times per turn per enemy; for Abnormalities, for each Part)",
     "tier": "3"
   },
   "9777": {
@@ -5979,7 +6076,8 @@
       "Every time [Burst] activates 3 times on enemies with [Burst] due to getting hit by allies' Attack Skills(including E.G.O Skills) that inflict [Burst] Potency or Count, inflict 2 [AttackDown] on the said enemy next turn (3 times per turn per enemy; for Abnormalities, for each Part)\n\nOn Kill with a Base Attack Skill that inflicts [Burst] Count: inflict the remaining [Burst] Count on the defeated enemy on a random enemy next turn (2 times per turn)"
     ],
     "exclusiveTo": [
-      "1115"
+      "1115",
+      "1125"
     ],
     "keyword": "Rupture",
     "names": [
@@ -5994,7 +6092,8 @@
       "Limbus Company Identities: Skill 2 gains Offense Level +1 and deals +15% damage; Skill 3 gains Offense Level +2 and deals +30% damage\n\nIf there are 4+ Limbus Company Identities among the Backup Units, 2 random allies gain 2 [AttackUp] at Turn Start"
     ],
     "exclusiveTo": [
-      "1115"
+      "1115",
+      "1125"
     ],
     "ingredientOf": [
       "9780"
@@ -6012,7 +6111,8 @@
       "During the Encounter, when an ally retreats or is defeated, randomly apply 3 [AttackUp] between all Identities at next Turn Start. (2 times per turn)\n- When 3+ allies retreat or are defeated, randomly apply 6 [AttackUp] between all Identities at next Turn Start instead. (2 times per turn)\n\nTurn Start: 3 allies with the lowest SP heals 15, 10, and 5 SP each (does not stack; the numbers apply in the ascending order; does not activate if the affected units are Panicked or Corroded)"
     ],
     "exclusiveTo": [
-      "1115"
+      "1115",
+      "1125"
     ],
     "ingredientOf": [
       "9780"
@@ -6030,7 +6130,8 @@
       "Limbus Company Identities: Skill 2 gains Offense Level +2 and deals +20% damage; Skill 3 gains Offense Level +3 and deals +40% damage\n\nTurn Start: a random ally gains 2 [AttackUp] for every Backup or defeated Limbus Company Identities.\n\nDuring the Encounter, when an ally retreats or is defeated, randomly apply 3 [AttackUp] between all Identities at next Turn Start. (distributed equally, 2 times per turn)\n- When 3+ allies retreat or are defeated, randomly apply 6 [AttackUp] between all Identities at next Turn Start instead. (2 times per turn)\n- When 3+ Limbus Company Identities retreat or are defeated, randomly apply 8 [AttackUp] between all Identities instead."
     ],
     "exclusiveTo": [
-      "1115"
+      "1115",
+      "1125"
     ],
     "fusion": true,
     "keyword": "Keywordless",
@@ -6092,7 +6193,6 @@
       "1116"
     ],
     "fusion": true,
-    "hardonly": true,
     "keyword": "Bleed",
     "names": [
       "Resplendence"
@@ -6116,7 +6216,6 @@
       "1116"
     ],
     "fusion": true,
-    "hardonly": true,
     "keyword": "Slash",
     "names": [
       "Cultivation"
@@ -7052,7 +7151,6 @@
       "1123"
     ],
     "fusion": true,
-    "hardonly": true,
     "keyword": "Charge",
     "names": [
       "Cleanup Agent Gear Set C"

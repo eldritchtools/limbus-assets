@@ -788,6 +788,11 @@
     "desc": "- Max Value : 6\n- Attack Skills that consumed Charge Count deal +2.5% damage for every value on self (max 15%)\n- If the affected unit is a W Corp. employee., deal +5% damage for every value instead (max 30%)\n- Turn End: this effect expires",
     "name": "Load"
   },
+  "ChargedSting": {
+    "buffType": "Negative",
+    "desc": "- For every Stack, take +4% damage from Skills that gain or consume Charge Count (including 'Unique Charge') (max 20%)\n· For Envy Skills, strengthen this effect and take +8% damage for every Stack instead (max 40%)\n- Max Stack: 5\n- Lose 1 Stack at Attack End or Turn End after being hit by Skills that fulfill the effect-triggering conditions above (excluding Base Attack Skills that inflict Charged Sting)",
+    "name": "Charged Sting"
+  },
   "ChasingArcana": {
     "buffType": "Positive",
     "desc": "- Max Stack: 3\n- Gain 1 at Turn Start\n- At 3 Stack, gains 20 Speed and uses ARCANA SLAVE next turn",
@@ -1524,6 +1529,11 @@
     "desc": "- On Turn End:\n· Base Stack: 1\n· The unit connected to this unit heals 25% HP and loses 20 SP\n· Gain 1 Stack\n· At 3 Stack, use a self-detonation Skill. If this unit is killed by self-detonation, inflict the caged character with 3 Hollow Obedience next turn",
     "name": "Explosive Amusement"
   },
+  "FaustFlameMothEmber": {
+    "buffType": "Negative",
+    "desc": "- Max Potency: 3\n- Max Count: 6\n- If this unit has Burn, lose 1 Embers Count when hit by a Skill that inflicts Burn Potency, Count, or 'Unique Burn' (including E.G.O Skills)\n\n- If this unit does not have Burn, reset Embers Count to 6 when hit (independent of Skills that inflict Burn)\n\n- At 0 Embers Count, activate the following effects:\n· Activate Burn on self once and lose 1 Burn Count\n· Lose 1 Embers Potency\n· If this unit has 1+ remaining Embers Potency, reset Embers Count to 6",
+    "name": "Embers"
+  },
   "FellBulletMarkReplica": {
     "buffType": "Negative",
     "desc": "- Tageted by Gubo\n- Expires at Turn End",
@@ -1879,6 +1889,11 @@
     "buffType": "Positive",
     "desc": "- Max Stack: 1\n- Gain 3 Offense Levels\n- Lose 6 Defense Levels\n- All Skills gain +1 Atk Weight\n- All Skills become Unbreakable Coins\n- Inflict +1 more Sinking Potency and Count",
     "name": "Helpless Tears"
+  },
+  "HighVoltageExoshell": {
+    "buffType": "Positive",
+    "desc": "- Gain (Stack x 5) Shield\n- If this unit loses (Stack x 5) Shield, lose 1 Stack\n- Turn End: Gain Charge Count equal to Stack; both High-voltage Exoskeleton and Shield gained from its effect expire\n- Max Stack: 20",
+    "name": "High-voltage Exoskeleton"
   },
   "HitDamageDown": {
     "buffType": "Negative",
@@ -3525,6 +3540,11 @@
     "desc": "- In a Clash with an enemy, Clash Power -5\n- Combat Start:\n· If this unit equipped an Attack Skill, deal -50% damage against Lei Heng with Attack Skills\n· If this unit equipped a Defense Skill, take -75% damage from Lei Heng\n- If this unit wins a Clash against Lei Heng while under this effect, gain 3 of the least-owned E.G.O Resources\n- Expires at Turn End; this unit heals 10 SP",
     "name": "Prey"
   },
+  "ProtectStance": {
+    "buffType": "Positive",
+    "desc": "Max Stack: 2\nThis effect does not compound in potency; stacking it only extends its duration\nReduced by 1 at Turn End\nWhen a unit gains this effect, gain the following effects next turn:\n- Gain 2 Protection\n- Gain 5 Aggro to each of this unit's Slots",
+    "name": "Protective Stance"
+  },
   "ProtectStanceRyoshu": {
     "buffType": "Positive",
     "desc": "- Max Stack: 2\n- Take (Stack x 10)% less damage\n- Turn Start: Gain Shield by Poise on self (max 20)\n- Turn End: Gain 3 Poise Potency and +1 Poise Count; this unit's leftmost Skill Slot gains +5 Aggro next turn\n- Turn End: Lose 1 Stack",
@@ -4032,6 +4052,12 @@
   "SelfCharge": {
     "buffType": "Neutral",
     "desc": "Electric currents seem to flow around its body.\nAfter the unit faces death, as long as it has Self-charge, its HP is fixed at 1 until it is fully consumed. (Max 20)",
+    "name": "Self-charge"
+  },
+  "SelfChargeAlly": {
+    "buffType": "Positive",
+    "desc": "- Final Power +2\n- Gain Charge Count equal to Stack lost\n- Lose Stack at:\n· Attack End of Skills that hit this unit (lose 1 Stack)\n· Attack End (lose 3 Stack)\n· Turn End (lose 5 Stack)\n- Max Stack: 20\n- This unit's HP cannot drop below 1 before this effect expires",
+    "imageOverride": "Self-charge",
     "name": "Self-charge"
   },
   "SeniorCianjing": {

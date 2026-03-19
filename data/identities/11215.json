@@ -1,0 +1,615 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1121502",
+        "1121503"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1121502",
+        "1121503",
+        "1121501"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1121502",
+        "1121503",
+        "1121511"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "other": [
+      "He gains Coin Power at 3+ and 5+ {status:Charge} Potency. He also gets speed and {status:SuperCoin} upgrades on his S2 and S3 at 3+ Potency.",
+      "He can consume 4 HP or shields instead of 2 {status:Charge} Count when triggering the passive from {ego:21204}.",
+      "Any {status:ChargeForceField} he gets is immediately upgraded to {status:HighVoltageExoshell} which basically does the same thing a the empowered clause of the former (for W corp ids)."
+    ],
+    "usage": [
+      "Provides {status:Charge} Count to allies deployed earlier than him with {keyword:Gloom} or {keyword:Envy} Res through his passive. If he's first deployed, he gains it himself instead. At 0-2 Potency and 12+ Count, he can also pass some of his Count to allies.",
+      "His S2 and S3 apply {status:PhotoElectricity} providing even more {status:Charge} Count to allies and his S3 applies {status:ChargedSting} to enemies increasing damage from {status:Charge} skills. Doubled if the skill is also {keyword:Envy}.",
+      "On death, he ignores it and gains {status:SelfChargeAlly} instead based on his {status:Charge} Potency. It's reduced by being attacked, by attacking, and at the end of every turn. He can't die until it runs out. He also gains +2 final power during this time."
+    ]
+  },
+  "passiveData": {
+    "1121501": {
+      "desc": "Combat Start: Gain +5 [Charge] Count (once per Encounter)\n\nCombat End: At more than 12 [Charge] Count, consume excess [Charge] Count up to 8 and apply +(half of [Charge] Count consumed due to this effect) [Charge] Count on an ally (min 1, rounded down)\n- This effect prioritizes the ally with the lowest [Charge] Count among allies with earlier Deployment order than this unit\n- If there are no allies with earlier Deployment order than this unit on the battlefield, or if this unit has 3+ [Charge], deactivate this effect\n\nAt 3+ Gloom or Envy Reson., apply +2 [Charge] Count next turn on allies with earlier Deployment order than this unit\n- Applies on (Higher Reson. between Gloom and Envy - 2) allies, in Deployment order (max 3 allies)\n- At 3+ [Charge], apply +4 [Charge] Count on allies instead\n- If there are no allies with earlier Deployment order than this unit on the battlefield, gain +4 [Charge] Count instead",
+      "name": "Take the Lead. I'll Provide You Support."
+    },
+    "1121502": {
+      "desc": "Gain 1 [Charge] every time this unit consumes 10 cumulative [Charge] Count in this Encounter\nAny [ChargeForceField] this unit gains is converted to [HighVoltageExoshell]\n\nAt 3+ [Charge] on self, Min & Max Speed +1\n\nIn this Encounter, when this unit takes damage that brings its HP down to 0, gain [SelfChargeAlly] equal to (5 + [Charge] on self x 3) (max 20, once per Encounter)",
+      "name": "Undying Persistence"
+    },
+    "1121503": {
+      "desc": "Turn Start: If there are 3+ allies wearing E.G.O Gear including this unit, all relevant allies gain 1 [AttackUp]\n\nIf this unit has 12 or less [Charge] Count when consuming [Charge] Count due to AEDD Gregor's E.G.O Passive effect:\nOn Heads Hit, instead of consuming 2 [Charge] Count, this unit consumes 4 Shield or HP to activate the E.G.O Passive effect\n- This effect triggers only when this unit is at 25%+ HP",
+      "name": "Alternating Discharge Support"
+    },
+    "1121511": {
+      "desc": "Combat Start: Gain +10 [Charge] Count (once per Encounter)\n\nCombat End: At more than 12 [Charge] Count, consume excess [Charge] Count up to 8 and apply +(half of [Charge] Count consumed due to this effect) [Charge] Count on an ally (rounded up)\n- This effect prioritizes the ally with the lowest [Charge] Count among allies with earlier Deployment order than this unit\n- If there are no allies with earlier Deployment order than this unit on the battlefield, or if this unit has 3+ [Charge], deactivate this effect\n\nAt 2+ Gloom or Envy Reson., apply +2 [Charge] Count next turn on allies with earlier Deployment order than this unit\n- Applies on (Higher Reson. between Gloom and Envy - 1) allies, in Deployment order (max 3 allies)\n- At 3+ [Charge], apply +4 [Charge] Count on allies instead\n- If there are no allies with earlier Deployment order than this unit on the battlefield, gain +4 [Charge] Count instead",
+      "name": "Take the Lead. I'll Provide You Support."
+    },
+    "1121521": {
+      "desc": "Turn End: 2 allies with the earliest Deployment order each heal HP equal to (the sum of [Charge] Count and 'Unique Charge' consumed by each of their own Attack Skills this turn, respectively) (max 10)",
+      "name": "Defibrillation"
+    },
+    "1121531": {
+      "desc": "Turn End: 3 allies with the earliest Deployment order each heal HP equal to (the sum of [Charge] Count and 'Unique Charge' consumed by each of their own Attack Skills this turn, respectively) (max 10)",
+      "name": "Defibrillation"
+    }
+  },
+  "skills": {
+    "1121501": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Charge] Count",
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count",
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 3+ [Charge], Coin Power +1",
+          "levelCorrection": 2,
+          "name": "Electric Release",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count",
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count",
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 3+ [Charge], Coin Power +1\n[WhenUse] At 5+ [Charge] Count, Clash Power +1",
+          "name": "Electric Release",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count",
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count",
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 3+ [Charge], Coin Power +1\n[WhenUse] At 5+ [Charge] Count, Clash Power +1",
+          "name": "Electric Release",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "desc": "[WhenUse] Deal +6% damage for every [Charge] on self (max 30%)\n[WhenUse] At 3+/5+ [Charge], Coin Power +1/+2\n[WhenUse] Clash Power +1 for every 5 [Charge] Count on self (max 2)\n[WhenUse] At less than 10 [Charge], gain +2 [Charge] Count",
+          "name": "Electric Release",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1121502": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "base",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [Charge] Count",
+                "[OnSucceedAttack] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +([Charge]) [Charge] Count (max 3)",
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [PhotoElectricity]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 3+ [Charge], Coin Power +1\n[WhenUse] At 10+ [Charge] Count, consume 5 [Charge] Count to gain Base Power +1",
+          "levelCorrection": 2,
+          "name": "DC Inversion",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "base",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [Charge] Count",
+                "[OnSucceedAttack] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +([Charge] + 1) [Charge] Count (max 4)",
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [PhotoElectricity]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 3+ [Charge], Coin Power +1\n- At 3+ [Charge], convert the final Coin into [SuperCoin]\n[WhenUse] At 10+ [Charge] Count, consume 5 [Charge] Count to gain Base Power +1",
+          "name": "DC Inversion",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [Charge] Count",
+                "[OnSucceedAttack] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +([Charge] + 1) [Charge] Count (max 4)",
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [PhotoElectricity]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 3+ [Charge], Coin Power +1\n- At 3+ [Charge], convert the final Coin into [SuperCoin]\n[WhenUse] At 10+ [Charge] Count, consume 5 [Charge] Count to gain Base Power +1",
+          "name": "DC Inversion",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "base",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +5 [Charge] Count",
+                "[OnSucceedAttack] Inflict +2 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +([Charge] + 2) [Charge] Count (max 5)",
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [PhotoElectricity]\n- At 3+ [Charge], inflict 3 [PhotoElectricity] instead"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Deal +3% damage for every [Charge] on self (max 15%)\n[WhenUse] At 3+/5+ [Charge], Coin Power +1/+2\n- At 3+ [Charge], convert the final Coin into [SuperCoin]\n[WhenUse] At 10+ [Charge] Count, consume 5 [Charge] Count to gain Base Power +1",
+          "name": "DC Inversion",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1121503": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst] and +2 [Burst] Count",
+                "[OnSucceedAttack] Inflict 2 [PhotoElectricity]\n- At 3+ [Charge], inflict 3 [PhotoElectricity] instead",
+                "[OnSucceedAttack] Inflict [ChargedSting] equal to [Charge] next turn (max 3)\n- At 5+ [Charge], inflict 3 [ChargedSting] this turn and next turn instead (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] Gain [HighVoltageExoshell] equal to [Charge] (max 3, once per turn)\n[BeforeUse] At 3+ [Charge], activate as 'Maximum Output - Ultra High-voltage Current Discharge' (once per turn)\n[WhenUse] At 3+ [Charge], Coin Power +1\n- At 3+ [Charge], convert the final Coin into [SuperCoin]\n[WhenUse] At 10+ [Charge] Count, consume 10 [Charge] Count to gain Coin Power +2",
+          "levelCorrection": 3,
+          "name": "High-voltage Current Discharge",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Burst] and +2 [Burst] Count",
+                "[OnSucceedAttack] Inflict 2 [PhotoElectricity]\n- At 3+ [Charge], inflict 3 [PhotoElectricity] instead",
+                "[OnSucceedAttack] Inflict [ChargedSting] equal to [Charge] next turn (max 5)\n- At 5+ [Charge], inflict 5 [ChargedSting] this turn and next turn instead (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] Gain [HighVoltageExoshell] equal to [Charge] (max 5, once per turn)\n[BeforeUse] At 3+ [Charge], activate as 'Maximum Output - Ultra High-voltage Current Discharge' (once per turn)\n[WhenUse] At 3+/5+ [Charge], Coin Power +1/+2\n- At 3+ [Charge], convert the final Coin into [SuperCoin]\n[WhenUse] At 10+ [Charge] Count, consume 10 [Charge] Count to gain Coin Power +2",
+          "name": "High-voltage Current Discharge",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1121504": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[StartBattle] Gain 1 [HighVoltageExoshell] (once per turn)\n[WhenUse] Gain +2 [Charge] Count (2 times per turn)\n[WhenUse] Gain +5 [Aggro] to this Skill Slot next turn",
+          "levelCorrection": 2,
+          "name": "This E.G.O Gift's Defensive Capability is Uniquely Superior",
+          "uptie": 1
+        },
+        {
+          "affinity": "envy",
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 5
+            }
+          ],
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] Gain 2 [HighVoltageExoshell] (once per turn)\n[WhenUse] Gain Coin Power equal to [Charge] on self (max 5)\n[WhenUse] Gain +2 [Charge] Count (2 times per turn)\n[WhenUse] Gain +5 [Aggro] to this Skill Slot next turn",
+          "name": "This E.G.O Gift's Defensive Capability is Uniquely Superior",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1121505": {
+      "bonusNotes": "Assumes a single target",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 3,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "base",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Burst] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [PhotoElectricity]",
+                "[OnSucceedAttack] Inflict [ChargedSting] equal to [Charge] next turn (max 3)\n- At 5+ [Charge], inflict 3 [ChargedSting] this turn and next turn instead (once per turn)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 10+ [Charge] Count, consume 10 [Charge] Count to gain Base Power +1 and Coin Power +2",
+          "levelCorrection": 4,
+          "name": "Maximum Output - Ultra High-voltage Current Discharge",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1
+            },
+            {
+              "type": "base",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Burst] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Burst]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [PhotoElectricity]",
+                "[OnSucceedAttack] Inflict [ChargedSting] equal to [Charge] next turn (max 5)\n- At 5+ [Charge], inflict 5 [ChargedSting] this turn and next turn instead (once per turn)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "Deal +50% damage for every excess Atk Weight beyond the number of actual targets (in Focused Encounters, the Part)\n[WhenUse] At 5+ [Charge], Coin Power +1\n[WhenUse] At 10+ [Charge] Count, consume 10 [Charge] Count to gain Base Power +1 and Coin Power +2\n- If there are any remaining [Charge] Count, consume up to 10 [Charge] Count to deal +([Charge] Count additionally consumed due to this effect x 1.5)% damage (max 15%)",
+          "name": "Maximum Output - Ultra High-voltage Current Discharge",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1121521"
+      ],
+      "uptie": 3
+    },
+    {
+      "passives": [
+        "1121531"
+      ],
+      "uptie": 4
+    }
+  ]
+}
