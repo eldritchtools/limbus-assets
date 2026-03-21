@@ -38,6 +38,19 @@
   },
   "passiveData": {
     "1121501": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 2
+          },
+          {
+            "type": "envy",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
       "desc": "Combat Start: Gain +5 [Charge] Count (once per Encounter)\n\nCombat End: At more than 12 [Charge] Count, consume excess [Charge] Count up to 8 and apply +(half of [Charge] Count consumed due to this effect) [Charge] Count on an ally (min 1, rounded down)\n- This effect prioritizes the ally with the lowest [Charge] Count among allies with earlier Deployment order than this unit\n- If there are no allies with earlier Deployment order than this unit on the battlefield, or if this unit has 3+ [Charge], deactivate this effect\n\nAt 3+ Gloom or Envy Reson., apply +2 [Charge] Count next turn on allies with earlier Deployment order than this unit\n- Applies on (Higher Reson. between Gloom and Envy - 2) allies, in Deployment order (max 3 allies)\n- At 3+ [Charge], apply +4 [Charge] Count on allies instead\n- If there are no allies with earlier Deployment order than this unit on the battlefield, gain +4 [Charge] Count instead",
       "name": "Take the Lead. I'll Provide You Support."
     },
@@ -50,14 +63,45 @@
       "name": "Alternating Discharge Support"
     },
     "1121511": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "gloom",
+            "value": 2
+          },
+          {
+            "type": "envy",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
       "desc": "Combat Start: Gain +10 [Charge] Count (once per Encounter)\n\nCombat End: At more than 12 [Charge] Count, consume excess [Charge] Count up to 8 and apply +(half of [Charge] Count consumed due to this effect) [Charge] Count on an ally (rounded up)\n- This effect prioritizes the ally with the lowest [Charge] Count among allies with earlier Deployment order than this unit\n- If there are no allies with earlier Deployment order than this unit on the battlefield, or if this unit has 3+ [Charge], deactivate this effect\n\nAt 2+ Gloom or Envy Reson., apply +2 [Charge] Count next turn on allies with earlier Deployment order than this unit\n- Applies on (Higher Reson. between Gloom and Envy - 1) allies, in Deployment order (max 3 allies)\n- At 3+ [Charge], apply +4 [Charge] Count on allies instead\n- If there are no allies with earlier Deployment order than this unit on the battlefield, gain +4 [Charge] Count instead",
       "name": "Take the Lead. I'll Provide You Support."
     },
     "1121521": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 4
+          }
+        ],
+        "type": "res"
+      },
       "desc": "Turn End: 2 allies with the earliest Deployment order each heal HP equal to (the sum of [Charge] Count and 'Unique Charge' consumed by each of their own Attack Skills this turn, respectively) (max 10)",
       "name": "Defibrillation"
     },
     "1121531": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 4
+          }
+        ],
+        "type": "res"
+      },
       "desc": "Turn End: 3 allies with the earliest Deployment order each heal HP equal to (the sum of [Charge] Count and 'Unique Charge' consumed by each of their own Attack Skills this turn, respectively) (max 10)",
       "name": "Defibrillation"
     }
