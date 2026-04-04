@@ -1,0 +1,1006 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1021504",
+        "1021503"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1021504",
+        "1021503",
+        "1021501"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1021504",
+        "1021503",
+        "1021511"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "usage": [
+      "Swaps from {status:IronMaidenPersonality} mode to {status:SilverOpportunity} mode after getting enough Unique {keyword:Charge} ({status:ChargeBodyArt}) Potency. The former has more clash power with a clashable guard and the latter has more speed and damage with an evade that gives {status:SupportProtect}. Skills are largely the same otherwise.",
+      "Gains {status:ChargeBodyArt} Count when doing damage and killing targets on top of the amount gained from her S2. Her S2 and S3 consumes Count for power, damage, and {status:SuperCoin}s. Her S3-2 can also gain atk weight.",
+      "Gains additional power, damage, and {keyword:Bleed} application with {status:ChargeBodyArt} Potency due to gaining {status:FasciaPersonality} at 2+ Potency."
+    ]
+  },
+  "passiveData": {
+    "1021501": {
+      "desc": "Double the amount of Speed, Clash Power, damage buff gained from [MelodyBodyArt]\n\nOn Hit, if the Attack Skill inflicted a negative effect, heal 4 SP at Attack End (2 times per turn)",
+      "name": "Inspired by Critique"
+    },
+    "1021503": {
+      "desc": "Upon entering the Encounter for the first time, gain [IronMaidenPersonality]\n\nTurn End: If this unit has [FasciaPersonality], this unit loses [IronMaidenPersonality] and gains [SilverOpportunity] (once per Encounter)\n- When Staggered, recover from Stagger (excluding forced Staggers)",
+      "name": "Armor of Protection and Repression"
+    },
+    "1021504": {
+      "desc": "Upon entering the Encounter for the first time, gain +(# of The Ring allies on the field x 2) [ChargeBodyArt] Count (max 10)\n\nSkill End: If the Skill dealt HP or Shield damage, gain +5 [ChargeBodyArt] Count\n- If target is killed, gain +3 additional [ChargeBodyArt] Count\n\nGain 1 [ChargeBodyArt] every time this unit consumes 10 cumulative [ChargeBodyArt] Count in this Encounter\n- If the above effect brings this unit's [ChargeBodyArt] Potency to 2 or higher, gain [FasciaPersonality]\n\nBase Attack Skills and Clashable Counter Skill count as Skills that gain [Charge] Count",
+      "name": "Fascia, My Precious Artwork"
+    },
+    "1021511": {
+      "desc": "Double the amount of Speed, Clash Power, damage buff gained from [MelodyBodyArt]\n\nOn Hit, if the Attack Skill inflicted a negative effect, heal 4 SP at Attack End (2 times per turn)\n- If this unit's SP is at max, gain 1 [SlashDamageUp] next turn when this unit heals SP with this effect (once per turn)",
+      "name": "Inspired by Critique"
+    },
+    "1021521": {
+      "desc": "When hit, allies that equipped Defense Skill on their Slots this turn inflict 4 [Laceration] on the attacker (2 times per turn)\n- If the attacker already has [Laceration], inflict +2 [Laceration] Count instead",
+      "name": "Iron Maiden - Spikes"
+    }
+  },
+  "skills": {
+    "1021501": {
+      "bonusNotes": "Ignores bonuses from Artwork: Fascia.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [DefenseDown] next turn (once per turn)",
+                "[OnSucceedAttack] Gain 2 [DefenseUp] next turn (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[IronMaidenPersonality] exclusive Skill",
+          "levelCorrection": 1,
+          "name": "Butcher - Ribs",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            },
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [DefenseDown] next turn (once per turn)",
+                "[OnSucceedAttack] Gain 2 [DefenseUp] next turn (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[IronMaidenPersonality] exclusive Skill\n[WhenUse] Clash Power +1 for every type of negative effect on target (max 2)\n[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 2)\n",
+          "name": "Butcher - Ribs",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "[IronMaidenPersonality] exclusive Skill\n[WhenUse] Clash Power +1 for every type of negative effect on target (max 2)\n[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 2)\n",
+          "name": "Butcher - Ribs",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            },
+            {
+              "type": "final",
+              "value": 3
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [DefenseDown] next turn (once per turn)",
+                "[OnSucceedAttack] Gain 2 [DefenseUp] next turn (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[IronMaidenPersonality] exclusive Skill\n[WhenUse] Clash Power +1 for every type of negative effect on target (max 2)\n[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 3)\n",
+          "name": "Butcher - Ribs",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1021502": {
+      "bonusNotes": "Ignores bonuses from Artwork: Fascia.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn (once per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [ChargeBodyArt] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[IronMaidenPersonality] exclusive Skill\n[WhenUse] At 10+ [ChargeBodyArt] Count, consume 5 [ChargeBodyArt] Count to gain the following effects:\n- Clash Power +1\n- Convert the final Coin on this Skill to [SuperCoin]",
+          "levelCorrection": 2,
+          "name": "Fascia Hungers",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            },
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn (once per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [ChargeBodyArt] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[IronMaidenPersonality] exclusive Skill\n[WhenUse] Clash Power +1 for every type of negative effect on target (max 2)\n[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 2)\n[WhenUse] At 10+ [ChargeBodyArt] Count, consume 5 [ChargeBodyArt] Count to gain the following effects:\n- Clash Power +1\n- Convert the final Coin on this Skill to [SuperCoin]",
+          "name": "Fascia Hungers",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "[IronMaidenPersonality] exclusive Skill\n[WhenUse] Clash Power +1 for every type of negative effect on target (max 2)\n[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 2)\n[WhenUse] At 10+ [ChargeBodyArt] Count, consume 5 [ChargeBodyArt] Count to gain the following effects:\n- Clash Power +1\n- Convert the final Coin on this Skill to [SuperCoin]",
+          "name": "Fascia Hungers",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            },
+            {
+              "type": "final",
+              "value": 4
+            },
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn (once per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [ChargeBodyArt] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[IronMaidenPersonality] exclusive Skill\n[WhenUse] Clash Power +1 for every type of negative effect on target (max 2)\n[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 4)\n[WhenUse] At 10+ [ChargeBodyArt] Count, consume 5 [ChargeBodyArt] Count to gain the following effects:\n- Clash Power +1\n- Convert the final Coin on this Skill to [SuperCoin]",
+          "name": "Fascia Hungers",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1021503": {
+      "bonusNotes": "Ignores bonuses from Artwork: Fascia.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.6
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn (once per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [AttackDmgDown] next turn (once per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "Deal +5% damage for every type of negative effect on target (max 30%)",
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[IronMaidenPersonality] exclusive Skill\n[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 2)\n[WhenUse] At 10+ [ChargeBodyArt] Count, consume up to 20 [ChargeBodyArt] Count to gain the following effects:\n- Final Power +2\n- Deal +3% damage for every [ChargeBodyArt] Count consumed",
+          "levelCorrection": 3,
+          "name": "Repressed Flesh",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 3
+            },
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.6
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn (once per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [AttackDmgDown] next turn (once per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "Deal +5% damage for every type of negative effect on target (max 30%)",
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[IronMaidenPersonality] exclusive Skill\n[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 3)\n[WhenUse] At 10+ [ChargeBodyArt] Count, consume up to 20 [ChargeBodyArt] Count to gain the following effects:\n- Final Power +2\n- Deal +3% damage for every [ChargeBodyArt] Count consumed",
+          "name": "Repressed Flesh",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1021504": {
+      "bonusNotes": "Ignores bonuses from Artwork: Fascia.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "add",
+                "type": "pierce"
+              },
+              "type": "damage",
+              "value": 20
+            }
+          ],
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[CanDuelGuard]\n[IronMaidenPersonality] exclusive Skill\n[WinDuel] Inflict +1 [Laceration] Count on the attacker (2 times per turn)\n[WinDuel] Deal Pierce damage equal to [Laceration] Potency on the attacker (max damage: 20)",
+          "levelCorrection": 5,
+          "name": "Exhibition Arrangements",
+          "uptie": 1
+        },
+        {
+          "affinity": "lust",
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "add",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 30
+                }
+              ],
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CanDuelGuard]\n[IronMaidenPersonality] exclusive Skill\n[WinDuel] Inflict +2 [Laceration] Count on the attacker (2 times per turn)\n[WinDuel] Deal Pierce damage equal to ([Laceration] Potency on the attacker x 2) (max damage: 30)",
+          "name": "Exhibition Arrangements",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1021505": {
+      "bonusNotes": "Ignores bonuses from Artwork: Fascia.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [DefenseDown] next turn (once per turn)",
+                "[OnSucceedAttack] Gain 2 [DefenseUp] next turn (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[SilverOpportunity] exclusive Skill",
+          "levelCorrection": 3,
+          "name": "Butcher - Ribs",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            },
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [DefenseDown] next turn (once per turn)",
+                "[OnSucceedAttack] Gain 2 [DefenseUp] next turn (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[SilverOpportunity] exclusive Skill\nDeal +5% damage for every type of negative effect on target (max 20%)\n[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 2)",
+          "name": "Butcher - Ribs",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "[SilverOpportunity] exclusive Skill\nDeal +5% damage for every type of negative effect on target (max 20%)\n[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 2)",
+          "name": "Butcher - Ribs",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            },
+            {
+              "type": "final",
+              "value": 3
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [DefenseDown] next turn (once per turn)",
+                "[OnSucceedAttack] Gain 2 [DefenseUp] next turn (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[SilverOpportunity] exclusive Skill\nDeal +10% damage for every type of negative effect on target (max 30%)\n[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 3)",
+          "name": "Butcher - Ribs",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1021506": {
+      "bonusNotes": "Ignores bonuses from Artwork: Fascia.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn (once per turn)",
+                "[OnSucceedAttack] Gain 1 [Agility] next turn (once per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [ChargeBodyArt] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[SilverOpportunity] exclusive Skill\n[WhenUse] At 10+ [ChargeBodyArt] Count, consume 5 [ChargeBodyArt] Count to gain the following effects:\n- Clash Power +1\n- Convert the final Coin on this Skill to [SuperCoin]",
+          "levelCorrection": 4,
+          "name": "Time for Your Meal, Fascia",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            },
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn (once per turn)",
+                "[OnSucceedAttack] Gain 1 [Agility] next turn (once per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [ChargeBodyArt] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[SilverOpportunity] exclusive Skill\nDeal +5% damage for every type of negative effect on target (max 20%)\n[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 2)\n[WhenUse] At 10+ [ChargeBodyArt] Count, consume 5 [ChargeBodyArt] Count to gain the following effects:\n- Clash Power +1\n- Convert the final Coin on this Skill to [SuperCoin]",
+          "name": "Time for Your Meal, Fascia",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "[SilverOpportunity] exclusive Skill\nDeal +5% damage for every type of negative effect on target (max 20%)\n[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 2)\n[WhenUse] At 10+ [ChargeBodyArt] Count, consume 5 [ChargeBodyArt] Count to gain the following effects:\n- Clash Power +1\n- Convert the final Coin on this Skill to [SuperCoin]",
+          "name": "Time for Your Meal, Fascia",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            },
+            {
+              "type": "final",
+              "value": 4
+            },
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn (once per turn)",
+                "[OnSucceedAttack] Gain 1 [Agility] next turn (once per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [ChargeBodyArt] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[SilverOpportunity] exclusive Skill\nDeal +10% damage for every type of negative effect on target (max 30%)\n[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 4)\n[WhenUse] At 10+ [ChargeBodyArt] Count, consume 5 [ChargeBodyArt] Count to gain the following effects:\n- Clash Power +1\n- Convert the final Coin on this Skill to [SuperCoin]",
+          "name": "Time for Your Meal, Fascia",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1021507": {
+      "bonusNotes": "Ignores bonuses from Artwork: Fascia.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.6
+            },
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn (once per turn)",
+                "[OnSucceedAttack] Gain 1 [Agility] next turn (once per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [AttackDmgDown] next turn (once per turn)",
+                "[OnSucceedAttack] Gain 1 [SlashDamageUp] next turn (once per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "Deal +5% damage for every type of negative effect on target (max 30%)",
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[SilverOpportunity] exclusive Skill\n[WhenUse] Deal +30% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Part)\n[WhenUse] Final Power +1 for every 4 [Laceration] on the main target (max 2)\n[WhenUse] At 10+ [ChargeBodyArt] Count, consume up to 20 [ChargeBodyArt] Count and gain the following effects:\n- Final Power +2\n- Deal +1% damage for every [ChargeBodyArt] Count consumed\n- At 3+/5+ [ChargeBodyArt], gain +1/+2 Atk Weight\n- Convert all Coins on this Skill to [SuperCoin]s",
+          "levelCorrection": 5,
+          "name": "Liberation of the Repressed Flesh",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.6
+            },
+            {
+              "type": "final",
+              "value": 3
+            },
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn (once per turn)",
+                "[OnSucceedAttack] Gain 1 [Agility] next turn (once per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [AttackDmgDown] next turn (once per turn)",
+                "[OnSucceedAttack] Gain 1 [SlashDamageUp] next turn (once per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "Deal +5% damage for every type of negative effect on target (max 30%)",
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[SilverOpportunity] exclusive Skill\n[WhenUse] Deal +30% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Part)\n[WhenUse] Final Power +1 for every 4 [Laceration] on the main target (max 3)\n[WhenUse] At 10+ [ChargeBodyArt] Count, consume up to 20 [ChargeBodyArt] Count and gain the following effects:\n- Final Power +2\n- Deal +1% damage for every [ChargeBodyArt] Count consumed\n- At 3+/5+ [ChargeBodyArt], gain +1/+2 Atk Weight\n- Convert all Coins on this Skill to [SuperCoin]s",
+          "name": "Liberation of the Repressed Flesh",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1021508": {
+      "bonusNotes": "Ignores bonuses from Artwork: Fascia.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[SilverOpportunity] exclusive Skill\n[StartBattle] Gain 1 [SupportProtect] (once per turn)\n[OnSucceedEvade] Inflict 1 [Binding] next turn against the attacker (once per turn)",
+          "levelCorrection": 2,
+          "name": "The Exhibition Begins",
+          "uptie": 1
+        },
+        {
+          "affinity": "lust",
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "desc": "[SilverOpportunity] exclusive Skill\n[StartBattle] Gain 1 [SupportProtect] (once per turn)\n[OnSucceedEvade] Inflict 1 [Binding] next turn against the attacker (once per turn)\n[OnSucceedEvade] Gain 1 [Agility] next turn (once per turn)",
+          "name": "The Exhibition Begins",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1021509": {
+      "bonusNotes": "Ignores bonuses from Artwork: Fascia.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\n[SilverOpportunity] exclusive Skill\n[SupportProtect] exclusive Skill\nDeal +5% damage for every type of negative effect on target (max 20%)\n[WhenUse] If target has 6+ [Laceration], Coin Power +1\n[WhenUse] At 10+ [ChargeBodyArt] Count, consume 5 [ChargeBodyArt] Count to gain the following effects:\n- Clash Power +1\n- Convert the final Coin on this Skill to [SuperCoin]",
+          "levelCorrection": 2,
+          "name": "No Acts of Vandalism Allowed.",
+          "uptie": 1
+        },
+        {
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            },
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[DuelCounter]\n[SilverOpportunity] exclusive Skill\n[SupportProtect] exclusive Skill\nDeal +10% damage for every type of negative effect on target (max 30%)\n[WhenUse] Coin Power +1 for every 6 [Laceration] on target (max 2)\n[WhenUse] At 10+ [ChargeBodyArt] Count, consume 5 [ChargeBodyArt] Count to gain the following effects:\n- Clash Power +1\n- Convert the final Coin on this Skill to [SuperCoin]",
+          "name": "No Acts of Vandalism Allowed.",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1021521"
+      ],
+      "uptie": 3
+    }
+  ]
+}

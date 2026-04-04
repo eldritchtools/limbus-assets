@@ -765,7 +765,7 @@
   },
   "CentipedePoison": {
     "buffType": "Negative",
-    "desc": "- Max Stack: 20\n- Turn End: gain (Stack / 4) Defense Level Down next turn (rounded down)\n- Turn End: take Gluttony damage equal to Stack, and halve the Stack (rounded down)\nUpon death, transfers to this unit's ally(for Focused Encounters, a different Part) with none or the least Centipede Venom Stacks.",
+    "desc": "- Max Stack: 20\n- Turn End: Gain (Stack / 4) Defense Level Down next turn (rounded down)\n- Turn End: Take Gluttony damage equal to Stack, and halve the Stack (rounded down)\nUpon death, transfers to this unit's ally (for Focused Encounters, a different Part) that has none or the least Centipede Venom Stacks.",
     "imageOverride": "Centipede Poison",
     "name": "Centipede Venom"
   },
@@ -782,6 +782,15 @@
     ],
     "desc": "Resource used by certain skills for additional effects. Its Count can go up to 20. Count lowers by 1 at the end of each turn.",
     "name": "Charge"
+  },
+  "ChargeBodyArt": {
+    "buffType": "Positive",
+    "categoryKeywordList": [
+      "SIN",
+      "CHARGE"
+    ],
+    "desc": "- Max Count: 20\n- Unique Charge\n- Interacts the same way as normal Charge does to effects that raise or reduce Charge Potency and Count\n- Turn End: Lose 1 Count",
+    "name": "Corpus Ingredient"
   },
   "ChargeForceField": {
     "buffType": "Positive",
@@ -1537,6 +1546,12 @@
     "desc": "- On Turn End:\n· Base Stack: 1\n· The unit connected to this unit heals 25% HP and loses 20 SP\n· Gain 1 Stack\n· At 3 Stack, use a self-detonation Skill. If this unit is killed by self-detonation, inflict the caged character with 3 Hollow Obedience next turn",
     "name": "Explosive Amusement"
   },
+  "FasciaPersonality": {
+    "buffType": "Positive",
+    "desc": "Apply the following effects to this unit's Base Attack Skills and Clashable Counter Skill based on Corpus Ingredient Potency:\n- 1+ : Base Power +1\n- 2+ : If the enemy has Bleed or 'Unique Bleed', deal +10% damage\n- 3+ : Inflict +1 more Bleed Potency and Count\n- 4+ : Base Power +1",
+    "imageOverride": "Artwork Fascia",
+    "name": "Artwork: Fascia"
+  },
   "FaustFlameMothEmber": {
     "buffType": "Negative",
     "desc": "- Max Potency: 3\n- Max Count: 6\n- If this unit has Burn, lose 1 Embers Count when hit by a Skill that inflicts Burn Potency, Count, or 'Unique Burn' (including E.G.O Skills)\n\n- If this unit does not have Burn, reset Embers Count to 6 when hit (independent of Skills that inflict Burn)\n\n- At 0 Embers Count, activate the following effects:\n· Activate Burn on self once and lose 1 Burn Count\n· Lose 1 Embers Potency\n· If this unit has 1+ remaining Embers Potency, reset Embers Count to 6",
@@ -1774,6 +1789,11 @@
     ],
     "desc": "- Base Offense Level +4, Base Defense Level +4",
     "name": "Supernatural, Strength, Chaos, and Spirits"
+  },
+  "GoldenOpportunity": {
+    "buffType": "Neutral",
+    "desc": "- If The House of Spiders: The Ring Apprentice Faust is on the field, gain 2 Protection at Turn Start\n- Turn End: Lose 2 Stack",
+    "name": "Viewing the Tableau"
   },
   "GotACompliment": {
     "buffType": "Positive",
@@ -2265,6 +2285,11 @@
     "desc": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 1.5 times the accumulated damage, and gain 3 Bind next turn.",
     "name": "Interlocking Time"
   },
+  "IronMaidenPersonality": {
+    "buffType": "Neutral",
+    "desc": "- Gain +4 Aggro to the leftmost Slot\n- Turn Start: Gain 1 Protection, 5 Defense Level Up, and Shield HP equal to 5% of this unit's current HP\n- When hit by the last Coin of an attacker, deal Pierce damage equal to 20% of the said Coin's damage and inflict +2 Bleed Count (max once per Skill, 3 times per turn. Max damage per turn: 60)",
+    "name": "Iron Maiden"
+  },
   "Irritation": {
     "buffType": "Positive",
     "desc": "- Turn Start: gain 1 Damage Up and 1 Power Up for every 20% missing HP on self (max 3 each)\n- Inflict +2 more Tremor Potency with this unit's Skills\n- If this unit's Speed is faster than the target's by 3 or more, deal +(Speed difference x 5)% damage (max 20%)\n- Convert the final Coin of 'Triple Slash - Burst' to an Unbreakable Coin\n- This buff changes into Shin (心) - Tiantui Star [天退星] when using a specific pattern",
@@ -2400,6 +2425,12 @@
     "desc": "- Max Stack: 20\n- Turn Start: Gain 2 Shield for every Stack\n- Deal +1% damage on Critical Hit for every Stack",
     "imageOverride": "DicipleLittleFinger",
     "name": "Moonlit Azure Blade"
+  },
+  "LivingSpecimenPersonality": {
+    "buffType": "Negative",
+    "desc": "- Base Stack: 3\n- When this unit gains Bleed from enemy Attack Skills, randomly gain 1 of the following effects next turn and lose 1 Stack of this effect (once per Skill)\n  · 3 Bleed Potency\n  · 1 Bind\n  · 1 Defense Power Down",
+    "imageOverride": "LivingSpecimenTheRings",
+    "name": "Corpus Theater"
   },
   "LivingSpecimenTheRings": {
     "buffType": "Negative",
@@ -3070,6 +3101,17 @@
     "buffType": "Neutral",
     "desc": "- If unit A applies this effect to unit B: Unit B follows up with an Unopposed Attack with the 'Melee Support' Skill against the same enemy that attacked Unit A. Activates at Unit A's Skill End.\n- The Skill used due to the 'Melee Support' effect does not affect Unit B's upcoming Skills list.",
     "name": "Melee Support"
+  },
+  "MelodyBodyArt": {
+    "buffType": "Positive",
+    "desc": "- Min & Max Speed +1\n- Base Attack Skills gain Clash Power +1 and deal +10% damage",
+    "name": "Somatic Frisson-inspiring Melody"
+  },
+  "MelodyBodyArtChebello": {
+    "buffType": "Positive",
+    "desc": "- Min & Max Speed +2\n- Base Attack Skills gain Clash Power +2 and deal +20% damage",
+    "imageOverride": "MelodyBodyArt",
+    "name": "Somatic Frisson-inspiring Melody [Empowered]"
   },
   "MentalSystemResultDecrease_Typo": {
     "buffType": "Neutral",
@@ -4160,6 +4202,11 @@
     "desc": "Attack End: If there are targets without Cold, Black Tears, removes this effect next turn\n\nGain 1 Clash Power Up and 1 Damage Up\nInflict +1 more Cold, Black Tears",
     "name": "Blessing of Despair"
   },
+  "SilverOpportunity": {
+    "buffType": "Positive",
+    "desc": "- Min & Max Speed +2\n- Gain a new set of Base Skills\n- Deal +20% damage with Base Attack Skills to enemies whose Speed is slower than this unit",
+    "name": "The Self Unbound - Flow State"
+  },
   "SingBulletSupport": {
     "buffType": "Positive",
     "desc": "",
@@ -4459,6 +4506,12 @@
     "buffType": "Negative",
     "desc": "- Max Stack: 1\n- Expires at Turn End\n- Take x1.2 damage from Burn (rounded down; except Unique Burn)\n- Take +10% damage from Yi Sang's Wrath and Gloom Base Attack Skills",
     "name": "Shattered World"
+  },
+  "TibiaPersonality": {
+    "buffType": "Positive",
+    "desc": "Apply the following effects to this unit's Base Attack Skills and Clashable Counter Skill based on Corpus Ingredient Potency:\n- 1+ : Base Power +1\n- 2+ : If the enemy has Bleed or 'Unique Bleed', deal +10% damage\n- 3+ : Inflict +1 more Bleed Potency and Count\n- 4+ : Base Power +1\n- 5+ : Base Power +1",
+    "imageOverride": "Artwork Tibia",
+    "name": "Artwork: Tibia"
   },
   "TimeAcceleration": {
     "buffType": "Neutral",
@@ -4955,7 +5008,7 @@
   },
   "YesdragonSelf": {
     "buffType": "Positive",
-    "desc": "Max Stack: 20\n- Gain 1 Stack at Turn End or when hit\n- Gain 1 Offense Level per 5 Stack\n- If the unit with this effect dies, inflict Gluttony damage equal to Stack and inflict 5 Rupture\n- Expires upon death or Retreat",
+    "desc": "Max Stack: 20\n- Gain 1 Stack at Turn End or when hit\n- Gain 1 Offense Level per 5 Stack\n- If the unit that has this effect dies, inflict Gluttony damage equal to Stack and inflict 5 Rupture\n- Expires upon death or Retreat",
     "name": "Flower-burying Pin [埋花針]"
   },
   "YisangParryGubo": {

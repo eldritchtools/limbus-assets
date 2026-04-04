@@ -1196,6 +1196,289 @@
             ]
         }
     ],
+    "Combat": [
+        {
+            "id": "cmb_dmg",
+            "text": "Deal [count]+ Skill damage against an enemy with a single Skill use (Shield HP dmg & dmg dealt On Hit such as Sinking Deluge or Time Moratorium counts; excludes dmg from Keywords and other sources)",
+            "points": [
+                30,
+                40,
+                60,
+                80,
+                100
+            ],
+            "replace": {
+                "count": [
+                    1000,
+                    3000,
+                    5000,
+                    10000,
+                    20000
+                ]
+            },
+            "hardonly": [
+                false,
+                false,
+                false,
+                false,
+                true
+            ],
+            "tips": [
+                {
+                    "type": "text",
+                    "text": "The achievement already tells you the two most straightforward ways to get this achievement: Sinking Deluge and Time Moratorium."
+                },
+                {
+                    "type": "text",
+                    "text": "Time Moratorium: This method is easier but slightly less predictable than the Sinking Deluge method. Your goal is to apply Time Moratorium on an enemy, deal as much damage as possible, then before the next turn ends, burst all the damage dealt with another Time Moratorium. This will deal 130% of the damage you dealt as Sloth damage, which means you need to have dealt over 15385 damage between the first and second Time Moratorium. It's recommended that you use Amplitude Entanglement with any Tremor versions that increase damage dealt (Reverb, Everlasting, Scorch, Hemorrhage) and Bursting as many times as possible during this time. Since the enemy's HP is locked, this method isn't as restrictive with bosses as the Sinking Deluge method, but it's still recommended to get Lunar Memory to boost your damage as much as possible."
+                },
+                {
+                    "type": "showIds",
+                    "ids": [
+                        "10309",
+                        "11113",
+                        "10609",
+                        "10512",
+                        "11013",
+                        "10412",
+                        "11213"
+                    ]
+                },
+                {
+                    "type": "showEGOs",
+                    "EGOs": [
+                        "20206",
+                        "20606"
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Sinking Deluge: Having the enemy at 99/99 Sinking will deal 9801 Gloom damage, meaning you'll need an enemy that's fatal (x2) to gloom or lunar memory, making Deluge deal 19602. The remaining damage can easily be covered by the damage from the skill itself and damage bonuses from gifts. If you're going to use this strategy, avoid bosses that change phases since most of them have mechanics that counter this (Gasharpoon or Timeripper remove their statuses whenever they change phases, Dong Rang Who Denies All limits damage received before his phase change, Sancho ends turns early if she hits certain HP thresholds, etc). The most ideal bosses to do this on are Shock Centipede and Skin Prophet (specifically his candles) since they can't die immediately and are both fatal to Gloom. With Lunar Memory, you can also do this against other bosses that don't die like You Want to Get Beat? Hurtily?."
+                },
+                {
+                    "type": "showIds",
+                    "ids": [
+                        "10104"
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Strong skill or AOE E.G.O: It's possible to achieve this using a strong AOE E.G.O like Don's Yearning Mircalla, Hong Lu's Tears of the Tarnished Blood, or Sinclair's Harmony or using Rien Sang's Furioso-Replica. You'll need a lot of damage buffing E.G.O Gifts and you'll likely have to do this at a later Extreme floor to find enemies with enough HP to survive long enough. Alternatively enemies that don't die like Skin Prophet's candles also works."
+                }
+            ]
+        },
+        {
+            "id": "cmb_burn",
+            "text": "Raise 1 enemy's Burn Potency to 99 (excluding 'Unique Burn'; in Focused Encounters, a Part)",
+            "points": 20,
+            "hardonly": false,
+            "tips": [
+                {
+                    "type": "text",
+                    "text": "This will happen naturally on longer fights when you have most of the Burn gifts."
+                }
+            ]
+        },
+        {
+            "id": "cmb_bleed",
+            "text": "Raise 1 enemy's Bleed Potency to 99 (excluding 'Unique Bleed'; in Focused Encounters, a Part)",
+            "points": 20,
+            "hardonly": false,
+            "tips": [
+                {
+                    "type": "text",
+                    "text": "This will happen naturally on longer fights when you have most of the Bleed gifts."
+                }
+            ]
+        },
+        {
+            "id": "cmb_tremor",
+            "text": "Raise 1 enemy's Tremor Potency to 99 (excluding 'Unique Tremor'; in Focused Encounters, a Part)",
+            "points": 20,
+            "hardonly": false,
+            "tips": [
+                {
+                    "type": "text",
+                    "text": "This will happen naturally on longer fights when you have most of the Tremor gifts."
+                }
+            ]
+        },
+        {
+            "id": "cmb_rupture",
+            "text": "Raise 1 enemy's Rupture Potency to 99 (excluding 'Unique Rupture'; in Focused Encounters, a Part)",
+            "points": 20,
+            "hardonly": false,
+            "tips": [
+                {
+                    "type": "text",
+                    "text": "This will happen naturally on longer fights when you have most of the Rupture gifts."
+                }
+            ]
+        },
+        {
+            "id": "cmb_sinking",
+            "text": "Raise 1 enemy's Sinking Potency to 99 (excluding 'Unique Sinking'; in Focused Encounters, a Part)",
+            "points": 20,
+            "hardonly": false,
+            "tips": [
+                {
+                    "type": "text",
+                    "text": "This will happen naturally on longer fights when you have most of the Sinking gifts."
+                }
+            ]
+        },
+        {
+            "id": "cmb_poise",
+            "text": "Raise 1 ally's Poise Potency to 99",
+            "points": 20,
+            "hardonly": false,
+            "tips": [
+                {
+                    "type": "text",
+                    "text": "This will happen naturally on longer fights when you have most of the Poise gifts."
+                }
+            ]
+        },
+        {
+            "id": "cmb_charge",
+            "text": "Raise 1 ally's Charge Potency to 10 (including 'Unique Charge', excluding 'Unique Charge' with fixed Potency",
+            "points": 20,
+            "hardonly": false,
+            "tips": [
+                {
+                    "type": "text",
+                    "text": "This will happen naturally when you have longer fights in the later floors of MDI, but may be harder to do in normal or on lower floors. Use Charge ids that can consume large amounts of charge at a time like QoH Don, Kod Rodya, W Ryoshu, or W Outis. If you're doing this on normal, try soloing to give that id more time to ramp up their Charge Potency."
+                }
+            ]
+        },
+        {
+            "id": "cmb_lowhp",
+            "text": "Win a boss Encounter after 1 ally takes damage equivalent to 80%+ of its max HP. The said ally must survive the Encounter (applies to the last Encounter of each Floor)",
+            "points": 50,
+            "hardonly": false,
+            "tips": [
+                {
+                    "type": "text",
+                    "text": "You can easily do this using any id or gift that has death protection (prevent death a single time) and letting them get hit until the death protection gets triggered. Just make sure they don't have Burn or Bleed if they don't heal. You can also use any of the ways you can damage yourself like self-Burn/Bleed ids or Tears of the Tarnished Blood."
+                }
+            ]
+        },
+        {
+            "id": "cmb_10enemy",
+            "text": "Defeat all enemies in the Turn where 10 or more enemies are on the battlefield (in Focused Encounters, a Core and its connected Parts count as a single target)",
+            "points": 50,
+            "hardonly": false,
+            "tips": [
+                {
+                    "type": "showThemePacks",
+                    "themePacks": [
+                        "1114"
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Go to Full-Stopped by a Bullet. The boss stage should have a wave with 10 enemies. Just kill all of them in a turn using atk weight skills and egos."
+                }
+            ]
+        },
+        {
+            "id": "cmb_break2",
+            "text": "Use a single Attack Skill to either Stagger or Part Break 2 or more Parts, simultaneously",
+            "points": 50,
+            "hardonly": false,
+            "tips": [
+                {
+                    "type": "text",
+                    "text": "You'll need to find an abno that has multiple parts, ideally with the same HP and resists, then use an aoe. Time Ripper would be a relatively easy target for this."
+                }
+            ]
+        },
+        {
+            "id": "cmb_neg10",
+            "text": "Win an Encounter after inflicting 10 types of negative effects on a single target",
+            "points": 50,
+            "hardonly": false,
+            "tips": [
+                {
+                    "type": "text",
+                    "text": "This should be relatively easy with most teams as long as enemies don't die too fast. Any debuff is considered as a separate negative effect."
+                }
+            ]
+        },
+        {
+            "id": "cmb_entangle",
+            "text": "In a single run, clear 5 Stages after activating the effects of the E.G.O Gift 'Entangled Fate' in each of them",
+            "points": 50,
+            "hardonly": true,
+            "tips": [
+                {
+                    "type": "text",
+                    "text": "Entangled Fate requires you to do a 7 A-Res. to trigger. This would be easiest to do in an Envy or Heishou team, but many other teams should be able to do it."
+                },
+                {
+                    "type": "showGiftList",
+                    "gifts": [
+                        "Entangled Fate"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cmb_liquor",
+            "text": "Defeat the \"Abnormal Seismic Zone\" Theme Pack boss while carrying Hardwood Liquor Cap and 5 or more liquor-related E.G.O Gifts: \"Green Spirit,\" \"Blood, Sweat, and Tears,\" \"Wobbling Keg,\" \"Reverberation,\" \"Chalice of Trickle-down,\" \"Downpour,\" \"Devil's Share,\" \"Angel's Cut,\" \"Trash Crab Brain Wine,\" \"Shaoxing Wine\"",
+            "points": 50,
+            "hardonly": true,
+            "tips": [
+                {
+                    "type": "text",
+                    "text": "Straightforward achievement. Fairly easy to do considering Abnormal Seismic Zone can appear throughout F4-10 on hard."
+                },
+                {
+                    "type": "showGiftList",
+                    "gifts": [
+                        "Hardwood Liquor Cap",
+                        "Green Spirit",
+                        "Blood, Sweat, and Tears",
+                        "Wobbling Keg",
+                        "Reverberation",
+                        "Chalice of Trickle-down",
+                        "Downpour",
+                        "Devil's Share",
+                        "Angel's Cut",
+                        "Trash Crab Brain Wine",
+                        "Shaoxing Wine"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cmb_ring",
+            "text": "With 2 or more The Ring Identities in your Loadout, win an Encounter after having one of them gain 'Exquisite Aesthetics' with 'Exquisite Artwork' E.G.O Gift",
+            "points": 50,
+            "hardonly": true,
+            "tips": [
+                {
+                    "type": "text",
+                    "text": "You need to go to Blade and Artwork on F5-10 Hard to get Average Artwork which is needed to fuse this gift. To trigger Exquisite Aesthetics, you need the Ring Ids to hit an enemy twice to give it Art Medium, then have one of them kill it to gain the needed buff."
+                },
+                {
+                    "type": "showIds",
+                    "faction": [
+                        "The Ring"
+                    ]
+                },
+                {
+                    "type": "showGiftList",
+                    "gifts": [
+                        "Homeward",
+                        "Headless Portrait",
+                        "Average Artwork",
+                        "Exquisite Aesthetics"
+                    ]
+                }
+            ]
+        }
+    ],
     "Adversity - EXTREME": [
         {
             "id": "adv_lvl",
@@ -1450,6 +1733,20 @@
                 {
                     "type": "text",
                     "text": "Pretty straightforward requirement. You don't need adversities when doing this if you want to make your life easier."
+                }
+            ]
+        }
+    ],
+    "Completionist": [
+        {
+            "id": "completion",
+            "text": "Complete all Achievements (Not counting Achievements in the \"Hidden\" category)",
+            "points": 0,
+            "hardonly": true,
+            "tips": [
+                {
+                    "type": "text",
+                    "text": "Not much to say here other than good luck!"
                 }
             ]
         }
