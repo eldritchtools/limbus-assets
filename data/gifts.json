@@ -209,7 +209,7 @@
   "9012": {
     "affinity": "sloth",
     "descs": [
-      "After defeating an enemy by using a Sloth Affinity or Blunt Skill, raise the unit's Blunt Skill Power by 2 until the end of the next turn."
+      "If an enemy is killed by Attack End of a Blunt Skill or a Sloth Skill: For 2 turns, starting next turn, raise the Blunt Skill Power by 2 for the unit who used the Skill"
     ],
     "events": [
       "901012"
@@ -218,7 +218,7 @@
     "names": [
       "Today’s Expression"
     ],
-    "search_desc": "After defeating an enemy by using a Sloth Affinity or Blunt Skill, raise the unit's Blunt Skill Power by 2 until the end of the next turn.",
+    "search_desc": "If an enemy is killed by Attack End of a Blunt Skill or a Sloth Skill: For 2 turns, starting next turn, raise the Blunt Skill Power by 2 for the unit who used the Skill",
     "srcPath": "Today’s Expression",
     "tier": "2"
   },
@@ -361,9 +361,9 @@
   "9020": {
     "affinity": "gluttony",
     "descs": [
-      "Turn Start: If there are Staggered enemies, un-Stagger enemies. Then, inflict (8 + Stagger LV x 4) [Laceration] Potency and (8 + Stagger LV x4)/2 [AttackDown] on them. (Activates once per enemy per Encounter. Does not activate against certain enemies that do not recover from Stagger)",
-      "Turn Start: If there are Staggered enemies, un-Stagger enemies. Then, inflict (10 + Stagger LV x 5) [Laceration] Potency and (10 + Stagger LV x 5) [AttackDown]. (Activates once per enemy per Encounter. Does not activate against certain enemies that do not recover from Stagger)",
-      "Turn Start: If there are Staggered enemies, un-Stagger enemies. Then, inflict (12 + Stagger LV x 6) [Laceration] Potency and (12 + Stagger LV x 6) [AttackDown] and [DefenseDown] on them. (Activates once per enemy per Encounter. Does not activate against certain enemies that do not recover from Stagger)"
+      "Turn Start: If there are Staggered enemies, un-Stagger enemies. Then, inflict (8 + Stagger LV x 4) [Laceration] Potency and (8 + Stagger LV x4)/2 [AttackDown] on them this turn and next turn. (Activates once per enemy per Encounter. Does not activate against certain enemies that do not recover from Stagger)",
+      "Turn Start: If there are Staggered enemies, un-Stagger enemies. Then, inflict (10 + Stagger LV x 5) [Laceration] Potency and (10 + Stagger LV x 5) [AttackDown] on them this turn and next turn. (Activates once per enemy per Encounter. Does not activate against certain enemies that do not recover from Stagger)",
+      "Turn Start: If there are Staggered enemies, un-Stagger enemies. Then, inflict (12 + Stagger LV x 6) [Laceration] Potency and (12 + Stagger LV x 6) [AttackDown] and [DefenseDown] on them this turn and next turn. (Activates once per enemy per Encounter. Does not activate against certain enemies that do not recover from Stagger)"
     ],
     "enhanceable": true,
     "events": [
@@ -375,7 +375,7 @@
       "White Gossypium+",
       "White Gossypium++"
     ],
-    "search_desc": "Turn Start: If there are Staggered enemies, un-Stagger enemies. Then, inflict (8 + Stagger LV x 4) Bleed Potency and (8 + Stagger LV x4)/2 Offense Level Down on them. (Activates once per enemy per Encounter. Does not activate against certain enemies that do not recover from Stagger) , Turn Start: If there are Staggered enemies, un-Stagger enemies. Then, inflict (10 + Stagger LV x 5) Bleed Potency and (10 + Stagger LV x 5) Offense Level Down. (Activates once per enemy per Encounter. Does not activate against certain enemies that do not recover from Stagger) , Turn Start: If there are Staggered enemies, un-Stagger enemies. Then, inflict (12 + Stagger LV x 6) Bleed Potency and (12 + Stagger LV x 6) Offense Level Down and Defense Level Down on them. (Activates once per enemy per Encounter. Does not activate against certain enemies that do not recover from Stagger)",
+    "search_desc": "Turn Start: If there are Staggered enemies, un-Stagger enemies. Then, inflict (8 + Stagger LV x 4) Bleed Potency and (8 + Stagger LV x4)/2 Offense Level Down on them this turn and next turn. (Activates once per enemy per Encounter. Does not activate against certain enemies that do not recover from Stagger) , Turn Start: If there are Staggered enemies, un-Stagger enemies. Then, inflict (10 + Stagger LV x 5) Bleed Potency and (10 + Stagger LV x 5) Offense Level Down on them this turn and next turn. (Activates once per enemy per Encounter. Does not activate against certain enemies that do not recover from Stagger) , Turn Start: If there are Staggered enemies, un-Stagger enemies. Then, inflict (12 + Stagger LV x 6) Bleed Potency and (12 + Stagger LV x 6) Offense Level Down and Defense Level Down on them this turn and next turn. (Activates once per enemy per Encounter. Does not activate against certain enemies that do not recover from Stagger)",
     "srcPath": "White Gossypium",
     "tier": "2"
   },
@@ -540,7 +540,7 @@
   "9030": {
     "affinity": "pride",
     "descs": [
-      "After defeating an enemy by using a Pride Affinity or Pierce damage Skill, raise the unit's Pierce Power by 2 for the next 2 turns."
+      "If an enemy is killed by Attack End of a Pierce Skill or a Pride Skill: For 2 turns, starting next turn, raise the Pierce Skill Power by 2 for the unit who used the Skill"
     ],
     "events": [
       "901030"
@@ -549,7 +549,7 @@
     "names": [
       "Gathering Skulls"
     ],
-    "search_desc": "After defeating an enemy by using a Pride Affinity or Pierce damage Skill, raise the unit's Pierce Power by 2 for the next 2 turns.",
+    "search_desc": "If an enemy is killed by Attack End of a Pierce Skill or a Pride Skill: For 2 turns, starting next turn, raise the Pierce Skill Power by 2 for the unit who used the Skill",
     "srcPath": "Gathering Skulls",
     "tier": "2"
   },
@@ -580,7 +580,7 @@
   "9032": {
     "affinity": "envy",
     "descs": [
-      "After defeating an enemy by using an Envy Affinity or Slash damage Skill, raise the unit's Slash Skill Power by 2 for the next 2 turns.\n\nWhen activating Envy Absolute Resonance, all allies gain 2 [AttackUp] and 2 [DefenseUp] at Combat Start."
+      "If an enemy is killed by Attack End of a Slash Skill or an Envy Skill: For 2 turns, starting next turn, raise the Slash Skill Power by 2 for the unit who used the Skill\n\nWhen activating Envy A-Reson., all allies gain 2 [AttackUp] and 2 [DefenseUp] at Combat Start"
     ],
     "events": [
       "901032"
@@ -589,7 +589,7 @@
     "names": [
       "Dreaming Electric Sheep"
     ],
-    "search_desc": "After defeating an enemy by using an Envy Affinity or Slash damage Skill, raise the unit's Slash Skill Power by 2 for the next 2 turns.\n\nWhen activating Envy Absolute Resonance, all allies gain 2 Offense Level Up and 2 Defense Level Up at Combat Start.",
+    "search_desc": "If an enemy is killed by Attack End of a Slash Skill or an Envy Skill: For 2 turns, starting next turn, raise the Slash Skill Power by 2 for the unit who used the Skill\n\nWhen activating Envy A-Reson., all allies gain 2 Offense Level Up and 2 Defense Level Up at Combat Start",
     "srcPath": "Dreaming Electric Sheep",
     "tier": "2"
   },
@@ -1390,8 +1390,7 @@
       "901074"
     ],
     "ingredientOf": [
-      "9096",
-      "9224"
+      "9096"
     ],
     "keyword": "Sinking",
     "names": [
@@ -2577,9 +2576,9 @@
   "9134": {
     "affinity": "envy",
     "descs": [
-      "[Effects apply only to #1, #2 Deployed Identities]\n\nTurn Start: if the affected Identity has a Skill that gains or consumes [Charge] Count or 'Unique Charge', the Identity's Skill 1 gains Clash Power +1 and deals +10% damage while that unit has [ChargeForceField].\n\nTurn End: if the affected Identity does not have [ChargeForceField], apply 2 [ChargeForceField] next turn.",
-      "[Effects apply only to #1, #2, and #3 Deployed Identities]\n\nTurn Start: if the affected Identity has a Skill that gains or consumes [Charge] Count or 'Unique Charge', the Identity's Skill 1 gains Clash Power +1 and deals +15% damage while that unit has [ChargeForceField].\n\nTurn End: if the affected Identity does not have [ChargeForceField], apply 3 [ChargeForceField] next turn.",
-      "[Effects apply only to #1, #2, and #3 Deployed Identities]\n\nTurn Start: if the affected Identity has a Skill that gains or consumes [Charge] Count or 'Unique Charge', the Identity's Skill 1 gains Clash Power +1 and deals +25% damage while that unit has [ChargeForceField].\n\nTurn End: if the affected Identity does not have [ChargeForceField], apply 4 [ChargeForceField] next turn."
+      "[Effects apply only to #1, #2 Deployed Identities]\n\nTurn Start: The affected Identity gains 2 [ChargeForceField]\n\nIf the affected Identity has a Skill that gains or consumes [Charge] Count or 'Unique Charge', the Identity's Skill 1 gains Clash Power +1 and deals +10% damage while that unit has [ChargeForceField]",
+      "[Effects apply only to #1, #2, and #3 Deployed Identities]\n\nTurn Start: The affected Identity gains 3 [ChargeForceField]\n\nIf the affected Identity has a Skill that gains or consumes [Charge] Count or 'Unique Charge', the Identity's Skill 1 gains Clash Power +1 and deals +15% damage while that unit has [ChargeForceField]",
+      "[Effects apply only to #1, #2, and #3 Deployed Identities]\n\nTurn Start: The affected Identity gains 4 [ChargeForceField]\n\nIf the affected Identity has a Skill that gains or consumes [Charge] Count or 'Unique Charge', the Identity's Skill 1 gains Clash Power +1 and deals +25% damage while that unit has [ChargeForceField]"
     ],
     "enhanceable": true,
     "events": [
@@ -2591,7 +2590,7 @@
       "Patrolling Flashlight+",
       "Patrolling Flashlight++"
     ],
-    "search_desc": "[Effects apply only to #1, #2 Deployed Identities]\n\nTurn Start: if the affected Identity has a Skill that gains or consumes Charge Count or 'Unique Charge', the Identity's Skill 1 gains Clash Power +1 and deals +10% damage while that unit has Charge Barrier.\n\nTurn End: if the affected Identity does not have Charge Barrier, apply 2 Charge Barrier next turn. , [Effects apply only to #1, #2, and #3 Deployed Identities]\n\nTurn Start: if the affected Identity has a Skill that gains or consumes Charge Count or 'Unique Charge', the Identity's Skill 1 gains Clash Power +1 and deals +15% damage while that unit has Charge Barrier.\n\nTurn End: if the affected Identity does not have Charge Barrier, apply 3 Charge Barrier next turn. , [Effects apply only to #1, #2, and #3 Deployed Identities]\n\nTurn Start: if the affected Identity has a Skill that gains or consumes Charge Count or 'Unique Charge', the Identity's Skill 1 gains Clash Power +1 and deals +25% damage while that unit has Charge Barrier.\n\nTurn End: if the affected Identity does not have Charge Barrier, apply 4 Charge Barrier next turn.",
+    "search_desc": "[Effects apply only to #1, #2 Deployed Identities]\n\nTurn Start: The affected Identity gains 2 Charge Barrier\n\nIf the affected Identity has a Skill that gains or consumes Charge Count or 'Unique Charge', the Identity's Skill 1 gains Clash Power +1 and deals +10% damage while that unit has Charge Barrier , [Effects apply only to #1, #2, and #3 Deployed Identities]\n\nTurn Start: The affected Identity gains 3 Charge Barrier\n\nIf the affected Identity has a Skill that gains or consumes Charge Count or 'Unique Charge', the Identity's Skill 1 gains Clash Power +1 and deals +15% damage while that unit has Charge Barrier , [Effects apply only to #1, #2, and #3 Deployed Identities]\n\nTurn Start: The affected Identity gains 4 Charge Barrier\n\nIf the affected Identity has a Skill that gains or consumes Charge Count or 'Unique Charge', the Identity's Skill 1 gains Clash Power +1 and deals +25% damage while that unit has Charge Barrier",
     "srcPath": "Patrolling Flashlight",
     "tier": "2"
   },
@@ -4224,17 +4223,20 @@
   "9222": {
     "affinity": "lust",
     "descs": [
-      "On Hit with Plus Coin Attack Skills against an enemy with 15+ [Laceration], heal 3 SP (once per turn for each Identity)\n- If said Identity or target has 3+ types of negative effects, heal 6 SP instead"
+      "On Hit with Plus Coin Attack Skills against an enemy that has 15+ [Laceration], heal 3 SP (once per turn for each Identity)\n- If said Identity or target has 3+ types of negative effects, heal 6 SP instead"
     ],
     "exclusiveTo": [
       "1026"
     ],
     "hardonly": true,
+    "ingredientOf": [
+      "9224"
+    ],
     "keyword": "Bleed",
     "names": [
       "Pure-white Canvas"
     ],
-    "search_desc": "On Hit with Plus Coin Attack Skills against an enemy with 15+ Bleed, heal 3 SP (once per turn for each Identity)\n- If said Identity or target has 3+ types of negative effects, heal 6 SP instead",
+    "search_desc": "On Hit with Plus Coin Attack Skills against an enemy that has 15+ Bleed, heal 3 SP (once per turn for each Identity)\n- If said Identity or target has 3+ types of negative effects, heal 6 SP instead",
     "srcPath": "9222",
     "tier": "2"
   },
@@ -4261,7 +4263,7 @@
   "9224": {
     "affinity": "lust",
     "descs": [
-      "The Ring-faction Identities gain [Inspire]\n\nIf The Ring-faction Identity with [Inspire] hits an enemy, inflict [ObjectOfExploration] on said enemy\n- If the enemy already has [ObjectOfExploration], replace [ObjectOfExploration] with [PaintingMaterial]\n\nIf The Ring-faction Identity with [Inspire] kills an enemy that has [PaintingMaterial], said Identity loses [Inspire] and gains [GreatAesthetics]"
+      "The Ring-faction Identities gain [Inspire]\n\nIf The Ring-faction Identity with [Inspire] hits an enemy, inflict [ObjectOfExploration] on said enemy\n- If the enemy already has [ObjectOfExploration], replace [ObjectOfExploration] with [PaintingMaterial]\n\nIf The Ring-faction Identity with [Inspire] kills an enemy that has [PaintingMaterial], said Identity loses [Inspire] and gains [GreatAesthetics]\n\nOn Hit with Plus Coin Attack Skills against an enemy that has 15+ [Laceration], heal 3 SP (once per turn for each Identity)\n- If said Identity or target has 3+ types of negative effects, heal 6 SP instead"
     ],
     "exclusiveTo": [
       "1026"
@@ -4275,11 +4277,11 @@
     "recipes": [
       [
         "9039",
-        "9074",
+        "9222",
         "9223"
       ]
     ],
-    "search_desc": "The Ring-faction Identities gain Spark of Inspiration\n\nIf The Ring-faction Identity with Spark of Inspiration hits an enemy, inflict Curio on said enemy\n- If the enemy already has Curio, replace Curio with Art Medium\n\nIf The Ring-faction Identity with Spark of Inspiration kills an enemy that has Art Medium, said Identity loses Spark of Inspiration and gains Exquisite Aesthetics",
+    "search_desc": "The Ring-faction Identities gain Spark of Inspiration\n\nIf The Ring-faction Identity with Spark of Inspiration hits an enemy, inflict Curio on said enemy\n- If the enemy already has Curio, replace Curio with Art Medium\n\nIf The Ring-faction Identity with Spark of Inspiration kills an enemy that has Art Medium, said Identity loses Spark of Inspiration and gains Exquisite Aesthetics\n\nOn Hit with Plus Coin Attack Skills against an enemy that has 15+ Bleed, heal 3 SP (once per turn for each Identity)\n- If said Identity or target has 3+ types of negative effects, heal 6 SP instead",
     "srcPath": "9224",
     "tier": "4"
   },
@@ -4827,6 +4829,195 @@
     "srcPath": "9259",
     "tier": "4"
   },
+  "9260": {
+    "affinity": "envy",
+    "descs": [
+      "If an ally consumed 10+ [Charge] Count in a single turn with its Base Skills, the said ally deals +20% damage with Base Skills next turn (excluding 'Unique Charge' with fixed Potency)\n- If the [Charge] consumed was 'Unique Charge', inflict +1 more [Laceration] and [Laceration] Count next turn"
+    ],
+    "events": [
+      "971104"
+    ],
+    "exclusiveTo": [
+      "1126"
+    ],
+    "ingredientOf": [
+      "9263"
+    ],
+    "keyword": "Charge",
+    "names": [
+      "Artwork: Pulsation"
+    ],
+    "search_desc": "If an ally consumed 10+ Charge Count in a single turn with its Base Skills, the said ally deals +20% damage with Base Skills next turn (excluding 'Unique Charge' with fixed Potency)\n- If the Charge consumed was 'Unique Charge', inflict +1 more Bleed and Bleed Count next turn",
+    "srcPath": "9260",
+    "tier": "3"
+  },
+  "9261": {
+    "affinity": "gloom",
+    "descs": [
+      "Deal +20% damage with Blunt Skills against enemies that either have 35+ [Sinking] Potency or are at 15 or lower SP ([Sinking] Potency is calculated per-Part)\n- If the said Blunt Skill is either a Gloom Skill or a Skill that inflicts [Laceration] Potency, Count, or 'Unique Bleed', and hit the target, gain 1 [Enhancement] next turn (once per turn per Identity)"
+    ],
+    "events": [
+      "971104"
+    ],
+    "exclusiveTo": [
+      "1126"
+    ],
+    "ingredientOf": [
+      "9264"
+    ],
+    "keyword": "Sinking",
+    "names": [
+      "Artwork: Ferity"
+    ],
+    "search_desc": "Deal +20% damage with Blunt Skills against enemies that either have 35+ Sinking Potency or are at 15 or lower SP (Sinking Potency is calculated per-Part)\n- If the said Blunt Skill is either a Gloom Skill or a Skill that inflicts Bleed Potency, Count, or 'Unique Bleed', and hit the target, gain 1 Attack Power Up next turn (once per turn per Identity)",
+    "srcPath": "9261",
+    "tier": "3"
+  },
+  "9262": {
+    "affinity": "lust",
+    "descs": [
+      "The Ring-faction Identities: At Attack End, inflict 1 Stack of a random Attack Type Resist Down on target (2 times per turn)\n\nThe Ring-faction Identities deal +10% damage"
+    ],
+    "events": [
+      "971105"
+    ],
+    "exclusiveTo": [
+      "1126"
+    ],
+    "ingredientOf": [
+      "9263"
+    ],
+    "keyword": "Keywordless",
+    "names": [
+      "Universal Skeleton"
+    ],
+    "search_desc": "The Ring-faction Identities: At Attack End, inflict 1 Stack of a random Attack Type Resist Down on target (2 times per turn)\n\nThe Ring-faction Identities deal +10% damage",
+    "srcPath": "9262",
+    "tier": "2"
+  },
+  "9263": {
+    "affinity": "lust",
+    "descs": [
+      "Turn Start: Activates when there are 2 or more The Ring-faction Identities (only counts Identities on the field)\n\nThe Ring School of Corporism-faction Identities inflict 1 [SlashResistDown] On Hit with Base Skills (once per Skill; 2 times per turn)\n\nThe Ring Identities deal +20% damage\n\nTurn Start: At 99+ total sum of [Laceration] Potency on all enemies, The Ring School of Corporism-faction Identities gain 1 [RingFingerPhysical]"
+    ],
+    "exclusiveTo": [
+      "1126"
+    ],
+    "fusion": true,
+    "keyword": "Bleed",
+    "names": [
+      "Artwork: Evolving Pulsation"
+    ],
+    "recipes": [
+      [
+        "9260",
+        "9262"
+      ]
+    ],
+    "search_desc": "Turn Start: Activates when there are 2 or more The Ring-faction Identities (only counts Identities on the field)\n\nThe Ring School of Corporism-faction Identities inflict 1 Slash Resist Down On Hit with Base Skills (once per Skill; 2 times per turn)\n\nThe Ring Identities deal +20% damage\n\nTurn Start: At 99+ total sum of Bleed Potency on all enemies, The Ring School of Corporism-faction Identities gain 1 Beauty of the Physique",
+    "srcPath": "9263",
+    "tier": "4"
+  },
+  "9264": {
+    "affinity": "lust",
+    "descs": [
+      "Turn Start: Activates when there are 2 or more The Ring-faction Identities (only counts Identities on the field)\n\nThe Ring School of Fauvism-faction Identities inflict 1 [HitResistDown] On Hit with Base Skills (once per Skill; 2 times per turn)\n\nThe Ring Identities deal +20% damage\n\nTurn Start: At 99+ total sum of [Laceration] Potency on all enemies, The Ring School of Fauvism-faction Identities gain 1 [RingFingerFauvism]"
+    ],
+    "exclusiveTo": [
+      "1126"
+    ],
+    "fusion": true,
+    "keyword": "Bleed",
+    "names": [
+      "Artwork: Taxidermied Ferity"
+    ],
+    "recipes": [
+      [
+        "9261",
+        "9268"
+      ]
+    ],
+    "search_desc": "Turn Start: Activates when there are 2 or more The Ring-faction Identities (only counts Identities on the field)\n\nThe Ring School of Fauvism-faction Identities inflict 1 Blunt Resist Down On Hit with Base Skills (once per Skill; 2 times per turn)\n\nThe Ring Identities deal +20% damage\n\nTurn Start: At 99+ total sum of Bleed Potency on all enemies, The Ring School of Fauvism-faction Identities gain 1 Charm of the Beastly",
+    "srcPath": "9264",
+    "tier": "4"
+  },
+  "9265": {
+    "affinity": "sloth",
+    "descs": [
+      "If the target has 1.5 or lower Blunt Resistance, Blunt Resistance +0.3"
+    ],
+    "events": [
+      "971106"
+    ],
+    "exclusiveTo": [
+      "1126"
+    ],
+    "keyword": "Blunt",
+    "names": [
+      "The Middle Styled Knuckle-dusters"
+    ],
+    "search_desc": "If the target has 1.5 or lower Blunt Resistance, Blunt Resistance +0.3",
+    "srcPath": "9265",
+    "tier": "3"
+  },
+  "9266": {
+    "affinity": "wrath",
+    "descs": [
+      "At Attack End of a Skill that has 2+ Atk Weight, gain +(# of hits on an enemy / 2) E.G.O resource of that Skill's Affinity (rounded down; max 5 per Skill)\n\nOn Crit with a Skill that has 2+ Atk Weight, gain +(# of Coins that hit Critically) E.G.O resource of the least-owned Affinity at Attack End (max 3)"
+    ],
+    "exclusiveTo": [
+      "1126"
+    ],
+    "keyword": "Keywordless",
+    "names": [
+      "Unoccupied Birdcage"
+    ],
+    "search_desc": "At Attack End of a Skill that has 2+ Atk Weight, gain +(# of hits on an enemy / 2) E.G.O resource of that Skill's Affinity (rounded down; max 5 per Skill)\n\nOn Crit with a Skill that has 2+ Atk Weight, gain +(# of Coins that hit Critically) E.G.O resource of the least-owned Affinity at Attack End (max 3)",
+    "srcPath": "9266",
+    "tier": "2"
+  },
+  "9267": {
+    "affinity": "sloth",
+    "descs": [
+      "Max [Combustion] Potency +11\n\nTriple the first [Combustion] Potency to be inflicted in the Encounter (once per Encounter)",
+      "Max [Combustion] Potency +21\n\nTriple the first [Combustion] Potency to be inflicted in the Encounter (once per Encounter)",
+      "Max [Combustion] Potency +21\n\nTriple the first [Combustion] Potency to be inflicted in the Encounter (once per Encounter)\n\nWhen activating [Combustion], (Wrath Reson. x 10)% chance to deal ([Combustion] Potency x Count / 11) Wrath damage and reduce the target's [Combustion] Count by 1 (max activation chance: 50%; once per turn)"
+    ],
+    "enhanceable": true,
+    "exclusiveTo": [
+      "1302",
+      "1402"
+    ],
+    "hardonly": true,
+    "keyword": "Burn",
+    "names": [
+      "Searing Brass",
+      "Searing Brass+",
+      "Searing Brass++"
+    ],
+    "search_desc": "Max Burn Potency +11\n\nTriple the first Burn Potency to be inflicted in the Encounter (once per Encounter) , Max Burn Potency +21\n\nTriple the first Burn Potency to be inflicted in the Encounter (once per Encounter) , Max Burn Potency +21\n\nTriple the first Burn Potency to be inflicted in the Encounter (once per Encounter)\n\nWhen activating Burn, (Wrath Reson. x 10)% chance to deal (Burn Potency x Count / 11) Wrath damage and reduce the target's Burn Count by 1 (max activation chance: 50%; once per turn)",
+    "srcPath": "9267",
+    "tier": "4"
+  },
+  "9268": {
+    "affinity": "lust",
+    "descs": [
+      "Turn End: Randomly apply 1 Stack of a random Affinity's Damage Up next turn to (# of enemies with [Laceration]) The Ring-faction Identities (once per Identity per turn; in Focused Encounters, Parts)\n\nThe Ring-faction Identities deal +10% damage"
+    ],
+    "exclusiveTo": [
+      "1126"
+    ],
+    "ingredientOf": [
+      "9264"
+    ],
+    "keyword": "Keywordless",
+    "names": [
+      "Universal Instinct"
+    ],
+    "search_desc": "Turn End: Randomly apply 1 Stack of a random Affinity's Damage Up next turn to (# of enemies with Bleed) The Ring-faction Identities (once per Identity per turn; in Focused Encounters, Parts)\n\nThe Ring-faction Identities deal +10% damage",
+    "srcPath": "9268",
+    "tier": "2"
+  },
   "9403": {
     "affinity": "gluttony",
     "descs": [
@@ -5212,7 +5403,7 @@
   "9432": {
     "affinity": "lust",
     "descs": [
-      "[Effects apply only to the #1 Deployed Identity]\n\nTurn End: when Staggered, recover from Stagger; then, at the next Turn Start, inflict 4 [Sinking] Potency and 4 [Sinking] Count to all enemies (once per Encounter; in Focused Encounters, on all Parts)\n\nWhen defeating an enemy with [Sinking], 1 enemy with the least [Sinking] Count gains +2 [Sinking] Count (in Focused Encounters, the Part)"
+      "Turn End: when Staggered, recover from Stagger; then, at the next Turn Start, inflict 4 [Sinking] Potency and 4 [Sinking] Count to all enemies (once per Encounter; in Focused Encounters, on all Parts)\n\nOn Kill, 1 enemy that has the least [Sinking] Count gains +2 [Sinking] Count (3 times per turn; in Focused Encounters, the Part)"
     ],
     "exclusiveTo": [
       "1016"
@@ -5221,7 +5412,7 @@
     "names": [
       "Manor-shaped Music Box"
     ],
-    "search_desc": "[Effects apply only to the #1 Deployed Identity]\n\nTurn End: when Staggered, recover from Stagger; then, at the next Turn Start, inflict 4 Sinking Potency and 4 Sinking Count to all enemies (once per Encounter; in Focused Encounters, on all Parts)\n\nWhen defeating an enemy with Sinking, 1 enemy with the least Sinking Count gains +2 Sinking Count (in Focused Encounters, the Part)",
+    "search_desc": "Turn End: when Staggered, recover from Stagger; then, at the next Turn Start, inflict 4 Sinking Potency and 4 Sinking Count to all enemies (once per Encounter; in Focused Encounters, on all Parts)\n\nOn Kill, 1 enemy that has the least Sinking Count gains +2 Sinking Count (3 times per turn; in Focused Encounters, the Part)",
     "srcPath": "Manor-shaped Music Box",
     "tier": "3"
   },
