@@ -1,0 +1,538 @@
+{
+  "name": "Hidden - The Ring",
+  "siteId": "36484f82-75ee-4796-aaa9-f21333f310eb",
+  "targets": [
+    {
+      "name": "The Ring Nursefather - Callisto",
+      "parts": [
+        {
+          "breakSection": [
+            70
+          ],
+          "defCorrection": 1,
+          "hp": {
+            "base": 626,
+            "level": 28
+          },
+          "name": "Body",
+          "resists": {
+            "blunt": 1.2,
+            "envy": 1,
+            "gloom": 0.8,
+            "gluttony": 1.2,
+            "lust": 0.8,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 0.8,
+            "sloth": 1.2,
+            "wrath": 1
+          },
+          "speed": [
+            1,
+            3
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn End: At 206 [HumanBoneTheRings] and 5 [HumanBloodTheRings], reduce the Stack of each effect equal to those numbers respectively and gain 1 [MineTheRings]\n\nTurn Start: If this unit has [MineTheRings], use a powerful attack this turn\n\n<color=#ff6000><mark=#ff000040><b><u>When hit by an Attack Skill before using the powerful attack, gain 1 [PlusCoinValueDown] and 1 [ResultReduction]</u></b></mark></color> (once per Skill; max 3 times per turn)",
+          "name": "Magnum Opus: Tibia"
+        },
+        {
+          "desc": "If this unit has [SupportProtect], <color=#ff6000><mark=#ff000040><b><u>lose 1 [SupportProtect] on Clash Start</u></b></mark></color> (once per Skill)",
+          "name": "Allow Me to Briefly Enjoy My Pupil's Exhibition"
+        },
+        {
+          "desc": "After using a Skill, gain 30 [HumanBoneTheRings] and 1 [HumanBloodTheRings] for every target damaged by this unit's Skill",
+          "name": "The Aesthetics of Harvesting and Trimming the Ingredient On-site"
+        },
+        {
+          "desc": "Turn End: Inflict [RedemptionTheRings] next turn to the Sinner with the fastest Speed",
+          "name": "Please, Do Stop Running and Be Seated"
+        },
+        {
+          "desc": "When this unit enters the Encounter, heal 30 SP\n\nOn Hit with Attack Skill: If this unit inflicts negative effect and gains beneficial effect simultaneously, heal 4 SP at Attack End\n- If this unit is at max SP when healing SP with the above effect, gain 1 [ResultEnhancement] next turn (once per turn)",
+          "name": "Corpus-centric Art"
+        },
+        {
+          "desc": "Take -30% HP, SP damage from [Combustion], [Vibration], [Burst], and [Sinking]\nTake -50% damage from [Laceration]\n\nTurn Start: If this unit is Staggered, recover from Stagger. Afterward, gain 2 [CrimsonTakeDamageUp] and becomes unable to use 'Installation Art no. 3: Improvised Ribcage' until next turn (once per Encounter)\n\nTurn End: Gain 1 [DefenseDown] next turn for every 4 [Combustion] on self (max 15)",
+          "name": "All of My Corpus has been Given to Tibia"
+        },
+        {
+          "desc": "When [MineTheRings] expires, the following units heal 30 SP and gain 2 [AttackUp] and 2 [DefenseUp] next turn:\n- The Ring Nursefather - Callisto\n- The Ring Apprentice - Albina\n- Corpus Theater[TabExplain]",
+          "name": "Artwork Pleasing to the Senses"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against targets without SP.",
+          "name": "Fixed Panic"
+        }
+      ],
+      "portrait": "1331",
+      "skills": [
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "This Coin does not deal HP damage",
+                "[OnSucceedAttack] Heal 15 SP on self",
+                "[OnSucceedAttack]\n<color=#ff6000><mark=#ff000040><b><u>Stagger target and turn target into [LivingSpecimenTheRings] next turn</u></b></mark></color>"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel] [CantChangeTarget]\nPrioritizes enemy with the highest level\nThis Skill does not trigger Defense Skills\n[WhenUse] Coin Power +1 for every 8 [Laceration] on target (max 2)",
+          "levelCorrection": 0,
+          "name": "Installation Art no. 3: Improvised Ribcage"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 4 [Laceration]",
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 1 [Vulnerable] next turn",
+                "[OnSucceedAttack] Gain 1 [Protection] next turn"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 6+ [Laceration], Coin Power +1\n[DefeatDuel] Deal -80% final damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 2,
+          "name": "Anatomize"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict +1 [Laceration] Count",
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 1 [ResultReduction] next turn",
+                "[OnSucceedAttack] Gain 1 [ResultEnhancement] next turn"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes Corpus Theaters\n[WhenUse] If target has 6+ [Laceration], Coin Power +1\n[DefeatDuel] Deal -80% final damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 2,
+          "name": "Gather Ingredient - Blood-bathed Objet"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 6,
+          "baseValue": 10,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Deal 5 SP damage",
+                "[OnSucceedAttack] Heal 5 SP (once per Skill)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 1 [Vulnerable] next turn",
+                "[OnSucceedAttack] Gain 1 [Protection] next turn (once per Skill)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 1 [AttackDmgDown] next turn",
+                "[OnSucceedAttack] Gain 1 [AttackDmgUp] next turn (once per Skill)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "During the turn this unit has this Skill equipped, gain 1 [PlusCoinValueDown] and 1 [ResultReduction] <color=#ff6000><mark=#ff000040><b><u>when hit by Attack Skills</u></b></mark></color> (once per Skill; max 3 times per turn)\nCannot be Staggered before using this Skill\nOn Kill with this Skill: heal 15 SP for every target killed\n[StartBattle] Gain 4 [Protection]\n[WhenUse] Deal +3% damage for every 6 ([Laceration] on main target + [Laceration] on sub-target) (max 30%)\n[DefeatDuel] Deal -80% final damage and damage dealt by this Skill cannot Stagger the target\n[EndSkill] [MineTheRings] expires",
+          "levelCorrection": 5,
+          "name": "Tibia's Melody - Anatomization of the Unanatomized by the Anatomized"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "This Coin does not deal HP damage",
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                "- If target is an ally, apply 6 [AttackUp] instead of the effect above"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes The Ring Apprentice - Albina\n[DefeatDuel] Gain <color=#ff6000><mark=#ff000040><b><u>8 [AttackDmgDown]</u></b></mark></color>",
+          "levelCorrection": 1,
+          "name": "Oh, How We Love the Flesh and the Blood"
+        },
+        {
+          "affinity": "sloth",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[StartBattle] <color=#ff6000><mark=#ff000040><b><u>Gain 3 [SupportProtect]</u></b></mark></color>\n[WhenUse] The attacker does not lose [Laceration] Count before Attack End",
+          "levelCorrection": 0,
+          "name": "Curating the Exhibition"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vulnerable] next turn",
+                "[OnSucceedAttack] Gain 1 [Protection] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [ResultReduction] next turn",
+                "[OnSucceedAttack] Gain 1 [ResultEnhancement] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\n[SupportProtect] exclusive Skill\nCannot be Staggered before using this Skill\n[WhenUse] Gain 1 [Protection]\n[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+          "levelCorrection": 4,
+          "name": "Please. Vandalism is Prohibited."
+        }
+      ]
+    },
+    {
+      "name": "The Ring Apprentice - Albina",
+      "parts": [
+        {
+          "breakSection": [
+            80,
+            40
+          ],
+          "defCorrection": 1,
+          "hp": {
+            "base": 417,
+            "level": 20
+          },
+          "name": "Body",
+          "resists": {
+            "blunt": 1.2,
+            "envy": 1,
+            "gloom": 0.8,
+            "gluttony": 1.2,
+            "lust": 0.8,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 0.8,
+            "sloth": 1.2,
+            "wrath": 1
+          },
+          "speed": [
+            3,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn End: At 2 [HumanFleshTheRings], remove [HumanFleshTheRings] and gain [BoneBladeTheRings] next turn\n\nTurn Start: If this unit has [BoneBladeTheRings], use a powerful attack this turn\n\n<color=#ff6000><mark=#ff000040><b><u>When hit by an Attack Skill before using the powerful attack, gain 1 [PlusCoinValueDown] and 1 [ResultReduction]</u></b></mark></color> (once per Skill; max 3 times per turn)",
+          "name": "Fascia, My Precious Artwork"
+        },
+        {
+          "desc": "If this unit has [SupportProtect], <color=#ff6000><mark=#ff000040><b><u>lose 1 [SupportProtect] on Clash Start</u></b></mark></color> (once per Skill)",
+          "name": "Visitors Must Respect the Rules of the Gallery"
+        },
+        {
+          "desc": "On Hit with Attack Skills: If this unit inflicts negative effect and gains beneficial effect simultaneously, heal 4 SP\n- If this unit is at max SP when healing SP with the above effect, gain 1 [Agility] next turn (2 times per turn)",
+          "name": "Corporism"
+        },
+        {
+          "desc": "Take -30% HP, SP damage from [Combustion], [Burst], and [Sinking]; -30% to Stagger Threshold raised by [Vibration]\nTake -50% damage from [Laceration]\n\nTurn End: Gain 1 [DefenseDown] next turn for every 4 [Combustion] on self (max 15)",
+          "name": "The Pulse and Beat of Corpus-turned-Ingredient"
+        },
+        {
+          "desc": "At less than 20 SP when the Ring Nursefather enters the Encounter, heal SP to 20",
+          "name": "With this Artwork, I will Prove Myself before the Maestro"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against targets without SP.",
+          "name": "Fixed Panic"
+        }
+      ],
+      "portrait": "1319",
+      "skills": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vulnerable] next turn",
+                "[OnSucceedAttack] Gain 1 [Protection] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+          "levelCorrection": 0,
+          "name": "Butcher - Ribs"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] Gain 1 [Agility] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+          "levelCorrection": 0,
+          "name": "Rotator Crush"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 6 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [ResultReduction] next turn",
+                "[OnSucceedAttack] Gain 1 [ResultEnhancement] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 4 [Laceration] on target (max 2)",
+          "levelCorrection": 0,
+          "name": "Tendon Tear"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 10 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Deal 5 SP damage",
+                "[OnSucceedAttack] Heal 10 SP on self",
+                "[OnSucceedAttack] Gain 1 [HumanFleshTheRings]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[DefeatDuel] Deal -80% final damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 2,
+          "name": "Time to Eat, Fascia"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 4,
+          "baseValue": 10,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Deal 5 SP damage",
+                "[OnSucceedAttack] Heal 5 SP (once per Skill)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 1 [Vulnerable] next turn",
+                "[OnSucceedAttack] Gain 1 [Protection] next turn (once per Skill)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 1 [AttackDmgDown] next turn",
+                "[OnSucceedAttack] Gain 1 [AttackDmgUp] next turn (once per Skill)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "During the turn this unit has this Skill equipped, gain 1 [PlusCoinValueDown] and 1 [ResultReduction] <color=#ff6000><mark=#ff000040><b><u>when hit by Attack Skills</u></b></mark></color> (once per Skill; max 3 times per turn)\nCannot be Staggered before using this Skill\nOn Kill with this Skill: heal 15 SP for every target killed\n[StartBattle] Gain 4 [Protection]\n[WhenUse] Deal +3% damage for every 6 ([Laceration] on main target + [Laceration] on sub-target) (max 30%)\n[DefeatDuel] Deal -80% final damage and damage dealt by this Skill cannot Stagger the target\n[EndSkill] [BoneBladeTheRings] expires",
+          "levelCorrection": 5,
+          "name": "Liberation of the Repressed Flesh"
+        },
+        {
+          "affinity": "sloth",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[StartBattle] <color=#ff6000><mark=#ff000040><b><u> Gain 2 [SupportProtect]</u></b></mark></color>\n[StartBattle] Gain 1 [Agility] next turn",
+          "levelCorrection": 0,
+          "name": "The Exhibition Begins"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vulnerable] next turn",
+                "[OnSucceedAttack] Gain 1 [Protection] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [ResultReduction] next turn",
+                "[OnSucceedAttack] Gain 1 [ResultEnhancement] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\n[SupportProtect] exclusive Skill\nCannot be Staggered before using this Skill\n[WhenUse] Gain 1 [Protection]\n[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+          "levelCorrection": 4,
+          "name": "You there. Vandalism is Prohibited."
+        }
+      ]
+    }
+  ]
+}

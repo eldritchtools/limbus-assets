@@ -390,7 +390,7 @@
                 "Deal +([LCA_Bullet] spent x 30)% damage",
                 "[OnSucceedAttack] Inflict 2 [Sinking]",
                 "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
-                "[OnSucceedAttack] If target has SP, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1\nIf target has less than 0 SP, inflict 1 [AzureTakeDamageUp] (once per turn)"
+                "[OnSucceedAttack] If target is a SP Unit, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1\nIf target has less than 0 SP, inflict 1 [AzureTakeDamageUp] (once per turn)"
               ],
               "type": "normal"
             }

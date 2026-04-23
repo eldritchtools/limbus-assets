@@ -497,13 +497,13 @@
   },
   "Assemble": {
     "buffType": "Positive",
-    "desc": "Raise Skill Final Power by the effect’s Count against units with Nails for the turn. (Applies to clashes as well)",
+    "desc": "Raise Skill Final Power by the effect’s Count against units that have Nails for the turn. (Applies to clashes as well)",
     "name": "Fanatic",
     "srcPath": "Fanatic"
   },
   "AssemblePersonality": {
     "buffType": "Positive",
-    "desc": "Raise Skill Final Power by the effect’s Count against units with Nails for the turn. (Applies to clashes as well)",
+    "desc": "Raise Skill Final Power by the effect’s Count against units that have Nails for the turn. (Applies to clashes as well)",
     "name": "Fanatic",
     "srcPath": "Fanatic"
   },
@@ -975,21 +975,21 @@
   },
   "BloomingThornsRodionFirst": {
     "buffType": "Positive",
-    "desc": "- Max Value: 10\n- Stage 1 Blooming Thorn\n- Gain 1 Defense Level for every 2 Stack (max 5)\n- When hit, inflict 1 Bleed against the attacker and lose 1 Stack\n- [The Princess of La Manchaland Rodion Only]\n· At max Stack, convert to the next Stage of this effect.\n· Inflict +(Stage - 1) more Bleed and Rupture Potency with this unit's Base Attack Skill Coin effects.\n· Reverts to previous Stage when the Stack drops below the requirements.",
+    "desc": "- Max Value: 10\n- Stage 1 Blooming Thorn\n- Gain 1 Defense Level for every 2 Stack (max 5)\n- When hit, inflict 1 Bleed against the attacker and lose 1 Stack\n- [The Princess of La Manchaland Rodion Only]\n· At max Stack, convert to the next Stage of this effect.\n· Inflict +(Stage - 1) more Bleed and Rupture Potency using this unit's Base Attack Skill Coin effects.\n· Reverts to previous Stage when the Stack drops below the requirements.",
     "imageOverride": "Blooming Thorns I",
     "name": "Blooming Thorn",
     "srcPath": "Blooming Thorns I"
   },
   "BloomingThornsRodionSecond": {
     "buffType": "Positive",
-    "desc": "- Max Value: 20\n- Stage 2 Blooming Thorn\n- Gain 1 Defense Level for every 2 Stack (max 5)\n- When hit, inflict 1 Bleed against the attacker and lose 1 Stack\n- [The Princess of La Manchaland Rodion Only]\n· At max Stack, convert to the next Stage of this effect.\n· Inflict +(Stage - 1) more Bleed and Rupture with this unit's Base Attack Skill Coin effects.\n· Reverts to previous Stage when the Stack drops below the requirements.",
+    "desc": "- Max Value: 20\n- Stage 2 Blooming Thorn\n- Gain 1 Defense Level for every 2 Stack (max 5)\n- When hit, inflict 1 Bleed against the attacker and lose 1 Stack\n- [The Princess of La Manchaland Rodion Only]\n· At max Stack, convert to the next Stage of this effect.\n· Inflict +(Stage - 1) more Bleed and Rupture using this unit's Base Attack Skill Coin effects.\n· Reverts to previous Stage when the Stack drops below the requirements.",
     "imageOverride": "Blooming Thorns II",
     "name": "Blooming Thorn II",
     "srcPath": "Blooming Thorns II"
   },
   "BloomingThornsRodionThird": {
     "buffType": "Positive",
-    "desc": "- Max Value: 30\n- Stage 3 Blooming Thorn\n- Gain 1 Defense Level for every 2 Stack (max 5)\n- When hit, inflict 1 Bleed against the attacker and lose 1 Stack\n- [The Princess of La Manchaland Rodion Only]\n· At max Stack, convert to the next Stage of this effect.\n· Inflict +(Stage - 1) more Bleed and Rupture with this unit's Base Attack Skill Coin effects.\n· Reverts to previous Stage when the Stack drops below the requirements.",
+    "desc": "- Max Value: 30\n- Stage 3 Blooming Thorn\n- Gain 1 Defense Level for every 2 Stack (max 5)\n- When hit, inflict 1 Bleed against the attacker and lose 1 Stack\n- [The Princess of La Manchaland Rodion Only]\n· At max Stack, convert to the next Stage of this effect.\n· Inflict +(Stage - 1) more Bleed and Rupture using this unit's Base Attack Skill Coin effects.\n· Reverts to previous Stage when the Stack drops below the requirements.",
     "imageOverride": "Blooming Thorns III",
     "name": "Blooming Thorn III",
     "srcPath": "Blooming Thorns III"
@@ -1614,7 +1614,7 @@
   },
   "ContemptRyoshu": {
     "buffType": "Negative",
-    "desc": "- Max Stack: 1\n- Take and deal -50% damage from and against Ryōshū\n- Targets with Contempt cannot gain Gaze\n- On death, transfers to this unit's ally(for Focused Encounters, a different Part) either without or with the least Contempt or Gaze (this effect does not activate if this unit was killed during the Skill attack 'Cascading Gaze of Awe Underneath Contempt')\n- Turn End: expires; then, this unit gains 7 Gaze next turn",
+    "desc": "- Max Stack: 1\n- Take and deal -50% damage from and against Ryōshū\n- Targets that have Contempt cannot gain Gaze\n- On death, transfers to this unit's ally (for Focused Encounters, a different Part) that has no Contempt or Gaze, or has the least Contempt or Gaze (this effect does not activate if this unit was killed during the Skill attack 'Cascading Gaze of Awe Underneath Contempt')\n- Turn End: Expires; then, this unit gains 7 Gaze next turn",
     "name": "Contempt",
     "srcPath": "Contempt"
   },
@@ -1877,7 +1877,7 @@
   },
   "DelusionGregBigBird": {
     "buffType": "Negative",
-    "desc": "- For every 1 (Sinking + Burn), take +0.5% damage from Base Attack Skills (max 10%)\n- Units with SP: Change their Panic Type to \"Dazzle\"\n- Units without SP: Defense Level -2\n- Turn End: Lose 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Units without SP\" conditional to certain enemies that have SP but can't change their Panic Types\n\n※ Dazzle Panic-type Effects\n- Low Morale: Turn End: Gain 1 Bind and 2 Offense Level Down next turn\n- Panic: Turn End: Gain 1 Bind and 4 Offense Level Down next turn",
+    "desc": "- For every 1 (Sinking + Burn), take +0.5% damage from Base Attack Skills (max 10%)\n- SP Units: Change their Panic Type to \"Dazzle\"\n- Non-SP Units: Defense Level -2\n- Turn End: Lose 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Non-SP Units\" conditional to certain enemies that have SP but can't change their Panic Types\n\n※ Dazzle Panic-type Effects\n- Low Morale: Turn End: Gain 1 Bind and 2 Offense Level Down next turn\n- Panic: Turn End: Gain 1 Bind and 4 Offense Level Down next turn",
     "imageOverride": "DelusionHohenheimBigBird",
     "name": "Dazzle",
     "srcPath": "DelusionHohenheimBigBird"
@@ -2149,7 +2149,7 @@
     "categoryKeywordList": [
       "DUEL_DECLARATION"
     ],
-    "desc": "- In a Clash between the unit that inflicted Declared Duel and the unit with the status, the declarer has +1 Clash Power. On Hit, the declarer gains 1 Haste next turn. (4 times per turn)\n- Expires when the unit inflicts Declared Duel on a different target. Replaced when another unit inflicts Declared Duel on the same target.",
+    "desc": "- In a Clash between the unit that inflicted Declared Duel and the unit that has the status, the declarer has +1 Clash Power. On Hit, the declarer gains 1 Haste next turn. (4 times per turn)\n- Expires when the unit inflicts Declared Duel on a different target. Replaced when another unit inflicts Declared Duel on the same target.",
     "imageOverride": "Declared Duel",
     "name": "Declared Duel - Sinclair",
     "srcPath": "Declared Duel"
@@ -2187,7 +2187,7 @@
   },
   "EchoOfMansion": {
     "buffType": "Negative",
-    "desc": "- 50% chance to gain +1 Sinking Count when gaining Sinking Potency or Count from Skill or Coin effects\n- Units with SP: Change Panic Type to Echoes of the Manor. When this unit Panics, inflict 2 Echoes of the Manor to 2 random other allies of this unit next turn\n- Units without SP: -10% chance to flip Heads\n- Reduced by 1 at Turn End\nThis effect is not cumulative; inflicting it will replace the current value with the inflicted value.\n※ Apply the \"Units without SP\" conditional to certain enemies that have SP but can't change their Panic Types.",
+    "desc": "- 50% chance to gain +1 Sinking Count when gaining Sinking Potency or Count from Skill or Coin effects\n- SP Units: Change Panic Type to Echoes of the Manor. When this unit Panics, inflict 2 Echoes of the Manor to 2 random other allies of this unit next turn\n- Non-SP Units: -10% chance to flip Heads\n- Reduced by 1 at Turn End\nThis effect is not cumulative; inflicting it will replace the current value with the inflicted value.\n※ Apply the \"Non-SP Units\" conditional to certain enemies that have SP but can't change their Panic Types.",
     "name": "Echoes of the Manor",
     "srcPath": "Echoes of the Manor"
   },
@@ -2271,7 +2271,7 @@
   },
   "EngageToBattle": {
     "buffType": "Positive",
-    "desc": "Max Value: 1\nBleed Potency and Count inflicted with this unit's Skill or Coin effects: +1\nGain 1 Slash Power Up and 3 Slash DMG Up for the duration of this Encounter",
+    "desc": "Max Value: 1\nBleed Potency and Count inflicted using this unit's Skill or Coin effects: +1\nGain 1 Slash Power Up and 3 Slash DMG Up for the duration of this Encounter",
     "name": "Battle Ready",
     "srcPath": "Battle Ready"
   },
@@ -2411,6 +2411,46 @@
     "name": "Embers",
     "srcPath": "FaustFlameMothEmber"
   },
+  "FavorBuffTwth": {
+    "buffType": "Positive",
+    "desc": "- Attack Skills that are Lust Skills or Skills that inflict Bleed or 'Unique Bleed' deal +25% damage (for E.G.O Skills, deal +100% damage instead)\n- Upon A-Reson., gain 1 random least-owned E.G.O resource and 1 E.G.O resource of the Affinity used for A-Reson. (2 times per turn)",
+    "name": "Shade of Reflection [Rouge]",
+    "srcPath": "FavorBuffTwth"
+  },
+  "FavorBuffTwthEnemy": {
+    "buffType": "Positive",
+    "desc": "- Take x1.5 damage from Bleed (rounded down)",
+    "imageOverride": "FavorBuffTwth",
+    "name": "Shade of Reflection [Rouge]",
+    "srcPath": "FavorBuffTwth"
+  },
+  "FavorBuffTwthEnemyTwo": {
+    "buffType": "Positive",
+    "desc": "- Turn Start: When Panicked, gain 3 Fragile",
+    "imageOverride": "FavorBuffTwth",
+    "name": "Shade of Reflection [Bleu]",
+    "srcPath": "FavorBuffTwth"
+  },
+  "FavorBuffTwthHard": {
+    "buffType": "Positive",
+    "desc": "- Max HP +25%\n- Skills inflict +1 more Bleed Potency, Sinking Potency, Mauled Color [Rouge], and Mauled Color [Bleu]\n- If target has Palette Vibrante, Clash Power +2 and Base Power +1",
+    "name": "Tribulation",
+    "srcPath": "FavorBuffTwthHard"
+  },
+  "FavorBuffTwthHardTwo": {
+    "buffType": "Positive",
+    "desc": "- Max HP +25%\n- Skills inflict +1 more Bleed Potency, Sinking Potency, Mauled Color [Rouge], and Mauled Color [Bleu]\n- If target has Palette Vibrante, Clash Power +2 and Base Power +1\n- [Phase 2 exclusive effect] Turn Start: If this unit will use \"Burst Forth the Pulsing Crimson under Your Skin\" this turn, heal 10 SP on self for every Sinner that has Palette Vibrante (max 30 SP)",
+    "imageOverride": "FavorBuffTwthHard",
+    "name": "Tribulation",
+    "srcPath": "FavorBuffTwthHard"
+  },
+  "FavorBuffTwthTwo": {
+    "buffType": "Positive",
+    "desc": "- Attack Skills that are Gloom Skills or Skills that inflict Sinking or 'Unique Sinking' deal +25% damage (for E.G.O Skills, deal +100% damage instead)\n- The Finger-faction Identities deal +15% damage to and take -15% damage from enemies",
+    "imageOverride": "FavorBuffTwth",
+    "name": "Shade of Reflection [Bleu]",
+    "srcPath": "FavorBuffTwth"
+  },
   "FellBulletGroggy": {
     "buffType": "Neutral",
     "desc": "- Cannot be removed\n- If at 0 at Turn End, become Staggered next turn\n- When using 'Designated Target Fire' Skill, if the target isn't Stigmatized, lose 1 Stack\n- If the 'Designated Target Fire' Skill loses the Clash, lose 1 Stack\n- If the ally this unit targeted before using the 'Designated Target Fire' Skill is killed, lose 1 Stack",
@@ -2449,7 +2489,7 @@
   },
   "FestivalFeverRodion": {
     "buffType": "Positive",
-    "desc": "- Max Value: 10\n- Expires at Turn End\n- Against targets with Bleed: deal +1.5% damage for every Stack\n- Skills that consume or gain Bloodfeast deal +3% damage for every Stack instead",
+    "desc": "- Max Value: 10\n- Expires at Turn End\n- Against targets that have Bleed: deal +1.5% damage for every Stack\n- Skills that consume or gain Bloodfeast deal +3% damage for every Stack instead",
     "name": "Festive Fever",
     "srcPath": "Festive Fever"
   },
@@ -2685,7 +2725,7 @@
   },
   "GazeRyoshu": {
     "buffType": "Negative",
-    "desc": "- Max Stack: 7\n- Take and deal +10% damage from and against Ryōshū for every 1 Stack of Gaze\n- On death, transfers to this unit's ally(for Focused Encounters, a different Part) either without or with the least Contempt or Gaze (this effect does not activate if this unit was killed during the Skill attack 'Cascading Gaze of Awe Underneath Contempt')\n- Turn End: at 7 Stacks, convert this effect into Contempt next turn",
+    "desc": "- Max Stack: 7\n- Take and deal +10% damage from and against Ryōshū for every 1 Stack of Gaze\n- On death, transfers to this unit's ally (for Focused Encounters, a different Part) that has no Contempt or Gaze, or has the least Contempt or Gaze (this effect does not activate if this unit was killed during the Skill attack 'Cascading Gaze of Awe Underneath Contempt')\n- Turn End: At 7 Stacks, convert this effect into Contempt next turn",
     "name": "Gaze",
     "srcPath": "Gaze"
   },
@@ -2894,7 +2934,7 @@
     "categoryKeywordList": [
       "SUPPORTIVE_PROTECT"
     ],
-    "desc": "- Unique Assist Defense\n- Max Stack: 1\n- When The Lord of Hongyuan Hong Lu is about to take an Unopposed Attack from an enemy, consume 1 Stack to redirect the enemy's targeting to self; then, copy and use The Lord of Hongyuan Hong Lu's 'Lordsguard' Skill\n- When there are multiple allies with Assist Defense Stacks, the ally with the highest Stack has the highest activation priority\n- This effect counts as Assist Defense, and is counted toward calculating Assist Defense Stacks\n- Expires at Turn End",
+    "desc": "- Unique Assist Defense\n- Max Stack: 1\n- When The Lord of Hongyuan Hong Lu is about to take an Unopposed Attack from an enemy, consume 1 Stack to redirect the enemy's targeting to self; then, copy and use The Lord of Hongyuan Hong Lu's 'Lordsguard' Skill\n- When there are multiple allies that have Assist Defense Stacks, the ally that has the highest Stack has the highest activation priority\n- This effect counts as Assist Defense, and is counted toward calculating Assist Defense Stacks\n- Expires at Turn End",
     "name": "Lordsguard",
     "srcPath": "Lordsguard"
   },
@@ -4842,7 +4882,9 @@
   "ObsessionAndGreed": {
     "buffType": "Positive",
     "desc": "- Defense Level +3 for every instance of Clash Lose in the last turn (max 6)\n- Deal +3% damage for every Poise Potency on self (max 15%)",
-    "name": "Shin (心) - Valencina"
+    "imageOverride": "Shin (心) - Procuration",
+    "name": "Shin (心) - Valencina",
+    "srcPath": "Shin (心) - Procuration"
   },
   "OffenseBug": {
     "buffType": "Neutral",
@@ -5040,8 +5082,9 @@
   "PhotoElectricity": {
     "buffType": "Negative",
     "desc": "Max Value: 3\nWhen this unit is hit, the Attacker gains Charge Count equal to the value (once per Skill)\n- If the Attacker has 5- Charge Count, they gain +3 additional Charge Count\nTurn End: this effect expires",
+    "imageOverride": "Photoelectricity",
     "name": "Photoelectricity",
-    "srcPath": "PhotoElectricity"
+    "srcPath": "Photoelectricity"
   },
   "PileObedient": {
     "buffType": "Negative",
@@ -5826,7 +5869,7 @@
     "categoryKeywordList": [
       "SINKING"
     ],
-    "desc": "- Unique Sinking\n- Max Stack: 10\n- For every Stack, take +1% more damage from Sloth and Gloom Skills\n- At max Stack, gain 1 Gloom Fragility (once per turn), take Gloom damage equal to Sinking Potency on self (lose 1 Sinking Count), then expires\n- If the unit with this effect dies, transfer half of its Stack to its ally with the highest SP (rounded down)\n- Turn Start: If there are no LCA Identities on the field, expires",
+    "desc": "- Unique Sinking\n- Max Stack: 10\n- For every Stack, take +1% more damage from Sloth and Gloom Skills\n- At max Stack, gain 1 Gloom Fragility (once per turn), take Gloom damage equal to Sinking Potency on self (lose 1 Sinking Count), then expires\n- If the unit that has this effect dies, transfer half of its Stack to its ally that has the highest SP (rounded down)\n- Turn Start: If there are no LCA Identities on the field, expires",
     "name": "Sheut Fracture",
     "srcPath": "Sheut Fracture"
   },
@@ -6186,7 +6229,7 @@
     "categoryKeywordList": [
       "SUPPORTIVE_PROTECT"
     ],
-    "desc": "- Max Stack: 3\n- When an ally is about to take an Unopposed Attack from an enemy, consume 1 Stack to redirect the enemy's targeting to self; then, use the unique Skill that activates for Assist Defense\n- When there are multiple allies with Assist Defense Stacks, the ally with the highest Stack has the highest activation priority\n- Does not activate for allies who equipped Defense Skills\n- Expires at Turn End",
+    "desc": "- Max Stack: 3\n- When an ally is about to take an Unopposed Attack from an enemy, consume 1 Stack to redirect the enemy's targeting to self; then, use the unique Skill that activates for Assist Defense\n- When there are multiple allies that have Assist Defense Stacks, the ally that has the highest Stack has the highest activation priority\n- Does not activate for allies who equipped Defense Skills\n- Expires at Turn End",
     "imageOverride": "Assist Defense 2",
     "name": "Assist Defense",
     "srcPath": "Assist Defense 2"
@@ -6491,7 +6534,7 @@
   },
   "TimeSuspend": {
     "buffType": "Negative",
-    "desc": "- Does not take any damage as long as this effect is active; store all damage received instead\n- Combat End: If there is only 1 Count left of this effect, the effect triggers Tremor Burst after dealing (100 + (Stack x 15)% of stored damage as Sloth damage\n- Turn End: gain 1 Stack and lose 1 Count\n- The Time Moratorium will immediately expire after triggering the Tremor Burst and the Sloth damage effect if another instance of Time Moratorium is inflicted on a unit with Time Moratorium.",
+    "desc": "- Does not take any damage as long as this effect is active; store all damage received instead\n- Combat End: If there is only 1 Count left of this effect, the effect triggers Tremor Burst after dealing (100 + (Stack x 15)% of stored damage as Sloth damage\n- Turn End: Gain 1 Stack and lose 1 Count\n- The Time Moratorium will immediately expire after triggering the Tremor Burst and the Sloth damage effect if another instance of Time Moratorium is inflicted on a unit that has Time Moratorium.",
     "name": "Time Moratorium",
     "srcPath": "Time Moratorium"
   },
@@ -6568,7 +6611,7 @@
   },
   "Unjust_Enrichment": {
     "buffType": "Positive",
-    "desc": "- Gained on Heads Hit against target with Bleed (Max 4)\n- When 'Bullets are Pricey' Passive activates, consume all Unjust Enrichment stack to deal bonus damage",
+    "desc": "- Gained on Heads Hit against targets that have Bleed (Max 4)\n- When 'Bullets are Pricey' Passive activates, consume all Unjust Enrichment stack to deal bonus damage",
     "name": "Unjust Enrichment",
     "srcPath": "Unjust Enrichment"
   },
@@ -6662,7 +6705,7 @@
   },
   "VendettaMark": {
     "buffType": "Negative",
-    "desc": "- Max Stack: 10\n- Consumed by certain Skills or Passives\n- Take +2% damage from The Middle enemies for every Stack (max 20%)\n- Turn End: the unit with the highest Stack of this effect gains 1 Sibling Vengeance Mark next turn\n(Counted separately from Vengeance Mark; if more than a single unit has the highest Stack of this effect, this effect targets the one with a higher HP percentage)",
+    "desc": "- Max Stack: 10\n- Consumed by certain Skills or Passives\n- Take +2% damage from The Middle enemies for every Stack (max 20%)\n- Turn End: The unit that has the highest Stack of this effect gains 1 Sibling Vengeance Mark next turn\n(Counted separately from Vengeance Mark; if more than a single unit has the highest Stack of this effect, this effect targets the one that has a higher HP percentage)",
     "name": "Vendetta Mark",
     "srcPath": "Vendetta Mark"
   },
@@ -6927,7 +6970,7 @@
   },
   "WanderingFootsteps": {
     "buffType": "Negative",
-    "desc": "- Units with SP: change their Panic Type to \"\"Ruin\"\".\n(Ruin: When this unit enters Low Morale state, gain 3 Sinking at every Turn End and lose 1 Clash Power. When this unit Panics, gain 5 Sinking and 3 Sinking Count at every Turn End and lose 2 Clash Power)\n- Units without SP: -10% chance to flip Heads\n- Reduced by 1 at Turn End\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value.\n※ Apply the \"\"Units without SP\"\" conditional to certain enemies that have SP but can't change their Panic Types.",
+    "desc": "- SP Units: change their Panic Type to \"Ruin\".\n(Ruin: When this unit enters Low Morale state, gain 3 Sinking at every Turn End and lose 1 Clash Power. When this unit Panics, gain 5 Sinking and 3 Sinking Count at every Turn End and lose 2 Clash Power)\n- Non-SP Units: -10% chance to flip Heads\n- Reduced by 1 at Turn End\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value.\n※ Apply the \"Non-SP Units\" conditional to certain enemies that have SP but can't change their Panic Types.",
     "name": "Impending Ruin",
     "srcPath": "Impending Ruin"
   },

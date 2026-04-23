@@ -1,0 +1,370 @@
+{
+  "name": "Hidden - The Index",
+  "siteId": "f27ae233-2179-4148-91bd-dd8105798ca3",
+  "targets": [
+    {
+      "name": "The Index Nursefather - Rien",
+      "parts": [
+        {
+          "breakSection": [
+            60
+          ],
+          "defCorrection": 8,
+          "hp": {
+            "base": 635,
+            "level": 44
+          },
+          "name": "Body",
+          "resists": {
+            "blunt": 0.9,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1.2,
+            "pierce": 0.9,
+            "pride": 1,
+            "slash": 1.2,
+            "sloth": 1,
+            "wrath": 1.2
+          },
+          "speed": [
+            1,
+            2
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn Start:\n- Gain [IndexPrescript_Base_2nd] based on [UnlockBuff_Base] stage on self\n- Apply [IndexPrescriptTargetToPersonality] against a random Sinner, and prioritize attacking them\n<color=#ff6000><mark=#ff000040><b><u>- When using a Skill against [IndexPrescriptTargetToPersonality], convert all Coins on that Skill to [SuperCoin]s</u></b></mark></color>\n\nWhen attacking, if [IndexPrescriptTargetToPersonality] is killed, or if this unit can no longer attack that target, <color=#ff6000><mark=#ff000040><b><u>use the remaining Skills against a random other Sinner\n- Prioritizes targets with the least current HP, unless they have 1 HP</u></b></mark></color>\n- When the randomly chosen Sinner is killed, or if the said Sinner's HP is brought down to 1, repeat this effect on another Sinner\n\nDeal +2.5% damage against [IndexPrescriptTargetToPersonality] for every [BlessingOfIndexPrescriptEnemy] (max 20%)\n- At 9 [BlessingOfIndexPrescriptEnemy], deal +30% damage against all targets",
+          "name": "Will of the Prescript"
+        },
+        {
+          "desc": "Turn End: If [IndexPrescript_Base_2nd] was executed this turn, heal 10 SP and gain 3 [BlessingOfIndexPrescriptEnemy] (once per turn)\n\n<color=#ff6000><mark=#ff000040><b><u>Turn End: If [IndexPrescript_Base_2nd] was not executed this turn, gain 8 [KarmaOfIndexRien]</u></b></mark></color>\n- If this unit does not have [UnlockBuff_Base], gain 1 [BlessingOfIndexPrescriptEnemy] at Turn End\n- At 9 [BlessingOfIndexPrescriptEnemy], does not gain [KarmaOfIndexRien]",
+          "name": "Undertake Prescript"
+        },
+        {
+          "desc": "<color=#ff6000><mark=#ff000040><b><u>Take -50% damage from Unopposed Attacks</u></b></mark></color>\nTake -50% damage from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]\nWhen healing SP from [UnlockBuff_Base], if this unit's SP is below 15, heal SP up to 15\n\nEncounter Start: Gain [BurningWoundRien_Mask] and heal SP up to 30\n\nAt 55%- HP, end the turn and gain a new pattern\n- Remove all effects other than those exclusive to this unit\n- At less than 9 [StackRienSpecialSkill], change [StackRienSpecialSkill] Stack to 9",
+          "name": "Rien, The Index Nursefather"
+        },
+        {
+          "desc": "<color=#ff6000><mark=#ff000040><b><u>A random weapon is assigned to every Coin. Each weapon has a unique effect.</u></b></mark></color>\n- [RienWeapon01Hatchet]\n- [RienWeapon02Stiletto]\n- [RienWeapon03Greatsword]\n- [RienWeapon04Rapier]\n- [RienWeapon05Sledgehammer]\n- [RienWeapon06Ultragreatsword]\n- [RienWeapon07Lance]\n- [RienWeapon08Chain]\n- [RienWeapon09Scythe]\n\nWhen using an Attack Skill, gain 1 [StackRienSpecialSkill] (max 9)\n- Can be gained once per Skill; does not gain Stack from the same Skill twice\n\n<color=#ff6000><mark=#ff000040><b><u>Turn Start: At 9 [StackRienSpecialSkill] Stacks, use a powerful Skill</u></b></mark></color>\n- Attack End: After using the powerful Skill for the first time, gain [Shin_Rien]\n- Reset the per-Skill [StackRienSpecialSkill] cap\n- Min & Max Speed +15\n- Turn End: Gain 1 [Vulnerable] and 2 [ResultReduction] next turn\n\nTurn 3 Start: At less than 9 [StackRienSpecialSkill], bring its Stack to 9; then, gain (Stack gained x 3) [KarmaOfIndexRien]\n- Then, activate this effect every 3 turns",
+          "name": "Oracle Device [Caduceus]"
+        },
+        {
+          "desc": "Turn End: At 3/6/9 [BlessingOfIndexPrescriptEnemy] or at 95%-/85%-/75%- HP,\n- Gain [UnlockBuff_Rien1]/[UnlockBuff_Rien2]/[UnlockBuff_Rien3]\n\nTurn 1 End: At lower than [UnlockBuff_Base] stage 1, gain [UnlockBuff_Rien1]\nTurn 2 End: At lower than [UnlockBuff_Base] stage 2, gain [UnlockBuff_Rien2]\n\nWhen gaining [UnlockBuff_Base] for the first time, if this unit's SP is below 15, heal up to 15 SP\n\nWhen [UnlockBuff_Base] is activated due to HP or Turn conditionals:\n- At less than 3/6/9 [BlessingOfIndexPrescriptEnemy] Stack, raise the Stack to 3/6/9 and gain 5 [KarmaOfIndexRien] at the next Turn Start for every Stack gained",
+          "name": "Unlock"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against targets without SP.",
+          "name": "Fixed Panic"
+        }
+      ],
+      "portrait": "1347",
+      "skills": [
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 2)\nThe following effects activate depending on the weapon's Attack Type\n- Blunt weapons deal +20% damage\n- Non-Blunt weapons deal -10% damage\n[WhenUse] Gain +1 [Breath] Count",
+          "levelCorrection": -1,
+          "name": "Slam Down with Weight, Topple the Body"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 2)\nThe following effects activate depending on the weapon's Attack Type\n- Pierce weapons deal +20% damage\n- Non-Pierce weapons deal -10% damage\n[WhenUse] Gain +1 [Breath] Count",
+          "levelCorrection": -1,
+          "name": "Lay Vertical The End, Insert Up to the Wick"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 2)\nThe following effects activate depending on the weapon's Attack Type\n- Slash weapons deal +20% damage\n- Non-Slash weapons deal -10% damage\n[WhenUse] Gain +1 [Breath] Count",
+          "levelCorrection": -1,
+          "name": "Lay the Blade on its Side, Slice Like a Severed Breath"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count",
+                "[UnBrokenCoinOnSucceedAttack] Inflict +1 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 2)\nThe following effects activate depending on the weapon's Attack Type\n- Blunt weapons deal +30% damage\n- Non-Blunt weapons deal -15% damage\n[StartBattle] Gain the following effects (effects are cumulative)\n- At [UnlockBuff_Rien2], convert the final Coin to [SuperCoin]\n- At [UnlockBuff_Rien3], on Clash Win with this Skill, lower user's Stagger Threshold by 10\n[WhenUse] Gain 2 [Breath]",
+          "levelCorrection": 0,
+          "name": "Swing to Fell, Have it Meet the Ground"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count",
+                "[UnBrokenCoinOnSucceedAttack] Inflict +1 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 2)\nThe following effects activate depending on the weapon's Attack Type\n- Pierce weapons deal +30% damage\n- Non-Pierce weapons deal -15% damage\n[StartBattle] Gain the following effects (effects are cumulative)\n- At [UnlockBuff_Rien2], convert the final Coin to [SuperCoin]\n- At [UnlockBuff_Rien3], on Clash Win with this Skill, inflict 1 [ResultReduction] next turn\n[WhenUse] Gain 2 [Breath]",
+          "levelCorrection": 0,
+          "name": "Aim Toward a Point, Let it Echo Within"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count",
+                "[UnBrokenCoinOnSucceedAttack] Inflict +1 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 2)\nThe following effects activate depending on the weapon's Attack Type\n- Slash weapons deal +30% damage\n- Non-Slash weapons deal -15% damage\n[StartBattle] Gain the following effects (effects are cumulative)\n- At [UnlockBuff_Rien2], convert the final Coin to [SuperCoin]\n- At [UnlockBuff_Rien3], on Clash Win with this Skill, gain 1 [ResultEnhancement] next turn\n[WhenUse] Gain 2 [Breath]",
+          "levelCorrection": 0,
+          "name": "Carve at a Low Slant, Peel What Remains"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[UnBrokenCoinOnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[UnBrokenCoinOnSucceedAttack] Gain +2 [Breath] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Can Clash with this Skill regardless of Speed\nThe following effects activate depending on the weapon's Attack Type\n- Blunt weapons deal +50% damage\n- Non-Blunt weapons deal -25% damage\n[StartBattle] Gain the following effects (effects are cumulative)\n- At [UnlockBuff_Rien2], convert the 3rd and 4th Coins to [SuperCoin]s\n- At [UnlockBuff_Rien3], on Clash Win with this Skill, raise target's Stagger Threshold by 15\n[WhenUse] Gain 2 [Breath] and +2 [Breath] Count",
+          "levelCorrection": 3,
+          "name": "Destroy the Sound, Crush Flat the Thought"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[UnBrokenCoinOnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[UnBrokenCoinOnSucceedAttack] Gain +2 [Breath] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Can Clash with this Skill regardless of Speed\nThe following effects activate depending on the weapon's Attack Type\n- Pierce weapons deal +50% damage\n- Non-Pierce weapons deal -25% damage\n[StartBattle] Gain the following effects (effects are cumulative)\n- At [UnlockBuff_Rien2], convert the 3rd and 4th Coins to [SuperCoin]s\n- At [UnlockBuff_Rien3], on Clash Win with this Skill, gain 1 [AttackDmgUp] next turn\n[WhenUse] Gain 2 [Breath] and +2 [Breath] Count",
+          "levelCorrection": 3,
+          "name": "Stab the Silence's Heart, Penetrate the Memory"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[UnBrokenCoinOnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[UnBrokenCoinOnSucceedAttack] Gain +2 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Can Clash with this Skill regardless of Speed\nThe following effects activate depending on the weapon's Attack Type\n- Slash weapons deal +50% damage\n- Non-Slash weapons deal -25% damage\n[StartBattle] Gain the following effects (effects are cumulative)\n- At [UnlockBuff_Rien2], convert the final Coin to [SuperCoin]\n- At [UnlockBuff_Rien3], on Clash Win with this Skill, Final Power +2\n[WhenUse] Gain 2 [Breath] and +2 [Breath] Count",
+          "levelCorrection": 3,
+          "name": "With Tempered Secret, Cut the Form"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 7,
+          "baseValue": 5,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Reuse this Coin (7 times max)</u></b></mark></color>",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 1 [Sinking]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WideAreaRampage]\n<color=#ff6000><mark=#ff000040><b><u>This Skill does not trigger the target's Defense Skills</u></b></mark></color>\nCan Clash with this Skill regardless of Speed\n[WhenUse]\n- Gain 3 [Breath] and +3 [Breath] Count\n- Clash Power +5 (<color=#ff6000><mark=#ff000040><b><u>Clash Power gained is reduced by 1 for every 10 [KarmaOfIndexRien] on self, down to 0</u></b></mark></color>)\n[WhenUse] At 0+ SP, generate 1 Mang\n- Deal +40% damage; Final Power +4\n\n[WinDuel]\n- Gain 3 [Breath] and +3 [Breath] Count\n- Attack End: Inflict 3 [Laceration], 1 [Binding], and 1 [Vulnerable] next turn to all targets this unit hit\n[DefeatDuel]\n- Gain 4 [AttackDmgDown] and 9 [Paralysis]\n- Damage dealt by this Skill cannot Stagger the target; On Hit, does not activate [Sinking] on target\n[EndSkill] If this Skill generated Mang, lose 20 SP\n[EndSkill] End this turn",
+          "levelCorrection": 4,
+          "name": "Furioso-Replica"
+        }
+      ]
+    }
+  ]
+}

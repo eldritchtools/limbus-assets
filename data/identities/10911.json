@@ -70,7 +70,7 @@
         ],
         "type": "owned"
       },
-      "desc": "When an other ally takes [Laceration] damage or consumes [BloodDinner], this unit gains 1 [BloomingThornsRodionFirst] (5 times per turn)\nHeal HP on self by 20% of the damage dealt with base Skills (max 10 per Skill)\n- At max HP, heal 1 ally with the lowest HP percentage by excess healing",
+      "desc": "When another ally takes [Laceration] damage or consumes [BloodDinner], this unit gains 1 [BloomingThornsRodionFirst] (5 times per turn)\nHeal HP on self by 20% of the damage dealt using base Skills (max 10 per Skill)\n- At max HP, heal 1 ally that has the lowest HP percentage by excess healing",
       "name": "Hardblood Thorn"
     },
     "1091121": {
@@ -87,7 +87,7 @@
         ],
         "type": "owned"
       },
-      "desc": "To 1 ally with the highest [Laceration] Potency at Turn End: reduce the ally's [Laceration] Potency by 6 max, and apply ([Laceration] Potency reduced / 2) [BloomingThornsRodionFirst] (rounded down)",
+      "desc": "To 1 ally that has the highest [Laceration] Potency at Turn End: Reduce the ally's [Laceration] Potency by 6 max, and apply ([Laceration] Potency reduced / 2) [BloomingThornsRodionFirst] (rounded down)",
       "name": "\"Blossom with Blood...\""
     }
   },
@@ -114,7 +114,7 @@
             }
           ],
           "defType": "attack",
-          "desc": "[StartBattle] On self and 1 ally with the highest max HP: consume up to 20 [BloodDinner] and apply 1 [BloomingThornsRodionFirst] for every 10 [BloodDinner] this unit consumed (2 times per turn)\n- Prioritizes <Bloodfiend> allies\n- If the affected ally is a <Bloodfiend>, this unit applies 1 additional [BloomingThornsRodionFirst]\n- If this unit failed to consume [BloodDinner], gain 5 [Laceration]",
+          "desc": "[StartBattle] On self and 1 ally that has the highest max HP: consume up to 20 [BloodDinner] and apply 1 [BloomingThornsRodionFirst] for every 10 [BloodDinner] this unit consumed (2 times per turn)\n- Prioritizes <Bloodfiend> allies\n- If the affected ally is a <Bloodfiend>, this unit applies 1 additional [BloomingThornsRodionFirst]\n- If this unit failed to consume [BloodDinner], gain 5 [Laceration]",
           "levelCorrection": 1,
           "name": "Begone...",
           "uptie": 1
@@ -126,13 +126,13 @@
               "value": 1
             }
           ],
-          "desc": "[StartBattle] On self and 1 ally with the highest max HP: consume up to 20 [BloodDinner] and apply 1 [BloomingThornsRodionFirst] for every 10 [BloodDinner] this unit consumed (2 times per turn)\n- Prioritizes <Bloodfiend> allies\n- If the affected ally is a <Bloodfiend>, this unit applies 1 additional [BloomingThornsRodionFirst]\n- If this unit failed to consume [BloodDinner], gain 5 [Laceration]\n[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+          "desc": "[StartBattle] On self and 1 ally that has the highest max HP: consume up to 20 [BloodDinner] and apply 1 [BloomingThornsRodionFirst] for every 10 [BloodDinner] this unit consumed (2 times per turn)\n- Prioritizes <Bloodfiend> allies\n- If the affected ally is a <Bloodfiend>, this unit applies 1 additional [BloomingThornsRodionFirst]\n- If this unit failed to consume [BloodDinner], gain 5 [Laceration]\n[WhenUse] If target has 6+ [Laceration], Coin Power +1",
           "name": "Begone...",
           "uptie": 2
         },
         {
           "baseValue": 3,
-          "desc": "[StartBattle] On self and 1 ally with the highest max HP: consume up to 20 [BloodDinner] and apply 1 [BloomingThornsRodionFirst] for every 10 [BloodDinner] this unit consumed (2 times per turn)\n- Prioritizes <Bloodfiend> allies\n- If the affected ally is a <Bloodfiend>, this unit applies 1 additional [BloomingThornsRodionFirst]\n- If this unit failed to consume [BloodDinner], gain 5 [Laceration]\n[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+          "desc": "[StartBattle] On self and 1 ally that has the highest max HP: consume up to 20 [BloodDinner] and apply 1 [BloomingThornsRodionFirst] for every 10 [BloodDinner] this unit consumed (2 times per turn)\n- Prioritizes <Bloodfiend> allies\n- If the affected ally is a <Bloodfiend>, this unit applies 1 additional [BloomingThornsRodionFirst]\n- If this unit failed to consume [BloodDinner], gain 5 [Laceration]\n[WhenUse] If target has 6+ [Laceration], Coin Power +1",
           "name": "Begone...",
           "uptie": 3
         },
@@ -143,7 +143,7 @@
               "value": 2
             }
           ],
-          "desc": "[StartBattle] On self and 1 ally with the highest max HP: consume up to 20 [BloodDinner] and apply 1 [BloomingThornsRodionFirst] for every 10 [BloodDinner] this unit consumed (2 times per turn)\n- Prioritizes <Bloodfiend> allies\n- If the affected ally is a <Bloodfiend>, this unit applies 1 additional [BloomingThornsRodionFirst]\n- If this unit failed to consume [BloodDinner], gain 5 [Laceration]\n[WhenUse] Coin Power +1 for every 6 [Laceration] on target (max 2)",
+          "desc": "[StartBattle] On self and 1 ally that has the highest max HP: consume up to 20 [BloodDinner] and apply 1 [BloomingThornsRodionFirst] for every 10 [BloodDinner] this unit consumed (2 times per turn)\n- Prioritizes <Bloodfiend> allies\n- If the affected ally is a <Bloodfiend>, this unit applies 1 additional [BloomingThornsRodionFirst]\n- If this unit failed to consume [BloodDinner], gain 5 [Laceration]\n[WhenUse] Coin Power +1 for every 6 [Laceration] on target (max 2)",
           "name": "Begone...",
           "uptie": 4
         }
@@ -179,7 +179,7 @@
             }
           ],
           "defType": "attack",
-          "desc": "[StartBattle] On self and 1 ally with the least max HP: apply 1 [Enhancement], consume up to 30 [BloodDinner] and apply 1 [BloomingThornsRodionFirst] for every 10 [BloodDinner] this unit consumed (2 times per turn)\n- Prioritizes <Bloodfiend> allies\n- If the affected ally is a <Bloodfiend>, this unit applies additional 1 [Enhancement] and 2 [BloomingThornsRodionFirst]\n- If this unit failed to consume [BloodDinner], gain 5 [Laceration]",
+          "desc": "[StartBattle] On self and 1 ally that has the lowest max HP: apply 1 [Enhancement], consume up to 30 [BloodDinner] and apply 1 [BloomingThornsRodionFirst] for every 10 [BloodDinner] this unit consumed (2 times per turn)\n- Prioritizes <Bloodfiend> allies\n- If the affected ally is a <Bloodfiend>, this unit applies additional 1 [Enhancement] and 2 [BloomingThornsRodionFirst]\n- If this unit failed to consume [BloodDinner], gain 5 [Laceration]",
           "levelCorrection": 2,
           "name": "In Finely Ground Mistfall",
           "uptie": 1
@@ -211,13 +211,13 @@
               "type": "normal"
             }
           ],
-          "desc": "[StartBattle] On self and 1 ally with the least max HP: apply 1 [Enhancement], consume up to 30 [BloodDinner] and apply 1 [BloomingThornsRodionFirst] for every 10 [BloodDinner] this unit consumed (2 times per turn)\n- Prioritizes <Bloodfiend> allies\n- If the affected ally is a <Bloodfiend>, this unit applies additional 1 [Enhancement] and 2 [BloomingThornsRodionFirst]\n- If this unit failed to consume [BloodDinner], gain 5 [Laceration]\n[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+          "desc": "[StartBattle] On self and 1 ally that has the lowest max HP: apply 1 [Enhancement], consume up to 30 [BloodDinner] and apply 1 [BloomingThornsRodionFirst] for every 10 [BloodDinner] this unit consumed (2 times per turn)\n- Prioritizes <Bloodfiend> allies\n- If the affected ally is a <Bloodfiend>, this unit applies additional 1 [Enhancement] and 2 [BloomingThornsRodionFirst]\n- If this unit failed to consume [BloodDinner], gain 5 [Laceration]\n[WhenUse] If target has 6+ [Laceration], Coin Power +1",
           "name": "In Finely Ground Mistfall",
           "uptie": 2
         },
         {
           "baseValue": 4,
-          "desc": "[StartBattle] On self and 1 ally with the least max HP: apply 1 [Enhancement], consume up to 30 [BloodDinner] and apply 1 [BloomingThornsRodionFirst] for every 10 [BloodDinner] this unit consumed (2 times per turn)\n- Prioritizes <Bloodfiend> allies\n- If the affected ally is a <Bloodfiend>, this unit applies additional 1 [Enhancement] and 2 [BloomingThornsRodionFirst]\n- If this unit failed to consume [BloodDinner], gain 5 [Laceration]\n[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+          "desc": "[StartBattle] On self and 1 ally that has the lowest max HP: apply 1 [Enhancement], consume up to 30 [BloodDinner] and apply 1 [BloomingThornsRodionFirst] for every 10 [BloodDinner] this unit consumed (2 times per turn)\n- Prioritizes <Bloodfiend> allies\n- If the affected ally is a <Bloodfiend>, this unit applies additional 1 [Enhancement] and 2 [BloomingThornsRodionFirst]\n- If this unit failed to consume [BloodDinner], gain 5 [Laceration]\n[WhenUse] If target has 6+ [Laceration], Coin Power +1",
           "name": "In Finely Ground Mistfall",
           "uptie": 3
         },
@@ -228,7 +228,7 @@
               "value": 2
             }
           ],
-          "desc": "[StartBattle] On self and 1 ally with the least max HP: apply 1 [Enhancement], consume up to 30 [BloodDinner] and apply 1 [BloomingThornsRodionFirst] for every 10 [BloodDinner] this unit consumed (2 times per turn)\n- Prioritizes <Bloodfiend> allies\n- If the affected ally is a <Bloodfiend>, this unit applies additional 1 [Enhancement] and 2 [BloomingThornsRodionFirst]\n- If this unit failed to consume [BloodDinner], gain 5 [Laceration]\n[WhenUse] Coin Power +1 for every 6 [Laceration] on target (max 2)",
+          "desc": "[StartBattle] On self and 1 ally that has the lowest max HP: apply 1 [Enhancement], consume up to 30 [BloodDinner] and apply 1 [BloomingThornsRodionFirst] for every 10 [BloodDinner] this unit consumed (2 times per turn)\n- Prioritizes <Bloodfiend> allies\n- If the affected ally is a <Bloodfiend>, this unit applies additional 1 [Enhancement] and 2 [BloomingThornsRodionFirst]\n- If this unit failed to consume [BloodDinner], gain 5 [Laceration]\n[WhenUse] Coin Power +1 for every 6 [Laceration] on target (max 2)",
           "name": "In Finely Ground Mistfall",
           "uptie": 4
         }
@@ -312,14 +312,14 @@
             }
           ],
           "defType": "counter",
-          "desc": "[DuelCounter]\n[WhenUse] Reduce [Laceration] Count by 3 for 2 other allies with the highest ([Laceration] Potency x Count) value, and increase [BloodDinner] by (pre-reduction [Laceration] Potency x Count reduced)\n  - If this effect reduces [Laceration] Count to 0, [Laceration] expires\n[WinDuel] Gain 4 [BloomingThornsRodionFirst]",
+          "desc": "[DuelCounter]\n[WhenUse] Reduce [Laceration] Count by 3 for 2 other allies that have the highest ([Laceration] Potency x Count) value, and increase [BloodDinner] by (pre-reduction [Laceration] Potency x Count reduced)\n  - If this effect reduces [Laceration] Count to 0, [Laceration] expires\n[WinDuel] Gain 4 [BloomingThornsRodionFirst]",
           "levelCorrection": 2,
           "name": "Don Quixote Hardblood Arts 15: Parasol",
           "uptie": 1
         },
         {
           "baseValue": 5,
-          "desc": "[DuelCounter]\n[WhenUse] Reduce [Laceration] Count by 3 for 2 other allies with the highest ([Laceration] Potency x Count) value, and increase [BloodDinner] by (pre-reduction [Laceration] Potency x Count reduced)\n  - If this effect reduces [Laceration] Count to 0, [Laceration] expires\n  - If the affected ally is a <Bloodfiend>, reduce their [Laceration] Count by 2 more\n[WinDuel] Gain 4 [BloomingThornsRodionFirst]",
+          "desc": "[DuelCounter]\n[WhenUse] Reduce [Laceration] Count by 3 for 2 other allies that have the highest ([Laceration] Potency x Count) value, and increase [BloodDinner] by (pre-reduction [Laceration] Potency x Count reduced)\n  - If this effect reduces [Laceration] Count to 0, [Laceration] expires\n  - If the affected ally is a <Bloodfiend>, reduce their [Laceration] Count by 2 more\n[WinDuel] Gain 4 [BloomingThornsRodionFirst]",
           "name": "Don Quixote Hardblood Arts 15: Parasol",
           "uptie": 4
         }
