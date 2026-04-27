@@ -1,0 +1,980 @@
+{
+  "name": "Extreme - Impenetrable Path",
+  "siteId": "8a6e4291-7c51-4ea9-8fa4-24c2188c80b6",
+  "targets": [
+    {
+      "name": "Josephine of the Wild Hunt",
+      "num": 4,
+      "parts": [
+        {
+          "breakSection": [
+            55,
+            30,
+            0,
+            -10
+          ],
+          "defCorrection": -2,
+          "hp": 197.76,
+          "name": "Body",
+          "partId": 816701,
+          "resists": {
+            "blunt": 1,
+            "envy": 1.5,
+            "gloom": 1,
+            "gluttony": 0.5,
+            "lust": 1.5,
+            "pierce": 1,
+            "pride": 0.8,
+            "slash": 1,
+            "sloth": 1,
+            "wrath": 1.2
+          },
+          "speed": [
+            3,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "Turn End: if this unit recovered from Panic, gain 1 Attack Power Up next turn",
+          "name": "Yo..."
+        },
+        {
+          "desc": "Turn End: if Staggered, recover from the Staggered state and heal 20 SP. Gain 1 Offense Level Up next turn. (one time max)",
+          "name": "ies..."
+        },
+        {
+          "desc": "If this unit's Speed is faster than the target's, Clash Power +2",
+          "name": "ool..."
+        },
+        {
+          "desc": "Heal 10 SP when every Coin of an Attack Skill hits heads",
+          "name": "oice...!"
+        },
+        {
+          "desc": "In a Clash, Clash Power -1; take 10 HP damage on self with each Clash (this effect does not reduce this unit's HP to 0)",
+          "name": "Threa..."
+        },
+        {
+          "desc": "Upon Clash Lose, gain 3 Offense Level Up. (Once per turn)",
+          "name": "Opp... tta"
+        }
+      ],
+      "portrait": 8167,
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Sinking]",
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Sinking]",
+                "[OnSucceedAttack] Inflict 1 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 5+ [Sinking], inflict 1 [AttackDown]",
+          "levelCorrection": 5,
+          "name": "...nocking"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [PlusCoinValueDown] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count",
+                "[OnSucceedAttack] Inflict 2 [Vulnerable] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If the target is at 10 or less SP, inflict 2 [AttackDown]\n[WinDuel] Inflict 1 [Vulnerable]",
+          "levelCorrection": 5,
+          "name": "...to Clean"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 8 [Sinking]",
+                "[OnSucceedAttackHead] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 8 [Sinking]",
+                "[OnSucceedAttackHead] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 8 [Sinking]",
+                "[OnSucceedAttackHead] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Base Power +1 for every 3 [Sinking] on target (max 3)\n[WinDuel] All allies heal 5 SP",
+          "levelCorrection": 5,
+          "name": "...mmands...!"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict Gloom Affinity bonus damage equal to [Sinking] on target. Reduce [Sinking] Count on target by 1"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict Gloom Affinity bonus damage equal to [Sinking] on target. Reduce [Sinking] Count on target by 1"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict Gloom Affinity bonus damage equal to [Sinking] on target.",
+                "[OnSucceedAttack] Inflict 4 [Sinking]",
+                "[OnSucceedAttack] If target has 3+ [Sinking] Count, Reuse this Coin (twice)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Base Power +1 for every 6 [Sinking] on target (max 3)\n[WhenUse] Deal +10% damage for every 6 [Sinking] Count on target (max 30%)",
+          "levelCorrection": 5,
+          "name": "...of Dust"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 20,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "If this unit has remaining Shield HP at Turn End, lower Stagger threshold by 50",
+          "levelCorrection": 2,
+          "name": "Slipp..."
+        }
+      ]
+    },
+    {
+      "name": "Hindley of the Wild Hunt",
+      "num": 2,
+      "parts": [
+        {
+          "breakSection": [
+            70,
+            30,
+            0
+          ],
+          "defCorrection": -2,
+          "hp": 217,
+          "name": "Body",
+          "partId": 816801,
+          "resists": {
+            "blunt": 1,
+            "envy": 1.5,
+            "gloom": 1.5,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 0.5,
+            "slash": 1,
+            "sloth": 0.8,
+            "wrath": 1.2
+          },
+          "speed": [
+            2,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "Turn End: if this unit's SP is at -10 or less, gain 3 Offense Level Up next turn.",
+          "name": "Bod... ...st"
+        },
+        {
+          "desc": "In a Clash, Clash Power -1; take 10 HP damage on self with each Clash (this effect does not reduce this unit's HP to 0)",
+          "name": "Threa..."
+        },
+        {
+          "desc": "Upon Clash Lose, gain 3 Offense Level Up. (Once per turn)",
+          "name": "Opp... tta"
+        }
+      ],
+      "portrait": 8169,
+      "skills": [
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [AttackUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [AttackUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Damn Pl..."
+        },
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has [AttackDown], deal 20% of damage dealt as bonus Blunt damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has [AttackDown], deal 20% of damage dealt as bonus Blunt damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Base Power +1",
+          "levelCorrection": 3,
+          "name": "I'll Remo..."
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal 4 SP on self"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal 4 SP on self"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal 4 SP on self"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] If target has 2+ [AttackDown], Base Power +1\n[WhenUse] If target has [DefenseDown], deal 30% of damage dealt as bonus Blunt damage",
+          "levelCorrection": 3,
+          "name": "Make Things..."
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vulnerable]",
+                "[OnSucceedAttack] Inflict 1 [Vulnerable] next turn",
+                "[OnSucceedAttack] Inflict 2 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Deal +30% damage for every 2 [AttackDown] on target (max 120%)",
+                "[OnSucceedAttackHead] If target has 3+ negative effects, reuse this coin (once)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes targets with the most negative effects\n[WinDuel] Coin Power +1 for every 3 [DefenseDown] on target (max 3)",
+          "levelCorrection": 3,
+          "name": "... ove You"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[StartBattle] Gain 20 additional Shield HP for every surviving ally",
+          "levelCorrection": 0,
+          "name": "Guard"
+        }
+      ]
+    },
+    {
+      "name": "Linton of the Wild Hunt",
+      "num": 4,
+      "parts": [
+        {
+          "breakSection": [
+            70,
+            30,
+            0
+          ],
+          "defCorrection": -3,
+          "hp": 182,
+          "name": "Body",
+          "partId": 816901,
+          "resists": {
+            "blunt": 1,
+            "envy": 1.5,
+            "gloom": 1.5,
+            "gluttony": 0.5,
+            "lust": 1.2,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 1,
+            "sloth": 0.8,
+            "wrath": 1
+          },
+          "speed": [
+            2,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "Heal 10 SP when every Coin of an Attack Skill hits heads",
+          "name": "Tou..."
+        },
+        {
+          "desc": "When using an Attack Skill, if target's HP is below 70, gain Base Power +1 and deal +20% damage",
+          "name": "Hou..."
+        },
+        {
+          "desc": "When using a Skill, if this unit's Speed is faster than the target's, gain Clash Power +2 and deal +20% damage",
+          "name": "...erding"
+        },
+        {
+          "desc": "In a Clash, Clash Power -1; take 10 HP damage on self with each Clash (this effect does not reduce this unit's HP to 0)",
+          "name": "Threa..."
+        },
+        {
+          "desc": "Upon Clash Lose, gain 3 Offense Level Up. (Once per turn)",
+          "name": "Opp... tta"
+        }
+      ],
+      "portrait": 8168,
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [DefenseDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Marc..."
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [DefenseDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 2+ negative effects, Base Power +1",
+          "levelCorrection": 2,
+          "name": "...te"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] Inflict 1 [PenetrateTakeDamageUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 4+ negative effects, Coin Power +1",
+          "levelCorrection": 2,
+          "name": "Fl...he"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vulnerable]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vulnerable] next turn",
+                "[OnSucceedAttack] If target has 5+ negative effects, reuse this coin (2 times max)",
+                "[OnSucceedAttack] Remove 1 random removable negative effect applied on target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 5+ negative effects, Base Power +2\n[WhenUse] If target has 5+ negative effects, deal +30% damage",
+          "levelCorrection": 2,
+          "name": "Cou...oit"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[OnSucceedEvade] Heal 5 SP (2 times max)",
+          "levelCorrection": 0,
+          "name": "..."
+        }
+      ]
+    },
+    {
+      "name": "The Reaved Lamenter of the Wild Hunt",
+      "num": 2,
+      "parts": [
+        {
+          "breakSection": [
+            75,
+            45,
+            0
+          ],
+          "defCorrection": -1,
+          "hp": 260.9,
+          "name": "Body",
+          "partId": 817001,
+          "resists": {
+            "blunt": 1,
+            "envy": 1.5,
+            "gloom": 1.2,
+            "gluttony": 1,
+            "lust": 1.2,
+            "pierce": 1,
+            "pride": 0.5,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 1.5
+          },
+          "speed": [
+            2,
+            3
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against targets without SP.",
+          "name": "Fixed Panic"
+        },
+        {
+          "desc": "At less than 65% HP: gain 1 [AttackUp] and 1 [TakeHpHealIncrease] on Clash Win\nAt less than 40% HP: gain 1 [AttackUp] and 1 [TakeHpHealIncrease] On Use\nThe effects linger even after the conditions no longer apply, as long as they have been activated at least once.",
+          "name": "...rity"
+        },
+        {
+          "desc": "After the first recovery from Stagger, and after Clash Win, deal 10% of the damage dealt On Hit as Wrath bonus damage.",
+          "name": "Dir..."
+        },
+        {
+          "desc": "On Kill, heal 200 HP for Core and Part.\nGain 1 [Agility], 3 [DefenseUp], and 2 [AttackUp] next turn.",
+          "name": "Pred..."
+        },
+        {
+          "desc": "Prioritizes targets with [AaCfPbBe]",
+          "name": "...ked"
+        },
+        {
+          "desc": "In a Clash, Clash Power -1; take 10 HP damage on self with each Clash (this effect does not reduce this unit's HP to 0)",
+          "name": "Threa..."
+        },
+        {
+          "desc": "Upon Clash Lose, gain 3 Offense Level Up. (Once per turn)",
+          "name": "Opp... tta"
+        }
+      ],
+      "portrait": 8170,
+      "skills": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [AttackUp]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [AttackUp]",
+                "[OnSucceedAttackHead] Gain 1 [Agility] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Core and Part heal by 10% of the damage dealt by this Attack Skill",
+          "levelCorrection": 0,
+          "name": "I'll Remo..."
+        },
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration] and +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration] and +2 [Laceration] Count",
+                "[OnSucceedAttack] If this unit's Speed is faster than the target's by 3 or more, reuse this Coin (once)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If this unit's Speed is faster than the target's, Clash Power +2",
+          "levelCorrection": 0,
+          "name": "... Bastard"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Agility] next turn",
+                "[OnSucceedAttack] Inflict 1 [Vulnerable]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration] and +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration] and +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 20+ [Laceration], deal +100% damage",
+                "[EnemyKill] Reuse this Skill (1 time max)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritize targets with the least HP\n[WhenUse] If target has less than 70% HP, Clash Power +2",
+          "levelCorrection": 0,
+          "name": "This is My..."
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [AttackUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [AttackUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes Heathcliff\n[WhenUse] If the target is the enemy with the slowest Speed, Base Power +3\n[WhenUse] Inflict [AaCfPbBe], 2 [Vulnerable], 3 [Paralysis], and 5 [Binding]",
+          "levelCorrection": 0,
+          "name": "Get..."
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [AttackUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [AttackUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [AttackUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 10+ [Laceration], deal 30% of damage dealt as Blunt damage",
+                "[OnSucceedAttack] If target has 5+ [Laceration], heal by 50% of damage dealt"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]",
+          "levelCorrection": 0,
+          "name": "Back...!!"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal Core and Part by 50% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal Core and Part by 50% of damage dealt"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes targets with [AaCfPbBe]\nIf this unit's Speed is faster than the target by 3 or more, reuse this Skill (1 time max)",
+          "levelCorrection": 0,
+          "name": "ttle..."
+        },
+        {
+          "affinity": "pride",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 20,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "If this Unit has remaining Shield HP at Turn End, gain 4 [Protection] next turn",
+          "levelCorrection": 0,
+          "name": "Gua..."
+        },
+        {
+          "affinity": "pride",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 7,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[OnSucceedEvade] Inflict 1 [Binding] next turn (2 times max)",
+          "levelCorrection": 0,
+          "name": "... de"
+        }
+      ]
+    },
+    {
+      "name": "Peccatulum Irae??",
+      "num": 6,
+      "parts": [
+        {
+          "breakSection": [
+            60,
+            0
+          ],
+          "defCorrection": 0,
+          "hp": 139.5,
+          "name": "Body",
+          "partId": 119101,
+          "resists": {
+            "blunt": 0.5,
+            "envy": 1,
+            "gloom": 1.75,
+            "gluttony": 0.8,
+            "lust": 1.5,
+            "pierce": 0.5,
+            "pride": 0.8,
+            "slash": 0.5,
+            "sloth": 0.5,
+            "wrath": 0.5
+          },
+          "speed": [
+            2,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+          "name": "Refracted Struggle"
+        },
+        {
+          "desc": "Unless this unit is Staggered or Part Broken, take 80% less [Combustion] damage.",
+          "name": "Sin Nullification"
+        },
+        {
+          "desc": "If the target has [Combustion]: On Hit, spread half of [Combustion] on target to 2 units adjacent to the target on the Dashboard.",
+          "name": "Proliferating Flame"
+        }
+      ],
+      "portrait": 8161,
+      "skills": [
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 6 [Combustion] and +2 [Combustion] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "Impaling"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 8 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +4 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [PenetrateTakeDamageUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] If target has [Combustion], Base Power +2",
+          "levelCorrection": 5,
+          "name": "Hewing"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Combustion] Count",
+                "[OnSucceedAttackHead] Inflict 1 [CrimsonTakeDamageUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 5 [Combustion] on target (max 3)\n[WinDuel] If target has 9+ [Combustion], this Skill gains Atk Weight +1",
+          "levelCorrection": 5,
+          "name": "Erupting Wrath"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 10 [AttackDmgUp_Weak] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] If target has 5+ [Combustion], Coin Power +2\n[WhenUse] If target has 6+ [Combustion], reuse this Skill (2 times max)",
+          "levelCorrection": 5,
+          "name": "Counter"
+        }
+      ]
+    }
+  ]
+}

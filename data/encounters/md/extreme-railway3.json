@@ -1,0 +1,841 @@
+{
+  "name": "Extreme - Line 3 - Terminus",
+  "siteId": "3fab635a-9bdb-4d47-afe2-174a022569e3",
+  "waves": [
+    {
+      "targets": [
+        {
+          "name": "Ambling Pearl",
+          "parts": [
+            {
+              "breakSection": [
+                50,
+                0
+              ],
+              "defCorrection": 5,
+              "hp": {
+                "base": 158,
+                "level": 6.48
+              },
+              "name": "Shell",
+              "partId": 813701,
+              "resists": {
+                "blunt": 0.7,
+                "envy": 0.7,
+                "gloom": 0.7,
+                "gluttony": 0.7,
+                "lust": 0.7,
+                "pierce": 0.7,
+                "pride": 0.7,
+                "slash": 0.7,
+                "sloth": 0.7,
+                "wrath": 0.7
+              },
+              "speed": [
+                1,
+                3
+              ]
+            },
+            {
+              "breakSection": [
+                50
+              ],
+              "defCorrection": -5,
+              "hp": {
+                "base": 293,
+                "level": 12
+              },
+              "name": "Pearl",
+              "partId": 813702,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1.2,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1.2
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Turn Start: If at 0 [AaCePcBh], become Staggered. Pearl loses all Affinity Resistances by 0.5.\nGain 10 [AaCePcBh] when recovering from Stagger.",
+              "name": "Exposed Pearl"
+            },
+            {
+              "desc": "Fix this Part's speed to 1 for a turn when using Devouring Fluid.",
+              "name": "Gathering Slime"
+            },
+            {
+              "desc": "The Shell Part retains its resistances even during Staggered state.",
+              "name": "Solid Shell"
+            }
+          ],
+          "portrait": 8101,
+          "skills": [
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Poison]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Poison]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Consume 1 [AaCePcBh]",
+              "levelCorrection": -4,
+              "name": "Toxic Fluid"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict [DefenseDown] by [Poison] on target",
+                    "[OnSucceedAttack] Inflict 1 [AaCePcBg]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict [DefenseDown] by [Poison] on target",
+                    "[OnSucceedAttack] Inflict 1 [AaCePcBg]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Consume 1 [AaCePcBh]",
+              "levelCorrection": -4,
+              "name": "Corrosive Fluid"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target has [Poison], inflict 1 [Paralysis]",
+                    "[OnSucceedAttack] Inflict 2 [AaCePcBg]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target has [Poison], inflict 1 [Paralysis]",
+                    "[OnSucceedAttack] Inflict 2 [AaCePcBg]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Consume 1 [AaCePcBh]",
+              "levelCorrection": -4,
+              "name": "Paralytic Fluid"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Poison]",
+                    "[OnSucceedAttackHead] Inflict 1 [Paralysis] next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Poison]",
+                    "[OnSucceedAttackHead] Inflict 1 [Paralysis] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Consume 2 [AaCePcBh]\n[WhenUse] Inflict 3 [AaCePcBg]",
+              "levelCorrection": -4,
+              "name": "Devouring Fluid"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 5,
+              "baseValue": 15,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 10 [Poison]",
+                    "[OnSucceedAttack] Lose 7 SP",
+                    "[OnSucceedAttack] Inflict 3 [AaCePcBg]",
+                    "[OnSucceedAttackHead] Inflict 1 [Paralysis] and 3 [DefenseDown] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Gain Atk Weight by [AaCePcBh]\n[StartBattle] Gain 10 [AaCePcBh]",
+              "levelCorrection": -4,
+              "name": "Effervescent Green Slime"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 50,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "descs": [
+                    "[TargetKill] Gain 3 [AaCePcBh]."
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel][CantChangeTarget]\nTargets [AaCePcBh] primarily\nDefeats [AaCePcBh] upon attacking",
+              "levelCorrection": -4,
+              "name": "Predation"
+            },
+            {
+              "affinity": "pride",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[OnSucceedEvade] Inflict 5 [Poison]",
+              "levelCorrection": -4,
+              "name": "Overflowing Poison"
+            }
+          ]
+        },
+        {
+          "name": "Green Slime",
+          "parts": [
+            {
+              "defCorrection": 0,
+              "hp": {
+                "base": 11,
+                "level": 0.36
+              },
+              "name": "Green Slime",
+              "partId": 813801,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1.2,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1.2
+              },
+              "speed": [
+                1,
+                2
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Apply 3 [AaCePcBh] to Ambling Pearl when defeated by Ambling Pearl.",
+              "name": "Green Slime"
+            },
+            {
+              "desc": "Turn End: Apply (2 + Surviving [AaCePcBh]) [Poison] to all enemies.",
+              "name": "Contaminating Slime"
+            }
+          ],
+          "portrait": 8109
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Refracted Ardor Blossom Moth",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                0,
+                -20
+              ],
+              "defCorrection": 0,
+              "hp": {
+                "base": 538,
+                "level": 24.12
+              },
+              "name": "Body",
+              "partId": 819701,
+              "resists": {
+                "blunt": 1,
+                "envy": 0.75,
+                "gloom": 1.2,
+                "gluttony": 1,
+                "lust": 0.5,
+                "pierce": 0.5,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1.2,
+                "wrath": 0.2
+              },
+              "speed": [
+                1,
+                2
+              ]
+            },
+            {
+              "defCorrection": 0,
+              "hp": {
+                "base": 119,
+                "level": 5.35
+              },
+              "name": "Wings",
+              "partId": 819702,
+              "resists": {
+                "blunt": 1,
+                "envy": 0.75,
+                "gloom": 2,
+                "gluttony": 1,
+                "lust": 0.5,
+                "pierce": 0.5,
+                "pride": 1,
+                "slash": 1.5,
+                "sloth": 1.5,
+                "wrath": 0.2
+              },
+              "speed": [
+                1,
+                2
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Convert a number of non-Wrath Affinity Skills equal to the value of Ember into Wrath Affinity.",
+              "name": "Flaming Ember"
+            },
+            {
+              "desc": "On Hit, inflict [Combustion] equal to (# of Wrath Affinity Skills that the Ardor Blossom Moth will use this turn).\nOn Hit, heal HP equal to (# of Wrath Affinity Skills that the Ardor Blossom Moth will use this turn x 2).",
+              "name": "Interlocking Ardor Blossom"
+            },
+            {
+              "desc": "At 30%- HP, gain +1 more [MRcAiBa]",
+              "name": "The Last Ember"
+            }
+          ],
+          "portrait": 8577,
+          "skills": [
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Combustion] and +2 [Combustion] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain 1 [MRcAiBa]",
+              "levelCorrection": 4,
+              "name": "Flame Strike"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [CrimsonResistDown] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain 1 [MRcAiBa]",
+              "levelCorrection": 4,
+              "name": "Ardor Blossom Pinions"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target has 3+ [MRcAiBb], inflict +2 [Combustion] Count, 10 [Combustion], and 2 [MRcAiBc]."
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 6 [Combustion] and +4 [Combustion] Count",
+                    "[OnSucceedAttack] Inflict 2 [CrimsonResistDown] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WinDuel] Inflict [Combustion] equal to [Combustion] on target.\n[WhenUse] Inflict +2 [Combustion] Count.",
+              "levelCorrection": 4,
+              "name": "Spark"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict [Combustion] Count equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn",
+                    "[OnSucceedAttackHead] Against the enemy with the slowest Speed, inflict [Combustion] Count equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict [Combustion] equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn",
+                    "[OnSucceedAttackHead] Against the enemy with the slowest Speed, inflict [Combustion] equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 7+ [Combustion], this Skill gains Clash Power +2",
+              "levelCorrection": 4,
+              "name": "Dust Explosion"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 5,
+              "baseValue": 10,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict [Combustion] equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn",
+                    "[OnSucceedAttackHead] Against the enemy with the slowest Speed, Inflict [Combustion] and [Combustion] Count equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict [Combustion] equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn",
+                    "[OnSucceedAttackHead] Against the enemy with the slowest Speed, Inflict [Combustion] and [Combustion] Count equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Raise Stagger Threshold by 10% of damage dealt",
+                    "[EndSkill] Inflict 10 [Combustion] against targets that have been Staggered by this"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Gain Clash Power equal to (# of Wrath Skills that the Ardor Blossom Moth will use this turn x2)\n[WhenUse] Inflict (# of Wrath Skills that the Ardor Blossom Moth will use this turn x2) [Combustion] to all enemies",
+              "levelCorrection": 4,
+              "name": "Ardor Blossom Star"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[WhenUseEvade] Inflict 4 [Combustion].\n[OnSucceedEvade] Gain 1 [MRcAiBa] next turn.",
+              "levelCorrection": -5,
+              "name": "Evade"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 5,
+              "baseValue": 10,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [MRcAiBb] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel]\n[CantChangeTarget]\nDamage dealt by this Attack Skill is fixed to 0.",
+              "levelCorrection": 4,
+              "name": "Stoke the Flames"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Refracted Spiral of Contempt",
+          "parts": [
+            {
+              "breakSection": [
+                45,
+                0
+              ],
+              "defCorrection": 0,
+              "hp": {
+                "base": 292,
+                "level": 14.6
+              },
+              "name": "Body",
+              "partId": 819901,
+              "resists": {
+                "blunt": 0.7,
+                "envy": 0.7,
+                "gloom": 0.7,
+                "gluttony": 0.7,
+                "lust": 0.7,
+                "pierce": 0.7,
+                "pride": 0.7,
+                "slash": 0.7,
+                "sloth": 0.7,
+                "wrath": 0.7
+              },
+              "speed": [
+                1,
+                4
+              ]
+            },
+            {
+              "breakSection": [
+                45,
+                0
+              ],
+              "defCorrection": 0,
+              "hp": {
+                "base": 125,
+                "level": 6.26
+              },
+              "name": "Hands",
+              "partId": 819902,
+              "resists": {
+                "blunt": 0.7,
+                "envy": 0.7,
+                "gloom": 0.7,
+                "gluttony": 0.7,
+                "lust": 0.7,
+                "pierce": 0.7,
+                "pride": 0.7,
+                "slash": 0.7,
+                "sloth": 0.7,
+                "wrath": 0.7
+              },
+              "speed": [
+                1,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Inflict 1 [MRcAmBc] against the target every time the 'Hands' Part is hit. (3 times per turn)\nUnits with [MRcAmBa] cannot gain [MRcAmBc].\nWhen 'Grasp' unit with [MRcAmBa] is broken, all Abnormality Parts gain 3 [Vulnerable] next turn.",
+              "name": "Contempt and Gaze"
+            },
+            {
+              "desc": "When the Core HP drops below 30% of Max HP, remove [MRcAmBa] and [MRcAmBc] from all Identities; then, inflict [MRcAmBd] against all Identities.",
+              "name": "All-beholding Gaze"
+            },
+            {
+              "desc": "Turn End: Gain 1 [CrimsonTakeDamageUp], [ScarletTakeDamageUp], [AmberTakeDamageUp], [ShamrockTakeDamageUp], or [AzureTakeDamageUp] (Max 3) for every 10 Potency of [Combustion], [Laceration], [Vibration], [Burst], or [Sinking] on self, respectively.",
+              "name": "Compounded Contempt"
+            },
+            {
+              "desc": "When hit with a Critical Hit, gain 1 [IndigoTakeDamageUp] once per Skill (Max 3)\nWhen hit with a Skill that consumed 8+ [Charge] Count, gain 1 [VioletTakeDamageUp] once per Skill. (Max 3)",
+              "name": "Penetrated Gaze"
+            }
+          ],
+          "portrait": 8585,
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]",
+                    "[OnSucceedAttackHead] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 5,
+              "name": "It Shall Penetrate"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration] and +2 [Laceration] Count",
+                    "[OnSucceedAttackHead] Inflict 1 [Vulnerable] next turn",
+                    "[OnSucceedAttackHead] Inflict 1 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]",
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WinDuel] Double the [Vulnerable] and [Binding] inflicted by Coin effects.",
+              "levelCorrection": 5,
+              "name": "It Shall Be Insidious"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [AttackDown] next turn",
+                    "[OnSucceedAttackHead] Inflict 3 [DefenseDown] next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [AttackDmgDown] next turn",
+                    "[OnSucceedAttackHead] Gain 1 [AttackDmgUp] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 5,
+              "name": "It Shall Grip"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [MRcAmBb]",
+                    "[OnSucceedAttack] Gain 1 [AttackDmgUp] next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [MRcAmBb]",
+                    "[OnSucceedAttack] Gain 1 [AttackDmgUp] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "It Shall Constrict"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 6,
+              "baseValue": 9,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 8 [Laceration] and +3 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Deal 10 SP damage",
+                    "[OnSucceedAttackHead] Raise Stagger Threshold by 20"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "If there is a surviving 'Grasp' unit, Final Power +5",
+              "levelCorrection": 0,
+              "name": "It Shall Shun"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 6,
+              "baseValue": 9,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 10 [Laceration] and +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 8 [Laceration] and +2 [Laceration] Count",
+                    "[OnSucceedAttack] Deal 15 SP damage",
+                    "[OnSucceedAttackHead] Raise Stagger Threshold by 30"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "If there is a surviving 'Grasp' unit, Final Power +5\n[EndBattle] Remove [MRcAmBc] from all enemies",
+              "levelCorrection": 0,
+              "name": "And it Shall Contempt All"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[OnSucceedEvade] Deal 4 SP damage",
+              "levelCorrection": -5,
+              "name": "Evade"
+            }
+          ]
+        },
+        {
+          "name": "Grasp",
+          "parts": [
+            {
+              "breakSection": [
+                50,
+                0
+              ],
+              "defCorrection": 5,
+              "hp": {
+                "base": 42,
+                "level": 1.45
+              },
+              "name": "Grasp",
+              "partId": 820001,
+              "resists": {
+                "blunt": 1.2,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1.2
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Turn End: at 2 or fewer [MRcAmBbDisplay] Stack, deal damage equal to half of the target's Max HP. Then, all Parts of Spiral of Contempt heals the same amount of HP as the damage dealt by this effect.",
+              "name": "Grasp"
+            },
+            {
+              "desc": "Turn End: If this unit had Contempt when getting Grasped, remove Contempt from all Identities when the Grasp is broken by an Identity.",
+              "name": "Rescue"
+            }
+          ],
+          "portrait": 8200
+        }
+      ]
+    }
+  ]
+}

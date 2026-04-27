@@ -1,0 +1,1867 @@
+{
+  "name": "Extreme - N Corp. New League of Nine Littérateurs",
+  "siteId": "ab77b3ed-c3be-4b95-bb93-58aeda4a0760",
+  "waves": [
+    {
+      "targets": [
+        {
+          "name": "Ahab",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                30,
+                0
+              ],
+              "defCorrection": -3,
+              "hp": {
+                "base": 175,
+                "level": 6.04
+              },
+              "name": "Body",
+              "partId": 819001,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 0.5,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1.5,
+                "pride": 1.25,
+                "slash": 0.5,
+                "sloth": 0.5,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "At Turn Start, gain Offense Level and Defense Level by the number of surviving allies (not including this unit)",
+              "name": "Suppressed Pallidification"
+            },
+            {
+              "desc": "Turn Start: If not at -45 SP, heal 15 SP.\nTurn End: If panicked, recover from panic. Reset SP to 0.",
+              "name": "Captain of the Pequod"
+            },
+            {
+              "desc": "When this unit is Staggered, and when all other allies are at less than 0 SP at Turn End, reset their SP to 0.",
+              "name": "Muddled Orders"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against targets without SP.",
+              "name": "Fixed Panic"
+            }
+          ],
+          "portrait": 8105,
+          "skills": [
+            {
+              "affinity": "pride",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[WhenUse] Heal 10 SP for self and 1 other ally with the least SP ",
+              "levelCorrection": -3,
+              "name": "Obey My Orders"
+            },
+            {
+              "affinity": "gluttony",
+              "atkWeight": 1,
+              "baseValue": 15,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] Order Queequeg to activate [AaCePcBs] next turn. Order is canceled when this unit is Staggered.",
+              "levelCorrection": -3,
+              "name": "To Me!"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Order Starbuck to activate [AaCePcBt] next turn. Order is canceled when this unit is Staggered.\n[WhenUse] Apply 1 [AaCePcBj] next turn",
+              "levelCorrection": -3,
+              "name": "Track Them to the End!"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Veteran's Harpoon"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict [Combustion] by [Laceration] on target"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Final Power +1 for every negative effect on main target (Max 5)\nDeal +5% damage per [Laceration] on target",
+              "levelCorrection": 0,
+              "name": "Burning Harpoon"
+            },
+            {
+              "affinity": "pride",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[WhenUse] Heal 5 SP\n[OnSucceedEvade] Target loses 5 SP",
+              "levelCorrection": 0,
+              "name": "Foolishness!"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Apply 4 [Breath] to 2 other allies.\nIf there are no other allies, gain 2 [Breath] Count instead."
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Inflict 1 [AaCePcBj] next turn\n[WinDuel] Gain 4 [Breath]",
+              "levelCorrection": 0,
+              "name": "Exhale!"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Vulnerable]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Apply [AaCePcBn] to 1 ally with the lowest SP\n[DefeatDuel] Raise Stagger Threshold by 20 for 1 ally with the lowest SP",
+              "levelCorrection": 5,
+              "name": "Tempering of Death"
+            }
+          ]
+        },
+        {
+          "name": "Queequeg",
+          "parts": [
+            {
+              "breakSection": [
+                50,
+                0,
+                -50
+              ],
+              "defCorrection": 0,
+              "hp": 295.04,
+              "name": "Body",
+              "partId": 818801,
+              "resists": {
+                "blunt": 1.5,
+                "envy": 1.25,
+                "gloom": 1,
+                "gluttony": 0.5,
+                "lust": 0.5,
+                "pierce": 0.5,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                2
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "At Turn Start, gain Offense Level and Defense Level by the number of surviving allies (not including this unit)",
+              "name": "Suppressed Pallidification"
+            },
+            {
+              "desc": "Turn Start: If not at -45 SP, heal (# of surviving other allies x 5) SP.\nTurn Start: If at -45 SP, recover from panic at Turn End and reset SP to 0.",
+              "name": "Captain's Orders"
+            },
+            {
+              "desc": "Every time a Pequod Town faction ally is defeated, lose 1 [Breath] Count and 10 SP.",
+              "name": "Mutilated Tattoos"
+            },
+            {
+              "desc": "The lower this unit's HP gets, the more damage this unit's Skills deal.",
+              "name": "The Indomitable Harpooneer"
+            },
+            {
+              "desc": "When Staggered and when at less than 0 SP at Turn End, reset SP to 0.",
+              "name": "Clouded Mind"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against targets without SP.",
+              "name": "Fixed Panic"
+            }
+          ],
+          "portrait": 8103,
+          "resists": {
+            "blunt": 1.5,
+            "envy": 1.25,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 0.5,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "skills": [
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Harpooning"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [AttackDown]",
+                    "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Piercing Harpoon"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[CriticalOnSucceedAttack] Raise target's first Stagger Threshold by 50% of damage dealt"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "+30% Damage on Critical Hit",
+              "levelCorrection": 3,
+              "name": "Stalk Prey"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 3,
+              "baseValue": 13,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "+50% Damage on Critical Hit",
+                    "[OnSucceedAttack] Stagger target next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "This Skill does not consume [Breath] Count upon Critical Hit.\nDeal +5% damage for every [Laceration] on target\n[WhenUse] Staggered at Turn End if this unit does not have [Breath] on self.",
+              "levelCorrection": 3,
+              "name": "Cut Throat"
+            },
+            {
+              "affinity": "pride",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] Gain 3 [Breath] and +5 [Breath] Count.\nFor this turn, gain Final Power equal to [Breath] Potency on self.\nFor this turn, lose 1 [Breath] Count when attacked.",
+              "levelCorrection": 5,
+              "name": "Deep Breathing"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[TurnStartBattle] Upon using this Skill, if this unit has more than 0 Assist Barrier, activate [AaCePcBs].\n[StartBattle] Gain 10% of max HP as Assist Barrier.",
+              "levelCorrection": 0,
+              "name": "Must... Protect"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 14,
+              "coinValue": -3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Heal Core and Part HP by 50% of damage dealt"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict [AaCePcBk]",
+                    "[OnSucceedAttack] Heal Core and Part HP by 50% of damage dealt"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Final Power +1 when attacking the same target as Starbuck",
+              "levelCorrection": 3,
+              "name": "Persistent Harpoon"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 3,
+              "baseValue": 18,
+              "coinValue": -10,
+              "coins": [
+                {
+                  "descs": [
+                    "+50% Damage on Critical Hit",
+                    "[OnSucceedAttack] Stagger target next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Critical Hits do not consume [Breath] Count with this Skill.\nDeal +5% damage per [Laceration] on target",
+              "levelCorrection": 3,
+              "name": "Must Finish Hunt..."
+            }
+          ]
+        },
+        {
+          "name": "Starbuck",
+          "parts": [
+            {
+              "breakSection": [
+                70,
+                40,
+                20,
+                0
+              ],
+              "defCorrection": -5,
+              "hp": {
+                "base": 175,
+                "level": 6.04
+              },
+              "name": "Body",
+              "partId": 818901,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1.25,
+                "lust": 0.5,
+                "pierce": 1.5,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 0.5
+              },
+              "speed": [
+                3,
+                5
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "At Turn Start, gain Offense Level and Defense Level by the number of surviving allies (not including this unit)",
+              "name": "Suppressed Pallidification"
+            },
+            {
+              "desc": "Turn Start: If not at -45 SP, heal (# of surviving other allies x 5) SP.\nTurn Start: If at -45 SP, recover from panic at Turn End and reset SP to 0.",
+              "name": "Captain's Orders"
+            },
+            {
+              "desc": "On Critical Hit, inflict 1 additional negative effect with Skill effects.",
+              "name": "Puncturing Harpoon"
+            },
+            {
+              "desc": "When Staggered and when at less than 0 SP at Turn End, reset SP to 0.",
+              "name": "Clouded Mind"
+            },
+            {
+              "desc": "Turn End: At 50- HP, gain 2 [Agility] and 2 [Enhancement] next turn. (once per encounter)",
+              "name": "Engraved Hatred and Animosity"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against targets without SP.",
+              "name": "Fixed Panic"
+            }
+          ],
+          "portrait": 8104,
+          "resists": {
+            "blunt": 0.5,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 2,
+            "pride": 1,
+            "slash": 1,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "skills": [
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +3 [Breath] Count",
+              "levelCorrection": -2,
+              "name": "Impale"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Vulnerable] next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [DefenseDown] next turn",
+                    "[OnSucceedAttackHead] Reuse this Coin once (Max 3)"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain 5 [Breath]",
+              "levelCorrection": -2,
+              "name": "Piercing Thrust"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[TurnStartBattle] If Queequeg has more than 0 Assist Barrier, activate [AaCePcBt]",
+              "levelCorrection": 0,
+              "name": "I Follow Orders..."
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 9,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                    "[CriticalOnSucceedAttack] Raise target's first Stagger Threshold by 50% of damage dealt"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Deal +50% damage with Critical Hit\nDeal +5% damage per [Laceration] on target",
+              "levelCorrection": 3,
+              "name": "Ambush"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 12,
+              "coinValue": -3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +6 [Breath] Count",
+              "levelCorrection": 1,
+              "name": "Fearful Sigh"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 16,
+              "coinValue": -5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict [AaCePcBl]",
+                    "[OnSucceedAttack] Inflict 5 [DefenseDown] next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Vulnerable] next turn",
+                    "[OnSucceedAttackTail] Reuse this Coin once (Max 3)"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Final Power +2 when attacking the same target as Queequeg",
+              "levelCorrection": 3,
+              "name": "Determined Harpoon"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 20,
+              "coinValue": -10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                    "[CriticalOnSucceedAttack] Raise target's first Stagger Threshold by 50% of damage dealt"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Deal +100% damage with Critical Hit\nDeal +5% damage per [Laceration] on target",
+              "levelCorrection": 5,
+              "name": "To Escape..."
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[TurnStartBattle] If Queequeg has more than 0 Assist Barrier, activate [AaCePcBt]",
+              "levelCorrection": -3,
+              "name": "I Follow Orders..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Nelly",
+          "parts": [
+            {
+              "breakSection": [
+                75,
+                20,
+                0
+              ],
+              "defCorrection": 0,
+              "hp": 728,
+              "name": "Body",
+              "partId": 817101,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 0.5,
+                "pride": 1,
+                "slash": 1.25,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Clash Win: If this unit's Speed is faster than the target's, heal 3 SP",
+              "name": "Superiority"
+            },
+            {
+              "desc": "If there are Staggered enemies, this unit prioritizes Staggered targets with its Attack Skills\nDeal +20% damage to Staggered enemies On Hit",
+              "name": "The Uninvited"
+            },
+            {
+              "desc": "After this unit gains a new pattern, and after Combat End, inflict [AaCfPcBc] to a random Identity without [AaCfPcBc] next turn",
+              "name": "Receiving Arts 9: Binding"
+            },
+            {
+              "desc": "All [AaCfPcBc] less than or equal to 2 expires when this unit is Staggered",
+              "name": "Release From Binds"
+            },
+            {
+              "desc": "Turn End: if in Panic, reset SP to 0.",
+              "name": "Panic Recovery"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against targets without SP.",
+              "name": "Fixed Panic"
+            }
+          ],
+          "portrait": "8171",
+          "skills": [
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 1 [DefenseUp] next turn",
+                    "[OnSucceedAttack] Gain 2 [Breath]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Inflict 1 [AaCfPcBb]",
+              "levelCorrection": 1,
+              "name": "Mark Interloper"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Paralysis] next turn",
+                    "[OnSucceedAttack] Gain 3 [Breath]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 1 [AttackUp] next turn",
+                    "[OnSucceedAttack] Inflict 1 [AaCfPcBb]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has [AaCfPcBb], Clash Power +1\n[WinDuel] Gain 1 [Agility] next turn",
+              "levelCorrection": 1,
+              "name": "Receiving Arts 1: The Hunt"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                    "[OnSucceedAttack] Gain +2 [Breath] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 1 [DefenseUp] next turn",
+                    "[OnSucceedAttack] Inflict 1 [AaCfPcBb]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has [AaCfPcBb], Clash Power +1\n[WinDuel] Gain 1 [Agility] next turn",
+              "levelCorrection": 1,
+              "name": "Reverse Receiving Arts 1: The Hunt"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Vulnerable]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [DefenseDown] next turn",
+                    "[OnSucceedAttack] If target has 3+ negative effects, reuse this Coin (1 time max)"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If this unit's Speed is faster than the target's, Clash Power +2",
+              "levelCorrection": 2,
+              "name": "Overwhelm Interloper"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If the target does not have a Stagger Threshold, deal 200 HP damage.",
+                    "[OnSucceedAttack] Raise Stagger Threshold by 200"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has [AaCfPcBb], Clash Power +10",
+              "levelCorrection": 3,
+              "name": "Receiving Arts 2: Collapse"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 3 [Breath]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Breath] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Binding] next turn",
+                    "[OnSucceedAttack] Inflict 2 [Paralysis] next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 1 [Agility] next turn",
+                    "[OnSucceedAttack] If target has 4+ negative effects, deal 30% of damage dealt as bonus Slash damage"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Gain Atk Weight equal to the number of enemies with [AaCfPcBb]\n[WhenUse] If this unit's Speed is faster than the main target's by 3 or more, inflict 2 Slash Resist Down\n[WhenUse] If target has [AaCfPcBb], Clash Power +8\n[EndBattle] All [AaCfPcBb] expires",
+              "levelCorrection": 2,
+              "name": "Receiving Arts 7: Capture"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 [Laceration]",
+                    "[OnSucceedAttack] Inflict 6 [DefenseDown] next turn",
+                    "[OnSucceedAttack] If this unit's Speed is faster than the target's by 3 or more, reuse this Coin (1 time max)"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes targets with [AaCfPcBc]\n[DefeatDuel] If target has [AaCfPcBc] [AaCfPcBc] expires",
+              "levelCorrection": 3,
+              "name": "Interloper Apprehension"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Vulnerable]",
+                    "[OnSucceedAttack] Gain 3 [Breath]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Vulnerable]",
+                    "[OnSucceedAttack] Gain +2 [Breath] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [DefenseDown] next turn",
+                    "[OnSucceedAttack] If target has 3+ negative effects, reuse this coin (1 time max)"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has [AaCfPcBc], Base Power +5\n[WhenUse] If target has [AaCfPcBc], inflict 1 [AaCfPcBc]",
+              "levelCorrection": 2,
+              "name": "Receiving Arts 3: Binding"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[OnSucceedEvade] Heal 5 SP\n[OnSucceedEvade] Gain 1 more Slot just for the next Turn. (1 time max)",
+              "levelCorrection": -6,
+              "name": "Evade"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Stagger target."
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes targets with [AaCfPcBc]\nIf target has [AaCfPcBc], Base Power +10\nIf the target does not have [AaCfPcBc], this Skill deals 0 damage.",
+              "levelCorrection": 3,
+              "name": "Receiving Arts 9: Dissolution"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "N Corp. E.G.O::Contempt, Awe Jia Huan",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                30
+              ],
+              "defCorrection": 0,
+              "hp": {
+                "base": 313,
+                "level": 21.59
+              },
+              "name": "Body",
+              "partId": 118401,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1.25,
+                "gluttony": 1.1,
+                "lust": 1.5,
+                "pierce": 1,
+                "pride": 0.75,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 0.5
+              },
+              "speed": [
+                2,
+                5
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "After entering this Encounter, gain 1 [EgoErodeReplica] at every passing Turn End\n- Turn End: at less than 50% HP, or at -20 SP or less, gain 1 additional [EgoErodeReplica]",
+              "name": "E.G.O Corrosion - N Corp."
+            },
+            {
+              "desc": "On Hit against an enemy, inflict 1 [GazeReplica] (once per Identity per turn)\nWhen attacked by an enemy, inflict 1 [GazeReplica] against the attacker (once per Identity per turn)\nTurn Start: if Hong Lu is on the field, inflict 1 [GazeReplica] against Hong Lu",
+              "name": "My Little Brother's Hand I Let Slip"
+            },
+            {
+              "desc": "Prioritizes targets with [GraspReplica]\nGains a new pattern when there are targets with [GraspReplica]; +0.1 to all Resistances",
+              "name": "Grasp"
+            },
+            {
+              "desc": "If there are 4+ Sinners with 4+ [GazeReplica] Stacks, use the Skill 'Awe[TabExplain], Contempt[TabExplain] 【Unleashed】' Skill",
+              "name": "E.G.O Temporary Max Attunement"
+            },
+            {
+              "desc": "Where there are other surviving allies, if this unit becomes the main target from 5+ enemies, those enemies lose 10 HP and SP",
+              "name": "Better avert your gazes"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against targets without SP.",
+              "name": "Fixed Panic"
+            },
+            {
+              "desc": "Turn End: if in Panic, reset SP to 0.",
+              "name": "Panic Recovery"
+            }
+          ],
+          "portrait": "1135",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Inflict 4 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "If target has 3+ [GazeReplica], double the amount of negative effects inflicted with this Skill\n[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+              "levelCorrection": 0,
+              "name": "Contempt"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttackHead] Inflict 3 [DefenseDown] next turn"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count",
+                    "[OnSucceedAttack] Inflict 1 [AttackDmgDown] next turn"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "If target has 3+ [GazeReplica], double the amount of negative effects inflicted with this Skill\n[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+              "levelCorrection": 1,
+              "name": "Awe"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Vulnerable]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Deal 10 SP damage"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Raise Stagger Threshold equal to ([GazeReplica] on target x 5)",
+                    "[EndSkill] Remove [GazeReplica] on the target"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantChangeTarget]",
+              "levelCorrection": 3,
+              "name": "Contempt, Awe 【Unleashed】"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes Hong Lu\n[WhenUse] Inflict 4 [GraspReplica]\n[WhenUse] Gain 2 [AttackDmgUp] next turn",
+              "levelCorrection": 0,
+              "name": "Contemptuous Thing"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 14,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 6 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes targets with [GraspReplica]",
+              "levelCorrection": 2,
+              "name": "Be Awed"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[DuelCounter]\n[DefeatDuel] Reduce target's [GazeReplica] by 2\n[DefeatDuel] Reduce target's [GraspReplica] by 1",
+              "levelCorrection": 1,
+              "name": "You Must Confront This"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 9,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                    "[OnSucceedAttack] If target has 4+ [GazeReplica], inflict 1 [GazeReplica]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[BeforeAttack] Gain Atk Weight by the number of Sinners with 4+ [GazeReplica]",
+              "levelCorrection": 4,
+              "name": "Awe, Contempt【Unleashed】"
+            },
+            {
+              "affinity": "lust",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[CanDuelGuard]\n[StartBattle] Jia Huan and Gubo gain 30 Shield\n[WinDuel] Jia Huan and Gubo gain 30 Shield",
+              "levelCorrection": 4,
+              "name": "Spiral Warp Field"
+            }
+          ]
+        },
+        {
+          "name": "N Corp. E.G.O::Fell Bullet Gubo",
+          "parts": [
+            {
+              "breakSection": [
+                70,
+                40,
+                0
+              ],
+              "defCorrection": 0,
+              "hp": {
+                "base": 261,
+                "level": 18
+              },
+              "name": "Body",
+              "partId": 118501,
+              "resists": {
+                "blunt": 1,
+                "envy": 1.5,
+                "gloom": 0.5,
+                "gluttony": 1.1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 0.75,
+                "slash": 1,
+                "sloth": 1.25,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                5
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "After entering this Encounter, gain 1 [EgoErodeReplica] at every passing Turn End\n- Turn End: at less than 50% HP, or at -20 SP or less, gain 1 additional [EgoErodeReplica]",
+              "name": "E.G.O Corrosion - N Corp."
+            },
+            {
+              "desc": "On Hit, heal 5 SP; on Clash Lose, lose 5 SP",
+              "name": "The Cost of Fell Bullets"
+            },
+            {
+              "desc": "On enemy Kill, gain +3 [Breath] Count",
+              "name": "Charge Forth"
+            },
+            {
+              "desc": "At less than -20 SP, use a special pattern",
+              "name": "A new era is upon us, my dear fellow."
+            },
+            {
+              "desc": "If an N Corp. Employee(except Jia Huan)'s HP is less than 50%, use a special pattern",
+              "name": "Please, dedicate yourself for the new ideal."
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against targets without SP.",
+              "name": "Fixed Panic"
+            },
+            {
+              "desc": "Turn End: if in Panic, reset SP to 0.",
+              "name": "Panic Recovery"
+            }
+          ],
+          "portrait": "1136",
+          "skills": [
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "+50% Damage on Critical Hit",
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Targets the frontmost target\n[WhenUse] Gain 1 [BoseProjektilReplica]\n[WhenUse] If target has 6+ [Laceration], Coin Power +1\n[WhenUse] Gain +1 [Breath] Count",
+              "levelCorrection": 3,
+              "name": "Front Line Fire"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "+70% Damage on Critical Hit",
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Targets the rearmost target\n[WhenUse] Gain 1 [BoseProjektilReplica]\n[WhenUse] If target has 6+ [Laceration], Coin Power +1\n[WhenUse] Gain +2 [Breath] Count",
+              "levelCorrection": 3,
+              "name": "Rear Line Fire"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 2,
+              "baseValue": 15,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "This Coin deals damage only against the main target",
+                    "[EnemyKill] The final Coin deals +100% damage"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "This Coin deals damage only against the sub-targets",
+                    "+100% Damage on Critical Hit",
+                    "[OnSucceedAttack] Inflict 4 [Laceration] and +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Targets the frontmost target\n[WhenUse] Gain 3 [Breath] and +2 [Breath] Count",
+              "levelCorrection": 4,
+              "name": "Sigilshattered Bullet"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 5,
+              "baseValue": 16,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "This Coin deals damage only against the main target",
+                    "[OnSucceedAttack] Inflict (target's HP at the \"On Hit' timing) Pride bonus damage with the final Coin",
+                    "[OnSucceedAttack] Kills the target"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "This Coin deals damage only against the sub-targets",
+                    "+100% Damage on Critical Hit",
+                    "[OnSucceedAttack] Inflict 4 [Laceration] and +2 [Laceration] Count",
+                    "[OnSucceedAttack] Inflict 4 [Sinking] and +2 [Sinking] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantChangeTarget]\nPrioritizes N Corp. Employees\n- If this unit failed to attack the targeted unit, cancel this Skill\n[WhenUse] Gain 5 [Breath]\n[EndBattle] Heal 20 SP",
+              "levelCorrection": 5,
+              "name": "Bullet Drenched with the Blood of a Comrade"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 5,
+              "baseValue": 6,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [Laceration]",
+                    "[OnSucceedAttack] Inflict 3 [Sinking]",
+                    "[OnSucceedAttack] Lose 5 SP"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [Laceration]",
+                    "[OnSucceedAttack] Inflict 3 [Sinking]",
+                    "[OnSucceedAttack] Lose 5 SP"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [Laceration]",
+                    "[OnSucceedAttack] Inflict 3 [Sinking]",
+                    "[OnSucceedAttack] Lose 5 SP"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [Laceration]",
+                    "[OnSucceedAttack] Inflict 3 [Sinking]",
+                    "[OnSucceedAttack] Lose 5 SP"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WideAreaRampage]\nDeal +10% damage for every [BoseProjektilReplica] on self\n[WhenUse] Lose 10 SP\n[EndSkill] Spend all [BoseProjektilReplica] on self",
+              "levelCorrection": 5,
+              "name": "Reminiscence Shattering Bullet"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Breath] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 2 [Breath]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[DuelCounter]",
+              "levelCorrection": 0,
+              "name": "Melee Combat"
+            }
+          ]
+        },
+        {
+          "name": "Swift N Corp. E.G.O::Sticking",
+          "parts": [
+            {
+              "breakSection": [
+                50,
+                0
+              ],
+              "defCorrection": 1,
+              "hp": {
+                "base": 94,
+                "level": 3.24
+              },
+              "name": "Body",
+              "partId": 113901,
+              "resists": {
+                "blunt": 0.8,
+                "envy": 1.25,
+                "gloom": 1,
+                "gluttony": 1.25,
+                "lust": 1,
+                "pierce": 0.8,
+                "pride": 1,
+                "slash": 1.25,
+                "sloth": 0.5,
+                "wrath": 1.25
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "After entering this Encounter, gain 1 [EgoErodeReplica] at every passing Turn End\n- Turn End: at less than 50% HP, or at -20 SP or less, gain 1 additional [EgoErodeReplica]",
+              "name": "E.G.O Corrosion - N Corp."
+            },
+            {
+              "desc": "Turn Start: gain 5 [Breath] and +2 [Breath] Count\nCombat Start: if an ally with [Breath] Critically Hits an enemy with a Skill, apply 5 [Breath] Potency and +2 [Breath] Potency to a random ally at the next Turn Start (once per turn)",
+              "name": "Four-leaf Clover"
+            },
+            {
+              "desc": "At 50%- HP: On Hit against enemies with [Laceration], heal 1% HP for every [Laceration] on target (max 10%; once per Encounter)",
+              "name": "Tasty Flesh"
+            }
+          ],
+          "portrait": "1139",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Burst Wounds"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 2+ [Laceration], Coin Power +1",
+              "levelCorrection": 0,
+              "name": "Snag Wounds"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 1 [Agility] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 3+ [Laceration], Clash Power +1",
+              "levelCorrection": 0,
+              "name": "Flesh Melting"
+            },
+            {
+              "affinity": "gluttony",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[WhenUse] Inflict 1 [Paralysis]",
+              "levelCorrection": 0,
+              "name": "Casting Shade"
+            }
+          ]
+        },
+        {
+          "name": "Nimble N Corp. E.G.O::Sticking",
+          "num": 2,
+          "parts": [
+            {
+              "breakSection": [
+                50,
+                0
+              ],
+              "defCorrection": 1,
+              "hp": {
+                "base": 94,
+                "level": 3.24
+              },
+              "name": "Body",
+              "partId": 114001,
+              "resists": {
+                "blunt": 0.8,
+                "envy": 1.25,
+                "gloom": 1,
+                "gluttony": 1.25,
+                "lust": 1,
+                "pierce": 0.8,
+                "pride": 1,
+                "slash": 1.25,
+                "sloth": 0.5,
+                "wrath": 1.25
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "After entering this Encounter, gain 1 [EgoErodeReplica] at every passing Turn End\n- Turn End: at less than 50% HP, or at -20 SP or less, gain 1 additional [EgoErodeReplica]",
+              "name": "E.G.O Corrosion - N Corp."
+            },
+            {
+              "desc": "Turn Start: gain 5 [Breath] and +2 [Breath] Count\nCombat Start: if an ally with [Breath] Critically Hits an enemy with a Skill, apply 5 [Breath] Potency and +2 [Breath] Potency to a random ally at the next Turn Start (once per turn)",
+              "name": "Four-leaf Clover"
+            },
+            {
+              "desc": "At 50%- HP: On Hit against enemies with [Laceration], heal 1% HP for every [Laceration] on target (max 10%; once per Encounter)",
+              "name": "Tasty Flesh"
+            }
+          ],
+          "portrait": "1140",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Tear Up Wound"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 2+ [Laceration], Coin Power +1",
+              "levelCorrection": 0,
+              "name": "Skim Wounds"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 1 [Agility] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 3+ [Laceration], Clash Power +1",
+              "levelCorrection": 0,
+              "name": "Flesh Tearing"
+            },
+            {
+              "affinity": "gluttony",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[WhenUse] Inflict 1 [Paralysis]",
+              "levelCorrection": 0,
+              "name": "Casting Shade"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

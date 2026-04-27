@@ -1,0 +1,1001 @@
+{
+  "name": "Line 2",
+  "siteId": "046df60b-f52c-4d05-ad96-95e499c90b90",
+  "targets": [
+    {
+      "name": "Refracted Sign of Roses",
+      "parts": [
+        {
+          "defCorrection": -4,
+          "hp": 408.4,
+          "name": "Signpost",
+          "partId": 102601,
+          "resists": {
+            "blunt": 0.5,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 0.5,
+            "pride": 1,
+            "slash": 0.5,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            2,
+            5
+          ]
+        },
+        {
+          "defCorrection": -4,
+          "hp": 680.7,
+          "name": "Flesh",
+          "partId": 102602,
+          "resists": {
+            "blunt": 0.5,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 0.5,
+            "pride": 1,
+            "slash": 0.5,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            2,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "When the sign is broken, Rose loses Max HP",
+          "name": "Broken Sign"
+        },
+        {
+          "desc": "When the flesh is broken, Core loses Max HP",
+          "name": "Scattered Flesh"
+        },
+        {
+          "desc": "Every turn, all parts gain [Protection] equal to the number of Sinners with the Crown of Thorns effect",
+          "name": "Sin-drenched Brambles"
+        },
+        {
+          "desc": "When a Rose is defeated, Core and flesh loses 30 HP.\nLose 0.1 Resistance to the corresponding Sin Affinity during this encounter (Stackable)",
+          "name": "Singular Vine"
+        }
+      ],
+      "portrait": 8556,
+      "skills": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 7,
+          "baseValue": 1,
+          "coinValue": 1,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\n[WhenUse] Apply Crown of Thorns and eliminate all effects on self\nIf Core has less than 40% HP, Roses will spawn in Power-up States",
+          "levelCorrection": -8,
+          "name": "To the Garden of Infinity"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion] and 2 [Vibration]",
+                "[OnSucceedAttack] Inflict 1 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion] and 2 [Vibration]",
+                "[OnSucceedAttack] Inflict 1 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -8,
+          "name": "Stop"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration] and 3 [Burst]",
+                "[OnSucceedAttack] Heal the Rose with the lowest HP percentages for 10 HP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -8,
+          "name": "Captivity"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Paralysis] and 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Apply Crown of Thorns"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Core heals 30 HP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes enemies without Crown of Thorns",
+          "levelCorrection": -8,
+          "name": "Endless Blooming"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 11,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Core heals 30 HP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Power +2 for each surviving Rose\nIf there are no surviving Roses, Self-apply 2 Fragile",
+          "levelCorrection": -8,
+          "name": "Wall Of Separation"
+        },
+        {
+          "affinity": "gloom",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[StartBattle] Apply 1 [Enhancement] to 1 random Rose next turn\nIf attacked while Shielded, inflict 1 [Sinking] on the attacker",
+          "levelCorrection": -8,
+          "name": "Wishing for Eternity"
+        },
+        {
+          "affinity": "sloth",
+          "atkWeight": 1,
+          "baseValue": 15,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[StartBattle] Apply 1 [Endurance] to 1 random Rose next turn\nIf attacked while Shielded, inflict 1 [Sinking] on the attacker",
+          "levelCorrection": -8,
+          "name": "Here, With You"
+        }
+      ]
+    },
+    {
+      "name": "Refracted Wrath-drenched Rose",
+      "parts": [
+        {
+          "breakSection": [
+            60,
+            40
+          ],
+          "defCorrection": -2,
+          "hp": 49.65,
+          "name": "Flower",
+          "partId": 102701,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.5,
+            "gloom": 0.5,
+            "gluttony": 0.5,
+            "lust": 0.5,
+            "pierce": 1,
+            "pride": 0.5,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 2
+          },
+          "speed": [
+            1,
+            3
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "If at 4 Blooming Sin, enter Power-up state for this encounter",
+          "name": "Blossoming Sins"
+        },
+        {
+          "desc": "Dies when Sign of Roses is defeated",
+          "name": "Rose on a Vine"
+        },
+        {
+          "desc": "When defeated by a direct hit, return the damage to the attacker and inflict 5 [Combustion]",
+          "name": "Embers"
+        },
+        {
+          "desc": "During Power-up state, inflict +1 more [Combustion] with Skill effects\nIf killed during Power-up state, inflict 4 [Combustion] Count to all allies",
+          "name": "Boiling Wrath"
+        },
+        {
+          "desc": "When hit, gain 1 [AttackUp] and 1 Defense Level Down",
+          "name": "Hatred"
+        }
+      ],
+      "portrait": 8564,
+      "skills": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Burning Wrath"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Scattering Wrath"
+        }
+      ]
+    },
+    {
+      "name": "Refracted Lust-drenched Rose",
+      "parts": [
+        {
+          "breakSection": [
+            70,
+            30
+          ],
+          "defCorrection": -2,
+          "hp": 49.65,
+          "name": "Flower",
+          "partId": 102801,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.5,
+            "gloom": 0.5,
+            "gluttony": 0.5,
+            "lust": 2,
+            "pierce": 1,
+            "pride": 0.5,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 0.5
+          },
+          "speed": [
+            1,
+            3
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "If at 4 Blooming Sin, enter Power-up state for this encounter",
+          "name": "Blossoming Sins"
+        },
+        {
+          "desc": "Dies when Sign of Roses is defeated",
+          "name": "Rose on a Vine"
+        },
+        {
+          "desc": "During Power-up state, inflict +1 more [Laceration] with Skill effects\nIf killed during Power-up state, inflict 4 [Laceration] Count to all allies",
+          "name": "Shimmering Lust"
+        }
+      ],
+      "portrait": 8565,
+      "skills": [
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Lower user’s Stagger Threshold by 50% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Lower user’s Stagger Threshold by 50% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Lower user’s Stagger Threshold by 50% of damage dealt"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Approaching Lust"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Burrowing Lust"
+        }
+      ]
+    },
+    {
+      "name": "Refracted Sloth-drenched Rose",
+      "parts": [
+        {
+          "breakSection": [
+            50
+          ],
+          "defCorrection": 4,
+          "hp": 49.65,
+          "name": "Flower",
+          "partId": 102901,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.5,
+            "gloom": 0.5,
+            "gluttony": 0.5,
+            "lust": 0.5,
+            "pierce": 1,
+            "pride": 0.5,
+            "slash": 1,
+            "sloth": 2,
+            "wrath": 0.5
+          },
+          "speed": [
+            1,
+            3
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "If at 4 Blooming Sin, enter Power-up state for this encounter",
+          "name": "Blossoming Sins"
+        },
+        {
+          "desc": "Dies when Sign of Roses is defeated",
+          "name": "Rose on a Vine"
+        },
+        {
+          "desc": "During Power-up state, inflict +1 more [Vibration] with Skill effects\nIf killed during Power-up state, inflict 4 [Vibration] Count to all allies",
+          "name": "Crushing Sloth"
+        },
+        {
+          "desc": "When hit, gain 5 [Protection] next turn unless Staggered",
+          "name": "Powerless"
+        }
+      ],
+      "portrait": 8566,
+      "skills": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 8 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -3,
+          "name": "Petrified Sloth"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count",
+                "[OnSucceedAttackHead] Trigger [VibrationExplosion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -3,
+          "name": "Stubborn Sloth"
+        },
+        {
+          "affinity": "sloth",
+          "atkWeight": 1,
+          "baseValue": 15,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "If attacked while Shielded, trigger [VibrationExplosion] on self and the attacker",
+          "levelCorrection": 3,
+          "name": "Slumbering Sloth"
+        }
+      ]
+    },
+    {
+      "name": "Refracted Gluttony-drenched Rose",
+      "parts": [
+        {
+          "breakSection": [
+            70,
+            30
+          ],
+          "defCorrection": -2,
+          "hp": 49.65,
+          "name": "Flower",
+          "partId": 103001,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.5,
+            "gloom": 0.5,
+            "gluttony": 2,
+            "lust": 0.5,
+            "pierce": 1,
+            "pride": 0.5,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 0.5
+          },
+          "speed": [
+            1,
+            3
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "If at 4 Blooming Sin, enter Power-up state for this encounter",
+          "name": "Blossoming Sins"
+        },
+        {
+          "desc": "Dies when Sign of Roses is defeated",
+          "name": "Rose on a Vine"
+        },
+        {
+          "desc": "During Power-up state, inflict +1 more [Burst] with Skill effects\nIf killed during Power-up state, inflict 4 [Burst] Count to all allies",
+          "name": "Growing Gluttony"
+        },
+        {
+          "desc": "If this unit fails to deal damage in a turn, gain 2 [BurstVulnerable]",
+          "name": "Hunger"
+        }
+      ],
+      "portrait": 8567,
+      "skills": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Voracious Gluttony"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +4 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Prevalent Gluttony"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal by 25% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal by 25% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal by 25% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal by 25% of damage dealt"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has [Burst], boost HP healing by +50%",
+          "levelCorrection": 2,
+          "name": "Restless Gluttony"
+        }
+      ]
+    },
+    {
+      "name": "Refracted Gloom-drenched Rose",
+      "parts": [
+        {
+          "breakSection": [
+            50
+          ],
+          "defCorrection": 4,
+          "hp": 49.65,
+          "name": "Flower",
+          "partId": 103101,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.5,
+            "gloom": 2,
+            "gluttony": 0.5,
+            "lust": 0.5,
+            "pierce": 1,
+            "pride": 0.5,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 0.5
+          },
+          "speed": [
+            1,
+            3
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "If at 4 Blooming Sin, enter Power-up state for this encounter",
+          "name": "Blossoming Sins"
+        },
+        {
+          "desc": "Dies when Sign of Roses is defeated",
+          "name": "Rose on a Vine"
+        },
+        {
+          "desc": "During Power-up state, inflict +1 more [Sinking] with Skill effects\nIf killed during Power-up state, inflict 4 [Sinking] Count to all allies",
+          "name": "Shimmering Gloom"
+        },
+        {
+          "desc": "When hit, Gloom Resist turns into Gloom Weak(1.5) and gain 5 [Protection]",
+          "name": "Self Destruction"
+        }
+      ],
+      "portrait": 8568,
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 6 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -2,
+          "name": "Overflowing Gloom"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -2,
+          "name": "Rising Gloom"
+        },
+        {
+          "affinity": "gloom",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 15,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "If attacked while Shielded, inflict +1 [Sinking] Count on self and the attacker",
+          "levelCorrection": 2,
+          "name": "Embracing Gloom"
+        }
+      ]
+    },
+    {
+      "name": "Refracted Pride-drenched Rose",
+      "parts": [
+        {
+          "breakSection": [
+            70,
+            30
+          ],
+          "defCorrection": -4,
+          "hp": 49.65,
+          "name": "Flower",
+          "partId": 103201,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.5,
+            "gloom": 0.5,
+            "gluttony": 0.5,
+            "lust": 0.5,
+            "pierce": 1,
+            "pride": 2,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 0.5
+          },
+          "speed": [
+            1,
+            3
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "If at 4 Blooming Sin, enter Power-up state for this encounter",
+          "name": "Blossoming Sins"
+        },
+        {
+          "desc": "Dies when Sign of Roses is defeated",
+          "name": "Rose on a Vine"
+        },
+        {
+          "desc": "If starting a turn in a Power-up state, gain +1 more [Breath] with Skill effects\nIf killed during Power-up state, apply 4 [Breath] Count to all enemies",
+          "name": "Overinflated Pride"
+        }
+      ],
+      "portrait": 8569,
+      "skills": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Apply 3 [Breath] to all allies",
+          "levelCorrection": 3,
+          "name": "Spouting Pride"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] All allies gain +2 [Breath] Count",
+          "levelCorrection": 3,
+          "name": "Erect Pride"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "At 5+ [Breath], Coin Power +3",
+          "levelCorrection": 1,
+          "name": "Touchy Pride"
+        }
+      ]
+    },
+    {
+      "name": "Refracted Envy-drenched Rose",
+      "parts": [
+        {
+          "breakSection": [
+            70,
+            30
+          ],
+          "defCorrection": -4,
+          "hp": 49.65,
+          "name": "Flower",
+          "partId": 103301,
+          "resists": {
+            "blunt": 1,
+            "envy": 2,
+            "gloom": 0.5,
+            "gluttony": 0.5,
+            "lust": 0.5,
+            "pierce": 1,
+            "pride": 0.5,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 0.5
+          },
+          "speed": [
+            1,
+            3
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "If at 4 Blooming Sin, enter Power-up state for this encounter",
+          "name": "Blossoming Sins"
+        },
+        {
+          "desc": "Dies when Sign of Roses is defeated",
+          "name": "Rose on a Vine"
+        },
+        {
+          "desc": "If starting a turn in a Power-up state, inflict +1 more [Charge] Count with Skill effects\nIf killed during Power-up state, apply 4 [Charge] Count to all enemies",
+          "name": "Glaring Envy"
+        }
+      ],
+      "portrait": 8570,
+      "skills": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +3 [Charge] Count\n[DefeatDuel] Spend 3 [Charge] Count",
+          "levelCorrection": 1,
+          "name": "Heaping Envy"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 3,
+          "baseValue": 2,
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Spend 10 [Charge] to gain +4 Coin Power",
+          "levelCorrection": 4,
+          "name": "Spreading Envy"
+        }
+      ]
+    }
+  ]
+}

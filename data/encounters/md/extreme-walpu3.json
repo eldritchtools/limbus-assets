@@ -1,0 +1,401 @@
+{
+  "name": "Extreme - Into a Certain Library's Book",
+  "siteId": "15ad85bb-cdb6-4032-ba37-f39af0909d7e",
+  "targets": [
+    {
+      "name": "Fairy Queen",
+      "parts": [
+        {
+          "breakSection": [
+            50
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 639,
+            "level": 22.02
+          },
+          "name": "Body",
+          "partId": 826501,
+          "resists": {
+            "blunt": 0.5,
+            "envy": 1.2,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1.2,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1.2,
+            "sloth": 0.5,
+            "wrath": 1.5
+          },
+          "speed": [
+            5,
+            7
+          ]
+        },
+        {
+          "breakSection": [
+            50
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 115,
+            "level": 3.96
+          },
+          "name": "Right Arm",
+          "partId": 826502,
+          "resists": {
+            "blunt": 0.5,
+            "envy": 1.2,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1.2,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1.2,
+            "sloth": 0.5,
+            "wrath": 1.5
+          },
+          "speed": [
+            5,
+            8
+          ]
+        },
+        {
+          "breakSection": [
+            50
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 115,
+            "level": 3.96
+          },
+          "name": "Left Arm",
+          "partId": 826503,
+          "resists": {
+            "blunt": 0.5,
+            "envy": 1.2,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1.2,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1.2,
+            "sloth": 0.5,
+            "wrath": 1.5
+          },
+          "speed": [
+            5,
+            9
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "When an Arm is broken, the Body gains 5 [Laceration] at every Turn Start.",
+          "name": "Torn Arm"
+        },
+        {
+          "desc": "Turn End: If the ally with [PreparedMeat] is Staggered, kill the ally.",
+          "name": "Empty Belly"
+        },
+        {
+          "desc": "After defeating an ally, heal 20 Core HP; then, gain 1 [Vulnerable] next turn.",
+          "name": "Bottomless Hunger"
+        },
+        {
+          "desc": "Turn End: If this unit failed to defeat an ally with [PreparedMeat], gain 1 [Hunger]. At 75%- HP, gain 2. At 50%- HP, gain 3.\nTurn Start: If this unit defeated an ally with [PreparedMeat], lose 1 [Hunger].",
+          "name": "Hunger"
+        },
+        {
+          "desc": "Turn End: At 0 [Hunger], gain (allies defeated this turn x 3) [AttackDown] and [DefenseDown].",
+          "name": "Momentary Satiation"
+        },
+        {
+          "desc": "Turn End: At 4 [Hunger], gain a stronger pattern.",
+          "name": "Ravening Hunger"
+        },
+        {
+          "desc": "When this unit gets attacked, take -70% Skill damage, and transfer that Skill's damage to a random ally.\n(Prioritizes allies with [PreparedMeat]; does not activate if there are no allies; this damage does not kill the affected allies)",
+          "name": "The Queen's Defenders"
+        }
+      ],
+      "portrait": 8263,
+      "skills": [
+        {
+          "affinity": "gluttony",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[StartBattle] Inflict 1 [PreparedMeat] to a random ally without [PreparedMeat]",
+          "levelCorrection": -2,
+          "name": "Queen's Decree"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Wingbeat"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal 3% of Max HP to the Core"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has 5+ [Laceration], Coin Power +1",
+          "levelCorrection": 0,
+          "name": "Predation"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At 3+ [Hunger], Coin Power +1\nIf target has 5+ [Laceration], Coin Power +1",
+          "levelCorrection": 0,
+          "name": "Starved Fluttering"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Reuse Coin once (3 times per Skill)",
+                "[OnSucceedAttack] Core heals 10 HP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nPrioritizes targets with [PreparedMeat]\nIf target has 5 +[Laceration], Coin Power +1\nIf target has [PreparedMeat], Coin Power +10\nCoin Power -5 for every broken Arm Part\n[TargetKill] All Parts gain 2 [Enhancement] for the Encounter (stackable)",
+          "levelCorrection": 0,
+          "name": "Ravening Hunger"
+        },
+        {
+          "affinity": "gloom",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "",
+          "levelCorrection": -2,
+          "name": "Respite"
+        },
+        {
+          "affinity": "sloth",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[StartBattle] Inflict 1 [PreparedMeat] to all allies without [PreparedMeat]",
+          "levelCorrection": -2,
+          "name": "Time to Pay for My Care"
+        }
+      ]
+    },
+    {
+      "name": "Fairy Mass",
+      "parts": [
+        {
+          "breakSection": [
+            60
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 57,
+            "level": 1.97
+          },
+          "name": "Body",
+          "partId": 826601,
+          "resists": {
+            "blunt": 0.75,
+            "envy": 1.5,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1.5,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1.5,
+            "sloth": 0.75,
+            "wrath": 1.2
+          },
+          "speed": [
+            2,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn Start: Heal 15% of max HP",
+          "name": "Care"
+        }
+      ],
+      "portrait": 8264,
+      "skills": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Core heals 3 HP"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Core heals 3 HP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Munch Munch"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Core heals 10 HP",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has 5+ [Laceration], Coin Power +1",
+          "levelCorrection": 0,
+          "name": "Gluttony"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has 5+ [Laceration], Coin Power +1",
+          "levelCorrection": 0,
+          "name": "Tiny Wingbeat"
+        },
+        {
+          "affinity": "gloom",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 1,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "",
+          "levelCorrection": -2,
+          "name": "Respite"
+        }
+      ]
+    }
+  ]
+}

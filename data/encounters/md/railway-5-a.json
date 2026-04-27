@@ -1,0 +1,1187 @@
+{
+  "name": "Line 5 (Section 1)",
+  "siteId": "a268e619-f575-4845-95d0-3687d30a45ae",
+  "waves": [
+    {
+      "targets": [
+        {
+          "name": "Hurting Teddy Bear",
+          "parts": [
+            {
+              "breakSection": [
+                40
+              ],
+              "defCorrection": 2,
+              "hp": {
+                "base": 417,
+                "level": 28.76
+              },
+              "name": "Body",
+              "partId": 104401,
+              "resists": {
+                "blunt": 0.8,
+                "envy": 1.5,
+                "gloom": 0.75,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1.25,
+                "pride": 0.75,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1.2
+              },
+              "speed": [
+                2,
+                5
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Turn Start: if all enemies have [AffectionTeddy], use a powerful Skill",
+              "name": "The Once-loved Ones"
+            },
+            {
+              "desc": "When hitting an enemy using a single-Coin Skill, inflict 3 [Laceration] Potency. Inflict 2 [DefenseDown] until the end of the next turn.\nIf the target already has [Laceration], inflict 5 [Laceration] Potency instead",
+              "name": "Grimy Iron Stake"
+            },
+            {
+              "desc": "If this unit was Staggered due to the Turn End effect of A Sad Embrace, gain 10 [FaintMemory] at the next Turn Start",
+              "name": "To Remember"
+            },
+            {
+              "desc": "If at less than or equal to 30% HP at Turn End: instead of inflicting 3 [AffectionTeddy] to all enemies, gain 15 [AttackDown] next turn (once per Encounter)",
+              "name": "To Love"
+            },
+            {
+              "desc": "Base Power -1 for every 3 types of negative effects on the target (max 3)",
+              "name": "Please Don't be Sick"
+            }
+          ],
+          "portrait": 8379,
+          "skills": [
+            {
+              "affinity": "gloom",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 4 [AffectionTeddy]",
+                    "[WinDuelAttack] Inflict 2 [Vulnerable] next turn"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes targets with the least number of negative effects\n[WhenUse] If the target does not have any negative effects, use 'Rough Expression of Love' next turn\n\n[WhenUse] If target has more negative effects than [FaintMemory] on self, use 'A Sad Embrace' next turn",
+              "levelCorrection": -2,
+              "name": "Expression of Love"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]",
+                    "[OnSucceedAttack] Inflict 2 [NailPersonality]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes targets with the least number of negative effects\n[WinDuel] Inflict 3 [AffectionTeddy] next turn\n[DefeatDuel] Inflict 1 [AffectionTeddy] next turn",
+              "levelCorrection": 0,
+              "name": "Clawing"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Curse]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes targets with the least number of negative effects\n[WinDuel] Inflict 3 [AffectionTeddy] next turn\n[DefeatDuel] Inflict 1 [AffectionTeddy] next turn",
+              "levelCorrection": 1,
+              "name": "Violent Clawing"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] If target has [AffectionTeddy], consume [AffectionTeddy] and inflict [Curse] and [NailPersonality] equal to the value of [AffectionTeddy] consumed (consumes up to 4)",
+                    "[OnSucceedAttack] If target has 4+ [Curse], consume 4 [Curse] on the target and inflict 1 [CursePackage]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[DuelCounter]\n[WhenUse] Inflict 2 [Disarming] next turn\n[WhenUse] Inflict 1 [Curse]",
+              "levelCorrection": 2,
+              "name": "Timid Expression of Love"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "If the target does not have any negative effects, deal +100% damage",
+                    "[OnSucceedAttack] Inflict 3 [Curse]",
+                    "[WinDuelAttack] Inflict 6 [NailPersonality]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantChangeTarget]\nTargets the target this unit Clashed with 'Expression of Love' last turn",
+              "levelCorrection": 3,
+              "name": "Rough Expression of Love"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 1,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Fully heals the target's SP"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantChangeTarget]\nTargets the target this unit Clashed with 'Expression of Love' last turn\nFix the damage dealt against that target to 0\n[StartBattle] Gain 2 [Vulnerable] until next turn\n[EndBattle] Enter Staggered state",
+              "levelCorrection": 0,
+              "name": "A Sad Embrace"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "pierce",
+              "atkWeight": 6,
+              "baseValue": 6,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Curse]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 4 [NailPersonality]",
+                    "[OnSucceedAttack] Consume all [AffectionTeddy] on the target\n- If this unit won the Clash, raise the target's Stagger Threshold by ([AffectionTeddy] consumed x 10)"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[DefeatDuel] Deal only half damage against the enemy with this Skill",
+              "levelCorrection": 3,
+              "name": "An Old, Nostalgic Embrace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Rose Hunter",
+          "parts": [
+            {
+              "breakSection": [
+                45,
+                25
+              ],
+              "defCorrection": 2,
+              "hp": {
+                "base": 416,
+                "level": 43.05
+              },
+              "name": "Body",
+              "partId": 104201,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 0.5,
+                "gluttony": 1,
+                "lust": 1.25,
+                "pierce": 0.8,
+                "pride": 1.25,
+                "slash": 1.5,
+                "sloth": 0.75,
+                "wrath": 1.5
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Gain Speed equal to the generated 'Barbed Lasso' Unit on the field",
+              "name": "Bramble Steed"
+            },
+            {
+              "desc": "At 40%- HP, gain a new pattern\nEvery turn, inflict [Burst] equal to each enemy's Speed against each enemy\nInflict 2 [ThornNoose] instead\nGain 2 [AttackUp] and [DefenseDown] with every passing turn (max 12)",
+              "name": "Interlocking Brambles"
+            },
+            {
+              "desc": "If the target has [Burst] immediately before attack, 20% chance to inflict +1 [Burst] Count\nWhen inflicting [ThornNoose], generate a 'Barbed Lasso' Unit.",
+              "name": "Spiked Whip"
+            }
+          ],
+          "portrait": 8376,
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 6+ [Burst], Clash Power +1",
+              "levelCorrection": 1,
+              "name": "Spiked Whip"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target has less than 5 [Burst] Count, inflict +2 [Burst] Count\n- At 5+ [Burst] Count, inflict 2 [Burst] instead"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target has less than 5 [Burst] Count, inflict +2 [Burst] Count\n- At 5+ [Burst] Count, inflict 2 [Burst] instead"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 6+ [Burst], Coin Power +1\n[WinDuel] Inflict +2 [Burst] Count",
+              "levelCorrection": 1,
+              "name": "Whip Crack"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Deal 10 SP damage\n- If target has 0- SP, deal 20 SP damage instead"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes targets with the lowest SP\n[WhenUse] If target has 0- SP, Clash Power +3\n[WhenUse] Coin Power +1 for every 4 [Burst] on the target (max 3)",
+              "levelCorrection": 2,
+              "name": "Strangling Crown of Thorns"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 3,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If the target has [ThornNoose], inflict 2 [Burst]\n- If the target has 10+ [Burst], inflict +2 [Burst] Count instead"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If the target has [ThornNoose], inflict 2 [Burst]\n- If the target has 10+ [Burst], inflict +2 [Burst] Count instead"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If the target has [ThornNoose], inflict 2 [Burst]\n- If the target has 10+ [Burst], inflict +2 [Burst] Count instead"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] If target has [ThornNoose], deal +50% damage"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes targets with [ThornNoose]\nIf the target does not have [ThornNoose], deal -50% damage",
+              "levelCorrection": 3,
+              "name": "Withdraw Whip"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 5,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 4 [Burst] and +2 [Burst] Count",
+                    "[OnSucceedAttack] If target is Staggered or has [ThornNoose], deal +30% damage",
+                    "[EnemyKill] Inflict ([Burst] Count on the target x 2) [Burst] against all enemies (max 10)"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If this unit's Speed is faster than the target's, Clash Power +5\n[WhenUse] Coin Power +1 for every 4 [Burst] on the target (max 2)\n[WhenUse] Gain Base Power by the number of targets with [ThornNoose]",
+              "levelCorrection": 5,
+              "name": "Barbed Lasso"
+            },
+            {
+              "affinity": "sloth",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] Gain (number of enemies with [ThornNoose])% of HP as Shield",
+              "levelCorrection": 0,
+              "name": "Whip Wreath"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 9,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] If there are 3- enemies with [ThornNoose], inflict 1 [ThornNoose]",
+              "levelCorrection": 2,
+              "name": "Snaring Lasso"
+            }
+          ]
+        },
+        {
+          "name": "Barbed Lasso",
+          "parts": [
+            {
+              "breakSection": [
+                80
+              ],
+              "defCorrection": -3,
+              "hp": 19.0,
+              "name": "Body",
+              "partId": 104301,
+              "resists": {
+                "blunt": 2,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 2,
+                "pride": 1,
+                "slash": 2,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                4,
+                7
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "When this unit dies, the [ThornNoose] of the enemy bound to this unit expires",
+              "name": "Barbed Lasso "
+            }
+          ],
+          "portrait": 8377,
+          "skills": [
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 2,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Burst] and +2 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantChangeTarget]\nPrioritizes targets with Barbed Lasso",
+              "levelCorrection": 0,
+              "name": "Thorns"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Peccatulum Pigritiae??",
+          "parts": [
+            {
+              "breakSection": [
+                20
+              ],
+              "defCorrection": 0,
+              "hp": 649.5,
+              "name": "Body",
+              "partId": 118901,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 1,
+                "gloom": 1.75,
+                "gluttony": 1.5,
+                "lust": 0.8,
+                "pierce": 0.5,
+                "pride": 0.5,
+                "slash": 0.5,
+                "sloth": 0.5,
+                "wrath": 0.8
+              },
+              "speed": [
+                2,
+                5
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+              "name": "Refracted Struggle"
+            }
+          ],
+          "portrait": 1080,
+          "skills": [
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 8 [Vibration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 5+ [Vibration], Base Power +1",
+              "levelCorrection": 0,
+              "name": "Stoneshower"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 8 [Vibration]",
+                    "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WinDuel] If target has [Vibration], Base Power +2",
+              "levelCorrection": 0,
+              "name": "Gather Stones"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationEcho]",
+                    "[OnSucceedAttack] Trigger [VibrationExplosion] once for every [Vibration] Count on the target (max 2); then, reduce target's [Vibration] Count by 2",
+                    "[OnSucceedAttack] Inflict +4 [Vibration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Coin Power +1 for every 3 [Vibration] on target (max 3)\n[WinDuel] This Skill gains Atk Weight +1 for every 5 [Vibration] on the target (max 2)",
+              "levelCorrection": 0,
+              "name": "Rising Sloth"
+            },
+            {
+              "affinity": "sloth",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": 15,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "Inflict 2 [Vibration] against the Attacker when hit as long as there is remaining Shield HP\n[WhenUse] Gain 3 Protection",
+              "levelCorrection": 0,
+              "name": "Guard"
+            }
+          ]
+        },
+        {
+          "name": "Peccatulum Morositatis??",
+          "parts": [
+            {
+              "breakSection": [
+                20
+              ],
+              "defCorrection": 0,
+              "hp": 448.5,
+              "name": "Body",
+              "partId": 119001,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 1.75,
+                "gloom": 0.5,
+                "gluttony": 1.5,
+                "lust": 0.8,
+                "pierce": 0.5,
+                "pride": 1,
+                "slash": 0.5,
+                "sloth": 0.8,
+                "wrath": 0.5
+              },
+              "speed": [
+                2,
+                5
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+              "name": "Refracted Struggle"
+            }
+          ],
+          "portrait": 1081,
+          "skills": [
+            {
+              "affinity": "gloom",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Sinking] and +2 [Sinking] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 5+ [Sinking], Coin Power +1",
+              "levelCorrection": 0,
+              "name": "Decay Collission"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 8 [Sinking] and +2 [Sinking] Count",
+                    "[OnSucceedAttack] Inflict 4 [Sinking] and +2 [Sinking] Count against 2 random targets"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has [Sinking], Base Power +2",
+              "levelCorrection": 0,
+              "name": "Torrent"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 [Sinking] and +4 [Sinking] Count",
+                    "[OnSucceedAttack] Next Coin Power +1 for every 3 [Sinking] on the target (3 times max)"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Cause [SinkingSurge]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Coin Power +1 for every 3 [Sinking] on target (max 3)\n[WinDuel] This Skill gains Atk Weight +1 for every 5 [Sinking] on the target (max 2)",
+              "levelCorrection": 0,
+              "name": "Cascading Gloom"
+            },
+            {
+              "affinity": "gloom",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 12,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[OnSucceedEvade] Target loses 5 SP",
+              "levelCorrection": 0,
+              "name": "Evade"
+            }
+          ]
+        },
+        {
+          "name": "Peccatulum Irae??",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                0
+              ],
+              "defCorrection": 0,
+              "hp": 139.5,
+              "name": "Body",
+              "partId": 119101,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 1,
+                "gloom": 1.75,
+                "gluttony": 0.8,
+                "lust": 1.5,
+                "pierce": 0.5,
+                "pride": 0.8,
+                "slash": 0.5,
+                "sloth": 0.5,
+                "wrath": 0.5
+              },
+              "speed": [
+                2,
+                5
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+              "name": "Refracted Struggle"
+            },
+            {
+              "desc": "Unless this unit is Staggered or Part Broken, take 80% less [Combustion] damage.",
+              "name": "Sin Nullification"
+            },
+            {
+              "desc": "If the target has [Combustion]: On Hit, spread half of [Combustion] on target to 2 units adjacent to the target on the Dashboard.",
+              "name": "Proliferating Flame"
+            }
+          ],
+          "portrait": 8161,
+          "skills": [
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 6 [Combustion] and +2 [Combustion] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 5,
+              "name": "Impaling"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 8 [Combustion]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +4 [Combustion] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [PenetrateTakeDamageUp] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WinDuel] If target has [Combustion], Base Power +2",
+              "levelCorrection": 5,
+              "name": "Hewing"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Combustion] Count",
+                    "[OnSucceedAttackHead] Inflict 1 [CrimsonTakeDamageUp] next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Coin Power +1 for every 5 [Combustion] on target (max 3)\n[WinDuel] If target has 9+ [Combustion], this Skill gains Atk Weight +1",
+              "levelCorrection": 5,
+              "name": "Erupting Wrath"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 10 [AttackDmgUp_Weak] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[WhenUse] If target has 5+ [Combustion], Coin Power +2\n[WhenUse] If target has 6+ [Combustion], reuse this Skill (2 times max)",
+              "levelCorrection": 5,
+              "name": "Counter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Sleeping Bag of a Bygone Day",
+          "parts": [
+            {
+              "breakSection": [
+                20,
+                0
+              ],
+              "defCorrection": -1,
+              "hp": {
+                "base": 652,
+                "level": 22.48
+              },
+              "name": "Head",
+              "partId": 117401,
+              "resists": {
+                "blunt": 0.8,
+                "envy": 1,
+                "gloom": 0.8,
+                "gluttony": 1,
+                "lust": 1.25,
+                "pierce": 0.8,
+                "pride": 0.8,
+                "slash": 0.8,
+                "sloth": 0.8,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                4
+              ]
+            },
+            {
+              "breakSection": [
+                50,
+                0
+              ],
+              "defCorrection": -1,
+              "hp": {
+                "base": 261,
+                "level": 8.99
+              },
+              "name": "Body",
+              "partId": 117402,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 0.8,
+                "gluttony": 1,
+                "lust": 1.25,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 0.8,
+                "wrath": 1.25
+              },
+              "speed": [
+                1,
+                4
+              ]
+            },
+            {
+              "breakSection": [
+                80,
+                40
+              ],
+              "defCorrection": -1,
+              "hp": {
+                "base": 130,
+                "level": 4.5
+              },
+              "name": "Person",
+              "partId": 117403,
+              "resists": {
+                "blunt": 1.25,
+                "envy": 1.25,
+                "gloom": 1,
+                "gluttony": 1.25,
+                "lust": 1.5,
+                "pierce": 1.5,
+                "pride": 1,
+                "slash": 1.25,
+                "sloth": 1,
+                "wrath": 1.25
+              },
+              "speed": [
+                1,
+                1
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "At 40% or less Core HP, use 'Share the Pain' next turn",
+              "name": "Anguished Screaming"
+            },
+            {
+              "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+              "name": "Refracted Struggle"
+            },
+            {
+              "desc": "At the first Turn Start of the turn Sleeping Bag of a Bygone Day appeared, it gains 10 [Breath] Potency and +10 [Breath] Count\n\nTurn End: at less than 10 [Breath] Potency or [Breath] Count, consume HP from the Head Part equal to 2% of the Core's max HP to gain 5 [Breath] and +5 [Breath] Count (cannot be Part broken or defeated due to this effect)",
+              "name": "Oxygen Supply"
+            },
+            {
+              "desc": "Multiply Critical Chance from [Breath] effects by x 1.5\n\nOn Crit:\n- At 15+ [Breath] Potency, consume up to ([Breath] Potency on self / 5) [Breath] Potency to deal +([Breath] Potency consumed x 4)% damage on Crit\n- At 15+ [Breath] Count, consume up t ([Breath] Count on self / 5) [Breath] Count to deal +([Breath] Count consumed x 8)% damage on Crit",
+              "name": "Deep Breath"
+            },
+            {
+              "desc": "Every time this unit loses a Clash and takes a hit, lose 1 [Breath] Potency\n\nEvery time this unit is hit by an Unopposed Attack, lose 1 [Breath] Count\n\nThis unit's [Breath] Potency and [Breath] Count, regardless of whether an attack hit Critically or whether its Passive activated, does not drop below 5",
+              "name": "Excruciating Suffering"
+            },
+            {
+              "desc": "In the turn this unit uses 'That's... Mine!', fix its Speed to 1. At Turn Start, apply 6 [Breath] Potency and +6 [Breath] Count to all units present on the Stage.\n\nAt the end of the same turn, consume any excess [Breath] Potency and [Breath] Count past 5 Potency and 5 Count; then, at the next Turn Start, apply the same amount of [Breath] Potency and [Breath] Count consumed to the Head Part",
+              "name": "Oxygen-saturated"
+            },
+            {
+              "desc": "When the Body Part is broken, remove the Body Part next turn and replace it with a Person Part",
+              "name": "Shattered Ribcage"
+            },
+            {
+              "desc": "At Combat End, halve the [Breath] Potency and [Breath] Count on the Person Part\nNext Turn, the Person Part disappears and is replaced by Body Part",
+              "name": "Ribcage Regeneration"
+            },
+            {
+              "desc": "When the Person dies, both the Body and the Head Parts gain +0.2 Resistance to Slash, Pierce, and Blunt until next turn (once per Encounter)",
+              "name": "After Effect"
+            }
+          ],
+          "portrait": "8632",
+          "skills": [
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 3 [Breath] Potency",
+                    "[CriticalOnSucceedAttack] Gain +3 [Breath] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Breath] Potency on self (max 5)",
+              "levelCorrection": 0,
+              "name": "Maul"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 2 [Breath] Potency",
+                    "[CriticalOnSucceedAttack] Gain +2 [Breath] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 2 [Breath] Potency",
+                    "[CriticalOnSucceedAttack] Gain +2 [Breath] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Breath] Potency on self (max 5)",
+              "levelCorrection": 1,
+              "name": "Devastate"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 6,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "Deal +([Breath] Potency)% damage on Critical Hit"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 8 [Breath] Potency on self (max 5)\n[WhenUse] Coin Power +1 for every 8 [Breath] Count on self (max 5)\n[DefeatDuel] Halve [Breath] Potency on self\n[EndSkill] Halve [Breath] Potency and Count on self",
+              "levelCorrection": 3,
+              "name": "Labored Breathing"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Breath] Potency on self (max 5)\n[WhenUse] Gain 4 [Breath] Potency\n- At 50%- HP, also gain +4 [Breath] Count",
+              "levelCorrection": 0,
+              "name": "Prone"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Siphons [Breath] Potency and [Breath] Count from the target (max 6 each)",
+                    "[DefeatDuelAttack] Siphons 1/3 of the [Breath] Potency and [Breath] Count on the target (max 2 each)"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantChangeTarget]\n[WhenUse] Clash Power +1 for every 4 [Breath] Potency on self (max 3)\n[WhenUse] Clash Power +1 for every 4 [Breath] Count on self (max 3)",
+              "levelCorrection": 2,
+              "name": "That's... MINE!"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 6,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[WinDuelAttack] Inflict 2 [Binding] next turn"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[WinDuelAttack] Inflict 2 [Vulnerable]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "Deal +([Breath] Potency + [Breath] Count)% damage on Critical Hit"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 8 [Breath] Potency on self (max 5)\n[WhenUse] Coin Power +1 for every 8 [Breath] Count on self (max 5)\n[DefeatDuel] Deal -75% damage and damage dealt by this Skill cannot Stagger the target\n[EndSkill] Halve [Breath] Potency and Count on self",
+              "levelCorrection": 5,
+              "name": "Share the Pain"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] Gain 2 [Vulnerable]",
+              "levelCorrection": 0,
+              "name": "Freed from the Life of Suffering"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

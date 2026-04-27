@@ -1,0 +1,996 @@
+{
+  "name": "Extreme - Efflorescing Greenery",
+  "siteId": "e83c3646-dd71-4934-ac84-695ec7a18a3c",
+  "waves": [
+    {
+      "targets": [
+        {
+          "name": "Refracted Drenched Gossypium",
+          "parts": [
+            {
+              "breakSection": [
+                45,
+                0
+              ],
+              "defCorrection": 5,
+              "hp": {
+                "base": 251,
+                "level": 25.96
+              },
+              "name": "Body",
+              "partId": 819801,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 0.5,
+                "lust": 0.2,
+                "pierce": 1,
+                "pride": 1.5,
+                "slash": 1.3,
+                "sloth": 1,
+                "wrath": 1.5
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Turn End: un-Stagger enemies, and inflict (Stagger LV x 8) [Laceration] and 2 [Reduction] on them next turn.",
+              "name": "White Gossypium"
+            },
+            {
+              "desc": "Turn End: Apply 1 [Binding] to all enemies with Gossypium",
+              "name": "Binding Roots"
+            },
+            {
+              "desc": "At 20%- Core HP, become [MRcAfBb] at Turn End. This [MRcAfBb] does not expire.",
+              "name": "Red-stained Gossypium"
+            },
+            {
+              "desc": "When hitting a target with an Attack Skill, heal HP equal to [Laceration] on target.",
+              "name": "To be Drenched in Blood"
+            },
+            {
+              "desc": "When the Body Part is broken, halve the value of Gossypium on all enemies.",
+              "name": "Flowering Gossypium"
+            }
+          ],
+          "portrait": 8578,
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration] and +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Inflict 3 [MRcAfBa]",
+              "levelCorrection": 2,
+              "name": "Gossypium Planting"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                    "[OnSucceedAttackHead] Inflict 4 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 2,
+              "name": "Wound Planting"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Heal by ([MRcAfBa] x 5)% of damage dealt"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Heal by ([MRcAfBa] x 5)% of damage dealt"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel]\nAmong targets with [MRcAfBa], attack the unit with the slowest Speed;\nDeal +([MRcAfBa] x 10)% damage",
+              "levelCorrection": -3,
+              "name": "Draining Roots"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 5,
+              "baseValue": 7,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Binding] and 2 [ScarletTakeDamageUp] next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 8 [Laceration] and +4 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Attacks the target with the most [Laceration]\n[WhenUse] If the main target is the target with the most [Laceration], Base Power +5, inflict x2 the effects",
+              "levelCorrection": 2,
+              "name": "Flourishing Gossypium"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 5,
+              "baseValue": 10,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration] and +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration] and +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Among targets with [MRcAfBa], attack the unit with the least HP\n[WhenUse] If the main target is the target with the most [Laceration], Base Power +5\n[EndBattle] [MRcAfBb] state expires next turn.",
+              "levelCorrection": 0,
+              "name": "Scattering Gossypium"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[OnSucceedEvade] Inflict 3 [Laceration] and +1 [Laceration] Count",
+              "levelCorrection": -5,
+              "name": "Scattering Wind"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 3,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [MRcAfBa]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel]\nPrioritizes the unit with the slowest Speed\nDamage dealt by this Attack Skill is fixed to 0.\n[StartBattle] Enter [MRcAfBb] state next turn.",
+              "levelCorrection": -3,
+              "name": "Encroaching Gossypium"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 5,
+              "baseValue": 10,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 [Laceration] and +4 [Laceration] Count",
+                    "[OnSucceedAttack] Heal HP equal to [Laceration] on target"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 [Laceration] and +4 [Laceration] Count",
+                    "[OnSucceedAttack] Heal HP equal to [Laceration] on target"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes the target with the most [Laceration]\n[WhenUse] If the main target is the target with the most [Laceration], Base Power +10\nIf target has 10+ [Laceration], deal +50% damage",
+              "levelCorrection": 0,
+              "name": "Scattering Red-stained Gossypium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Rose Hunter",
+          "parts": [
+            {
+              "breakSection": [
+                45,
+                25
+              ],
+              "defCorrection": 2,
+              "hp": {
+                "base": 416,
+                "level": 43.05
+              },
+              "name": "Body",
+              "partId": 104201,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 0.5,
+                "gluttony": 1,
+                "lust": 1.25,
+                "pierce": 0.8,
+                "pride": 1.25,
+                "slash": 1.5,
+                "sloth": 0.75,
+                "wrath": 1.5
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Gain Speed equal to the generated 'Barbed Lasso' Unit on the field",
+              "name": "Bramble Steed"
+            },
+            {
+              "desc": "At 40%- HP, gain a new pattern\nEvery turn, inflict [Burst] equal to each enemy's Speed against each enemy\nInflict 2 [ThornNoose] instead\nGain 2 [AttackUp] and [DefenseDown] with every passing turn (max 12)",
+              "name": "Interlocking Brambles"
+            },
+            {
+              "desc": "If the target has [Burst] immediately before attack, 20% chance to inflict +1 [Burst] Count\nWhen inflicting [ThornNoose], generate a 'Barbed Lasso' Unit.",
+              "name": "Spiked Whip"
+            }
+          ],
+          "portrait": 8376,
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 6+ [Burst], Clash Power +1",
+              "levelCorrection": 1,
+              "name": "Spiked Whip"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target has less than 5 [Burst] Count, inflict +2 [Burst] Count\n- At 5+ [Burst] Count, inflict 2 [Burst] instead"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target has less than 5 [Burst] Count, inflict +2 [Burst] Count\n- At 5+ [Burst] Count, inflict 2 [Burst] instead"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 6+ [Burst], Coin Power +1\n[WinDuel] Inflict +2 [Burst] Count",
+              "levelCorrection": 1,
+              "name": "Whip Crack"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Deal 10 SP damage\n- If target has 0- SP, deal 20 SP damage instead"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes targets with the lowest SP\n[WhenUse] If target has 0- SP, Clash Power +3\n[WhenUse] Coin Power +1 for every 4 [Burst] on the target (max 3)",
+              "levelCorrection": 2,
+              "name": "Strangling Crown of Thorns"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 3,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If the target has [ThornNoose], inflict 2 [Burst]\n- If the target has 10+ [Burst], inflict +2 [Burst] Count instead"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If the target has [ThornNoose], inflict 2 [Burst]\n- If the target has 10+ [Burst], inflict +2 [Burst] Count instead"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If the target has [ThornNoose], inflict 2 [Burst]\n- If the target has 10+ [Burst], inflict +2 [Burst] Count instead"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] If target has [ThornNoose], deal +50% damage"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes targets with [ThornNoose]\nIf the target does not have [ThornNoose], deal -50% damage",
+              "levelCorrection": 3,
+              "name": "Withdraw Whip"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 5,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 4 [Burst] and +2 [Burst] Count",
+                    "[OnSucceedAttack] If target is Staggered or has [ThornNoose], deal +30% damage",
+                    "[EnemyKill] Inflict ([Burst] Count on the target x 2) [Burst] against all enemies (max 10)"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If this unit's Speed is faster than the target's, Clash Power +5\n[WhenUse] Coin Power +1 for every 4 [Burst] on the target (max 2)\n[WhenUse] Gain Base Power by the number of targets with [ThornNoose]",
+              "levelCorrection": 5,
+              "name": "Barbed Lasso"
+            },
+            {
+              "affinity": "sloth",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] Gain (number of enemies with [ThornNoose])% of HP as Shield",
+              "levelCorrection": 0,
+              "name": "Whip Wreath"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 9,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] If there are 3- enemies with [ThornNoose], inflict 1 [ThornNoose]",
+              "levelCorrection": 2,
+              "name": "Snaring Lasso"
+            }
+          ]
+        },
+        {
+          "name": "Barbed Lasso",
+          "parts": [
+            {
+              "breakSection": [
+                80
+              ],
+              "defCorrection": -3,
+              "hp": 19.0,
+              "name": "Body",
+              "partId": 104301,
+              "resists": {
+                "blunt": 2,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 2,
+                "pride": 1,
+                "slash": 2,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                4,
+                7
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "When this unit dies, the [ThornNoose] of the enemy bound to this unit expires",
+              "name": "Barbed Lasso "
+            }
+          ],
+          "portrait": 8377,
+          "skills": [
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 2,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Burst] and +2 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantChangeTarget]\nPrioritizes targets with Barbed Lasso",
+              "levelCorrection": 0,
+              "name": "Thorns"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Dongbaek E.G.O::Spicebush",
+          "parts": [
+            {
+              "defCorrection": -1,
+              "hp": 419.4,
+              "name": "Body",
+              "partId": 814201,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 0.75,
+                "gluttony": 1.5,
+                "lust": 0.5,
+                "pierce": 0.75,
+                "pride": 2,
+                "slash": 1.5,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "If 'Magnificent Spring Breeze' loses in a clash, lose 10 SP",
+              "name": "Cost of Blooming"
+            },
+            {
+              "desc": "At the start of Turn 5, spawn 4 Soon-to-bloom Flowers with 3 [DongbaekGrow]",
+              "name": "Into Full Bloom"
+            },
+            {
+              "desc": "When HP drops to 50%, proceeds to the next phase. HP does not go below 50% until the phase changes.",
+              "name": "Flowering Mind"
+            },
+            {
+              "desc": "When HP falls below 50%, uses a special skill to target 1 unit, then becomes immune to Stagger and Panic for the next 2 turns.\nIf Yi Sang has 'Dueling', Dongbaek gains 1 Attack Power Up.\nIf Yi Sang wins the duel, all allies gain 3 [AttackDmgUp] next turn.\nIf Dongbaek wins the duel, Dongbaek fully heals SP.",
+              "name": "Dueling"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against targets without SP.",
+              "name": "Fixed Panic"
+            }
+          ],
+          "portrait": 8044,
+          "skills": [
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]",
+                    "[OnSucceedAttack] Inflict 1 [DongbaekFlorescence]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]",
+                    "[OnSucceedAttack] Inflict 1 [DongbaekFlorescence]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -1,
+              "name": "Scattering Fragrance"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 3,
+              "baseValue": 7,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [DongbaekFlorescence]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [DongbaekFlorescence]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 2,
+              "name": "Pungent Fragrance"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 7,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Burst] Count",
+                    "[OnSucceedAttack] Inflict 3 [DongbaekFlorescence]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Spawn 2 flowers next turn\nIf there are 4 flowers present, instead raise the level of a lowest-level flower by 1",
+              "levelCorrection": 0,
+              "name": "Flowering Buds"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [DongbaekFlorescence]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [DongbaekFlorescence]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Inflict 3 [DongbaekFlorescence]",
+              "levelCorrection": 2,
+              "name": "Like Flowers in Full Bloom..."
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 7,
+              "baseValue": 16,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Target loses 15 SP",
+                    "[OnSucceedAttack] Inflict 3 [DongbaekFlorescence]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Gain +5 Final Power for each living Soon-to-bloom Flower\n\n[EndSkill] Remove all Soon-to-bloom Flowers",
+              "levelCorrection": -3,
+              "name": "Magnificent Spring Breeze"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Inflict [DongbaekShowdown] next turn",
+              "levelCorrection": -1,
+              "name": "Must Cover With Dirt"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Gain 10 [Protection]\n[DefeatDuel] Gain 3 [DongbaekScatterPetal]",
+              "levelCorrection": -3,
+              "name": "Withering Flower"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 15,
+              "baseValue": 20,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target is [DongbaekFullBloom], stagger them and remove the effect"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Vulnerable]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 [Burst]",
+                    "[OnSucceedAttack] Inflict +5 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "If target is [DongbaekFullBloom], deal +100% damage",
+              "levelCorrection": 7,
+              "name": "Culminating Fragrance"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[OnSucceedEvade] Inflict 1 [DongbaekFlorescence]",
+              "levelCorrection": 0,
+              "name": "Piquant Scent"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 20,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] Gain 5 [Protection]",
+              "levelCorrection": 0,
+              "name": "Awaiting the Moment"
+            }
+          ]
+        },
+        {
+          "name": "Soon-to-bloom Flower",
+          "parts": [
+            {
+              "breakSection": [
+                50
+              ],
+              "defCorrection": -3,
+              "hp": 19.0,
+              "name": "Body",
+              "partId": 819401,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 2,
+                "lust": 0.75,
+                "pierce": 0.75,
+                "pride": 2,
+                "slash": 2,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                2
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Spawns with 1 [DongbaekGrow]",
+              "name": "Growing Flower"
+            }
+          ],
+          "portrait": 8054,
+          "skills": [
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [DongbaekFlorescence]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -5,
+              "name": "Floral Breeze"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [DongbaekFlorescence]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [DongbaekFlorescence]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -5,
+              "name": "Fragrant Breeze"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 2,
+              "baseValue": 4,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [DongbaekFlorescence]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [DongbaekFlorescence]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [DongbaekFlorescence]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -5,
+              "name": "Pungent Breeze"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[WhenUse] Heal 10 HP",
+              "levelCorrection": -5,
+              "name": "Borne Scent"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[DefeatDuel] This unit is defeated",
+              "levelCorrection": -1,
+              "name": "Fully Bloomed"
+            }
+          ]
+        },
+        {
+          "name": "Fully Bloomed Flower",
+          "parts": [
+            {
+              "breakSection": [
+                50
+              ],
+              "defCorrection": -3,
+              "hp": 28.5,
+              "name": "Body",
+              "partId": 819501,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 2,
+                "lust": 0.75,
+                "pierce": 0.75,
+                "pride": 2,
+                "slash": 2,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                2
+              ]
+            }
+          ],
+          "portrait": 8055,
+          "skills": [
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "Cannot act\nAt the end of the turn, lose 20 SP\nIf SP reaches -45, fully heal SP, then gain [DongbaekFascination] next turn\nIf this effect isn't removed for 2 turns, remove it at the end of the turn",
+              "levelCorrection": -5,
+              "name": "Full Bloom"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
