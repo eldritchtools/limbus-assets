@@ -1204,9 +1204,9 @@
   "9065": {
     "affinity": "pride",
     "descs": [
-      "Deal +35% damage against enemies suffering negative effects (Low Morale, Panic) from SP loss.\n\nIf the Skill inflicts [Sinking] Potency or Count(including Unique 'Sinking'), deal +10% damage in addition to the above.\n\nWhen [Sinking]'s effect applies to enemies without Sanity, the Affinity of the damage inflicted changes to whatever is the most effective.",
-      "Deal +40% damage against enemies with less than 0 SP.\n\nIf the Skill inflicts [Sinking] Potency or Count(including Unique 'Sinking'), deal +10% damage in addition to the above.\n\nWhen [Sinking]'s effect applies to enemies without Sanity, the Affinity of the damage inflicted changes to whatever is the most effective.",
-      "Deal +50% damage against enemies without SP or with less than 0 SP.\n\nIf the Skill inflicts [Sinking] Potency or Count(including Unique 'Sinking'), deal +10% damage in addition to the above.\n\nWhen [Sinking]'s effect applies to enemies without Sanity, the Affinity of the damage inflicted changes to whatever is the most effective."
+      "Deal +35% damage against enemies suffering negative effects (Low Morale, Panic) from SP loss.\n\nIf the Skill inflicts [Sinking] Potency or Count(including 'Unique Sinking'), deal +10% damage in addition to the above.\n\nWhen [Sinking]'s effect applies to enemies that are Non-SP Units, the Affinity of the damage inflicted changes to whatever is the most effective.",
+      "Deal +40% damage against enemies with less than 0 SP.\n\nIf the Skill inflicts [Sinking] Potency or Count(including 'Unique Sinking'), deal +10% damage in addition to the above.\n\nWhen [Sinking]'s effect applies to enemies that are Non-SP Units, the Affinity of the damage inflicted changes to whatever is the most effective.",
+      "Deal +50% damage against enemies that are non-SP units or have less than 0 SP.\n\nIf the Skill inflicts [Sinking] Potency or Count(including 'Unique Sinking'), deal +10% damage in addition to the above.\n\nWhen [Sinking]'s effect applies to enemies that are Non-SP Units, the Affinity of the damage inflicted changes to whatever is the most effective."
     ],
     "enhanceable": true,
     "keyword": "Sinking",
@@ -1215,9 +1215,10 @@
       "Artistic Sense+",
       "Artistic Sense++"
     ],
-    "search_desc": "Deal +35% damage against enemies suffering negative effects (Low Morale, Panic) from SP loss.\n\nIf the Skill inflicts Sinking Potency or Count(including Unique 'Sinking'), deal +10% damage in addition to the above.\n\nWhen Sinking's effect applies to enemies without Sanity, the Affinity of the damage inflicted changes to whatever is the most effective. , Deal +40% damage against enemies with less than 0 SP.\n\nIf the Skill inflicts Sinking Potency or Count(including Unique 'Sinking'), deal +10% damage in addition to the above.\n\nWhen Sinking's effect applies to enemies without Sanity, the Affinity of the damage inflicted changes to whatever is the most effective. , Deal +50% damage against enemies without SP or with less than 0 SP.\n\nIf the Skill inflicts Sinking Potency or Count(including Unique 'Sinking'), deal +10% damage in addition to the above.\n\nWhen Sinking's effect applies to enemies without Sanity, the Affinity of the damage inflicted changes to whatever is the most effective.",
+    "search_desc": "Deal +35% damage against enemies suffering negative effects (Low Morale, Panic) from SP loss.\n\nIf the Skill inflicts Sinking Potency or Count(including 'Unique Sinking'), deal +10% damage in addition to the above.\n\nWhen Sinking's effect applies to enemies that are Non-SP Units, the Affinity of the damage inflicted changes to whatever is the most effective. , Deal +40% damage against enemies with less than 0 SP.\n\nIf the Skill inflicts Sinking Potency or Count(including 'Unique Sinking'), deal +10% damage in addition to the above.\n\nWhen Sinking's effect applies to enemies that are Non-SP Units, the Affinity of the damage inflicted changes to whatever is the most effective. , Deal +50% damage against enemies that are non-SP units or have less than 0 SP.\n\nIf the Skill inflicts Sinking Potency or Count(including 'Unique Sinking'), deal +10% damage in addition to the above.\n\nWhen Sinking's effect applies to enemies that are Non-SP Units, the Affinity of the damage inflicted changes to whatever is the most effective.",
     "srcPath": "Artistic Sense",
-    "tier": "4"
+    "tier": "4",
+    "updated": true
   },
   "9066": {
     "affinity": "pride",
@@ -1567,7 +1568,7 @@
   "9084": {
     "affinity": "gluttony",
     "descs": [
-      "Turn Start: select one of the fastest allies and apply 5 [Agility] to them next turn.\n\nNext Turn Start: select one of the other fastest allies (allies without the Ancient Effigy effect) and re-apply the Gift effect to them. (effect expires if no other allies can be selected)"
+      "Turn Start: select one of the fastest allies and apply 5 [Agility] to them next turn.\n\nNext Turn Start: select one of the other fastest allies (allies without the Ancient Effigy effect) and re-apply the Gift effect to them. (effect expires if no other allies can be selected)\n\nAt 10+ Speed, the ally gains (Speed difference with the target / 2) Offense Level (max 5; rounded down)"
     ],
     "events": [
       "901084"
@@ -1576,14 +1577,15 @@
     "names": [
       "Ancient Effigy"
     ],
-    "search_desc": "Turn Start: select one of the fastest allies and apply 5 Haste to them next turn.\n\nNext Turn Start: select one of the other fastest allies (allies without the Ancient Effigy effect) and re-apply the Gift effect to them. (effect expires if no other allies can be selected)",
+    "search_desc": "Turn Start: select one of the fastest allies and apply 5 Haste to them next turn.\n\nNext Turn Start: select one of the other fastest allies (allies without the Ancient Effigy effect) and re-apply the Gift effect to them. (effect expires if no other allies can be selected)\n\nAt 10+ Speed, the ally gains (Speed difference with the target / 2) Offense Level (max 5; rounded down)",
     "srcPath": "Ancient Effigy",
-    "tier": "4"
+    "tier": "4",
+    "updated": true
   },
   "9085": {
     "affinity": "gloom",
     "descs": [
-      "Turn Start: A random ally deals +10% damage (effective until Non-disclosure Agreement effect expires).\n\nThe ally deals additional +10% damage every time it hits with a Skill and deals HP damage to an enemy (Max +40% damage). If the ally takes HP damage, the Gift's effect expires. At the next Turn Start, apply the same Gift effect to another random ally. (effect expires if no other allies can be selected)"
+      "Turn Start: A random ally deals +10% damage and gains Shield equal to 49% of max HP (effective until Non-disclosure Agreement effect expires)\n\nThe ally deals additional +10% damage every time it hits with a Skill and deals HP damage to an enemy (max +40% damage)\n\nIf the ally takes HP damage, the Gift's effect expires. At the next Turn Start, apply the same Gift effect to another random ally. (accumulated damage boost carries over; effect expires if no other allies can be selected)"
     ],
     "events": [
       "901085"
@@ -1592,9 +1594,10 @@
     "names": [
       "Non-disclosure Agreement"
     ],
-    "search_desc": "Turn Start: A random ally deals +10% damage (effective until Non-disclosure Agreement effect expires).\n\nThe ally deals additional +10% damage every time it hits with a Skill and deals HP damage to an enemy (Max +40% damage). If the ally takes HP damage, the Gift's effect expires. At the next Turn Start, apply the same Gift effect to another random ally. (effect expires if no other allies can be selected)",
+    "search_desc": "Turn Start: A random ally deals +10% damage and gains Shield equal to 49% of max HP (effective until Non-disclosure Agreement effect expires)\n\nThe ally deals additional +10% damage every time it hits with a Skill and deals HP damage to an enemy (max +40% damage)\n\nIf the ally takes HP damage, the Gift's effect expires. At the next Turn Start, apply the same Gift effect to another random ally. (accumulated damage boost carries over; effect expires if no other allies can be selected)",
     "srcPath": "Non-disclosure Agreement",
-    "tier": "4"
+    "tier": "4",
+    "updated": true
   },
   "9086": {
     "affinity": "gloom",
@@ -1782,7 +1785,7 @@
   "9094": {
     "affinity": "wrath",
     "descs": [
-      "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Burst] Potency or Count. (except E.G.O Skills; except Backup Units)\n\nWhen hitting an enemy with a Skill, inflict 5 [Burst] Potency.\n\nWhen [Burst] Count on an enemy drops below 1, consume 10 [Burst] Potency instead of [Burst] Count. (This effect ends when [Burst] Potency drops below 10)\n\nIf the target has less than 3 [Burst] Count, inflict +1 more Count when inflicting [Burst] Count. (3 times per Encounter)"
+      "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Burst] Potency or Count. (except E.G.O Skills; except Backup Units)\n\nWhen hitting an enemy with a Skill, inflict 5 [Burst] Potency\n- Skills that inflict [Burst] Potency or Count: Inflict an additional 3 [Burst] Potency and +1 [Burst] Count (once per Skill)\n\nWhen [Burst] Count on an enemy drops below 1, consume 10 [Burst] Potency instead of [Burst] Count. (This effect ends when [Burst] Potency drops below 10)\n\nIf the target has less than 3 [Burst] Count, inflict +1 more Count when inflicting [Burst] Count. (3 times per Encounter)"
     ],
     "fusion": true,
     "keyword": "Rupture",
@@ -1796,9 +1799,10 @@
         "9169"
       ]
     ],
-    "search_desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply Rupture Potency or Count. (except E.G.O Skills; except Backup Units)\n\nWhen hitting an enemy with a Skill, inflict 5 Rupture Potency.\n\nWhen Rupture Count on an enemy drops below 1, consume 10 Rupture Potency instead of Rupture Count. (This effect ends when Rupture Potency drops below 10)\n\nIf the target has less than 3 Rupture Count, inflict +1 more Count when inflicting Rupture Count. (3 times per Encounter)",
+    "search_desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply Rupture Potency or Count. (except E.G.O Skills; except Backup Units)\n\nWhen hitting an enemy with a Skill, inflict 5 Rupture Potency\n- Skills that inflict Rupture Potency or Count: Inflict an additional 3 Rupture Potency and +1 Rupture Count (once per Skill)\n\nWhen Rupture Count on an enemy drops below 1, consume 10 Rupture Potency instead of Rupture Count. (This effect ends when Rupture Potency drops below 10)\n\nIf the target has less than 3 Rupture Count, inflict +1 more Count when inflicting Rupture Count. (3 times per Encounter)",
     "srcPath": "Enrapturing Trance",
-    "tier": "4"
+    "tier": "4",
+    "updated": true
   },
   "9095": {
     "affinity": "pride",
@@ -1824,7 +1828,7 @@
   "9096": {
     "affinity": "gluttony",
     "descs": [
-      "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills; except Backup Units)\n\nOn Hit against an enemy with a Skill: inflict 5 [Sinking] Potency.\n\nTurn Start: enemies or Parts with [Sinking] regain ([Sinking] Count each enemy lost On Hit last turn / 2) [Sinking] Count.\n\nOn Hit with a Base Attack Skill: deal ([Sinking] Potency on target / 10) Gloom damage (min 1 damage)\n\nOn Hit with an Attack Skill: if the target's SP is below 0, Skill deals more damage the further the target's SP is from 0 (+1% damage per SP)\n- If the target is Panicked, deal +50% damage instead\n- If the target does not have SP, deal +1% damage for every 2 [Sinking] Potency on target. If target has 90+ [Sinking] Potency, deal +50% damage instead"
+      "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills; except Backup Units)\n\nOn Hit against an enemy with a Skill: inflict 5 [Sinking] Potency.\n\nTurn Start: enemies or Parts with [Sinking] regain ([Sinking] Count each enemy lost On Hit last turn / 2) [Sinking] Count.\n\nOn Hit with a Base Attack Skill: deal ([Sinking] Potency on target / 10) Gloom damage (min 1 damage)\n\nOn Hit with an Attack Skill: if the target's SP is below 0, Skill deals more damage the further the target's SP is from 0 (+1% damage per SP)\n- If the target is Panicked, deal +50% damage instead\n- For targets that are Non-SP Units: Deal +1% damage for every 2 [Sinking] Potency on target. If target has 90+ [Sinking] Potency, deal +50% damage instead"
     ],
     "fusion": true,
     "keyword": "Sinking",
@@ -1838,9 +1842,10 @@
         "9174"
       ]
     ],
-    "search_desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply Sinking Potency, Count, or 'Unique Sinking'. (except E.G.O Skills; except Backup Units)\n\nOn Hit against an enemy with a Skill: inflict 5 Sinking Potency.\n\nTurn Start: enemies or Parts with Sinking regain (Sinking Count each enemy lost On Hit last turn / 2) Sinking Count.\n\nOn Hit with a Base Attack Skill: deal (Sinking Potency on target / 10) Gloom damage (min 1 damage)\n\nOn Hit with an Attack Skill: if the target's SP is below 0, Skill deals more damage the further the target's SP is from 0 (+1% damage per SP)\n- If the target is Panicked, deal +50% damage instead\n- If the target does not have SP, deal +1% damage for every 2 Sinking Potency on target. If target has 90+ Sinking Potency, deal +50% damage instead",
+    "search_desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply Sinking Potency, Count, or 'Unique Sinking'. (except E.G.O Skills; except Backup Units)\n\nOn Hit against an enemy with a Skill: inflict 5 Sinking Potency.\n\nTurn Start: enemies or Parts with Sinking regain (Sinking Count each enemy lost On Hit last turn / 2) Sinking Count.\n\nOn Hit with a Base Attack Skill: deal (Sinking Potency on target / 10) Gloom damage (min 1 damage)\n\nOn Hit with an Attack Skill: if the target's SP is below 0, Skill deals more damage the further the target's SP is from 0 (+1% damage per SP)\n- If the target is Panicked, deal +50% damage instead\n- For targets that are Non-SP Units: Deal +1% damage for every 2 Sinking Potency on target. If target has 90+ Sinking Potency, deal +50% damage instead",
     "srcPath": "Black Sheet Music",
-    "tier": "4"
+    "tier": "4",
+    "updated": true
   },
   "9097": {
     "affinity": "wrath",
@@ -1963,9 +1968,9 @@
   "9102": {
     "affinity": "gloom",
     "descs": [
-      "If the ally has 30 or more SP than the target, deal +7.5% damage with Skills that inflict [Combustion] Potency, Count, or 'Unique Burn'. (For enemies without SP, their 'SP' counts as 0)",
-      "If the ally has 25 or more SP than the target, deal +12.5% damage with Skills that inflict [Combustion] Potency, Count, or 'Unique Burn'. (For enemies without SP, their 'SP' counts as 0)",
-      "If the ally has 15 or more SP than the target, deal +20% damage with Skills that inflict [Combustion] Potency, Count, or 'Unique Burn'. (For enemies without SP, their 'SP' counts as 0)"
+      "If the ally has 30 or more SP than the target, deal +7.5% damage with Skills that inflict [Combustion] Potency, Count, or 'Unique Burn'. (for enemies that are Non-SP Units, their 'SP' counts as 0)",
+      "If the ally has 25 or more SP than the target, deal +12.5% damage with Skills that inflict [Combustion] Potency, Count, or 'Unique Burn'. (for enemies that are Non-SP Units, their 'SP' counts as 0)",
+      "If the ally has 15 or more SP than the target, deal +20% damage with Skills that inflict [Combustion] Potency, Count, or 'Unique Burn'. (for enemies that are Non-SP Units, their 'SP' counts as 0)"
     ],
     "enhanceable": true,
     "ingredientOf": [
@@ -1977,9 +1982,10 @@
       "Polarization+",
       "Polarization++"
     ],
-    "search_desc": "If the ally has 30 or more SP than the target, deal +7.5% damage with Skills that inflict Burn Potency, Count, or 'Unique Burn'. (For enemies without SP, their 'SP' counts as 0) , If the ally has 25 or more SP than the target, deal +12.5% damage with Skills that inflict Burn Potency, Count, or 'Unique Burn'. (For enemies without SP, their 'SP' counts as 0) , If the ally has 15 or more SP than the target, deal +20% damage with Skills that inflict Burn Potency, Count, or 'Unique Burn'. (For enemies without SP, their 'SP' counts as 0)",
+    "search_desc": "If the ally has 30 or more SP than the target, deal +7.5% damage with Skills that inflict Burn Potency, Count, or 'Unique Burn'. (for enemies that are Non-SP Units, their 'SP' counts as 0) , If the ally has 25 or more SP than the target, deal +12.5% damage with Skills that inflict Burn Potency, Count, or 'Unique Burn'. (for enemies that are Non-SP Units, their 'SP' counts as 0) , If the ally has 15 or more SP than the target, deal +20% damage with Skills that inflict Burn Potency, Count, or 'Unique Burn'. (for enemies that are Non-SP Units, their 'SP' counts as 0)",
     "srcPath": "Polarization",
-    "tier": "1"
+    "tier": "1",
+    "updated": true
   },
   "9103": {
     "affinity": "gluttony",
@@ -2105,6 +2111,9 @@
     ],
     "events": [
       "901018"
+    ],
+    "ingredientOf": [
+      "9270"
     ],
     "keyword": "Bleed",
     "names": [
@@ -2854,7 +2863,7 @@
     "descs": [
       "[Effects apply only to #5 Deployed Identity]\n\nWhen hitting an enemy with a Blunt Skill, deal 3 bonus Blunt damage.\n\nGloom Affinity Attack Skill: heal an additional 3 HP as well.",
       "[Effects apply only to #5, #6 Deployed Identities]\n\nWhen hitting an enemy with a Blunt Skill, deal 3~5 Blunt bonus Damage.\n\nGloom Affinity Attack Skill: heal an additional 4 HP as well.",
-      "[Effects apply only to #5, #6 Deployed Identities]\n\nWhen hitting an enemy with a Blunt Skill, deal 3~7 Blunt bonus Damage.\n\nGloom Affinity Attack Skill: heal an additional 6 HP as well."
+      "[Effects apply only to #5, #6 Deployed Identities]\n\nWhen hitting an enemy with a Blunt Skill, deal 5~7 Blunt bonus Damage\n\nGloom Attack Skills: Heal 6 HP as well"
     ],
     "enhanceable": true,
     "keyword": "Blunt",
@@ -2863,9 +2872,10 @@
       "Compression Bandage+",
       "Compression Bandage++"
     ],
-    "search_desc": "[Effects apply only to #5 Deployed Identity]\n\nWhen hitting an enemy with a Blunt Skill, deal 3 bonus Blunt damage.\n\nGloom Affinity Attack Skill: heal an additional 3 HP as well. , [Effects apply only to #5, #6 Deployed Identities]\n\nWhen hitting an enemy with a Blunt Skill, deal 3~5 Blunt bonus Damage.\n\nGloom Affinity Attack Skill: heal an additional 4 HP as well. , [Effects apply only to #5, #6 Deployed Identities]\n\nWhen hitting an enemy with a Blunt Skill, deal 3~7 Blunt bonus Damage.\n\nGloom Affinity Attack Skill: heal an additional 6 HP as well.",
+    "search_desc": "[Effects apply only to #5 Deployed Identity]\n\nWhen hitting an enemy with a Blunt Skill, deal 3 bonus Blunt damage.\n\nGloom Affinity Attack Skill: heal an additional 3 HP as well. , [Effects apply only to #5, #6 Deployed Identities]\n\nWhen hitting an enemy with a Blunt Skill, deal 3~5 Blunt bonus Damage.\n\nGloom Affinity Attack Skill: heal an additional 4 HP as well. , [Effects apply only to #5, #6 Deployed Identities]\n\nWhen hitting an enemy with a Blunt Skill, deal 5~7 Blunt bonus Damage\n\nGloom Attack Skills: Heal 6 HP as well",
     "srcPath": "Compression Bandage",
-    "tier": "2"
+    "tier": "2",
+    "updated": true
   },
   "9150": {
     "affinity": "gluttony",
@@ -3359,7 +3369,7 @@
   "9174": {
     "affinity": "gloom",
     "descs": [
-      "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills; except Backup Units)\n\nTurn Start: enemies with [Sinking](for Abnormalities, all Parts) regain ([Sinking] Count lost on hit last turn / 3) [Sinking] Count.\n\nIf the Base Attack Skill hits against a target with less than 0 SP(for enemies without SP, if they have 1.5+ Gloom Resist.), inflict ([Sinking] Potency / 10) Gloom Affinity damage (min 1, 10 times per turn for this effect)"
+      "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills; except Backup Units)\n\nTurn Start: enemies with [Sinking](for Abnormalities, all Parts) regain ([Sinking] Count lost on hit last turn / 3) [Sinking] Count.\n\nIf the Base Attack Skill hits against a target with less than 0 SP(for enemies that are Non-SP units, if they have 1.5+ Gloom Resist.), inflict ([Sinking] Potency / 10) Gloom Affinity damage (min 1, 10 times per turn for this effect)"
     ],
     "events": [
       "901061"
@@ -3371,9 +3381,10 @@
     "names": [
       "Tangled Bones"
     ],
-    "search_desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply Sinking Potency, Count, or 'Unique Sinking'. (except E.G.O Skills; except Backup Units)\n\nTurn Start: enemies with Sinking(for Abnormalities, all Parts) regain (Sinking Count lost on hit last turn / 3) Sinking Count.\n\nIf the Base Attack Skill hits against a target with less than 0 SP(for enemies without SP, if they have 1.5+ Gloom Resist.), inflict (Sinking Potency / 10) Gloom Affinity damage (min 1, 10 times per turn for this effect)",
+    "search_desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply Sinking Potency, Count, or 'Unique Sinking'. (except E.G.O Skills; except Backup Units)\n\nTurn Start: enemies with Sinking(for Abnormalities, all Parts) regain (Sinking Count lost on hit last turn / 3) Sinking Count.\n\nIf the Base Attack Skill hits against a target with less than 0 SP(for enemies that are Non-SP units, if they have 1.5+ Gloom Resist.), inflict (Sinking Potency / 10) Gloom Affinity damage (min 1, 10 times per turn for this effect)",
     "srcPath": "Tangled Bones",
-    "tier": "2"
+    "tier": "2",
+    "updated": true
   },
   "9175": {
     "affinity": "envy",
@@ -3402,7 +3413,7 @@
   "9176": {
     "affinity": "envy",
     "descs": [
-      "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills; except Backup Units)\n\nTurn Start: inflict 1 [WaveSinking] against a random enemy\n\nWhen an enemy with [WaveSinking] is killed, at the next Turn Start, transfer the [WaveSinking] Stack from the said enemy to an enemy with the highest, but not maxed, [WaveSinking] Stack\n\nWhen hitting and dealing HP damage to an enemy with a Skill that inflicts [Sinking] Potency, Count, or 'Unique Sinking', inflict 4 [Sinking] Potency and +3 [Sinking] Count at Turn End (once per turn for each enemy)\nCombat Start: when activating Gloom or Lust A-Reson., inflict 3 [Sinking] and +3 [Sinking] on all enemies (for Abnormalities, a random Part)\n\nAfter using a base Attack Skill, if the target has 10+ [Sinking] Potency, heal ([Sinking] Potency on the target / 10) SP on self (max 5) and inflict the same amount as [DefenseDown] against the target (max 5; once per turn for each enemy)\n\nTurn End: all allies gain [AttackUp] equal to the number of enemies with -45 SP or without SP next turn (max 6)\n\nCoin Power +1 for Plus Coin Skills that inflict [Sinking] Potency, Count, or 'Unique Sinking'\nBase Power +(4 / # of Coins) (min. 1; rounded down) for Minus Coin Skills that inflict [Sinking] Potency, Count, or 'Unique Sinking'\n\nWhen activating the [Sinking] effect(including 'Unique Sinking') on the target with an On Hit effect from a Base Attack Skill that inflicts or gains [Sinking] Potency, [Sinking] Count, or 'Unique Sinking', heal 5 SP at Turn End (2 times per turn per Identity)\nIf the unit was at 45 SP at Turn Start, the effect changes to the following: when hitting and activating the [Sinking] effect(including 'Unique Sinking') on the target with a base Attack Skill, inflict +3 [Sinking] Count against the targeted enemy (2 times per turn per Identity)"
+      "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills; except Backup Units)\n\nTurn Start: inflict 1 [WaveSinking] against a random enemy\n\nWhen an enemy with [WaveSinking] is killed, at the next Turn Start, transfer the [WaveSinking] Stack from the said enemy to an enemy with the highest, but not maxed, [WaveSinking] Stack\n\nWhen hitting and dealing HP damage to an enemy with a Skill that inflicts [Sinking] Potency, Count, or 'Unique Sinking', inflict 4 [Sinking] Potency and +3 [Sinking] Count at Turn End (once per turn for each enemy)\nCombat Start: when activating Gloom or Lust A-Reson., inflict 3 [Sinking] and +3 [Sinking] on all enemies (for Abnormalities, a random Part)\n\nAfter using a base Attack Skill, if the target has 10+ [Sinking] Potency, heal ([Sinking] Potency on the target / 10) SP on self (max 5) and inflict the same amount as [DefenseDown] against the target (max 5; once per turn for each enemy)\n\nTurn End: all allies gain [AttackUp] equal to the number of enemies that have -45 SP or are Non-SP Units next turn (max 6)\n\nCoin Power +1 for Plus Coin Skills that inflict [Sinking] Potency, Count, or 'Unique Sinking'\nBase Power +(4 / # of Coins) (min. 1; rounded down) for Minus Coin Skills that inflict [Sinking] Potency, Count, or 'Unique Sinking'\n\nWhen activating the [Sinking] effect(including 'Unique Sinking') on the target with an On Hit effect from a Base Attack Skill that inflicts or gains [Sinking] Potency, [Sinking] Count, or 'Unique Sinking', heal 5 SP at Turn End (2 times per turn per Identity)\nIf the unit was at 45 SP at Turn Start, the effect changes to the following: when hitting and activating the [Sinking] effect(including 'Unique Sinking') on the target with a base Attack Skill, inflict +3 [Sinking] Count against the targeted enemy (2 times per turn per Identity)"
     ],
     "fusion": true,
     "hardonly": true,
@@ -3423,9 +3434,10 @@
         "9173"
       ]
     ],
-    "search_desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply Sinking Potency, Count, or 'Unique Sinking'. (except E.G.O Skills; except Backup Units)\n\nTurn Start: inflict 1 Reflux against a random enemy\n\nWhen an enemy with Reflux is killed, at the next Turn Start, transfer the Reflux Stack from the said enemy to an enemy with the highest, but not maxed, Reflux Stack\n\nWhen hitting and dealing HP damage to an enemy with a Skill that inflicts Sinking Potency, Count, or 'Unique Sinking', inflict 4 Sinking Potency and +3 Sinking Count at Turn End (once per turn for each enemy)\nCombat Start: when activating Gloom or Lust A-Reson., inflict 3 Sinking and +3 Sinking on all enemies (for Abnormalities, a random Part)\n\nAfter using a base Attack Skill, if the target has 10+ Sinking Potency, heal (Sinking Potency on the target / 10) SP on self (max 5) and inflict the same amount as Defense Level Down against the target (max 5; once per turn for each enemy)\n\nTurn End: all allies gain Offense Level Up equal to the number of enemies with -45 SP or without SP next turn (max 6)\n\nCoin Power +1 for Plus Coin Skills that inflict Sinking Potency, Count, or 'Unique Sinking'\nBase Power +(4 / # of Coins) (min. 1; rounded down) for Minus Coin Skills that inflict Sinking Potency, Count, or 'Unique Sinking'\n\nWhen activating the Sinking effect(including 'Unique Sinking') on the target with an On Hit effect from a Base Attack Skill that inflicts or gains Sinking Potency, Sinking Count, or 'Unique Sinking', heal 5 SP at Turn End (2 times per turn per Identity)\nIf the unit was at 45 SP at Turn Start, the effect changes to the following: when hitting and activating the Sinking effect(including 'Unique Sinking') on the target with a base Attack Skill, inflict +3 Sinking Count against the targeted enemy (2 times per turn per Identity)",
+    "search_desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply Sinking Potency, Count, or 'Unique Sinking'. (except E.G.O Skills; except Backup Units)\n\nTurn Start: inflict 1 Reflux against a random enemy\n\nWhen an enemy with Reflux is killed, at the next Turn Start, transfer the Reflux Stack from the said enemy to an enemy with the highest, but not maxed, Reflux Stack\n\nWhen hitting and dealing HP damage to an enemy with a Skill that inflicts Sinking Potency, Count, or 'Unique Sinking', inflict 4 Sinking Potency and +3 Sinking Count at Turn End (once per turn for each enemy)\nCombat Start: when activating Gloom or Lust A-Reson., inflict 3 Sinking and +3 Sinking on all enemies (for Abnormalities, a random Part)\n\nAfter using a base Attack Skill, if the target has 10+ Sinking Potency, heal (Sinking Potency on the target / 10) SP on self (max 5) and inflict the same amount as Defense Level Down against the target (max 5; once per turn for each enemy)\n\nTurn End: all allies gain Offense Level Up equal to the number of enemies that have -45 SP or are Non-SP Units next turn (max 6)\n\nCoin Power +1 for Plus Coin Skills that inflict Sinking Potency, Count, or 'Unique Sinking'\nBase Power +(4 / # of Coins) (min. 1; rounded down) for Minus Coin Skills that inflict Sinking Potency, Count, or 'Unique Sinking'\n\nWhen activating the Sinking effect(including 'Unique Sinking') on the target with an On Hit effect from a Base Attack Skill that inflicts or gains Sinking Potency, Sinking Count, or 'Unique Sinking', heal 5 SP at Turn End (2 times per turn per Identity)\nIf the unit was at 45 SP at Turn Start, the effect changes to the following: when hitting and activating the Sinking effect(including 'Unique Sinking') on the target with a base Attack Skill, inflict +3 Sinking Count against the targeted enemy (2 times per turn per Identity)",
     "srcPath": "Impending Wave",
-    "tier": "4"
+    "tier": "4",
+    "updated": true
   },
   "9177": {
     "affinity": "gloom",
@@ -3919,6 +3931,9 @@
     "affinity": "lust",
     "descs": [
       "The ally with the least HP before Combat Start heals 3% HP On Hit with Attack Skills that apply [Laceration] or Unique Bleed (2 times per turn)\n\nIn a Clash using Skills that apply [Laceration] or Unique Bleed against enemies with [Laceration] or Unique Bleed, Clash Power +1\n- If 5 or more Identities have Attack Skills that apply [Laceration] or Unique Bleed, Clash Power +1 and deal +10% damage instead (counts all units in the Team)\n- If there are 10 or more Identities that fit the above description, Clash Power +2 and deal +15% damage instead"
+    ],
+    "ingredientOf": [
+      "9270"
     ],
     "keyword": "Bleed",
     "names": [
@@ -4770,6 +4785,90 @@
     "srcPath": "9249",
     "tier": "4"
   },
+  "9250": {
+    "affinity": "gluttony",
+    "descs": [
+      "[Effects apply only to #1 Deployed Identity]\nEncounter Start: Gain 1 [KAmpouleMirror]"
+    ],
+    "keyword": "Keywordless",
+    "names": [
+      "Mid-range K Corp. Ampule"
+    ],
+    "new": true,
+    "search_desc": "[Effects apply only to #1 Deployed Identity]\nEncounter Start: Gain 1 K Corp. Emergency Ampule",
+    "srcPath": "9250",
+    "tier": "4"
+  },
+  "9251": {
+    "affinity": "wrath",
+    "descs": [
+      "On Clash Win against targets that have [Combustion], (20 + (Wrath Reson. x 10))% chance to activate [Combustion] once and reduce the target's [Combustion] Count by 1 (4 times per turn)\n- If target has 90+ [Combustion] Potency, the above effect activates at 100% chance (for Focused Encounters, the Part)"
+    ],
+    "keyword": "Burn",
+    "names": [
+      "Burning Fate"
+    ],
+    "new": true,
+    "search_desc": "On Clash Win against targets that have Burn, (20 + (Wrath Reson. x 10))% chance to activate Burn once and reduce the target's Burn Count by 1 (4 times per turn)\n- If target has 90+ Burn Potency, the above effect activates at 100% chance (for Focused Encounters, the Part)",
+    "srcPath": "9251",
+    "tier": "4"
+  },
+  "9252": {
+    "affinity": "lust",
+    "descs": [
+      "N Corp. Fanatic Identities: Base Skills gain Base Power +3\n\nWhen an N Corp. Fanatic Identity gains [AssemblePersonality], all N Corp. Fanatic Identities gain the same Stack of [AssemblePersonality] (once per turn including the first unit)\n- If there is a Lust A-Reson., triple the Stack gained\n\nEncounter Start: Inflict 2 [NailPersonality] on all enemies\n\nWhen an N Corp. Fanatic Identity uses a Base Skill to Clash against a target that has [NailPersonality], inflict 3 [Laceration] (once per Skill)\n\nN Corp. Fanatic Identities deal +100% damage using Base Skills against targets that have [NailPersonality]"
+    ],
+    "keyword": "Bleed",
+    "names": [
+      "Nail and Hammer"
+    ],
+    "new": true,
+    "search_desc": "N Corp. Fanatic Identities: Base Skills gain Base Power +3\n\nWhen an N Corp. Fanatic Identity gains Fanatic, all N Corp. Fanatic Identities gain the same Stack of Fanatic (once per turn including the first unit)\n- If there is a Lust A-Reson., triple the Stack gained\n\nEncounter Start: Inflict 2 Nails on all enemies\n\nWhen an N Corp. Fanatic Identity uses a Base Skill to Clash against a target that has Nails, inflict 3 Bleed (once per Skill)\n\nN Corp. Fanatic Identities deal +100% damage using Base Skills against targets that have Nails",
+    "srcPath": "9252",
+    "tier": "4"
+  },
+  "9253": {
+    "affinity": "lust",
+    "descs": [
+      "First Turn Start: Increase [BloodDinner] by 300\nDouble the amount of [BloodDinner] increased by [Laceration]\nOn Use of a Skill that consumes [BloodDinner], at Attack End, consume additional [BloodDinner] equal to the amount consumed by the Skill\n\n[La Manchaland Identities Only]\nWhen a La Manchaland Identity enters the field, the Identity gains their respective effect:\n- The Manager of La Manchaland Don Quixote: Gain 15 [BloodArmorPersonalityFirst]\n- The Princess of La Manchaland Rodion: Gain 15 [BloomingThornsRodionFirst]\n- The Priest of La Manchaland Gregor: Gain 15 [BloodyHandGregFirst]\n- The Barber of La Manchaland Outis: Gain 15 [BloodScissorPersonalityFirst]\n- The Prince of La Manchaland Meursault: Gain 3 [BloodArmorMeursault]\n\n[The Manager of La Manchaland Don Quixote Only]\nThe Manager of La Manchaland Don Quixote's Base Skills gain Final Power +1 and deal +30% damage for every La Manchaland Identity in the Team (max 4; max 120%; including Backup Units; including defeated units; excluding undeployed units)"
+    ],
+    "keyword": "Bleed",
+    "names": [
+      "Carousel Figurine"
+    ],
+    "new": true,
+    "search_desc": "First Turn Start: Increase Bloodfeast by 300\nDouble the amount of Bloodfeast increased by Bleed\nOn Use of a Skill that consumes Bloodfeast, at Attack End, consume additional Bloodfeast equal to the amount consumed by the Skill\n\n[La Manchaland Identities Only]\nWhen a La Manchaland Identity enters the field, the Identity gains their respective effect:\n- The Manager of La Manchaland Don Quixote: Gain 15 Hardblood\n- The Princess of La Manchaland Rodion: Gain 15 Blooming Thorn\n- The Priest of La Manchaland Gregor: Gain 15 Bloodied Hand\n- The Barber of La Manchaland Outis: Gain 15 Blood-tinged Scissorblades\n- The Prince of La Manchaland Meursault: Gain 3 Hardblood Armor\n\n[The Manager of La Manchaland Don Quixote Only]\nThe Manager of La Manchaland Don Quixote's Base Skills gain Final Power +1 and deal +30% damage for every La Manchaland Identity in the Team (max 4; max 120%; including Backup Units; including defeated units; excluding undeployed units)",
+    "srcPath": "9253",
+    "tier": "4"
+  },
+  "9254": {
+    "affinity": "sloth",
+    "descs": [
+      "Base Skills that consume [Vibration] Count or [Charge] Count deal +20% damage (including 'Unique Charge'; excluding 'Unique Charge'(fixed Potency))\n\nWhen consuming [Vibration] Count or [Charge] Count by using Base Skills, regain the half of consumed Count at Skill End (min 1, rounded down; including 'Unique Charge', excluding 'Unique Charge'(fixed Potency))"
+    ],
+    "keyword": "Tremor",
+    "names": [
+      "Another Round!"
+    ],
+    "new": true,
+    "search_desc": "Base Skills that consume Tremor Count or Charge Count deal +20% damage (including 'Unique Charge'; excluding 'Unique Charge'(fixed Potency))\n\nWhen consuming Tremor Count or Charge Count by using Base Skills, regain the half of consumed Count at Skill End (min 1, rounded down; including 'Unique Charge', excluding 'Unique Charge'(fixed Potency))",
+    "srcPath": "9254",
+    "tier": "4"
+  },
+  "9255": {
+    "affinity": "gloom",
+    "descs": [
+      "On Clash Win using a Base Skill that inflicts [Vibration] Potency, Count, or 'Unique Tremor' against an enemy, trigger [FusionVibration] into a random 'Unique Tremor' from the following (once per turn):\n- [VibrationIgnition]\n- [VibrationBleeding]\n- [VibrationEcho]\n- [VibrationCollapse]\n- [VibrationChainPersonality]"
+    ],
+    "keyword": "Tremor",
+    "names": [
+      "Clappity Clap!"
+    ],
+    "new": true,
+    "search_desc": "On Clash Win using a Base Skill that inflicts Tremor Potency, Count, or 'Unique Tremor' against an enemy, trigger Amplitude Entanglement into a random 'Unique Tremor' from the following (once per turn):\n- Tremor - Scorch\n- Tremor - Hemorrhage\n- Tremor - Reverb\n- Tremor - Decay\n- Tremor - Chain",
+    "srcPath": "9255",
+    "tier": "4"
+  },
   "9256": {
     "affinity": "lust",
     "descs": [
@@ -5019,6 +5118,107 @@
     "srcPath": "9268",
     "tier": "2"
   },
+  "9269": {
+    "affinity": "envy",
+    "descs": [
+      "On Hit using Blunt Skills: Heal 5% of damage dealt by the ally who used the Skill\n\nOn Hit using Counter Skills: Heal 5 SP (2 times per turn per Identity)"
+    ],
+    "events": [
+      "971109"
+    ],
+    "exclusiveTo": [
+      "1127"
+    ],
+    "hardonly": true,
+    "ingredientOf": [
+      "9270"
+    ],
+    "keyword": "Blunt",
+    "names": [
+      "Boombox of Dramatic Entrances"
+    ],
+    "new": true,
+    "search_desc": "On Hit using Blunt Skills: Heal 5% of damage dealt by the ally who used the Skill\n\nOn Hit using Counter Skills: Heal 5 SP (2 times per turn per Identity)",
+    "srcPath": "9269",
+    "tier": "2"
+  },
+  "9270": {
+    "affinity": "envy",
+    "descs": [
+      "When an ally is hit, apply 3 [AttackUp] on the ally and inflict +4 [Laceration] Count on the attacker (once per Skill)\n\nBase Skills used by The Middle-faction Identities gain Base Power +1 and deal +(30 / # of Coins)% damage\n- Turn Start: If there are 3+ The Middle-faction Identities on the field, gain Base Power +1 and deal +(60 / # of Coins)% damage instead\n- If there are 5+ The Middle-faction Identities on the field, gain Base Power +2 and deal +(90 / # of Coins)% damage instead\n\nOn Hit using Blunt Skills: Heal 10% of damage dealt by the ally who used the Skill\n\nOn Hit using Counter Skills: Heal 5 SP (2 times per turn per Identity)\n\nTurn End: If the ally who equipped a Counter Skill at Combat Start did not get to use a Counter Skill this turn, the said ally gains 1 [PlusCoinValueUp] and 1 [MinusCoinValueDown] next turn"
+    ],
+    "exclusiveTo": [
+      "1127"
+    ],
+    "fusion": true,
+    "hardonly": true,
+    "keyword": "Blunt",
+    "names": [
+      "ENTER: The B.B."
+    ],
+    "new": true,
+    "recipes": [
+      [
+        "9109",
+        "9206",
+        "9269"
+      ]
+    ],
+    "search_desc": "When an ally is hit, apply 3 Offense Level Up on the ally and inflict +4 Bleed Count on the attacker (once per Skill)\n\nBase Skills used by The Middle-faction Identities gain Base Power +1 and deal +(30 / # of Coins)% damage\n- Turn Start: If there are 3+ The Middle-faction Identities on the field, gain Base Power +1 and deal +(60 / # of Coins)% damage instead\n- If there are 5+ The Middle-faction Identities on the field, gain Base Power +2 and deal +(90 / # of Coins)% damage instead\n\nOn Hit using Blunt Skills: Heal 10% of damage dealt by the ally who used the Skill\n\nOn Hit using Counter Skills: Heal 5 SP (2 times per turn per Identity)\n\nTurn End: If the ally who equipped a Counter Skill at Combat Start did not get to use a Counter Skill this turn, the said ally gains 1 Plus Coin Boost and 1 Minus Coin Drop next turn",
+    "srcPath": "9270",
+    "tier": "4"
+  },
+  "9271": {
+    "affinity": "gluttony",
+    "descs": [
+      "When a Heishou Pack - Mao Branch Identity enters the Encounter for the first time, cap its min Speed to 10 for a turn (at 10+ min Speed, this effect does not activate)\n\nIf an ally has [LegStrength], the ally's Base Skills gain Clash Power +1 and deal +10% damage"
+    ],
+    "events": [
+      "971108"
+    ],
+    "exclusiveTo": [
+      "1127"
+    ],
+    "hardonly": true,
+    "ingredientOf": [
+      "9272"
+    ],
+    "keyword": "Rupture",
+    "names": [
+      "Heishou Bolus - Mao"
+    ],
+    "new": true,
+    "search_desc": "When a Heishou Pack - Mao Branch Identity enters the Encounter for the first time, cap its min Speed to 10 for a turn (at 10+ min Speed, this effect does not activate)\n\nIf an ally has Strider【Mao】, the ally's Base Skills gain Clash Power +1 and deal +10% damage",
+    "srcPath": "9271",
+    "tier": "2"
+  },
+  "9272": {
+    "affinity": "gluttony",
+    "descs": [
+      "When a Heishou Pack - Mao Branch Identity enters the Encounter for the first time, cap its min Speed to 10 for 3 turns (at 10+ min Speed, this effect does not activate)\n\nBase Skills gain Clash Power +1 and deal +10% damage for every [LegStrength] Stack\n\nWhen inflicting [BurstAgility], also inflict it on 2 enemies that do not have [BurstAgility] (once per turn; in Focused Encounters, Parts)\n\nIf an ally's Speed is faster than its target's, the ally's Skills inflict (Speed difference / 3) more [Burst] or [Burst] Count (max 3)\n\nTurn End: Heishou Pack - Mao Branch allies gain 2 [Agility] next turn\nIf an ally's Speed is faster than its target's, or when an ally uses an Unopposed Attack, the said ally deals +10% Slash damage for every (Speed difference / 3) (max 30%)\nIf an ally's Speed is faster than its target's, take -10% damage for every (Speed difference / 3) (max 30%)"
+    ],
+    "exclusiveTo": [
+      "1117",
+      "1127"
+    ],
+    "fusion": true,
+    "hardonly": true,
+    "keyword": "Rupture",
+    "names": [
+      "Shadowlurking"
+    ],
+    "new": true,
+    "recipes": [
+      [
+        "9271",
+        "9788",
+        "9791"
+      ]
+    ],
+    "search_desc": "When a Heishou Pack - Mao Branch Identity enters the Encounter for the first time, cap its min Speed to 10 for 3 turns (at 10+ min Speed, this effect does not activate)\n\nBase Skills gain Clash Power +1 and deal +10% damage for every Strider【Mao】 Stack\n\nWhen inflicting Deathrite【Haste】, also inflict it on 2 enemies that do not have Deathrite【Haste】 (once per turn; in Focused Encounters, Parts)\n\nIf an ally's Speed is faster than its target's, the ally's Skills inflict (Speed difference / 3) more Rupture or Rupture Count (max 3)\n\nTurn End: Heishou Pack - Mao Branch allies gain 2 Haste next turn\nIf an ally's Speed is faster than its target's, or when an ally uses an Unopposed Attack, the said ally deals +10% Slash damage for every (Speed difference / 3) (max 30%)\nIf an ally's Speed is faster than its target's, take -10% damage for every (Speed difference / 3) (max 30%)",
+    "srcPath": "9272",
+    "tier": "4"
+  },
   "9403": {
     "affinity": "gluttony",
     "descs": [
@@ -5055,6 +5255,9 @@
     "affinity": "pride",
     "descs": [
       "[Effects apply only to #3 Deployed Identity]\n\nEncounter Start: gain +3 [Vibration] Count.\n\nTurn Start: gain 1 [Protection], 1 [AttackDmgUp], and 1 [ResultEnhancement]."
+    ],
+    "events": [
+      "901102"
     ],
     "exclusiveTo": [
       "1004"
@@ -5559,8 +5762,8 @@
   "9440": {
     "affinity": "envy",
     "descs": [
-      "In Encounters where backup enemies appear: when new enemies enter the battle, inflict 3 [Laceration] and +2 [Laceration] Count against them.\n\nIf there is a <Bloodfiend> among allies: when new enemies enter the battle, activate [Laceration] on all enemies and reduce their [Laceration] Count by 1",
-      "In Encounters where backup enemies appear: when new enemies enter the battle, inflict 5 [Laceration] and +3 [Laceration] Count against them.\n\nIf there is a <Bloodfiend> among allies: when new enemies enter the battle, activate [Laceration] on all enemies and reduce their [Laceration] Count by 1"
+      "Base Skills of all Bloodfiend allies gain Coin Power +1\n\nIn Encounters where backup enemies appear: When new enemies enter the battle, inflict 3 [Laceration] and +3 [Laceration] Count against them.\n\nIf there is a <Bloodfiend> among allies: When new enemies enter the battle, activate [Laceration] on all enemies and reduce their [Laceration] Count by 1",
+      "Base Skills of all Bloodfiend allies gain Coin Power +1\n\nIn Encounters where backup enemies appear: When new enemies enter the battle, inflict 5 [Laceration] and +3 [Laceration] Count against them.\n\nIf there is a <Bloodfiend> among allies: When new enemies enter the battle, activate [Laceration] on all enemies and reduce their [Laceration] Count by 1"
     ],
     "enhanceable": true,
     "exclusiveTo": [
@@ -5577,9 +5780,10 @@
       "Mask of the Parade",
       "Mask of the Parade+"
     ],
-    "search_desc": "In Encounters where backup enemies appear: when new enemies enter the battle, inflict 3 Bleed and +2 Bleed Count against them.\n\nIf there is a <Bloodfiend> among allies: when new enemies enter the battle, activate Bleed on all enemies and reduce their Bleed Count by 1 , In Encounters where backup enemies appear: when new enemies enter the battle, inflict 5 Bleed and +3 Bleed Count against them.\n\nIf there is a <Bloodfiend> among allies: when new enemies enter the battle, activate Bleed on all enemies and reduce their Bleed Count by 1",
+    "search_desc": "Base Skills of all Bloodfiend allies gain Coin Power +1\n\nIn Encounters where backup enemies appear: When new enemies enter the battle, inflict 3 Bleed and +3 Bleed Count against them.\n\nIf there is a <Bloodfiend> among allies: When new enemies enter the battle, activate Bleed on all enemies and reduce their Bleed Count by 1 , Base Skills of all Bloodfiend allies gain Coin Power +1\n\nIn Encounters where backup enemies appear: When new enemies enter the battle, inflict 5 Bleed and +3 Bleed Count against them.\n\nIf there is a <Bloodfiend> among allies: When new enemies enter the battle, activate Bleed on all enemies and reduce their Bleed Count by 1",
     "srcPath": "Mask of the Parade",
-    "tier": "4"
+    "tier": "4",
+    "updated": true
   },
   "9701": {
     "affinity": "wrath",
@@ -5973,7 +6177,7 @@
   "9720": {
     "affinity": "sloth",
     "descs": [
-      "Turn Start: activates when there are 3 or more Blade Lineage Identities(only counts Identities on the field).\n\nAll allies deal +50% more Slash damage.\n\nBlade Lineage Identities: Skill 1 gains Coin Power +1. Single-Coin Skill 1 gains Coin Power +3.\n\n[Blade Lineage Mentor Meursault Only] 'Yield My Flesh' Skill Final Clash Power -24; 'To Claim Their Bones' Skill deals +50% damage."
+      "Turn Start: activates when there are 3 or more Blade Lineage Identities(only counts Identities on the field).\n\nAll allies deal +50% more Slash damage.\n\nBlade Lineage Identities: Skill 1 gains Coin Power +1. Single-Coin Skill 1 gains Coin Power +3.\n\n[Blade Lineage Mentor Meursault Only] 'Yield My Flesh' Skill Final Clash Power -36; 'To Claim Their Bones' Skill deals +50% damage."
     ],
     "events": [
       "971017"
@@ -5986,9 +6190,10 @@
     "names": [
       "Old Dopo Robe"
     ],
-    "search_desc": "Turn Start: activates when there are 3 or more Blade Lineage Identities(only counts Identities on the field).\n\nAll allies deal +50% more Slash damage.\n\nBlade Lineage Identities: Skill 1 gains Coin Power +1. Single-Coin Skill 1 gains Coin Power +3.\n\n[Blade Lineage Mentor Meursault Only] 'Yield My Flesh' Skill Final Clash Power -24; 'To Claim Their Bones' Skill deals +50% damage.",
+    "search_desc": "Turn Start: activates when there are 3 or more Blade Lineage Identities(only counts Identities on the field).\n\nAll allies deal +50% more Slash damage.\n\nBlade Lineage Identities: Skill 1 gains Coin Power +1. Single-Coin Skill 1 gains Coin Power +3.\n\n[Blade Lineage Mentor Meursault Only] 'Yield My Flesh' Skill Final Clash Power -36; 'To Claim Their Bones' Skill deals +50% damage.",
     "srcPath": "Old Dopo Robe",
-    "tier": "4"
+    "tier": "4",
+    "updated": true
   },
   "9721": {
     "affinity": "lust",
@@ -7418,7 +7623,8 @@
       "971052"
     ],
     "exclusiveTo": [
-      "1117"
+      "1117",
+      "1127"
     ],
     "ingredientOf": [
       "9792"
@@ -7440,7 +7646,8 @@
       "971053"
     ],
     "exclusiveTo": [
-      "1117"
+      "1117",
+      "1127"
     ],
     "ingredientOf": [
       "9793"
@@ -7462,7 +7669,11 @@
       "971051"
     ],
     "exclusiveTo": [
-      "1117"
+      "1117",
+      "1127"
+    ],
+    "ingredientOf": [
+      "9272"
     ],
     "keyword": "Rupture",
     "names": [
@@ -7481,7 +7692,8 @@
       "971052"
     ],
     "exclusiveTo": [
-      "1117"
+      "1117",
+      "1127"
     ],
     "ingredientOf": [
       "9792"
@@ -7503,7 +7715,8 @@
       "971053"
     ],
     "exclusiveTo": [
-      "1117"
+      "1117",
+      "1127"
     ],
     "ingredientOf": [
       "9793"
@@ -7522,7 +7735,11 @@
       "Turn End: Heishou Pack - Mao Branch Identities gain 2 [Agility] next turn\n\nIf an ally's Speed is faster than the target's, or when activating Unopposed Attacks, deal +10% more Slash damage for every (Speed difference / 3) (max 30%)\n\nIf an ally's Speed is faster than the target's, take -10% damage for every (Speed difference / 3) (max 30%)"
     ],
     "exclusiveTo": [
-      "1117"
+      "1117",
+      "1127"
+    ],
+    "ingredientOf": [
+      "9272"
     ],
     "keyword": "Slash",
     "names": [
@@ -7538,7 +7755,8 @@
       "Turn Start: activates when there are 2 or more The Middle Identities (only counts Identities on the field)\n\nWhen hit, all allies in the same faction deal +5% more Blunt damage (15% per turn)\nThe Middle Identities gain 1 [AttackUp] and deal +10% more Blunt damage instead (3 per turn, 30% per turn)\n\nBlunt Skills gain Base Power +1\n- The Middle Identities gain Base Power +1 and Coin Power +1 instead\n- If the target has [RetaliationBook], The Middle Identities gain Base Power +1, Coin Power +1, and deal +30% damage instead\n\nThe Middle Identities gain Min Speed +1 and Max Speed +1 for the Encounter"
     ],
     "exclusiveTo": [
-      "1117"
+      "1117",
+      "1127"
     ],
     "fusion": true,
     "keyword": "Blunt",
@@ -7561,7 +7779,8 @@
       "Turn Start: This Gift activates for the whole Encounter when there are 5 or more Identities that inflict [Burst] Potency or [Burst] Count (except E.G.O Skills; except Backup Units)\n\nWhen defeating a target with [Burst](for Focused Encounters, a Part) with an Attack Skill, inflict the [Burst] Potency on the target between all enemies(for Focused Encounters, all Parts) (max 3 per enemy)\n\nWhen defeating a target with [BurstAgility](for Focused Encounters, a Part) with an Attack Skill, inflict the [Burst] Potency and Count on the target between all enemies(for Focused Encounters, all Parts) (max 6 per enemy)\n\nWhen clashing against targets with [Burst], gain ([Burst] on the target / 20) Clash Power (max 2)\n- When clashing against targets with [BurstAgility], gain ([Burst] on the target / 10) Coin Power instead (max 2)\n\nWhen dealing damage with [BurstAgility] effect, deal fixed damage by ([BurstAgility] damage / 2)"
     ],
     "exclusiveTo": [
-      "1117"
+      "1117",
+      "1127"
     ],
     "fusion": true,
     "keyword": "Rupture",
@@ -7587,7 +7806,8 @@
       "971054"
     ],
     "exclusiveTo": [
-      "1117"
+      "1117",
+      "1127"
     ],
     "keyword": "Keywordless",
     "names": [
@@ -8007,9 +8227,9 @@
   "9817": {
     "affinity": "gloom",
     "descs": [
-      "Enemies in Low Morale or Panic states lose 1 Final Power (against targets without SP, when they have 25+ [Sinking])\n- When dealing damage against the affected enemies with Skills that apply [Sinking], [Sinking] Count, or Unique Sinking, inflict 2 [DefenseDown] (2 times per turn)",
-      "Enemies in Low Morale or Panic states lose 2 Final Power (against targets without SP, when they have 15+ [Sinking])\n- When dealing damage against the affected enemies with Skills that apply [Sinking], [Sinking] Count, or Unique Sinking, inflict 3 [DefenseDown] (2 times per turn)",
-      "Enemies in Low Morale or Panic states lose 3 Final Power (against targets without SP, when they have 10+ [Sinking])\n- When dealing damage against the affected enemies with Skills that apply [Sinking], [Sinking] Count, or Unique Sinking, inflict 3 [DefenseDown] (3 times per turn)"
+      "Enemies in Low Morale or Panic states lose 1 Final Power (against targets that are Non-SP Units, when they have 25+ [Sinking])\n- When dealing damage against the affected enemies with Skills that apply [Sinking], [Sinking] Count, or Unique Sinking, inflict 2 [DefenseDown] (2 times per turn)",
+      "Enemies in Low Morale or Panic states lose 2 Final Power (against targets that are Non-SP Units, when they have 15+ [Sinking])\n- When dealing damage against the affected enemies with Skills that apply [Sinking], [Sinking] Count, or Unique Sinking, inflict 3 [DefenseDown] (2 times per turn)",
+      "Enemies in Low Morale or Panic states lose 3 Final Power (against targets that are Non-SP Units, when they have 10+ [Sinking])\n- When dealing damage against the affected enemies with Skills that apply [Sinking], [Sinking] Count, or Unique Sinking, inflict 3 [DefenseDown] (3 times per turn)"
     ],
     "enhanceable": true,
     "keyword": "Sinking",
@@ -8018,9 +8238,10 @@
       "Blue Starshard+",
       "Blue Starshard++"
     ],
-    "search_desc": "Enemies in Low Morale or Panic states lose 1 Final Power (against targets without SP, when they have 25+ Sinking)\n- When dealing damage against the affected enemies with Skills that apply Sinking, Sinking Count, or Unique Sinking, inflict 2 Defense Level Down (2 times per turn) , Enemies in Low Morale or Panic states lose 2 Final Power (against targets without SP, when they have 15+ Sinking)\n- When dealing damage against the affected enemies with Skills that apply Sinking, Sinking Count, or Unique Sinking, inflict 3 Defense Level Down (2 times per turn) , Enemies in Low Morale or Panic states lose 3 Final Power (against targets without SP, when they have 10+ Sinking)\n- When dealing damage against the affected enemies with Skills that apply Sinking, Sinking Count, or Unique Sinking, inflict 3 Defense Level Down (3 times per turn)",
+    "search_desc": "Enemies in Low Morale or Panic states lose 1 Final Power (against targets that are Non-SP Units, when they have 25+ Sinking)\n- When dealing damage against the affected enemies with Skills that apply Sinking, Sinking Count, or Unique Sinking, inflict 2 Defense Level Down (2 times per turn) , Enemies in Low Morale or Panic states lose 2 Final Power (against targets that are Non-SP Units, when they have 15+ Sinking)\n- When dealing damage against the affected enemies with Skills that apply Sinking, Sinking Count, or Unique Sinking, inflict 3 Defense Level Down (2 times per turn) , Enemies in Low Morale or Panic states lose 3 Final Power (against targets that are Non-SP Units, when they have 10+ Sinking)\n- When dealing damage against the affected enemies with Skills that apply Sinking, Sinking Count, or Unique Sinking, inflict 3 Defense Level Down (3 times per turn)",
     "srcPath": "Blue Starshard",
-    "tier": "3"
+    "tier": "3",
+    "updated": true
   },
   "9818": {
     "affinity": "envy",
@@ -8219,64 +8440,76 @@
   "9827": {
     "affinity": "lust",
     "descs": [
-      "Allies' Plus Coin Skills: Gain Coin Power +(8 / # of Coins) (gains at least 1 Coin Power, includes E.G.O Skills; rounded down)\nAllies' Minus Coin Skills: Gain Final Power +(8 / # of Coins) (gains at least 1 Final Power, includes E.G.O Skills; rounded down)\n\nDoubles the amount of Bloodfeast generated in the Stage\nSkills that inflict [Laceration] Potency, [Laceration] Count, or 'Unique Bleed': Heal 30% of the HP damage dealt at Attack End (max 20)\n* If a unit healed with the above effect, it gains 1 [Enhancement] at the next Turn Start (max 2)\n\nFor every 50 [BloodDinner_Common_Accumulation], all allies gain 1 [AttackUp] at the next Turn Start (max 5)\nEach La Manchaland unit also gains 1 [AttackUp] for every 30 [BloodDinner_Accumulation] consumed by each unit (max 3)"
+      "Double the amount of Bloodfeast generated in the Stage\nSkills that inflict [Laceration] Potency, [Laceration] Count, or 'Unique Bleed': Heal 30% of the HP damage dealt at Attack End (max 20)\n* If a unit healed using the above effect, it gains 1 [Enhancement] at the next Turn Start (max 2)\n\nFor every 50 [BloodDinner_Common_Accumulation], all allies gain 1 [AttackUp] at the next Turn Start (max 5)\nEach La Manchaland unit also gains 1 [AttackUp] for every 30 [BloodDinner_Accumulation] consumed by each unit (max 3)"
+    ],
+    "exclusiveTo": [
+      "1518"
     ],
     "hardonly": true,
-    "hidden": true,
     "imageOverride": "The Family_s Resentment",
     "keyword": "Bleed",
     "names": [
       "The Family's Resentment"
     ],
-    "search_desc": "Allies' Plus Coin Skills: Gain Coin Power +(8 / # of Coins) (gains at least 1 Coin Power, includes E.G.O Skills; rounded down)\nAllies' Minus Coin Skills: Gain Final Power +(8 / # of Coins) (gains at least 1 Final Power, includes E.G.O Skills; rounded down)\n\nDoubles the amount of Bloodfeast generated in the Stage\nSkills that inflict Bleed Potency, Bleed Count, or 'Unique Bleed': Heal 30% of the HP damage dealt at Attack End (max 20)\n* If a unit healed with the above effect, it gains 1 Attack Power Up at the next Turn Start (max 2)\n\nFor every 50 Bloodfeast Consumed (shared), all allies gain 1 Offense Level Up at the next Turn Start (max 5)\nEach La Manchaland unit also gains 1 Offense Level Up for every 30 Bloodfeast Consumed consumed by each unit (max 3)",
+    "search_desc": "Double the amount of Bloodfeast generated in the Stage\nSkills that inflict Bleed Potency, Bleed Count, or 'Unique Bleed': Heal 30% of the HP damage dealt at Attack End (max 20)\n* If a unit healed using the above effect, it gains 1 Attack Power Up at the next Turn Start (max 2)\n\nFor every 50 Bloodfeast Consumed (shared), all allies gain 1 Offense Level Up at the next Turn Start (max 5)\nEach La Manchaland unit also gains 1 Offense Level Up for every 30 Bloodfeast Consumed consumed by each unit (max 3)",
     "srcPath": "The Family_s Resentment",
-    "tier": "4"
+    "tier": "4",
+    "updated": true
   },
   "9828": {
     "affinity": "wrath",
     "descs": [
-      "Allies' Plus Coin Skills: Gain Coin Power +(8 / # of Coins) (gains at least 1 Coin Power, includes E.G.O Skills; rounded down)\nAllies' Minus Coin Skills: Gain Final Power +(8 / # of Coins) (gains at least 1 Final Power, includes E.G.O Skills; rounded down)\n\n[Effects apply only to #1 Deployed Identity]\nWhen using a Skill that spends [Bullet], activate the following:\n- Gain 3 [Agility] next turn (once per turn)\n- On Hit: trigger [VibrationExplosion] once (and consume 1 [Vibration] Count) (2 times per turn)\n- On Hit after Clash Win: if target has both [Combustion] and [Vibration](including both 'Unique Burn' and 'Unique Tremor'), inflict Wrath damage equal to ([Combustion] + [Vibration]). (2 times per turn)\n\nAt 4+ Wrath Reson., activate the following:\n- Wrath Skills gain Coin Power +2 upon use\n- On Hit, if [Bullet] was spent, deal +30% damage"
+      "[Effects apply only to #1 Deployed Identity]\nWhen using a Skill that spends [Bullet], activate the following:\n- Gain 3 [Agility] next turn (once per turn)\n- On Hit: Trigger [VibrationExplosion] once (and consume 1 [Vibration] Count) (2 times per turn)\n- On Hit after Clash Win: If target has both [Combustion] and [Vibration](including both 'Unique Burn' and 'Unique Tremor'), inflict Wrath damage equal to ([Combustion] + [Vibration]). (2 times per turn)\n\nAt 4+ Wrath Reson., activate the following:\n- Wrath Skills gain Coin Power +2 upon use\n- On Hit, if [Bullet] was spent, deal +30% damage"
+    ],
+    "exclusiveTo": [
+      "1519"
     ],
     "hardonly": true,
-    "hidden": true,
     "keyword": "Tremor",
     "names": [
       "For the Capo"
     ],
-    "search_desc": "Allies' Plus Coin Skills: Gain Coin Power +(8 / # of Coins) (gains at least 1 Coin Power, includes E.G.O Skills; rounded down)\nAllies' Minus Coin Skills: Gain Final Power +(8 / # of Coins) (gains at least 1 Final Power, includes E.G.O Skills; rounded down)\n\n[Effects apply only to #1 Deployed Identity]\nWhen using a Skill that spends Ammo, activate the following:\n- Gain 3 Haste next turn (once per turn)\n- On Hit: trigger Tremor Burst once (and consume 1 Tremor Count) (2 times per turn)\n- On Hit after Clash Win: if target has both Burn and Tremor(including both 'Unique Burn' and 'Unique Tremor'), inflict Wrath damage equal to (Burn + Tremor). (2 times per turn)\n\nAt 4+ Wrath Reson., activate the following:\n- Wrath Skills gain Coin Power +2 upon use\n- On Hit, if Ammo was spent, deal +30% damage",
+    "search_desc": "[Effects apply only to #1 Deployed Identity]\nWhen using a Skill that spends Ammo, activate the following:\n- Gain 3 Haste next turn (once per turn)\n- On Hit: Trigger Tremor Burst once (and consume 1 Tremor Count) (2 times per turn)\n- On Hit after Clash Win: If target has both Burn and Tremor(including both 'Unique Burn' and 'Unique Tremor'), inflict Wrath damage equal to (Burn + Tremor). (2 times per turn)\n\nAt 4+ Wrath Reson., activate the following:\n- Wrath Skills gain Coin Power +2 upon use\n- On Hit, if Ammo was spent, deal +30% damage",
     "srcPath": "For the Capo",
-    "tier": "4"
+    "tier": "4",
+    "updated": true
   },
   "9829": {
     "affinity": "envy",
     "descs": [
-      "Allies' Plus Coin Skills: Gain Coin Power +(8 / # of Coins) (gains at least 1 Coin Power, includes E.G.O Skills; rounded down)\nAllies' Minus Coin Skills: Gain Final Power +(8 / # of Coins) (gains at least 1 Final Power, includes E.G.O Skills; rounded down)\n\nBlunt Attack Type Base Skills: Coin Power +1; The Middle Identities gain Coin Power +2 instead\nWhen an ally is hit, all allies gain 2 [AttackUp] next turn (3 times per turn)\n\nThe following effects activate when there are 3 or more 'The Middle' Identities in the Encounter.\nCombat Start: gain 1 [Enhancement] and 1 [Protection] for every Envy Reson. (max 3)\nWhen The Middle Identity uses an Envy Base Attack Skill, convert its Coins to [SuperCoin]s, they take -50% damage, and gain 2 [HitDamageUp] this turn and next turn"
+      "Blunt Attack Type Base Skills: Coin Power +1; The Middle-faction Identities gain Coin Power +2 instead\nWhen an ally is hit, all allies gain 2 [AttackUp] next turn (3 times per turn)\n\nThe following effects activate when there are 3 or more 'The Middle' Identities in the Encounter.\nCombat Start: Gain 1 [Enhancement] and 1 [Protection] for every Envy Reson. (max 3)\nWhen The Middle-faction Identity uses an Envy Base Attack Skill, convert its Coins to [SuperCoin]s, they take -50% damage, and gain 2 [HitDamageUp] this turn and next turn"
+    ],
+    "exclusiveTo": [
+      "1517"
     ],
     "hardonly": true,
-    "hidden": true,
     "keyword": "Blunt",
     "names": [
       "Rules of the Middle"
     ],
-    "search_desc": "Allies' Plus Coin Skills: Gain Coin Power +(8 / # of Coins) (gains at least 1 Coin Power, includes E.G.O Skills; rounded down)\nAllies' Minus Coin Skills: Gain Final Power +(8 / # of Coins) (gains at least 1 Final Power, includes E.G.O Skills; rounded down)\n\nBlunt Attack Type Base Skills: Coin Power +1; The Middle Identities gain Coin Power +2 instead\nWhen an ally is hit, all allies gain 2 Offense Level Up next turn (3 times per turn)\n\nThe following effects activate when there are 3 or more 'The Middle' Identities in the Encounter.\nCombat Start: gain 1 Attack Power Up and 1 Protection for every Envy Reson. (max 3)\nWhen The Middle Identity uses an Envy Base Attack Skill, convert its Coins to Unbreakable Coins, they take -50% damage, and gain 2 Blunt DMG Up this turn and next turn",
+    "search_desc": "Blunt Attack Type Base Skills: Coin Power +1; The Middle-faction Identities gain Coin Power +2 instead\nWhen an ally is hit, all allies gain 2 Offense Level Up next turn (3 times per turn)\n\nThe following effects activate when there are 3 or more 'The Middle' Identities in the Encounter.\nCombat Start: Gain 1 Attack Power Up and 1 Protection for every Envy Reson. (max 3)\nWhen The Middle-faction Identity uses an Envy Base Attack Skill, convert its Coins to Unbreakable Coins, they take -50% damage, and gain 2 Blunt DMG Up this turn and next turn",
     "srcPath": "Rules of the Middle",
-    "tier": "4"
+    "tier": "4",
+    "updated": true
   },
   "9830": {
     "affinity": "gluttony",
     "descs": [
-      "Allies' Plus Coin Skills: Gain Coin Power +(8 / # of Coins) (gains at least 1 Coin Power, includes E.G.O Skills; rounded down)\nAllies' Minus Coin Skills: Gain Final Power +(8 / # of Coins) (gains at least 1 Final Power, includes E.G.O Skills; rounded down)\n\nOn the first Turn Start of the Encounter, and on all allies who Substitute in, apply 3 [VerEmergencyCandy]\nIf they did not consume [VerEmergencyCandy] in the previous turn, apply 1 [VerHunger] at Turn Start"
+      "On the first Turn Start of an Encounter, and on all allies who Substitute in, apply 3 [VerEmergencyCandy]\nIf they did not consume [VerEmergencyCandy] in the previous turn, apply 1 [VerHunger] at Turn Start"
+    ],
+    "exclusiveTo": [
+      "1520"
     ],
     "hardonly": true,
-    "hidden": true,
     "imageOverride": "Kkomi_s Mini-Gift",
     "keyword": "Keywordless",
     "names": [
       "Kkomi's Mini-Gift"
     ],
-    "search_desc": "Allies' Plus Coin Skills: Gain Coin Power +(8 / # of Coins) (gains at least 1 Coin Power, includes E.G.O Skills; rounded down)\nAllies' Minus Coin Skills: Gain Final Power +(8 / # of Coins) (gains at least 1 Final Power, includes E.G.O Skills; rounded down)\n\nOn the first Turn Start of the Encounter, and on all allies who Substitute in, apply 3 Backup Candy\nIf they did not consume Backup Candy in the previous turn, apply 1 Hunger at Turn Start",
+    "search_desc": "On the first Turn Start of an Encounter, and on all allies who Substitute in, apply 3 Backup Candy\nIf they did not consume Backup Candy in the previous turn, apply 1 Hunger at Turn Start",
     "srcPath": "Kkomi_s Mini-Gift",
-    "tier": "4"
+    "tier": "4",
+    "updated": true
   },
   "9831": {
     "affinity": "envy",

@@ -86,7 +86,7 @@
   },
   "AaCePbBi": {
     "buffType": "Neutral",
-    "desc": "Turn End: Reduce value by 1\nWhile this is active, take double the damage from Skills. Double the amount of Stagger threshold raised from Tremor Burst.\nThis effect expires when this unit is Staggered.\nIf this unit isn't Staggered when this effect expires, gain 5 Damage Up at the start of the next turn",
+    "desc": "- Turn End: Lose 1 Stack\n- While this effect is active, triple the damage taken from Skills and the amount of Stagger Threshold raised from Tremor Burst\n- If this unit is not Staggered when this effect expires, gain 5 Damage Up at the next Turn Start",
     "name": "Test of the Big Brother",
     "srcPath": "Test of the Big Brother"
   },
@@ -656,6 +656,12 @@
     "name": "Welfare Team Model Employee",
     "srcPath": "Welfare Team Model Employee"
   },
+  "BigWelcome": {
+    "buffType": "Positive",
+    "desc": "Attack End: If the target is Staggered or defeated, gain +1 Pride E.G.O resource and +1 E.G.O resource for 1 other random Affinity (3 times per turn)",
+    "name": "Grand Welcome",
+    "srcPath": "Grand Welcome"
+  },
   "Binding": {
     "buffType": "Negative",
     "desc": "Speed decreases by the effect’s Count for one turn.",
@@ -1014,7 +1020,7 @@
   },
   "BlueSand": {
     "buffType": "Negative",
-    "desc": "- On Clash Lose, gain +1 Sinking Count (3 times per turn)\n- Units with SP: change their Panic Type to \"Blue Sand\"\n- Units without SP: Min & Max Speed -1\n- Turn End: Reduce 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Units without SP\" conditional to certain enemies that have SP but can't change their Panic Types\n\n※ Blue Sand Panic Effects\n- Low Morale: Clash Power -1, Min & Max Speed -1\n- Panic: Clash Power -2, Min & Max Speed -1",
+    "desc": "- On Clash Lose, gain +1 Sinking Count (3 times per turn)\n- SP Units: change their Panic Type to \"Blue Sand\"\n- Non-SP Units: Min & Max Speed -1\n- Turn End: Reduce 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Non-SP Units\" conditional to certain enemies that have SP but can't change their Panic Types\n\n※ Blue Sand Panic Effects\n- Low Morale: Clash Power -1, Min & Max Speed -1\n- Panic: Clash Power -2, Min & Max Speed -1",
     "name": "Blue Sand",
     "srcPath": "Blue Sand"
   },
@@ -1332,6 +1338,11 @@
     "desc": "- On Clash Win: raise the target's Stagger Threshold by this unit's final Clash Power.\n- On Clash Lose: when hit, reduce the attacker's final Skill Power by this unit's Final Power.\n- On Clash Lose: does not gain Final Power from the following sources: Resonance and the Level disparity against the Attack Skill",
     "name": "Clashable Guard",
     "srcPath": "Clashable Guard"
+  },
+  "CandyForCharon": {
+    "buffType": "Negative",
+    "desc": "- Max Value: 1\n- Where's the candy?",
+    "name": "Candy?"
   },
   "CentipedePoison": {
     "buffType": "Negative",
@@ -1718,7 +1729,7 @@
   },
   "CrushMarks": {
     "buffType": "Negative",
-    "desc": "- Take +10% damage from Gluttony and Gloom Skills\n- Units with SP: change their Panic Type to \"Shattermark\"\n- Units without SP: Clash Power -1\n- Turn End: Reduce 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Units without SP\" conditional to certain enemies that have SP but can't change their Panic Types\n\n※ Shattermark Panic-type Effects\n- Low Morale: Clash Power -1, Defense Level -2 on self\n- Panic: Clash Power -2, Defense Level -3 on self",
+    "desc": "- Take +10% damage from Gluttony and Gloom Skills\n- SP Units: change their Panic Type to \"Shattermark\"\n- Non-SP Units: Clash Power -1\n- Turn End: Reduce 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Non-SP Units\" conditional to certain enemies that have SP but can't change their Panic Types\n\n※ Shattermark Panic-type Effects\n- Low Morale: Clash Power -1, Defense Level -2 on self\n- Panic: Clash Power -2, Defense Level -3 on self",
     "name": "Shattermark",
     "srcPath": "Shattermark"
   },
@@ -2762,7 +2773,7 @@
   },
   "GodokPanicType": {
     "buffType": "Negative",
-    "desc": "- Take +10% damage from Gloom Skills\n- Units with SP: Change their Panic Type to 'Solitude'\n- Units without SP: Gain +2 Sinking Count at Turn End\n\n- Turn End: Lose 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Units without SP\" conditional to certain enemies that have SP but cannot change their Panic Types\n\n※ Solitude Panic Effect:\n- Low Morale: Gain +2 Sinking Count at Turn End\n- Panic: Gain +3 Sinking Count at Turn End",
+    "desc": "- Take +10% damage from Gloom Skills\n- SP Units: Change their Panic Type to 'Solitude'\n- Non-SP Units: Gain +2 Sinking Count at Turn End\n\n- Turn End: Lose 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Non-SP Units\" conditional to certain enemies that have SP but cannot change their Panic Types\n\n※ Solitude Panic Effect:\n- Low Morale: Gain +2 Sinking Count at Turn End\n- Panic: Gain +3 Sinking Count at Turn End",
     "name": "Solitude",
     "srcPath": "GodokPanicType"
   },
@@ -3082,7 +3093,7 @@
   },
   "HugeIrritation": {
     "buffType": "Positive",
-    "desc": "- Turn Start: gain 1 Damage Up and 1 Power Up for every 15% missing HP on self (max 5 each)\n- Inflict +3 more Tremor Potency and +1 more Tremor Count with this unit's Skills\n- If this unit's Speed is faster than the target's by 3 or more, deal +(Speed difference x 5)% damage (max 20%)\n- Convert the final Coins of 'Double Slash - Blast' and 'Triple Slash - Burst' to Unbreakable Coins",
+    "desc": "- Turn Start: gain 1 Damage Up and 1 Power Up for every 15% missing HP on self (max 5 each)\n- Inflict +3 more Tremor Potency and +1 more Tremor Count with this unit's Skills\n- If this unit's Speed is faster than the target's by 3 or more, deal +(Speed difference x 5)% damage (max 20%)\n- Convert the final Coins of 'Double Slash - Blast' and 'Triple Slash - Blast' to Unbreakable Coins",
     "name": "Shin (心) - Tiantui Star [天退星]"
   },
   "HugeIrritationAlly": {
@@ -3461,7 +3472,7 @@
   },
   "Irritation": {
     "buffType": "Positive",
-    "desc": "- Turn Start: gain 1 Damage Up and 1 Power Up for every 20% missing HP on self (max 3 each)\n- Inflict +2 more Tremor Potency with this unit's Skills\n- If this unit's Speed is faster than the target's by 3 or more, deal +(Speed difference x 5)% damage (max 20%)\n- Convert the final Coin of 'Triple Slash - Burst' to an Unbreakable Coin\n- This buff changes into Shin (心) - Tiantui Star [天退星] when using a specific pattern",
+    "desc": "- Turn Start: gain 1 Damage Up and 1 Power Up for every 20% missing HP on self (max 3 each)\n- Inflict +2 more Tremor Potency with this unit's Skills\n- If this unit's Speed is faster than the target's by 3 or more, deal +(Speed difference x 5)% damage (max 20%)\n- Convert the final Coin of 'Triple Slash - Blast' to an Unbreakable Coin\n- This buff changes into Shin (心) - Tiantui Star [天退星] when using a specific pattern",
     "imageOverride": "IrritationAlly",
     "name": "Tiantui Star [天退星]",
     "srcPath": "IrritationAlly"
@@ -3482,6 +3493,11 @@
     "desc": "If at least one ally other than this unit is alive, activate the following effects upon taking damage that would reduce this unit's HP to 0:\n- If Staggered, recover from Stagger\n- Fully heal HP\n- All allies lose 1 K Corp. Emergency Ampule\n- This effect activates before the \"X does not reduce HP below 1\" effects from Identities & E.G.O Passives",
     "name": "K Corp. Emergency Ampule",
     "srcPath": "KAmpouleA1C94TH"
+  },
+  "KAmpouleMirror": {
+    "buffType": "Neutral",
+    "desc": "Activate the following effects upon taking damage that would reduce this unit's HP to 0:\n- If Staggered, recover from Stagger\n- Fully heal HP\n- This effect activates before the \"X does not reduce HP below 1\" effects from Identities & E.G.O Passives\n- Expires after activation",
+    "name": "K Corp. Emergency Ampule"
   },
   "KCorpSerum": {
     "buffType": "Neutral",
@@ -4020,7 +4036,7 @@
   },
   "MRR508": {
     "buffType": "Positive",
-    "desc": "Deal +(Sinking Potency on the target)% damage against targets at less than 0 SP or without SP (max 45%)",
+    "desc": "Deal +(Sinking Potency on the target)% damage against targets at less than 0 SP or targets that are non-SP units (max 45%)",
     "name": "Refracted Sinking",
     "srcPath": "MRR508"
   },
@@ -4650,6 +4666,12 @@
     "desc": "- Base Defense Level +2\n- Base Attack Power +1, Defense Power +2\n For every 'Deep Breath - Red' Stack on Moses, Ezra and Vespa's Assist Defense heals 4 more SP for Ezra (max 12)",
     "name": "Shin (心) - Ezra"
   },
+  "MiddleFingerTattooID": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 20\n- Base Skills deal +1% damage for every Stack",
+    "name": "Vengeance Tattoo",
+    "srcPath": "MiddleFingerTattooID"
+  },
   "MineTheRings": {
     "buffType": "Positive",
     "desc": "- Turn Start: Gain 4 Power Up and 2 Slash Power Up\n- When inflicting Bleed with Attack Skills, inflict 2 more Bleed Potency",
@@ -4948,7 +4970,7 @@
   },
   "PanicChangeLock": {
     "buffType": "Neutral",
-    "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against targets without SP.",
+    "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
     "name": "Fixed Panic"
   },
   "ParadeConcentration": {
@@ -5103,6 +5125,12 @@
     "desc": "Count increases by 1 whenever the affected unit tosses an attack skill Coin.\nAt the end of the turn, inflict Bind by the effect’s Count, then remove the effect.",
     "name": "Pink Ribbons",
     "srcPath": "Pink Ribbons"
+  },
+  "PlayingWithWaterTogetherMirror": {
+    "buffType": "Neutral",
+    "desc": "- Max Stack: 10\n- In a Clash against Headless Ichthys, gain the following effects (once per Skill):\n  · Gain and inflict Sinking equal to Stack\n  · Heal SP equal to Stack\n- At max Stack, Skills targeting Headless Ichthys deal +50% damage",
+    "name": "Splish Splash",
+    "srcPath": "PlayingWithWaterTogetherMirror"
   },
   "PlusCoinValueDown": {
     "buffType": "Negative",
@@ -5310,6 +5338,66 @@
     "desc": "Halve the amount of SP lost when an ally is defeated as per the Identity's 'Base factors decreasing Sanity(SP)'. (rounded down)",
     "name": "Refracted Determination"
   },
+  "Refraction4A": {
+    "buffType": "Neutral",
+    "desc": "Identity Level +2",
+    "name": "#1 Deployment Effect"
+  },
+  "Refraction4B": {
+    "buffType": "Neutral",
+    "desc": "SP Heal Efficiency +3\nEntry SP +10",
+    "name": "#2 Deployment Effect"
+  },
+  "Refraction4C": {
+    "buffType": "Neutral",
+    "desc": "Offense Level +2",
+    "name": "#3 Deployment Effect"
+  },
+  "Refraction4D": {
+    "buffType": "Neutral",
+    "desc": "Defense Level +2",
+    "name": "#4 Deployment Effect"
+  },
+  "Refraction4E": {
+    "buffType": "Neutral",
+    "desc": "Max Speed +2",
+    "name": "#5 Deployment Effect"
+  },
+  "Refraction4F": {
+    "buffType": "Neutral",
+    "desc": "Max HP +5%",
+    "name": "#6 Deployment Effect"
+  },
+  "Refraction4G": {
+    "buffType": "Neutral",
+    "desc": "Clash Power +1\nEntry SP +15",
+    "name": "#7 Deployment Effect"
+  },
+  "Refraction4H": {
+    "buffType": "Neutral",
+    "desc": "Damage Taken -10%\nEntry SP +15",
+    "name": "#8 Deployment Effect"
+  },
+  "Refraction4I": {
+    "buffType": "Neutral",
+    "desc": "Aggro +5\nEntry SP +20",
+    "name": "#9 Deployment Effect"
+  },
+  "Refraction4J": {
+    "buffType": "Neutral",
+    "desc": "Damage Dealt +10%\nEntry SP +20",
+    "name": "#10 Deployment Effect"
+  },
+  "Refraction4K": {
+    "buffType": "Neutral",
+    "desc": "Final Power +1\nEntry SP +30",
+    "name": "#11 Deployment Effect"
+  },
+  "Refraction4L": {
+    "buffType": "Neutral",
+    "desc": "Identity Level +3\nEntry SP +30",
+    "name": "#12 Deployment Effect"
+  },
   "RegainedStrength": {
     "buffType": "Positive",
     "desc": "- Max Value: 10\n- Stage 1 Returning Bloodlust",
@@ -5379,6 +5467,15 @@
       "IGNORE_CHECED_CORRECTION_EXCLUSION"
     ],
     "desc": "Base Offense Level -10\nBase Defense Level -10",
+    "name": "Repressed Bloodthirst",
+    "srcPath": "Repressed Bloodthirst"
+  },
+  "RepressedMurderousIntendHard": {
+    "buffType": "Negative",
+    "categoryKeywordList": [
+      "IGNORE_CHECED_CORRECTION_EXCLUSION"
+    ],
+    "desc": "Base Offense Level -5\nBase Defense Level -5",
     "name": "Repressed Bloodthirst",
     "srcPath": "Repressed Bloodthirst"
   },
@@ -5753,6 +5850,12 @@
     "name": "Lust DMG Up",
     "srcPath": "Lust DMG Up"
   },
+  "ScarletMothRodion": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 3\n- Turn End: Heal (Stack)% HP (minimum HP healed: 1)\n- Turn End: Heal SP equal to Stack\n- Turn End: Lose 1 Stack",
+    "name": "Scarlet Moth",
+    "srcPath": "ScarletMothRodion"
+  },
   "ScarletResistDown": {
     "buffType": "Negative",
     "desc": "Increase Lust Resistance based on Stack.\n(0.1 per Stack)",
@@ -5884,7 +5987,7 @@
   },
   "Shin_IndexFingerYisang": {
     "buffType": "Positive",
-    "desc": "- Min & Max Speed +1\n- Gain +1 more Poise Potency and Count from Base Skills\n- If this unit's SP is higher than the target's, deal +1% damage for every 3 SP difference (max 15%; units without SP are considered to be at 0 SP)",
+    "desc": "- Min & Max Speed +1\n- Gain +1 more Poise Potency and Count from Base Skills\n- If this unit's SP is higher than the target's, deal +1% damage for every 3 SP difference (max 15%; Non-SP Units are considered to be at 0 SP)",
     "imageOverride": "Shin (心) - Procuration",
     "name": "Shin (心) - Fate",
     "srcPath": "Shin (心) - Procuration"
@@ -5921,13 +6024,13 @@
       "SIN",
       "SINKING"
     ],
-    "desc": "When hit by an attack, take fixed SP damage by the effect’s Potency.\n(Units with no Sanity take Gloom damage instead.)\nThen, reduce its Count by 1.",
+    "desc": "When hit by an attack, take fixed SP damage by the effect’s Potency.\n(Non-SP Units take Gloom damage instead.)\nThen, reduce its Count by 1.",
     "name": "Sinking",
     "srcPath": "Sinking"
   },
   "SinkingSurge": {
     "buffType": "Negative",
-    "desc": "Deal SP damage by (Sinking Count * Sinking Potency), then remove Sinking\nIf target's SP is -45 or lower, the excess SP damage is dealt as Gloom-affinity HP damage\n(Units with no Sanity take all of it as Gloom HP damage)",
+    "desc": "Deal SP damage by (Sinking Count * Sinking Potency), then remove Sinking\nIf target's SP is -45 or lower, the excess SP damage is dealt as Gloom-affinity HP damage\n(Non-SP Units take all of it as Gloom HP damage)",
     "name": "Sinking Deluge",
     "srcPath": "Sinking Deluge"
   },
@@ -5942,7 +6045,7 @@
     "categoryKeywordList": [
       "SINKING"
     ],
-    "desc": "- Unique Sinking\n- Base Value: 0, Max Value: 15\n- The Potency and the Count of this effect are called \"The Living\" and \"The Departed\", respectively.\n- When hit, the attacker heals (The Living/4) SP. (min 1; rounded down)\n- When hit, and if this unit's SP is at less than 0, take (Sinking Potency/5) Gloom damage for every value of The Departed. (max Gloom damage 30; rounded down; deals half damage to targets without SP.)\n- Turn End: Reset The Departed of this effect to 0; then, gain Sinking equal to The Living and convert The Living into The Departed.\n- No external effects can raise the amount of Butterfly inflicted. \"Inflict additional Sinking\" effects inflict additional Sinking instead of additional Butterfly.\n- This effect expires when both The Living and The Departed reach 0.",
+    "desc": "- Unique Sinking\n- Base Value: 0, Max Value: 15\n- The Potency and the Count of this effect are called \"The Living\" and \"The Departed\", respectively.\n- When hit, the attacker heals (The Living/4) SP. (min 1; rounded down)\n- When hit, and if this unit's SP is at less than 0, take (Sinking Potency/5) Gloom damage for every value of The Departed. (max Gloom damage 30; rounded down; deals half damage to targets that are Non-SP Units.)\n- Turn End: Reset The Departed of this effect to 0; then, gain Sinking equal to The Living and convert The Living into The Departed.\n- No external effects can raise the amount of Butterfly inflicted. \"Inflict additional Sinking\" effects inflict additional Sinking instead of additional Butterfly.\n- This effect expires when both The Living and The Departed reach 0.",
     "name": "Butterfly",
     "srcPath": "Butterfly"
   },
@@ -6453,6 +6556,11 @@
     "name": "Artwork: Tibia",
     "srcPath": "Artwork Tibia"
   },
+  "TickTockTickTock": {
+    "buffType": "Positive",
+    "desc": "- Heal 10 SP at Turn End",
+    "name": "Tick-Tock?!"
+  },
   "TimeAcceleration": {
     "buffType": "Neutral",
     "desc": "- Gain 5 Speed\n- Enhances this unit's Skills.\n- Gain 1 Fragile; when Tremor Burst, Skill or Coin effect raises this unit's Stagger Threshold, it raises it by +50% more.",
@@ -6708,6 +6816,11 @@
     "desc": "- Max Stack: 10\n- Consumed by certain Skills or Passives\n- Take +2% damage from The Middle enemies for every Stack (max 20%)\n- Turn End: The unit that has the highest Stack of this effect gains 1 Sibling Vengeance Mark next turn\n(Counted separately from Vengeance Mark; if more than a single unit has the highest Stack of this effect, this effect targets the one that has a higher HP percentage)",
     "name": "Vendetta Mark",
     "srcPath": "Vendetta Mark"
+  },
+  "VengeanceBookHeathcliff": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 30\n- Offense Level +1, Defense Level +1 for every 5 Stack",
+    "name": "Book of Vengeance [Heathcliff]"
   },
   "VengeanceBookSinclair": {
     "buffType": "Positive",
@@ -6982,7 +7095,7 @@
   },
   "WaveSinking": {
     "buffType": "Negative",
-    "desc": "- Max Stack: 3\nWhen hit, gain Sinking Potency equal to Stack\n\nTurn End: if this unit has -30 or less SP, activate the following effects (for units without SP, activates at 60+ Sinking Potency)\n- Take (Sinking Potency on self x Stack) Gloom damage\n- Inflict 1 Reflux against 2 other targets with the least SP (for Abnormalities, Parts); then, deal (Sinking Potency x Stack) Gloom damage to both targets, respectively\nIf the unit with Reflux dies, transfer its Reflux Stack to its ally with the highest Reflux stack",
+    "desc": "- Max Stack: 3\nWhen hit, gain Sinking Potency equal to Stack\n\nTurn End: if this unit has -30 or less SP, activate the following effects (for Non-SP Units, activates at 60+ Sinking Potency)\n- Take (Sinking Potency on self x Stack) Gloom damage\n- Inflict 1 Reflux against 2 other targets with the least SP (for Abnormalities, Parts); then, deal (Sinking Potency x Stack) Gloom damage to both targets, respectively\nIf the unit with Reflux dies, transfer its Reflux Stack to its ally with the highest Reflux Stack",
     "name": "Reflux",
     "srcPath": "Reflux"
   },
@@ -7004,6 +7117,15 @@
       "IGNORE_CHECED_CORRECTION_EXCLUSION"
     ],
     "desc": "Base Offense Level -25\nBase Defense Level -25",
+    "name": "Crushed Bloodthirst",
+    "srcPath": "Crushed Bloodthirst"
+  },
+  "WeighedMurderousIntendHard": {
+    "buffType": "Negative",
+    "categoryKeywordList": [
+      "IGNORE_CHECED_CORRECTION_EXCLUSION"
+    ],
+    "desc": "Base Offense Level -15\nBase Defense Level -15",
     "name": "Crushed Bloodthirst",
     "srcPath": "Crushed Bloodthirst"
   },

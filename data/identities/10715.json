@@ -1,0 +1,798 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1071502",
+        "1071503"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1071502",
+        "1071503",
+        "1071501"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1071512",
+        "1071503",
+        "1071501"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "other": [
+      "His S2 has {status:Paralysis} which can help your other team members when clashing.",
+      "He uses his S3 for free when substituting or returning to the field."
+    ],
+    "usage": [
+      "Inflicts {status:VendettaMark} on enemies and gains {status:VengeanceBookHeathcliff} whenever enemies hit Middle allies, including himself, buffing him and other Middle allies. His passives also give Middle allies 20% damage reduction when using defense and stagger immunity depending on Envy Reson. He also uses his S1 against the enemy that attacks Middle allies once per turn.",
+      "Every turn he gains {status:MiddleFingerTattooID} based on {keyword:Envy} Reson. At 15+, he gets a free use of his S3-2 by consuming 15 of it. He also gains 2 per kill with his base S3, so with max Envy Reson per turn you can get his S3-2 every 2-3 turns.",
+      "Both his S3 and S3-2 have atk weight, bonus damage vs less targets, bonus damage based on Envy reson. His S3-2 also has a free {status:VibrationExplosion}."
+    ]
+  },
+  "passiveData": {
+    "1071501": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Combat Start: Gain 1 [MiddleFingerTattooID] for every Envy Reson. (max 7)\n\nIf an enemy attacked any of The Middle-faction allies including this unit, use \"Kicking\" on the said enemy as an Unopposed Attack at Attack End of the said enemy's Skill (once per turn)",
+      "name": "The Big Brother"
+    },
+    "1071502": {
+      "desc": "When this unit or any of The Middle-faction allies are hit by an enemy, inflict 1 [VendettaMark] on the said enemy and gain 1 [VengeanceBookHeathcliff] (once per Skill)\nAlly Death: Gain 3 [VengeanceBookHeathcliff]",
+      "name": "The Book of Vengeance"
+    },
+    "1071503": {
+      "desc": "Combat Start: The Middle-faction allies that have equipped Defense Skills take -20% damage from Unopposed Attacks for this turn\n\nCombat Start: At 4+ Envy Reson., The Middle-faction allies adjacent to this unit on the Dashboard cannot be Staggered by damage as long as they have usable Counter Skills equipped in their Slots (excluding Forced Staggers)\n- At 6+ Envy Reson., this effect applies to all of The Middle-faction allies",
+      "name": "Vengeance Tattoo Resonance"
+    },
+    "1071512": {
+      "desc": "When this unit or any of The Middle-faction allies are hit by an enemy, inflict 1 [VendettaMark] on the said enemy and gain 1 [VengeanceBookHeathcliff] (once per Skill)\nAlly Death: Gain 3 [VengeanceBookHeathcliff]\n\nTurn Start: At 15+ [MiddleFingerTattooID], apply the following effects:\n- Replace a Base Skill with \"COMPLETE AND TOTAL EXTERMINATION!!\" (prioritizes the Skill on the leftmost Slot's bottom row on the Dashboard)\n· If the replaced Skill becomes inaccessible due to being replaced by a different Skill, activate the above effect again\n- Change battle music until Turn End (excluding certain Encounters)\n\nCombat Start in the Turn this unit Substituted in or Returned to the field: Use \"MY HAIR COUPOOOOOOOOOOONS!!!!\" on a random target\n- Attack End of the said Skill: Apply 1 [AttackUp] and 1 [DefenseUp] on all The Middle-faction allies",
+      "name": "The Book of Vengeance"
+    },
+    "1071521": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 4
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "If any of The Middle-faction allies are killed during combat this turn, all The Middle-faction allies gain 1 [Enhancement] this turn and next turn (once per turn)",
+      "name": "Chains of Loyalty"
+    }
+  },
+  "skills": {
+    "1071501": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +3 [Aggro] to this Slot next turn",
+          "levelCorrection": 2,
+          "name": "Kicking",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by 5"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ ([Combustion] + [Laceration]), Coin Power +1\n[WhenUse] Gain +3 [Aggro] to this Slot next turn",
+          "name": "Kicking",
+          "uptie": 2
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by 5"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ ([Combustion] + [Laceration]), Coin Power +1\n[WhenUse] Gain +3 [Aggro] to this Slot next turn",
+          "name": "Kicking",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "final",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by 5",
+                "- If target has [RetaliationBook], heal 3 SP"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ ([Combustion] + [Laceration]), Coin Power +1\n[WhenUse] If target has [RetaliationBook], Final Power +1\n[WhenUse] Gain +3 [Aggro] to this Slot next turn",
+          "name": "Kicking",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1071502": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "skilllevel",
+              "value": 3
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Paralysis]",
+                "[OnSucceedAttack] Inflict 3 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] Apply 2 [AttackUp] on allies adjacent to this unit on the Dashboard\n[StartBattle] This Skill gains (highest Reson. / 2) Offense Level (max 3, rounded down)\n[WhenUse] Gain +5 [Aggro] to this Slot next turn",
+          "levelCorrection": 3,
+          "name": "Watch Your Back!",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "skilllevel",
+              "value": 3
+            }
+          ],
+          "desc": "If target has 6+ ([Combustion] + [Laceration]), Coin Power +1\n[StartBattle] Apply 2 [AttackUp] on allies adjacent to this unit on the Dashboard\n[StartBattle] This Skill gains (highest Reson. / 2) Offense Level (max 3, rounded down)\n[WhenUse] Gain +5 [Aggro] to this Slot next turn",
+          "name": "Watch Your Back!",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "If target has 6+ ([Combustion] + [Laceration]), Coin Power +1\n[StartBattle] Apply 2 [AttackUp] on allies adjacent to this unit on the Dashboard\n[StartBattle] This Skill gains (highest Reson. / 2) Offense Level (max 3, rounded down)\n[WhenUse] Gain +5 [Aggro] to this Slot next turn",
+          "name": "Watch Your Back!",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "skilllevel",
+              "value": 3
+            },
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Paralysis]",
+                "[OnSucceedAttack] Inflict 3 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ ([Combustion] + [Laceration]), Coin Power +1\n[StartBattle] Apply 2 [AttackUp] on allies adjacent to this unit on the Dashboard\n[StartBattle] This Skill gains (highest Reson. / 2) Offense Level (max 3, rounded down)\n[WhenUse] If target has [RetaliationBook], Final Power +2\n[WhenUse] Gain +5 [Aggro] to this Slot next turn",
+          "name": "Watch Your Back!",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1071503": {
+      "bonusNotes": "Assumes single target with max atk weight",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            },
+            {
+              "type": "final",
+              "value": 3
+            },
+            {
+              "type": "skilllevel",
+              "value": 6
+            }
+          ],
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 5 [Laceration]",
+                "[OnSucceedAttack] Inflict 5 [Combustion]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Final Power +1 for every 4 ([Combustion] + [Laceration]) on the main target (max 3)\n[StartBattle] This Skill gains (highest Reson.) Offense Level (max 6)\n[WhenUse] At 6+ Envy A-Reson., gain +1 Atk Weight\n[WhenUse] Deal +30% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Part)",
+          "levelCorrection": 5,
+          "name": "MY HAIR COUPOOOOOOOOOOONS!!!!",
+          "uptie": 3
+        },
+        {
+          "baseValue": 10,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1.2
+            },
+            {
+              "type": "final",
+              "value": 3
+            },
+            {
+              "type": "skilllevel",
+              "value": 3
+            },
+            {
+              "type": "skilllevel",
+              "value": 6
+            },
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "type": "atkweight",
+              "value": 1
+            }
+          ],
+          "coinValue": 12,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "blunt"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 5 [Laceration]",
+                "[OnSucceedAttack] Inflict 5 [Combustion]",
+                "[OnSucceedAttack] Deal (Envy Reson. x 5)% of this Coin's final damage as Blunt bonus damage (max 30%)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "Final Power +1 for every 4 ([Combustion] + [Laceration]) on the main target (max 3)\nFinal Power +1 for every 2 Envy Reson. (max 3)\n[StartBattle] This Skill gains (highest Reson.) Offense Level (max 6)\n[WhenUse] If the main target has [RetaliationBook], Final Power +2\n[WhenUse] At 6+ Envy A-Reson., gain +1 Atk Weight\n[WhenUse] At 20+ [VengeanceBookHeathcliff], gain +1 Atk Weight\n[WhenUse] Deal +60% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Part)\n[EnemyKill] For every enemy killed using this Skill, gain 2 [MiddleFingerTattooID] (max 6 per turn)",
+          "name": "MY HAIR COUPOOOOOOOOOOONS!!!!",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1071504": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[StartBattle] Gain 25% of missing HP as Shield (once per turn)",
+          "levelCorrection": 3,
+          "name": "Payback",
+          "uptie": 1
+        },
+        {
+          "desc": "[StartBattle] At 6+ sum of Envy A-Reson., use \"MY HAIR COUPOOOOOOOOOOONS!!!!\" Skill as Counter (Activates from the leftmost Skill Slot. Activates 2 times per turn)\n[StartBattle] Heal (Envy Reson. + 3) SP for 3 of The Middle-faction allies that have the lowest SP (including this unit; once per turn, max 10 SP; excluding allies at -40 or lower SP)\n[StartBattle] Gain 25% of missing HP as Shield (once per turn)",
+          "name": "Payback",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1071505": {
+      "bonusNotes": "Assumes single target with max atk weight",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 16,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1.8
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            },
+            {
+              "type": "final",
+              "value": 5
+            },
+            {
+              "type": "skilllevel",
+              "value": 6
+            },
+            {
+              "type": "final",
+              "value": 3
+            },
+            {
+              "type": "atkweight",
+              "value": 1
+            }
+          ],
+          "coinValue": 10,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                },
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "blunt"
+                  },
+                  "type": "damage",
+                  "value": 0.42
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "If target is Staggered, deal +20% damage",
+                "[OnSucceedAttack] Inflict 5 [Laceration]",
+                "[OnSucceedAttack] Inflict 5 [Combustion]",
+                "[OnSucceedAttack] Inflict 5 [Vibration]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] Deal (Envy Reson. x 7)% of this Coin's final damage as Blunt bonus damage (max 42%)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "External effects cannot trigger this Skill to be Reused\nDeal +1% damage for every 1% missing HP on self (max 30%)\nFinal Power +1 for every 4 ([Combustion] + [Laceration]) on the main target (max 5)\n[StartBattle] This Skill gains (highest Reson.) Offense Level (max 6)\n[WhenUse] If the main target has [RetaliationBook], Final Power +3\n[WhenUse] At 20+ [VengeanceBookHeathcliff], gain +1 Atk Weight\n[WhenUse] Deal +60% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Part)\n[EnemyKill] For every enemy killed using this Skill, gain an E.G.O resource of a random least-owned Affinity (max 4)\n[EndSkill] Consume 15 [MiddleFingerTattooID] on self",
+          "levelCorrection": 6,
+          "name": "COMPLETE AND TOTAL EXTERMINATION!!",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1071506": {
+      "bonusNotes": "Assumes single target with max atk weight",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            },
+            {
+              "type": "final",
+              "value": 3
+            },
+            {
+              "type": "skilllevel",
+              "value": 6
+            }
+          ],
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 5 [Laceration]",
+                "[OnSucceedAttack] Inflict 5 [Combustion]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "counter",
+          "desc": "Final Power +1 for every 4 ([Combustion] + [Laceration]) on the main target (max 3)\n[StartBattle] This Skill gains (highest Reson.) Offense Level (max 6)\n[WhenUse] At 6+ Envy A-Reson., gain +1 Atk Weight\n[WhenUse] Deal +30% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Part)",
+          "levelCorrection": 5,
+          "name": "MY HAIR COUPOOOOOOOOOOONS!!!!",
+          "uptie": 3
+        },
+        {
+          "baseValue": 10,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1.2
+            },
+            {
+              "type": "final",
+              "value": 3
+            },
+            {
+              "type": "skilllevel",
+              "value": 3
+            },
+            {
+              "type": "skilllevel",
+              "value": 6
+            },
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "type": "atkweight",
+              "value": 1
+            }
+          ],
+          "coinValue": 12,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "blunt"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 5 [Laceration]",
+                "[OnSucceedAttack] Inflict 5 [Combustion]",
+                "[OnSucceedAttack] Deal (Envy Reson. x 5)% of this Coin's final damage as Blunt bonus damage (max 30%)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "Final Power +1 for every 4 ([Combustion] + [Laceration]) on the main target (max 3)\nFinal Power +1 for every 2 Envy Reson. (max 3)\n[StartBattle] This Skill gains (highest Reson.) Offense Level (max 6)\n[WhenUse] If the main target has [RetaliationBook], Final Power +2\n[WhenUse] At 6+ Envy A-Reson., gain +1 Atk Weight\n[WhenUse] At 20+ [VengeanceBookHeathcliff], gain +1 Atk Weight\n[WhenUse] Deal +60% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Part)\n[EnemyKill] For every enemy killed using this Skill, gain 2 [MiddleFingerTattooID] (max 6 per turn)",
+          "name": "MY HAIR COUPOOOOOOOOOOONS!!!!",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1071507": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +3 [Aggro] to this Slot next turn",
+          "levelCorrection": 2,
+          "name": "Kicking",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by 5"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ ([Combustion] + [Laceration]), Coin Power +1\n[WhenUse] Gain +3 [Aggro] to this Slot next turn",
+          "name": "Kicking",
+          "uptie": 2
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by 5"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ ([Combustion] + [Laceration]), Coin Power +1\n[WhenUse] Gain +3 [Aggro] to this Slot next turn",
+          "name": "Kicking",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "final",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by 5",
+                "- If target has [RetaliationBook], heal 3 SP"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If target has 6+ ([Combustion] + [Laceration]), Coin Power +1\n[WhenUse] If target has [RetaliationBook], Final Power +1\n[WhenUse] Gain +3 [Aggro] to this Slot next turn",
+          "name": "Kicking",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1071521"
+      ],
+      "uptie": 3
+    }
+  ]
+}

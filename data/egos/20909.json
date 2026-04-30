@@ -1,0 +1,210 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 15,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[EndSkill] Heal 5% HP for 2 allies that have the lowest current HP percentages and apply 2 [ScarletMothRodion] to the said allies (minimum HP healed: 1)\n- Heal additional allies equal to (Lust Reson. - 1) (max 2 allies)",
+          "levelCorrection": -1,
+          "name": "Into the Sunset",
+          "spCost": 20,
+          "uptie": 1
+        },
+        {
+          "baseValue": 16,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Combustion]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Clash Power +1 for every 6 ([Combustion] + [Laceration]) on all targets (max 2)\n[EndSkill] Heal 8% HP for 2 allies that have the lowest current HP percentages and apply 2 [ScarletMothRodion] to the said allies (minimum HP healed: 1)\n- Heal additional allies equal to (Lust Reson. - 1) (max 2 allies)\n- If the healed ally has equipped a Lust Skill, heal 3 SP on the said ally as well",
+          "name": "Into the Sunset",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Combustion]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[EndCoin] Inflict 1 [CrimsonTakeDamageUp] and 1 [ScarletTakeDamageUp] next turn on target hit"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Clash Power +1 for every 6 ([Combustion] + [Laceration]) on all targets (max 2)\n[EndSkill] Heal 10% HP for 2 allies that have the lowest current HP percentages and apply 2 [ScarletMothRodion] to the said allies (minimum HP healed: 1)\n- Heal additional allies equal to (Lust Reson. - 1) (max 2 allies)\n- If the healed ally has equipped a Lust Skill, heal 6 SP on the said ally as well",
+          "name": "Into the Sunset",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 22,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            }
+          ],
+          "coinValue": -6,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count",
+                "[EndCoin] Inflict 1 [CrimsonTakeDamageUp] next turn on target hit (once per turn)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count",
+                "[EndCoin] Inflict 1 [ScarletTakeDamageUp] next turn on target hit (once per turn)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly\n[BeforeAttack] Deal +5% damage for every 4 ([Combustion] + [Laceration]) on all targets (max 15%)\n[BeforeAttack] Base Power -6 for every Cracked Coin (max -12)\n[EndSkill] Apply 1 [ScarletMothRodion] 3 times between random allies",
+          "levelCorrection": 0,
+          "name": "Into the Sunset",
+          "spCost": 20,
+          "uptie": 1
+        },
+        {
+          "baseValue": 24,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.25
+            }
+          ],
+          "coinValue": -6,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count",
+                "[EndCoin] Inflict 1 [CrimsonTakeDamageUp] next turn on target hit (once per turn)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count",
+                "[EndCoin] Inflict 1 [ScarletTakeDamageUp] next turn on target hit (once per turn)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\n[BeforeAttack] Deal +5% damage for every 4 ([Combustion] + [Laceration]) on all targets (max 15%)\n- If there is a Wrath A-Reson. or a Lust A-Reson., deal an additional +10% damage\n[BeforeAttack] Base Power -6 for every Cracked Coin (max -12)\n[EndSkill] Apply 1 [ScarletMothRodion] 4 times between random allies",
+          "name": "Into the Sunset",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            }
+          ],
+          "coinValue": -5,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count",
+                "[EndCoin] Inflict 1 [CrimsonTakeDamageUp] next turn on target hit (once per turn)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                "[EndCoin] Inflict 1 [ScarletTakeDamageUp] next turn on target hit (once per turn)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\n[BeforeAttack] Deal +10% damage for every 4 ([Combustion] + [Laceration]) on all targets (max 30%)\n- If there is a Wrath A-Reson. or a Lust A-Reson., deal an additional +20%damage\n[BeforeAttack] Base Power -5 for every Cracked Coin (max -10)\n[EndSkill] Apply 1 [ScarletMothRodion] 5 times between random allies",
+          "name": "Into the Sunset",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "notes": {
+    "main": [
+      "Use with Lust Reson. and allies with Lust skills for additional HP and SP healing.",
+      "Buffs {keyword:Wrath} and {keyword:Lust} damage by applying Fragility on enemies.",
+      "Passively makes {sinner:9}'s {keyword:Wrath} and {keyword:Lust} attacks deal bonus damage."
+    ]
+  },
+  "passiveList": [
+    {
+      "desc": "If this unit's leftmost Base Attack Skill on the Dashboard is a Wrath or a Lust Skill, at Attack End, deal 30% of the damage dealt against the main target with that Skill as its corresponding Affinity damage to a random enemy (max 30 damage; for Focused Encounters, a Part)\n\nIf this unit dealt the maximum possible damage with the above effect, gain 1 Affinity DMG Up for the corresponding Affinity next turn, and disable the above effect from triggering for 2 turns",
+      "name": "What Distinguishes Moths from Butterflies"
+    }
+  ]
+}

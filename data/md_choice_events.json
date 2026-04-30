@@ -5233,7 +5233,8 @@
     ],
     "messages": [
       "Tell the shooter to look at the pendant on its neck.",
-      "Tell the shooter that you're on its side."
+      "Tell the shooter that you're on its side.",
+      "Tell the shooter that you're not on its side."
     ],
     "name": "Der Fluchschütze",
     "options": [
@@ -5293,6 +5294,28 @@
               "type": "Roll",
               "value": 24
             }
+          }
+        ]
+      },
+      {
+        "message": "Tell the shooter that you're not on its side.",
+        "messageDesc": "Win the battle to earn a Poise E.G.O Gift and a Pierce E.G.O Gift",
+        "result": [
+          {
+            "condition": "None",
+            "results": [
+              {
+                "type": "battle"
+              },
+              {
+                "id": 9063,
+                "type": "getEgoGiftOnWin"
+              },
+              {
+                "id": 9145,
+                "type": "getEgoGiftOnWin"
+              }
+            ]
           }
         ]
       }
@@ -7060,11 +7083,13 @@
   },
   "901102": {
     "gifts": [
-      9182
+      9182,
+      9407
     ],
     "messages": [
       "Take it.",
-      "Leave it there."
+      "Leave it there.",
+      "Throw the screw into the factory."
     ],
     "name": "Have You Become Strong",
     "options": [
@@ -7096,6 +7121,28 @@
                   "target": "all"
                 },
                 "type": "healHpSp"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "message": "Throw the screw into the factory.",
+        "messageDesc": "Win the battle to earn a Charge E.G.O Gift and a Tremor E.G.O Gift",
+        "result": [
+          {
+            "condition": "None",
+            "results": [
+              {
+                "type": "battle"
+              },
+              {
+                "id": 9182,
+                "type": "getEgoGiftOnWin"
+              },
+              {
+                "id": 9407,
+                "type": "getEgoGiftOnWin"
               }
             ]
           }
@@ -14785,6 +14832,181 @@
       },
       {
         "message": "Leave it.",
+        "messageDesc": "No particular effect",
+        "result": [
+          {
+            "condition": "None"
+          }
+        ]
+      }
+    ],
+    "type": "Choice"
+  },
+  "971108": {
+    "advantages": [
+      "gluttony",
+      "pride"
+    ],
+    "gifts": [
+      9271
+    ],
+    "messages": [
+      "Show them the Harestride and tell them you're new.\n<size=75%><color=#a16a3b>Choice unlocked with the E.G.O Gift \"Harestride\"</color></size>",
+      "Tell them you're a Hare returned from a duty elsewhere.",
+      "Say that you're just passing by."
+    ],
+    "name": "Post-Heishou Choice Development",
+    "options": [
+      {
+        "lockCondition": {
+          "id": "9788",
+          "type": "gift"
+        },
+        "message": "Show them the Harestride and tell them you're new.\n<size=75%><color=#a16a3b>Choice unlocked with the E.G.O Gift \"Harestride\"</color></size>",
+        "messageDesc": "Select to gain a Rupture E.G.O Gift",
+        "result": [
+          {
+            "condition": "None",
+            "results": [
+              {
+                "id": 9271,
+                "type": "getEgoGift"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "message": "Tell them you're a Hare returned from a duty elsewhere.",
+        "messageDesc": "Run a Gluttony & Pride Advantage check to gain a Rupture E.G.O Gift.",
+        "result": [
+          {
+            "condition": "None",
+            "nextEvent": {
+              "advantageAffinities": [
+                "gluttony",
+                "pride"
+              ],
+              "advantageValue": 12,
+              "bonuses": [
+                {
+                  "target": {
+                    "tags": [
+                      "Heishou Pack - Mao Branch"
+                    ],
+                    "type": "tag"
+                  },
+                  "value": 6
+                }
+              ],
+              "failureResults": [
+                {
+                  "condition": "None"
+                }
+              ],
+              "rollType": "min",
+              "successResults": [
+                {
+                  "condition": "None",
+                  "results": [
+                    {
+                      "id": 9271,
+                      "type": "getEgoGift"
+                    }
+                  ]
+                }
+              ],
+              "type": "Roll",
+              "value": 24
+            }
+          }
+        ]
+      },
+      {
+        "message": "Say that you're just passing by.",
+        "messageDesc": "No particular effect",
+        "result": [
+          {
+            "condition": "None"
+          }
+        ]
+      }
+    ],
+    "type": "Choice"
+  },
+  "971109": {
+    "advantages": [
+      "gluttony",
+      "pride",
+      "envy"
+    ],
+    "gifts": [
+      9269
+    ],
+    "messages": [
+      "Take the Boombox.",
+      "Take a different route."
+    ],
+    "name": "Oddly Familiar Boombox",
+    "options": [
+      {
+        "message": "Take the Boombox.",
+        "messageDesc": "Gluttony Advantage check. Pass to gain a Blunt E.G.O Gift.",
+        "result": [
+          {
+            "condition": "None",
+            "nextEvent": {
+              "advantageAffinities": [
+                "gluttony",
+                "pride",
+                "envy"
+              ],
+              "advantageValue": 14,
+              "bonuses": [
+                {
+                  "target": {
+                    "tags": [
+                      "The Middle"
+                    ],
+                    "type": "tag"
+                  },
+                  "value": 7
+                }
+              ],
+              "failureResults": [
+                {
+                  "condition": "None",
+                  "results": [
+                    {
+                      "type": "battle"
+                    },
+                    {
+                      "id": 9269,
+                      "type": "getEgoGiftOnWin"
+                    }
+                  ]
+                }
+              ],
+              "rollType": "min",
+              "successResults": [
+                {
+                  "condition": "None",
+                  "results": [
+                    {
+                      "id": 9269,
+                      "type": "getEgoGift"
+                    }
+                  ]
+                }
+              ],
+              "type": "Roll",
+              "value": 28
+            }
+          }
+        ]
+      },
+      {
+        "message": "Take a different route.",
         "messageDesc": "No particular effect",
         "result": [
           {
