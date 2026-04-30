@@ -1,0 +1,1654 @@
+{
+  "name": "Extreme - Blessed Carnival",
+  "siteId": "cec42caf-a932-40c3-af05-b1a966a01276",
+  "waves": [
+    {
+      "targets": [
+        {
+          "name": "Cassetti",
+          "parts": [
+            {
+              "breakSection": [
+                33,
+                -20
+              ],
+              "defCorrection": 0,
+              "hp": {
+                "base": 446,
+                "level": 30.77
+              },
+              "name": "Body",
+              "partId": 140501,
+              "resists": {
+                "blunt": 1.2,
+                "envy": 1.5,
+                "gloom": 1.25,
+                "gluttony": 1,
+                "lust": 0.5,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 0.75,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "At Turn End, depending on the [KeptBlood] Stack on self:\n- Inflict +2 [Laceration] and +1 [Laceration] Count on self for every Stack\n- At 5 or fewer Stack: gain 1 [Binding], 1 [Vulnerable], 1 [AttackDown] and lose 5 SP next turn for every (6 - Stack) (this effect cannot reduce this unit's SP below -20)\n- At more than 5 Stack: gain 1 [AttackUp], 1 [DefenseUp], and heal 8 SP next turn for every (Stack - 5) (this effect cannot increase this unit's SP higher than 30)",
+              "name": "Stored Blood"
+            },
+            {
+              "desc": "Gains a new pattern when [KeptBlood] reaches 0 for the first time\nFix this unit's speed to 10 when using the Skill 'I Am... The Prince... of the Parade...!'",
+              "name": "Must Retain Blood"
+            },
+            {
+              "desc": "When this unit reaches 30% HP, gain [BloodyCrave]",
+              "name": "The Prince's Frenzy"
+            },
+            {
+              "desc": "Prioritizes targets with the highest sum of [Laceration] Potency and Count\nOn Hit, if the target has [Laceration], heal 2% HP",
+              "name": "Hardblood Glaive"
+            },
+            {
+              "desc": "Upon entry, heal 30 SP\nTurn Start: if this unit has [Laceration],\n- Gain 1 [AttackUp] and 1 [DefenseUp] for every 5 [Laceration] (max 5)\n- Gain 1 [ParryingResultUp] for every 10 [Laceration] (max 2)\nTake -50% [Laceration] damage (rounded down)",
+              "name": "Sanguivore - Coagulation"
+            },
+            {
+              "desc": "If there are La Manchaland Bloodfiends among the enemies, gain the following effects:\n- In a Clash against La Manchaland Bloodfiends, lose 4 Clash Power\n- When attacking La Manchaland Bloodfiends, lose 5 SP (once per Skill; 2 times per turn)\n- Deal -20% Skill damage against La Manchaland Bloodfiends",
+              "name": "Nightmare of La Manchaland"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+              "name": "Fixed Panic"
+            },
+            {
+              "desc": "Turn End: if in Panic, reset SP to 0.",
+              "name": "Panic Recovery"
+            }
+          ],
+          "portrait": 8350,
+          "skills": [
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 4+ [Laceration], Clash Power +1",
+              "levelCorrection": 0,
+              "name": "Grovel Before Me"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 4+ [Laceration], Clash Power +1",
+              "levelCorrection": 0,
+              "name": "Pathetic One"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 8 [Laceration] and +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 4+ [Laceration], Clash Power +1\n[WhenUse] Deal +5% damage for every [Laceration] Count on the target (max 20%)",
+              "levelCorrection": 0,
+              "name": "Go... Go Away...!"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 2,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]",
+                    "[OnSucceedAttack] Gain 1 [KeptBlood]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Gain Atk Weight equal to the number of targets that have [Laceration] (max 5)\n[WhenUse] If the main target has 4+ [Laceration], Base Power +1\n[WhenUse] If the main target has 3+ [Laceration] Count, Coin Power +1\n[DefeatDuel] Lose 1 [KeptBlood]",
+              "levelCorrection": 0,
+              "name": "The Parade's Prince"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 [Laceration] and +3 [Laceration] Count",
+                    "[OnSucceedAttack] If target has 10+ [Laceration], the next Coin deals +20% damage"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 1 [KeptBlood]",
+                    "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 8+ [Laceration], Coin Power +1\n[DefeatDuel] Lose 1 [KeptBlood]",
+              "levelCorrection": 0,
+              "name": "Blood... Blood... Blood...!"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[WhenUseEvade] Base Power +1 for every [Laceration] Count on the target (max 4)",
+              "levelCorrection": 0,
+              "name": "Leave Me Alone...!"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 7,
+              "baseValue": 1,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel]\n[WhenUse] Gain 4 [Paralysis]\n[WhenUse] Double Hardblood[TabExplain] Glaive's heal effect\n[WhenUse] Reset SP to 0\n[EndSkill] Gain [KeptBlood] 10\nDoes not get Staggered this turn; ends turn after using this Skill.",
+              "levelCorrection": 0,
+              "name": "I Am... The Prince... of the Parade...!"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 7,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration] and +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration] and +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration] and +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Laceration] and +1 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Clash Power +1 for every 5 [Laceration] on the main target (max 3)\n[WhenUse] At 4+ [Laceration] Count on the main target, Coin Power +1\n[WhenUse] Deal +5% damage for every [Laceration] Count on the main target (max 20%)\n[WinDuel] Double Hardblood[TabExplain] Glaive's heal effect\n[DefeatDuel] Hardblood[TabExplain] Glaive's heal effect does not activate\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target\n[EndSkill] Gain [KeptBlood] 10",
+              "levelCorrection": 0,
+              "name": "I'm... Never... Going Back...!"
+            }
+          ]
+        },
+        {
+          "name": "Sasha",
+          "parts": [
+            {
+              "breakSection": [
+                40,
+                20
+              ],
+              "defCorrection": 2,
+              "hp": 1070.0,
+              "name": "Body",
+              "partId": 140601,
+              "resists": {
+                "blunt": 1.2,
+                "envy": 1.5,
+                "gloom": 1.25,
+                "gluttony": 1,
+                "lust": 0.5,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 0.75,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                6
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Turn End: if in Panic, reset SP to 0.",
+              "name": "Panic Recovery"
+            },
+            {
+              "desc": "Gain +1 [Laceration] Count every time this unit is hit\nTurn End: consume 3 [Laceration] Count on self to gain 1 [HardenedBlood]",
+              "name": "Blood Coagulation"
+            },
+            {
+              "desc": "Prioritizes targets with [Laceration]\nTurn End: if this unit failed to deal any damage this turn, gain 2 [Vulnerable] and 2 [AttackUp] next turn",
+              "name": "Thirst for Blood"
+            },
+            {
+              "desc": "Every time this unit is hit, if the attacker used a Skill that gains [Charge], the attacker steals 1 [Charge] Count from this unit.\n(Once per Skill. Does not activate if this unit does not have [Charge])",
+              "name": "Power Leakage"
+            },
+            {
+              "desc": "Self-inflicted damage due to this unit's Skills does not reduce this unit's HP under 1",
+              "name": "Tenacious"
+            },
+            {
+              "desc": "Upon entry, heal 20 SP\nTurn Start: For every 1 [Charge] Count, heal 1 SP (max 15)\nTurn Start: At less than 5 [Charge] Count, inflict 1 [Reduction] on self\nTurn Start: At 5+ [Charge] Count, gain 2 [ParryingResultUp]\nTurn Start: At 10+ [Charge] Count, gain 1 [PlusCoinValueUp]\nTurn Start: At 15+ [Charge] Count, deal +([Charge] Count on self x 2)% damage with Base Attack Skills",
+              "name": "Prosthesis Model - L37"
+            },
+            {
+              "desc": "Damage taken from [Laceration] -30% (rounded down)\nOn Hit, if the target has [Laceration], heal 25% of the damage dealt",
+              "name": "A Young Kindred"
+            },
+            {
+              "desc": "If there are La Manchaland Bloodfiends among the enemies, gain the following effects:\n- In a Clash against La Manchaland Bloodfiends, lose 4 Clash Power\n- When attacking La Manchaland Bloodfiends, lose 5 SP (once per Skill; 2 times per turn)\n- Deal -20% Skill damage against La Manchaland Bloodfiends",
+              "name": "Nightmare of La Manchaland"
+            }
+          ],
+          "portrait": 91018,
+          "skills": [
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] At 10+ [Charge] Count, consume 3 [Charge] Count to gain Coin Power +1\n[WhenUse] At 15+ [Charge] Count, consume 3 additional [Charge] Count to deal +20% damage\n[WhenUse] At less than 5 [Charge] Count, lose 10% HP and gain +9 [Charge] Count",
+              "levelCorrection": 3,
+              "name": "Activate Prosthesis"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]",
+                    "[OnSucceedAttack] Inflict 2 [Paralysis]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] At 10+ [Charge] Count, consume 3 [Charge] Count to gain Coin Power +1\n[WhenUse] At 15+ [Charge] Count, consume 3 additional [Charge] Count to deal +20% damage\n[WhenUse] At less than 5 [Charge] Count, lose 10% HP and gain +9 [Charge] Count",
+              "levelCorrection": 3,
+              "name": "Hardblood Reflux"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 4 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 6 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Laceration] Count",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [AttackDown]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume 10% HP on self to gain +15 [Charge] Count\n[DefeatDuel] Deal -50% damage and damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 5,
+              "name": "Bioenergy Conversion Charge"
+            },
+            {
+              "affinity": "wrath",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[WhenUse] Base Power +1 for every 3 [Laceration] Count on self (max 2)",
+              "levelCorrection": 2,
+              "name": "Guard"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] At 10+ [Charge] Count, consume 3 [Charge] Count to gain Coin Power +1\n[WhenUse] At 15+ [Charge] Count, consume 3 additional [Charge] Count to deal +20% damage\n[WhenUse] At less than 5 [Charge] Count, lose 10% HP and gain +9 [Charge] Count",
+              "levelCorrection": 3,
+              "name": "Hardblood Transfusion"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 4 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [Vulnerable]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 4 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 6 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Laceration] Count",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [AttackDown]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume 10% HP on self to gain +15 [Charge] Count\n[DefeatDuel] Deal -50% damage and damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 5,
+              "name": "Bioenergy Conversion Recharge"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "The Priest",
+          "parts": [
+            {
+              "breakSection": [
+                50
+              ],
+              "defCorrection": 2,
+              "hp": {
+                "base": 261,
+                "level": 18
+              },
+              "name": "Body",
+              "partId": 107001,
+              "resists": {
+                "blunt": 0.8,
+                "envy": 0.5,
+                "gloom": 1.5,
+                "gluttony": 1.25,
+                "lust": 1.5,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 0.75,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Gain [StarvingPriestTwo] at the start of the Encounter",
+              "name": "Starved and Withered"
+            },
+            {
+              "desc": "If this unit is on field, or is one of the units that can appear on this Stage, increase [BloodDinner] value by the amount of [Laceration] damage collectively received by every unit. \nWhen this unit enters the field, the sleeping blood drenching the battlefield will rise above the surface.",
+              "name": "Bloodfeast"
+            },
+            {
+              "desc": "Prioritizes targets with [Laceration]\nTurn End: if this unit failed to deal any damage this turn, gain 2 [Vulnerable] and 2 [AttackUp] next turn",
+              "name": "Thirst for Blood"
+            },
+            {
+              "desc": "Turn End: activate [Laceration] on self. (max 50; consume 1 [Laceration] Count on self) Heal 50 HP to Core and Part of an allied Bloodfiend with the least HP (does not activate if all allies are at full HP)",
+              "name": "Unctio Extrema"
+            },
+            {
+              "desc": "Turn End: lose 5 SP and heal 10 SP for an allied Bloodfiend with the least SP (does not activate if there aren't any allies with SP)",
+              "name": "Sacramentum Paenitentiae"
+            },
+            {
+              "desc": "Gains new patterns based on [WornHeart] value on self\nTurn End: gain 1 [WornHeart]",
+              "name": "Ailing Heart"
+            },
+            {
+              "desc": "- At 10+ [BloodyHand], convert them to [BloodyHand_2nd].\n- At 20+ [BloodyHand_2nd], convert them to [BloodyHand_3rd].",
+              "name": "Bloodied Hand"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+              "name": "Fixed Panic"
+            },
+            {
+              "desc": "Turn End: if in Panic, reset SP to 0.",
+              "name": "Panic Recovery"
+            }
+          ],
+          "portrait": 8378,
+          "skills": [
+            {
+              "affinity": "gloom",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain 20 [Laceration] and +1 [Laceration] Count",
+              "levelCorrection": 0,
+              "name": "This Unforgivable Sin..."
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain 20 [Laceration] and +1 [Laceration] Count",
+              "levelCorrection": 0,
+              "name": "The Deserved Penance..."
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 2 [WornHeart] and [BloodyHand]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain 10 [Laceration]\n[WhenUse] Consume up to 30 [BloodDinner]: heal the Core and the Part of the ally with the least HP by ([BloodDinner] consumed x 2). (excludes self; rounded down)",
+              "levelCorrection": 0,
+              "name": "Did you think about blood today?"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                    "[OnSucceedAttack] At 50%+ HP, activate [Laceration] on self. Lose 1 [Laceration] Count on self"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 3 [WornHeart] and [BloodyHand]",
+                    "[OnSucceedAttack] At 10 [WornHeart], gain 3 additional [BloodyHand] and gain 1 [AttackUp] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain 10 [Laceration]\n[WhenUse] Consume up to 20 [BloodDinner]: heal self and the ally(the Core and the Part) with the least HP by ([BloodDinner] consumed x 2).\n- If there are no remaining allies, double the healing on self",
+              "levelCorrection": 0,
+              "name": "Are you still thinking about blood?"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 1 [BloodyHand] for every 5 [Laceration] on the target (max 5)"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume up to 50 [BloodDinner] and gain 1 [BloodyHand] for every 10 [BloodDinner] consumed\n[WhenUse] Gain 10 [Laceration]\n[WhenUse] Gain 3 [BloodyHand]",
+              "levelCorrection": 0,
+              "name": "More, more blood...!"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 4 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Heal HP equal to damage dealt (Max 30)",
+                    "[OnSucceedAttack] If this Skill consumed 30 [BloodDinner], and if this unit is at 30+ [BloodyHand_3rd], Reuse this Coin once",
+                    "- If this unit failed to consume [BloodDinner] with this Skill, gain 20 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 6+ [Laceration], Coin Power +1\n[WhenUse] Consume up to 30 [BloodDinner]: gain Coin Power +1 for every 10 [BloodDinner] consumed (effect expires after the first Coin attack)\n[DefeatDuel] Gain 1 [Vulnerable] next turn",
+              "levelCorrection": 0,
+              "name": "How Bountiful..."
+            },
+            {
+              "affinity": "gloom",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] At 50%+ HP, activate [Laceration] on self (max 3 times; reduce Bleed Count every time it is activated; cannot be Staggered from this damage)\n[StartBattle] All allies heal 5 SP (including self)",
+              "levelCorrection": 0,
+              "name": "Sacrifice for the Family"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 6+ [Laceration], deal +20% damage",
+              "levelCorrection": 0,
+              "name": "Blood..."
+            }
+          ]
+        },
+        {
+          "name": "The Barber",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                30,
+                -30
+              ],
+              "defCorrection": 0,
+              "hp": {
+                "base": 157,
+                "level": 8.44
+              },
+              "name": "Body",
+              "partId": 107101,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1.25,
+                "gluttony": 1.5,
+                "lust": 1.5,
+                "pierce": 1,
+                "pride": 1.25,
+                "slash": 0.8,
+                "sloth": 0.75,
+                "wrath": 0.5
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Combat Start: gain [StarvingBarberTwo]",
+              "name": "Starved and Withered"
+            },
+            {
+              "desc": "Prioritizes [LineCutting].",
+              "name": "I'll Cut You First!"
+            },
+            {
+              "desc": "If there are any enemies with 30% or less HP, use 'I Don't Need Ugly Things!!' Skill.",
+              "name": "I Don't Need Ugly Things!!"
+            },
+            {
+              "desc": "Turn End: If Panicked, recover from Panic at the next Turn Start and reset SP to 0.\nWhen recovering from Panic:\n- Consume 30 [BloodDinner] to gain 2 [Enhancement] and 1 [BloodScissor] next turn, and heal 20 SP.\n- If this unit failed to consume [BloodDinner], gain 30 [Laceration], immediately take the damage from [Laceration], then lose 3 [Laceration] Count. Then, gain 2 [Enhancement], 2 [AttackDmgUp], and heal 20 SP next turn.",
+              "name": "Blood... Blood... Blood...!"
+            },
+            {
+              "desc": "Gains a new pattern at 40% of this unit's max HP\nUpon pattern change, gain 10 [Laceration] and 2 [BloodScissor].",
+              "name": "It's Not Over Yet"
+            },
+            {
+              "desc": "If this unit is on field, or is one of the units that can appear on this Stage, increase [BloodDinner] value by the amount of [Laceration] damage collectively received by every unit. \nWhen this unit enters the field, the sleeping blood drenching the battlefield will rise above the surface.",
+              "name": "Bloodfeast"
+            },
+            {
+              "desc": "Combat Start: gain 10 [BloodScissor]\n- [BloodScissor] cannot drop below 1\n- At 10+ [BloodScissor], convert them to [BloodScissorTwo].\n- At 20+ [BloodScissor], convert them to [BloodScissorThree].\nIf this unit consumes [BloodScissor] and drops below the above thresholds, convert them accordingly.",
+              "name": "Bloodsteeped Scissors"
+            },
+            {
+              "desc": "On Clash Win, if the target has [Laceration], heal this unit's Part & Core by 40% of the HP damage dealt.\nAttack End: If this unit healed at least 100 HP, heal 10 SP\nThis effect does not activate On Hit with an Unbreakable Coin Skill if it loses the Clash.",
+              "name": "Hardblood Scissor"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+              "name": "Fixed Panic"
+            }
+          ],
+          "portrait": 8372,
+          "skills": [
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]",
+                    "[OnSucceedAttack] Reuse Coin ([BloodScissor] Stage - 1) times (max 2)"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 6+ [Laceration], Clash Power +1\n[WhenUse] Coin Power +1 for every 5 [Laceration] on self (max 3)",
+              "levelCorrection": 0,
+              "name": "I'll Cut You Up All Pretty!"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume up to 20 [BloodDinner]; gain 1 [BloodScissor] and heal 3 SP for every 10 [BloodDinner] consumed\n- If this unit failed to consume [BloodDinner] with this Skill, gain 30 [Laceration]\n[WhenUse] If target has 6+ [Laceration], Clash Power +1\n[WhenUse] Coin Power +1 for every 5 [Laceration] on self (max 2)",
+              "levelCorrection": 0,
+              "name": "Even Sharper"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume up to 30 [BloodDinner]; gain 1 [BloodScissor] and heal 3 SP for every 10 [BloodDinner] consumed\n[WhenUse] If target has [LineCutting], Clash Power +5\nHeal 5 SP on every hit against [LineCutting]",
+              "levelCorrection": 0,
+              "name": "SNIP!!"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [BloodScissorScars] next turn",
+                    "[OnSucceedAttack] Inflict [LineCutting] next turn"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+              "levelCorrection": 0,
+              "name": "Now, It's Your Turn"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                    "[WinDuelAttack] Activate the target's [Laceration] (max 10). The target loses 1 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 5 [Laceration]",
+                    "[WinDuelAttack] Activate the target's [Laceration] (max 10). The target loses 1 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 5 [Laceration]",
+                    "[WinDuelAttack] Activate the target's [Laceration] (max 10). The target loses 1 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Deal +40% damage for every [BloodScissor] Stage (max 120%)",
+                    "[EnemyKill] If this Coin effect killed the target, heal by 50% of the damage dealt against the killed target."
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[BeforeAttack] Atk Weight +1 for every Stage of [BloodScissor]\n[WhenUse] Consume up to 100 [BloodDinner]; gain 1 [BloodScissor] and heal 3 SP for every 10 [BloodDinner] consumed\n[WhenUse] If target has 6+ [Laceration], Clash Power +2\n[EndSkill] Consume 10 [BloodScissor]",
+              "levelCorrection": 0,
+              "name": "I'll Cut You Together!"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 15,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If the target is at 30%- HP, kill the target",
+                    "[EnemyKill] Increase [BloodDinner] by 30% of the defeated enemy's max HP",
+                    "[EnemyKill] gain 4 [Vulnerable] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantChangeTarget]\nPrioritizes targets with the least HP percentage",
+              "levelCorrection": 0,
+              "name": "I Don't Need Ugly Things!!"
+            }
+          ]
+        },
+        {
+          "name": "Dulcinea",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                20,
+                -20
+              ],
+              "defCorrection": 2,
+              "hp": {
+                "base": 209,
+                "level": 14.59
+              },
+              "name": "Body",
+              "partId": 107201,
+              "resists": {
+                "blunt": 1,
+                "envy": 1.5,
+                "gloom": 0.75,
+                "gluttony": 1.25,
+                "lust": 1.5,
+                "pierce": 0.8,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 0.5,
+                "wrath": 1
+              },
+              "speed": [
+                4,
+                6
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Gains a new pattern when this unit's HP drops to 66% or less for the first time\n\nUpon pattern change,\n- Raise Min & Max Speed values by 1\n- Convert [BloomingThorns] on self to [BloomingThorns_2nd]\n- All allies gain 3 [FestivalFever] and 3 [BloomingThorns] at every turn",
+              "name": "Parade of Happiness"
+            },
+            {
+              "desc": "Gains a new pattern when this unit's HP drops to 33% or less for the first time\n\nUpon pattern change,\n- Raise Min & Max Speed values by 2\n- Uses a powerful Skill; then weakens Resistances against Slash, Pierce, and Blunt (+0.5)\n- Convert [BloomingThorns] and [BloomingThorns_2nd] on self to [BloomingThorns_3rd]\n- All allies gain 5 [FestivalFever] and 5 [BloomingThorns] at every turn",
+              "name": "Eternal Parade of Happiness"
+            },
+            {
+              "desc": "If this unit is on field, or is one of the units that can appear on this Stage, increase [BloodDinner] value by the amount of [Laceration] damage collectively received by every unit. \nWhen this unit enters the field, the sleeping blood drenching the battlefield will fill the surface.",
+              "name": "Bloodfeast"
+            },
+            {
+              "desc": "Gain [StarvingDolcineaOne] at the start of the Encounter",
+              "name": "Starved and Withered"
+            },
+            {
+              "desc": "Gain 1 [FestivalFever] every time this unit applies a positive buff to other allies with its Skill effects (once per type of buff)\n\nTurn Start: gain [FestivalFever] equal to the number of other allies (max 3)\nTurn End: heal SP equal to [FestivalFever] on self (does not activate at -45 SP)\n\nTurn End: at 10+ [FestivalFever], use a powerful Skill next turn (however, if 'The Parade Repeats for Eternity' is active, this effect does not activate)",
+              "name": "Festival of Wonders"
+            },
+            {
+              "desc": "Turn End: if in Panic, reset SP to 0.",
+              "name": "Panic Recovery"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+              "name": "Fixed Panic"
+            }
+          ],
+          "portrait": 8381,
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+              "levelCorrection": 0,
+              "name": "Gracefully..."
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]\n- If the target is an ally, replace this effect with 3 [AttackUp] until next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritize an unstaggered ally. If the target is an ally, gain Clash Power +10, and fix the damage to 0 at all times\nClash Power +1 for every 3 [Laceration] on the target (max 3)",
+              "levelCorrection": 1,
+              "name": "Walk With Grace..."
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count\n- If the target is an ally, replace this effect with 3 [DefenseUp] until next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritize an unstaggered ally. If the target is an ally, gain Clash Power +10, and fix the damage to 0 at all times\nClash Power +1 for every 3 [Laceration] on the target (max 3)",
+              "levelCorrection": 1,
+              "name": "Move With Beauty..."
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 1 [AttackUp] and 1 [DefenseUp] for every 6 [Laceration] on the target (max 3 of each)"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[WinDuelAttack] Inflict +5 [Laceration] Count",
+                    "[OnSucceedAttack] Gain 3 [BloomingThorns]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 5 [FestivalFever] on self or every 6 [Laceration] on the target (max 4)\n[WhenUse] At less than 15 [BloodDinner], gain 15 [Laceration] and immediately trigger it once, then reduce [Laceration] Count by 1 (at less than 10% HP, activate only the part of this effect where this unit gains [Laceration] Potency and Count)\n[EndSkill] Consume 15 [BloodDinner]",
+              "levelCorrection": 1,
+              "name": "Beckon the Audience Hither..."
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 6,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [AttackUp] and [DefenseUp] until next turn based on [FestivalFever] (1 per 3 [FestivalFever], max 3 of each)"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count\n- If the target is an ally, replace this effect with 5 [BloomingThorns]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantIdentify]\nPrioritizes enemies for its main target, and prioritizes allies for its sub-targets. If the target is an ally, Clash Power +10 and always fix the damage to 0.\n[WhenUse] Clash Power +1 for every 20 [BloodDinner_Accumulation] by this unit (max 10)\n[WhenUse] At less than 25 [BloodDinner], gain 25 [Laceration], immediately trigger it once, then lose 1 [Laceration] Count (at less than 10% HP, activate only the part of this effect where this unit gains [Laceration] Potency and Count)\n[EndSkill] Consume 25 [BloodDinner]\n[EndBattle] Consume all [FestivalFever]",
+              "levelCorrection": 3,
+              "name": "Parade of Wonders"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[DuelCounter]\n[WhenUse] At 5+ [FestivalFever], Clash Power +3\n[StartBattle] Gain 5 [BloomingThorns]\n[DefeatDuel] Lose 5 [BloomingThorns]",
+              "levelCorrection": 2,
+              "name": "And that's all it does..."
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 6,
+              "baseValue": 3,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 6 [Laceration]",
+                    "[OnSucceedAttack] Inflict +6 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[WinDuelAttack] Inflict 6 [Burst]",
+                    "[WinDuelAttack] Inflict +6 [Burst] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[EndCoin] Gain 1 [BloomingThorns] for every 10 [BloodDinner] consumed by this Skill (max 10)"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume half of [BloodDinner]\n[WinDuel] Deal +([BloodDinner] consumed by this Skill)% damage (max 150%)\n[DefeatDuel] Deal -50% damage, and the damage from this Skill does not Stagger the target\n[EndSkill] This unit's SP drops to -45",
+              "levelCorrection": 5,
+              "name": "The Finale"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Sancho",
+          "parts": [
+            {
+              "breakSection": [
+                85,
+                70,
+                50,
+                0
+              ],
+              "defCorrection": 0,
+              "hp": {
+                "base": 383,
+                "level": 26.43
+              },
+              "name": "Body",
+              "partId": 118801,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 0.5,
+                "gluttony": 1.2,
+                "lust": 1.5,
+                "pierce": 1.2,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 0.5,
+                "wrath": 1.2
+              },
+              "speed": [
+                1,
+                2
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Upon hitting 80%, 60%, and 40% HP, no longer take damage and gain a new pattern\nUpon gaining a new pattern, recover from Stagger and raise Speed to 10 next turn",
+              "name": "The Enthralling Tales, the Beating Passion"
+            },
+            {
+              "desc": "Encounter Start: gain [Dreamy].\nEncounter Start: the sleeping blood drenching the battlefield will surface, increasing [BloodDinner] by 400.",
+              "name": "In Dreams"
+            },
+            {
+              "desc": "Turn End: If Panicked, recover from Panic, and consume 100 [BloodDinner] to gain 3 [Enhancement]\n- If this unit failed to consume [BloodDinner], gain 30 [Laceration], 3 [Enhancement], and 2 Damage Up",
+              "name": "But I have my Father and my Family whom I cannot abandon"
+            },
+            {
+              "desc": "On Hit, if the target has [Laceration], heal Part and Core by 40% of the damage dealt.\n- This Passive heals +1% more HP for every [Laceration] Potency on self (max 20%)\n- For Unbreakable Coins: this effect does not activate on Hit After Clash Lose.\nEvery Turn Start: heal ([BloodDinner]/10) HP. (max 50)\nEvery Turn Start: at -15 or less SP, consume (20 - current SP) [BloodDinner] to gain SP and gain 2 Clash Power Up\nOn Kill, gain 5 [BloodArmor]",
+              "name": "If we can be freed from this excruciating sickness"
+            },
+            {
+              "desc": "Turn End: Min & Max Speed +1 next turn for every 300 [BloodDinner]",
+              "name": "Can I go on an adventure, too?"
+            },
+            {
+              "desc": "If this unit is on field, or is one of the units that can appear on this Stage, increase [BloodDinner] value by the amount of [Laceration] damage collectively received by every unit. \nWhen this unit enters the field, the sleeping blood drenching the battlefield will fill the surface.",
+              "name": "Bloodfeast"
+            },
+            {
+              "desc": "Combat Start: gain 1 [BloodArmor]\n- [BloodArmor] cannot drop below 1\n- At 10+ [BloodArmor], convert them to [BloodArmor_2nd].\n- At 20+ [BloodArmor], convert them to [BloodArmor_3rd].\nGain Min & Max Speed based on the Stage of this effect (max 2)\nIf this unit consumes [BloodArmor] and drops below the above thresholds, revert to previous Stages accordingly",
+              "name": "Hardblood"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+              "name": "Fixed Panic"
+            }
+          ],
+          "portrait": 8380,
+          "skills": [
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume 10 [BloodDinner]: gain 1 [BloodArmor]\n[WhenUse] Coin Power +1 for every 10 [BloodArmor] (max 2)\n[WhenUse] Coin Power +1 for every 15 [Laceration] on self (max 3)",
+              "levelCorrection": 1,
+              "name": "Topple"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 2,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume up to 20 [BloodDinner]: gain 1 [BloodArmor] for every 10 [BloodDinner] consumed\n[WhenUse] Coin Power +1 for every 10 [BloodArmor] (max 2)\n[WhenUse] Coin Power +1 for every 15 [Laceration] on self (max 3)",
+              "levelCorrection": 1,
+              "name": "Wound"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 9,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Deal +10% damage for every [Laceration] on the target (max 100%)",
+                    "[OnSucceedAttack] Inflict 3 [Laceration] and +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume 4 [BloodArmor] to heal 10 SP\n[WhenUse] Consume 10 [BloodDinner] to gain 1 [BloodArmor] and heal 10 SP\n- If this unit failed to consume [BloodDinner], gain 3 [Laceration].",
+              "levelCorrection": 2,
+              "name": "Sanguine Joy"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 5 [Laceration] and +2 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 5 [Laceration] and +2 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Can Clash with this Skill regardless of Speed\n[StartBattle] If there are enemies with [Laceration], activate [Laceration] on all enemies. All enemies lose 2 [Laceration] Count\n[WhenUse] If this effect did not activate at Combat Start, gain 30 [Laceration].\n[WinDuel] Consume up to 40 [BloodDinner]: for every 10 [BloodDinner] consumed, gain 1 [BloodArmor] and deal +25% damage (max 100%)\n- If this unit failed to consume [BloodDinner], gain 5 [Laceration], and activate [Laceration] immediately. Lose 2 [Laceration] Count\n[EndSkill] Ends this turn",
+              "levelCorrection": 2,
+              "name": "Ecstasy of Blood"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 6+ [Laceration], Coin Power +1\n[WinDuel] With this Skill, deal +20% damage with every Stage of [BloodArmor] (max 60%)\n[DefeatDuel] Consume 4 [BloodArmor] to gain 20 Shield HP",
+              "levelCorrection": 2,
+              "name": "Don Quixote Hardblood Arts 4 - Sundering"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Activate [Laceration] on the target equal to its Count. Use up the target's [Laceration] Count down to 1"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Base Power +1 for every 3 [Laceration] on the target (max 3)\n[WinDuel] With this Skill, deal +20% damage with every Stage of [BloodArmor] (max 60%)\n[DefeatDuel] Consume 4 [BloodArmor] to gain 20 Shield HP",
+              "levelCorrection": 3,
+              "name": "Don Quixote Hardblood Arts 11 - Impaling"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 6,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 5 [Laceration] and +3 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Can Clash with this Skill regardless of Speed\n[StartBattle] Consume 200 [BloodDinner], gain 500 Shield HP, 5 [BloodArmor], and 1 [SwirlingBlood]\n- If this unit doesn't have enough [BloodDinner], gain 50 [Laceration], and activate [Laceration] immediately. Lose 2 [Laceration] Count. Gain 500 Shield HP and 1 [SwirlingBlood] (this damage does not reduce this unit's HP to 1)\n[WinDuel] Gain 200 Shield HP\n[DefeatDuel] Gain 3 [Vulnerable] as long as the Shield gained due to this Skill is active\n[DefeatDuel] Deal -50% damage, and the damage from this Skill does not Stagger the target\n[EndSkill] Ends this turn",
+              "levelCorrection": 3,
+              "name": "Don Quixote Hardblood Arts 2 - Hardblood"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 8 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Binding] next turn\n- If this Skill consumed 30 [BloodDinner], inflict 2 additional [Binding]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes targets with the most [Laceration]\n[BeforeAttack] If the target is the one with the most [Laceration], gain Atk Weight +2 and Clash Power +3\n[WhenUse] Consume up to 30 [BloodDinner]: gain 1 [BloodArmor] and Coin Power +1 for every 15 [BloodDinner] consumed (max 2)\n- If this unit failed to consume [BloodDinner], gain 10 [Laceration], and activate [Laceration] immediately. Lose 2 [Laceration] Count\n[EndSkill] Increase [BloodDinner] equal to the damage this Skill dealt",
+              "levelCorrection": 3,
+              "name": "Variant Don Quixote Style: Sancho Arts 4 - Track"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 2,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Paralysis] next turn\n- If this Skill consumed 50 [BloodDinner], inflict 2 additional [Paralysis]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes targets with the most [Laceration]\n[BeforeAttack] If the target is the one with the most [Laceration], gain Atk Weight +2 and Clash Power +3\n[WhenUse] Consume up to 50 [BloodDinner]: gain 1 [BloodArmor] and Base Power +1 for every 10 [BloodDinner] consumed (max 5)\n- If this unit failed to consume [BloodDinner], gain 10 [Laceration], and activate [Laceration] immediately. Lose 1 [Laceration] Count\n[EndSkill] Increase [BloodDinner] equal to the damage this Skill dealt",
+              "levelCorrection": 2,
+              "name": "Variant Don Quixote Style: Sancho Arts 3 - Ambush"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 12,
+              "coinValue": 14,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttackHead] Inflict 8 [Laceration]",
+                    "[OnSucceedAttackHead] Heal by damage dealt"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Can Clash with this Skill regardless of Speed\n[WhenUse] Consume 50 [BloodDinner] to inflict 1 [Paralysis] against the target and self\n[WhenUse] Consume 100 [BloodDinner] to gain Clash Power +5\n- If there isn't enough [BloodDinner], consume 100 HP from this unit to gain Clash Power +5\n[EndSkill] Ends this turn",
+              "levelCorrection": 2,
+              "name": "Variant Don Quixote Style: Sancho Arts 2 - La Sangre"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 12,
+              "coinValue": 14,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Deal +10% damage for every [Laceration] on the target (max 200%)",
+                    "[OnSucceedAttack] Deal +10% damage for every [BloodDinner] (max 100%)",
+                    "[OnSucceedAttack] Inflict 3 [Laceration] and +2 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume (45 - current SP) [BloodDinner] to heal up to 45 SP\n- If there isn't enough [BloodDinner], consume up to (45 - current SP) HP to heal up to 45 SP (this damage does not lower this unit's HP below 1)\n- Gain Shield HP equal to the remaining [BloodDinner] (max 100)\n[WinDuel] Inflict 10 [Laceration]\n[DefeatDuel] Consume 100 [BloodDinner]\n[EndSkill] Increase [BloodDinner] equal to the damage dealt",
+              "levelCorrection": 5,
+              "name": "La Aventura Ha Terminado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

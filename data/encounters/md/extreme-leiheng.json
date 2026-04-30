@@ -1,0 +1,425 @@
+{
+  "name": "Extreme - Chachihu",
+  "siteId": "d93b7b16-8bec-4fa3-9201-1d705afa1803",
+  "targets": [
+    {
+      "name": "Lei Heng",
+      "parts": [
+        {
+          "breakSection": [
+            70,
+            0
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 570,
+            "level": 44.2
+          },
+          "name": "Body",
+          "partId": 124101,
+          "resists": {
+            "blunt": 0.9,
+            "envy": 1.25,
+            "gloom": 1,
+            "gluttony": 1.25,
+            "lust": 0.8,
+            "pierce": 0.9,
+            "pride": 1,
+            "slash": 0.9,
+            "sloth": 0.8,
+            "wrath": 1
+          },
+          "speed": [
+            2,
+            4
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn End: if this unit is Panicked, reset SP to 0\n\nWhen recovering from Panic: at the next Turn Start, heal SP by this unit's missing HP (max 30)",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+          "name": "Fixed Panic"
+        },
+        {
+          "desc": "Take -30% damage from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]\n\nWhen flipping a Coin that consumes [BulletPropellant]: while not having [BulletPropellant] does not cancel this unit's attacks, the Coin's \"inflict [Combustion]\" and \"inflict [Combustion] Count\" effects do not activate\n\nIn a Clash, inflict +(1 + (# of Clashes / 3)) [Vibration] Count\n(max 3; 3 times per turn against the same target)",
+          "name": "The Thumb's Officer, Capo IIII"
+        },
+        {
+          "desc": "At Encounter Start, and at the Turn Start of gaining a new pattern:\n- Gain 1 [Bothersome]\n- Heal 5 SP for every 10% missing HP on self (max 40)",
+          "name": "Ten Blades of the East"
+        },
+        {
+          "desc": "Turn Start: inflict 1 [Prey] against the target that dealt the most damage to this unit last turn\n\nAfter Lei Heng attacks the target with [Prey], if the target is:\n- Staggered, all enemies lose 10 SP and gain 1 [ParryingResultDown] for this turn and next turn (once per turn)\n- Defeated, activate the above effect once more",
+          "name": "Chosen Prey"
+        },
+        {
+          "desc": "Unopposed Attacks deal +30% damage On Hit and inflict 1 [Vulnerable] next turn\n\nSkill Coins that spent [BulletPropellant] deal +20% damage On Hit and inflict 2 [DefenseDown] next turn\n\nThe above effects do not activate if the target equipped a Defense Skill",
+          "name": "Tiantui Star's Blade [天退星刀]"
+        },
+        {
+          "desc": "If this unit used a powerful attack ('Tanglecleaver' or 'Savage Tigerslayer's Perfected Flurry of Blades'), gain [Complacency] next turn equal to the number of times those skills were used (max 5)",
+          "name": "Tiantui Star's Blade - Overheat"
+        },
+        {
+          "desc": "Combat Start: based on this unit's Speed value,\n- Heal SP equal to Speed value. At less than 0 SP, double the heal amount\n- Gain (Speed Value / 3) [SlashDamageUp] (max 5)\n\nEncounter Start: if this unit has 3+ [Binding], the above effect does not activate; gain [DefenseDown] equal to [Binding] on self (max 9)",
+          "name": "Chachihu [揷翅虎]"
+        },
+        {
+          "desc": "Turn End: at 90% or less HP, or at the end of the 2nd turn, reload [BulletPropellant] and gain a new pattern next turn\n- If this unit is Staggered, recover from Stagger",
+          "name": "Tigermark Round Reload"
+        },
+        {
+          "desc": "Turn End: at 80% or less HP, or at the end of the 4th turn, gain a new pattern next turn\n- Use a powerful attack ('Tanglecleaver'), repeat every 3rd turn. +10 to Min & Max Speed for turns in which this unit uses this Skill\n- At the start of that turn, gain 25 [BattleSense]\n- If this unit is Staggered, recover from Stagger",
+          "name": "Lei Heng [雷橫]"
+        },
+        {
+          "desc": "If this unit's HP dropped to 60% or below at Turn End, or if this unit is set to use a powerful attack ('Tanglecleaver') next turn for the second time this Encounter, gain a new pattern next turn\n- When that turn starts, gain 1 [Irritation]\n- When that turn starts, gain 18 [BulletPropellantSpecial] and reload immediately\n· If this unit spends all [BulletPropellantSpecial], convert the effect to [BulletPropellant] and summon 2 of \"Stern Soldato of the Thumb\" units next turn and have them supply this unit with [BulletPropellantSpecial]\n- When Staggered, recover from Stagger",
+          "name": "Tiantui Star [天退星]"
+        },
+        {
+          "desc": "Turn End: at 40% or less HP, or if this unit is set to use a powerful attack ('Tanglecleaver') next turn for the third time this Encounter, gain a new pattern next turn\n- Replace the powerful attack 'Tanglecleaver' with 'Savage Tigerslayer's Perfected Flurry of Blades'. +15 to Min & Max Speed for turns in which this unit uses this Skill\n- Convert [BattleSense] to [RestoredBattleSense]\n- Convert [Irritation] to [DerivativeHugeIrritation]\n- If this unit is Staggered, recover from Stagger",
+          "name": "Lei Heng, The Pinky's Tiantui Star"
+        }
+      ],
+      "portrait": 1145,
+      "skills": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Final Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 2)",
+          "levelCorrection": 2,
+          "name": "Double Slash"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration] and +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Final Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 2)",
+          "levelCorrection": 3,
+          "name": "Triple Slash"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellant]",
+                "[OnSucceedAttack] Inflict 3 [Combustion] and +2 [Combustion] Count",
+                "[OnSucceedAttack] Inflict 3 [Vibration] and +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Final Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 4)\n[DefeatDuel] Lose 1 [BulletPropellant]",
+          "levelCorrection": 2,
+          "name": "Double Slash - Blast [爆]"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellant]",
+                "[OnSucceedAttack] Inflict 3 [Combustion] and +2 [Combustion] Count",
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellant]",
+                "[OnSucceedAttack] Inflict 3 [Combustion] and +2 [Combustion] Count",
+                "[UnBrokenCoinOnSucceedAttack] Trigger [VibrationExplosion] twice; then, reduce target's [Vibration] Count by 2"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Final Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 4)\n[DefeatDuel] Lose 1 [BulletPropellant]",
+          "levelCorrection": 3,
+          "name": "Triple Slash - Blast [爆]"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Spend 1 [BulletPropellant]",
+                "[OnSucceedAttack] Inflict 3 [Combustion]",
+                "[OnSucceedAttack] Inflict 3 [Vibration]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 4 [Vibration] and +4 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Spend 1 [BulletPropellant]",
+                "[OnSucceedAttack] Inflict +3 [Combustion] Count",
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count",
+                "[UnBrokenCoinOnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Spend 1 [BulletPropellant]",
+                "If this unit spent [BulletPropellant] due to this Coin's effect, deal +50% damage",
+                "[OnSucceedAttack] Inflict 3 [Combustion] and +3 [Combustion] Count",
+                "[UnBrokenCoinOnSucceedAttack] Trigger [VibrationExplosion] twice; then, reduce target's [Vibration] Count by 2"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes targets with [Prey]\nCan clash with this Skill regardless of Speed\nCoin Power +1 for every 6 ([Combustion] + [Vibration]) on target (max 3)\n[DefeatDuel] Deal -50% final damage",
+          "levelCorrection": 4,
+          "name": "Blasting Shatterslash [爆碎斬]"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 12,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Spend all [BulletPropellant]",
+                "[OnSucceedAttack] Inflict [Combustion], [Combustion] Count, [Vibration], and [Vibration] Count by [BulletPropellant] spent",
+                "[UnBrokenCoinOnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]",
+                "[UnBrokenCoinOnSucceedAttack] Trigger [VibrationExplosion] 3 times; then, reduce target's [Vibration] Count by 3"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes targets with [Prey]\nCan Clash with this Skill regardless of Speed; this unit does not become Staggered before it uses this Skill\n[WhenUse] Consume all [BattleSense] Stack on self. If this unit consumed...\n- ... 10+ Stack , gain Atk Weight +1 for every 10 Stack consumed (max 2)\n- ... 25 Stack, Final Power +1 for every 4 (sum of [Combustion] and [Vibration] on the main target) (max 5)\n[DefeatDuel] Deal -80% damage; this Skill's damage cannot Stagger the target; inflict only half the Potency and Count for both [Combustion] and [Vibration] inflicted by this Skill (unless raised by other effects)\n[EndSkill] [FullReload] (once per turn)\n- If this unit has [BulletPropellantSpecial], [ReloadKeepAmmo] instead (once per turn)\n[DefeatDuel] Deal -50% final damage\n[EndSkill] Ends this turn",
+          "levelCorrection": 6,
+          "name": "Tanglecleaver [快刀亂麻]"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 3,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Spend 1 [BulletPropellant]",
+                "[OnSucceedAttack] Inflict 6 [Combustion]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Spend 1 [BulletPropellant]",
+                "[OnSucceedAttack] Inflict +6 [Combustion] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Spend 1 [BulletPropellant]",
+                "[OnSucceedAttack] Inflict 6 [Vibration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Spend 1 [BulletPropellant]",
+                "[OnSucceedAttack] Inflict +6 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Spend 1 [BulletPropellant]",
+                "[UnBrokenCoinOnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Spend 1 [BulletPropellant]",
+                "[UnBrokenCoinOnSucceedAttack] Trigger [VibrationExplosion] 5 times; then, reduce target's [Vibration] Count by 5"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes targets with [Prey]\nCan Clash with this Skill regardless of Speed; this unit does not become Staggered before it uses this Skill\n[WhenUse] Consume all [BattleSense] Stack on self. If this unit consumed...\n- ... 10+ Stack , gain Atk Weight +1 for every 10 Stack consumed (max 4)\n- ... 25 Stack, Final Power +1 for every 4 (sum of [Combustion] and [Vibration] on the main target) (max 6)\n- ... 50 Stack, Coin Power +1 and deal +50% damage\n[DefeatDuel] Deal -80% damage; this Skill's damage cannot Stagger the target; inflict only half the Potency and Count for both [Combustion] and [Vibration] inflicted by this Skill (unless raised by other effects)\n[EndSkill] [FullReload] (once per turn)\n- If this unit has [BulletPropellantSpecial], [ReloadKeepAmmo] instead (once per turn)\n[DefeatDuel] Deal -50% final damage\n[EndSkill] Ends this turn",
+          "levelCorrection": 6,
+          "name": "Savage Tigerslayer's Perfected Flurry of Blades [超絕猛虎殺擊亂斬]"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [BulletPropellant]",
+                "[OnSucceedAttack] Inflict 3 [Combustion]",
+                "[OnSucceedAttack] Inflict +3 [Combustion] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] Heal 10 SP\n- At less than 0 SP, heal 5 additional SP\n[DuelCounter]\n[DefeatDuel] Lose 1 [BulletPropellant]\n[EndSkill] [FullReload] (once per turn)\n- If this unit has [BulletPropellantSpecial], [ReloadKeepAmmo] instead (once per turn)",
+          "levelCorrection": 1,
+          "name": "Reloading Tiantui Star's Blade"
+        }
+      ]
+    },
+    {
+      "name": "Stern Soldato of the Thumb",
+      "num": 2,
+      "parts": [
+        {
+          "breakSection": [
+            60,
+            20,
+            0
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 78,
+            "level": 2.69
+          },
+          "name": "Body",
+          "partId": 125201,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 0.75,
+            "pride": 1,
+            "slash": 1.25,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            2,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn Start: gain 5 [Vulnerable]\nTurn End: supply [BulletPropellantSpecial] to Lei Heng\n\nIf this unit is killed, this unit cannot supply [BulletPropellantSpecial] for Lei Heng; Lei Heng gains 1 [Vulnerable] and 1 [ParryingResultDown] next turn",
+          "name": "Savage Tigermark Support"
+        }
+      ],
+      "portrait": 1171,
+      "skills": [
+        {
+          "affinity": "wrath",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[EndBattle] If this unit survives, give 6 [BulletPropellantSpecial] to Lei Heng\n[EndBattle] [DisengageCombat]",
+          "levelCorrection": 0,
+          "name": "Savage Tigermark Support"
+        }
+      ]
+    }
+  ]
+}

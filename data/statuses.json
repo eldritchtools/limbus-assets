@@ -353,6 +353,12 @@
     "name": "Acceleration Round",
     "srcPath": "AccelBullet"
   },
+  "AccumulatedPast": {
+    "buffType": "Neutral",
+    "desc": "Gain 11 at the end of the Turn.\nSpent completely when the Body Part is broken.",
+    "name": "Accumulated Past",
+    "srcPath": "Accumulated Past"
+  },
   "AccumulatedPastMirror": {
     "buffType": "Neutral",
     "desc": "Gain 11 at the end of the Turn.\nSpent completely when the Body Part is broken.",
@@ -972,6 +978,12 @@
     "desc": "- Any effects that gain Bloodied Hand gain this effect instead\n- Max Value: 30\n- Base Value: 20\n- Gain 1 Attack Power\n- At 30 Stack: On Hit with this unit's Skill, inflict additional 2 Rupture and +1 Rupture Count\n- At 30 Stack: On Hit with this unit's Skill, inflict 3 Bleed both on self and against the target",
     "name": "Bloodied Hand III",
     "srcPath": "Bloodied Hand III"
+  },
+  "BloomingRose": {
+    "buffType": "Neutral",
+    "desc": "At the end of the turn\n- Gain 1 Count.\n- Bound Identity loses HP equal to 25% of Max HP.\n- Lose 10% of E.G.O resource corresponding to the Rose's.\n- The Sign of Roses heals HP equal to 5% of its Max HP.\n\nAt 4 Count,\n- Bound Identity dies.\n- Lose all of E.G.O resource corresponding to the Rose's.",
+    "name": "Blooming Sin",
+    "srcPath": "Blooming Sin"
   },
   "BloomingThorns": {
     "buffType": "Positive",
@@ -1603,7 +1615,9 @@
       "IGNORE_CHECED_CORRECTION_EXCLUSION"
     ],
     "desc": "- Lose 30 Base Offense Level\n- Lose 30 Base Defense Level",
-    "name": "The Golden Bough's Forced Arbitration"
+    "imageOverride": "The Golden Bough_s Forced Arbitration",
+    "name": "The Golden Bough's Forced Arbitration",
+    "srcPath": "The Golden Bough_s Forced Arbitration"
   },
   "ConnectedPlug": {
     "buffType": "Negative",
@@ -1850,6 +1864,12 @@
     "desc": "When defeated, gain E.G.O Resources based on the Affinity & Rank of each Attack Skill this Identity has",
     "name": "Lingering Determination"
   },
+  "DecoyRegenerated": {
+    "buffType": "Neutral",
+    "desc": "Gain 1 every time a part is restored",
+    "name": "Regenerate",
+    "srcPath": "Regenerate"
+  },
   "DecreamentalDefense": {
     "buffType": "Negative",
     "desc": "- Yet to recover from the wounds gained in the previous battle.\n- Massively reduce max HP\n- Turn Start: gain 1 Defense Level Down for every cumulative turn (max 15)",
@@ -1902,7 +1922,9 @@
   "DerivativeHugeIrritation": {
     "buffType": "Positive",
     "desc": "- Turn Start: gain 1 Damage Up and 1 Power Up for every 15% missing HP on self (max 5 each)\n- Inflict +3 more Tremor Potency and +1 more Tremor Count with this unit's Skills\n- If this unit's Speed is faster than the target's by 3 or more, deal +(Speed difference x 5)% damage (max 40%)\n- Convert the final Coins of 'Double Slash - Blast' and 'Triple Slash - Burst' to Unbreakable Coins",
-    "name": "Shin (心) - Tiantui Star [天退星]"
+    "imageOverride": "HugeIrritationAlly",
+    "name": "Shin (心) - Tiantui Star [天退星]",
+    "srcPath": "HugeIrritationAlly"
   },
   "Desire": {
     "buffType": "Negative",
@@ -2196,6 +2218,12 @@
     "name": "Mauled Color [Bleu]",
     "srcPath": "EagleClawWound"
   },
+  "EatingSin": {
+    "buffType": "Neutral",
+    "desc": "Max HP increases by (E.G.O resource drained)%\n\nOn Death\n- Recover E.G.O resource it drained.\n- Heal bound Identity's HP by (25% of Identity's Max HP * Blooming Sin Count).",
+    "name": "Drenched Sin",
+    "srcPath": "Drenched Sin"
+  },
   "EchoOfMansion": {
     "buffType": "Negative",
     "desc": "- 50% chance to gain +1 Sinking Count when gaining Sinking Potency or Count from Skill or Coin effects\n- SP Units: Change Panic Type to Echoes of the Manor. When this unit Panics, inflict 2 Echoes of the Manor to 2 random other allies of this unit next turn\n- Non-SP Units: -10% chance to flip Heads\n- Reduced by 1 at Turn End\nThis effect is not cumulative; inflicting it will replace the current value with the inflicted value.\n※ Apply the \"Non-SP Units\" conditional to certain enemies that have SP but can't change their Panic Types.",
@@ -2285,6 +2313,12 @@
     "desc": "Max Value: 1\nBleed Potency and Count inflicted using this unit's Skill or Coin effects: +1\nGain 1 Slash Power Up and 3 Slash DMG Up for the duration of this Encounter",
     "name": "Battle Ready",
     "srcPath": "Battle Ready"
+  },
+  "EnhanceRose": {
+    "buffType": "Neutral",
+    "desc": "Power-up State passive activated",
+    "name": "Power-up State",
+    "srcPath": "Power-up State"
   },
   "EnhanceRoseSign": {
     "buffType": "Positive",
@@ -2378,6 +2412,12 @@
     "desc": "- Base Value: 10\n- Turn Start: gain Defense Level Up equal to the Stack\n- Clash Lose: reduce by 1",
     "name": "Faint Memories",
     "srcPath": "Faint Memories"
+  },
+  "FairyCharm": {
+    "buffType": "Neutral",
+    "desc": "- All damage dealt to Fairy reduced to 0.\n- Expires when Fairy dies.",
+    "name": "Charmed",
+    "srcPath": "Charmed"
   },
   "FamilyTreasure": {
     "buffType": "Negative",
@@ -2665,6 +2705,48 @@
     "desc": "- Turn Start:\n· Gain 1 Offense Level Up and 1 Defense Level Down for every 5 Stack\n· Gain 1 Damage Up and 1 Fragile for every 10 Stack\n- Max Stack: 50",
     "name": "Way of the Blade",
     "srcPath": "Fugacious"
+  },
+  "FullBloomRose_Amber": {
+    "buffType": "Neutral",
+    "desc": "Increased damage dealt & taken with Identity's Sloth Affinity",
+    "name": "Bloomed Rose",
+    "srcPath": "Bloomed Rose"
+  },
+  "FullBloomRose_Azure": {
+    "buffType": "Neutral",
+    "desc": "Increased damage dealt & taken with Identity's Gloom Affinity",
+    "name": "Bloomed Rose",
+    "srcPath": "Bloomed Rose"
+  },
+  "FullBloomRose_Crimson": {
+    "buffType": "Neutral",
+    "desc": "Increased damage dealt & taken with Identity's Wrath Affinity",
+    "name": "Bloomed Rose",
+    "srcPath": "Bloomed Rose"
+  },
+  "FullBloomRose_Indigo": {
+    "buffType": "Neutral",
+    "desc": "Increased damage dealt & taken with Identity's Pride Affinity",
+    "name": "Bloomed Rose",
+    "srcPath": "Bloomed Rose"
+  },
+  "FullBloomRose_Scarlet": {
+    "buffType": "Neutral",
+    "desc": "Increased damage dealt & taken with Identity's Lust Affinity",
+    "name": "Bloomed Rose",
+    "srcPath": "Bloomed Rose"
+  },
+  "FullBloomRose_Shamrock": {
+    "buffType": "Neutral",
+    "desc": "Increased damage dealt & taken with Identity's Gluttony Affinity",
+    "name": "Bloomed Rose",
+    "srcPath": "Bloomed Rose"
+  },
+  "FullBloomRose_Violet": {
+    "buffType": "Neutral",
+    "desc": "Increased damage dealt & taken with Identity's Envy Affinity",
+    "name": "Bloomed Rose",
+    "srcPath": "Bloomed Rose"
   },
   "FullCharon": {
     "buffType": "Negative",
@@ -3094,7 +3176,9 @@
   "HugeIrritation": {
     "buffType": "Positive",
     "desc": "- Turn Start: gain 1 Damage Up and 1 Power Up for every 15% missing HP on self (max 5 each)\n- Inflict +3 more Tremor Potency and +1 more Tremor Count with this unit's Skills\n- If this unit's Speed is faster than the target's by 3 or more, deal +(Speed difference x 5)% damage (max 20%)\n- Convert the final Coins of 'Double Slash - Blast' and 'Triple Slash - Blast' to Unbreakable Coins",
-    "name": "Shin (心) - Tiantui Star [天退星]"
+    "imageOverride": "HugeIrritationAlly",
+    "name": "Shin (心) - Tiantui Star [天退星]",
+    "srcPath": "HugeIrritationAlly"
   },
   "HugeIrritationAlly": {
     "buffType": "Positive",
@@ -3464,6 +3548,12 @@
     "name": "Interlocking Time",
     "srcPath": "Interlocking Time"
   },
+  "InterlockingTime_Re": {
+    "buffType": "Negative",
+    "desc": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 2 times the accumulated damage, and gain 3 Bind next turn.",
+    "name": "Interlocking Time",
+    "srcPath": "Interlocking Time"
+  },
   "IronMaidenPersonality": {
     "buffType": "Neutral",
     "desc": "- Gain +4 Aggro to the leftmost Slot\n- Turn Start: Gain 1 Protection, 5 Defense Level Up, and Shield HP equal to 5% of this unit's current HP\n- When hit by the last Coin of an attacker, deal Pierce damage equal to 20% of the said Coin's damage and inflict +2 Bleed Count (max once per Skill, 3 times per turn. Max damage per turn: 60)",
@@ -3506,6 +3596,12 @@
     "desc": "Turn Start: At less than 4 Count, heal by (Count * 5)% of Max HP\nAt 4+ Count, the unit dies",
     "name": "K Corp Ampule",
     "srcPath": "K Corp Ampule"
+  },
+  "KalpaVine": {
+    "buffType": "Neutral",
+    "desc": "All characters deal less damage\nAll characters receive less damage",
+    "name": "Brambles of Eternity",
+    "srcPath": "Brambles of Eternity"
   },
   "KarmaOfIndexAlly": {
     "buffType": "Negative",
@@ -4661,7 +4757,9 @@
   "MiddleFingerBook": {
     "buffType": "Negative",
     "desc": "Max Stack: 10\nWhen attacked by The Middle, take +3% damage per Stack (max 30%)",
-    "name": "The Middle's Vendetta Mark"
+    "imageOverride": "Vendetta Mark",
+    "name": "The Middle's Vendetta Mark",
+    "srcPath": "Vendetta Mark"
   },
   "MiddleFingerEzraSin": {
     "buffType": "Positive",
@@ -5005,6 +5103,30 @@
     "name": "Combat-Ready State",
     "srcPath": "Combat-Ready State"
   },
+  "PassedPortal_Blue": {
+    "buffType": "Neutral",
+    "desc": "Coin Power +1",
+    "name": "Electrifying Dimension",
+    "srcPath": "Electrifying Dimension"
+  },
+  "PassedPortal_Green": {
+    "buffType": "Neutral",
+    "desc": "Max HP +20%",
+    "name": "Poisonous Dimension",
+    "srcPath": "Poisonous Dimension"
+  },
+  "PassedPortal_Red": {
+    "buffType": "Neutral",
+    "desc": "Damage Up +10%",
+    "name": "Hemorrhaging Dimension",
+    "srcPath": "Hemorrhaging Dimension"
+  },
+  "PassedPortal_Yellow": {
+    "buffType": "Neutral",
+    "desc": "Boost Speed by 1",
+    "name": "Tremoring Dimension",
+    "srcPath": "Tremoring Dimension"
+  },
   "PenanceFirst": {
     "buffType": "Positive",
     "categoryKeywordList": [
@@ -5174,6 +5296,12 @@
     "name": "Predation",
     "srcPath": "Predation"
   },
+  "PrepareSinRose": {
+    "buffType": "Neutral",
+    "desc": "Generates a Rose unit whose Affinity corresponds to the most-owned Skill Affinity of the target inflicted with this effect",
+    "name": "Crown of Thorns",
+    "srcPath": "Crown of Thorns"
+  },
   "PreparedMeat": {
     "buffType": "Neutral",
     "desc": "If conditions are met, Fairy Queen kills this unit at Turn End",
@@ -5272,6 +5400,12 @@
   "ReattachedCurseTag": {
     "buffType": "Neutral",
     "desc": "At 9+, gain 5 Bind at the start of the turn.\nAt 12+, gain 5 Attack Power Down at the start of the turn.",
+    "name": "Reattached Curse Talisman",
+    "srcPath": "Reattached Curse Talisman"
+  },
+  "ReattachedCurseTag_Re": {
+    "buffType": "Neutral",
+    "desc": "At 9+, gain 5 Bind at the start of the turn.\nAt 12+, gain 5 Attack Power Down at the start of the turn. (Max 12)",
     "name": "Reattached Curse Talisman",
     "srcPath": "Reattached Curse Talisman"
   },
@@ -6644,6 +6778,12 @@
     "name": "Borrowed Time",
     "srcPath": "Borrowed Time"
   },
+  "TimeRental_Re": {
+    "buffType": "Positive",
+    "desc": "At the end of the turn, gain 3 Haste, 2 Damage Up, and 2 Offense Level Up; If only 1 Count remains, gain 3 Bind 1 Attack Power Down, and 2 Fragile next turn",
+    "name": "Borrowed Time",
+    "srcPath": "Borrowed Time"
+  },
   "TimeSuspend": {
     "buffType": "Negative",
     "desc": "- Does not take any damage as long as this effect is active; store all damage received instead\n- Combat End: If there is only 1 Count left of this effect, the effect triggers Tremor Burst after dealing (100 + (Stack x 15)% of stored damage as Sloth damage\n- Turn End: Gain 1 Stack and lose 1 Count\n- The Time Moratorium will immediately expire after triggering the Tremor Burst and the Sloth damage effect if another instance of Time Moratorium is inflicted on a unit that has Time Moratorium.",
@@ -6657,6 +6797,12 @@
     "srcPath": "Little Carmilla"
   },
   "Tipsiness": {
+    "buffType": "Neutral",
+    "desc": "Lose Clash Power by the effect's Count (Max 5)",
+    "name": "Tipsy",
+    "srcPath": "Tipsy"
+  },
+  "TipsinessRail": {
     "buffType": "Neutral",
     "desc": "Lose Clash Power by the effect's Count (Max 5)",
     "name": "Tipsy",
@@ -7099,6 +7245,12 @@
     "name": "Fluid Sac",
     "srcPath": "Fluid Sac"
   },
+  "WaveFoxUmbrella": {
+    "buffType": "Neutral",
+    "desc": "All parts gain Protection equal to the value\nWhen using Waiting Skill, Summon Old Umbrella equal to the value\n1 Spent every time an Umbrella is broken.",
+    "name": "Protection Umbrella",
+    "srcPath": "Protection Umbrella"
+  },
   "WaveSinking": {
     "buffType": "Negative",
     "desc": "- Max Stack: 3\nWhen hit, gain Sinking Potency equal to Stack\n\nTurn End: if this unit has -30 or less SP, activate the following effects (for Non-SP Units, activates at 60+ Sinking Potency)\n- Take (Sinking Potency on self x Stack) Gloom damage\n- Inflict 1 Reflux against 2 other targets with the least SP (for Abnormalities, Parts); then, deal (Sinking Potency x Stack) Gloom damage to both targets, respectively\nIf the unit with Reflux dies, transfer its Reflux Stack to its ally with the highest Reflux Stack",
@@ -7179,6 +7331,12 @@
   "WrappedCurseTag": {
     "buffType": "Neutral",
     "desc": "Deal +1% damage per Count\nAt 9+ Count, gain 2 Attack Power Down at turn start",
+    "name": "Entangled Curse Talisman",
+    "srcPath": "Entangled Curse Talisman"
+  },
+  "WrappedCurseTagRe": {
+    "buffType": "Neutral",
+    "desc": "Deal +1% damage per Count\nAt 9+ Count, gain 2 Attack Power Down at turn start (Max 9)",
     "name": "Entangled Curse Talisman",
     "srcPath": "Entangled Curse Talisman"
   },

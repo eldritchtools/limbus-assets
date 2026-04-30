@@ -1,0 +1,224 @@
+{
+  "name": "Extreme - A Midspring Night's Dream 2",
+  "siteId": "ada95399-84ab-4cdc-aa25-fead1adbd3fe",
+  "targets": [
+    {
+      "name": "Kkomi and Vergilius?",
+      "parts": [
+        {
+          "breakSection": [
+            60,
+            0
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 563,
+            "level": 38.85
+          },
+          "name": "Core",
+          "partId": 124301,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 1,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            2,
+            5
+          ]
+        },
+        {
+          "defCorrection": 0,
+          "hp": {
+            "base": 63,
+            "level": 4.32
+          },
+          "name": "Kkomi",
+          "partId": 124302,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 1,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            1,
+            1
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn Start: in Deployment Order, inflict 1 [GiveMeCandy] against 1 enemy without [GiveMeCandy]",
+          "name": "Got Candy?"
+        },
+        {
+          "desc": "At 10+ [FullCharon]...\n- Turn Start: enter a forced Stagger State (for a turn)\n- Turn End: remove [HungryCharon] and [FullCharon] completely",
+          "name": "I'm Stuffed"
+        },
+        {
+          "desc": "Combat Start: Vergilius gains 1 [HungryCharon]\nAt 3 [HungryCharon], uses a devastating attack (\"Vroom-Vroom\")\n※ Does not activate at \"Combat Start\" if this unit is Staggered due to [FullCharon]",
+          "name": "Vroom-vroom. Angry now"
+        },
+        {
+          "desc": "Inflict 1 [GiveMeCandy] to the target who attacked Kkomi",
+          "name": "Kkomi's not a Piñata"
+        }
+      ],
+      "portrait": 8999,
+      "skills": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[WinDuelAttack] If target has [GiveMeCandy], the target becomes Staggered next turn.",
+                "[DefeatDuel] Gain Indulged equal to [GiveMeCandy] on target.",
+                "[EndSkill] Completely remove [GiveMeCandy] from the target this unit clashed against"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes targets with [GiveMeCandy]\n[WhenUse] Coin Power +1 for every [GiveMeCandy] on target (max 5)\n[DefeatDuel] Deal -50% final damage",
+          "levelCorrection": 0,
+          "name": "Gimme Candy."
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[BeforeAttack] Gain +(# of Identities with [GiveMeCandy]) Atk Weight (max 3)\n[WhenUse] Deal +10% damage for every Identity with [GiveMeCandy] (max 50%)\n[WhenUse] Coin Power +1 for every [GiveMeCandy] on the main target (max 5)",
+          "levelCorrection": 0,
+          "name": "No Candy."
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every [GiveMeCandy] on target (max 5)\n[DefeatDuel] Deal -50% final damage",
+          "levelCorrection": 0,
+          "name": "All of you..."
+        },
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 12,
+          "baseValue": 15,
+          "coinValue": 15,
+          "coins": [
+            {
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\n[WhenUse] Deal +20% damage for every Identity with [GiveMeCandy] (max 100%)",
+          "levelCorrection": 0,
+          "name": "Vroom-Vroom"
+        },
+        {
+          "affinity": "envy",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[WhenUse] Apply 1 [GiveMeCandy] to 2 random enemies(prioritizes enemies without [GiveMeCandy])",
+          "levelCorrection": 0,
+          "name": "Eat. Together."
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[BeforeAttack] Gain +(# of Identities with [GiveMeCandy]) Atk Weight\n[WhenUse] Deal +10% damage for every Identity with [GiveMeCandy] (max 50%)\n[WhenUse] Gain Clash Power equal to the number of Identities with [GiveMeCandy] (max 5)\n[DefeatDuel] Deal -80% final damage",
+          "levelCorrection": 0,
+          "name": "... Kkomi's angry."
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\n[WhenUse] All Parts gain 2 Clash Power Up next turn\n[WhenUse] All Parts gain 2 Haste next turn",
+          "levelCorrection": 0,
+          "name": "You hit Kkomi."
+        }
+      ]
+    }
+  ]
+}

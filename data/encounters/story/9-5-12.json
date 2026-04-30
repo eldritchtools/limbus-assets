@@ -1,0 +1,1051 @@
+{
+  "name": "Twining Threads (9.5-12)",
+  "phases": [
+    {
+      "targets": [
+        {
+          "name": "Impulsive Fauvist Student of the Ring",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                0
+              ],
+              "defCorrection": 2,
+              "hp": 248.4,
+              "name": "Body",
+              "partId": 142401,
+              "resists": {
+                "blunt": 1.25,
+                "envy": 1,
+                "gloom": 1.25,
+                "gluttony": 1,
+                "lust": 1.25,
+                "pierce": 1,
+                "pride": 0.75,
+                "slash": 1,
+                "sloth": 0.75,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Before hitting, if target does not have [Laceration], inflict +3 [Laceration] Count (once per turn per enemy)",
+              "name": "Intense Primary Color - Rouge"
+            },
+            {
+              "desc": "On Hit with a Skill, inflict 1 [BearClawWound]\n\nGain 1 [Enhancement] next turn for every 4 [BearClawWound] inflicted (2 times per turn)",
+              "name": "Le Fauvisme - Masque de Chien"
+            },
+            {
+              "desc": "When this unit or an ally is hit, gain 1 [AttackUp] next turn (once per Skill, 3 times per turn)",
+              "name": "Welling Inspiration"
+            },
+            {
+              "desc": "When this unit is killed, inflict 3 [BearClawWound] on 2 random enemies",
+              "name": "Final Brushstroke"
+            },
+            {
+              "desc": "On death, give +2 E.G.O resource of the least-owned Affinity",
+              "name": "Remnant of Art"
+            }
+          ],
+          "portrait": "91043",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [Sinking]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target does not have [BearClawWound], Clash Power +1\n[WhenUse] If target has 6+ ([Laceration] + [Sinking]), Coin Power +1",
+              "levelCorrection": 0,
+              "name": "Wildstroke"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [Sinking]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target does not have [BearClawWound], Clash Power +1\n[WhenUse] If target has 6+ ([Laceration] + [Sinking]), Coin Power +1\n[WhenUse] If target has 5+ Mauled Color, convert all Coins on this Skill to [SuperCoin]s\n[DefeatDuel]\n- Damage from this Skill does not Stagger the target\n- On Hit, does not trigger [Sinking] effects on the target",
+              "levelCorrection": 1,
+              "name": "Dessin Rapide"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [Sinking]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [Sinking]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [BearClawWound]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Deal +10% damage for every 3 Mauled Color on target (max 30%)\n[WhenUse] If target has 6+ ([Laceration] + [Sinking]), Coin Power +1\n[WhenUse] At less than 50% HP, or if target has 5+ Mauled Color, use Coin 3 an additional time and convert all Coins on this Skill to [SuperCoin]s\n[DefeatDuel]\n- Damage from this Skill does not Stagger the target\n- On Hit, does not trigger [Sinking] effects on the target",
+              "levelCorrection": 2,
+              "name": "Le Fauvisme - Paint and Unfurl"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[DuelCounter]\n[WhenUse] If target has [BearClawWound], Final Power +2",
+              "levelCorrection": 0,
+              "name": "Gusset"
+            }
+          ]
+        },
+        {
+          "name": "Instinctive Fauvist Student of the Ring",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                0
+              ],
+              "defCorrection": 2,
+              "hp": 248.4,
+              "name": "Body",
+              "partId": 142501,
+              "resists": {
+                "blunt": 1.25,
+                "envy": 1,
+                "gloom": 1.25,
+                "gluttony": 1,
+                "lust": 1.25,
+                "pierce": 1,
+                "pride": 0.75,
+                "slash": 1,
+                "sloth": 0.75,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Before hitting, if target does not have [Laceration], inflict +3 [Laceration] Count (once per turn per enemy)",
+              "name": "Intense Primary Color - Rouge"
+            },
+            {
+              "desc": "On Hit with a Skill, inflict 1 [BearClawWound]\n\nGain 1 [Enhancement] next turn for every 4 [BearClawWound] inflicted (2 times per turn)",
+              "name": "Le Fauvisme - Masque de Chien"
+            },
+            {
+              "desc": "When this unit or an ally is hit, gain 1 [AttackUp] next turn (once per Skill, 3 times per turn)",
+              "name": "Welling Inspiration"
+            },
+            {
+              "desc": "When this unit is killed, inflict 3 [BearClawWound] on 2 random enemies",
+              "name": "Final Brushstroke"
+            },
+            {
+              "desc": "On death, give +2 E.G.O resource of the least-owned Affinity",
+              "name": "Remnant of Art"
+            }
+          ],
+          "portrait": "91044",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                    "[OnSucceedAttack] Inflict 1 [Sinking]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target does not have [BearClawWound], Clash Power +1\n[WhenUse] If target has 6+ ([Laceration] + [Sinking]), Coin Power +1",
+              "levelCorrection": 0,
+              "name": "Wildstroke"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [Sinking]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target does not have [BearClawWound], Clash Power +1\n[WhenUse] If target has 6+ ([Laceration] + [Sinking]), Coin Power +1\n[WhenUse] If target has 5+ Mauled Color, convert all Coins on this Skill to [SuperCoin]s\n[DefeatDuel]\n- Damage from this Skill does not Stagger the target\n- On Hit, does not trigger [Sinking] effects on the target",
+              "levelCorrection": 1,
+              "name": "Dessin Rapide"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                    "[OnSucceedAttack] Inflict 1 [Sinking]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                    "[OnSucceedAttack] Inflict 1 [Sinking]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [BearClawWound]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Deal +10% damage for every 3 Mauled Color on target (max 30%)\n[WhenUse] If target has 6+ ([Laceration] + [Sinking]), Coin Power +1\n[WhenUse] At less than 50% HP, or if target has 5+ Mauled Color, use Coin 3 an additional time and convert all Coins on this Skill to [SuperCoin]s\n[DefeatDuel]\n- Damage from this Skill does not Stagger the target\n- On Hit, does not trigger [Sinking] effects on the target",
+              "levelCorrection": 2,
+              "name": "Le Fauvisme - Paint and Unfurl"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[DuelCounter]\n[WhenUse] If target has [BearClawWound], Final Power +2",
+              "levelCorrection": 0,
+              "name": "Gusset"
+            }
+          ]
+        },
+        {
+          "name": "Feral Fauvist Student of the Ring",
+          "parts": [
+            {
+              "breakSection": [
+                70,
+                0
+              ],
+              "defCorrection": 2,
+              "hp": 196.6,
+              "name": "Body",
+              "partId": 142601,
+              "resists": {
+                "blunt": 1.25,
+                "envy": 1,
+                "gloom": 1.25,
+                "gluttony": 1,
+                "lust": 1.25,
+                "pierce": 1,
+                "pride": 0.75,
+                "slash": 1,
+                "sloth": 0.75,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Before hitting, if target does not have [Sinking], inflict +3 [Sinking] Count (once per turn per enemy)",
+              "name": "Intense Primary Color - Bleu"
+            },
+            {
+              "desc": "On Hit with a Skill, inflict 1 [EagleClawWound]\n- If this unit has [Agility], inflict 1 additional [EagleClawWound]\n\nGain 1 [Agility] next turn for every 4 [EagleClawWound] inflicted (2 times per turn)",
+              "name": "Le Fauvisme - Masque de Chèvre-Hibou"
+            },
+            {
+              "desc": "If this unit's Speed is faster than the target's, Clash Power +1",
+              "name": "Alacritous Expression"
+            },
+            {
+              "desc": "When this unit is killed, inflict 3 [EagleClawWound] on 2 random enemies",
+              "name": "Final Brushstroke"
+            },
+            {
+              "desc": "On death, give +2 E.G.O resource of the least-owned Affinity",
+              "name": "Remnant of Art"
+            }
+          ],
+          "portrait": "91045",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Sinking]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target does not have [EagleClawWound], Clash Power +1\n[WhenUse] If target has 6+ ([Laceration] + [Sinking]), Coin Power +1",
+              "levelCorrection": 1,
+              "name": "Artwork Preparation"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Sinking]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[OnSucceedAttack] If this unit has [Agility], Reuse this Coin (once per Skill)"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target does not have [EagleClawWound], Clash Power +1\n[WhenUse] If target has 6+ ([Laceration] + [Sinking]), Coin Power +1\n[WhenUse] If target has 5+ Mauled Color, convert all Coins on this Skill to [SuperCoin]s\n[DefeatDuel]\n- Damage from this Skill does not Stagger the target\n- On Hit, does not trigger [Sinking] effects on the target",
+              "levelCorrection": 2,
+              "name": "Brisk Expression"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Sinking]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Sinking]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[OnSucceedAttack] If this unit has [Agility], Reuse this Coin (once per Skill)"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Coin Power +1 for every 6 ([Laceration] + [Sinking]) on target (max 2)\n[WhenUse] At less than 50% HP, or if target has 5+ Mauled Color, convert all Coins on this Skill to [SuperCoin]s\n[DefeatDuel]\n- Damage from this Skill does not Stagger the target\n- On Hit, does not trigger [Sinking] effects on the target",
+              "levelCorrection": 3,
+              "name": "Finishing Touch"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [EagleClawWound]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [EagleClawWound]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[DuelCounter]\n[WhenUse] If target has [EagleClawWound], Clash Power +2",
+              "levelCorrection": 0,
+              "name": "Partial Rework"
+            }
+          ]
+        },
+        {
+          "name": "Spontaneous Fauvist Student of the Ring",
+          "parts": [
+            {
+              "breakSection": [
+                70,
+                0
+              ],
+              "defCorrection": 2,
+              "hp": 196.6,
+              "name": "Body",
+              "partId": 142701,
+              "resists": {
+                "blunt": 1.25,
+                "envy": 1,
+                "gloom": 1.25,
+                "gluttony": 1,
+                "lust": 1.25,
+                "pierce": 1,
+                "pride": 0.75,
+                "slash": 1,
+                "sloth": 0.75,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Before hitting, if target does not have [Sinking], inflict +3 [Sinking] Count (once per turn per enemy)",
+              "name": "Intense Primary Color - Bleu"
+            },
+            {
+              "desc": "On Hit with a Skill, inflict 1 [EagleClawWound]\n- If this unit has [Agility], inflict 1 additional [EagleClawWound]\n\nGain 1 [Agility] next turn for every 4 [EagleClawWound] inflicted (2 times per turn)",
+              "name": "Le Fauvisme - Masque de Chèvre-Hibou"
+            },
+            {
+              "desc": "If this unit's Speed is faster than the target's, Clash Power +1",
+              "name": "Alacritous Expression"
+            },
+            {
+              "desc": "When this unit is killed, inflict 3 [EagleClawWound] on 2 random enemies",
+              "name": "Final Brushstroke"
+            },
+            {
+              "desc": "On death, give +2 E.G.O resource of the least-owned Affinity",
+              "name": "Remnant of Art"
+            }
+          ],
+          "portrait": "91046",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Sinking] Count",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target does not have [EagleClawWound], Clash Power +1\n[WhenUse] If target has 6+ ([Laceration] + [Sinking]), Coin Power +1",
+              "levelCorrection": 1,
+              "name": "Artwork Preparation"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Sinking] Count",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[OnSucceedAttack] If this unit has [Agility], Reuse this Coin (once per Skill)"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target does not have [EagleClawWound], Clash Power +1\n[WhenUse] If target has 6+ ([Laceration] + [Sinking]), Coin Power +1\n[WhenUse] If target has 5+ Mauled Color, convert all Coins on this Skill to [SuperCoin]s\n[DefeatDuel]\n- Damage from this Skill does not Stagger the target\n- On Hit, does not trigger [Sinking] effects on the target",
+              "levelCorrection": 2,
+              "name": "Brisk Expression"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Sinking]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +2 [Sinking] Count",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[OnSucceedAttack] If this unit has [Agility], Reuse this Coin (once per Skill)"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Coin Power +1 for every 6 ([Laceration] + [Sinking]) on target (max 2)\n[WhenUse] At less than 50% HP, or if target has 5+ Mauled Color, convert all Coins on this Skill to [SuperCoin]s\n[DefeatDuel]\n- Damage from this Skill does not Stagger the target\n- On Hit, does not trigger [Sinking] effects on the target",
+              "levelCorrection": 3,
+              "name": "Finishing Touch"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [EagleClawWound]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [EagleClawWound]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[DuelCounter]\n[WhenUse] If target has [EagleClawWound], Clash Power +2",
+              "levelCorrection": 0,
+              "name": "Partial Rework"
+            }
+          ]
+        },
+        {
+          "name": "Rufo",
+          "parts": [
+            {
+              "breakSection": [
+                75,
+                0
+              ],
+              "defCorrection": 3,
+              "hp": {
+                "base": 480,
+                "level": 29.81
+              },
+              "name": "Body",
+              "partId": 142201,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1.2,
+                "gluttony": 1,
+                "lust": 1.2,
+                "pierce": 1,
+                "pride": 0.75,
+                "slash": 1,
+                "sloth": 0.75,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Turn Start: <color=#ff6000><mark=#ff000040><b><u>Gain 2 [Protection]</u></b></mark></color> for every allied Fauvist Student of the Ring\n- If this unit used \"Critique\" in this Encounter, gain 2 [Protection] and heal 5 SP instead starting from the next turn\n(At lower than -15 SP, double the SP-healing effect)\n- If there are no allied Fauvist Students of the Ring, gain 2 [Vulnerable] and reduce this unit's SP down to 0 instead\n\nImmediately Before Getting Hit by a Skill that has 1 Atk Weight, if there is an allied Student of the Ring, <color=#ff6000><mark=#ff000040><b><u>have the said unit take the attack instead (2 times per turn, excluding Assist Units)</u></b></mark></color>\n\nTurn End of the turn this unit used \"Critique\": If an allied Fauvist Student of the Ring was defeated in this Encounter, <color=#ff6000><mark=#ff000040><b><u>refill its vacancy with the same Student unit</u></b></mark></color>\n- Every Turn Start: The Student that refilled the vacancy due to this effect gains (# of allies defeated in this Encounter) [Vulnerable] and [AttackDown] (max 10 each)",
+              "name": "The Ring's Docent of Fauvism"
+            },
+            {
+              "desc": "Combat End: <color=#ff6000><mark=#ff000040><b><u>Inflict 1 [IntenseColors] next turn</u></b></mark></color> to Sinners that have [BearClawWound], [EagleClawWound], and [BoldBrushstrokes] simultaneously\n- If target has 3+/6+/9+ [BearClawWound] and [EagleClawWound] each, inflict 2/3/4 [IntenseColors] instead (amount inflicted is based on the effect that has the least Stack)",
+              "name": "Le Fauvisme - Couleurs Sauvages"
+            },
+            {
+              "desc": "Turn Start: Randomly apply [AttackUp] and [DefenseUp] to allied Fauvist Students of the Ring equal to the number of turns (including the current turn) each unit has survived, respectively (max 5)\n\nTurn End: If an allied Student is Staggered, <color=#ff6000><mark=#ff000040><b><u>recover them from Stagger</u></b></mark></color>\n- All Attack Type and Affinity Resistance for the Students who recovered from Stagger due to this effect becomes \"Fatal\" for the next turn\n\nTurn End: If a Student is in Panic, heal their SP up to 45",
+              "name": "Mentorship"
+            },
+            {
+              "desc": "Gain the effects of [PanicChangeLock]\nTurn End: If this unit is in Panic, reset SP to 20\n\n<color=#ff6000><mark=#ff000040><b><u>At 70%- HP, gain a new pattern</u></b></mark></color>\n- Remove all effects other than those exclusive to this unit\n- First Turn Start of the new pattern: Gain [FaubismWolfMask] and heal up to 45 SP",
+              "name": "Casque de Fauve - Empreinte Vitale"
+            }
+          ],
+          "portrait": "1422",
+          "skills": [
+            {
+              "affinity": "envy",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [EagleClawWound]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Sinking]",
+                    "[OnSucceedAttack] Inflict 1 [EagleClawWound]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Final Power +1 for every 6 ([Laceration] + [Sinking]) on target (max 2)",
+              "levelCorrection": 1,
+              "name": "Expression of Primary Colors"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Sinking]",
+                    "[OnSucceedAttack] Inflict 1 [BearClawWound]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [BearClawWound]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Final Power +1 for every 6 ([Laceration] + [Sinking]) on target (max 2)",
+              "levelCorrection": 2,
+              "name": "Vehement Overpainting"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +2 [Laceration] Count",
+                    "[OnSucceedAttack] Inflict 2 [BearClawWound]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Sinking] and +2 [Sinking] Count",
+                    "[OnSucceedAttack] Inflict 2 [EagleClawWound]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Inflict 1 [BoldBrushstrokes]</u></b></mark></color>"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Final Power +1 for every 6 ([Laceration] + [Sinking]) on target (max 3)\n[DefeatDuel]\n- Damage from this Skill does not Stagger the target\n- On Hit, does not trigger [Sinking] effects on the target",
+              "levelCorrection": 2,
+              "name": "Le Fauvisme - Déchaînement Primal"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Reuse this Coin (max 2 times)\n- On Hit after losing a Clash, Reuse this Coin (max once instead)\n- Does not trigger if target has equipped Defense Skills",
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +2 [Laceration] Count",
+                    "[OnSucceedAttack] Inflict 2 [Sinking] and +2 [Sinking] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantChangeTarget]\n[WhenUse]\n- Clash Power +2 <color=#ff6000><mark=#ff000040><b><u>for every type of negative effect</u></b></mark></color> on target (max 12)\n- <color=#ff6000><mark=#ff000040><b><u>If target has [IntenseColors], </u></b></mark></color>Clash Power +6 and deal +100% damage\n· <color=#ff6000><mark=#ff000040><b><u>If target has equipped Defense Skills</u></b></mark></color> while having [IntenseColors], Clash Power +6 and deal -90% damage instead\n[DefeatDuel]\n- Damage from this Skill does not Stagger the target\n- On Hit, does not trigger [Sinking] effects on the target",
+              "levelCorrection": 0,
+              "name": "Critique"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Rufo",
+          "parts": [
+            {
+              "breakSection": [
+                75,
+                0
+              ],
+              "defCorrection": 3,
+              "hp": {
+                "base": 480,
+                "level": 29.81
+              },
+              "name": "Body",
+              "partId": 142301,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1.25,
+                "gluttony": 1,
+                "lust": 1.25,
+                "pierce": 1,
+                "pride": 0.5,
+                "slash": 1,
+                "sloth": 0.5,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "In the turn this unit uses a powerful attack, Min & Max Speed +15\n\nTake -30% damage from Unopposed Attacks\nDeal +30% damage with Unopposed Attacks\n- If the Slot targeted by this unit's Unopposed Attack has 2+ [Aggro], reduce the increased damage from this effect by 5% per [Aggro] Stack (min 0%)\n\nOn Clash Lose, gain 1 [AttackDmgUp] (5 per turn)\n- At Turn End, or at Attack End of a Skill that hit a Sinner, the [AttackDmgUp] effect gained with this effect expires",
+              "name": "Rufo, a Docent of The Ring's School of Fauvism"
+            },
+            {
+              "desc": "Combat End: <color=#ff6000><mark=#ff000040><b><u>Inflict 1 [IntenseColors] next turn</u></b></mark></color> to Sinners that have [BearClawWound], [EagleClawWound], and [BoldBrushstrokes] simultaneously\n- If target has 3+/6+/9+ [BearClawWound] and [EagleClawWound] each, inflict 2/3/4 [IntenseColors] instead (amount inflicted is based on the effect that has the least Stack)",
+              "name": "Le Fauvisme - Couleurs Sauvages"
+            },
+            {
+              "desc": "Turn Start: <color=#ff6000><mark=#ff000040><b><u>Gain 8 [Protection]</u></b></mark></color>\n- Gain 2 fewer [Protection] at Turn Start <color=#ff6000><mark=#ff000040><b><u>for every type of negative effect on this unit</u></b></mark></color>\n- <color=#ff6000><mark=#ff000040><b><u>On Clash Lose using \"Burst Forth the Pulsing Crimson under Your Skin\" Skill, gain 2 [Vulnerable] from this effect instead</u></b></mark></color> for the next turn\n\n<color=#ff6000><mark=#ff000040><b><u>Gain 1 Defense Level each time this unit is hit</u></b></mark></color> by a Skill Coin (max 20 per turn)\n- Turn End: Defense Level gained due to this effect expires\n- <color=#ff6000><mark=#ff000040><b><u>On Clash Lose using \"Burst Forth the Pulsing Crimson under Your Skin\" Skill, lose 1 Defense Level each time this unit is hit by a Skill Coin instead</u></b></mark></color> for the next turn (max 20; expires at Turn End)",
+              "name": "Le Fauvisme - Masque de Loup : Résurgence de la Sauvagerie"
+            },
+            {
+              "desc": "Gain the effects of [PanicChangeLock]\nTurn End: If this unit is in Panic, reset SP to 30\n\n<color=#ff6000><mark=#ff000040><b><u>At 35%- HP, convert [FaubismWolfMask] into [FaubismWolfMaskBlooded], and heal up to 45 SP</u></b></mark></color>",
+              "name": "Le Fauvisme - Maximum Paint Tolerance Dose"
+            }
+          ],
+          "portrait": "1423",
+          "skills": [
+            {
+              "affinity": "envy",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict 2 [EagleClawWound]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Sinking]",
+                    "[OnSucceedAttack] Inflict 2 [EagleClawWound]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Final Power +1 for every 6 ([Laceration] + [Sinking]) on target (max 2)\n[DefeatDuel]\n- Damage from this Skill does not Stagger the target\n- On Hit, does not trigger [Sinking] effects on the target",
+              "levelCorrection": 2,
+              "name": "Embellish with Primary Colors"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Sinking]",
+                    "[OnSucceedAttack] Inflict 2 [BearClawWound]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Laceration]",
+                    "[OnSucceedAttack] Inflict 2 [BearClawWound]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Final Power +1 for every 6 ([Laceration] + [Sinking]) on target (max 3)\n[DefeatDuel]\n- Damage from this Skill does not Stagger the target\n- On Hit, does not trigger [Sinking] effects on the target",
+              "levelCorrection": 3,
+              "name": "Impassioned Overpainting"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                    "[OnSucceedAttack] Inflict 3 [BearClawWound]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Sinking] Count",
+                    "[OnSucceedAttack] Inflict 3 [EagleClawWound]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Inflict 1 [BoldBrushstrokes]</u></b></mark></color>"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Final Power +1 for every 6 ([Laceration] + [Sinking]) on target (max 4)\n[WhenUse] <color=#ff6000><mark=#ff000040><b><u>If target has 3+ types of negative effect,</u></b></mark></color> convert all Coins on this Skill to [SuperCoin]s\n[DefeatDuel]\n- Deal -75% damage\n- Damage from this Skill does not Stagger the target\n- On Hit, does not trigger [Sinking] effects on the target",
+              "levelCorrection": 3,
+              "name": "Le Fauvisme - Déchaînement Brutal"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "blunt",
+              "atkWeight": 3,
+              "baseValue": 6,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Laceration] and +3 [Laceration] Count",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Sinking] and +3 [Sinking] Count",
+                    "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Inflict 9 [BearClawWound]</u></b></mark></color>",
+                    "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Inflict 9 [EagleClawWound]</u></b></mark></color>",
+                    "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Inflict 1 [BoldBrushstrokes]</u></b></mark></color>"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Can Clash with this Skill regardless of Speed\n[WhenUse] Final Power +1 and deal +10% damage <color=#ff6000><mark=#ff000040><b><u>for every type of negative effect</u></b></mark></color> on the main target (max 6 and 60% respectively)\n[WinDuel]\n- Deal +10% damage <color=#ff6000><mark=#ff000040><b><u>for every type of negative effect</u></b></mark></color> on each target (max 60% against each target)\n[DefeatDuel]\n- Deal -75% damage\n- Inflict 2/3 less Stacks of [BearClawWound] and [EagleClawWound] with this Skill's effect (rounded up)\n- Damage from this Skill does not Stagger the target\n- On Hit, does not trigger [Sinking] effects on the target",
+              "levelCorrection": 3,
+              "name": "The Thrill of Inspiration"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 8,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict +3 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Sinking]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict +3 [Sinking] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "<color=#ff6000><mark=#ff000040><b><u>This Coin hits all targets</u></b></mark></color>"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WideAreaRampage]\nPrioritizes targets that have [IntenseColors]\nThis Skill does not trigger Defense Skills (excluding Clashable Guard)\nCan Clash with this Skill regardless of Speed\n[WhenUse]\n- Final Power +1 <color=#ff6000><mark=#ff000040><b><u>for every type of negative effect</u></b></mark></color> on the main target (max 6)\n- <color=#ff6000><mark=#ff000040><b><u>If the main target has [IntenseColors],</u></b></mark></color> Clash Power +6\n- <color=#ff6000><mark=#ff000040><b><u>If target has [IntenseColors],</u></b></mark></color> deal +100% damage (against each target separately)\n· <color=#ff6000><mark=#ff000040><b><u>If target has equipped Defense Skills</u></b></mark></color> while having [IntenseColors], deal -90% damage instead\n[WinDuel]\n- Deal +10% damage <color=#ff6000><mark=#ff000040><b><u>for every type of negative effect on target</u></b></mark></color> (max 60%, against each target separately)\n[DefeatDuel]\n- Gain 5 [AttackDmgDown] and 5 [Paralysis]\n- Damage from this Skill does not Stagger the target\n- On Hit, does not trigger [Sinking] effects on the target\n[EndSkill] End this turn",
+              "levelCorrection": -1,
+              "name": "Burst Forth the Pulsing Crimson under Your Skin."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "siteId": "2953a2da-6c4c-4b86-82dc-16853fa8c949"
+}
