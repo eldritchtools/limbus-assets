@@ -14842,6 +14842,86 @@
     ],
     "type": "Choice"
   },
+  "971107": {
+    "advantages": [
+      "lust"
+    ],
+    "gifts": [
+      9268
+    ],
+    "illustId": 971105,
+    "messages": [
+      "Take it.",
+      "Leave it."
+    ],
+    "name": "Gallery of the Ring's School of Fauvism",
+    "options": [
+      {
+        "message": "Take it.",
+        "messageDesc": "Lust Advantage check. Pass to gain a Keywordless E.G.O Gift.",
+        "result": [
+          {
+            "condition": "None",
+            "nextEvent": {
+              "advantageAffinities": [
+                "lust"
+              ],
+              "advantageValue": 16,
+              "bonuses": [
+                {
+                  "target": {
+                    "tags": [
+                      "The Ring"
+                    ],
+                    "type": "tag"
+                  },
+                  "value": 4
+                }
+              ],
+              "failureResults": [
+                {
+                  "condition": "None",
+                  "results": [
+                    {
+                      "type": "battle"
+                    },
+                    {
+                      "id": 9268,
+                      "type": "getEgoGiftOnWin"
+                    }
+                  ]
+                }
+              ],
+              "rollType": "min",
+              "successResults": [
+                {
+                  "condition": "None",
+                  "results": [
+                    {
+                      "id": 9268,
+                      "type": "getEgoGift"
+                    }
+                  ]
+                }
+              ],
+              "type": "Roll",
+              "value": 32
+            }
+          }
+        ]
+      },
+      {
+        "message": "Leave it.",
+        "messageDesc": "No particular effect",
+        "result": [
+          {
+            "condition": "None"
+          }
+        ]
+      }
+    ],
+    "type": "Choice"
+  },
   "971108": {
     "advantages": [
       "gluttony",
