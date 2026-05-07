@@ -47,6 +47,34 @@
             {
               "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count/10) in a Clash (rounded down)\n\nMax Potency cap for [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]: 30\nMax Count cap for [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]: 10",
               "name": "Reflectrial"
+            },
+            {
+              "desc": "Turn Start: Gain [AttackUp] equal to current turn count",
+              "name": "Enough Games"
+            },
+            {
+              "desc": "Turn Start: Inflict 1 [RicardoBookRaid] on all enemies\n\nWhen hit, inflict 2 [RicardoBookRaid] on the attacker\nOn Hit, reduce [RicardoBookRaid] on target by 1\n\nGain [RicardoTattooRaid] equal to the cumulative Stack of [RicardoBookRaid] reduced by this unit in this Encounter",
+              "name": "That's Goin' in the Book"
+            },
+            {
+              "desc": "Combat Start: <color=#ff6000><mark=#ff000040><b><u>If target has equipped Defense Skills</u></b></mark></color>, deal -30% damage against those targets",
+              "name": "Don't Resist and Accept Your Punishments"
+            },
+            {
+              "desc": "On Use of a Skill, if target has <color=#ff6000><mark=#ff000040><b><u>20+ [RicardoBookRaid]</u></b></mark></color>, convert all Coins on that Skill to [SuperCoin]s\n\n<color=#ff6000><mark=#ff000040><b><u>If Ricardo's Skill targets a unit that has max [RicardoBookRaid] Stack, the said Skill gains the 'Cannot change target' attribute</u></b></mark></color>",
+              "name": "Too Grave a Sin"
+            },
+            {
+              "desc": "Turn Start: <color=#ff6000><mark=#ff000040><b><u>If there is a unit that has 30 [RicardoBookRaid]</u></b></mark></color>, gain an additional Skill Slot and use \"IMMEDIATE, COMPLETE, AND TOTAL EXTERMINATION!\" Skill with it",
+              "name": "You're The Middle's Priority Revenge Target"
+            },
+            {
+              "desc": "Gain the Fixed Panic attribute\nTurn End: If this unit is in Panic, reset SP to 0\n\n<color=#ff6000><mark=#ff000040><b><u>At 50%- HP, enter a new phase</u></b></mark></color>\n- Remove all effects other than those exclusive to this unit",
+              "name": "Brush it Off"
+            },
+            {
+              "desc": "Starting from turn 2, <color=#ff6000><mark=#ff000040><b><u>all allies, including this unit, heal 10 SP at Turn Start</u></b></mark></color>\nTake -20% damage from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]",
+              "name": "The Big Brother"
             }
           ],
           "portrait": 8099,
@@ -386,381 +414,6 @@
               "name": "Mercy of the Big Brother"
             }
           ]
-        },
-        {
-          "name": "Little Brother Werner",
-          "parts": [
-            {
-              "breakSection": [
-                45,
-                0
-              ],
-              "defCorrection": 1,
-              "hp": {
-                "base": 184,
-                "level": 30
-              },
-              "name": "Body",
-              "partId": 500301,
-              "resists": {
-                "blunt": 1.25,
-                "envy": 1.25,
-                "gloom": 0.75,
-                "gluttony": 1.25,
-                "lust": 1,
-                "pierce": 1,
-                "pride": 1,
-                "slash": 1,
-                "sloth": 0.75,
-                "wrath": 1
-              },
-              "speed": [
-                2,
-                4
-              ]
-            }
-          ],
-          "portrait": 1128,
-          "skills": [
-            {
-              "affinity": "lust",
-              "atkType": "blunt",
-              "atkWeight": 1,
-              "baseValue": 4,
-              "coinValue": 6,
-              "coins": [
-                {
-                  "descs": [
-                    "[OnSucceedAttack] Inflict 1 [Paralysis] next turn"
-                  ],
-                  "type": "normal"
-                }
-              ],
-              "defType": "attack",
-              "desc": "",
-              "levelCorrection": 2,
-              "name": "Aim for the Solar Plexus"
-            },
-            {
-              "affinity": "wrath",
-              "atkType": "blunt",
-              "atkWeight": 1,
-              "baseValue": 4,
-              "coinValue": 7,
-              "coins": [
-                {
-                  "descs": [
-                    "[OnSucceedAttack] Inflict 1 [Binding] next turn",
-                    "[OnSucceedAttack] Inflict 2 [DefenseDown] next turn"
-                  ],
-                  "type": "normal"
-                }
-              ],
-              "defType": "attack",
-              "desc": "[WhenUse] If target has [MiddleFingerBook], inflict 2 additional [DefenseDown] with this Skill",
-              "levelCorrection": 2,
-              "name": "Right in the Dome"
-            },
-            {
-              "affinity": "wrath",
-              "atkType": "blunt",
-              "atkWeight": 1,
-              "baseValue": 5,
-              "coinValue": 5,
-              "coins": [
-                {
-                  "descs": [
-                    "[OnSucceedAttackHead] Inflict 1 [AttackDown] next turn",
-                    "[OnSucceedAttack] If target has [MiddleFingerBook], gain 1 [PlusCoinValueUp] next turn"
-                  ],
-                  "type": "normal"
-                },
-                {
-                  "descs": [
-                    "[OnSucceedAttackHead] Inflict 1 [AttackDown] next turn",
-                    "[OnSucceedAttack] If target has [MiddleFingerBook], gain 1 [PlusCoinValueUp] next turn"
-                  ],
-                  "type": "normal"
-                }
-              ],
-              "defType": "attack",
-              "desc": "[WhenUse] If target has [MiddleFingerBook], inflict 1 additional [AttackDown] with this Skill",
-              "levelCorrection": 3,
-              "name": "Gut Crush"
-            },
-            {
-              "affinity": "envy",
-              "atkType": "blunt",
-              "atkWeight": 1,
-              "baseValue": 4,
-              "coinValue": 4,
-              "coins": [
-                {
-                  "descs": [
-                    "[OnSucceedAttack] Inflict 3 [Paralysis] next turn"
-                  ],
-                  "type": "normal"
-                },
-                {
-                  "descs": [
-                    "[OnSucceedAttack] Inflict 3 [Binding] next turn"
-                  ],
-                  "type": "normal"
-                },
-                {
-                  "descs": [
-                    "[OnSucceedAttack] Inflict 2 [Reduction] next turn"
-                  ],
-                  "type": "normal"
-                }
-              ],
-              "defType": "attack",
-              "desc": "Deal +10% damage for every 2 [MiddleFingerBook] on the target (max 50%)\n[BeforeAttack] At 40% or less HP, gain Atk Weight +1\n[WhenUse] If the main target has [MiddleFingerBook], convert all Coins on this Skill to [SuperCoin]s\n[WhenUse] Coin Power +1 for every 3 enemy with [MiddleFingerBook] (max 2)\n[WhenUse] Clash Power +1 for every 2 [MiddleFingerBook] on the main target (max 5)\n[EndSkill] If this unit killed a target with [MiddleFingerBook], gain 1 [PlusCoinValueUp] next turn (2 times per turn)\n[EndSkill] Remove [MiddleFingerBook] on all targets that were hit",
-              "levelCorrection": 5,
-              "name": "Vengeance awaits you all!"
-            },
-            {
-              "affinity": "pride",
-              "atkType": "blunt",
-              "atkWeight": 1,
-              "baseValue": 2,
-              "coinValue": 2,
-              "coins": [
-                {
-                  "type": "normal"
-                },
-                {
-                  "type": "normal"
-                }
-              ],
-              "defType": "counter",
-              "desc": "[BeforeHit] Gain 5 Shield for every [MiddleFingerBook] on the target (once per turn; max 50)\n[WhenUse] If target has 5+ [MiddleFingerBook], Base Power +3; inflict 4 [DefenseDown]",
-              "levelCorrection": -5,
-              "name": "Seize ya Chance"
-            }
-          ]
-        },
-        {
-          "name": "Sturdy Little Brother of the Middle",
-          "parts": [
-            {
-              "breakSection": [
-                45,
-                0
-              ],
-              "defCorrection": -3,
-              "hp": {
-                "base": 74,
-                "level": 2.54
-              },
-              "name": "Body",
-              "partId": 500401,
-              "resists": {
-                "blunt": 1.25,
-                "envy": 1.25,
-                "gloom": 0.75,
-                "gluttony": 1.25,
-                "lust": 1,
-                "pierce": 1,
-                "pride": 1,
-                "slash": 1,
-                "sloth": 0.75,
-                "wrath": 1
-              },
-              "speed": [
-                1,
-                2
-              ]
-            }
-          ],
-          "passives": [
-            {
-              "desc": "Every time a Middle ally is killed in this encounter, gain 1 [AttackUp] (Max 5)",
-              "name": "Vengeance Tattoo"
-            },
-            {
-              "desc": "Upon Clash Lose, gain 1 [MinusCoinValueUp] next turn (2 times per turn)",
-              "name": "Little Vengeance"
-            },
-            {
-              "desc": "When a Middle ally is killed, gain 1 [PlusCoinValueUp] next turn.",
-              "name": "Chains of Loyalty"
-            }
-          ],
-          "portrait": 90096,
-          "skills": [
-            {
-              "affinity": "envy",
-              "atkType": "blunt",
-              "atkWeight": 1,
-              "baseValue": 5,
-              "coinValue": 6,
-              "coins": [
-                {
-                  "descs": [
-                    "[OnSucceedAttackHead] Inflict 1 [Paralysis] next turn"
-                  ],
-                  "type": "normal"
-                }
-              ],
-              "defType": "attack",
-              "desc": "",
-              "levelCorrection": -4,
-              "name": "Right in the Solar Plexus"
-            },
-            {
-              "affinity": "envy",
-              "atkType": "blunt",
-              "atkWeight": 1,
-              "baseValue": 5,
-              "coinValue": 6,
-              "coins": [
-                {
-                  "descs": [
-                    "[OnSucceedAttackHead] Inflict 1 [Reduction] next turn"
-                  ],
-                  "type": "normal"
-                },
-                {
-                  "descs": [
-                    "[OnSucceedAttack] Inflict 2 [Paralysis] next turn"
-                  ],
-                  "type": "normal"
-                }
-              ],
-              "defType": "attack",
-              "desc": "",
-              "levelCorrection": -4,
-              "name": "Skull Crushing"
-            },
-            {
-              "affinity": "pride",
-              "atkType": "blunt",
-              "atkWeight": 1,
-              "baseValue": 8,
-              "coinValue": 5,
-              "coins": [
-                {
-                  "type": "normal"
-                }
-              ],
-              "defType": "counter",
-              "desc": "",
-              "levelCorrection": -4,
-              "name": "Multifold Retribution"
-            }
-          ]
-        },
-        {
-          "name": "Stern Little Brother of the Middle",
-          "parts": [
-            {
-              "breakSection": [
-                45,
-                0
-              ],
-              "defCorrection": -3,
-              "hp": {
-                "base": 74,
-                "level": 2.54
-              },
-              "name": "Body",
-              "partId": 500501,
-              "resists": {
-                "blunt": 1.25,
-                "envy": 1.25,
-                "gloom": 0.75,
-                "gluttony": 1.25,
-                "lust": 1,
-                "pierce": 1,
-                "pride": 1,
-                "slash": 1,
-                "sloth": 0.75,
-                "wrath": 1
-              },
-              "speed": [
-                1,
-                2
-              ]
-            }
-          ],
-          "passives": [
-            {
-              "desc": "Every time a Middle ally is killed in this encounter, gain 1 [AttackUp] (Max 5)",
-              "name": "Vengeance Tattoo"
-            },
-            {
-              "desc": "Upon Clash Lose, gain 1 [MinusCoinValueUp] next turn (2 times per turn)",
-              "name": "Little Vengeance"
-            },
-            {
-              "desc": "When a Middle ally is killed, gain 1 [PlusCoinValueUp] next turn.",
-              "name": "Chains of Loyalty"
-            }
-          ],
-          "portrait": 90097,
-          "skills": [
-            {
-              "affinity": "envy",
-              "atkType": "blunt",
-              "atkWeight": 1,
-              "baseValue": 5,
-              "coinValue": 6,
-              "coins": [
-                {
-                  "descs": [
-                    "[OnSucceedAttackHead] Inflict 1 [Paralysis] next turn"
-                  ],
-                  "type": "normal"
-                }
-              ],
-              "defType": "attack",
-              "desc": "",
-              "levelCorrection": -4,
-              "name": "Right in the Solar Plexus"
-            },
-            {
-              "affinity": "envy",
-              "atkType": "blunt",
-              "atkWeight": 1,
-              "baseValue": 3,
-              "coinValue": 7,
-              "coins": [
-                {
-                  "descs": [
-                    "[OnSucceedAttackHead] Inflict 1 [PlusCoinValueDown] next turn"
-                  ],
-                  "type": "normal"
-                },
-                {
-                  "descs": [
-                    "[OnSucceedAttack] Inflict 1 [PlusCoinValueDown] next turn"
-                  ],
-                  "type": "normal"
-                }
-              ],
-              "defType": "attack",
-              "desc": "",
-              "levelCorrection": -4,
-              "name": "Skull Bursting"
-            },
-            {
-              "affinity": "pride",
-              "atkType": "blunt",
-              "atkWeight": 1,
-              "baseValue": 8,
-              "coinValue": 5,
-              "coins": [
-                {
-                  "type": "normal"
-                }
-              ],
-              "defType": "counter",
-              "desc": "",
-              "levelCorrection": -4,
-              "name": "Multifold Retribution"
-            }
-          ]
         }
       ]
     },
@@ -812,8 +465,36 @@
               "name": "Reflectrial"
             },
             {
+              "desc": "Turn Start: Gain [AttackUp] equal to current turn count",
+              "name": "Enough Games"
+            },
+            {
+              "desc": "Turn Start: Inflict 1 [RicardoBookRaid] on all enemies\n\nWhen hit, inflict 2 [RicardoBookRaid] on the attacker\nOn Hit, reduce [RicardoBookRaid] on target by 1\n\nGain [RicardoTattooRaid] equal to the cumulative Stack of [RicardoBookRaid] reduced by this unit in this Encounter",
+              "name": "That's Goin' in the Book"
+            },
+            {
+              "desc": "On Use of a Skill, if target has <color=#ff6000><mark=#ff000040><b><u>20+ [RicardoBookRaid]</u></b></mark></color>, convert all Coins on that Skill to [SuperCoin]s\n\n<color=#ff6000><mark=#ff000040><b><u>If Ricardo's Skill targets a unit that has max [RicardoBookRaid] Stack, the said Skill gains the 'Cannot change target' attribute</u></b></mark></color>",
+              "name": "Too Grave a Sin"
+            },
+            {
+              "desc": "Combat Start: <color=#ff6000><mark=#ff000040><b><u>If target has equipped Defense Skills</u></b></mark></color>, deal -30% damage against those targets",
+              "name": "Don't Resist and Accept Your Punishments"
+            },
+            {
+              "desc": "Turn Start: <color=#ff6000><mark=#ff000040><b><u>If there is a unit that has 30 [RicardoBookRaid]</u></b></mark></color>, gain an additional Skill Slot and use \"IMMEDIATE, COMPLETE, AND TOTAL EXTERMINATION!\" Skill with it",
+              "name": "You're The Middle's Priority Revenge Target"
+            },
+            {
+              "desc": "Starting from turn 2, <color=#ff6000><mark=#ff000040><b><u>all allies, including this unit, heal 10 SP at Turn Start</u></b></mark></color>\nTake -20% damage from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]",
+              "name": "The Big Brother"
+            },
+            {
               "desc": "When an ally from the Middle is killed, gain 1 Plus Coin Boost next turn. (Max 2)",
               "name": "Chains of Loyalty"
+            },
+            {
+              "desc": "Gain the Fixed Panic attribute\nTurn End: If this unit is in Panic, reset SP to 0",
+              "name": "Brush it Off"
             }
           ],
           "portrait": 8099,
