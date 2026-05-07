@@ -802,35 +802,35 @@
     "buffType": "Positive",
     "desc": "- Max Stack: 10\n- Stage 1 Hardblood\n- At 10+ Hardblood, converts to Hardblood II.\n- At 20+ Hardblood, converts to Hardblood III.\n- Reverts to the previous Stage when the Stack drops below the requirements.\n- Hardblood does not drop below 1.\n- Raise Min & Max Speed values by 1 for every 10 Hardblood\n- At Hardblood II, gain 1 Offense Level Up based on the Stack\n- At Hardblood III, gain 1 Offense Level Up and 1 Defense Level Up based on the Stack",
     "name": "Hardblood",
-    "srcPath": "Hardblood"
+    "srcPath": "BloodArmor"
   },
   "BloodArmorPersonalitySecond": {
     "buffType": "Positive",
     "desc": "- Max Stack: 20\n- Stage 2 Hardblood\n- Turn Start: gain 1 Offense Level Up for every 5 Stack\n- Raise Min & Max Speed values by 1\n- At 10+ Hardblood, converts to Hardblood II.\n- At 20+ Hardblood, converts to Hardblood III.\n- Reverts to the previous Stage when the Stack drops below the requirements.\n- Hardblood does not drop below 1.\n- At Hardblood II, gain 1 Offense Level Up based on the Stack\n- At Hardblood III, gain 1 Offense Level Up and 1 Defense Level Up based on the Stack",
     "imageOverride": "Hardblood",
     "name": "Hardblood II",
-    "srcPath": "Hardblood"
+    "srcPath": "BloodArmor"
   },
   "BloodArmorPersonalityThird": {
     "buffType": "Positive",
     "desc": "- Max Stack: 30\n- Stage 3 Hardblood\n- Turn Start: gain 1 Offense Level Up and 1 Defense Level Up for every 5 Stack\n- Raise Min & Max Speed values by 2\n- At 10+ Hardblood, converts to Hardblood II.\n- At 20+ Hardblood, converts to Hardblood III.\n- Reverts to the previous Stage when the Stack drops below the requirements.\n- Hardblood does not drop below 1.\n- At Hardblood II, gain 1 Offense Level Up based on the Stack\n- At Hardblood III, gain 1 Offense Level Up and 1 Defense Level Up based on the Stack",
     "imageOverride": "Hardblood",
     "name": "Hardblood III",
-    "srcPath": "Hardblood"
+    "srcPath": "BloodArmor"
   },
   "BloodArmor_2nd": {
     "buffType": "Positive",
     "desc": "- Max Value: 20\n- Stage 2 Hardblood\n- Turn Start: gain 1 Offense Level and Defense Level for every 6 Stack\n- Raise Min & Max Speed values by 1\n- Used for special Skills",
     "imageOverride": "Hardblood",
     "name": "Hardblood II",
-    "srcPath": "Hardblood"
+    "srcPath": "BloodArmor"
   },
   "BloodArmor_3rd": {
     "buffType": "Positive",
     "desc": "- Max Value: 30\n- Stage 3 Hardblood\n- Turn Start: gain 2 Offense Level and Defense Level for every 6 Stack\n- Raise Min & Max Speed values by 2\n- Used for special Skills",
     "imageOverride": "Hardblood",
     "name": "Hardblood III",
-    "srcPath": "Hardblood"
+    "srcPath": "BloodArmor"
   },
   "BloodBranch": {
     "buffType": "Negative",
@@ -996,21 +996,21 @@
     "desc": "- Max Value: 10\n- Stage 1 Blooming Thorn\n- Gain 1 Defense Level for every 2 Stack (max 5)\n- When hit, inflict 1 Bleed against the attacker and lose 1 Stack\n- [The Princess of La Manchaland Rodion Only]\n· At max Stack, convert to the next Stage of this effect.\n· Inflict +(Stage - 1) more Bleed and Rupture Potency using this unit's Base Attack Skill Coin effects.\n· Reverts to previous Stage when the Stack drops below the requirements.",
     "imageOverride": "Blooming Thorns I",
     "name": "Blooming Thorn",
-    "srcPath": "Blooming Thorns I"
+    "srcPath": "Blooming Thorn"
   },
   "BloomingThornsRodionSecond": {
     "buffType": "Positive",
     "desc": "- Max Value: 20\n- Stage 2 Blooming Thorn\n- Gain 1 Defense Level for every 2 Stack (max 5)\n- When hit, inflict 1 Bleed against the attacker and lose 1 Stack\n- [The Princess of La Manchaland Rodion Only]\n· At max Stack, convert to the next Stage of this effect.\n· Inflict +(Stage - 1) more Bleed and Rupture using this unit's Base Attack Skill Coin effects.\n· Reverts to previous Stage when the Stack drops below the requirements.",
     "imageOverride": "Blooming Thorns II",
     "name": "Blooming Thorn II",
-    "srcPath": "Blooming Thorns II"
+    "srcPath": "Bloodwoven Thorn"
   },
   "BloomingThornsRodionThird": {
     "buffType": "Positive",
     "desc": "- Max Value: 30\n- Stage 3 Blooming Thorn\n- Gain 1 Defense Level for every 2 Stack (max 5)\n- When hit, inflict 1 Bleed against the attacker and lose 1 Stack\n- [The Princess of La Manchaland Rodion Only]\n· At max Stack, convert to the next Stage of this effect.\n· Inflict +(Stage - 1) more Bleed and Rupture using this unit's Base Attack Skill Coin effects.\n· Reverts to previous Stage when the Stack drops below the requirements.",
     "imageOverride": "Blooming Thorns III",
     "name": "Blooming Thorn III",
-    "srcPath": "Blooming Thorns III"
+    "srcPath": "Bloodmolded Thorn"
   },
   "BloomingThorns_2nd": {
     "buffType": "Positive",
@@ -2462,6 +2462,42 @@
     "name": "Embers",
     "srcPath": "FaustFlameMothEmber"
   },
+  "FavorBuff5001AllyFirst": {
+    "buffType": "Positive",
+    "desc": "- Encounter Start: If 4+ The Middle-faction Identities are on the field, gain 2 E.G.O Resources for all Affinities\n- Attack Skills that are Envy Skills or Skills that inflict Bleed or 'Unique Bleed' deal +30% damage (for E.G.O Skills, deal +100% damage instead)\n- Combat Start: Upon A-Reson., gain 1 least-owned E.G.O resource 4 times",
+    "name": "Shade of Reflection [The Middle]",
+    "srcPath": "FavorBuffTwth"
+  },
+  "FavorBuff5001AllyTwo": {
+    "buffType": "Positive",
+    "desc": "- The Identities' Attack Skills that are Gluttony Skills or Skills that inflict Rupture deal +25% damage (for E.G.O Skills, deal +100% damage instead)\n- H Corp. Identities deal +15% damage and take -30% damage\n- Combat Start: Upon A-Reson., gain 1 least-owned E.G.O resource 4 times",
+    "name": "Shade of Reflection [Ambuscade]",
+    "srcPath": "FavorBuffTwth"
+  },
+  "FavorBuff5001EnemyFirst": {
+    "buffType": "Positive",
+    "desc": "- Encounter Start: If 4+ The Middle-faction Identities are on the field, Ricardo's first and second patterns change\n- Ricardo's Skill effects do not inflict Paralyze on Identities that have equipped Defense Skills",
+    "name": "Shade of Reflection [The Middle]",
+    "srcPath": "FavorBuffTwth"
+  },
+  "FavorBuff5001EnemySecond": {
+    "buffType": "Positive",
+    "desc": "- If the attacker's Speed is faster than Ricardo's when he is Staggered, Ricardo takes +(Speed difference x 2)% damage (max 20%)",
+    "name": "Shade of Reflection [Ambuscade]",
+    "srcPath": "FavorBuffTwth"
+  },
+  "FavorBuff5001Hard": {
+    "buffType": "Positive",
+    "desc": "- Max HP +25%\n- Skills deal +20% damage",
+    "name": "Tribulation",
+    "srcPath": "FavorBuffTwthHard"
+  },
+  "FavorBuff5001HardTwo": {
+    "buffType": "Positive",
+    "desc": "- Max HP +25%\n- Skills deal +20% damage\n- [Phase 2 Exclusive Effect]\n · Ricardo and his Siblings' SP do not fall below 0\n · Turn Start: Inflict 2 \"Written in the Book\" on all enemies that attacked Ricardo in the previous turn",
+    "name": "Tribulation",
+    "srcPath": "FavorBuffTwthHard"
+  },
   "FavorBuffTwth": {
     "buffType": "Positive",
     "desc": "- Attack Skills that are Lust Skills or Skills that inflict Bleed or 'Unique Bleed' deal +25% damage (for E.G.O Skills, deal +100% damage instead)\n- Upon A-Reson., gain 1 random least-owned E.G.O resource and 1 E.G.O resource of the Affinity used for A-Reson. (2 times per turn)",
@@ -2592,12 +2628,14 @@
   "FragmentOfHope": {
     "buffType": "Positive",
     "desc": "Gain Clash Power equal to the value",
-    "name": "WHICH TREATS THE BUS, THE COMPANIONS, AND THE ADVENTURES"
+    "name": "WHICH TREATS THE BUS, THE COMPANIONS, AND THE ADVENTURES",
+    "srcPath": "Foolhardy Duel"
   },
   "FragmentOfHopeFamilyMirror": {
     "buffType": "Positive",
     "desc": "Clash Power +1 per Stack (max 4)\nDeal +5% damage",
-    "name": "O compatriots of my dear child"
+    "name": "O compatriots of my dear child",
+    "srcPath": "Foolhardy Duel"
   },
   "FragmentOfHopeSancho": {
     "buffType": "Positive",
@@ -2607,12 +2645,14 @@
   "FragmentOfHopeTwo": {
     "buffType": "Positive",
     "desc": "Clash Power +4 for every value\nApply Shield to self and all allies at Combat Start",
-    "name": "OF HOW SANCHO, OUR DON QUIXOTE, REFUSED TO END THE DREAM"
+    "name": "OF HOW SANCHO, OUR DON QUIXOTE, REFUSED TO END THE DREAM",
+    "srcPath": "Foolhardy Duel"
   },
   "FragmentOfHopeTwoFamilyMirror": {
     "buffType": "Positive",
     "desc": "Clash Power +2 for every value (max 8)\n- Apply Shield to self and all allies at Combat Start\n- On Hit, deal 1 fixed damage",
-    "name": "Dream her dream together in my stead"
+    "name": "Dream her dream together in my stead",
+    "srcPath": "Foolhardy Duel"
   },
   "FragmentOfHopeTwoSancho": {
     "buffType": "Positive",
@@ -3183,6 +3223,7 @@
   "HugeIrritationAlly": {
     "buffType": "Positive",
     "desc": "- Min & Max Speed +3\n- If this unit's Speed is faster than the target's by 3 or more, deal +(Speed difference x 5)% damage (max 40%)\n- Inflict +2 more Tremor Potency and Tremor Count with this unit's Skills\n- Max Stack: 1",
+    "imageOverride": "HugeIrritationAlly",
     "name": "Shin (心) - Tiantui Star [天退星]",
     "srcPath": "HugeIrritationAlly"
   },
@@ -3366,30 +3407,30 @@
   "IndexPrescriptRien_0": {
     "buffType": "Neutral",
     "desc": "Attack and hit a Prescript's Target before the first turn ends.\n\n- Turn Start: Gain this effect when this unit has no Unlock\n- Maximum stackable Grace of the Prescript with this Prescript is limited to 3",
-    "imageOverride": "IndexPrescript_RienSecondPhase",
+    "imageOverride": "IndexPrescript_Base_2nd",
     "name": "Prescript: [Device] I",
-    "srcPath": "IndexPrescript_RienSecondPhase"
+    "srcPath": "IndexPrescript_Base_2nd"
   },
   "IndexPrescriptRien_1": {
     "buffType": "Neutral",
     "desc": "Attack and hit a Prescript's Target; or, before this turn passes, hit with 4 or more attacks. Complete before the 4th turn.\n\n- Turn Start: Gain this effect when this unit has Unlock - 1\n- Maximum stackable Grace of the Prescript with this Prescript is limited to 6",
-    "imageOverride": "IndexPrescript_RienSecondPhase",
+    "imageOverride": "IndexPrescript_Base_2nd",
     "name": "Prescript: [Device] II",
-    "srcPath": "IndexPrescript_RienSecondPhase"
+    "srcPath": "IndexPrescript_Base_2nd"
   },
   "IndexPrescriptRien_2": {
     "buffType": "Neutral",
     "desc": "Use a powerful Skill that uses 9 different weapon types.\n\n- Turn Start: Gain this effect if this unit has Unlock - II\n- Maximum stackable Grace of the Prescript with this Prescript is limited to 9",
-    "imageOverride": "IndexPrescript_RienSecondPhase",
+    "imageOverride": "IndexPrescript_Base_2nd",
     "name": "Prescript: [Device] III",
-    "srcPath": "IndexPrescript_RienSecondPhase"
+    "srcPath": "IndexPrescript_Base_2nd"
   },
   "IndexPrescriptRien_3": {
     "buffType": "Neutral",
     "desc": "Eliminate all obstacles before the next Prescript arrives.\n\n- Turn Start: Gain this effect if this unit has Unlock - III ",
-    "imageOverride": "IndexPrescript_RienSecondPhase",
+    "imageOverride": "IndexPrescript_Base_2nd",
     "name": "Prescript: [Device] IV",
-    "srcPath": "IndexPrescript_RienSecondPhase"
+    "srcPath": "IndexPrescript_Base_2nd"
   },
   "IndexPrescriptStudent_0": {
     "buffType": "Neutral",
@@ -3570,6 +3611,7 @@
   "IrritationAlly": {
     "buffType": "Positive",
     "desc": "- Min & Max Speed +1\n- If this unit's Speed is faster than the target's by 3 or more, deal +(Speed difference x 2.5)% damage (max 20%)\n- Inflict +1 more Tremor Potency and Tremor Count with this unit's Skills\n- If this unit has spent 8+ (sum of Tigermark Round and Savage Tigermark Round): at Turn End, convert this buff to Shin (心) - Tiantui Star [天退星] next turn\n- Max Stack: 1",
+    "imageOverride": "IrritationAlly",
     "name": "Tiantui Star [天退星]",
     "srcPath": "IrritationAlly"
   },
@@ -3816,7 +3858,8 @@
       "IGNORE_CHECED_CORRECTION_EXCLUSION"
     ],
     "desc": "- Base Offense Level +10\n- Base Defense Level +10\n- Turn End: Gain 4 Burn and lose 5 SP",
-    "name": "E.G.O Attunement Overload"
+    "name": "E.G.O Attunement Overload",
+    "srcPath": "LvUpFireFly"
   },
   "LvUpHohenheimBigBird": {
     "buffType": "Neutral",
@@ -3827,7 +3870,8 @@
   "LvUpHohenheimBigBird_Over": {
     "buffType": "Neutral",
     "desc": "- Base Offense Level +15\n- Base Defense Level +15\n- Turn End: Increase Lamp Stack to 20; lose 2 HP and 1 SP for every Stack gained (this effect does not reduce this unit's HP below 1)",
-    "name": "E.G.O Attunement Overload"
+    "name": "E.G.O Attunement Overload",
+    "srcPath": "LvUpHohenheimBigBird"
   },
   "MDHcFaBa": {
     "buffType": "Neutral",
@@ -4877,6 +4921,7 @@
       "LACERATION"
     ],
     "desc": "Unique Bleed\nTurn Start: Gain 1 Bleed and increase the Bleed Count by this effect’s Count.\nTurn End: Halve the Count. (Rounded down)",
+    "imageOverride": "Nails",
     "name": "Nails",
     "srcPath": "Nails"
   },
@@ -5717,6 +5762,25 @@
     "name": "Overwatch Assignment",
     "srcPath": "Overwatch Assignment"
   },
+  "RicardoBookRaid": {
+    "buffType": "Negative",
+    "desc": "Max Stack: 30\nTake +3% damage for every Stack",
+    "imageOverride": "Test of the Big Brother",
+    "name": "Written in the Book",
+    "srcPath": "Test of the Big Brother"
+  },
+  "RicardoJokeRaid": {
+    "buffType": "Neutral",
+    "desc": "Turn End: Lose 1 Stack\nWhile this effect is active, double damage taken from Skills, and double the amount of Stagger threshold raised from Tremor Burst",
+    "name": "Test of the Big Brother",
+    "srcPath": "Test of the Big Brother"
+  },
+  "RicardoTattooRaid": {
+    "buffType": "Positive",
+    "desc": "Max Stack: 300\nSkills gain Offense Level +1 for every 10 Stack",
+    "name": "Vengeance Tattoo",
+    "srcPath": "RicardoTattooRaid"
+  },
   "RienWeapon01Hatchet": {
     "buffType": "Neutral",
     "desc": "- Deals Blunt damage\n- On Hit without Cracking, gain 2 Poise",
@@ -5876,12 +5940,15 @@
   "RyoshuParryIndexFingerThey": {
     "buffType": "Neutral",
     "desc": "",
-    "name": "Red String"
+    "imageOverride": "RyoshuParrySojiWe",
+    "name": "Red String",
+    "srcPath": "RyoshuParrySojiWe"
   },
   "RyoshuParryIndexFingerWe": {
     "buffType": "Neutral",
     "desc": "",
-    "name": "Red String"
+    "name": "Red String",
+    "srcPath": "RyoshuParrySojiWe"
   },
   "RyoshuParrySoji": {
     "buffType": "Neutral",
@@ -6136,7 +6203,8 @@
   "SignAwakenSinclair": {
     "buffType": "Positive",
     "desc": "- When Clashing against higher-level targets, Clash Power +2\n- Turn End: If Staggered, recover from Stagger next turn",
-    "name": "Sign - Manifestation of the Future"
+    "name": "Sign - Manifestation of the Future",
+    "srcPath": "A Sign"
   },
   "SignOfDespair": {
     "buffType": "Positive",
@@ -6259,7 +6327,8 @@
   "SnakePoisonJinWeak": {
     "buffType": "Negative",
     "desc": "- Offense Level -1\n- Defense Level -1",
-    "name": "Snake Venom"
+    "name": "Snake Venom",
+    "srcPath": "Spreading Snake Venom"
   },
   "SnakeStance": {
     "buffType": "Positive",
@@ -6690,7 +6759,7 @@
     "desc": "Apply the following effects to this unit's Base Attack Skills and Clashable Counter Skill based on Corpus Ingredient Potency:\n- 1+ : Base Power +1\n- 2+ : If the enemy has Bleed or 'Unique Bleed', deal +10% damage\n- 3+ : Inflict +1 more Bleed Potency and Count\n- 4+ : Base Power +1\n- 5+ : Base Power +1",
     "imageOverride": "Artwork Tibia",
     "name": "Artwork: Tibia",
-    "srcPath": "Artwork Tibia"
+    "srcPath": "MineTheRings"
   },
   "TickTockTickTock": {
     "buffType": "Positive",
@@ -6775,6 +6844,7 @@
   "TimeRentalTwoPersonality": {
     "buffType": "Positive",
     "desc": "Turn End at 2+ Count:\n- Gain (Borrowed Time Count - 1) Haste, Clash Power Up, and Fragile next turn\n- If this unit is set to gain more Bind than Haste next turn, the Borrowed Time effect expires at the next Turn Start, and this unit gets Staggered\n\nTurn End: At 1 Count, gain 2(Borrowed Time Stack - 1) Bind next turn\nTurn End: Gain 1 Stack, lose 1 Count",
+    "imageOverride": "Borrowed Time",
     "name": "Borrowed Time",
     "srcPath": "Borrowed Time"
   },
@@ -6972,7 +7042,7 @@
     "desc": "- Max Stack: 30\n- Offense Level +1, Defense Level +1 for every 5 Stack",
     "imageOverride": "VengeanceBookSpider",
     "name": "Book of Vengeance [Heathcliff]",
-    "srcPath": "VengeanceBookSpider"
+    "srcPath": "Book of Vengeance [Sinclair]"
   },
   "VengeanceBookSinclair": {
     "buffType": "Positive",
@@ -7453,6 +7523,7 @@
       "IGNORE_CHECED_CORRECTION_EXCLUSION"
     ],
     "desc": "- Lose 20 Base Offense Level, Lose 20 Base Defense Level",
-    "name": "Bloodthirst Suppressed"
+    "name": "Bloodthirst Suppressed",
+    "srcPath": "Crushed Bloodthirst"
   }
 }
