@@ -78,6 +78,45 @@
           "desc": "Skill Power +2 against units that have [Combustion]\nDeal +5% damage per 1 [Combustion] on target (Max 100%)\n[EnemyKill] Gain +2 [Enhancement] next turn",
           "name": "4th Match Flame",
           "uptie": 4
+        },
+        {
+          "atkWeight": 3,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1
+            },
+            {
+              "type": "base",
+              "value": 2.0
+            }
+          ],
+          "coinValue": 16,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "wrath"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Deal (([Combustion] on target x 2)% of this Coin's final damage) Wrath damage (max 20%)",
+                "[OnSucceedAttack] Inflict 4 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Skill Power +2 against units that have [Combustion]\n[BeforeAttack] Deal +5% damage for every 1 total sum of [Combustion] on all targets (max 100%)\n[EnemyKill] Gain 2 [Enhancement] next turn",
+          "name": "4th Match Flame",
+          "uptie": 5
         }
       ],
       "type": "awakening"
@@ -162,22 +201,67 @@
           "desc": "[CantIdentify]\nTargets randomly\nSkill Power +4 against units that have [Combustion]\nDeal +5% damage per 1 [Combustion] on target (Max 100%)\n[EnemyKill] Gain 3 [Enhancement] next turn\n[EnemyKillFail] Gain 3 [Enhancement] and 10 [Combustion] next turn",
           "name": "4th Match Flame",
           "uptie": 4
+        },
+        {
+          "atkWeight": 3,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1
+            },
+            {
+              "type": "base",
+              "value": 4.0
+            }
+          ],
+          "coinValue": -16,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "wrath"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Deal (([Combustion] on target x 3)% of this Coin's final damage) Wrath damage (max 30%)",
+                "[OnSucceedAttack] Inflict 4 [Combustion]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\nSkill Power +4 against units that have [Combustion]\n[BeforeAttack] Deal +5% damage for every 1 total sum of [Combustion] on all targets (max 100%)\n[DefeatDuel] Base Power -16\n[EnemyKill] Gain 3 [Enhancement] next turn\n[EnemyKillFail] Gain 3 [Enhancement] and 10 [Combustion] next turn",
+          "name": "4th Match Flame",
+          "uptie": 5
         }
       ],
       "type": "corrosion"
     }
   ],
+  "maxThreadspin": 5,
   "notes": {
     "main": [
-      "High clashing E.G.O."
+      "High clashing E.G.O with 3 atk weight and decent damage buffs based on {st:Combustion} on her target."
     ],
     "other": [
-      "Adds +4 power to every 4th skill use after using this E.G.O."
+      "Adds +4 power, {st:Combustion}, damage, and SP support to every 4th skill use after using this E.G.O."
     ]
   },
   "passiveList": [
     {
       "desc": "Every 4th Skill this unit uses gains Final Power +4 and inflicts 4 [Combustion] On Hit",
+      "name": "4th Match Flame"
+    },
+    {
+      "desc": "Every 4th Skill this unit uses gains Final Power +4 and inflicts 4 [Combustion] On Hit\n- If the said Skill is a Wrath Skill, deal +([Combustion] Potency on all targets / 2)% additional damage (max 20%)\n- If the said Skill is an E.G.O Skill, apply the following effects at Coin Start of the first Coin:\n· If the said Coin is a Plus Coin, heal 10 SP\n· If the said Coin is a Minus Coin, lose 15 SP (this effect cannot reduce this unit's SP below -40)",
       "name": "4th Match Flame"
     }
   ]

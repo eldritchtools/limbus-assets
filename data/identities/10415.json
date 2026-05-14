@@ -1,0 +1,637 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1041502",
+        "1041504"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1041502",
+        "1041504",
+        "1041501"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1041502",
+        "1041504",
+        "1041503",
+        "1041501"
+      ],
+      "uptie": 3
+    }
+  ],
+  "notes": {
+    "other": [
+      "Has a 1 turn death protection."
+    ],
+    "usage": [
+      "She gains {st:SojiRyoshuEchoPast} when she targets enemies with {st:SojiRyoshuEchoFuture} or when House of Spiders allies die and consumes it when using her S3-2. It increases the {st:PhantomIncisionID} application and {kw:Slash} damage on her skills. It also adds atk weight on her S3 and coin power on her S3-2's final coin. Its min and max caps increase based on the number of House of Spiders allies deployed or when she uses her S3-2 starting at 0-4 and ending at 5-9.",
+      "{st:SojiRyoshuEchoFuture} is a debuff she passively inflicts on enemies every turn. When targeting enemies with the debuff, she uses her S2-2 to consume the debuff before using her base attack. The base attack gains {st:SuperCoin}s, +1 Final Power, and grants her 1 {st:SojiRyoshuEchoPast}. If her S3 is used to trigger this, the S2-2 hits all enemies with {st:SojiRyoshuEchoFuture} instead of only the main target.",
+      "Any damage she takes is automatically transferred to any House of Spiders allies currently on the field. She gains unique buffs for each HoS ally that dies and additionally gains 1 {st:SojiRyoshuEntangle}, which gives her S3-2 an additional coin, for each Nursefather that dies.\n- {id:10115}: Convert her attacks' final coins to {st:SuperCoin} and gives them +10% damage.\n- {id:10215}: 10% HP shield every turn\n- {id:10314}: On base attacks, {st:Breath} on use and {st:Sinking} on crit\n- {id:10614}: Gain {st:MelodyBodyArt}\n- {id:10814}: Defense level and {st:Combustion} application\n- {id:11015}: {st:Breath} Count and {st:CriticalDamageUp} every turn\n\nShe also gains more skill slots depending on the number of HoS allies that have died when there aren't any backups left.",
+      "Inflicts {st:PhantomIncisionID} on her skills with S3-2 consuming them to deal more damage. She gains {st:PhantomIncisionTotalID} for each stack inflicted up to 25 per turn. At 50+, she gains a free use of her S3-2. She also uses her S3-3 the first time she reaches 50, giving her {st:SojiRyoshuShin}",
+      "Using her defense skill causes her to use her S1-2 to kill her House of Spiders allies. If she has {st:SojiRyoshuEntangle} it kills two instead. It prioritizes the ids that are the latest in the deployment order except {id:11015} who is always prioritized last. Each use of her S1-2 gives her a few additional benefits on top of the kill:\n- Lose 1 offense level but gain 1 base power for all attacks for the rest of the encounter (stacks up to 4 times)\n- Gain {st:RyoshuEGOPF} based on damage dealt (for use with {ego:20409})\n- Heals 20 SP\n- Inflicts 20 {st:PhantomIncisionID} giving her 20 {st:PhantomIncisionTotalID}"
+    ]
+  },
+  "passiveData": {
+    "1041501": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Deal +1% damage on Critical Hit using Base Attack Skills for every 1 surplus [Breath] past 20 [Breath] on self (max 10%)\nOn Crit using Base Attack Skills, inflict 1 [PhantomIncisionID]\n\nGreat Trichiliocosm Ryōshū E.G.O Passive can be activated using Attack Skills targeting allies",
+      "name": "Afterimage Reverberation"
+    },
+    "1041502": {
+      "desc": "Upon entering the Encounter for the first time, gain 0 [SojiRyoshuEchoPast] and 0 [SojiRyoshuEntangle]\n\nUpon entering the Encounter for the first time, for every 3 The House of Spiders Identities in the Loadout (including this unit), raise [SojiRyoshuEchoPast]'s Min & Max Stack cap by 1 (max 3)\n\nIf any of The House of Spiders allied Identities are on the field, transfer HP damage taken to The House of Spiders Identity that has the lowest current HP percentage\n\nWhen this unit takes damage that brings its HP down to 0, this unit's HP does not drop below 1 for the turn (once per Encounter)\n\nApply the following effects based on The House of Spiders ally death:\n- Gain 1 [SojiRyoshuEchoPast]\n- For this Encounter, gain additional effects based on which of The House of Spiders allied Identity was defeated\n · The House of Spiders: The Index Nursefather Yi Sang: On Base Attack Skill Use, convert the final Coin into [SuperCoin]. Deal +10% damage with Base Attack Skills' [SuperCoin]s\n · The Index Proxy - Effloresced E.G.O::Procuration Don Quixote: On Base Attack Skill Use, gain 2 [Breath]. On Crit using Base Attack Skills, inflict 1 [Sinking]\n · The House of Spiders: The Middle Apprentice Ishmael: Defense Level +2. Inflict +1 more [Combustion] Potency using Base Skills\n · The House of Spiders: The Ring Nursefather Hong Lu: Gain [MelodyBodyArt]\n · The House of Spiders: The Ring Apprentice Faust: Gain Shield equal to 10% HP at every Turn Start\n · The House of Spiders: The Pinky Apprentice Sinclair: Gain +1 [Breath] Count and 1 [CriticalDamageUp] at every Turn Start\n\nIf there are no Identities left to Substitute or Return, Blade of the House of Spiders Ryōshū gains +1 Skill Slot for every 3 The House of Spiders allies that are defeated (max 3 times)\n- This effect cannot increase Skill Slots beyond the maximum Skill Slot cap of this Encounter\n- For certain game contents, this effect can activate regardless of the contents' Skill Slot increase restriction\n\nThis Identity only counts as an Identity that applies [Combustion], [Laceration], and [Breath]\n\nWhen conditions are met, change battle music for the rest of the Encounter (excluding certain Encounters)",
+      "name": "Saikai [再会]"
+    },
+    "1041503": {
+      "desc": "At 50+ [PhantomIncisionTotalID], activate \"Rend Space - String Connection\" against a random enemy at the very end of that turn (once per Encounter)\n- After using \"Rend Space - String Connection\" due to this effect, apply the following effects on self:\n· Cannot Retreat for this Encounter\n· Turn End: At 50+ [PhantomIncisionTotalID], replace a Base Skill with \"Rend Space - Echoshear\" at the next Turn Start (prioritizes the Skill on the leftmost Slot's bottom row on the Dashboard)",
+      "name": "Dihui Star [地慧星]"
+    },
+    "1041504": {
+      "desc": "Turn Start: Inflict [SojiRyoshuEchoFuture] on a random enemy (in Focused Encounters, the Core)\n- Inflict [SojiRyoshuEchoFuture] on 1 additional random enemy for every 3 defeated The House of Spiders allied Identities (max 3)\n- Combat Start: If an enemy that has [SojiRyoshuEchoFuture] is the main target of this unit's Base Attack Skills, use \"Inevitable Termination\" as an Unopposed Attack before using the said Base Attack Skill (once per turn)\n- On Base Attack Skill Use against target that has [SojiRyoshuEchoFuture],\n · Convert all Coins of the said Skill into [SuperCoin]s and gain Final Power +1\n · Gain 1 [SojiRyoshuEchoPast] (once per turn)",
+      "name": "Spacetime Afterimage Collapse"
+    },
+    "1041521": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "When the ally with the earliest Deployment order uses a Base Skill, the said ally gains 2 [Breath] Potency (3 times per turn)",
+      "name": "The Master's Tutelage [師事]"
+    }
+  },
+  "skills": {
+    "1041501": {
+      "bonusNotes": "Assumes 9 Entanglement. Ignores offense level and power changes from her S1-2.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]",
+                "[CriticalOnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[CriticalOnSucceedAttack] Inflict +1 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "crit",
+                    "op": "mul",
+                    "type": "slash"
+                  },
+                  "type": "damage",
+                  "value": 0.18
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Inflict 2 [PhantomIncisionID]",
+                "[OnSucceedAttack] Inflict [PhantomIncisionID] equal to [SojiRyoshuEchoPast] on self (max 4)",
+                "[CriticalOnSucceedAttack] Inflict 2 [Laceration]",
+                "[CriticalOnSucceedAttack] Deal Slash damage equal to ([SojiRyoshuEchoPast] x 2)% of this Coin's final damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "levelCorrection": 2,
+          "name": "Tripleslash [三連]",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "[WhenUse] At 6+ [Breath], Coin Power +1\n[WhenUse] Gain +3 [Breath] Count",
+          "name": "Tripleslash [三連]",
+          "uptie": 2
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]",
+                "[CriticalOnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[CriticalOnSucceedAttack] Inflict +1 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "crit",
+                    "op": "mul",
+                    "type": "slash"
+                  },
+                  "type": "damage",
+                  "value": 0.18
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Inflict 2 [PhantomIncisionID]",
+                "[OnSucceedAttack] Inflict [PhantomIncisionID] equal to [SojiRyoshuEchoPast] on self (max 4)",
+                "[CriticalOnSucceedAttack] Inflict 2 [Laceration]",
+                "[CriticalOnSucceedAttack] Deal Slash damage equal to ([SojiRyoshuEchoPast] x 2)% of this Coin's final damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 6+ [Breath], Coin Power +1\n[WhenUse] Gain +3 [Breath] Count",
+          "name": "Tripleslash [三連]",
+          "uptie": 3
+        },
+        {
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "desc": "[WhenUse] At 6+ [Breath], Coin Power +1\n[WhenUse] Final Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 2)\n[WhenUse] Gain +3 [Breath] Count",
+          "name": "Tripleslash [三連]",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1041502": {
+      "bonusNotes": "Assumes 9 Entanglement. Ignores offense level and power changes from her S1-2.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[CriticalOnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[CriticalOnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "cond": "crit",
+                    "op": "mul",
+                    "type": "slash"
+                  },
+                  "type": "damage",
+                  "value": 0.27
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[CriticalOnSucceedAttack] Inflict 2 [Laceration]",
+                "[CriticalOnSucceedAttack] Deal Slash damage equal to ([SojiRyoshuEchoPast] x 3)% of this Coin's final damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "levelCorrection": 3,
+          "name": "Tripleslash - Echoshear [三連 - 殘]",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "[WhenUse] At 6+ [Breath], Coin Power +1\n[WhenUse] Gain +3 [Breath] Count",
+          "name": "Tripleslash - Echoshear [三連 - 殘]",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "[WhenUse] At 6+ [Breath], Coin Power +1\n[WhenUse] Gain +3 [Breath] Count",
+          "name": "Tripleslash - Echoshear [三連 - 殘]",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "desc": "[WhenUse] At 6+ [Breath], Coin Power +1\n[WhenUse] Final Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 2)\n[WhenUse] Gain +3 [Breath] Count",
+          "name": "Tripleslash - Echoshear [三連 - 殘]",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1041503": {
+      "bonusNotes": "Assumes 9 Entanglement against a single target. Ignores offense level and power changes from her S1-2.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.45
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            },
+            {
+              "type": "final",
+              "value": 5
+            },
+            {
+              "type": "atkweight",
+              "value": 2
+            }
+          ],
+          "coinValue": 10,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.3
+                },
+                {
+                  "extra": {
+                    "cond": "crit",
+                    "op": "mul",
+                    "type": "slash"
+                  },
+                  "type": "damage",
+                  "value": 0.27
+                }
+              ],
+              "descs": [
+                "Deal +30% damage on Critical Hit",
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[OnSucceedAttack] Inflict 3 [Combustion]",
+                "[CriticalOnSucceedAttack] Activate [Combustion] on target. Target loses 1 [Combustion] Count",
+                "[CriticalOnSucceedAttack] Activate [Laceration] on target. Target loses 1 [Laceration] Count",
+                "[CriticalOnSucceedAttack] Deal Slash damage equal to ([SojiRyoshuEchoPast] x 3)% of this Coin's final damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Final Power +1 for every 4 [Breath] on self (max 5)\n[WhenUse] Deal +5% damage for every [SojiRyoshuEchoPast] on self\n[WhenUse] Gain 5 [Breath]\n[WhenUse] Gain +1 Atk Weight for every 2 [SojiRyoshuEchoPast] on self (max 2)\n[WhenUse] Deal +15% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Parts)\n[EndSkill] Randomly inflict ([SojiRyoshuEchoPast] on self + 10) [PhantomIncisionID] between targets hit by this Skill",
+          "levelCorrection": 4,
+          "name": "Rend Space [空間斬]",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.45
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.6
+            },
+            {
+              "type": "final",
+              "value": 5
+            },
+            {
+              "type": "atkweight",
+              "value": 2
+            }
+          ],
+          "coinValue": 12,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.5
+                },
+                {
+                  "extra": {
+                    "cond": "crit",
+                    "op": "mul",
+                    "type": "slash"
+                  },
+                  "type": "damage",
+                  "value": 0.36
+                }
+              ],
+              "descs": [
+                "Deal +50% damage on Critical Hit",
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[OnSucceedAttack] Inflict 3 [Combustion]",
+                "[CriticalOnSucceedAttack] Activate [Combustion] on target. Target loses 1 [Combustion] Count",
+                "[CriticalOnSucceedAttack] Activate [Laceration] on target. Target loses 1 [Laceration] Count",
+                "[CriticalOnSucceedAttack] Deal Slash damage equal to ([SojiRyoshuEchoPast] x 4)% of this Coin's final damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Final Power +1 for every 4 [Breath] on self (max 5)\n[WhenUse] Base Power +1 for every 6 ([Combustion] + [Laceration]) on the main target (max 5)\n[WhenUse] Deal +5% damage for every [SojiRyoshuEchoPast] on self\n[WhenUse] Gain 5 [Breath]\n[WhenUse] Gain +1 Atk Weight for every 2 [SojiRyoshuEchoPast] on self (max 2)\n[WhenUse] Deal +30% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Parts)\n[EndSkill] Randomly inflict ([SojiRyoshuEchoPast] on self + 10) [PhantomIncisionID] between targets hit by this Skill",
+          "name": "Rend Space [空間斬]",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1041504": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[StartBattle] Targets 1 The House of Spiders ally with the lattermost Deployment order (2 times per turn)\n- At 1+ [SojiRyoshuEntangle], target 1 additional ally\n- At Skill End of all of the Skills equipped by target this turn, or if target is Staggered, or if target does not have any Skills remaining to be used, use \"Slay the Heavens - Tiansha\" against target as an Unopposed Attack (once per Identity)\n - Prioritizes The House of Spiders: The Pinky Apprentice Sinclair last\n[StartBattle] Gain +3 [Breath] Count (once per turn)",
+          "levelCorrection": 2,
+          "name": "Phantom Step [殘像步]",
+          "uptie": 1
+        },
+        {
+          "affinity": "pride",
+          "desc": "[StartBattle] Targets 1 The House of Spiders ally with the lattermost Deployment order (2 times per turn)\n- At 1+ [SojiRyoshuEntangle], target 1 additional ally\n- At Skill End of all of the Skills equipped by target this turn, or if target is Staggered, or if target does not have any Skills remaining to be used, use \"Slay the Heavens - Tiansha\" against target as an Unopposed Attack (once per Identity)\n - Prioritizes The House of Spiders: The Pinky Apprentice Sinclair last\n[StartBattle] Gain +3 [Breath] Count (once per turn)\n[OnSucceedEvade] Gain 1 [Breath] (3 times per turn)",
+          "name": "Phantom Step [殘像步]",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1041505": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 16,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 20 [PhantomIncisionID]",
+                "[OnSucceedAttack] If target is a The House of Spiders ally, deal 120% HP damage as fixed damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nThis Skill does not trigger Defense Skills, and external effects cannot trigger this Skill to be Reused\nDeactivates allies' \"Base factors decreasing Sanity\" while using this Skill\n[WhenUse] For this Encounter, lose 1 Offense Level and gain Base Power +1 for this unit's Attacks (4 times per Encounter)\n[TargetKill] Heal 20 SP\n[TargetKill] Gain [RyoshuEGOPF] equal to damage dealt using this Skill",
+          "levelCorrection": 5,
+          "name": "Slay the Heavens - Tiansha [天殺]",
+          "uptie": 1
+        }
+      ],
+      "tier": 1
+    },
+    "1041506": {
+      "bonusNotes": "Ignores offense level and power changes from her S1-2.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 4,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "Deal +30% damage on Critical Hit",
+                "[OnSucceedAttack] Inflict 2 [PhantomIncisionID]",
+                "[OnSucceedAttack] Inflict [PhantomIncisionID] equal to [SojiRyoshuEchoPast] on self (max 4)",
+                "[OnSucceedAttack] Activate [Combustion] on target. Target loses 1 [Combustion] Count",
+                "[CriticalOnSucceedAttack] Inflict 1 [SlashTakeDamageUp]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nThis Skill does not trigger Defense Skills, and external effects cannot trigger this Skill to be Reused\n[WhenUse] Gain +1 [Breath] Count\n[BeforeAttack] If this Skill was triggered by Skill 3,\n- Apply this Skill's Atk Weight equal to the number of enemies that have [SojiRyoshuEchoFuture] (min 1)\n- Prioritize enemies that have [SojiRyoshuEchoFuture]\n[EndSkill] Target's [SojiRyoshuEchoFuture] expires",
+          "levelCorrection": 4,
+          "name": "Inevitable Termination [必然殺]",
+          "uptie": 1
+        }
+      ],
+      "tier": 2
+    },
+    "1041507": {
+      "bonusNotes": "Assumes 9 Entanglement and 4 String Severance against a single target. Ignores offense level and power changes from her S1-2.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 3,
+          "baseValue": 16,
+          "bonuses": [
+            {
+              "extra": {
+                "cond": "tolastcoin"
+              },
+              "type": "coin",
+              "value": 9
+            },
+            {
+              "type": "base",
+              "value": -4
+            },
+            {
+              "extra": {
+                "num": 1
+              },
+              "type": "addcoin",
+              "value": 4
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1
+            }
+          ],
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count",
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.3
+                },
+                {
+                  "extra": {
+                    "cond": "crit",
+                    "op": "mul",
+                    "type": "slash"
+                  },
+                  "type": "damage",
+                  "value": 0.36
+                }
+              ],
+              "descs": [
+                "Deal +30% damage on Critical Hit",
+                "[OnSucceedAttack] Consume all [PhantomIncisionID] on target and deal Slash damage equal to ([PhantomIncisionID] consumed / 10)% of this Coin's final damage",
+                "[CriticalOnSucceedAttack] Deal Slash damage equal to ([SojiRyoshuEchoPast] x 4)% of this Coin's final damage",
+                "[CriticalOnSucceedAttack] Activate [Combustion] on target. Target loses 1 [Combustion] Count",
+                "[CriticalOnSucceedAttack] Activate [Laceration] on target. Target loses 1 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] For every [SojiRyoshuEntangle] on self, this Skill loses 1 Base Power and gains an extra Coin 1 before using Coin 2\n[WhenUse] The final Coin gains Coin Power +1 for every [SojiRyoshuEchoPast] on self\n[WhenUse] Deal +50% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Parts)\n[EndSkill] Raise [SojiRyoshuEchoPast]'s Min & Max Stack cap by 1 and reset [SojiRyoshuEchoPast] on self to minimum Stack (max 2 times per Encounter)\n[EndSkill] Consume 50 [PhantomIncisionTotalID]",
+          "levelCorrection": 5,
+          "name": "Rend Space - Echoshear [空間斬 - 殘]",
+          "uptie": 3
+        }
+      ],
+      "tier": 3
+    },
+    "1041508": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 5,
+          "baseValue": 14,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Combustion]",
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Activate [Combustion] on target. Target loses 1 [Combustion] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nThis Skill does not trigger the target's Defense Skills\n[WhenUse] Gain 5 [Breath]\n[WhenUse] Gain [SojiRyoshuShin]\n[EndSkill] Remove this unit's first Stagger Threshold (once per Encounter)",
+          "levelCorrection": 4,
+          "name": "Rend Space - String Connection [空間斬 - 緣]",
+          "uptie": 3
+        }
+      ],
+      "tier": 3
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1041521"
+      ],
+      "uptie": 3
+    }
+  ]
+}
