@@ -1,0 +1,237 @@
+{
+  "name": "Level 20 - Gluttony",
+  "siteId": "751c27d0-601e-4180-908e-e719e0e927c0",
+  "targets": [
+    {
+      "name": "Alleyway Watchdog",
+      "parts": [
+        {
+          "breakSection": [
+            50,
+            20
+          ],
+          "defCorrection": 0,
+          "hp": 43.59,
+          "name": "Body",
+          "partId": 870501,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 0.75,
+            "gluttony": 2,
+            "lust": 0.75,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 0.75,
+            "wrath": 0.75
+          },
+          "speed": [
+            1,
+            3
+          ]
+        },
+        {
+          "breakSection": [
+            33
+          ],
+          "defCorrection": 0,
+          "hp": 125.24,
+          "name": "Telepole",
+          "partId": 870502,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 0.75,
+            "gluttony": 2,
+            "lust": 0.75,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 0.75,
+            "wrath": 0.75
+          },
+          "speed": [
+            1,
+            3
+          ]
+        },
+        {
+          "breakSection": [
+            70,
+            43
+          ],
+          "defCorrection": 0,
+          "hp": 87.18,
+          "name": "Person",
+          "partId": 870503,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 0.75,
+            "gluttony": 2,
+            "lust": 0.75,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 0.75,
+            "wrath": 0.75
+          },
+          "speed": [
+            1,
+            3
+          ]
+        },
+        {
+          "breakSection": [
+            70,
+            30
+          ],
+          "defCorrection": 0,
+          "hp": 43.59,
+          "name": "Head",
+          "partId": 870504,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 0.75,
+            "gluttony": 2,
+            "lust": 0.75,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 0.75,
+            "wrath": 0.75
+          },
+          "speed": [
+            1,
+            3
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "When the Telephone Pole is hit, inflict 2 [ElectricShock] on the attacker this turn.\nAt 5+ [DogThunder], all Parts will inflict 3 [ElectricShock] on the attacker, starting next turn.\n(Lasts until [DogThunder] reaches 0.)\nWhen hit by a Sloth attack, the amount of [ElectricShock] inflicted is halved. (Rounded up.)",
+          "name": "Lightning Rod"
+        },
+        {
+          "desc": "While the telephone pole isn’t broken, gain 1 [DogThunder] after an attack.\nWhenever the telephone pole is hit by an attack, lose 1 [DogThunder].",
+          "name": "Lightning"
+        },
+        {
+          "desc": "When the telephone pole is Staggered or Broken, lose all [DogThunder].\nAll attacks of Alleyway Watchdog will then be canceled for the turn.",
+          "name": "Breaking Pieces"
+        }
+      ],
+      "portrait": "8032",
+      "skills": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Claw"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 9,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Constant Voltage"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 4 [Burst] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Electromotive Pursuit"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 2,
+          "baseValue": 3,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Binding] next turn",
+                "[OnSucceedAttackHead] Inflict 4 [Disarming]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Howl"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst] next turn",
+                "[OnSucceedAttackHead] Inflict 5 [Burst] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Lightning Rod"
+        }
+      ]
+    }
+  ]
+}

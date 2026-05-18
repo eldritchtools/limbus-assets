@@ -1,0 +1,221 @@
+{
+  "name": "Level 50 - Envy",
+  "siteId": "c2ffe5a6-f693-43e7-acec-7c5b72b08623",
+  "targets": [
+    {
+      "name": "Blubbering Toad",
+      "parts": [
+        {
+          "defCorrection": -1,
+          "hp": 691.2,
+          "name": "Body",
+          "partId": 876201,
+          "resists": {
+            "blunt": 1,
+            "envy": 2,
+            "gloom": 0.75,
+            "gluttony": 0.75,
+            "lust": 0.75,
+            "pierce": 1,
+            "pride": 0.5,
+            "slash": 1,
+            "sloth": 0.75,
+            "wrath": 0.5
+          },
+          "speed": [
+            1,
+            4
+          ]
+        },
+        {
+          "breakSection": [
+            40
+          ],
+          "defCorrection": -1,
+          "hp": 194.8,
+          "name": "Body",
+          "partId": 876202,
+          "resists": {
+            "blunt": 1,
+            "envy": 2,
+            "gloom": 0.75,
+            "gluttony": 0.75,
+            "lust": 0.75,
+            "pierce": 1,
+            "pride": 0.5,
+            "slash": 1,
+            "sloth": 0.75,
+            "wrath": 0.5
+          },
+          "speed": [
+            1,
+            4
+          ]
+        },
+        {
+          "breakSection": [
+            50
+          ],
+          "defCorrection": -1,
+          "hp": 223.8,
+          "name": "Body",
+          "partId": 876203,
+          "resists": {
+            "blunt": 1,
+            "envy": 2,
+            "gloom": 0.75,
+            "gluttony": 0.75,
+            "lust": 0.75,
+            "pierce": 1,
+            "pride": 0.5,
+            "slash": 1,
+            "sloth": 0.75,
+            "wrath": 0.5
+          },
+          "speed": [
+            1,
+            4
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "When an Eye Part breaks, the enemy with the least SP loses 35 SP.",
+          "name": "Blue Resin"
+        }
+      ],
+      "portrait": 8510,
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 5 [Sinking] and +5 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Target loses 15 SP",
+          "levelCorrection": 4,
+          "name": "Crying Slap"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[AlwaysUse] Deal SP damage by half of damage displayed",
+                "[AlwaysUse] No HP damage is dealt"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartDuel] Target heals 5 SP",
+          "levelCorrection": 4,
+          "name": "Gloomy Slap"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Deal bonus damage by target’s [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Deal bonus SP damage by target’s [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Target loses 5 SP\nIf target’s SP is below 0, +10% Damage",
+          "levelCorrection": 4,
+          "name": "Melty Eyeball"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Deal bonus damage by target’s [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Deal bonus SP damage by target’s [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Target loses 5 SP\nTargets the enemy with the most [Sinking]",
+          "levelCorrection": 4,
+          "name": "Gushing Gloom"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 3,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Double target’s [Sinking] and its Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[DefeatDuel] Cancel all skills\n[DefeatDuel] Gain 3 [Vulnerable]\nIf the target is below 0 SP, +10% Damage",
+          "levelCorrection": 4,
+          "name": "Eyeball Weight"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[StartBattle] Gain 2 [Protection]",
+          "levelCorrection": 10,
+          "name": "Croohoo"
+        }
+      ]
+    }
+  ]
+}

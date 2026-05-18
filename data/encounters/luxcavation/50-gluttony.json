@@ -1,0 +1,229 @@
+{
+  "name": "Level 50 - Gluttony",
+  "siteId": "7d52b4cb-e595-4269-b6a0-b80f5ebbad55",
+  "targets": [
+    {
+      "name": "Fairy-Long-Legs",
+      "parts": [
+        {
+          "defCorrection": -9,
+          "hp": 266.6,
+          "name": "Body",
+          "partId": 875701,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 0.5,
+            "gluttony": 2,
+            "lust": 0.75,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 0.75
+          },
+          "speed": [
+            3,
+            4
+          ]
+        },
+        {
+          "defCorrection": -9,
+          "hp": 114.3,
+          "name": "Body",
+          "partId": 875702,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 0.5,
+            "gluttony": 2,
+            "lust": 0.75,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 0.75
+          },
+          "speed": [
+            3,
+            4
+          ]
+        },
+        {
+          "defCorrection": -9,
+          "hp": 76.2,
+          "name": "Body",
+          "partId": 875703,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 0.5,
+            "gluttony": 2,
+            "lust": 0.75,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 0.75
+          },
+          "speed": [
+            3,
+            4
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "When the arm is broken, the unit gains 2 [Reduction] every turn.",
+          "name": "Lost Means"
+        },
+        {
+          "desc": "When the head is broken, the unit gains 4 Defense Level Down and 1 [Vulnerable] every turn.",
+          "name": "Damaged Shade"
+        }
+      ],
+      "portrait": 8059,
+      "skills": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has [Laceration], inflict 1 [Paralysis]",
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                "[OnSucceedAttack] If target has 2+ [Laceration] Count, inflict 5 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Skim Wounds"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has [Laceration], inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Entangled Injury"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[OnSucceedAttack] If target has [Laceration], heal 20 HP"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 2+ [Laceration] Count, inflict 5 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Smeared Flesh"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Remove all [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Spawn a Giant Clover next turn\n[DefeatDuel] The Giant Clover spawns with 70% HP",
+          "levelCorrection": 3,
+          "name": "Casting Shade"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal by 1% of Max HP per target's [Laceration]\nRemove all [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Churning"
+        }
+      ]
+    },
+    {
+      "name": "Giant Leaf",
+      "parts": [
+        {
+          "defCorrection": 4,
+          "hp": 66.5,
+          "name": "Body",
+          "partId": 875801,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 0.5,
+            "gluttony": 2,
+            "lust": 0.75,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 0.75
+          },
+          "speed": [
+            1,
+            1
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "At the start of the turn, give 1 [TakeHpHealIncrease] and 1 [Enhancement] to Fairy-Long-Legs.",
+          "name": "Contaminating Leaf"
+        }
+      ],
+      "portrait": 8062
+    }
+  ]
+}

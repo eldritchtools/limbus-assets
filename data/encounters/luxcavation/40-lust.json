@@ -1,0 +1,264 @@
+{
+  "name": "Level 40 - Lust",
+  "siteId": "bc331dda-bf4a-4d37-9f92-99022421e44c",
+  "targets": [
+    {
+      "name": "Drifting Fox",
+      "parts": [
+        {
+          "breakSection": [
+            55
+          ],
+          "defCorrection": -8,
+          "hp": 324.7,
+          "name": "Body",
+          "partId": 874201,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 0.75,
+            "gluttony": 0.75,
+            "lust": 2,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 0.5
+          },
+          "speed": [
+            2,
+            4
+          ]
+        },
+        {
+          "breakSection": [
+            30
+          ],
+          "defCorrection": -8,
+          "hp": 139.3,
+          "name": "Head",
+          "partId": 874202,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 0.75,
+            "gluttony": 0.75,
+            "lust": 2,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 0.5
+          },
+          "speed": [
+            2,
+            4
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "At 15% HP, the unit's Speed is fixed at 1, and gains 1 [Reduction].\nNewly spawned Old Umbrellas have 30% more HP. Uses 'Cries Seeking Something' every turn.",
+          "name": "Last Struggle"
+        },
+        {
+          "desc": "After the back is broken, gain 3 Fragile every turn. Inflict +2 [Burst].",
+          "name": "Broken Umbrella"
+        },
+        {
+          "desc": "After the head umbrella is broken, gain 5 [AttackDown] every turn. Inflict +2 [Sinking].",
+          "name": "Ragged Umbrella"
+        }
+      ],
+      "portrait": 8046,
+      "skills": [
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "Gloomy Moan"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "Raging Withdrawal"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "Sorrowful Recoil"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Burst]",
+                "[OnSucceedAttackHead] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "Sorrowful Torrent"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 5,
+          "baseValue": 12,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Sinking]",
+                "[OnSucceedAttackHead] Deal +15% damage for each Old Umbrella"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Spawn an Old Umbrella next turn",
+          "levelCorrection": 5,
+          "name": "Cries Seeking Something"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[StartBattle] All enemies lose 20 SP",
+          "levelCorrection": 5,
+          "name": "Waiting"
+        }
+      ]
+    },
+    {
+      "name": "Old Umbrella",
+      "num": 5,
+      "parts": [
+        {
+          "breakSection": [
+            50
+          ],
+          "defCorrection": -5,
+          "hp": 39.6,
+          "name": "Umbrella",
+          "partId": 874301,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 0.75,
+            "gluttony": 0.75,
+            "lust": 2,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 0.5
+          },
+          "speed": [
+            1,
+            1
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "When this unit is defeated, the Sinner that defeated it gains 2 [Agility] next turn.\nAll parts of Drifting Fox are inflicted with 2 [Binding] and 1 Umbrella Splinters.",
+          "name": "Old and Abandoned"
+        }
+      ],
+      "portrait": 8053,
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 1,
+          "coinValue": 1,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[EndSkill] Inflict +2 [Burst] Count and +2 [Sinking] Count to all enemies",
+          "levelCorrection": -5,
+          "name": "Scattering Sorrow"
+        }
+      ]
+    }
+  ]
+}

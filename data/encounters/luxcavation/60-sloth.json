@@ -1,0 +1,320 @@
+{
+  "name": "Level 60 - Sloth",
+  "siteId": "e512d56d-0086-47c8-9c49-65228ed1031b",
+  "targets": [
+    {
+      "name": "Shock Centipede",
+      "parts": [
+        {
+          "breakSection": [
+            55
+          ],
+          "defCorrection": 5,
+          "hp": 1239.8,
+          "name": "Body",
+          "partId": 876601,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 0.75,
+            "gluttony": 0.5,
+            "lust": 0.5,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 2,
+            "wrath": 0.75
+          },
+          "speed": [
+            2,
+            5
+          ]
+        },
+        {
+          "breakSection": [
+            0
+          ],
+          "defCorrection": 5,
+          "hp": 138.0,
+          "name": "Head",
+          "partId": 876602,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 0.75,
+            "gluttony": 0.5,
+            "lust": 0.5,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 2,
+            "wrath": 0.75
+          },
+          "speed": [
+            2,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Every 5 turns, gains a Shield equal to the head's HP",
+          "name": "Undying Persistence"
+        },
+        {
+          "desc": "After using 'Coil Up', if the Shield is exhausted, spend all [SelfCharge]\nAll parts become Staggered next turn",
+          "name": "Terminated Persistence"
+        }
+      ],
+      "portrait": 8045,
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration] and +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] Gain 2 [SelfCharge]\n[WhenUse] At 5+ [SelfCharge], Base Power +2\n[DefeatDuel] Lose 1 [SelfCharge]",
+          "levelCorrection": -3,
+          "name": "Bite"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration] and +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] Gain 2 [SelfCharge]\n[WhenUse] At 5+ [SelfCharge], Coin Power +1\n[DefeatDuel] Lose 1 [SelfCharge]",
+          "levelCorrection": -3,
+          "name": "Tail Poke"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Vulnerable]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Binding] next turn"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] Gain 3 [SelfCharge]\n[WhenUse] At 5+ [SelfCharge], Base Power +2\n[DefeatDuel] Lose 1 [SelfCharge]",
+          "levelCorrection": -3,
+          "name": "Wrapping Coil"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 6 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Paralysis]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] Gain 1 [SelfCharge]\n[WhenUse] At 5+ [SelfCharge], Coin Power +1\nIf target has [Paralysis], deal +30% damage\n[DefeatDuel] Lose 2 [SelfCharge]",
+          "levelCorrection": -3,
+          "name": "Electric Load"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Paralysis]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] Gain 1 [SelfCharge]\n[WhenUse] At 5+ [SelfCharge], Coin Power +1\nIf target has [Paralysis], deal +30% damage\n[DefeatDuel] Lose 3 [SelfCharge]",
+          "levelCorrection": -3,
+          "name": "Electric Release"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vulnerable]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Paralysis]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] Gain 1 [SelfCharge]\nIf target has [Paralysis], deal +30% damage",
+          "levelCorrection": -3,
+          "name": "Electric Discharge"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 4,
+          "baseValue": 5,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Vulnerable] on the main target"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 1 [ElectricStorage]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Paralysis] on the main target",
+                "[OnSucceedAttack] If target has [ElectricStorage], deal 40% of final damage dealt as fixed damage"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At more than 7 [SelfCharge], deal +10% damage for every excess [SelfCharge] past 7 (max 120%)\n[WhenUse] Lose all [SelfCharge] on self; if this unit lost 10+ [SelfCharge], gain Clash Power +5\n[DefeatDuel] This Attack Skill deals 0 damage",
+          "levelCorrection": -3,
+          "name": "High-voltage Electric Discharge"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 1,
+          "coinValue": 1,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[StartBattle] The Head Part gains Shield by its current HP\n[EndBattle] If the Head Part has Shield, gain 10 [SelfCharge] next turn",
+          "levelCorrection": -3,
+          "name": "Coil Up"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Paralysis]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes targets with the least HP\nIf target has [Paralysis], deal +50% damage\n<color=#ff6000><mark color=#ff000040><b><u>If target has used a Defense Skill, deal -100% damage</color></mark></b></u>\nBase Power +1 for every [SelfCharge]\n[WhenUse] Lose 1 [SelfCharge]\n[EndSkill] If it was an Unopposed Attack, lose 1 [SelfCharge]\n- If the target attacked by this Skill used a Defense Skill, lose 1 more [SelfCharge]",
+          "levelCorrection": -3,
+          "name": "Wriggling Head"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Paralysis]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes targets with the least HP\nIf target has [Paralysis], deal +50% damage\n<color=#ff6000><mark color=#ff000040><b><u>If target has used a Defense Skill, deal -100% damage</color></mark></b></u>\nBase Power +1 for every [SelfCharge]\n[WhenUse] Lose 1 [SelfCharge]\n[EndSkill] If it was an Unopposed Attack, lose 1 [SelfCharge]\n- If the target attacked by this Skill used a Defense Skill, lose 1 more [SelfCharge]",
+          "levelCorrection": -3,
+          "name": "Wriggling Tail"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "name": "Level 58 - Pierce",
+  "siteId": "39ab1d05-cb43-4318-91fe-40a6233258e5",
+  "targets": [
+    {
+      "name": "Stern Soldato of the Thumb",
+      "num": 6,
+      "passives": [
+        {
+          "desc": "If this unit triggered [VibrationExplosion] last turn, gain 1 [Enhancement] and 1 [AttackDmgUp] next turn",
+          "name": "Esecuzione della Regola - Preparation Stage"
+        },
+        {
+          "desc": "Deal +10% damage against Staggered enemies\nIf an enemy was Staggered in the last turn: for the next turn, inflict 2 [Vibration] On Hit with a Skill after Clash Win (2 times per turn)",
+          "name": "Esecuzione della Regola - Crush the Lower Jaw"
+        },
+        {
+          "desc": "If 1 or more ally has been defeated, gain 1 [ParryingResultUp] starting next turn",
+          "name": "Regola Infranta"
+        }
+      ],
+      "portrait": "1171",
+      "resists": {
+        "blunt": 0.75,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 2,
+        "pride": 1,
+        "slash": 0.5,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "skills": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 7 ([Combustion] + [Vibration]) on target (max 2)",
+          "levelCorrection": 0,
+          "name": "Concussive Stab"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 7 ([Combustion] + [Vibration]) on target (max 2)",
+          "levelCorrection": 0,
+          "name": "Burning Stab"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Spend 1 [BudgetBulletPropellant]",
+                "[OnSucceedAttack] Inflict 4 [Vibration]",
+                "[OnSucceedAttack] Inflict 4 [Combustion]",
+                "[UnBrokenCoinOnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Spend 1 [BudgetBulletPropellant]",
+                "[UnBrokenCoinOnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 7 ([Combustion] + [Vibration]) on target (max 2)\n[DefeatDuel] Deal -75% damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 0,
+          "name": "Propulsion Slice"
+        }
+      ]
+    },
+    {
+      "name": "Rigid Soldato of the Thumb",
+      "num": 6,
+      "passives": [
+        {
+          "desc": "If this unit triggered [VibrationExplosion] last turn, gain 1 [Enhancement] and 1 [AttackDmgUp] next turn",
+          "name": "Esecuzione della Regola - Preparation Stage"
+        },
+        {
+          "desc": "Deal +10% damage against Staggered enemies\nIf an enemy was Staggered in the last turn: for the next turn, inflict 2 [Vibration] On Hit with a Skill after Clash Win (2 times per turn)",
+          "name": "Esecuzione della Regola - Crush the Lower Jaw"
+        },
+        {
+          "desc": "If 1 or more ally has been defeated, gain 1 [ParryingResultUp] starting next turn",
+          "name": "Regola Infranta"
+        }
+      ],
+      "portrait": "90218",
+      "resists": {
+        "blunt": 0.75,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 2,
+        "pride": 1,
+        "slash": 0.5,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "skills": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 7 ([Combustion] + [Vibration]) on target (max 2)",
+          "levelCorrection": 0,
+          "name": "Concussive Penetration"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Combustion] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 7 ([Combustion] + [Vibration]) on target (max 2)",
+          "levelCorrection": 0,
+          "name": "Burning Penetration"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Spend 1 [BudgetBulletPropellant]",
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +2 [Vibration] Count,",
+                "[OnSucceedAttack] Inflict 2 [Combustion] and +2 [Combustion] Count",
+                "[UnBrokenCoinOnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Spend 1 [BudgetBulletPropellant]",
+                "[UnBrokenCoinOnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 7 ([Combustion] + [Vibration]) on target (max 2)\n[DefeatDuel] Deal -75% damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 0,
+          "name": "Propulsion Cleave"
+        }
+      ]
+    }
+  ]
+}

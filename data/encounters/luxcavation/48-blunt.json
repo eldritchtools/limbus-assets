@@ -1,0 +1,492 @@
+{
+  "name": "Level 48 - Blunt",
+  "siteId": "3ee320cf-c7be-4707-8040-db35e9966002",
+  "targets": [
+    {
+      "name": "Eerie Bloodbag",
+      "num": 3,
+      "passives": [
+        {
+          "desc": "On Hit, if the target has [Laceration], heal by 15% of damage dealt",
+          "name": "Bloodsucking"
+        },
+        {
+          "desc": "Attack End: If the target has 8+ [Laceration], gain 1 [HardenedBlood]",
+          "name": "Blood Coagulation"
+        },
+        {
+          "desc": "Prioritizes targets with [Laceration]\nTurn End: if this unit failed to deal any damage this turn, gain 2 [Vulnerable] and 2 [AttackUp] next turn",
+          "name": "Thirst for Blood"
+        },
+        {
+          "desc": "When hit, gain +1 [Laceration] Count.\nGain 1 [HardenedBlood] every time this unit loses 20% HP.\nIf there is a Bloodfiend on the field, regardless of whether it is an ally or an enemy, increase [BloodDinner] by 30",
+          "name": "Bloodbag"
+        }
+      ],
+      "portrait": 90169,
+      "resists": {
+        "blunt": 2,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 0.5,
+        "pride": 1,
+        "slash": 0.75,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[OnSucceedAttack] Gain 10 [Laceration] and 1 [BloodyHand]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[DefeatDuel] Gain 10 [Laceration] and +1 [Laceration] Count",
+          "levelCorrection": 0,
+          "name": "Hardblood Thrash"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] If target has 6+ [Laceration], gain 1 [HardenedBlood]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Gain 20 [Laceration] and 2 [BloodyHand]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 8+ [Laceration], deal +20% damage",
+          "levelCorrection": 0,
+          "name": "Hardblood Lash"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] Base Power +1 for every [HardenedBlood] on self",
+          "levelCorrection": 0,
+          "name": "Counter"
+        }
+      ]
+    },
+    {
+      "name": "Sinister Bloodbag",
+      "num": 3,
+      "passives": [
+        {
+          "desc": "On Hit, if the target has [Laceration], heal by 15% of damage dealt",
+          "name": "Bloodsucking"
+        },
+        {
+          "desc": "Attack End: If the target has 8+ [Laceration], gain 1 [HardenedBlood]",
+          "name": "Blood Coagulation"
+        },
+        {
+          "desc": "Prioritizes targets with [Laceration]\nTurn End: if this unit failed to deal any damage this turn, gain 2 [Vulnerable] and 2 [AttackUp] next turn",
+          "name": "Thirst for Blood"
+        },
+        {
+          "desc": "When hit, gain +1 [Laceration] Count.\nGain 1 [HardenedBlood] every time this unit loses 20% HP.\nIf there is a Bloodfiend on the field, regardless of whether it is an ally or an enemy, increase [BloodDinner] by 30",
+          "name": "Bloodbag"
+        }
+      ],
+      "portrait": 90170,
+      "resists": {
+        "blunt": 2,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 0.5,
+        "pride": 1,
+        "slash": 0.75,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                "[OnSucceedAttack] Gain 10 [Laceration] and 1 [BloodyHand]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[DefeatDuel] Gain 10 [Laceration] and +1 [Laceration] Count",
+          "levelCorrection": 0,
+          "name": "Hardblood Thrash"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                "[OnSucceedAttack] If target has 6+ [Laceration], gain 1 [HardenedBlood]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                "[OnSucceedAttack] Gain 20 [Laceration] and 2 [BloodyHand]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 4+ [Laceration], deal +10% damage",
+          "levelCorrection": 0,
+          "name": "Hardblood Lash"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] Base Power +1 for every [HardenedBlood] on self",
+          "levelCorrection": 0,
+          "name": "Counter"
+        }
+      ]
+    },
+    {
+      "name": "\"Ghost\" Bloodfiend of Failed Penitence",
+      "num": 3,
+      "passives": [
+        {
+          "desc": "Gain [StarvingPriestOne] at the start of the Encounter",
+          "name": "Starved and Withered"
+        },
+        {
+          "desc": "On Hit, if the target has [Laceration], heal by 15% of damage dealt",
+          "name": "Bloodsucking"
+        },
+        {
+          "desc": "Attack End: If the target has 5+ [Laceration], gain 1 [HardenedBlood]",
+          "name": "Blood Coagulation"
+        },
+        {
+          "desc": "- Prioritizes targets with [Laceration]\nTurn End: if this unit failed to deal any damage this turn, gain 2 [Vulnerable] and 2 Offense Level Up next turn\n- Turn End: if this unit dealt damage this turn, heal 5 SP",
+          "name": "Thirst for Blood"
+        },
+        {
+          "desc": "If this unit is on field, or is one of the units that can appear on this Stage, increase [BloodDinner] value by the amount of [Laceration] damage collectively received by every unit. \nWhen this unit enters the field, the sleeping blood drenching the battlefield will surface.",
+          "name": "Bloodfeast"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        }
+      ],
+      "portrait": 90171,
+      "resists": {
+        "blunt": 2,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 0.5,
+        "pride": 1,
+        "slash": 0.5,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 5 [Laceration] and +1 [Laceration] Count",
+          "levelCorrection": 0,
+          "name": "Please answer the survey."
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]",
+                "[OnSucceedAttack] If target has 5+ [Laceration], gain 1 [BloodyHand]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 5 [Laceration] and +1 [Laceration] Count",
+          "levelCorrection": 0,
+          "name": "Don't! Don't Cut Me Off!"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[EndSkill] If this unit failed to consume [BloodDinner] with this Skill, gain 10 [Laceration] and 1 [BloodyHand]."
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Consume up to 50 [BloodDinner]; gain 1 [BloodyHand] for every 10 [BloodDinner] consumed\n[WhenUse] If target has 5+ [Laceration], Coin Power +1",
+          "levelCorrection": 0,
+          "name": "Faded Patience"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] At 1+ [BloodyHand], Base Power +1\n[WhenUse] At 3+ [HardenedBlood], Coin Power +1",
+          "levelCorrection": 0,
+          "name": "Counter"
+        }
+      ]
+    },
+    {
+      "name": "\"Ghost\" Bloodfiend of Prayers",
+      "num": 3,
+      "passives": [
+        {
+          "desc": "Gain [StarvingPriestOne] at the start of the Encounter",
+          "name": "Starved and Withered"
+        },
+        {
+          "desc": "On Hit, if the target has [Laceration], heal by 15% of damage dealt",
+          "name": "Bloodsucking"
+        },
+        {
+          "desc": "Attack End: If the target has 5+ [Laceration], gain 1 [HardenedBlood]",
+          "name": "Blood Coagulation"
+        },
+        {
+          "desc": "- Prioritizes targets with [Laceration]\nTurn End: if this unit failed to deal any damage this turn, gain 2 [Vulnerable] and 2 Offense Level Up next turn\n- Turn End: if this unit dealt damage this turn, heal 5 SP",
+          "name": "Thirst for Blood"
+        },
+        {
+          "desc": "If this unit is on field, or is one of the units that can appear on this Stage, increase [BloodDinner] value by the amount of [Laceration] damage collectively received by every unit. \nWhen this unit enters the field, the sleeping blood drenching the battlefield will surface.",
+          "name": "Bloodfeast"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        }
+      ],
+      "portrait": 90172,
+      "resists": {
+        "blunt": 2,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 0.5,
+        "pride": 1,
+        "slash": 1,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 5 [Laceration] and +1 [Laceration] Count",
+          "levelCorrection": 0,
+          "name": "Please answer the survey."
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                "[OnSucceedAttack] If target has 5+ [Laceration], gain 1 [BloodyHand]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 5 [Laceration] and +1 [Laceration] Count",
+          "levelCorrection": 0,
+          "name": "Don't! Don't Cut Me Off!"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[EndSkill] If this unit failed to consume [BloodDinner] with this Skill, gain 10 [Laceration] and 1 [BloodyHand]."
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Consume up to 50 [BloodDinner]; gain 1 [BloodyHand] for every 10 [BloodDinner] consumed\n[WhenUse] If target has 5+ [Laceration], Coin Power +1",
+          "levelCorrection": 0,
+          "name": "Faded Patience"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] At 1+ [BloodyHand], Base Power +1\n[WhenUse] At 3+ [HardenedBlood], Coin Power +1",
+          "levelCorrection": 0,
+          "name": "Counter"
+        }
+      ]
+    }
+  ]
+}

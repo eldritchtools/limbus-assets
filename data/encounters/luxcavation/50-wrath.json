@@ -1,0 +1,189 @@
+{
+  "name": "Level 50 - Wrath",
+  "siteId": "1785ad1d-18d2-4e85-8914-1d86d8fd27c9",
+  "targets": [
+    {
+      "name": "So That No One Will Cry",
+      "parts": [
+        {
+          "breakSection": [
+            50,
+            0
+          ],
+          "defCorrection": 2,
+          "hp": 505.4,
+          "name": "Body",
+          "partId": 875201,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.5,
+            "gloom": 0.75,
+            "gluttony": 0.75,
+            "lust": 0.5,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 0.75,
+            "wrath": 2
+          },
+          "speed": [
+            1,
+            4
+          ]
+        },
+        {
+          "breakSection": [
+            70,
+            30
+          ],
+          "defCorrection": 2,
+          "hp": 215.9,
+          "name": "Body",
+          "partId": 875202,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.5,
+            "gloom": 0.75,
+            "gluttony": 0.75,
+            "lust": 0.5,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 0.75,
+            "wrath": 2
+          },
+          "speed": [
+            1,
+            4
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "At the end of the turn, if this unit has [Combustion], inflict the same amount to all units with [WrappedCurseTag] next turn",
+          "name": "Spreading Ember"
+        },
+        {
+          "desc": "When the arm is broken, it deals -20% damage",
+          "name": "Broken Means"
+        }
+      ],
+      "portrait": 8047,
+      "skills": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst] and +2 [Burst] Count next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Inflict 2 [WrappedCurseTag]",
+          "levelCorrection": -5,
+          "name": "Entangling Talisman"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [WrappedCurseTag] by target's [WrappedCurseTag]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 5 [Burst] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Burst] and +2 [Burst] Count next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Inflict 1 [WrappedCurseTag]",
+          "levelCorrection": -5,
+          "name": "Cumulating Curse"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Paralysis] next turn",
+                "[OnSucceedAttackHead] Inflict 5 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[EndBattle] Remove all [ReattachedCurseTag]",
+          "levelCorrection": -5,
+          "name": "So That No One Will Cry"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[WhenUse] Remove all [WrappedCurseTag] from target; Gain the same amount of [ReattachedCurseTag]",
+          "levelCorrection": -5,
+          "name": "Transferring Talisman"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Inflict [WrappedCurseTag] by target's [WrappedCurseTag]",
+          "levelCorrection": -5,
+          "name": "Proliferating Curse"
+        }
+      ]
+    }
+  ]
+}

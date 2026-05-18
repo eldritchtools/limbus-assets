@@ -1,0 +1,220 @@
+{
+  "name": "Level 60 - Envy",
+  "siteId": "3ed04cea-f615-4e2e-ad32-f9431a9fd2bf",
+  "targets": [
+    {
+      "name": "Hurting Teddy Bear",
+      "parts": [
+        {
+          "breakSection": [
+            40
+          ],
+          "defCorrection": 2,
+          "hp": {
+            "base": 538,
+            "level": 18.57
+          },
+          "name": "Body",
+          "partId": 877401,
+          "resists": {
+            "blunt": 1,
+            "envy": 2,
+            "gloom": 0.75,
+            "gluttony": 0.75,
+            "lust": 0.75,
+            "pierce": 1,
+            "pride": 0.5,
+            "slash": 1,
+            "sloth": 0.75,
+            "wrath": 0.5
+          },
+          "speed": [
+            2,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn Start: if all enemies have [AffectionTeddy], use a powerful Skill",
+          "name": "The Once-loved Ones"
+        },
+        {
+          "desc": "When hitting an enemy using a single-Coin Skill, inflict 3 [Laceration] Potency. Inflict 2 [DefenseDown] until the end of the next turn.\nIf the target already has [Laceration], inflict 5 [Laceration] Potency instead",
+          "name": "Grimy Iron Stake"
+        },
+        {
+          "desc": "If this unit was Staggered due to the Turn End effect of A Sad Embrace, gain 10 [FaintMemory] at the next Turn Start",
+          "name": "To Remember"
+        },
+        {
+          "desc": "If at less than or equal to 30% HP at Turn End: instead of inflicting 3 [AffectionTeddy] to all enemies, gain 15 [AttackDown] next turn (once per Encounter)",
+          "name": "To Love"
+        },
+        {
+          "desc": "Base Power -1 for every 3 types of negative effects on the target (max 3)",
+          "name": "Please Don't be Sick"
+        }
+      ],
+      "portrait": 8379,
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 4 [AffectionTeddy]",
+                "[WinDuelAttack] Inflict 2 [Vulnerable] next turn"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes targets with the least number of negative effects\n[WhenUse] If the target does not have any negative effects, use 'Rough Expression of Love' next turn\n\n[WhenUse] If target has more negative effects than [FaintMemory] on self, use 'A Sad Embrace' next turn",
+          "levelCorrection": -2,
+          "name": "Expression of Love"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[OnSucceedAttack] Inflict 2 [NailPersonality]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes targets with the least number of negative effects\n[WinDuel] Inflict 3 [AffectionTeddy] next turn\n[DefeatDuel] Inflict 1 [AffectionTeddy] next turn",
+          "levelCorrection": 0,
+          "name": "Clawing"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Curse]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes targets with the least number of negative effects\n[WinDuel] Inflict 3 [AffectionTeddy] next turn\n[DefeatDuel] Inflict 1 [AffectionTeddy] next turn",
+          "levelCorrection": 1,
+          "name": "Violent Clawing"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] If target has [AffectionTeddy], consume [AffectionTeddy] and inflict [Curse] and [NailPersonality] equal to the value of [AffectionTeddy] consumed (consumes up to 4)",
+                "[OnSucceedAttack] If target has 4+ [Curse], consume 4 [Curse] on the target and inflict 1 [CursePackage]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\n[WhenUse] Inflict 2 [Disarming] next turn\n[WhenUse] Inflict 1 [Curse]",
+          "levelCorrection": 2,
+          "name": "Timid Expression of Love"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "If the target does not have any negative effects, deal +100% damage",
+                "[OnSucceedAttack] Inflict 3 [Curse]",
+                "[WinDuelAttack] Inflict 6 [NailPersonality]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantChangeTarget]\nTargets the target this unit Clashed with 'Expression of Love' last turn",
+          "levelCorrection": 3,
+          "name": "Rough Expression of Love"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 1,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Fully heals the target's SP"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantChangeTarget]\nTargets the target this unit Clashed with 'Expression of Love' last turn\nFix the damage dealt against that target to 0\n[StartBattle] Gain 2 [Vulnerable] until next turn\n[EndBattle] Enter Staggered state",
+          "levelCorrection": 0,
+          "name": "A Sad Embrace"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 6,
+          "baseValue": 6,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Curse]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 4 [NailPersonality]",
+                "[OnSucceedAttack] Consume all [AffectionTeddy] on the target\n- If this unit won the Clash, raise the target's Stagger Threshold by ([AffectionTeddy] consumed x 10)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[DefeatDuel] Deal only half damage against the enemy with this Skill",
+          "levelCorrection": 3,
+          "name": "An Old, Nostalgic Embrace"
+        }
+      ]
+    }
+  ]
+}

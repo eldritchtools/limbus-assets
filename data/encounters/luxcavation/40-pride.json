@@ -1,0 +1,252 @@
+{
+  "name": "Level 40 - Pride",
+  "siteId": "7678c3fb-e889-4ec9-b145-ec6e70b1ed1d",
+  "targets": [
+    {
+      "name": "kqe-1j-23",
+      "parts": [
+        {
+          "defCorrection": 4,
+          "hp": 640.7,
+          "name": "Body",
+          "partId": 874901,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.5,
+            "gloom": 0.5,
+            "gluttony": 0.75,
+            "lust": 0.75,
+            "pierce": 1,
+            "pride": 2,
+            "slash": 1,
+            "sloth": 0.75,
+            "wrath": 0.75
+          },
+          "speed": [
+            1,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "At the start of the turn, if [Charge] Count is at 10+, change behavior.",
+          "name": "Initiating Town Tour"
+        }
+      ],
+      "portrait": 8519,
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +4 [Charge] Count",
+          "levelCorrection": -5,
+          "name": "Booting Town Tour"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 [PlusCoinValueDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -5,
+          "name": "Welcome to the Tour"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -5,
+          "name": "Please Cooperate!"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 16,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Put target in [Duress]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Spend all [Charge] Count",
+          "levelCorrection": -5,
+          "name": "Processing Transfer Reg"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 20,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 10 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nAttacks target in [Duress]",
+          "levelCorrection": -5,
+          "name": "Pleased to Meet You, Dear Neighbor"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Spend 2 [Charge] to inflict 5 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Spend 2 [Charge] to inflict 5 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Become Staggered next turn",
+          "levelCorrection": -5,
+          "name": "System Error Detected"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 2,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[WhenUse] Gain 5 [Protection]",
+          "levelCorrection": 15,
+          "name": "Processing Computation"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 1,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": 15,
+          "name": "Rebooting…"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Put target in [Duress]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\n[CantChangeTarget]\nTargets unit with most HP\n[WhenUse] Spend all [Charge]",
+          "levelCorrection": -5,
+          "name": "Processing Transfer Reg"
+        }
+      ]
+    },
+    {
+      "name": "Heart of the Townsfolk",
+      "parts": [
+        {
+          "breakSection": [
+            70,
+            30
+          ],
+          "defCorrection": -2,
+          "hp": 114.3,
+          "name": "Heart",
+          "partId": 875001,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.5,
+            "gloom": 0.5,
+            "gluttony": 0.75,
+            "lust": 0.75,
+            "pierce": 1,
+            "pride": 2,
+            "slash": 1,
+            "sloth": 0.75,
+            "wrath": 0.75
+          },
+          "speed": [
+            1,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "When this unit is defeated, Kqe-1j-23 takes 100 damage and becomes Staggered next turn.\nIt then loses arm-related skills for the rest of the battle.",
+          "name": "Damage Detected!"
+        }
+      ],
+      "portrait": 8520
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "name": "Level 20 - Sloth",
+  "phases": [
+    {
+      "targets": [
+        {
+          "name": "Golden Apple",
+          "parts": [
+            {
+              "breakSection": [
+                50
+              ],
+              "defCorrection": 0,
+              "hp": 173.81,
+              "name": "Body",
+              "partId": 870301,
+              "resists": {
+                "blunt": 1,
+                "envy": 0.75,
+                "gloom": 0.75,
+                "gluttony": 0.75,
+                "lust": 0.75,
+                "pierce": 1,
+                "pride": 0.75,
+                "slash": 1,
+                "sloth": 2,
+                "wrath": 0.75
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Heals HP every turn based on the amount of [BeingGolden].",
+              "name": "Cracked Gold"
+            }
+          ],
+          "portrait": "8008",
+          "skills": [
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 2,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -2,
+              "name": "Sprout"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[DefeatDuel] Take 20 damage",
+                    "[DefeatDuel] Lose 1 [BeingGolden]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -2,
+              "name": "Golden Fruit"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "",
+              "levelCorrection": -2,
+              "name": "Solid Gold"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Golden Apple",
+          "parts": [
+            {
+              "defCorrection": 0,
+              "hp": 39.56,
+              "name": "Head",
+              "partId": 870401,
+              "resists": {
+                "blunt": 1,
+                "envy": 0.75,
+                "gloom": 0.75,
+                "gluttony": 0.75,
+                "lust": 0.75,
+                "pierce": 1,
+                "pride": 0.75,
+                "slash": 1,
+                "sloth": 2,
+                "wrath": 0.75
+              },
+              "speed": [
+                1,
+                3
+              ]
+            },
+            {
+              "defCorrection": 0,
+              "hp": 157.25,
+              "name": "Body",
+              "partId": 870402,
+              "resists": {
+                "blunt": 1,
+                "envy": 0.75,
+                "gloom": 0.75,
+                "gluttony": 0.75,
+                "lust": 0.75,
+                "pierce": 1,
+                "pride": 0.75,
+                "slash": 1,
+                "sloth": 2,
+                "wrath": 0.75
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "When the Head is destroyed, all parts are inflicted with [Inactible] next turn.\nThe Head regenerates after 1 turn.",
+              "name": "Frail Core"
+            },
+            {
+              "desc": "After the body is destroyed, all parts are inflicted with 2 [Reduction] every turn.",
+              "name": "Rotting Apple"
+            }
+          ],
+          "portrait": "8009",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Main body heals 3 HP"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 2,
+              "name": "Absorb Nutrients"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count next turn",
+                    "[OnSucceedAttack] Inflict 2 [Vulnerable] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 2,
+              "name": "Deteriorating Flesh"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "siteId": "246182a3-f874-4efa-819b-bff1f04e4ed8"
+}

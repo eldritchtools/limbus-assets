@@ -1,0 +1,616 @@
+{
+  "name": "Level 48 - Slash",
+  "siteId": "29224fe6-e0a0-4a16-8b31-8b3963efe915",
+  "targets": [
+    {
+      "name": "Well-dressed Bloodbag",
+      "num": 3,
+      "passives": [
+        {
+          "desc": "On Hit, if the target has [Laceration], heal by 15% of damage dealt",
+          "name": "Bloodsucking"
+        },
+        {
+          "desc": "Attack End: If the target has 8+ [Laceration], gain 1 [HardenedBlood]",
+          "name": "Blood Coagulation"
+        },
+        {
+          "desc": "Prioritizes targets with [Laceration]\nTurn End: if this unit failed to deal any damage this turn, gain 2 [Vulnerable] and 2 [AttackUp] next turn",
+          "name": "Thirst for Blood"
+        },
+        {
+          "desc": "At 1+ [BloodScissor], enhance the blades of the scissor.",
+          "name": "Blood-tinged Scissorblades"
+        },
+        {
+          "desc": "When hit, gain +1 [Laceration] Count.\nGain 1 [HardenedBlood] every time this unit loses 20% HP.\nIf there is a Bloodfiend on the field, regardless of whether it is an ally or an enemy, increase [BloodDinner] by 30",
+          "name": "Bloodbag"
+        }
+      ],
+      "portrait": 90152,
+      "resists": {
+        "blunt": 0.5,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 0.75,
+        "pride": 1,
+        "slash": 2,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "skills": [
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Hardblood Stab"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] At 6+ [Laceration], gain 1 [HardenedBlood]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Gain 8 [Laceration] and 1 [BloodScissor]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 8+ [Laceration], deal +20% damage",
+          "levelCorrection": 2,
+          "name": "Hardblood Cleave"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration] and +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal ([Laceration] on target)% HP (max 20%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 6+ [Laceration], Base Power +1\nDeal +5% damage for every [HardenedBlood] (max 25%)\n[EndSkill] Consume all [HardenedBlood] and [BloodScissor]",
+          "levelCorrection": 4,
+          "name": "Hardblood Powercleave"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 9,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] Base Power +1 for every [HardenedBlood] on self",
+          "levelCorrection": 0,
+          "name": "Counter"
+        }
+      ]
+    },
+    {
+      "name": "Embellished Bloodbag",
+      "num": 3,
+      "passives": [
+        {
+          "desc": "On Hit, if the target has [Laceration], heal by 15% of damage dealt",
+          "name": "Bloodsucking"
+        },
+        {
+          "desc": "Attack End: If the target has 8+ [Laceration], gain 1 [HardenedBlood]",
+          "name": "Blood Coagulation"
+        },
+        {
+          "desc": "Prioritizes targets with [Laceration]\nTurn End: if this unit failed to deal any damage this turn, gain 2 [Vulnerable] and 2 [AttackUp] next turn",
+          "name": "Thirst for Blood"
+        },
+        {
+          "desc": "At 1+ [BloodScissor], enhance the blades of the scissor.",
+          "name": "Blood-tinged Scissorblades"
+        },
+        {
+          "desc": "When hit, gain +1 [Laceration] Count.\nGain 1 [HardenedBlood] every time this unit loses 20% HP.\nIf there is a Bloodfiend on the field, regardless of whether it is an ally or an enemy, increase [BloodDinner] by 30",
+          "name": "Bloodbag"
+        }
+      ],
+      "portrait": 90153,
+      "resists": {
+        "blunt": 0.5,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 0.75,
+        "pride": 1,
+        "slash": 2,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "skills": [
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "Hardblood Wedge"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                "[OnSucceedAttack] At 6+ [Laceration], gain 1 [HardenedBlood]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                "[OnSucceedAttack] Gain 8 [Laceration] and 1 [BloodScissor]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 4+ [Laceration], deal +10% damage",
+          "levelCorrection": 2,
+          "name": "Hardblood Chop"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration] and +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal ([Laceration] on target)% HP (max 20%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 6+ [Laceration] Count, Base Power +1\nDeal +5% damage for every [HardenedBlood] (max 25%)\n[EndSkill] Consume all [HardenedBlood] and [BloodScissor]",
+          "levelCorrection": 4,
+          "name": "Hardblood Powerchop"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] Base Power +1 for every [HardenedBlood] on self",
+          "levelCorrection": 0,
+          "name": "Counter"
+        }
+      ]
+    },
+    {
+      "name": "Insane Fashionista Bloodfiend",
+      "num": 3,
+      "passives": [
+        {
+          "desc": "Gain [StarvingBarberOne] at the start of the Encounter",
+          "name": "Starved and Withered"
+        },
+        {
+          "desc": "On Hit, if the target has [Laceration], heal by 20% of damage dealt",
+          "name": "Bloodsucking"
+        },
+        {
+          "desc": "Attack End: If the target has 5+ [Laceration], gain 1 [HardenedBlood]",
+          "name": "Blood Coagulation"
+        },
+        {
+          "desc": "- Prioritizes targets with [Laceration]\nTurn End: if this unit failed to deal any damage this turn, gain 2 [Vulnerable] and 2 Offense Level Up next turn\n- Turn End: if this unit dealt damage this turn, heal 5 SP",
+          "name": "Thirst for Blood"
+        },
+        {
+          "desc": "If this unit is on field, or is one of the units that can appear on this Stage, increase [BloodDinner] value by the amount of [Laceration] damage collectively received by every unit. \nWhen this unit enters the field, the sleeping blood drenching the battlefield will surface.",
+          "name": "Bloodfeast"
+        },
+        {
+          "desc": "At 2+ [BloodScissor], enhance the blades of the scissor.",
+          "name": "Blood-tinged Scissorblades"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        }
+      ],
+      "portrait": 90154,
+      "resists": {
+        "blunt": 0.5,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 0.5,
+        "pride": 1,
+        "slash": 2,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "skills": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "It's a Festival, a Festival!"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                "[OnSucceedAttack] If target has 5+ [Laceration], gain 1 [HardenedBlood]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 6+ [Laceration], deal +20% damage",
+          "levelCorrection": 2,
+          "name": "Let's Dress Up"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Consume up to 50 [BloodDinner]; gain 1 [BloodScissor] for every 10 [BloodDinner] consumed\n[WhenUse] If this unit failed to consume [BloodDinner] with this Skill, gain 5 [Laceration] and 1 [HardenedBlood].\n[WhenUse] If target has 5+ [Laceration], Coin Power +1",
+          "levelCorrection": 3,
+          "name": "We've an Event for You!"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttackHead] Inflict 8 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Consume up to 5 [BloodScissor] and deal +(20 * consumed [BloodScissor])% damage (max 100%)",
+                "[OnSucceedAttack] Heal ([Laceration] Potency on target)% HP (max 30%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 5+ [Laceration], Coin Power +1\n[WhenUse] Clash Power +1 for every [BloodScissor] (max 3)\nDeal +7% damage for every [HardenedBlood] (max 35%)\n[EndSkill] Consume all [HardenedBlood]",
+          "levelCorrection": 5,
+          "name": "Don't Rush Me"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] At 1+ [BloodScissor], Base Power +1\n[WhenUse] At 3+ [HardenedBlood], Coin Power +1",
+          "levelCorrection": 2,
+          "name": "Counter"
+        }
+      ]
+    },
+    {
+      "name": "Mad Fashionista Bloodfiend",
+      "num": 3,
+      "passives": [
+        {
+          "desc": "Gain [StarvingBarberOne] at the start of the Encounter",
+          "name": "Starved and Withered"
+        },
+        {
+          "desc": "On Hit, if the target has [Laceration], heal by 20% of damage dealt",
+          "name": "Bloodsucking"
+        },
+        {
+          "desc": "Attack End: If the target has 5+ [Laceration], gain 1 [HardenedBlood]",
+          "name": "Blood Coagulation"
+        },
+        {
+          "desc": "- Prioritizes targets with [Laceration]\nTurn End: if this unit failed to deal any damage this turn, gain 2 [Vulnerable] and 2 Offense Level Up next turn\n- Turn End: if this unit dealt damage this turn, heal 5 SP",
+          "name": "Thirst for Blood"
+        },
+        {
+          "desc": "If this unit is on field, or is one of the units that can appear on this Stage, increase [BloodDinner] value by the amount of [Laceration] damage collectively received by every unit. \nWhen this unit enters the field, the sleeping blood drenching the battlefield will surface.",
+          "name": "Bloodfeast"
+        },
+        {
+          "desc": "At 2+ [BloodScissor], enhance the blades of the scissor.",
+          "name": "Blood-tinged Scissorblades"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        }
+      ],
+      "portrait": 90155,
+      "resists": {
+        "blunt": 0.5,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 0.5,
+        "pride": 1,
+        "slash": 2,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "skills": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 1,
+          "name": "More, More!"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]",
+                "[OnSucceedAttack] If target has 5+ [Laceration], gain 1 [HardenedBlood]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 4+ [Laceration], deal +10% damage",
+          "levelCorrection": 2,
+          "name": "I'll Have Some More"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Consume up to 50 [BloodDinner]; gain 1 [BloodScissor] for every 10 [BloodDinner] consumed\n[WhenUse] If this unit failed to consume [BloodDinner] with this Skill, gain 5 [Laceration] and 1 [HardenedBlood].\n[WhenUse] If target has 5+ [Laceration], Coin Power +1",
+          "levelCorrection": 3,
+          "name": "What Heavenly Taste!"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 8 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Consume up to 5 [BloodScissor] and deal +(20 * consumed [BloodScissor])% damage (max 100%)",
+                "[OnSucceedAttack] Heal ([Laceration] Potency on target)% HP (max 30%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 5+ [Laceration], Coin Power +1\n[WhenUse] Clash Power +1 for every [BloodScissor] (max 3)\nDeal +7% damage for every [HardenedBlood] (max 35%)\n[EndSkill] Consume all [HardenedBlood]",
+          "levelCorrection": 5,
+          "name": "You Rat Bastard!"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] At 1+ [BloodScissor], Base Power +1\n[WhenUse] At 3+ [HardenedBlood], Coin Power +1",
+          "levelCorrection": 2,
+          "name": "Counter"
+        }
+      ]
+    }
+  ]
+}

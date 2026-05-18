@@ -1,0 +1,189 @@
+{
+  "name": "Level 60 - Lust",
+  "siteId": "2ccb27ac-f985-4474-a561-c21a73484f38",
+  "targets": [
+    {
+      "name": "Faelantern",
+      "parts": [
+        {
+          "breakSection": [
+            50,
+            0
+          ],
+          "defCorrection": -7,
+          "hp": 59.3,
+          "name": "Fairy",
+          "partId": 876501,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 0.75,
+            "gluttony": 0.75,
+            "lust": 2,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 0.5
+          },
+          "speed": [
+            1,
+            1
+          ]
+        },
+        {
+          "breakSection": [
+            70,
+            40,
+            0
+          ],
+          "defCorrection": 3,
+          "hp": 398.0,
+          "name": "Body",
+          "partId": 876502,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 0.75,
+            "gluttony": 0.75,
+            "lust": 2,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 0.5
+          },
+          "speed": [
+            1,
+            1
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Reveal body when Fairy is broken.\nAll Buffs and Debuffs expire when the body hides again.",
+          "name": "Uncovered Abyss"
+        },
+        {
+          "desc": "When the body is broken, Fairy will have 60% of its Max HP upon restoration.\nWhen the body is broken, Core heals +20 more HP with Skill effects",
+          "name": "Broken Stump"
+        },
+        {
+          "desc": "Inflict [FairyCharm] to the enemy with the slowest Speed.\nNumber of targets increases with every Cycle Count.\nNumber of targets increases when Fairy is restored.",
+          "name": "Charmed"
+        },
+        {
+          "desc": "Cannot damage Core by damaging the Fairy.\nTargets more slots based on the number of <sprite name=\"FairyCharm\"><color=#a16a3b><u><link=\"FairyCharm\">[FairyCharm]</color></link></u> units.",
+          "name": "Leading Lure"
+        },
+        {
+          "desc": "Fairy gains 20% increased Max HP when restored.",
+          "name": "Evolving Lure"
+        },
+        {
+          "desc": "When the Fairy is killed, all Identities gain 5 [Breath] and 2 [Breath] Count next turn",
+          "name": "Fairy Dust"
+        }
+      ],
+      "portrait": 8549,
+      "skills": [
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[OnSucceedAttack] Core, Body heals 15 HP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel] +1 Atk Weight for every turn Fairy is alive.\nPrioritizes Identities with <sprite name=\"FairyCharm\"><color=#a16a3b><u><link=\"FairyCharm\">[FairyCharm]</color></link></u>.",
+          "levelCorrection": 2,
+          "name": "Snagged Lure"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 9,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Burst] Count",
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Burrowing Roots"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 2,
+          "baseValue": 6,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Burst]",
+                "[OnSucceedAttack] Inflict 5 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Expanding Roots"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 5,
+          "baseValue": 7,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Deal +5% damage per 5 [Burst] Count on target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Encroaching Stems"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 5,
+          "baseValue": 10,
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +100% damage to targets with 5+ <sprite name=\"Burst\"><color=#e30000><u><link=\"Burst\">[Burst]</color></link></u>",
+          "levelCorrection": 2,
+          "name": "Uncovered Abyss"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+{
+  "name": "Level 53 - Slash",
+  "siteId": "cd5404fc-3e75-476f-beae-d54616fb8da2",
+  "targets": [
+    {
+      "name": "Furtive Podao Assailant",
+      "num": 5,
+      "passives": [
+        {
+          "desc": "When hit during the combat phase: +10% damage for the turn\nWhen hit during the combat phase: on Clash Win, +20% damage",
+          "name": "Damage Taken"
+        },
+        {
+          "desc": "At 70%+ HP: at Turn End, if this unit failed to hit Hong Lu with a Skill, gain 1 [Reduction] next turn\nAt less than 70% HP: at Turn End, if this unit failed to hit Hong Lu with a Skill, inflict +1 more [Laceration] and [Laceration] Count next turn",
+          "name": "Focusing on Target"
+        }
+      ],
+      "portrait": 90198,
+      "resists": {
+        "blunt": 0.5,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 0.75,
+        "pride": 1,
+        "slash": 2,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "skills": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Slash"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 5+ [Laceration], Clash Power +1",
+          "levelCorrection": 0,
+          "name": "Pressuring"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Deal +1% damage for every ([Laceration] + [Laceration] Count) on the target (max 20%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 5 [Laceration] on target (max 2)",
+          "levelCorrection": 0,
+          "name": "Ruptured Image Execution"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]",
+                "[OnSucceedAttack] Inflict 3 [DefenseDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] If target has 6+ [Laceration], Base Power +1",
+          "levelCorrection": 0,
+          "name": "Counter"
+        }
+      ]
+    },
+    {
+      "name": "Swift Podao Assailant",
+      "num": 4,
+      "passives": [
+        {
+          "desc": "When hit during the combat phase: +10% damage for the turn\nWhen hit during the combat phase: on Clash Win, +20% damage",
+          "name": "Damage Taken"
+        },
+        {
+          "desc": "At 70%+ HP: at Turn End, if this unit failed to hit Hong Lu with a Skill, gain 1 [Reduction] next turn\nAt less than 70% HP: at Turn End, if this unit failed to hit Hong Lu with a Skill, inflict +1 more [Laceration] and [Laceration] Count next turn",
+          "name": "Focusing on Target"
+        }
+      ],
+      "portrait": 90199,
+      "resists": {
+        "blunt": 0.5,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 0.75,
+        "pride": 1,
+        "slash": 2,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "skills": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Sweep Away"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 5+ [Laceration], Clash Power +1",
+          "levelCorrection": 0,
+          "name": "Cornering"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Deal +1% damage for every ([Laceration] + [Laceration] Count) on the target (max 20%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 5 [Laceration] on target (max 2)",
+          "levelCorrection": 0,
+          "name": "Execution of the Ruptured Image"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]",
+                "[OnSucceedAttack] Inflict 3 [AttackDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] If target has 6+ [Laceration], Base Power +1",
+          "levelCorrection": 0,
+          "name": "Counter"
+        }
+      ]
+    },
+    {
+      "name": "Large Podao Assailant",
+      "num": 3,
+      "passives": [
+        {
+          "desc": "When hit during the combat phase: +10% damage for the turn\nWhen hit during the combat phase: on Clash Win, +20% damage",
+          "name": "Damage Taken"
+        },
+        {
+          "desc": "Deal +0.5% damage for every 1% missing HP on self (max 50%)",
+          "name": "Mission Progress"
+        },
+        {
+          "desc": "At 70%+ HP: at Turn End, if this unit failed to hit Hong Lu with a Skill, gain 1 [Reduction] next turn\nAt less than 70% HP: at Turn End, if this unit failed to hit Hong Lu with a Skill, gain 1 [Enhancement] next turn\n- inflict +1 more [Laceration] and [Laceration] Count next turn",
+          "name": "Honing in on Target"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        }
+      ],
+      "portrait": 90200,
+      "resists": {
+        "blunt": 0.5,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 0.5,
+        "pride": 1,
+        "slash": 2,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "skills": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 8+ [Laceration], Clash Power +1",
+          "levelCorrection": 0,
+          "name": "Parrying Slash"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 5+ [Laceration], Clash Power +1",
+          "levelCorrection": 0,
+          "name": "Pressuring Slash"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Deal +1% damage for every ([Laceration] + [Laceration] Count) on the target (max 20%)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 5 [Laceration] on target (max 2)",
+          "levelCorrection": 0,
+          "name": "Waveslash"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration] and +3 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Deal +2% damage for every ([Laceration] + [Laceration] Count) on the target (max 50%)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 5 [Laceration] on target (max 3)",
+          "levelCorrection": 3,
+          "name": "Becalming of a Bewildered Steed"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]",
+                "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [AttackDown] and [DefenseDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] If target has 6+ [Laceration], Base Power +1",
+          "levelCorrection": 0,
+          "name": "Counter"
+        }
+      ]
+    }
+  ]
+}

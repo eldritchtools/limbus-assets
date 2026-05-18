@@ -1,0 +1,256 @@
+{
+  "name": "Level 40 - Sloth",
+  "siteId": "809673b7-72dd-4c01-87b4-d4152a0e51b7",
+  "targets": [
+    {
+      "name": "Fairy Gentleman",
+      "parts": [
+        {
+          "breakSection": [
+            35,
+            0
+          ],
+          "defCorrection": -3,
+          "hp": 280.7,
+          "name": "Body",
+          "partId": 874401,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 0.75,
+            "gluttony": 0.5,
+            "lust": 0.5,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 2,
+            "wrath": 0.75
+          },
+          "speed": [
+            2,
+            4
+          ]
+        },
+        {
+          "breakSection": [
+            0
+          ],
+          "defCorrection": -3,
+          "hp": 120.3,
+          "name": "Left Arm",
+          "partId": 874402,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 0.75,
+            "gluttony": 0.5,
+            "lust": 0.5,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 2,
+            "wrath": 0.75
+          },
+          "speed": [
+            2,
+            4
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "After using 'I'll Have This!' on enemies with 5+ [Tipsiness] and successfully landing the attack, become staggered.",
+          "name": "Booze Makes You Hicc!"
+        },
+        {
+          "desc": "A mysterious smell from within boosts the spirit.\nA random Sinner gains 5 [Exalted] at the start of the wave.",
+          "name": "Stimulating Smell, Isn't It?"
+        }
+      ],
+      "portrait": 8048,
+      "skills": [
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Vibration] and +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "In a clash, give 1 [Exalted]",
+          "levelCorrection": -2,
+          "name": "Wanna Get Drunk?"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "In a clash, give 1 [Exalted]\n[WhenUse] Heal 5% HP",
+          "levelCorrection": -2,
+          "name": "Let's Share the Drink!"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion] by target's [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "In a Clash, give 2 [Exalted]\nPrioritizes enemies with [Vibration]",
+          "levelCorrection": -2,
+          "name": "This is All I Got!"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has [Exalted], deal +10% damage for each Count",
+                "[OnSucceedAttack] If target has [Tipsiness], deal 0 damage, and user loses 50 HP",
+                "[OnSucceedAttack] Remove all [Exalted] or [Tipsiness]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nCannot be redirected\nPrioritizes enemies with [Exalted]\nIf target has no [Tipsiness], Clash Power +5",
+          "levelCorrection": -2,
+          "name": "I'll Have This!"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has [Exalted], deal +100% damage for each Count",
+                "[OnSucceedAttack] If target has [Tipsiness], deal 0 damage, and user loses 50 HP",
+                "[OnSucceedAttack] Remove all [Exalted] or [Tipsiness]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes enemies with [Exalted]\nIf target has no [Tipsiness], Clash Power +5",
+          "levelCorrection": -2,
+          "name": "I'll Have This!"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If this attacks Fairy Wine, heal 10% HP next turn, and gain 2 [Enhancement], 2 [Agility], and 2 [Protection]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes Fairy Wine",
+          "levelCorrection": -2,
+          "name": "Not This Time!"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[WhenUse] Gain 1 [Binding] next turn",
+          "levelCorrection": -2,
+          "name": "You Like This Brew?"
+        }
+      ]
+    },
+    {
+      "name": "Fairy Wine",
+      "parts": [
+        {
+          "defCorrection": -5,
+          "hp": 1.9,
+          "name": "Wine Barrel",
+          "partId": 874501,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 0.75,
+            "gluttony": 0.5,
+            "lust": 0.5,
+            "pierce": 1,
+            "pride": 0.75,
+            "slash": 1,
+            "sloth": 2,
+            "wrath": 0.75
+          },
+          "speed": [
+            1,
+            1
+          ]
+        }
+      ],
+      "portrait": 8051,
+      "skills": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 1,
+          "coinValue": 0,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[WhenUse] Convert opponent's [Exalted] into [Tipsiness]",
+          "levelCorrection": 1,
+          "name": "Fairy Wine"
+        }
+      ]
+    }
+  ]
+}
