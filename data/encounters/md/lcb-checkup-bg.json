@@ -1,0 +1,184 @@
+{
+  "name": "LCB Regular Check-up BokGak",
+  "siteId": "a3dfc105-2683-44f5-9db4-62f4b57e9a3b",
+  "targets": [
+    {
+      "name": "Distorted Hohenheim",
+      "parts": [
+        {
+          "breakSection": [
+            25
+          ],
+          "defCorrection": 3,
+          "hp": {
+            "base": 708,
+            "level": 48.8
+          },
+          "name": "Body",
+          "partId": 137801,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 0.75,
+            "gluttony": 1.5,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 1,
+            "sloth": 0.75,
+            "wrath": 1.5
+          },
+          "speed": [
+            2,
+            4
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Encounter Start: Apply 1 [ObservedPerson] on all enemies; then, gain [Breath] Potency and Count equal to the number of units with [ObservedPerson]\n\nTurn Start: Apply 1 [ObservedPerson] against targets without [ObservedPerson]\n\nFor every 10 [ObservedPerson] on the target, inflict +1 more [Vibration] Potency and Count with this unit's Skills (max 3)",
+          "name": "Observation"
+        },
+        {
+          "desc": "On Turn 3: Gains a new pattern and prepares to use a powerful Skill.\nAfter Turn 3 is over: The above effect activates when this unit has 30+ [Breath] Count at Turn End\n\nIf this unit did not take any HP damage during the preparation period before using the powerful Skill, greatly enhance the Skill (does not count damages taken by Shield HP)",
+          "name": "Establish Hypothesis"
+        },
+        {
+          "desc": "Gain 1 [Breath] Potency every time this unit inflicts damage with Attack Skill effects (15 per turn)\n- If the target has 15+ [ObservedPerson], gain 1 additional [Breath] Potency with every hit\n\nGain +1 [Breath] Count every time this unit takes damage from a Sinner's Attack Skill effects (15 per turn)\n- If the target has 15+ [ObservedPerson], gain +1 additional [Breath] Count with every hit taken\n\n<color=#ff6000><mark=#ff000040><b><u>Turn Start: Inflict 3 [ResultReduction] and 5 [ObservedPerson] to the Sinner who dealt the most damage to this unit in the previous turn\n- If the target has 30 [ObservedPerson], inflict 5 [ResultReduction] instead</u></b></mark></color>",
+          "name": "Adaptation"
+        },
+        {
+          "desc": "When weakened due to a Choice Event, this Passive replaces 「Adaptation」\n\nGain 1 [Breath] Potency every time this unit inflicts damage with Attack Skill effects (15 per turn)\n- If the target has 15+ [ObservedPerson], gain 1 additional [Breath] Potency with every hit; however, reduce the target's [ObservedPerson] by 3\n\nGain +1 [Breath] Count every time this unit takes damage from a Sinner's Attack Skill effects (15 per turn)\n- If the target has 15+ [ObservedPerson], gain +1 additional [Breath] Count with every hit taken; however, reduce the target's [ObservedPerson] by 3\n\nCritical damage does not increase or decrease",
+          "name": "Maladaptation"
+        },
+        {
+          "desc": "Turn Start: <color=#ff6000><mark=#ff000040><b><u>Gain Shield equal to 30% of missing HP (Shield HP cannot exceed 25% of the max HP)</u></b></mark></color>\n- If this unit has [Combustion], lose ([Combustion] Count x 1.5)% Shield HP\n- Shield takes +100% damage from [Burst] effects\n\nTurn End: If the Shield gained due to this effect is destroyed, for the rest of this Encounter, gain 1 [DefenseDown] at Turn Start for every instance the Shield has been destroyed (max 5)",
+          "name": "Defense Mechanism"
+        },
+        {
+          "desc": "When weakened due to a Choice Event, this Passive replaces 「Defense Mechanism」\n\nTurn Start: Gain Shield equal to 15% of missing HP (Shield HP cannot exceed 5% of the max HP)\n- If this unit has [Combustion], lose ([Combustion] Count x 2)% Shield HP\n- Shield takes +150% damage from [Burst] effects\n\nTurn End: If the Shield gained due to this effect is destroyed, for the rest of this Encounter, gain 2 [DefenseDown] at Turn Start for every instance the Shield has been destroyed (max 10)",
+          "name": "Inadequate Defense Mechanism"
+        },
+        {
+          "desc": "Turn End: <color=#ff6000><mark=#ff000040><b><u>Siphon 10 SP from Sinners</u></b></mark></color> (max 3 Sinners in descending order of SP; does not apply cumulatively on the same target)\n(Does not activate if Hohenheim is Panicked)\n\n<color=#ff6000><mark=#ff000040><b><u>This unit's SP does not drop below 15</u></b></mark></color>",
+          "name": "Confirmation Bias"
+        },
+        {
+          "desc": "When weakened due to a Choice Event, this Passive replaces 「Confirmation Bias」\n\nTurn Start: <color=#ff6000><mark=#ff000040><b><u>Gain 3 [Vulnerable]</u></b></mark></color> and lose 15 SP\nTurn End: Siphon 5 SP from targets with higher SP than this unit (max 3 targets; in descending order of SP; cannot stack on the same target)\n(Does not activate if Hohenheim is Panicked)",
+          "name": "Self-doubt"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+          "name": "Fixed Panic"
+        }
+      ],
+      "portrait": 1082,
+      "skills": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration] Potency",
+                "[CriticalOnSucceedAttack] Inflict 3 [Vibration] Potency and +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Final Power +1 for every 5 [Breath] Potency on self (max 3)",
+          "levelCorrection": 0,
+          "name": "Compression"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration] Potency",
+                "[WinDuelAttack] Inflict +3 [Vibration] Count",
+                "[CriticalOnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Final Power +1 for every 3 [Breath] Potency on self (max 5)\n<color=#ff6000><mark=#ff000040><b><u>[WhenUse] If the target has 20+ [ObservedPerson], convert all Coins on this Skill to [SuperCoin]s</u></b></mark></color>",
+          "levelCorrection": 1,
+          "name": "Dismantle"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 4,
+          "baseValue": 3,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] If target has 5+ [Vibration] Count, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[WinDuelAttack] Inflict 5 [Vibration] Potency and +3 [Vibration] Count",
+                "[CriticalOnSucceedAttack] Trigger [VibrationExplosion] twice; then, reduce target's [Vibration] Count by 2"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 10+ [Breath] Potency, consume [Breath] Potency to gain +2 Final Power for every 3 [Breath] Potency consumed (max 4)",
+          "levelCorrection": 1,
+          "name": "Conduct Analysis"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 7,
+          "baseValue": 2,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "If user took no HP damage last turn, guarantee a Crit",
+                "If user took HP damage last turn, does not Crit; instead, deal -80% damage",
+                "[CriticalOnSucceedAttack] Trigger [VibrationExplosion] thrice; then, reduce target's [Vibration] Count by 3"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Consume half of [Breath] Potency and Count on self\n- Gain (sum of consumed [Breath] Potency and Count / 2) Final Power (max 20)\n- Deal +(sum of consumed [Breath] Potency and Count x 2)% damage (max 50%)\n- +(sum of consumed [Breath] Potency and Count x 4)% damage on Critical Hit (max 100%)\n[DefeatDuel] Reduce remaining [Breath] Count by half",
+          "levelCorrection": 2,
+          "name": "Trigger Extinction Sequence"
+        },
+        {
+          "affinity": "gloom",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[CanDuelGuard]\n[WhenUse] Final Power +1 for every 3 [Breath] Potency on self (max 5)\n[WhenUse] Gain 4 [Breath] Potency\n- If this unit has Shield, gain +2 [Breath] Count as well",
+          "levelCorrection": 0,
+          "name": "Contemplation"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,732 @@
+{
+  "battles": [
+    {
+      "targets": [
+        {
+          "name": "Fairy Gentleman",
+          "parts": [
+            {
+              "breakSection": [
+                35,
+                0
+              ],
+              "defCorrection": -5,
+              "hp": 1224.0,
+              "name": "Body",
+              "partId": 809001,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 0.5,
+                "gloom": 1,
+                "gluttony": 0.75,
+                "lust": 0.5,
+                "pierce": 2,
+                "pride": 2,
+                "slash": 1,
+                "sloth": 1.5,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            },
+            {
+              "breakSection": [
+                20
+              ],
+              "defCorrection": -8,
+              "hp": 510.0,
+              "name": "Left Arm",
+              "partId": 809002,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 0.5,
+                "gloom": 1,
+                "gluttony": 0.75,
+                "lust": 0.5,
+                "pierce": 2,
+                "pride": 2,
+                "slash": 1,
+                "sloth": 1.5,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "After using 'I'll Have This!' on enemies with 5+ Tipsy and successfully landing the attack, become staggered.",
+              "name": "Booze Makes You Hicc!"
+            },
+            {
+              "desc": "A mysterious smell from within boosts the spirit.\nA random Sinner gains 5 Morale Boost at the start of the wave.",
+              "name": "Stimulating Smell, Isn't It?"
+            }
+          ],
+          "portrait": 8048,
+          "skills": [
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 Tremor and +2 Tremor Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "In a clash, give 1 Morale Boost",
+              "levelCorrection": -1,
+              "name": "Wanna Get Drunk?"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Bind next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "In a clash, give 2 Morale Boost\n[WhenUse] Heal 5% HP",
+              "levelCorrection": -1,
+              "name": "Let's Share the Drink!"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Trigger Tremor Burst by target's Tremor Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "In a clash, give 2 Morale Boost\nPrioritizes enemies with Tremor",
+              "levelCorrection": -1,
+              "name": "This is All I Got!"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target has Morale Boost, deal +10% damage for each Count",
+                    "[OnSucceedAttack] If target has Tipsy, deal 0 damage, and user loses 50 HP",
+                    "[OnSucceedAttack] Remove all Morale Boost or Tipsy"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel]\nCannot be redirected\nPrioritizes enemies with Morale Boost\nIf target has no Tipsy, Clash Power +5",
+              "levelCorrection": -1,
+              "name": "I'll Have This!"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 16,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target has Morale Boost, deal +100% damage for each Count",
+                    "[OnSucceedAttack] If target has Tipsy, deal 0 damage, and user loses 50 HP",
+                    "[OnSucceedAttack] Remove all Morale Boost or Tipsy"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes enemies with Morale Boost\nIf target has no Tipsy, Clash Power +5",
+              "levelCorrection": -1,
+              "name": "I'll Have This!"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 7,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If this attacks Fairy Wine, heal 10% HP next turn, and gain 2 Attack Power Up, 2 Haste, and 2 Protection"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes Fairy Wine",
+              "levelCorrection": -1,
+              "name": "Not This Time!"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[WhenUse] Gain 1 Bind next turn",
+              "levelCorrection": -3,
+              "name": "You Like This Brew?"
+            }
+          ]
+        },
+        {
+          "name": "Fairy Wine",
+          "parts": [
+            {
+              "defCorrection": -5,
+              "hp": 10.9,
+              "name": "Wine Barrel",
+              "partId": 809101,
+              "resists": {
+                "blunt": 1,
+                "envy": 0.5,
+                "gloom": 1,
+                "gluttony": 0.75,
+                "lust": 0.5,
+                "pierce": 1,
+                "pride": 1.5,
+                "slash": 1,
+                "sloth": 2,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                1
+              ]
+            }
+          ],
+          "portrait": 8051,
+          "skills": [
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 1,
+              "coinValue": 0,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[WhenUse] Convert opponent's Morale Boost into Tipsy",
+              "levelCorrection": -18,
+              "name": "Fairy Wine"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Shock Centipede",
+          "parts": [
+            {
+              "breakSection": [
+                55
+              ],
+              "defCorrection": -3,
+              "hp": 452.5,
+              "name": "Body",
+              "partId": 808601,
+              "resists": {
+                "blunt": 1,
+                "envy": 0.5,
+                "gloom": 2,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1.5,
+                "pride": 1,
+                "slash": 0.5,
+                "sloth": 1.5,
+                "wrath": 0.5
+              },
+              "speed": [
+                2,
+                5
+              ]
+            },
+            {
+              "breakSection": [
+                0
+              ],
+              "defCorrection": -3,
+              "hp": 282.2,
+              "name": "Head",
+              "partId": 808602,
+              "resists": {
+                "blunt": 2,
+                "envy": 0.5,
+                "gloom": 2,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 0.5,
+                "sloth": 1.5,
+                "wrath": 0.5
+              },
+              "speed": [
+                2,
+                5
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Upon death, all Skills are cancelled for the turn.\nDoubles currently owned Self-charge.",
+              "name": "Living Nerves"
+            },
+            {
+              "desc": "Every 5 turns, gains a Shield equal to the head's HP.",
+              "name": "Undying Persistence"
+            },
+            {
+              "desc": "After using 'Coil Up', if the Shield is exhausted, spend Self-charge.\nAll parts become staggered next turn.",
+              "name": "Terminated Persistence"
+            }
+          ],
+          "portrait": 8045,
+          "skills": [
+            {
+              "affinity": "gloom",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Bleed and +2 Bleed Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain 2 Self-charge\n[DefeatDuel] Lose 1 Self-charge",
+              "levelCorrection": -3,
+              "name": "Bite"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Bleed and +2 Bleed Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Bind next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain 2 Self-charge\n[DefeatDuel] Lose 1 Self-charge",
+              "levelCorrection": -3,
+              "name": "Tail Poke"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Fragile",
+                    "[OnSucceedAttackHead] Inflict 2 Bind next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain 2 Self-charge\n[DefeatDuel] Lose 1 Self-charge",
+              "levelCorrection": -3,
+              "name": "Wrapping Coil"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Paralyze"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain 1 Self-charge\nDeal +10% damage to targets with Paralyze",
+              "levelCorrection": -3,
+              "name": "Electric Load"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Paralyze"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain 1 Self-charge\nDeal +10% damage to targets with Paralyze",
+              "levelCorrection": -3,
+              "name": "Electric Release"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "blunt",
+              "atkWeight": 5,
+              "baseValue": 13,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Fragile"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target has Capacitor, deal 40% of damage dealt as fixed damage",
+                    "[OnSucceedAttack] Inflict 3 Paralyze and 1 Capacitor"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "At 11+ Self-charge, deal +10% Damage for each Count of Self-charge over 10\nSpend all Self-charge",
+              "levelCorrection": -3,
+              "name": "High-voltage Electric Discharge"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 1,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "If this skill is on a slot, gain Shield by the head's current HP",
+              "levelCorrection": 5,
+              "name": "Coil Up"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Paralyze"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Targets the enemy with the least HP\n[WhenUse] Spend 2 Self-charge\n[DefeatDuel] Lose 2 Self-charge",
+              "levelCorrection": -2,
+              "name": "Wriggling Head"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Paralyze"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Targets the enemy with the least HP\n[WhenUse] Spend 2 Self-charge\n[DefeatDuel] Lose 3 Self-charge",
+              "levelCorrection": -2,
+              "name": "Wriggling Tail"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Brazen Bull - Tearful",
+          "parts": [
+            {
+              "breakSection": [
+                25,
+                0
+              ],
+              "defCorrection": -3,
+              "hp": 1325.0,
+              "name": "Body",
+              "partId": 809601,
+              "resists": {
+                "blunt": 1.25,
+                "envy": 1,
+                "gloom": 2,
+                "gluttony": 0.5,
+                "lust": 1,
+                "pierce": 0.5,
+                "pride": 1,
+                "slash": 0.5,
+                "sloth": 1.5,
+                "wrath": 0.5
+              },
+              "speed": [
+                1,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "When the head is broken, all parts become staggered next turn. Afterwards, all parts have 3 Attack Power Down for the duration of the battle.",
+              "name": "Downed by the Horns"
+            },
+            {
+              "desc": "At the end of the turn, if the unit has 3+ Unresolved Sorrow, generates a head next turn and changes behavior.",
+              "name": "Expanding Sorrow"
+            },
+            {
+              "desc": "At the end of the turn, if the unit has 3+ Unresolved Sorrow and the head is broken, becomes staggered next turn.",
+              "name": "Inconsolable Sorrow"
+            }
+          ],
+          "portrait": 8041,
+          "skills": [
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Burn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Burn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -1,
+              "name": "Ram"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 Burn Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -1,
+              "name": "Pin Down"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Burn",
+                    "[OnSucceedAttack] Raise Stagger Threshold by 20% of damage dealt"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Burn",
+                    "[OnSucceedAttack] Raise Stagger Threshold by 20% of damage dealt"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Burn",
+                    "[OnSucceedAttack] Raise Stagger Threshold by 20% of damage dealt"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 3,
+              "name": "Charge In"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 15,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Target loses 15 SP",
+                    "[OnSucceedAttack] Raise Stagger Threshold by 50% of damage dealt"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[DefeatDuel] Gain 1 Unresolved Sorrow",
+              "levelCorrection": -5,
+              "name": "Overflowing Sorrow"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 12,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Wavering Emotions",
+                    "[OnSucceedAttack] Inflict +3 Sinking Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WinDuel] Gain 1 Haste and 1 Attack Power Up next turn",
+              "levelCorrection": 3,
+              "name": "Heated Cries"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 12,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Wavering Emotions",
+                    "[OnSucceedAttack] Inflict 2 Sinking"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Wavering Emotions",
+                    "[OnSucceedAttack] Inflict 2 Sinking"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WinDuel] Gain 1 Haste and 1 Attack Power Up next turn",
+              "levelCorrection": 3,
+              "name": "Heated Screams"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "name": "Tearful Things",
+  "siteId": "1df87d95-1591-424c-acc6-1b5f1a2b85bc"
+}

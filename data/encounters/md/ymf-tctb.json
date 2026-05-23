@@ -1,0 +1,293 @@
+{
+  "name": "Yield My Flesh to Claim Their Bones",
+  "siteId": "83b66bd3-ab9d-47ad-ad47-5086d70d8fc6",
+  "targets": [
+    {
+      "name": "Distorted Bamboo-hatted Kim",
+      "parts": [
+        {
+          "breakSection": [
+            60,
+            0
+          ],
+          "defCorrection": 2,
+          "hp": {
+            "base": 583,
+            "level": 24.13
+          },
+          "name": "Body",
+          "partId": 815801,
+          "resists": {
+            "blunt": 0.75,
+            "envy": 1,
+            "gloom": 0.5,
+            "gluttony": 1,
+            "lust": 0.5,
+            "pierce": 1,
+            "pride": 2,
+            "slash": 1.2,
+            "sloth": 0.5,
+            "wrath": 1.2
+          },
+          "speed": [
+            2,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Gain [Grudge] at Turn Start if 'To Claim Your Bones' is in the Skill Slot. Remove [Grudge] at Turn End",
+          "name": "Resentful Scabbard"
+        },
+        {
+          "desc": "At 20% HP, gains a new pattern.\nAt 20%- HP, starting next turn, gain 20 [Grudge] every turn. [Grudge] no longer expires",
+          "name": "Blade Dance"
+        },
+        {
+          "desc": "When taking Sinking damage, gain 1 Defense Level Down next turn. (5 times per turn)",
+          "name": "Growing Resentment"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+          "name": "Fixed Panic"
+        }
+      ],
+      "portrait": 8153,
+      "skills": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": -3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 2 [Breath]",
+          "levelCorrection": 3,
+          "name": "Draw of the Sword"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 11,
+          "coinValue": -3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                "[OnSucceedAttack] Gain 1 [AttackDmgUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[OnSucceedAttack] Inflict 1 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[OnSucceedAttack] Inflict 1 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 2 [Breath]",
+          "levelCorrection": 3,
+          "name": "Paralyzer"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 12,
+          "coinValue": -4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath] and +1 [Breath] Count",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [SlashDamageUp] next turn",
+                "[OnSucceedAttack] Inflict 2 [SlashResistDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Gain +1 [Breath] Count",
+          "levelCorrection": 3,
+          "name": "Slay"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 14,
+          "coinValue": -4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath] and +1 [Breath] Count",
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [SlashDamageUp] next turn",
+                "[OnSucceedAttack] Inflict 2 [SlashResistDown]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration]",
+                "[OnSucceedAttack] Inflict 2 [Paralysis] next turn",
+                "[OnSucceedAttackHead] Inflict +3 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Gain +3 [Breath] Count",
+          "levelCorrection": 3,
+          "name": "Overthrow"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 6,
+          "baseValue": 28,
+          "coinValue": -8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [SlashResistDown]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "+100% Damage on Critical Hit",
+                "[OnSucceedAttack] Inflict 5 [Paralysis] next turn",
+                "[OnSucceedAttack] Inflict 10 [Laceration] and +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If the Shield isn't fully depleted, divide [Grudge] value by Atk Weight and inflict it as fixed damage."
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] Gain 200 Shield\n[WhenUse] Gain +3 [Breath] Count\n[WhenUse] If the Shield isn't fully depleted, Clash Power +10",
+          "levelCorrection": 5,
+          "name": "To Claim Their Bones"
+        },
+        {
+          "affinity": "envy",
+          "atkWeight": 1,
+          "baseValue": 12,
+          "coinValue": -8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[OnSucceedEvade] Gain 4 [Breath]",
+          "levelCorrection": -2,
+          "name": "Evade"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": -5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "Gain X [Grudge] next turn (X = Damage dealt by the Skill that activated the Counter Skill)",
+          "levelCorrection": 3,
+          "name": "Yield My Flesh"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 11,
+          "coinValue": -2,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[EnemyKill] Gain 3 [AttackUp] and 3 [DefenseUp] next turn",
+          "levelCorrection": 5,
+          "name": "Blade Dance"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 29,
+          "coinValue": -5,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Deal fixed damage equal to [Grudge] value."
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantChangeTarget]\nPrioritizes the unit with the least HP\n[EnemyKill] Double the [Grudge] value.\n[EnemyKill] Heal HP equal to [Grudge] value",
+          "levelCorrection": 5,
+          "name": "To Claim Their Bones"
+        }
+      ]
+    }
+  ]
+}

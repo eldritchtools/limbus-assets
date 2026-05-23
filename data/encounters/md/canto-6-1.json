@@ -1,0 +1,2155 @@
+{
+  "battles": [
+    {
+      "waves": [
+        {
+          "targets": [
+            {
+              "name": "Hostile Wuthering Heights Butler",
+              "num": 2,
+              "passives": [
+                {
+                  "desc": "Turn End: if Staggered, heal 12 SP. Gain 2 Defense Level Down next turn. (one time max)",
+                  "name": "I Will... Do My Best"
+                },
+                {
+                  "desc": "Turn End: if in Panic, reset SP to 0.",
+                  "name": "Panic Recovery"
+                },
+                {
+                  "desc": "Turn End: if this unit recovered from Panic, gain 1 Attack Power Up next turn",
+                  "name": "Apologies... Mistress!"
+                }
+              ],
+              "portrait": 90126,
+              "resists": {
+                "blunt": 2,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 0.75,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "skills": [
+                {
+                  "affinity": "gloom",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 4 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 4 [Sinking]",
+                        "[OnSucceedAttackHead] Inflict 1 [Binding] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": 4,
+                  "name": "Housekeeping Start"
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 8 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WinDuel] Gain 1 [PlusCoinValueUp]\n[DefeatDuel] Gain 3 [Sinking]",
+                  "levelCorrection": 4,
+                  "name": "Interloper Reception"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                        "[OnSucceedAttack] Inflict 2 [DefenseDown]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                        "[OnSucceedAttack] Inflict 2 [DefenseDown]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] If target has 8+ [Sinking] Potency, Reuse this Coin (1 time max)",
+                        "[OnSucceedAttackHead] Inflict 4 [DefenseDown] 4 and 1 [Vulnerable]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Base Power +1 for every 5 [Sinking] Potency on target (max 2)",
+                  "levelCorrection": 4,
+                  "name": "Reception Arts 2: Bind"
+                },
+                {
+                  "affinity": "none",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "guard",
+                  "desc": "If this unit has remaining Shield HP at Turn End, lower Stagger threshold by 10\nIf this unit's Shield HP is depleted, the last attacker heals 10 SP",
+                  "levelCorrection": 2,
+                  "name": "Guard"
+                }
+              ]
+            },
+            {
+              "name": "Trained Wuthering Heights Butler",
+              "num": 3,
+              "passives": [
+                {
+                  "desc": "Turn End: if Staggered, heal 12 SP. Gain 2 Defense Level Down next turn. (one time max)",
+                  "name": "I Will... Do My Best"
+                },
+                {
+                  "desc": "Turn End: if in Panic, reset SP to 0.",
+                  "name": "Panic Recovery"
+                },
+                {
+                  "desc": "Turn End: if this unit recovered from Panic, gain 1 Attack Power Up next turn",
+                  "name": "Apologies... Mistress!"
+                }
+              ],
+              "portrait": 90127,
+              "resists": {
+                "blunt": 2,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 0.75,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "skills": [
+                {
+                  "affinity": "gloom",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 4 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 4 [Sinking]",
+                        "[OnSucceedAttackHead] Inflict 1 [Paralysis] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": 4,
+                  "name": "Commence Housekeeping"
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WinDuel] Gain 1 [PlusCoinValueUp]\n[DefeatDuel] Gain 3 [Sinking]",
+                  "levelCorrection": 4,
+                  "name": "Interloper Response"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Paralysis] next turn",
+                        "[OnSucceedAttack] Inflict 2 [AttackDown]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Paralysis] next turn",
+                        "[OnSucceedAttack] Inflict 2 [AttackDown]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] If target has 4+ [Sinking] Count, Reuse this Coin (1 time max)",
+                        "[OnSucceedAttackHead] Inflict 4 [AttackDown] and 1 [Paralysis] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Base Power +1 for every 5 [Sinking] Potency on target (max 2)",
+                  "levelCorrection": 4,
+                  "name": "Reception Arts 2: Topple"
+                },
+                {
+                  "affinity": "none",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "guard",
+                  "desc": "If this unit has remaining Shield HP at Turn End, lower Stagger threshold by 10\nIf this unit's Shield HP is depleted, the last attacker heals 10 SP",
+                  "levelCorrection": 2,
+                  "name": "Guard"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "targets": [
+            {
+              "name": "Hostile Wuthering Heights Butler",
+              "num": 2,
+              "passives": [
+                {
+                  "desc": "Turn End: if Staggered, heal 12 SP. Gain 2 Defense Level Down next turn. (one time max)",
+                  "name": "I Will... Do My Best"
+                },
+                {
+                  "desc": "Turn End: if in Panic, reset SP to 0.",
+                  "name": "Panic Recovery"
+                },
+                {
+                  "desc": "Turn End: if this unit recovered from Panic, gain 1 Attack Power Up next turn",
+                  "name": "Apologies... Mistress!"
+                }
+              ],
+              "portrait": 90126,
+              "resists": {
+                "blunt": 2,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 0.75,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "skills": [
+                {
+                  "affinity": "gloom",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 4 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 4 [Sinking]",
+                        "[OnSucceedAttackHead] Inflict 1 [Binding] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": 4,
+                  "name": "Housekeeping Start"
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 8 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WinDuel] Gain 1 [PlusCoinValueUp]\n[DefeatDuel] Gain 3 [Sinking]",
+                  "levelCorrection": 4,
+                  "name": "Interloper Reception"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                        "[OnSucceedAttack] Inflict 2 [DefenseDown]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                        "[OnSucceedAttack] Inflict 2 [DefenseDown]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] If target has 8+ [Sinking] Potency, Reuse this Coin (1 time max)",
+                        "[OnSucceedAttackHead] Inflict 4 [DefenseDown] 4 and 1 [Vulnerable]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Base Power +1 for every 5 [Sinking] Potency on target (max 2)",
+                  "levelCorrection": 4,
+                  "name": "Reception Arts 2: Bind"
+                },
+                {
+                  "affinity": "none",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "guard",
+                  "desc": "If this unit has remaining Shield HP at Turn End, lower Stagger threshold by 10\nIf this unit's Shield HP is depleted, the last attacker heals 10 SP",
+                  "levelCorrection": 2,
+                  "name": "Guard"
+                }
+              ]
+            },
+            {
+              "name": "Trained Wuthering Heights Butler",
+              "num": 4,
+              "passives": [
+                {
+                  "desc": "Turn End: if Staggered, heal 12 SP. Gain 2 Defense Level Down next turn. (one time max)",
+                  "name": "I Will... Do My Best"
+                },
+                {
+                  "desc": "Turn End: if in Panic, reset SP to 0.",
+                  "name": "Panic Recovery"
+                },
+                {
+                  "desc": "Turn End: if this unit recovered from Panic, gain 1 Attack Power Up next turn",
+                  "name": "Apologies... Mistress!"
+                }
+              ],
+              "portrait": 90127,
+              "resists": {
+                "blunt": 2,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 0.75,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "skills": [
+                {
+                  "affinity": "gloom",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 4 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 4 [Sinking]",
+                        "[OnSucceedAttackHead] Inflict 1 [Paralysis] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": 4,
+                  "name": "Commence Housekeeping"
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WinDuel] Gain 1 [PlusCoinValueUp]\n[DefeatDuel] Gain 3 [Sinking]",
+                  "levelCorrection": 4,
+                  "name": "Interloper Response"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Paralysis] next turn",
+                        "[OnSucceedAttack] Inflict 2 [AttackDown]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Paralysis] next turn",
+                        "[OnSucceedAttack] Inflict 2 [AttackDown]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] If target has 4+ [Sinking] Count, Reuse this Coin (1 time max)",
+                        "[OnSucceedAttackHead] Inflict 4 [AttackDown] and 1 [Paralysis] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Base Power +1 for every 5 [Sinking] Potency on target (max 2)",
+                  "levelCorrection": 4,
+                  "name": "Reception Arts 2: Topple"
+                },
+                {
+                  "affinity": "none",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "guard",
+                  "desc": "If this unit has remaining Shield HP at Turn End, lower Stagger threshold by 10\nIf this unit's Shield HP is depleted, the last attacker heals 10 SP",
+                  "levelCorrection": 2,
+                  "name": "Guard"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "targets": [
+            {
+              "name": "Hostile Wuthering Heights Butler",
+              "num": 2,
+              "passives": [
+                {
+                  "desc": "Turn End: if Staggered, heal 12 SP. Gain 2 Defense Level Down next turn. (one time max)",
+                  "name": "I Will... Do My Best"
+                },
+                {
+                  "desc": "Turn End: if in Panic, reset SP to 0.",
+                  "name": "Panic Recovery"
+                },
+                {
+                  "desc": "Turn End: if this unit recovered from Panic, gain 1 Attack Power Up next turn",
+                  "name": "Apologies... Mistress!"
+                }
+              ],
+              "portrait": 90126,
+              "resists": {
+                "blunt": 2,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 0.75,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "skills": [
+                {
+                  "affinity": "gloom",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 4 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 4 [Sinking]",
+                        "[OnSucceedAttackHead] Inflict 1 [Binding] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": 4,
+                  "name": "Housekeeping Start"
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 8 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WinDuel] Gain 1 [PlusCoinValueUp]\n[DefeatDuel] Gain 3 [Sinking]",
+                  "levelCorrection": 4,
+                  "name": "Interloper Reception"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                        "[OnSucceedAttack] Inflict 2 [DefenseDown]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                        "[OnSucceedAttack] Inflict 2 [DefenseDown]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] If target has 8+ [Sinking] Potency, Reuse this Coin (1 time max)",
+                        "[OnSucceedAttackHead] Inflict 4 [DefenseDown] 4 and 1 [Vulnerable]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Base Power +1 for every 5 [Sinking] Potency on target (max 2)",
+                  "levelCorrection": 4,
+                  "name": "Reception Arts 2: Bind"
+                },
+                {
+                  "affinity": "none",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "guard",
+                  "desc": "If this unit has remaining Shield HP at Turn End, lower Stagger threshold by 10\nIf this unit's Shield HP is depleted, the last attacker heals 10 SP",
+                  "levelCorrection": 2,
+                  "name": "Guard"
+                }
+              ]
+            },
+            {
+              "name": "Trained Wuthering Heights Butler",
+              "num": 2,
+              "passives": [
+                {
+                  "desc": "Turn End: if Staggered, heal 12 SP. Gain 2 Defense Level Down next turn. (one time max)",
+                  "name": "I Will... Do My Best"
+                },
+                {
+                  "desc": "Turn End: if in Panic, reset SP to 0.",
+                  "name": "Panic Recovery"
+                },
+                {
+                  "desc": "Turn End: if this unit recovered from Panic, gain 1 Attack Power Up next turn",
+                  "name": "Apologies... Mistress!"
+                }
+              ],
+              "portrait": 90127,
+              "resists": {
+                "blunt": 2,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 0.75,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "skills": [
+                {
+                  "affinity": "gloom",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 4 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 4 [Sinking]",
+                        "[OnSucceedAttackHead] Inflict 1 [Paralysis] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": 4,
+                  "name": "Commence Housekeeping"
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WinDuel] Gain 1 [PlusCoinValueUp]\n[DefeatDuel] Gain 3 [Sinking]",
+                  "levelCorrection": 4,
+                  "name": "Interloper Response"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Paralysis] next turn",
+                        "[OnSucceedAttack] Inflict 2 [AttackDown]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Paralysis] next turn",
+                        "[OnSucceedAttack] Inflict 2 [AttackDown]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] If target has 4+ [Sinking] Count, Reuse this Coin (1 time max)",
+                        "[OnSucceedAttackHead] Inflict 4 [AttackDown] and 1 [Paralysis] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Base Power +1 for every 5 [Sinking] Potency on target (max 2)",
+                  "levelCorrection": 4,
+                  "name": "Reception Arts 2: Topple"
+                },
+                {
+                  "affinity": "none",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "guard",
+                  "desc": "If this unit has remaining Shield HP at Turn End, lower Stagger threshold by 10\nIf this unit's Shield HP is depleted, the last attacker heals 10 SP",
+                  "levelCorrection": 2,
+                  "name": "Guard"
+                }
+              ]
+            },
+            {
+              "name": "Josephine",
+              "passives": [
+                {
+                  "desc": "Turn End: if in Panic, reset SP to 0.",
+                  "name": "Panic Recovery"
+                },
+                {
+                  "desc": "Turn End: if Staggered, recover from the Staggered state and heal 20 SP. Gain 1 Offense Level Up next turn. (1 max)",
+                  "name": "I'll Clean You Up..."
+                },
+                {
+                  "desc": "Turn End: if this unit recovered from Panic, gain 1 Attack Power Up next turn",
+                  "name": "Apologies... Mistress!"
+                },
+                {
+                  "desc": "If this unit's Speed is faster than the target's, Clash Power +2",
+                  "name": "Insolent Fool!"
+                },
+                {
+                  "desc": "Heal 10 SP when every Coin of an Attack Skill flips heads",
+                  "name": "The Mistress's Voice...!"
+                },
+                {
+                  "desc": "If the target has Sinking, and if the target has -15 or less SP, gain 3 Offense Level Up next turn. (once per target)",
+                  "name": "Will You Witness Me, Mistress?!"
+                }
+              ],
+              "portrait": 91014,
+              "resists": {
+                "blunt": 1.2,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 0.5,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "skills": [
+                {
+                  "affinity": "gloom",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 4 [Sinking]",
+                        "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 4 [Sinking]",
+                        "[OnSucceedAttack] Inflict 1 [Paralysis] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] If target has 5+ [Sinking] Potency, inflict 1 [AttackDown]",
+                  "levelCorrection": 5,
+                  "name": "Knocking"
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 Plus Coin Drop next turn"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 [Sinking] Count",
+                        "[OnSucceedAttack] Inflict 2 [Vulnerable] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] If the target is at 10 or less SP, inflict 2 [AttackDown]\n[WinDuel] Inflict 1 [Vulnerable]",
+                  "levelCorrection": 5,
+                  "name": "Time to Clean!"
+                },
+                {
+                  "affinity": "lust",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 8 [Sinking]",
+                        "[OnSucceedAttackHead] Inflict +2 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 8 [Sinking]",
+                        "[OnSucceedAttackHead] Inflict +2 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [EchoOfMansion] next turn",
+                        "[OnSucceedAttack] Inflict 8 [Sinking]",
+                        "[OnSucceedAttackHead] Inflict +2 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Base Power +1 for every 3 [Sinking] Potency on target (max 3)\n[WinDuel] All allies heal 5 SP",
+                  "levelCorrection": 5,
+                  "name": "As Mistress Commands...!"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict Gloom Affinity bonus damage equal to [Sinking] Potency on target. Reduce [Sinking] Count on target by 1"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict Gloom Affinity bonus damage equal to [Sinking] Potency on target. Reduce [Sinking] Count on target by 1"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict Gloom Affinity bonus damage equal to [Sinking] Potency on target. Reduce [Sinking] Count on target by 1",
+                        "[OnSucceedAttack] Inflict 4 [Sinking]",
+                        "[OnSucceedAttack] If target has 3+ [Sinking] Count, Reuse this Coin (twice)"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[StartBattle] Apply 3 [AttackUp] and heal 15 SP for all allies, including this unit\n[StartBattle] Inflict 1 [Vulnerable] to all other allies",
+                  "levelCorrection": 5,
+                  "name": "Not Even a Speck of Dust!"
+                },
+                {
+                  "affinity": "none",
+                  "atkWeight": 1,
+                  "baseValue": 10,
+                  "coinValue": 20,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "guard",
+                  "desc": "If this unit has remaining Shield HP at Turn End, lower Stagger threshold by 50\nIf this unit's Shield HP is depleted, all enemies heal 10 SP",
+                  "levelCorrection": 2,
+                  "name": "Slippery Rat!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "waves": [
+        {
+          "targets": [
+            {
+              "name": "Fierce Dead Rabbits Henchman",
+              "num": 2,
+              "passives": [
+                {
+                  "desc": "Deal +10% damage to targets with the least HP",
+                  "name": "It's... you..."
+                },
+                {
+                  "desc": "Target takes 3 SP damage if this unit loses the clash",
+                  "name": "..."
+                },
+                {
+                  "desc": "Turn End: if in Panic, reset SP to 0.",
+                  "name": "Panic Recovery"
+                }
+              ],
+              "portrait": 90118,
+              "resists": {
+                "blunt": 1,
+                "envy": 1.5,
+                "gloom": 2,
+                "gluttony": 0.5,
+                "lust": 1.2,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 0.8,
+                "wrath": 1
+              },
+              "skills": [
+                {
+                  "affinity": "wrath",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 6,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 4 [Burst]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": 5,
+                  "name": "Taking Ca..."
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [DefenseDown]",
+                        "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [DefenseDown]",
+                        "[OnSucceedAttack] Inflict 6 [Burst]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] If target has 3+ [Burst] Potency, Base Power +1",
+                  "levelCorrection": 5,
+                  "name": "Remo...ve..."
+                },
+                {
+                  "affinity": "envy",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 6 [Burst]",
+                        "[OnSucceedAttack] Inflict 6 [Laceration]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 [DefenseDown]",
+                        "[OnSucceedAttack] Inflict 1 [Paralysis] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Inflict 3 SP damage\n[WhenUse] If target has [Burst], Base Power +1 for every 4 [Burst] Potency on target (max 3)",
+                  "levelCorrection": 5,
+                  "name": "Hold... Them Ba..."
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Laceration]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "counter",
+                  "desc": "If target has [Burst], Final Power +1",
+                  "levelCorrection": 5,
+                  "name": "Cou..."
+                }
+              ]
+            },
+            {
+              "name": "Sharp Dead Rabbits Henchman",
+              "num": 3,
+              "passives": [
+                {
+                  "desc": "Deal +10% damage to targets with the least HP",
+                  "name": "It's... you..."
+                },
+                {
+                  "desc": "Target takes 3 SP damage if this unit loses the clash",
+                  "name": "..."
+                },
+                {
+                  "desc": "Turn End: if in Panic, reset SP to 0.",
+                  "name": "Panic Recovery"
+                }
+              ],
+              "portrait": 90119,
+              "resists": {
+                "blunt": 1,
+                "envy": 1.5,
+                "gloom": 2,
+                "gluttony": 0.5,
+                "lust": 1.2,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 0.8,
+                "wrath": 1
+              },
+              "skills": [
+                {
+                  "affinity": "wrath",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 6,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": 5,
+                  "name": "M...ove"
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [AttackDown]",
+                        "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [AttackDown]",
+                        "[OnSucceedAttack] Inflict 6 [Burst]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] If target has 3+ [Burst] Count, Base Power +1",
+                  "levelCorrection": 5,
+                  "name": "Get... Out of My..."
+                },
+                {
+                  "affinity": "envy",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +4 [Burst] Count",
+                        "[OnSucceedAttack] Inflict 8 [Laceration]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 [AttackDown]",
+                        "[OnSucceedAttack] Inflict 1 [Paralysis] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Inflict 3 SP damage\n[WhenUse] If target has [Burst], Base Power +1 for every 3 [Burst] Count on target (max 3)",
+                  "levelCorrection": 5,
+                  "name": "Break...through"
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Laceration]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "counter",
+                  "desc": "If target has [Burst], Final Power +1",
+                  "levelCorrection": 5,
+                  "name": "...nter..."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "targets": [
+            {
+              "name": "Fierce Dead Rabbits Henchman",
+              "num": 2,
+              "passives": [
+                {
+                  "desc": "Deal +10% damage to targets with the least HP",
+                  "name": "It's... you..."
+                },
+                {
+                  "desc": "Target takes 3 SP damage if this unit loses the clash",
+                  "name": "..."
+                },
+                {
+                  "desc": "Turn End: if in Panic, reset SP to 0.",
+                  "name": "Panic Recovery"
+                }
+              ],
+              "portrait": 90118,
+              "resists": {
+                "blunt": 1,
+                "envy": 1.5,
+                "gloom": 2,
+                "gluttony": 0.5,
+                "lust": 1.2,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 0.8,
+                "wrath": 1
+              },
+              "skills": [
+                {
+                  "affinity": "wrath",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 6,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 4 [Burst]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": 5,
+                  "name": "Taking Ca..."
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [DefenseDown]",
+                        "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [DefenseDown]",
+                        "[OnSucceedAttack] Inflict 6 [Burst]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] If target has 3+ [Burst] Potency, Base Power +1",
+                  "levelCorrection": 5,
+                  "name": "Remo...ve..."
+                },
+                {
+                  "affinity": "envy",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 6 [Burst]",
+                        "[OnSucceedAttack] Inflict 6 [Laceration]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 [DefenseDown]",
+                        "[OnSucceedAttack] Inflict 1 [Paralysis] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Inflict 3 SP damage\n[WhenUse] If target has [Burst], Base Power +1 for every 4 [Burst] Potency on target (max 3)",
+                  "levelCorrection": 5,
+                  "name": "Hold... Them Ba..."
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Laceration]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "counter",
+                  "desc": "If target has [Burst], Final Power +1",
+                  "levelCorrection": 5,
+                  "name": "Cou..."
+                }
+              ]
+            },
+            {
+              "name": "Sharp Dead Rabbits Henchman",
+              "num": 2,
+              "passives": [
+                {
+                  "desc": "Deal +10% damage to targets with the least HP",
+                  "name": "It's... you..."
+                },
+                {
+                  "desc": "Target takes 3 SP damage if this unit loses the clash",
+                  "name": "..."
+                },
+                {
+                  "desc": "Turn End: if in Panic, reset SP to 0.",
+                  "name": "Panic Recovery"
+                }
+              ],
+              "portrait": 90119,
+              "resists": {
+                "blunt": 1,
+                "envy": 1.5,
+                "gloom": 2,
+                "gluttony": 0.5,
+                "lust": 1.2,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 0.8,
+                "wrath": 1
+              },
+              "skills": [
+                {
+                  "affinity": "wrath",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 6,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": 5,
+                  "name": "M...ove"
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [AttackDown]",
+                        "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [AttackDown]",
+                        "[OnSucceedAttack] Inflict 6 [Burst]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] If target has 3+ [Burst] Count, Base Power +1",
+                  "levelCorrection": 5,
+                  "name": "Get... Out of My..."
+                },
+                {
+                  "affinity": "envy",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +4 [Burst] Count",
+                        "[OnSucceedAttack] Inflict 8 [Laceration]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 [AttackDown]",
+                        "[OnSucceedAttack] Inflict 1 [Paralysis] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Inflict 3 SP damage\n[WhenUse] If target has [Burst], Base Power +1 for every 3 [Burst] Count on target (max 3)",
+                  "levelCorrection": 5,
+                  "name": "Break...through"
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Laceration]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "counter",
+                  "desc": "If target has [Burst], Final Power +1",
+                  "levelCorrection": 5,
+                  "name": "...nter..."
+                }
+              ]
+            },
+            {
+              "name": "Hindley",
+              "passives": [
+                {
+                  "desc": "When in Panic, reset SP to 0 at Turn End.",
+                  "name": "Body Augment - Cooldown"
+                },
+                {
+                  "desc": "Turn End: if this unit's SP is at -10 or less, gain 3 [AttackUp] next turn.",
+                  "name": "Body Augment - Phys. Boost"
+                },
+                {
+                  "desc": "When an ally is defeated, gain 1 Slot next turn (max 3)",
+                  "name": "Reinforcements"
+                },
+                {
+                  "desc": "Every time an ally is defeated, gain 2 [AttackDown] starting next turn.",
+                  "name": "This Can't Be"
+                },
+                {
+                  "desc": "If this unit wins after 5+ Clashes, deal +50% damage",
+                  "name": "This Time, I Win...!"
+                }
+              ],
+              "portrait": 91015,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 0.5,
+                "pride": 1,
+                "slash": 1.25,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "skills": [
+                {
+                  "affinity": "pride",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Gain 1 [AttackUp] next turn"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Gain 1 [AttackUp] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": 3,
+                  "name": "Damn Plebs...!"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] If target has [AttackDown], deal 20% of damage dealt as bonus Blunt damage"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] If target has [AttackDown], deal 20% of damage dealt as bonus Blunt damage"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WinDuel] Base Power +1",
+                  "levelCorrection": 3,
+                  "name": "I'll Remove You"
+                },
+                {
+                  "affinity": "envy",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Heal 4 SP on self"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Heal 4 SP on self"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Heal 4 SP on self"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WinDuel] If target has 2+ [AttackDown], Base Power +1\n[WhenUse] If target has [AttackDown], deal +30% damage",
+                  "levelCorrection": 3,
+                  "name": "Make Things Right Again"
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Vulnerable]",
+                        "[OnSucceedAttack] Inflict 1 [Vulnerable] next turn",
+                        "[OnSucceedAttack] Inflict 2 [Paralysis] next turn"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Deal +30% damage for every 2 [AttackDown] on target (max 120%)",
+                        "[OnSucceedAttackHead] If target has 3+ negative effects, reuse this coin (1 time max)"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Prioritizes targets with the most negative effects\n[WinDuel] Coin Power +1 for every 3 [AttackDown] on target (max 3)",
+                  "levelCorrection": 3,
+                  "name": "Get Crushed"
+                },
+                {
+                  "affinity": "none",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "guard",
+                  "desc": "[StartBattle] Gain 20 additional Shield HP for every surviving other ally",
+                  "levelCorrection": 0,
+                  "name": "Guard"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Dead Rabbits Boss",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                0,
+                -10
+              ],
+              "defCorrection": 3,
+              "hp": 394.44,
+              "name": "Body",
+              "partId": 820401,
+              "resists": {
+                "blunt": 0.8,
+                "envy": 1.5,
+                "gloom": 1.5,
+                "gluttony": 0.5,
+                "lust": 1.2,
+                "pierce": 0.8,
+                "pride": 1,
+                "slash": 0.8,
+                "sloth": 0.8,
+                "wrath": 1.2
+              },
+              "speed": [
+                2,
+                5
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Turn Start: apply 1 [Enhancement] to 2 other allies with the least SP\nFor this Encounter, gain a Slot every time an ally is defeated",
+              "name": "Dead Rabbits Boss?"
+            },
+            {
+              "desc": "If the target's current HP is higher than this unit's, Clash Power +2 and deal +20% damage",
+              "name": "Antagonism"
+            },
+            {
+              "desc": "Clash Win: Heal 5 SP on self\nClash Lose against Heathcliff: Lose 5 SP and gain 2 [Binding] next turn. (Once per turn)\nIf this unit did not land a single hit against Heathcliff this turn, lose 5 SP at Turn End",
+              "name": "Long-awaited Moment"
+            },
+            {
+              "desc": "If an enemy defeats an ally, gain 1 [Enhancement] and 1 [Agility] next turn (3 times per turn)",
+              "name": "Useless Fools..."
+            },
+            {
+              "desc": "On Hit, inflict bonus Pierce damage equal to 50% of the damage dealt",
+              "name": "Spiked Bat"
+            },
+            {
+              "desc": "Turn Start: If not at -45 SP, heal 15 SP.\nTurn End: If Panicked, recover from Panic at the next Turn Start and reset SP to 0.\nTurn End: If this unit recovers from Panic, gain 2 [Enhancement] at the next Turn Start",
+              "name": "Heart of Vengeance"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+              "name": "Fixed Panic"
+            },
+            {
+              "desc": "For the duration of this Encounter, Retreat functions will not activate for Heathcliff Identities.",
+              "name": "Cannot Retreat"
+            }
+          ],
+          "portrait": 91016,
+          "skills": [
+            {
+              "affinity": "envy",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Bat Bash"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]",
+                    "[OnSucceedAttack] Inflict [Laceration] equal to [Burst] on target"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WinDuel] Gain 1 [Enhancement] and 1 Damage Up next turn",
+              "levelCorrection": 1,
+              "name": "Smackdown"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Next Coin has +1 Power"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Next Coin has +2 Power"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Paralysis] next turn",
+                    "[OnSucceedAttack] Inflict bonus Pierce damage equal to ([Laceration] x [Laceration] Count)"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "If target has 5+ [Burst], Clash Power +1\nIf target has 5+ [Laceration], Clash Power +1\n[WinDuel] Inflict +3 [Burst] Count",
+              "levelCorrection": 5,
+              "name": "Upheaval"
+            },
+            {
+              "affinity": "lust",
+              "atkWeight": 1,
+              "baseValue": 15,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[WhenUse] Gain 1 [Enhancement] next turn",
+              "levelCorrection": 3,
+              "name": "Guard"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[WhenUse] Gain 1 [Enhancement] next turn",
+              "levelCorrection": 5,
+              "name": "Counter"
+            }
+          ]
+        },
+        {
+          "name": "Bizarre Dead Rabbits Henchman",
+          "num": 2,
+          "parts": [
+            {
+              "breakSection": [
+                65,
+                30,
+                0
+              ],
+              "defCorrection": -8,
+              "hp": 79.1,
+              "name": "Body",
+              "partId": 816201,
+              "resists": {
+                "blunt": 1,
+                "envy": 1.5,
+                "gloom": 2,
+                "gluttony": 0.5,
+                "lust": 1.2,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 0.8,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Deal +10% damage to targets with the least HP",
+              "name": "It's... you..."
+            },
+            {
+              "desc": "Target takes 3 SP damage if this unit loses the clash",
+              "name": "..."
+            },
+            {
+              "desc": "Turn End: if in Panic, reset SP to 0.",
+              "name": "Panic Recovery"
+            }
+          ],
+          "portrait": 90118,
+          "skills": [
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 5,
+              "name": "Taking Ca..."
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [DefenseDown]",
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [DefenseDown]",
+                    "[OnSucceedAttack] Inflict 6 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 3+ [Burst] Potency, Base Power +1",
+              "levelCorrection": 5,
+              "name": "Remo...ve..."
+            },
+            {
+              "affinity": "envy",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 6 [Burst]",
+                    "[OnSucceedAttack] Inflict 6 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [DefenseDown]",
+                    "[OnSucceedAttack] Inflict 1 [Paralysis] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Inflict 3 SP damage\n[WhenUse] If target has [Burst], Base Power +1 for every 4 [Burst] Potency on target (max 3)",
+              "levelCorrection": 5,
+              "name": "Hold... Them Ba..."
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "If target has [Burst], Final Power +1",
+              "levelCorrection": 5,
+              "name": "Cou..."
+            }
+          ]
+        },
+        {
+          "name": "Veiled Dead Rabbits Henchman",
+          "parts": [
+            {
+              "breakSection": [
+                65,
+                30,
+                0
+              ],
+              "defCorrection": -8,
+              "hp": 79.1,
+              "name": "Body",
+              "partId": 816301,
+              "resists": {
+                "blunt": 1,
+                "envy": 1.5,
+                "gloom": 2,
+                "gluttony": 0.5,
+                "lust": 1.2,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 0.8,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Deal +10% damage to targets with the least HP",
+              "name": "It's... you..."
+            },
+            {
+              "desc": "Target takes 3 SP damage if this unit loses the clash",
+              "name": "..."
+            },
+            {
+              "desc": "Turn End: if in Panic, reset SP to 0.",
+              "name": "Panic Recovery"
+            }
+          ],
+          "portrait": 90119,
+          "skills": [
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 5,
+              "name": "M...ove"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [AttackDown]",
+                    "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [AttackDown]",
+                    "[OnSucceedAttack] Inflict 6 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 3+ [Burst] Count, Base Power +1",
+              "levelCorrection": 5,
+              "name": "Get... Out of My..."
+            },
+            {
+              "affinity": "envy",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +4 [Burst] Count",
+                    "[OnSucceedAttack] Inflict 8 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [AttackDown]",
+                    "[OnSucceedAttack] Inflict 1 [Paralysis] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Inflict 3 SP damage\n[WhenUse] If target has [Burst], Base Power +1 for every 3 [Burst] Count on target (max 3)",
+              "levelCorrection": 5,
+              "name": "Break...through"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "If target has [Burst], Final Power +1",
+              "levelCorrection": 5,
+              "name": "...nter..."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "name": "Dregs of the Manor",
+  "siteId": "d56ab4c4-800d-47bf-82d8-f2e6ea820d1d"
+}

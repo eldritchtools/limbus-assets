@@ -1,0 +1,1187 @@
+{
+  "name": "Lake World",
+  "siteId": "e572e4de-7a31-43e3-b05a-70f0c9c2ec32",
+  "waves": [
+    {
+      "targets": [
+        {
+          "name": "Moustachioed Twinhooks Pirate",
+          "num": 2,
+          "passives": [
+            {
+              "desc": "If this unit has <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></link></u>, gain 5 <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></link></u> upon Clash Win.",
+              "name": "Easy Breathing"
+            },
+            {
+              "desc": "Every turn, if the first Coin 'Heads Hits', gain 1 Damage Up next turn.\nIf the first Coin 'Tails Hits', gain 1 Damage Down next turn.",
+              "name": "Two Sides Of a Coin"
+            }
+          ],
+          "portrait": 90084,
+          "resists": {
+            "blunt": 2,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 0.75,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Inflict 3 Bleed"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -2,
+              "name": "Hook Slice"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 Bleed Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 Bleed"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -2,
+              "name": "Consecutive Hook Slice"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[WhenUse] Gain 2 Poise next turn.\nTurn End: Heal HP equal to the Shield HP.",
+              "levelCorrection": -2,
+              "name": "Battle Cry"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttackTail] Deal +30% damage"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttackTail] Deal +30% damage"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Coin effects activate when this unit has <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</link></u></color>.",
+              "levelCorrection": -2,
+              "name": "Tear the Gap"
+            }
+          ]
+        },
+        {
+          "name": "Bandana-wearing Twinhooks Pirate",
+          "num": 2,
+          "passives": [
+            {
+              "desc": "If this unit has <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></link></u>, gain 5 <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></link></u> upon Clash Win.",
+              "name": "Easy Breathing"
+            },
+            {
+              "desc": "Every turn, if the first Coin 'Heads Hits', gain 1 Damage Up next turn.\nIf the first Coin 'Tails Hits', gain 1 Damage Down next turn.",
+              "name": "Two Sides Of a Coin"
+            }
+          ],
+          "portrait": 90085,
+          "resists": {
+            "blunt": 2,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 0.75,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Inflict +2 Bleed Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -2,
+              "name": "Hook Snag"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Bleed"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 Bleed Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -2,
+              "name": "Hook Punch"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[WhenUse] Gain 2 Poise next turn.\nTurn End: Heal HP equal to the Shield HP.",
+              "levelCorrection": -2,
+              "name": "Battle Cry"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttackTail] Deal +30% damage"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttackTail] Deal +30% damage"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Coin effects activate when this unit has <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</link></u></color>.",
+              "levelCorrection": -2,
+              "name": "Tear the Gap"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Moustachioed Twinhooks Pirate",
+          "passives": [
+            {
+              "desc": "If this unit has <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></link></u>, gain 5 <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></link></u> upon Clash Win.",
+              "name": "Easy Breathing"
+            },
+            {
+              "desc": "Every turn, if the first Coin 'Heads Hits', gain 1 Damage Up next turn.\nIf the first Coin 'Tails Hits', gain 1 Damage Down next turn.",
+              "name": "Two Sides Of a Coin"
+            }
+          ],
+          "portrait": 90084,
+          "resists": {
+            "blunt": 2,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 0.75,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Inflict 3 Bleed"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -2,
+              "name": "Hook Slice"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 Bleed Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 Bleed"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -2,
+              "name": "Consecutive Hook Slice"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[WhenUse] Gain 2 Poise next turn.\nTurn End: Heal HP equal to the Shield HP.",
+              "levelCorrection": -2,
+              "name": "Battle Cry"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttackTail] Deal +30% damage"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttackTail] Deal +30% damage"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Coin effects activate when this unit has <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</link></u></color>.",
+              "levelCorrection": -2,
+              "name": "Tear the Gap"
+            }
+          ]
+        },
+        {
+          "name": "Bandana-wearing Twinhooks Pirate",
+          "passives": [
+            {
+              "desc": "If this unit has <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></link></u>, gain 5 <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></link></u> upon Clash Win.",
+              "name": "Easy Breathing"
+            },
+            {
+              "desc": "Every turn, if the first Coin 'Heads Hits', gain 1 Damage Up next turn.\nIf the first Coin 'Tails Hits', gain 1 Damage Down next turn.",
+              "name": "Two Sides Of a Coin"
+            }
+          ],
+          "portrait": 90085,
+          "resists": {
+            "blunt": 2,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 0.75,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Inflict +2 Bleed Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -2,
+              "name": "Hook Snag"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Bleed"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 Bleed Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -2,
+              "name": "Hook Punch"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[WhenUse] Gain 2 Poise next turn.\nTurn End: Heal HP equal to the Shield HP.",
+              "levelCorrection": -2,
+              "name": "Battle Cry"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttackTail] Deal +30% damage"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttackTail] Deal +30% damage"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Coin effects activate when this unit has <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</link></u></color>.",
+              "levelCorrection": -2,
+              "name": "Tear the Gap"
+            }
+          ]
+        },
+        {
+          "name": "Agile Twinhooks Pirate",
+          "num": 2,
+          "passives": [
+            {
+              "desc": "If this unit has <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></link></u>, gain 5 <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></link></u> upon Clash Win.",
+              "name": "Easy Breathing"
+            },
+            {
+              "desc": "Every turn, if the first Coin 'Heads Hits', gain 1 Damage Up next turn.\nIf the first Coin 'Tails Hits', gain 1 Damage Down next turn.",
+              "name": "Two Sides Of a Coin"
+            },
+            {
+              "desc": "On Hit, if target has <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">Bleed</color></link></u>, regain SP equal to <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">Bleed</color></link></u> on target",
+              "name": "Ain't That a Prick?"
+            }
+          ],
+          "portrait": 90086,
+          "resists": {
+            "blunt": 2,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 0.5,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 Bleed Count",
+                    "[OnSucceedAttackHead] Inflict 3 Bleed"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 2,
+              "name": "Tear the Flesh"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 Bleed and +3 Bleed Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 2,
+              "name": "Going In"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 4 Poise next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Fragile next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[EndSkill] Gain 1 Damage Up next turn",
+              "levelCorrection": 2,
+              "name": "Faster"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[WhenUse] Gain 2 Poise next turn.\nTurn End: Heal HP equal to the Shield HP.",
+              "levelCorrection": 2,
+              "name": "Battle Cry"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WinDuel] Copies the target's 1~3 Skill Coin Power and Coin Count and uses them as its own",
+              "levelCorrection": 2,
+              "name": "Looting"
+            }
+          ]
+        },
+        {
+          "name": "Tough Twinhooks Pirate",
+          "passives": [
+            {
+              "desc": "If this unit has <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></link></u>, gain 5 <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></link></u> upon Clash Win.",
+              "name": "Easy Breathing"
+            },
+            {
+              "desc": "Every turn, if the first Coin 'Heads Hits', gain 1 Damage Up next turn.\nIf the first Coin 'Tails Hits', gain 1 Damage Down next turn.",
+              "name": "Two Sides Of a Coin"
+            },
+            {
+              "desc": "When gaining Protection, gain 1 additional <sprite name=\"Protection\"><color=#f8c200><u><link=\"Protection\">Protection</color></link></u> if this unit's Speed is at 1",
+              "name": "To the Front Lines!!"
+            },
+            {
+              "desc": "On Hit, if target has <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">Bleed</color></link></u>, regain SP equal to <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">Bleed</color></link></u> on target",
+              "name": "Ain't That a Prick?"
+            }
+          ],
+          "portrait": 90087,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 2,
+            "pride": 1,
+            "slash": 0.5,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Bind next turn",
+                    "[OnSucceedAttack] Inflict 2 Bleed"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">Bleed</color></link></u>, gain 1 Protection",
+              "levelCorrection": -5,
+              "name": "Hit Me Harder"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Paralyze next turn",
+                    "[OnSucceedAttack] Inflict 2 Bleed"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Damage Down next turn",
+                    "[OnSucceedAttack] Inflict 2 Bleed"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">Bleed</color></link></u>, gain 1 Protection",
+              "levelCorrection": -5,
+              "name": "Hit Me Right here"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 2 Protection"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 2 Protection next turn",
+                    "[OnSucceedAttack] Gain 4 Poise next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[EndSkill] Gain 1 Damage Up next turn",
+              "levelCorrection": -5,
+              "name": "Even Harder"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[WhenUse] Gain 2 Poise next turn.\nTurn End: Heal HP equal to the Shield HP.",
+              "levelCorrection": 5,
+              "name": "Defend"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WinDuel] Copies the target's 1~3 Skill Coin Power and Coin Count and uses them as its own",
+              "levelCorrection": -5,
+              "name": "Looting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Agile Twinhooks Pirate",
+          "num": 2,
+          "passives": [
+            {
+              "desc": "If this unit has <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></link></u>, gain 5 <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></link></u> upon Clash Win.",
+              "name": "Easy Breathing"
+            },
+            {
+              "desc": "Every turn, if the first Coin 'Heads Hits', gain 1 Damage Up next turn.\nIf the first Coin 'Tails Hits', gain 1 Damage Down next turn.",
+              "name": "Two Sides Of a Coin"
+            },
+            {
+              "desc": "On Hit, if target has <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">Bleed</color></link></u>, regain SP equal to <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">Bleed</color></link></u> on target",
+              "name": "Ain't That a Prick?"
+            }
+          ],
+          "portrait": 90086,
+          "resists": {
+            "blunt": 2,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 0.5,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 Bleed Count",
+                    "[OnSucceedAttackHead] Inflict 3 Bleed"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 2,
+              "name": "Tear the Flesh"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 Bleed and +3 Bleed Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 2,
+              "name": "Going In"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 4 Poise next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Fragile next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[EndSkill] Gain 1 Damage Up next turn",
+              "levelCorrection": 2,
+              "name": "Faster"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[WhenUse] Gain 2 Poise next turn.\nTurn End: Heal HP equal to the Shield HP.",
+              "levelCorrection": 2,
+              "name": "Battle Cry"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WinDuel] Copies the target's 1~3 Skill Coin Power and Coin Count and uses them as its own",
+              "levelCorrection": 2,
+              "name": "Looting"
+            }
+          ]
+        },
+        {
+          "name": "Tough Twinhooks Pirate",
+          "num": 2,
+          "passives": [
+            {
+              "desc": "If this unit has <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></link></u>, gain 5 <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></link></u> upon Clash Win.",
+              "name": "Easy Breathing"
+            },
+            {
+              "desc": "Every turn, if the first Coin 'Heads Hits', gain 1 Damage Up next turn.\nIf the first Coin 'Tails Hits', gain 1 Damage Down next turn.",
+              "name": "Two Sides Of a Coin"
+            },
+            {
+              "desc": "When gaining Protection, gain 1 additional <sprite name=\"Protection\"><color=#f8c200><u><link=\"Protection\">Protection</color></link></u> if this unit's Speed is at 1",
+              "name": "To the Front Lines!!"
+            },
+            {
+              "desc": "On Hit, if target has <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">Bleed</color></link></u>, regain SP equal to <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">Bleed</color></link></u> on target",
+              "name": "Ain't That a Prick?"
+            }
+          ],
+          "portrait": 90087,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 2,
+            "pride": 1,
+            "slash": 0.5,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Bind next turn",
+                    "[OnSucceedAttack] Inflict 2 Bleed"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">Bleed</color></link></u>, gain 1 Protection",
+              "levelCorrection": -5,
+              "name": "Hit Me Harder"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Paralyze next turn",
+                    "[OnSucceedAttack] Inflict 2 Bleed"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Damage Down next turn",
+                    "[OnSucceedAttack] Inflict 2 Bleed"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">Bleed</color></link></u>, gain 1 Protection",
+              "levelCorrection": -5,
+              "name": "Hit Me Right here"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 2 Protection"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 2 Protection next turn",
+                    "[OnSucceedAttack] Gain 4 Poise next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[EndSkill] Gain 1 Damage Up next turn",
+              "levelCorrection": -5,
+              "name": "Even Harder"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[WhenUse] Gain 2 Poise next turn.\nTurn End: Heal HP equal to the Shield HP.",
+              "levelCorrection": 5,
+              "name": "Defend"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WinDuel] Copies the target's 1~3 Skill Coin Power and Coin Count and uses them as its own",
+              "levelCorrection": -5,
+              "name": "Looting"
+            }
+          ]
+        },
+        {
+          "name": "Twinhook Pirates First Mate Smee",
+          "passives": [
+            {
+              "desc": "If this unit has <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></link></u>, gain 5 <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></link></u> upon Clash Win.",
+              "name": "Easy Breathing"
+            },
+            {
+              "desc": "Every turn, if the first Coin 'Heads Hits', gain 2 Damage Up and 1 Attack Power Up next turn.\nIf the first Coin 'Tails Hits', gain 2 Damage Down and 1 Attack Power Down next turn.",
+              "name": "Two Sides Of a Coin"
+            },
+            {
+              "desc": "Upon Clash Lose, gain 4 Poise and 3 Poise Count.",
+              "name": "No... Get Away From Me!"
+            },
+            {
+              "desc": "On Critical Hit, gain 1 Plus Coin Boost next turn.\nHeal 15 SP on self.\nAll other allies heal 10 SP.\n(Activates once per turn)",
+              "name": "Huzzah, Men!"
+            },
+            {
+              "desc": "Being captured in this encounter causes all allies to lose 30 SP",
+              "name": "What Are You Doing?!"
+            },
+            {
+              "desc": "If target has <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">Bleed</color></link></u> On Hit, regain SP equal to <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">Bleed</color></link></u> on target",
+              "name": "Ain't That a Prick?"
+            }
+          ],
+          "portrait": 91012,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 2,
+            "pride": 1,
+            "slash": 0.5,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Bleed"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 7,
+              "name": "There, There They Are"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 Bleed Count",
+                    "[OnSucceedAttackHead] Inflict 2 Bleed"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 Bleed Count",
+                    "[OnSucceedAttackHead] Inflict 4 Bleed"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 7,
+              "name": "We've Got Company, Boys"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Apply 2 Protection, 1 Attack Power Up to all other allies next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain 5 Poise this turn",
+              "levelCorrection": 7,
+              "name": "Battle Command"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 Bleed",
+                    "[OnSucceedAttackHead] Inflict 4 Bleed"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Bleed Count\nDeal bonus damage equal to <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">Bleed</color></link></u> on target",
+                    "Spend 1 Ammo"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "If target has 5+ <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">Bleed</color></link></u>, Clash Power +2",
+              "levelCorrection": 7,
+              "name": "Weakness Spotted! Fire!"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[OnSucceedEvade] Gain 5 Poise next turn.\n[OnSucceedEvade] Apply 2 Poise to all allies next turn.",
+              "levelCorrection": -3,
+              "name": "Evade"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 7,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WinDuel] Copies the target's Skill 3 Coin Power and Coin Count and uses them as its own",
+              "levelCorrection": 7,
+              "name": "Looting"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

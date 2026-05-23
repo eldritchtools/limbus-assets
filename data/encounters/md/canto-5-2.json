@@ -1,0 +1,919 @@
+{
+  "battles": [
+    {
+      "targets": [
+        {
+          "name": "Ambling Pearl",
+          "parts": [
+            {
+              "breakSection": [
+                50,
+                0
+              ],
+              "defCorrection": 5,
+              "hp": {
+                "base": 158,
+                "level": 6.48
+              },
+              "name": "Shell",
+              "partId": 813701,
+              "resists": {
+                "blunt": 0.7,
+                "envy": 0.7,
+                "gloom": 0.7,
+                "gluttony": 0.7,
+                "lust": 0.7,
+                "pierce": 0.7,
+                "pride": 0.7,
+                "slash": 0.7,
+                "sloth": 0.7,
+                "wrath": 0.7
+              },
+              "speed": [
+                1,
+                3
+              ]
+            },
+            {
+              "breakSection": [
+                50
+              ],
+              "defCorrection": -5,
+              "hp": {
+                "base": 293,
+                "level": 12
+              },
+              "name": "Pearl",
+              "partId": 813702,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1.2,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1.2
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Turn Start: If at 0 Green Slime, become Staggered. Pearl loses all Affinity Resistances by 0.5.\nGain 10 Green Slime when recovering from Stagger.",
+              "name": "Exposed Pearl"
+            },
+            {
+              "desc": "Fix this Part's speed to 1 for a turn when using Devouring Fluid.",
+              "name": "Gathering Slime"
+            },
+            {
+              "desc": "The Shell Part retains its resistances even during Staggered state.",
+              "name": "Solid Shell"
+            }
+          ],
+          "portrait": 8101,
+          "skills": [
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Poison"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Poison"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Consume 1 Green Slime",
+              "levelCorrection": -4,
+              "name": "Toxic Fluid"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict Defense Level Down by [Poison] on target",
+                    "[OnSucceedAttack] Inflict 1 Larva"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict Defense Level Down by [Poison] on target",
+                    "[OnSucceedAttack] Inflict 1 Larva"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Consume 1 Green Slime",
+              "levelCorrection": -4,
+              "name": "Corrosive Fluid"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target has [Poison], inflict 1 Paralyze",
+                    "[OnSucceedAttack] Inflict 2 Larva"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target has [Poison], inflict 1 Paralyze",
+                    "[OnSucceedAttack] Inflict 2 Larva"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Consume 1 Green Slime",
+              "levelCorrection": -4,
+              "name": "Paralytic Fluid"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 Poison",
+                    "[OnSucceedAttackHead] Inflict 1 Paralyze next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 Poison",
+                    "[OnSucceedAttackHead] Inflict 1 Paralyze next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Consume 2 Green Slime\n[WhenUse] Inflict 3 Larva",
+              "levelCorrection": -4,
+              "name": "Devouring Fluid"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 5,
+              "baseValue": 15,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 10 Poison",
+                    "[OnSucceedAttack] Lose 7 SP",
+                    "[OnSucceedAttack] Inflict 3 Larva",
+                    "[OnSucceedAttackHead] Inflict 1 Paralyze and 3 Defense Level Down next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Gain Atk Weight by [AaCePcBh]\n[StartBattle] Gain 10 [AaCePcBh]",
+              "levelCorrection": -4,
+              "name": "Effervescent Green Slime"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 50,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "descs": [
+                    "[TargetKill] Gain 3 [AaCePcBh]."
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel][CantChangeTarget]\nTargets Green Slime primarily\nDefeats Green Slime upon attacking",
+              "levelCorrection": -4,
+              "name": "Predation"
+            },
+            {
+              "affinity": "pride",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[OnSucceedEvade] Inflict 5 Poison",
+              "levelCorrection": -4,
+              "name": "Overflowing Poison"
+            }
+          ]
+        },
+        {
+          "name": "Green Slime",
+          "parts": [
+            {
+              "defCorrection": 0,
+              "hp": {
+                "base": 11,
+                "level": 0.36
+              },
+              "name": "Green Slime",
+              "partId": 813801,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1.2,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1.2
+              },
+              "speed": [
+                1,
+                2
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Apply 3 Green Slime to Ambling Pearl when defeated by Ambling Pearl.",
+              "name": "Green Slime"
+            },
+            {
+              "desc": "Turn End: Apply (2 + Surviving Green Slime) Poison to all enemies.",
+              "name": "Contaminating Slime"
+            }
+          ],
+          "portrait": 8109
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Skin Prophet",
+          "parts": [
+            {
+              "breakSection": [
+                50,
+                0
+              ],
+              "defCorrection": 5,
+              "hp": {
+                "base": 380,
+                "level": 14.4
+              },
+              "name": "Body",
+              "partId": 814101,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 1,
+                "gloom": 2,
+                "gluttony": 0.75,
+                "lust": 0.5,
+                "pierce": 1,
+                "pride": 1.25,
+                "slash": 1.2,
+                "sloth": 1.5,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Light all Candles every 4 turns after a Candle is snuffed. All Candles' HP is reduced to 1.",
+              "name": "Darkness Deterred"
+            },
+            {
+              "desc": "If every Candle is snuffed and at full HP, gain resistance until all Candles are lit again.\nWhen all Candles are lit, lose resistance.",
+              "name": "The All-Illuminating Light"
+            }
+          ],
+          "portrait": 8100,
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Deal SP damage by the number of lit Candles"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Deal SP damage by the number of lit Candles"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes enemies with Marked",
+              "levelCorrection": -4,
+              "name": "All Shall Scatter"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Wrath Fragility next turn",
+                    "[OnSucceedAttack] If target has [Combustion], inflict 4 Burn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Wrath Fragility next turn",
+                    "[OnSucceedAttack] If target has [Combustion], inflict 4 Burn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes enemies with Marked",
+              "levelCorrection": -4,
+              "name": "Longing..."
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 7,
+              "baseValue": 20,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Target's max HP decreases by 10%.",
+                    "[OnSucceedAttack] Inflict 5 Burn and +2 Burn Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Target's max HP decreases by 10%.",
+                    "[OnSucceedAttack] Inflict 5 Burn and +2 Burn Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Snuffs out all Candles next turn.\nUpon hitting targets with [AaCePcBa], target loses additional 5% of its max HP.\n[DefeatDuel] Inflict 10 Burn. Inflict target with Marked next turn.\n[EndBattle] All Candles heal to max HP.",
+              "levelCorrection": -4,
+              "name": "9:2"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 20,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] This unit's max HP decreases by 10%.",
+                    "[OnSucceedAttack] Inflict 10 Burn on self"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] This unit's max HP decreases by 10%.",
+                    "[OnSucceedAttack] Inflict 10 Burn on self"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel][CantChangeTarget]\nTake damage in the target's place. Get staggered next turn.\nInflict Marked on a random enemy without [AaCePcBa].\n[EndBattle] All Candles heal to max HP",
+              "levelCorrection": -4,
+              "name": "6:5"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Wrath Fragility"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel]",
+              "levelCorrection": -4,
+              "name": "All Shall be Revealed"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target has [Combustion], inflict 3 Burn."
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel]",
+              "levelCorrection": -4,
+              "name": "All Shall Burn"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 [Combustion] and 2 [Combustion] Count on target"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "",
+              "levelCorrection": -4,
+              "name": "Scorn Not the Prophecy"
+            }
+          ]
+        },
+        {
+          "name": "Candle",
+          "num": 4,
+          "parts": [
+            {
+              "defCorrection": 2,
+              "hp": {
+                "base": 11,
+                "level": 0.39
+              },
+              "name": "Candle",
+              "partId": 813601,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 2,
+                "gluttony": 0.75,
+                "lust": 0.5,
+                "pierce": 1,
+                "pride": 1.25,
+                "slash": 1,
+                "sloth": 1.5,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                1
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "HP does not drop below 1.\nAt 1 HP, light the Candles and uses an Attack Skill.",
+              "name": "Burning Embers"
+            },
+            {
+              "desc": "When all Candles are lit, use a Defensive Skill.\nSnuff out the Candles next turn when out of Shield.",
+              "name": "Sinking Darkness"
+            }
+          ],
+          "portrait": 8107,
+          "skills": [
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 6 Burn and +2 Burn Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes targets with [AaCePcBa]",
+              "levelCorrection": 0,
+              "name": "Sparked Flame"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 2,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Burn and +1 Burn Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[StartBattle] Gain 20 Shield\nSnuff out the lights next turn when out of Shield",
+              "levelCorrection": 0,
+              "name": "So That It Will Burn"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Dream-Devouring Siltcurrent",
+          "parts": [
+            {
+              "breakSection": [
+                50,
+                0
+              ],
+              "defCorrection": 5,
+              "hp": {
+                "base": 350,
+                "level": 13.29
+              },
+              "name": "Body",
+              "partId": 813901,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 1.5,
+                "gloom": 0.5,
+                "gluttony": 1,
+                "lust": 0.5,
+                "pierce": 1,
+                "pride": 1.5,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 0.75
+              },
+              "speed": [
+                2,
+                4
+              ]
+            },
+            {
+              "breakSection": [
+                0,
+                -50
+              ],
+              "defCorrection": 5,
+              "hp": {
+                "base": 131,
+                "level": 4.98
+              },
+              "name": "Fluorescence",
+              "partId": 813902,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 1.5,
+                "gloom": 0.5,
+                "gluttony": 1,
+                "lust": 0.5,
+                "pierce": 1.5,
+                "pride": 1.5,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 0.75
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "When the Fluorescence Part is broken, inflict [AaCePcBb] on all enemies.\nFluorescence Part regenerates after 2 turns.",
+              "name": "Expanding Oxygen"
+            },
+            {
+              "desc": "Starting from turn 2, gain 8 Poise this turn if the Fluorescence Part isn't broken.\nGain +3 Poise Count. Starting from turn 2, gain 2 Paralyze and 2 Damage Down this turn if the Fluorescence Part is broken.",
+              "name": "Underwater Breathing"
+            },
+            {
+              "desc": "Starting from turn 2, all Identities without [AaCePcBb] are inflicted with 1 Bind and 1 Paralyze; Identities without [AaCePcBb] lose 3 SP.",
+              "name": "Siltcurrent"
+            }
+          ],
+          "portrait": 8102,
+          "skills": [
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 Sinking"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 3,
+              "name": "Headbutt"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 Sinking Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 Sinking Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 3,
+              "name": "Pound"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Sinking]",
+                    "[OnSucceedAttack] Inflict +2 Sinking Count if target has [AaCePcBb]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Sinking]",
+                    "[OnSucceedAttack] Inflict +2 Sinking Count if target has [AaCePcBb]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 3,
+              "name": "Press"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 15,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 Sinking Count",
+                    "[OnSucceedAttackHead] Inflict 4 Sinking"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 Sinking Count",
+                    "[OnSucceedAttackHead] Inflict 4 Sinking"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 Sinking",
+                    "[OnSucceedAttackHead] Inflict 4 Sinking"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Sinking Deluge"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[DefeatDuel] This unit's Fluorescence Part loses 34% of Max HP.\n[DefeatDuel] Gain 1 Blind Obsession",
+              "levelCorrection": 3,
+              "name": "Blind Obsession"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "pierce",
+              "atkWeight": 6,
+              "baseValue": 4,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Sinking and +2 Sinking Count",
+                    "[OnSucceedAttackHead] Gain -2 SP Loss Efficiency next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Sinking and +2 Sinking Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel][StartBattle] Alters the environment",
+              "levelCorrection": 3,
+              "name": "Crashing Siltcurrent"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 15,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Destroys target."
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel][CantChangeTarget] Targets destroyed Flotsam\n[EndSkill] Fluorescence Part loses 34% of Max HP.\n[EndBattle] Gain 1 Blind Obsession.",
+              "levelCorrection": 3,
+              "name": "Wayward Blind Obsession"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 Sinking",
+                    "[OnSucceedAttack] Inflict +2 Sinking Count if target has [AaCePcBb]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 Sinking",
+                    "[OnSucceedAttack] Inflict +2 Sinking Count if target has [AaCePcBb]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[EndBattle] Create Flotsam",
+              "levelCorrection": 3,
+              "name": "Sweep"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 Sinking"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Spend all Blind Obsession\n[StartBattle] Destroy all Flotsam and destroyed Flotsam",
+              "levelCorrection": 3,
+              "name": "Wriggle"
+            }
+          ]
+        },
+        {
+          "name": "Flotsam",
+          "parts": [
+            {
+              "defCorrection": 0,
+              "hp": {
+                "base": 21,
+                "level": 0.72
+              },
+              "name": "Flotsam",
+              "partId": 814001,
+              "resists": {
+                "blunt": 2,
+                "envy": 1,
+                "gloom": 0.75,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 2,
+                "pride": 1.5,
+                "slash": 2,
+                "sloth": 1.5,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                1
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Can be damaged only with damages equal to or higher than 12.\nAll damage under 12 is nullified.",
+              "name": "Harden"
+            },
+            {
+              "desc": "After the Dream-devouring Siltcurrent uses Blind Obsession, and if this unit is not destroyed at Turn End, deal 20 damage to a random Identity.",
+              "name": "Rolling Flotsam"
+            },
+            {
+              "desc": "HP does not drop below 1 upon defeat.\nTurns into a Destroyed Flotsam.",
+              "name": "Destroyed Flotsam"
+            }
+          ],
+          "portrait": 8108
+        }
+      ]
+    }
+  ],
+  "name": "Crawling Abyss",
+  "siteId": "2246458f-d2a4-4285-9342-ca100a043e81"
+}

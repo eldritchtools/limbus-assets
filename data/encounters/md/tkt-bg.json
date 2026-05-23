@@ -1,0 +1,805 @@
+{
+  "name": "Timekilling Time BokGak",
+  "siteId": "776b9aba-2859-48c9-a2d7-a0bc1f9a3b3a",
+  "targets": [
+    {
+      "name": "The Time Ripper",
+      "parts": [
+        {
+          "breakSection": [
+            60,
+            30,
+            0,
+            -10
+          ],
+          "defCorrection": 3,
+          "hp": {
+            "base": 501,
+            "level": 17.28
+          },
+          "name": "Body",
+          "partId": 122801,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1.5,
+            "lust": 0.5,
+            "pierce": 1.2,
+            "pride": 0.75,
+            "slash": 0.5,
+            "sloth": 1.5,
+            "wrath": 1.2
+          },
+          "speed": [
+            1,
+            3
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+          "name": "Fixed Panic"
+        },
+        {
+          "desc": "Have 1000 [LimitedTime] at the start of the Encounter",
+          "name": "Rescued Time"
+        },
+        {
+          "desc": "Turn End: If a Part is broken, spend 100 Time from that Part to recover from Part Broken state next turn.",
+          "name": "Accelerated Regeneration"
+        },
+        {
+          "desc": "Turn End: if this unit's [LimitedTime] is evenly divisible by 60, gain 2 [SlashDamageUp] and 2 [PenetrateDamageUp] next turn",
+          "name": "'O Clock"
+        },
+        {
+          "desc": "If this unit is in [TimeAcceleration] state, deal 10% of the damage it dealt On Hit as bonus damage in the Skill's Sin Affinity (2 times per turn)",
+          "name": "Remaining Time"
+        }
+      ],
+      "portrait": 8277,
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "When in [TimeAcceleration] state, Clash Power +1\n[DefeatDuel] At 75%- HP, consume 40 [LimitedTime] and gain 1 [Protection] (once per turn)",
+          "levelCorrection": -4,
+          "name": "Are You Afraid?"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "When in [TimeAcceleration] state, Clash Power +2\n[WhenUse] At 700+ [LimitedTime], inflict +3 [Laceration] Count\n[WhenUse] At 500+ [LimitedTime], inflict +1 [Laceration] Count\n[WhenUse] At 400+ [LimitedTime], consume 20 [LimitedTime] and inflict +1 more [Laceration] Potency and Count with this Skill",
+          "levelCorrection": -4,
+          "name": "Punishment For Time Killers"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "When in [TimeAcceleration] state, Coin Power +1\n[WhenUse] At 75%- HP, consume 40 [LimitedTime] and gain Clash Power +2\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": -3,
+          "name": "Extraction"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 5 [Laceration]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 75%- HP, consume 60 [LimitedTime] and gain Clash Power +2\n[BeforeAttack] When in [TimeAcceleration] state, gain +1 Atk Weight",
+          "levelCorrection": -3,
+          "name": "Mutilate"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nInflict [TimeKillerWatch] against the target that used an Attack Skill against this unit\n[StartBattle] Consume 200 [LimitedTime] and gain [TimeAcceleration] next turn",
+          "levelCorrection": -3,
+          "name": "Time to be Saved"
+        },
+        {
+          "affinity": "gluttony",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[WhenUse] Base Power +1 for every 100 [LimitedTime] (max 3)",
+          "levelCorrection": -3,
+          "name": "Evade"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[DefeatDuel] Gain 1 [Vulnerable]",
+          "levelCorrection": -3,
+          "name": "My..."
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[DefeatDuel] Gain 1 [Vulnerable]",
+          "levelCorrection": -3,
+          "name": "Running Out of Time"
+        }
+      ]
+    },
+    {
+      "name": "Unfolded Time Rippers",
+      "num": 3,
+      "parts": [
+        {
+          "breakSection": [
+            60,
+            0
+          ],
+          "defCorrection": -3,
+          "hp": 83.0,
+          "name": "Body",
+          "partId": 123001,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1.5,
+            "lust": 0.75,
+            "pierce": 2,
+            "pride": 0.75,
+            "slash": 0.7,
+            "sloth": 1.5,
+            "wrath": 1.5
+          },
+          "speed": [
+            2,
+            4
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn End: if this unit is alive, apply 1 [Protection] next turn to a random Part on The Time Ripper.",
+          "name": "Time Hyperacceleration"
+        }
+      ],
+      "portrait": 8279,
+      "skills": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Tick"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 5+ [Laceration], Clash Power +1",
+          "levelCorrection": 0,
+          "name": "Tock"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                "[OnSucceedAttack] Inflict 5 Burn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 5+ [Laceration], Clash Power +1",
+          "levelCorrection": 0,
+          "name": "Ticktick-Tock"
+        },
+        {
+          "affinity": "gluttony",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "Tock"
+        }
+      ]
+    },
+    {
+      "name": "The Time Ripper",
+      "parts": [
+        {
+          "breakSection": [
+            40,
+            0,
+            -10
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 150,
+            "level": 2.25
+          },
+          "name": "Brain",
+          "partId": 122901,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1.5,
+            "lust": 0.5,
+            "pierce": 1.2,
+            "pride": 0.75,
+            "slash": 0.5,
+            "sloth": 1.5,
+            "wrath": 1.2
+          },
+          "speed": [
+            1,
+            3
+          ]
+        },
+        {
+          "breakSection": [
+            40,
+            0,
+            -10
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 150,
+            "level": 2.25
+          },
+          "name": "Brain",
+          "partId": 122902,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1.5,
+            "lust": 0.5,
+            "pierce": 1.2,
+            "pride": 0.75,
+            "slash": 0.5,
+            "sloth": 1.5,
+            "wrath": 1.2
+          },
+          "speed": [
+            1,
+            3
+          ]
+        },
+        {
+          "breakSection": [
+            40,
+            0,
+            -10
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 150,
+            "level": 2.25
+          },
+          "name": "Brain",
+          "partId": 122903,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1.5,
+            "lust": 0.5,
+            "pierce": 1.2,
+            "pride": 0.75,
+            "slash": 0.5,
+            "sloth": 1.5,
+            "wrath": 1.2
+          },
+          "speed": [
+            1,
+            3
+          ]
+        },
+        {
+          "breakSection": [
+            40,
+            0,
+            -10
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 150,
+            "level": 2.25
+          },
+          "name": "Brain",
+          "partId": 122904,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1.5,
+            "lust": 0.5,
+            "pierce": 1.2,
+            "pride": 0.75,
+            "slash": 0.5,
+            "sloth": 1.5,
+            "wrath": 1.2
+          },
+          "speed": [
+            1,
+            3
+          ]
+        },
+        {
+          "breakSection": [
+            40,
+            0,
+            -10
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 150,
+            "level": 2.25
+          },
+          "name": "Brain",
+          "partId": 122905,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1.5,
+            "lust": 0.5,
+            "pierce": 1.2,
+            "pride": 0.75,
+            "slash": 0.5,
+            "sloth": 1.5,
+            "wrath": 1.2
+          },
+          "speed": [
+            1,
+            3
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+          "name": "Fixed Panic"
+        },
+        {
+          "desc": "Turn End: If a Part is broken, spend 100 Time from that Part to recover from Part Broken state next turn.",
+          "name": "Accelerated Regeneration"
+        },
+        {
+          "desc": "At 75% HP, enter the second phase. Upon phase change, recover SP up to 30, and divide the [LimitedTime] between all Parts as [OwnTime].",
+          "name": "Everyone's Time"
+        },
+        {
+          "desc": "Turn End: gain [EquitableDistribution].",
+          "name": "Equal Expense"
+        },
+        {
+          "desc": "Turn Start: All Parts gain 5 [Protection].",
+          "name": "For the Time Community"
+        },
+        {
+          "desc": "At 60%- HP, convert [EquitableDistribution] into [UnfairDistribution].",
+          "name": "Take Theirs First!"
+        },
+        {
+          "desc": "Turn End: if this unit's [LimitedTime], or the sum of [OwnTime] is evenly divisible by 60, gain 2 [SlashDamageUp] and 2 [PenetrateDamageUp] next turn",
+          "name": "'O Clock"
+        },
+        {
+          "desc": "If this unit is in [EquitableDistribution] state, deal 10% of the damage it dealt On Hit as bonus damage in the Skill's Sin Affinity (2 times per turn)",
+          "name": "Time Hyperacceleration"
+        }
+      ],
+      "portrait": 8278,
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "When in [TimeAcceleration] state, Clash Power +1\n[DefeatDuel] At 75%- HP, consume 40 [OwnTime] and gain 1 [Protection] (once per turn)",
+          "levelCorrection": 0,
+          "name": "Are You Afraid?"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "When in [TimeAcceleration] state, Clash Power +2\n[WhenUse] At 600+ (sum of [OwnTime] on all Parts), inflict +3 [Laceration] Count\n[WhenUse] At 500+ (sum of [OwnTime] on all Parts), inflict +1 [Laceration] Count\n[WhenUse] At 400+ (sum of [OwnTime] on all Parts), consume 20 [OwnTime] and inflict +1 more [Laceration] Potency and Count with this Skill",
+          "levelCorrection": 0,
+          "name": "Punishment For Time Killers"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "When in [TimeAcceleration] state, Coin Power +1\n[WhenUse] At 75%- HP, consume 40 [OwnTime] and gain Clash Power +2\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": -3,
+          "name": "Extraction"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 5 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 75%- HP, consume 60 [OwnTime] and gain Clash Power +2\n[BeforeAttack] When in [TimeAcceleration] state, gain +3 Atk Weight\n[BeforeAttack] At 60%- HP, consume 10 [OwnTime] and gain +1 Atk Weight",
+          "levelCorrection": -3,
+          "name": "Mutilate"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nInflict [TimeKillerWatch] against the target that used an Attack Skill against this unit\n[StartBattle] Consume 200 [OwnTime] and gain [TimeAcceleration] next turn)",
+          "levelCorrection": -3,
+          "name": "Time to be Saved"
+        },
+        {
+          "affinity": "gluttony",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[WhenUse] Base Power +1 for every 50 sum of [OwnTime] across all Parts (max 3)",
+          "levelCorrection": -3,
+          "name": "Evade"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 48,
+          "coinValue": 48,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Erase the target's time. Once this unit erases the target's time, all Parts recover [OwnTime] to their max values and gain 10 Haste and 10 Attack Power Up next turn."
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nThis unit's Speed is fixed at 24.\nCannot be Staggered this turn.\n[WhenUse] Takes a total of 400 [OwnTime] from everyone, then consumes it.",
+          "levelCorrection": 0,
+          "name": "Timekilling Time"
+        },
+        {
+          "affinity": "envy",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": 0,
+          "name": "We Need More Time!"
+        }
+      ]
+    }
+  ]
+}
