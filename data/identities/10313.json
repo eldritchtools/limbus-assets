@@ -33,6 +33,23 @@
       "S3 inflicts {status:CrushMarks} for 3 turns. It's a panic changing debuff that increases the target's {keyword:Gluttony} and {keyword:Gloom} damage taken. Enemies with SP lose Clash Power and gain {status:DefenseDown} on low SP or panic. Enemies without SP lose 1 Clash Power."
     ]
   },
+  "passiveBonuses": [
+    {
+      "extra": {
+        "op": "mul"
+      },
+      "type": "damage",
+      "value": 0.3
+    },
+    {
+      "extra": {
+        "cond": "lastcoinonly",
+        "op": "mul"
+      },
+      "type": "damage",
+      "value": 0.3
+    }
+  ],
   "passiveData": {
     "1031301": {
       "condition": {

@@ -33,6 +33,20 @@
       "All her skills have a base and an enhanced version. The base versions consume {status:BloodDinner} to give her {status:BloodArmorPersonalityFirst}, while the enhanced versions consume the it for more Power, Damage, and {status:SuperCoin}s. The enhanced versions are only enabled at 15+ stacks of {status:BloodArmorPersonalityFirst} and if the corresponding identities are deployed:\n{identity:11210} for S1\n{identity:11111} for S2\nHerself for S3\n{identity:10911} for defense\n"
     ]
   },
+  "passiveBonusNotes": "Ignores Responsibility.",
+  "passiveBonuses": [
+    {
+      "extra": {
+        "op": "mul"
+      },
+      "type": "damage",
+      "value": 0.3
+    },
+    {
+      "type": "offlevel",
+      "value": 3
+    }
+  ],
   "passiveData": {
     "1031001": {
       "desc": "If this unit is on field, or is one of the units that can appear on this Stage, increase [BloodDinner] value by the amount of [Laceration] damage collectively received by every unit.\nWhen this unit enters the field, the sleeping blood drenching the battlefield will fill the surface.\n\nWhen consuming [BloodDinner], if there are <La Manchaland[TabExplain]> Kindreds of the same generation as this unit, this unit takes precedence.\n\nWhen using 'Variant Sancho Hardblood[TabExplain] Arts 6 - Whip', HP cannot drop below 1 due to [Laceration] damage.",

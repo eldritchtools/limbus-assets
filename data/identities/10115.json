@@ -46,6 +46,27 @@
       "{status:StackYisangSpecialSkill} can only be gained up to {status:UnlockBuff_Base} Stage + 2 per turn (5 per turn at max). Using Furioso-Replica can give him some {status:StackYisangSpecialSkill} back on the following turn. This counts towards the 5 cap of that turn, so you won't be able to build {status:StackYisangSpecialSkill} back up that quickly."
     ]
   },
+  "passiveBonuses": [
+    {
+      "extra": {
+        "op": "mul"
+      },
+      "type": "damage",
+      "value": 0.6
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1011505
+      },
+      "type": "damage",
+      "value": 0.3
+    },
+    {
+      "type": "offlevel",
+      "value": 6
+    }
+  ],
   "passiveData": {
     "1011501": {
       "condition": {

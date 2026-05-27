@@ -31,6 +31,16 @@
       "Her S3-2 consumes 1 {status:ArrowShiFau} to inflict 1 {status:ArrowInTheEyeFau}. The arrow stays lodged into the target until it dies or is cleansed (e.g. debuffs purged during phase changes). Every turn, the arrow/s inflict 1 {status:Laceration} and {status:DefenseDown} per stack and 1 {status:Vulnerable} at 2+ stacks. Any {status:ArrowShiFau} used is automatically recovered when they're removed from the target."
     ]
   },
+  "passiveBonuses": [
+    {
+      "type": "offlevel",
+      "value": 2
+    },
+    {
+      "type": "final",
+      "value": 1
+    }
+  ],
   "passiveData": {
     "1021301": {
       "condition": {
@@ -488,6 +498,21 @@
             },
             {
               "type": "base",
+              "value": ""
+            },
+            {
+              "type": "coin",
+              "value": 4
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.44
+            },
+            {
+              "type": "base",
               "value": 2
             },
             {
@@ -516,6 +541,21 @@
             {
               "type": "critdamage",
               "value": 4.44
+            },
+            {
+              "type": "base",
+              "value": ""
+            },
+            {
+              "type": "coin",
+              "value": 4
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.44
             },
             {
               "type": "base",

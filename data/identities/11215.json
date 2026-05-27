@@ -36,6 +36,35 @@
       "On death, he ignores it and gains {status:SelfChargeAlly} instead based on his {status:Charge} Potency. It's reduced by being attacked, by attacking, and at the end of every turn. He can't die until it runs out. He also gains +2 final power during this time."
     ]
   },
+  "passiveBonuses": [
+    {
+      "type": "offlevel",
+      "value": 1
+    },
+    {
+      "extra": {
+        "op": "mul"
+      },
+      "type": "damage",
+      "value": 0.2
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1121503
+      },
+      "type": "damage",
+      "value": 0.2
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1121505
+      },
+      "type": "damage",
+      "value": 0.2
+    }
+  ],
   "passiveData": {
     "1121501": {
       "condition": {
