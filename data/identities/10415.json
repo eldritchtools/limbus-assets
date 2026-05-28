@@ -32,7 +32,7 @@
     "usage": [
       "She gains {st:SojiRyoshuEchoPast} when she targets enemies with {st:SojiRyoshuEchoFuture} or when House of Spiders allies die and consumes it when using her S3-2. It increases the {st:PhantomIncisionID} application and {kw:Slash} damage on her skills. It also adds atk weight on her S3 and coin power on her S3-2's final coin. Its min and max caps increase based on the number of House of Spiders allies deployed or when she uses her S3-2 starting at 0-4 and ending at 5-9.",
       "{st:SojiRyoshuEchoFuture} is a debuff she passively inflicts on enemies every turn. When targeting enemies with the debuff, she uses her S2-2 to consume the debuff before using her base attack. The base attack gains {st:SuperCoin}s, +1 Final Power, and grants her 1 {st:SojiRyoshuEchoPast}. If her S3 is used to trigger this, the S2-2 hits all enemies with {st:SojiRyoshuEchoFuture} instead of only the main target.",
-      "Any damage she takes is automatically transferred to any House of Spiders allies currently on the field. She gains unique buffs for each HoS ally that dies and additionally gains 1 {st:SojiRyoshuEntangle}, which gives her S3-2 an additional coin, for each Nursefather that dies.\n- {id:10115}: Convert her attacks' final coins to {st:SuperCoin} and gives them +10% damage.\n- {id:10215}: 10% HP shield every turn\n- {id:10314}: On base attacks, {st:Breath} on use and {st:Sinking} on crit\n- {id:10614}: Gain {st:MelodyBodyArt}\n- {id:10814}: Defense level and {st:Combustion} application\n- {id:11015}: {st:Breath} Count and {st:CriticalDamageUp} every turn\n\nShe also gains more skill slots depending on the number of HoS allies that have died when there aren't any backups left.",
+      "Any damage she takes is automatically transferred to any House of Spiders allies currently on the field. She gains unique buffs for each HoS ally that dies and additionally gains 1 {st:SojiRyoshuEntangle}, which gives her S3-2 an additional coin, for each Nursefather that dies.\n- {id:10115}: Convert her attacks' final coins to {st:SuperCoin} and gives them +10% damage.\n- {id:10215}: 10% HP shield every turn\n- {id:10314}: On base attacks, {st:Breath} on use and {st:Sinking} on crit\n- {id:10614}: Gain {st:MelodyBodyArt}\n- {id:10814}: Defense level and {st:Combustion} application\n- {id:11015}: {st:Breath} Count and {st:CriticalDamageUp} every turn\n- {id:11115}: -20% damage taken and 1 {st:AttackUp} when hit (up to 2x per turn)\n\nShe also gains more skill slots depending on the number of HoS allies that have died when there aren't any backups left.",
       "Inflicts {st:PhantomIncisionID} on her skills with S3-2 consuming them to deal more damage. She gains {st:PhantomIncisionTotalID} for each stack inflicted up to 25 per turn. At 50+, she gains a free use of her S3-2. She also uses her S3-3 the first time she reaches 50, giving her {st:SojiRyoshuShin}",
       "Using her defense skill causes her to use her S1-2 to kill her House of Spiders allies. If she has {st:SojiRyoshuEntangle} it kills two instead. It prioritizes the ids that are the latest in the deployment order except {id:11015} who is always prioritized last. Each use of her S1-2 gives her a few additional benefits on top of the kill:\n- Lose 1 offense level but gain 1 base power for all attacks for the rest of the encounter (stacks up to 4 times)\n- Gain {st:RyoshuEGOPF} based on damage dealt (for use with {ego:20409})\n- Heals 20 SP\n- Inflicts 20 {st:PhantomIncisionID} giving her 20 {st:PhantomIncisionTotalID}"
     ]
@@ -56,6 +56,10 @@
     {
       "type": "clash",
       "value": 1
+    },
+    {
+      "type": "offlevel",
+      "value": 2
     }
   ],
   "passiveData": {

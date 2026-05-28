@@ -1,4 +1,3933 @@
 {
+  "battles": [
+    {
+      "targets": [
+        {
+          "name": "Refracted Butterfly of Entangled Lives::The Pupa",
+          "parts": [
+            {
+              "breakSection": [
+                85,
+                65,
+                40,
+                10
+              ],
+              "defCorrection": -3,
+              "hp": {
+                "base": 9090,
+                "level": 275.44
+              },
+              "name": "Body",
+              "partId": 956301,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 0.75,
+                "lust": 1.5,
+                "pierce": 1,
+                "pride": 1.5,
+                "slash": 1,
+                "sloth": 0.75,
+                "wrath": 1.5
+              },
+              "speed": [
+                1,
+                1
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Encounter Start: Gain 1.3% HP as Shield\nHP does not fall below 90%\n\nIf this unit's Shield is broken before the end of Turn 3,\nEnd the turn immediately and activate <color=#ff6000><mark=#ff000040><b><u>a unique pattern</u></b></mark></color> next turn\n\nAt Attack End of \"The Quickening\" Skill: End the Encounter",
+              "name": "Quickening of the Unborn"
+            }
+          ],
+          "portrait": "9563",
+          "skills": [
+            {
+              "affinity": "gloom",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Combustion]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Combustion] Count",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse]\n- Clash Power +1 for every 8 ([Combustion] + [Laceration]) on target (max 3)\n- Deal +5% damage for every 6 [Breath] on self (max 20%)\n- Gain 2 [Breath]",
+              "levelCorrection": 1,
+              "name": "Fluttering Havoc"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Combustion] Count",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Combustion]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse]\n- Clash Power +1 for every 8 ([Combustion] + [Laceration]) on target (max 3)\n- Deal +5% damage for every 6 [Breath] on self (max 20%)\n- Gain +2 [Breath] Count",
+              "levelCorrection": 1,
+              "name": "Pulverization"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 7,
+              "baseValue": 6,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel], [CantChangeTarget]\nThis Attack Skill deals 0 damage\n[WhenUse] Does not take damage for this turn\n[EndSkill] End the Encounter",
+              "levelCorrection": 2,
+              "name": "The Quickening"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "<color=#ff6000><mark=#ff000040><b><u>Attack Type and Affinity</u></b></mark></color> of Skills that Clashed with this Skill affect the impending Past\n- Enemy units of Stage 2 gain [HeatedWingScalesExplain]",
+              "levelCorrection": 0,
+              "name": "Entangled Life - Regression"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "<color=#ff6000><mark=#ff000040><b><u>Attack Type and Affinity</u></b></mark></color> of Skills that Clashed with this Skill affect the impending Present\n- Enemy units of Stage 3 gain [TransparentWingScalesExplain]",
+              "levelCorrection": 0,
+              "name": "Entangled Life - Manifestation"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "<color=#ff6000><mark=#ff000040><b><u>Attack Type and Affinity</u></b></mark></color> of Skills that Clashed with this Skill affect the impending Future\n- Enemy units of Stage 4 gain [RustedWingScalesExplain]",
+              "levelCorrection": 0,
+              "name": "Entangled Life - Advent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "waves": [
+        {
+          "targets": [
+            {
+              "name": "Refracted Yinglong",
+              "parts": [
+                {
+                  "defCorrection": 5,
+                  "hp": {
+                    "base": 1338,
+                    "level": 61.7
+                  },
+                  "name": "Inverted Scale",
+                  "partId": 956801,
+                  "resists": {
+                    "blunt": 1,
+                    "envy": 1.5,
+                    "gloom": 1.5,
+                    "gluttony": 1.5,
+                    "lust": 0.75,
+                    "pierce": 1,
+                    "pride": 1,
+                    "slash": 1,
+                    "sloth": 0.75,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "defCorrection": 5,
+                  "hp": {
+                    "base": 1972,
+                    "level": 90.92
+                  },
+                  "name": "Head",
+                  "partId": 956802,
+                  "resists": {
+                    "blunt": 0.8,
+                    "envy": 1.25,
+                    "gloom": 1.25,
+                    "gluttony": 1.25,
+                    "lust": 0.75,
+                    "pierce": 0.8,
+                    "pride": 1,
+                    "slash": 0.8,
+                    "sloth": 0.75,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    2,
+                    3
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Encounter Start: The Head Part gains Shield equal to 100% of this unit's max HP\nDoes not lose Shield at Turn End\nWhen the Shield is broken, enter a new phase",
+                  "name": "The Unreachable Heavens"
+                },
+                {
+                  "desc": "Encounter Start: Gain 3 [YesdragonSelfRefraction]\nTurn End: Gain 1 [YesdragonSelfRefraction] next turn\nGain +1 more [YesdragonSelfRefraction] from this effect every time the \"Thundering Wrath\" Passive triggers",
+                  "name": "Life Hanging on a Wedge [一櫼之命]"
+                },
+                {
+                  "desc": "The Inverted Scale Part takes damage only from Skills that it is the main target of; does not take damage from any other sources\nWhen the Inverted Scale Part is hit, remove the Inverted Scale Part from the Skill Slots next turn; gain 1 [AttackUp] and 1 [DefenseDown] for every [YesdragonSelfRefraction] Stack consumed by the \"Wrath of the Inverted Scale\" Skill",
+                  "name": "Thundering Wrath [震怒]"
+                },
+                {
+                  "desc": "Unaffected by [Agility] and [Binding]\nTake -50% HP damage from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]; -50% to Stagger Threshold raised by [Vibration]",
+                  "name": "Dragon's Scale"
+                },
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                }
+              ],
+              "portrait": "9568",
+              "skills": [
+                {
+                  "affinity": "wrath",
+                  "atkType": "pierce",
+                  "atkWeight": 7,
+                  "baseValue": 2,
+                  "coinValue": 1,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Deal 5 SP damage",
+                        "[EnemyKill] Upon killing the main target, apply the [WideAreaRampage] effect on this Skill"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "This Coin damages only the main target. If [WideAreaRampage] is applied, this Coin damages all targets",
+                        "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "counter",
+                  "desc": "This Skill activates only when <color=#ff6000><mark=#ff000040><b><u>the \"Inverted Scale\" Part is hit as the main target</u></b></mark></color>\n[WhenUse] <color=#ff6000><mark=#ff000040><b><u>Consume all [YesdragonSelfRefraction]</u></b></mark></color> on self and Reuse the final Coin (# of Stacks consumed) times (max 5 times)",
+                  "levelCorrection": 0,
+                  "name": "Wrath of the Inverted Scale [逆鱗之禍]"
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Burst]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Burst]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": 2,
+                  "name": "Levinflash [閃雷]"
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "pierce",
+                  "atkWeight": 3,
+                  "baseValue": 4,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 [Burst]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                        "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": 3,
+                  "name": "Roar of the Dragon [龍聲]"
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 8,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 [Burst] and +2 [Burst] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Base Power +1 <color=#ff6000><mark=#ff000040><b><u>for every 2 [YesdragonSelfRefraction]</u></b></mark></color> on self\n[WhenUse] If target has [Binding] or [Paralysis], Base Power +2\n[WinDuel] <color=#ff6000><mark=#ff000040><b><u>Spawn \"Flower-burying Pin\" next turn</u></b></mark></color>\n[DefeatDuel] Heal 5 SP on target\n[DefeatDuel] <color=#ff6000><mark=#ff000040><b><u>Does not spawn \"Flower-burying Pin\"</u></b></mark></color>, and the head takes <color=#ff6000><mark=#ff000040><b><u>fixed damage</u></b></mark></color>",
+                  "levelCorrection": 2,
+                  "name": "The Descending Pin [落針]"
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "pierce",
+                  "atkWeight": 3,
+                  "baseValue": 3,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Burst]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Burst]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] If the main target has [Binding] or [Paralysis], Coin Power +1\n[DefeatDuel] <color=#ff6000><mark=#ff000040><b><u>Apply [YesdragonWind]</u></b></mark></color> on the main target",
+                  "levelCorrection": 3,
+                  "name": "Draconic Vortex [龍卷]"
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "pierce",
+                  "atkWeight": 4,
+                  "baseValue": 4,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 [Burst]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Burst]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] If this unit has <color=#ff6000><mark=#ff000040><b><u>5+ [YesdragonSelfRefraction], Reuse this Coin</u></b></mark></color> (once per Skill)",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Burst] Count"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Base Power +1 <color=#ff6000><mark=#ff000040><b><u>for every [YesdragonSelfRefraction]</u></b></mark></color> on self\n[WhenUse] If this unit has <color=#ff6000><mark=#ff000040><b><u>5+ [YesdragonSelfRefraction]</u></b></mark></color>, Coin Power +1 and gain +1 Atk Weight\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 4,
+                  "name": "Gathering Rain [積雨]"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "pierce",
+                  "atkWeight": 8,
+                  "baseValue": 18,
+                  "coinValue": 7,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 5 [Burst] and +3 [Burst] Count",
+                        "[OnSucceedAttack] 50% chance to inflict 1 [Paralysis] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[CantDuel][CantChangeTarget] \n<color=#ff6000><mark=#ff000040><b><u>Targets \"Flower-burying Pin\"</u></b></mark></color>\nIf \"Flower-burying Pin\" is destroyed, cancel this Skill",
+                  "levelCorrection": 5,
+                  "name": "Levinfall [落雷]"
+                }
+              ]
+            },
+            {
+              "name": "Refracted Flower-burying Pin",
+              "parts": [
+                {
+                  "breakSection": [
+                    50
+                  ],
+                  "defCorrection": 10,
+                  "hp": {
+                    "base": 60,
+                    "level": 0
+                  },
+                  "name": "Flower-burying Pin",
+                  "partId": 957101,
+                  "resists": {
+                    "blunt": 1,
+                    "envy": 1.5,
+                    "gloom": 1.5,
+                    "gluttony": 1.5,
+                    "lust": 0.75,
+                    "pierce": 1,
+                    "pride": 1,
+                    "slash": 1,
+                    "sloth": 0.75,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "When hit by Yinglong's \"Levinfall\" Skill, die instantly and apply 1 [YesdragonSelfRefraction] on Yinglong",
+                  "name": "Return to Origin [物歸原主]"
+                },
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                }
+              ],
+              "portrait": "9571",
+              "skills": [
+                {
+                  "affinity": "gluttony",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 7,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "guard",
+                  "desc": "[CanDuelGuard]\n[WinDuel] Inflict 1 [Vulnerable] on target",
+                  "levelCorrection": 0,
+                  "name": "Spirit-bearing Pin of the Dragon"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "targets": [
+            {
+              "name": "Refracted Hongyu, the Crimson Jade",
+              "parts": [
+                {
+                  "breakSection": [
+                    90,
+                    70,
+                    50,
+                    30,
+                    10
+                  ],
+                  "defCorrection": 10,
+                  "hp": {
+                    "base": 200,
+                    "level": 0
+                  },
+                  "name": "Hongyu, the Crimson Jade",
+                  "partId": 957001,
+                  "resists": {
+                    "blunt": 1,
+                    "envy": 1.5,
+                    "gloom": 1.5,
+                    "gluttony": 1.5,
+                    "lust": 1,
+                    "pierce": 1,
+                    "pride": 1,
+                    "slash": 1,
+                    "sloth": 1,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Turn Start: Gain Shield equal to 300% of the Core's max HP\n- This effect does not trigger when Attack Skills are equipped\nTurn Start: When Staggered, recover from Stagger",
+                  "name": "Dragon's Vein [龍脈]"
+                },
+                {
+                  "desc": "When hit, apply [YesdragonPower] on the attacker next turn\n\nOn death, immediately apply [YesdragonPower] on all Sinners",
+                  "name": "The Dragon's Bleeding Vein"
+                },
+                {
+                  "desc": "When this unit takes damage that brings its HP down to 0, this unit's HP does not drop below 1 for the turn; recover from Stagger due to damage\nFor the rest of the turn, this unit cannot be Staggered or killed due to damage; then, use \"Impale the Self, Impurity[TabExplain] to Purge\" at the very end of that turn",
+                  "name": "One Last Radiance [回光返照]"
+                },
+                {
+                  "desc": "This unit cannot be subject to healing or Assist Defense[TabExplain] effects\nTake damage only from Skills that this unit is the main target of; does not take damage from any other sources",
+                  "name": "Lofty Energy"
+                }
+              ],
+              "portrait": "9570",
+              "skills": [
+                {
+                  "affinity": "gluttony",
+                  "atkType": "pierce",
+                  "atkWeight": 14,
+                  "baseValue": 12,
+                  "coinValue": -2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +5 [Burst] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 [Burst]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 [Burst]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 [Burst]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[CantDuel] [CantIdentify]\n[WhenUse] <color=#ff6000><mark=#ff000040><b><u>If Crimson Jade is at 1 HP, deal 0 damage</u></b></mark></color>, and Coin effects do not trigger\n[EndSkill] This unit dies",
+                  "levelCorrection": 10,
+                  "name": "Impale the Self, Impurity to Purge [自穿滅汚]"
+                }
+              ]
+            },
+            {
+              "egoList": [
+                20601,
+                20607,
+                20603,
+                20608
+              ],
+              "identityOverride": 10613,
+              "name": "Refracted Peccatulum Invidiae?",
+              "parts": [
+                {
+                  "defCorrection": -3,
+                  "name": "Body",
+                  "partId": 954301
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Entry SP +45",
+                  "name": "Refracted Mind"
+                },
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                },
+                {
+                  "desc": "Cannot Retreat",
+                  "name": "Refracted Egress"
+                }
+              ],
+              "portrait": "9543"
+            },
+            {
+              "egoList": [
+                20201,
+                20207,
+                20202,
+                20206
+              ],
+              "identityOverride": 10212,
+              "name": "Refracted Peccatulum Invidiae?",
+              "parts": [
+                {
+                  "defCorrection": -3,
+                  "name": "Body",
+                  "partId": 953901
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Entry SP +30",
+                  "name": "Refracted Mind"
+                },
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                },
+                {
+                  "desc": "Cannot Retreat",
+                  "name": "Refracted Egress"
+                }
+              ],
+              "portrait": "9539"
+            },
+            {
+              "egoList": [
+                20101,
+                20103,
+                20104,
+                20105
+              ],
+              "identityOverride": 10114,
+              "name": "Refracted Peccatulum Invidiae?",
+              "parts": [
+                {
+                  "defCorrection": -3,
+                  "name": "Body",
+                  "partId": 953801
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Entry SP +30",
+                  "name": "Refracted Mind"
+                },
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                },
+                {
+                  "desc": "Cannot Retreat",
+                  "name": "Refracted Egress"
+                }
+              ],
+              "portrait": "9538"
+            },
+            {
+              "egoList": [
+                20401,
+                20406,
+                20408,
+                20407
+              ],
+              "identityOverride": 10411,
+              "name": "Refracted Peccatulum Invidiae?",
+              "parts": [
+                {
+                  "defCorrection": -3,
+                  "name": "Body",
+                  "partId": 954101
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                },
+                {
+                  "desc": "Cannot Retreat",
+                  "name": "Refracted Egress"
+                }
+              ],
+              "portrait": "9541"
+            },
+            {
+              "egoList": [
+                21101,
+                21104,
+                21102,
+                21106
+              ],
+              "identityOverride": 11112,
+              "name": "Refracted Peccatulum Invidiae?",
+              "parts": [
+                {
+                  "defCorrection": -3,
+                  "name": "Body",
+                  "partId": 954801
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                },
+                {
+                  "desc": "Cannot Retreat",
+                  "name": "Refracted Egress"
+                }
+              ],
+              "portrait": "9548"
+            },
+            {
+              "egoList": [
+                20901,
+                20903,
+                20905,
+                20908
+              ],
+              "identityOverride": 10912,
+              "name": "Refracted Peccatulum Invidiae?",
+              "parts": [
+                {
+                  "defCorrection": -3,
+                  "name": "Body",
+                  "partId": 954601
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                },
+                {
+                  "desc": "Cannot Retreat",
+                  "name": "Refracted Egress"
+                }
+              ],
+              "portrait": "9546"
+            }
+          ]
+        },
+        {
+          "targets": [
+            {
+              "name": "Refracted Yinglong",
+              "parts": [
+                {
+                  "breakSection": [
+                    70,
+                    30,
+                    0
+                  ],
+                  "defCorrection": 10,
+                  "hp": {
+                    "base": 809,
+                    "level": 37.28
+                  },
+                  "name": "Flower-burying Wedge",
+                  "partId": 956901,
+                  "resists": {
+                    "blunt": 0.8,
+                    "envy": 1.25,
+                    "gloom": 1.25,
+                    "gluttony": 1.25,
+                    "lust": 0.75,
+                    "pierce": 0.8,
+                    "pride": 1,
+                    "slash": 0.8,
+                    "sloth": 0.75,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "breakSection": [
+                    65
+                  ],
+                  "defCorrection": 5,
+                  "hp": {
+                    "base": 535,
+                    "level": 24.68
+                  },
+                  "name": "Inverted Scale",
+                  "partId": 956902,
+                  "resists": {
+                    "blunt": 1,
+                    "envy": 1.5,
+                    "gloom": 1.5,
+                    "gluttony": 1.5,
+                    "lust": 0.75,
+                    "pierce": 1,
+                    "pride": 1,
+                    "slash": 1,
+                    "sloth": 0.75,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    2,
+                    2
+                  ]
+                },
+                {
+                  "breakSection": [
+                    60
+                  ],
+                  "defCorrection": 5,
+                  "hp": {
+                    "base": 789,
+                    "level": 36.37
+                  },
+                  "name": "Head",
+                  "partId": 956903,
+                  "resists": {
+                    "blunt": 0.8,
+                    "envy": 1.25,
+                    "gloom": 1.25,
+                    "gluttony": 1.25,
+                    "lust": 0.75,
+                    "pierce": 0.8,
+                    "pride": 1,
+                    "slash": 0.8,
+                    "sloth": 0.75,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    2,
+                    4
+                  ]
+                },
+                {
+                  "breakSection": [
+                    50
+                  ],
+                  "defCorrection": 8,
+                  "hp": {
+                    "base": 1183,
+                    "level": 54.55
+                  },
+                  "name": "Body",
+                  "partId": 956904,
+                  "resists": {
+                    "blunt": 0.8,
+                    "envy": 1.25,
+                    "gloom": 1.25,
+                    "gluttony": 1.25,
+                    "lust": 0.75,
+                    "pierce": 0.8,
+                    "pride": 1,
+                    "slash": 0.8,
+                    "sloth": 0.75,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    2,
+                    4
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "All Parts become Breakable and Unseverable\nBroken Parts regenerate in 3 turns with 30% HP",
+                  "name": "Tarnished Body"
+                },
+                {
+                  "desc": "Cannot be killed as long as the Flower-burying Wedge Part isn't broken",
+                  "name": "Life Hanging on a Wedge [一櫼之命]"
+                },
+                {
+                  "desc": "Encounter Start: Gain 3 [YesdragonSelfRefraction]\nTurn End: Gain 1 [YesdragonSelfRefraction] next turn\nGain +1 more [YesdragonSelfRefraction] from this effect every time the \"Thundering Wrath\" Passive triggers\n- When the Inverted Scale is broken, reset the increased [YesdragonSelfRefraction] gain",
+                  "name": "Erumpent Flower-burying Efflorescence [梅花滿開]"
+                },
+                {
+                  "desc": "The Inverted Scale Part takes damage only from Skills that it is the main target of; does not take damage from any other sources\nWhen the Inverted Scale Part is hit, remove the Inverted Scale Part from the Skill Slots next turn; gain 1 [AttackUp] and 1 [DefenseDown] for every [YesdragonSelfRefraction] Stack consumed by the \"Wrath of the Inverted Scale\" Skill",
+                  "name": "Thundering Wrath [震怒]"
+                },
+                {
+                  "desc": "Unaffected by [Agility] and [Binding]\nTake -50% HP damage from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]; -50% to Stagger Threshold raised by [Vibration]",
+                  "name": "Dragon's Scale"
+                },
+                {
+                  "desc": "When the Inverted Scale Part is broken, the \"Thundering Wrath\" Passive does not activate\nWhile the Inverted Scale Part is broken, all Parts gain 3 [AttackUp] and 6 [DefenseDown]",
+                  "name": "Broken Scale"
+                },
+                {
+                  "desc": "While the Head part is broken, all Parts gain 2 [Vulnerable] every turn",
+                  "name": "Broken Skull"
+                },
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                }
+              ],
+              "portrait": "9569",
+              "skills": [
+                {
+                  "affinity": "gluttony",
+                  "atkWeight": 1,
+                  "baseValue": 10,
+                  "coinValue": 8,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "guard",
+                  "desc": "[CanDuelGuard]\n[StartBattle] <color=#ff6000><mark=#ff000040><b><u>Gain 1 [DragonLanceRefraction]</u></b></mark></color> next turn\n[DefeatDuel] Cancel the Combat Start effect. Gain 3 [Endurance] next turn",
+                  "levelCorrection": 3,
+                  "name": "The Dragon's Wedge [龍之櫼]"
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "pierce",
+                  "atkWeight": 7,
+                  "baseValue": 5,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Deal 5 SP damage",
+                        "[EnemyKill] Upon killing the main target, apply the [WideAreaRampage] effect on this Skill"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "This Coin damages only the main target. If [WideAreaRampage] is applied, this Coin damages all targets",
+                        "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 1 [CondensedBloodRefraction]"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] <color=#ff6000><mark=#ff000040><b><u>Consume all [YesdragonSelfRefraction]</u></b></mark></color> on self and Reuse the final Coin (# of Stacks consumed) times (max 5 times)\n[DefeatDuel] Deal -50% damage and damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 3,
+                  "name": "Wrath of the Inverted Scale [逆鱗之禍]"
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Inflict 2 [Burst]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +1 [CondensedBloodRefraction] Count"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Inflict 2 [Burst]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 1 [Paralysis] next turn"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] If the main target has less than 35 SP, Base Power +1\n[DefeatDuel] Deal -50% damage and damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 3,
+                  "name": "Levinflash [閃雷]"
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "pierce",
+                  "atkWeight": 3,
+                  "baseValue": 5,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Deal 5 SP damage"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +2 [CondensedBloodRefraction] Count"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] If the main target has less than 35 SP, Coin Power +1\n[DefeatDuel] Deal -50% damage and damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 3,
+                  "name": "Roar of the Dragon [龍聲]"
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 6,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Deal 5 SP damage"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 [Burst] and +2 [Burst] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Base Power +1 <color=#ff6000><mark=#ff000040><b><u>for every 2 [YesdragonSelfRefraction]</u></b></mark></color> on self\n[WhenUse] If target has [Binding] or [Paralysis], Base Power +2\n[WhenUse] If this unit has <color=#ff6000><mark=#ff000040><b><u>5+ [YesdragonSelfRefraction]</u></b></mark></color>, Coin Power +1\n<color=#ff6000><mark=#ff000040><b><u>Spawn \"Flower-burying Pin\" next turn</u></b></mark></color>\n[DefeatDuel]<color=#ff6000><mark=#ff000040><b><u>Does not spawn \"Flower-burying Pin\"</u></b></mark></color>",
+                  "levelCorrection": 3,
+                  "name": "The Descending Pin [落針]"
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "pierce",
+                  "atkWeight": 4,
+                  "baseValue": 5,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                        "[OnSucceedAttack] Inflict +1 [CondensedBloodRefraction] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Burst]",
+                        "[OnSucceedAttack] Inflict +1 [CondensedBloodRefraction] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Burst]",
+                        "[OnSucceedAttack] Inflict +1 [CondensedBloodRefraction] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] If the main target has [Binding] or [Paralysis], Coin Power +1",
+                  "levelCorrection": 4,
+                  "name": "Draconic Vortex [龍卷]"
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "pierce",
+                  "atkWeight": 4,
+                  "baseValue": 5,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Deal 5 SP damage"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Burst]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +2 [CondensedBloodRefraction] Count"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] If this unit has <color=#ff6000><mark=#ff000040><b><u>5+ [YesdragonSelfRefraction], Reuse this Coin</u></b></mark></color> (once per Skill)",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Burst] Count",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 2 [CondensedBloodRefraction]"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Base Power +1 <color=#ff6000><mark=#ff000040><b><u>for every [YesdragonSelfRefraction]</u></b></mark></color> on self\n[WhenUse] If this unit has <color=#ff6000><mark=#ff000040><b><u>5+ [YesdragonSelfRefraction]</u></b></mark></color>, Coin Power +1 and gain +1 Atk Weight\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 5,
+                  "name": "Gathering Rain [積雨]"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "pierce",
+                  "atkWeight": 8,
+                  "baseValue": 18,
+                  "coinValue": 7,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 5 [Burst] and +3 [Burst] Count",
+                        "[OnSucceedAttack] 50% chance to inflict 1 [Paralysis] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[CantDuel][CantChangeTarget] \n<color=#ff6000><mark=#ff000040><b><u>Targets \"Flower-burying Pin\"</u></b></mark></color>\nIf \"Flower-burying Pin\" is destroyed, cancel this Skill",
+                  "levelCorrection": 3,
+                  "name": "Levinfall [落雷]"
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "pierce",
+                  "atkWeight": 4,
+                  "baseValue": 10,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +2 [CondensedBloodRefraction] Count"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +2 [CondensedBloodRefraction] Count"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 2 [CondensedBloodRefraction]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 2 [CondensedBloodRefraction]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 2 [CondensedBloodRefraction]"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Can Clash with this Skill regardless of Speed\n[WhenUse] Until this Skill ends, this unit cannot be Staggered from taking damage\n[WhenUse] <color=#ff6000><mark=#ff000040><b><u>For every [DragonLanceRefraction] on self</u></b></mark></color>, Coin Power +1 and gain +1 Atk Weight\n- If [DragonLanceRefraction] is at max Stack, deal +100% additional damage\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target\n[DefeatDuel] Gain 3 [Vulnerable] until the next Turn End\n[EndSkillAll] Reduce [DragonLanceRefraction] Stack to 1",
+                  "levelCorrection": 5,
+                  "name": "Tides Born of Dragon's Tears [龍淚成濤]"
+                }
+              ]
+            },
+            {
+              "name": "Refracted Flower-burying Pin",
+              "parts": [
+                {
+                  "breakSection": [
+                    50
+                  ],
+                  "defCorrection": 10,
+                  "hp": {
+                    "base": 60,
+                    "level": 0
+                  },
+                  "name": "Flower-burying Pin",
+                  "partId": 957101,
+                  "resists": {
+                    "blunt": 1,
+                    "envy": 1.5,
+                    "gloom": 1.5,
+                    "gluttony": 1.5,
+                    "lust": 0.75,
+                    "pierce": 1,
+                    "pride": 1,
+                    "slash": 1,
+                    "sloth": 0.75,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "When hit by Yinglong's \"Levinfall\" Skill, die instantly and apply 1 [YesdragonSelfRefraction] on Yinglong",
+                  "name": "Return to Origin [物歸原主]"
+                },
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                }
+              ],
+              "portrait": "9571",
+              "skills": [
+                {
+                  "affinity": "gluttony",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 7,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "guard",
+                  "desc": "[CanDuelGuard]\n[WinDuel] Inflict 1 [Vulnerable] on target",
+                  "levelCorrection": 0,
+                  "name": "Spirit-bearing Pin of the Dragon"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "targets": [
+            {
+              "name": "Refracted Illusory Butterfly of Entangled Lives::The Past",
+              "parts": [
+                {
+                  "defCorrection": 0,
+                  "hp": {
+                    "base": 1,
+                    "level": 0
+                  },
+                  "name": "Body",
+                  "partId": 956401,
+                  "resists": {
+                    "blunt": 1,
+                    "envy": 1,
+                    "gloom": 1,
+                    "gluttony": 1,
+                    "lust": 1,
+                    "pierce": 1,
+                    "pride": 1,
+                    "slash": 1,
+                    "sloth": 1,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Fix this unit's Speed to 1; this unit's HP does not drop below 1\nFirst Turn Start after entering the Encounter: Gain 333 Shield\n\nAt Attack End of the Skill \"Eclosion\", end Encounter\n- If the Shield is broken, proceed to the next turn instead and <color=#ff6000><mark=#ff000040><b><u>face a unique Choice Event</u></b></mark></color> before the Encounter ends",
+                  "name": "Eclosion - Life That Was"
+                },
+                {
+                  "desc": "Quadruple the effects of [HeatedWingScales]\n\nTake +100% damage from E.G.O Skills",
+                  "name": "Time of Forging"
+                }
+              ],
+              "portrait": "9564",
+              "skills": [
+                {
+                  "affinity": "wrath",
+                  "atkType": "pierce",
+                  "atkWeight": 7,
+                  "baseValue": 8,
+                  "coinValue": 8,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[CantDuel][CantChangeTarget]\nThis Attack Skill deals 0 damage\n[EndSkill] End the Encounter\n- If the Shield is broken, proceed to the next turn instead and <color=#ff6000><mark=#ff000040><b><u>face a unique Choice Event</u></b></mark></color> before the Encounter ends",
+                  "levelCorrection": 0,
+                  "name": "Eclosion"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "waves": [
+        {
+          "targets": [
+            {
+              "name": "Refracted Will You Play?",
+              "parts": [
+                {
+                  "defCorrection": 0,
+                  "hp": {
+                    "base": 11,
+                    "level": 0
+                  },
+                  "name": "Body",
+                  "partId": 955601,
+                  "resists": {
+                    "blunt": 1,
+                    "envy": 0.8,
+                    "gloom": 0.8,
+                    "gluttony": 1.2,
+                    "lust": 1.5,
+                    "pierce": 1,
+                    "pride": 1,
+                    "slash": 1,
+                    "sloth": 0.8,
+                    "wrath": 1.2
+                  },
+                  "speed": [
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "defCorrection": 0,
+                  "hp": {
+                    "base": 673,
+                    "level": 18.57
+                  },
+                  "name": "Stuffed Toy",
+                  "partId": 955602,
+                  "resists": {
+                    "blunt": 1,
+                    "envy": 0.8,
+                    "gloom": 0.8,
+                    "gluttony": 1.2,
+                    "lust": 1.5,
+                    "pierce": 1,
+                    "pride": 1,
+                    "slash": 1,
+                    "sloth": 0.8,
+                    "wrath": 1.2
+                  },
+                  "speed": [
+                    2,
+                    3
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Turn Start: If there are no [TagGameBuff]s, this unit's 1/2/3 other allies that have the lowest Level become [TagGameBuff] for 3 turns (number of units receiving this effect increases every time this effect activates)\n\n<color=#ff9000><mark=#ff000040><b><u>If [TagGameBuff] effect expires while the unit that had the [TagGameBuff] effect is alive</u></b></mark></color>, gain the following effects:\n- All Sinners take fixed damage equal to 40% HP each\n- Reduce SP to -45 for a random Sinner who can enter E.G.O Corrosion[TabExplain] or Panic\n\nIf a Sinner kills a [TagGameBuff], the said Sinner gains 1 [ResultEnhancement] for the rest of this Encounter (this effect can be gained cumulatively)",
+                  "name": "Let's Play Tag! Here I Go!"
+                },
+                {
+                  "desc": "Turn End: If this unit is the only surviving ally, or if the Core is at 50%- HP, use \"Let's Play Together Forever~!\" next turn (once per Encounter)",
+                  "name": "Will You Play? Will You Play? Will You Play?"
+                },
+                {
+                  "desc": "Turn Start: The \"Stuffed Toy\" Part <color=#ff9000><mark=#ff000040><b><u>gains [Protection] equal to the number of allies excluding this unit</u></b></mark></color>\n\nWhen the \"Stuffed Toy\" Part is destroyed, Will You Play? and its remaining allies are killed",
+                  "name": "No More Playtime"
+                },
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                },
+                {
+                  "desc": "<color=#ff9000><mark=#ff000040><b><u>HP damage taken by the Core is fixed at 0</u></b></mark></color>",
+                  "name": "Attachment Plushie"
+                }
+              ],
+              "portrait": "9556",
+              "skills": [
+                {
+                  "affinity": "wrath",
+                  "atkWeight": 1,
+                  "baseValue": 20,
+                  "coinValue": 10,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "guard",
+                  "desc": "[CanDuelGuard]\nFinal Power -4 for every ally defeated in this Encounter",
+                  "levelCorrection": 0,
+                  "name": "Don't Let Them Hurt Me"
+                },
+                {
+                  "affinity": "lust",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 7,
+                  "coinValue": -2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Inflict 1 [ResultReduction] next turn"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Final Power +1 and deal +5% damage for every ally defeated in this Encounter\n[DefeatDuel] Base Power -7\n[DefeatDuel] Damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 1,
+                  "name": "Play With Me!"
+                },
+                {
+                  "affinity": "lust",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 8,
+                  "coinValue": -4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Inflict 1 [ResultReduction] next turn"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Final Power +1 and deal +10% damage for every ally defeated in this Encounter\n[DefeatDuel] Base Power -8\n[DefeatDuel] Damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 1,
+                  "name": "Hyah!"
+                },
+                {
+                  "affinity": "lust",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 10,
+                  "coinValue": -3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Inflict 2 [ResultReduction] next turn"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Final Power +1 and deal +5% damage for every ally defeated in this Encounter\n[DefeatDuel] Base Power -10\n[DefeatDuel] Damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 2,
+                  "name": "Do You Like Dolls?"
+                },
+                {
+                  "affinity": "envy",
+                  "atkType": "slash",
+                  "atkWeight": 3,
+                  "baseValue": 4,
+                  "coinValue": -1,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 5 [Laceration] and +4 [Laceration] Count"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "<color=#ff6000><mark=#ff000040><b><u>If this Skill is an Unopposed Attack, or if this Skill loses a Clash, deal +300% damage</u></b></mark></color>\n[StartDuel] <color=#ff6000><mark=#ff000040><b><u>If target has [ResultReduction], Clash Power +20</u></b></mark></color>\n[WinDuel] This Skill does not trigger the target's Defense Skill\n[WinDuel] End this Skill and use \"You Win...\" on the target\n",
+                  "levelCorrection": 3,
+                  "name": "I'll Go fer Scissors. How 'Bout You?"
+                },
+                {
+                  "affinity": "envy",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 6,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[CantDuel]\nThis Skill has the following properties:\n- Does not trigger Defense Skills\n- Its attack does not hit\n[WhenUse] Apply 2 [AttackUp] on target next turn\n[EndSkill] Heal (this Coin's Final Power x 5) HP for 2 Sinners that have the lowest current HP",
+                  "levelCorrection": 0,
+                  "name": "You Win..."
+                },
+                {
+                  "affinity": "envy",
+                  "atkType": "slash",
+                  "atkWeight": 7,
+                  "baseValue": 4,
+                  "coinValue": -1,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 6 [Laceration] and +5 [Laceration] Count"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "This Skill does not trigger Defense Skills, and can be Clashed with regardless of Speed\n[WhenUse] <color=#ff6000><mark=#ff000040><b><u>Deal -90% damage against targets that have equipped Defense Skills</u></b></mark></color>\n<color=#ff6000><mark=#ff000040><b><u>[StartDuel] Final Power +20</u></b></mark></color>\n[WinDuel] Deal +100% damage\n[DefeatDuel] Deal -90% damage and damage dealt by this Skill cannot Stagger the target\n[DefeatDuel] All Parts become Staggered next turn\n[EndSkill] End this turn",
+                  "levelCorrection": 3,
+                  "name": "Let's Play Together Forever~!"
+                }
+              ]
+            },
+            {
+              "egoList": [
+                21109,
+                21104,
+                21102
+              ],
+              "identityOverride": 11115,
+              "name": "Refracted Peccatulum Invidiae?",
+              "parts": [
+                {
+                  "defCorrection": -3,
+                  "name": "Body",
+                  "partId": 955701
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Deal +15% damage and take -15% damage",
+                  "name": "Peccatulum Invidiae Class 2"
+                },
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                },
+                {
+                  "desc": "Upon entering the Encounter, gain [MiddleFingerLeashBuff]",
+                  "name": "Suppressed Might"
+                }
+              ],
+              "portrait": "9557"
+            },
+            {
+              "egoList": [
+                20701,
+                20709,
+                20704
+              ],
+              "identityOverride": 10715,
+              "name": "Refracted Peccatulum Invidiae?",
+              "parts": [
+                {
+                  "defCorrection": -3,
+                  "name": "Body",
+                  "partId": 955801
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Deal +15% damage and take -15% damage",
+                  "name": "Peccatulum Invidiae Class 2"
+                },
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                }
+              ],
+              "portrait": "9558"
+            },
+            {
+              "egoList": [
+                20801,
+                20804,
+                20803
+              ],
+              "identityOverride": 10814,
+              "name": "Refracted Peccatulum Invidiae?",
+              "parts": [
+                {
+                  "defCorrection": -3,
+                  "name": "Body",
+                  "partId": 955901
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Deal +15% damage and take -15% damage",
+                  "name": "Peccatulum Invidiae Class 2"
+                },
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                }
+              ],
+              "portrait": "9559"
+            },
+            {
+              "egoList": [
+                21006,
+                21007,
+                21004
+              ],
+              "identityOverride": 11012,
+              "name": "Refracted Peccatulum Invidiae?",
+              "parts": [
+                {
+                  "defCorrection": -3,
+                  "name": "Body",
+                  "partId": 956001
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Deal +15% damage and take -15% damage",
+                  "name": "Peccatulum Invidiae Class 2"
+                },
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                }
+              ],
+              "portrait": "9560"
+            },
+            {
+              "egoList": [
+                20301,
+                20306,
+                20302
+              ],
+              "identityOverride": 10306,
+              "name": "Refracted Peccatulum Invidiae?",
+              "parts": [
+                {
+                  "defCorrection": -3,
+                  "name": "Body",
+                  "partId": 956101
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Deal +15% damage and take -15% damage",
+                  "name": "Peccatulum Invidiae Class 2"
+                },
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                }
+              ],
+              "portrait": "9561"
+            },
+            {
+              "egoList": [
+                20501,
+                20506,
+                20503
+              ],
+              "identityOverride": 10507,
+              "name": "Refracted Peccatulum Invidiae?",
+              "parts": [
+                {
+                  "defCorrection": -3,
+                  "name": "Body",
+                  "partId": 956201
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Deal +15% damage and take -15% damage",
+                  "name": "Peccatulum Invidiae Class 2"
+                },
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                }
+              ],
+              "portrait": "9562"
+            }
+          ]
+        },
+        {
+          "targets": [
+            {
+              "name": "Distorted Hohenheim",
+              "parts": [
+                {
+                  "breakSection": [
+                    25
+                  ],
+                  "defCorrection": 3,
+                  "hp": {
+                    "base": 708,
+                    "level": 48.8
+                  },
+                  "name": "Body",
+                  "partId": 955301,
+                  "resists": {
+                    "blunt": 1,
+                    "envy": 0.75,
+                    "gloom": 0.75,
+                    "gluttony": 1.5,
+                    "lust": 1,
+                    "pierce": 1,
+                    "pride": 1,
+                    "slash": 1,
+                    "sloth": 0.75,
+                    "wrath": 1.5
+                  },
+                  "speed": [
+                    2,
+                    4
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Encounter Start: Apply 1 [ObservedPerson] on all enemies; then, gain [Breath] Potency and Count equal to the number of units with [ObservedPerson]\n\nTurn Start: Apply 1 [ObservedPerson] against targets without [ObservedPerson]\n\nFor every 10 [ObservedPerson] on the target, inflict +1 more [Vibration] Potency and Count with this unit's Skills (max 3)",
+                  "name": "Observation"
+                },
+                {
+                  "desc": "On Turn 3: Gains a new pattern and prepares to use a powerful Skill.\nAfter Turn 3 is over: The above effect activates when this unit has 30+ [Breath] Count at Turn End\n\nIf this unit did not take any HP damage during the preparation period before using the powerful Skill, greatly enhance the Skill (does not count damages taken by Shield HP)",
+                  "name": "Establish Hypothesis"
+                },
+                {
+                  "desc": "Gain 1 [Breath] Potency every time this unit inflicts damage with Attack Skill effects (15 per turn)\n- If the target has 15+ [ObservedPerson], gain 1 additional [Breath] Potency with every hit\n\nGain +1 [Breath] Count every time this unit takes damage from a Sinner's Attack Skill effects (15 per turn)\n- If the target has 15+ [ObservedPerson], gain +1 additional [Breath] Count with every hit taken\n\n<color=#ff9000><mark=#ff000040><b><u>Turn Start: Inflict 3 [ResultReduction] and 5 [ObservedPerson] to the Sinner who dealt the most damage to this unit in the previous turn\n- If the target has 30 [ObservedPerson], inflict 5 [ResultReduction] instead</u></b></mark></color>",
+                  "name": "Adaptation"
+                },
+                {
+                  "desc": "When weakened due to a Choice Event, this Passive replaces 「Adaptation」\n\nGain 1 [Breath] Potency every time this unit inflicts damage with Attack Skill effects (15 per turn)\n- If the target has 15+ [ObservedPerson], gain 1 additional [Breath] Potency with every hit; however, reduce the target's [ObservedPerson] by 3\n\nGain +1 [Breath] Count every time this unit takes damage from a Sinner's Attack Skill effects (15 per turn)\n- If the target has 15+ [ObservedPerson], gain +1 additional [Breath] Count with every hit taken; however, reduce the target's [ObservedPerson] by 3\n\nCritical damage does not increase or decrease",
+                  "name": "Maladaptation"
+                },
+                {
+                  "desc": "Turn Start: <color=#ff9000><mark=#ff000040><b><u>Gain Shield equal to 30% of missing HP (Shield HP cannot exceed 25% of the max HP)</u></b></mark></color>\n- If this unit has [Combustion], lose ([Combustion] Count x 1.5)% Shield HP\n- Shield takes +100% damage from [Burst] effects\n\nTurn End: If the Shield gained due to this effect is destroyed, for the rest of this Encounter, gain 1 [DefenseDown] at Turn Start for every instance the Shield has been destroyed (max 5)",
+                  "name": "Defense Mechanism"
+                },
+                {
+                  "desc": "When weakened due to a Choice Event, this Passive replaces 「Defense Mechanism」\n\nTurn Start: Gain Shield equal to 15% of missing HP (Shield HP cannot exceed 5% of the max HP)\n- If this unit has [Combustion], lose ([Combustion] Count x 2)% Shield HP\n- Shield takes +150% damage from [Burst] effects\n\nTurn End: If the Shield gained due to this effect is destroyed, for the rest of this Encounter, gain 2 [DefenseDown] at Turn Start for every instance the Shield has been destroyed (max 10)",
+                  "name": "Inadequate Defense Mechanism"
+                },
+                {
+                  "desc": "Turn End: <color=#ff9000><mark=#ff000040><b><u>Siphon 10 SP from Sinners</u></b></mark></color> (max 3 Sinners in descending order of SP; does not apply cumulatively on the same target)\n(Does not activate if Hohenheim is Panicked)\n\n<color=#ff9000><mark=#ff000040><b><u>This unit's SP does not drop below 15</u></b></mark></color>",
+                  "name": "Confirmation Bias"
+                },
+                {
+                  "desc": "When weakened due to a Choice Event, this Passive replaces 「Confirmation Bias」\n\nTurn Start: <color=#ff9000><mark=#ff000040><b><u>Gain 3 [Vulnerable]</u></b></mark></color> and lose 15 SP\nTurn End: Siphon 5 SP from targets with higher SP than this unit (max 3 targets; in descending order of SP; cannot stack on the same target)\n(Does not activate if Hohenheim is Panicked)",
+                  "name": "Self-doubt"
+                },
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                },
+                {
+                  "desc": "Apply the [PanicChangeLock] effect\nTurn End: If this unit is in Panic, raise SP to 45",
+                  "name": "Fixed Panic"
+                }
+              ],
+              "portrait": 1082,
+              "skills": [
+                {
+                  "affinity": "lust",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 6,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Vibration] Potency",
+                        "[CriticalOnSucceedAttack] Inflict 3 [Vibration] Potency and +2 [Vibration] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Final Power +1 for every 5 [Breath] Potency on self (max 3)",
+                  "levelCorrection": 0,
+                  "name": "Compression"
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 6,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 [Vibration] Potency",
+                        "[WinDuelAttack] Inflict +3 [Vibration] Count",
+                        "[CriticalOnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Final Power +1 for every 3 [Breath] Potency on self (max 5)\n<color=#ff6000><mark=#ff000040><b><u>[WhenUse] If the target has 20+ [ObservedPerson], convert all Coins on this Skill to [SuperCoin]s</u></b></mark></color>",
+                  "levelCorrection": 1,
+                  "name": "Dismantle"
+                },
+                {
+                  "affinity": "sloth",
+                  "atkType": "pierce",
+                  "atkWeight": 4,
+                  "baseValue": 3,
+                  "coinValue": 8,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] If target has 5+ [Vibration] Count, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                        "[WinDuelAttack] Inflict 5 [Vibration] Potency and +3 [Vibration] Count",
+                        "[CriticalOnSucceedAttack] Trigger [VibrationExplosion] twice; then, reduce target's [Vibration] Count by 2"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] At 10+ [Breath] Potency, consume [Breath] Potency to gain +2 Final Power for every 3 [Breath] Potency consumed (max 4)",
+                  "levelCorrection": 1,
+                  "name": "Conduct Analysis"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "pierce",
+                  "atkWeight": 7,
+                  "baseValue": 2,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "If user took no HP damage last turn, guarantee a Crit",
+                        "If user took HP damage last turn, does not Crit; instead, deal -80% damage",
+                        "[CriticalOnSucceedAttack] Trigger [VibrationExplosion] thrice; then, reduce target's [Vibration] Count by 3"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Consume half of [Breath] Potency and Count on self\n- Gain (sum of consumed [Breath] Potency and Count / 2) Final Power (max 20)\n- Deal +(sum of consumed [Breath] Potency and Count x 2)% damage (max 50%)\n- +(sum of consumed [Breath] Potency and Count x 4)% damage on Critical Hit (max 100%)\n[DefeatDuel] Reduce remaining [Breath] Count by half",
+                  "levelCorrection": 2,
+                  "name": "Trigger Extinction Sequence"
+                },
+                {
+                  "affinity": "gloom",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "guard",
+                  "desc": "[CanDuelGuard]\n[WhenUse] Final Power +1 for every 3 [Breath] Potency on self (max 5)\n[WhenUse] Gain 4 [Breath] Potency\n- If this unit has Shield, gain +2 [Breath] Count as well",
+                  "levelCorrection": 0,
+                  "name": "Contemplation"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "targets": [
+            {
+              "name": "Refracted Illusory Butterfly of Entangled Lives::The Present",
+              "parts": [
+                {
+                  "defCorrection": 0,
+                  "hp": {
+                    "base": 1,
+                    "level": 0
+                  },
+                  "name": "Body",
+                  "partId": 956501,
+                  "resists": {
+                    "blunt": 1,
+                    "envy": 1,
+                    "gloom": 1,
+                    "gluttony": 1,
+                    "lust": 1,
+                    "pierce": 1,
+                    "pride": 1,
+                    "slash": 1,
+                    "sloth": 1,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Fix this unit's Speed to 1; this unit's HP does not drop below 1\nFirst Turn Start after entering the Encounter: Gain 333 Shield\n\nAt Attack End of the Skill \"Eclosion\", end Encounter\n- If the Shield is broken, proceed to the next turn instead and <color=#ff6000><mark=#ff000040><b><u>face a unique Choice Event</u></b></mark></color> before the Encounter ends",
+                  "name": "Eclosion - Life That Is"
+                },
+                {
+                  "desc": "Quadruple the effects of [TransparentWingScales]\n\nTake +100% damage from E.G.O Skills",
+                  "name": "Kṣaṇa of Circumvolution"
+                }
+              ],
+              "portrait": "9565",
+              "skills": [
+                {
+                  "affinity": "pride",
+                  "atkType": "pierce",
+                  "atkWeight": 7,
+                  "baseValue": 8,
+                  "coinValue": 8,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[CantDuel][CantChangeTarget]\nThis Attack Skill deals 0 damage\n[EndSkill] End the Encounter\n- If the Shield is broken, proceed to the next turn instead and <color=#ff6000><mark=#ff000040><b><u>face a unique Choice Event</u></b></mark></color> before the Encounter ends",
+                  "levelCorrection": 0,
+                  "name": "Eclosion"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "waves": [
+        {
+          "targets": [
+            {
+              "name": "The Refracted Pinky Nursefather - Shiomi Yoru",
+              "parts": [
+                {
+                  "breakSection": [
+                    20
+                  ],
+                  "defCorrection": 5,
+                  "hp": {
+                    "base": 532,
+                    "level": 18
+                  },
+                  "name": "Body",
+                  "partId": 955001,
+                  "resists": {
+                    "blunt": 1,
+                    "envy": 1,
+                    "gloom": 1.2,
+                    "gluttony": 0.8,
+                    "lust": 1,
+                    "pierce": 1,
+                    "pride": 0.8,
+                    "slash": 1.2,
+                    "sloth": 0.8,
+                    "wrath": 1.2
+                  },
+                  "speed": [
+                    2,
+                    5
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                },
+                {
+                  "desc": "Upon entering the Encounter, this unit gains [TimeEntangleFour]\nIf this unit does not have [TimeGapAb], this unit gains [TimeGapAb] equal to ([TimeEntangleDesc] stage x 400) (once per [TimeEntangleDesc] stage)\n\nAt stage 3 and 4 [TimeEntangleDesc], <color=#ff6000><mark=#ff000040><b><u>if this unit loses all [TimeGapAb], the pattern changes and become Staggered for the next turn</u></b></mark></color>\n\nAt stage 2 [TimeEntangleDesc], <color=#ff6000><mark=#ff000040><b><u>if this unit loses all [TimeGapAb], the pattern changes</u></b></mark></color>\n\nTake -30% HP, SP damage from [Combustion], [Laceration], [Burst], and [Sinking]; -30% to Stagger Threshold raised by [Vibration]",
+                  "name": "Superposed Afterimage"
+                },
+                {
+                  "desc": "Every few turns, use the \"Destinated Opponent\" Skill\n<color=#ff6000><mark=#ff000040><b><u>Only the target of this unit's attack can Clash with the said Skill Slot</u></b></mark></color>\n\nIf this unit's \"Destinated Opponent\" Skill loses a Clash, take 36 ~ 60 fixed damage\n\nCombat End: <color=#ff6000><mark=#ff000040><b><u>If every \"Destinated Opponent\" Skill this unit used in this turn lost a Clash</u></b></mark></color>, gain 1 [Vulnerable] next turn",
+                  "name": "Afterimage of the Future"
+                },
+                {
+                  "desc": "Deal -50% final damage with this unit's Skill against targets that used Defense Skill\n\nTurn End: Gain 2 [Vulnerable] and 2 [AttackDmgUp] every 4 turn in this Encounter (applies cumulatively; max 2 times per Encounter)",
+                  "name": "'I Shall Give You Some Quarter'"
+                },
+                {
+                  "desc": "Turn End: if in Panic, reset SP to 30.",
+                  "name": "Panic Recovery"
+                },
+                {
+                  "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+                  "name": "Fixed Panic"
+                },
+                {
+                  "desc": "On hit with this unit's Coin, deal Slash damage equal to (the Coin's final damage / 10)\n- This effect activates ([TimeEntangleDesc] stage) times; damage from this effect cannot Stagger target",
+                  "name": "Afterimage Reverberation"
+                },
+                {
+                  "desc": "Attack Skill End: Deal (# of Slash Coins that hit Critically x 10) Slash damage against each target) (damage from this effect cannot Stagger target)\n\nAttack Skill End: Consume every surplus [Breath] Potency past 20 on self and inflict [PhantomIncision] to target by [Breath] Potency consumed",
+                  "name": "Lacerating Afterimages from Myriad Moments"
+                }
+              ],
+              "portrait": "1322",
+              "skills": [
+                {
+                  "affinity": "envy",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 7,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Gain 1 [Breath]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Gain 1 [Breath]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Gain +2 [Breath] Count",
+                  "levelCorrection": -3,
+                  "name": "Twinslash [二連]"
+                },
+                {
+                  "affinity": "envy",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 7,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Gain 1 [Breath]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Gain 1 [Breath]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Gain 1 [Breath]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Gain +3 [Breath] Count",
+                  "levelCorrection": -3,
+                  "name": "Tripleslash [三連]"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "slash",
+                  "atkWeight": 3,
+                  "baseValue": 10,
+                  "coinValue": 6,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "+30% Damage on Critical Hit",
+                        "[OnSucceedAttack] Gain 2 [Breath]",
+                        "[OnSucceedAttack] Inflict 1 [PhantomIncision]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 1 [PhantomIncision]"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[OnDirectAttack] Gain 5 [Breath]\n[DefeatDuel] -2 Atk Weight",
+                  "levelCorrection": 1,
+                  "name": "Swift Glimmer [快閃]"
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "slash",
+                  "atkWeight": 4,
+                  "baseValue": 12,
+                  "coinValue": 1,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "Reuse this Coin (4 times max)",
+                        "[OnSucceedAttack] Gain 1 [Breath]",
+                        "[OnSucceedAttack] Inflict 1 [PhantomIncision]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 1 [PhantomIncision]"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WideAreaRampage]\nCan Clash with this Skill regardless of Speed; cannot be Staggered until this Skill ends\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 1,
+                  "name": "Formless Cut [無形斬]"
+                },
+                {
+                  "affinity": "sloth",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[DefeatDuel] <color=#ff6000><mark=#ff000040><b><u>Halve the [PhantomIncision] Stack on target</u></b></mark></color> (rounded down)",
+                  "levelCorrection": -3,
+                  "name": "Phantom Step [殘像步]"
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 1,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "<color=#ff6000><mark=#ff000040><b><u>[DefeatDuel] Gain 2 [Reduction]</u></b></mark></color>\n[DefeatDuel] Target heals 5 SP",
+                  "levelCorrection": -5,
+                  "name": "Silent Regard"
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 9,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [PhantomIncision] for every 1% missing HP on target"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Consume all [PhantomIncision] on target and deal ([PhantomIncision] consumed)% HP damage"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "This Skill does not trigger the target's Defense Skill\nPrioritizes the target with the lowest current HP percentage",
+                  "levelCorrection": 3,
+                  "name": "Deathedge [絶命]"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "slash",
+                  "atkWeight": 7,
+                  "baseValue": 14,
+                  "coinValue": 10,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "Deal +100% Damage on Critical Hit",
+                        "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Consume all [PhantomIncision] on target</u></b></mark></color> and deal ([PhantomIncision] consumed)% HP damage against each target hit, respectively"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Can Clash with this Skill regardless of Speed; this unit cannot be Staggered until this Skill ends\n[WhenUse] At 20+ SP, generate 3 Mang. Final Power +10\n[EndSkill] If this Skill generated Mang, lose 20 SP\n[WinDuel] Gain 2 [SlashDamageUp]\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 0,
+                  "name": "Uttermost Rend Space - String Severance [空間斬 - 絕緣]"
+                },
+                {
+                  "affinity": "lust",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 1,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "<color=#ff6000><mark=#ff000040><b><u>Only targets with the corresponding buff</u></b></mark></color> among [SojiAbiBuffOne], [SojiAbiBuffTwo], or [SojiAbiBuffThree] can Clash with this Skill\nThis Skill does not trigger the target's Defense Skill\n\n[DefeatDuel] Gain 1 [Vulnerable]\n[DefeatDuel] Remove [SojiAbiBuffOne], [SojiAbiBuffTwo], [SojiAbiBuffThree] from target\n\n[OnDirectAttack] Final Power +10",
+                  "levelCorrection": 0,
+                  "name": "Destinated Opponent"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "slash",
+                  "atkWeight": 7,
+                  "baseValue": 9,
+                  "coinValue": 7,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] If target has <color=#ff6000><mark=#ff000040><b><u>[SojiAbiBuffOne], [SojiAbiBuffTwo], or [SojiAbiBuffThree],</u></b></mark></color> deal (this Coin's Final Power x 5) Pride damage to target"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Can Clash with this Skill regardless of Speed; cannot be Staggered until this Skill ends\n[StartBattle] Gain 1 [AttackDmgDown] for every enemy that has equipped Defense Skill this turn (max 5)\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 3,
+                  "name": "You Have Failed to Stop the Future - Scartrail Slash [殘痕斬]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "targets": [
+            {
+              "name": "The Refracted Ring Nursefather - Callisto",
+              "parts": [
+                {
+                  "breakSection": [
+                    50
+                  ],
+                  "defCorrection": 1,
+                  "hp": {
+                    "base": 730,
+                    "level": 25.17
+                  },
+                  "name": "Body",
+                  "partId": 955401,
+                  "resists": {
+                    "blunt": 1.2,
+                    "envy": 1,
+                    "gloom": 0.8,
+                    "gluttony": 1.2,
+                    "lust": 0.8,
+                    "pierce": 1,
+                    "pride": 1,
+                    "slash": 0.8,
+                    "sloth": 1.2,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    1,
+                    3
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Turn End: At 206 [HumanBoneTheRings] and 5 [HumanBloodTheRings], reduce the Stack of each effect equal to those numbers respectively and gain 1 [MineTheRings]\n\nTurn Start: If this unit has [MineTheRings], use a powerful attack this turn\n\n<color=#ff6000><mark=#ff000040><b><u>When hit by an Attack Skill before using the powerful attack, gain 1 [PlusCoinValueDown] and 1 [ResultReduction]</u></b></mark></color> (once per Skill; max 3 times per turn)",
+                  "name": "Magnum Opus: Tibia"
+                },
+                {
+                  "desc": "If this unit has [SupportProtect], <color=#ff6000><mark=#ff000040><b><u>lose 1 [SupportProtect] on Clash Start</u></b></mark></color> (once per Skill)",
+                  "name": "Allow Me to Briefly Enjoy My Pupil's Exhibition"
+                },
+                {
+                  "desc": "After using a Skill, gain 30 [HumanBoneTheRings] and 1 [HumanBloodTheRings] for every target damaged by this unit's Skill",
+                  "name": "The Aesthetics of Harvesting and Trimming the Ingredient On-site"
+                },
+                {
+                  "desc": "When this unit enters the Encounter, heal 30 SP\n\nOn Hit with Attack Skill: If this unit inflicts negative effect and gains beneficial effect simultaneously, heal 4 SP at Attack End\n- If this unit is at max SP when healing SP with the above effect, gain 1 [ResultEnhancement] next turn (once per turn)",
+                  "name": "Corpus-centric Art"
+                },
+                {
+                  "desc": "Take -30% HP, SP damage from [Combustion], [Vibration], [Burst], and [Sinking]\nTake -50% damage from [Laceration]\n\nTurn Start: If this unit is Staggered, recover from Stagger. Afterward, gain 2 [CrimsonTakeDamageUp] and becomes unable to use \"Installation Art no. 3: Improvised Ribcage\" until next turn (once per Encounter)\n\nTurn End: Gain 1 [DefenseDown] next turn for every 4 [Combustion] on self (max 15)",
+                  "name": "All of My Corpus has been Given to Tibia"
+                },
+                {
+                  "desc": "When [MineTheRings] expires, the following units heal 30 SP and gain 2 [AttackUp] and 2 [DefenseUp] next turn:\n- The Ring Nursefather - Callisto\n- The Ring Apprentice - Albina\n- Corpus Theater[TabExplain]",
+                  "name": "Artwork Pleasing to the Senses"
+                },
+                {
+                  "desc": "Turn End: Inflict [RedemptionTheRings] next turn to the Sinner and Assist Unit with the fastest Speed",
+                  "name": "Please, Do Stop Running and Be Seated"
+                },
+                {
+                  "desc": "Turn End: if in Panic, reset SP to 0.",
+                  "name": "Panic Recovery"
+                },
+                {
+                  "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+                  "name": "Fixed Panic"
+                },
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                }
+              ],
+              "portrait": "1331",
+              "skills": [
+                {
+                  "affinity": "lust",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 6,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Deal SP damage instead of HP damage",
+                        "[OnSucceedAttack] Heal 15 SP on self",
+                        "[OnSucceedAttack]\n<color=#ff6000><mark=#ff000040><b><u>Stagger target and turn target into [LivingSpecimenTheRings] next turn</u></b></mark></color>"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[CantDuel]\nPrioritizes enemy with the highest level\nThis Skill does not trigger Defense Skills\n[WhenUse] Coin Power +1 for every 8 [Laceration] on target (max 2)",
+                  "levelCorrection": 0,
+                  "name": "Installation Art no. 3: Improvised Ribcage"
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 6,
+                  "coinValue": 6,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 4 [Laceration]",
+                        "[OnSucceedAttack] Inflict 4 [Laceration]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Inflict 1 [Vulnerable] next turn",
+                        "[OnSucceedAttack] Gain 1 [Protection] next turn"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] If target has 6+ [Laceration], Coin Power +1\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 2,
+                  "name": "Anatomize"
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 7,
+                  "coinValue": 6,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +1 [Laceration] Count",
+                        "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Inflict 1 [ResultReduction] next turn",
+                        "[OnSucceedAttack] Gain 1 [ResultEnhancement] next turn"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Prioritizes Corpus Theaters\n[WhenUse] If target has 6+ [Laceration], Coin Power +1\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 2,
+                  "name": "Gather Ingredient - Blood-bathed Objet"
+                },
+                {
+                  "affinity": "lust",
+                  "atkType": "slash",
+                  "atkWeight": 6,
+                  "baseValue": 6,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Deal 5 SP damage",
+                        "[OnSucceedAttack] Heal 5 SP (once per Skill)"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 1 [Vulnerable] next turn",
+                        "[OnSucceedAttack] Gain 1 [Protection] next turn (once per Skill)"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 1 [AttackDmgDown] next turn",
+                        "[OnSucceedAttack] Gain 1 [AttackDmgUp] next turn (once per Skill)"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "During the turn this unit has this Skill equipped, gain 1 [PlusCoinValueDown] and 1 [ResultReduction] <color=#ff6000><mark=#ff000040><b><u>when hit by Attack Skills</u></b></mark></color> (once per Skill; max 3 times per turn)\nCannot be Staggered before using this Skill\nOn Kill with this Skill: Heal 15 SP for every target killed\n[StartBattle] Gain 4 [Protection]\n[WhenUse] Deal +3% damage for every 6 ([Laceration] on main target + [Laceration] on sub-target) (max 30%)\n[DefeatDuel] Deal -90% damage and damage dealt by this Skill cannot Stagger the target\n[EndSkill] [MineTheRings] expires",
+                  "levelCorrection": 5,
+                  "name": "Tibia's Melody - Anatomization of the Unanatomized by the Anatomized"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "This Coin does not deal HP damage",
+                        "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                        "- If target is an ally, apply 6 [AttackUp] instead of the effect above"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Prioritizes The Ring Apprentice - Albina\n[DefeatDuel] Gain <color=#ff6000><mark=#ff000040><b><u>4 [AttackDmgDown]</u></b></mark></color>",
+                  "levelCorrection": 1,
+                  "name": "Oh, How We Love the Flesh and the Blood"
+                },
+                {
+                  "affinity": "sloth",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 10,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "evade",
+                  "desc": "[StartBattle] <color=#ff6000><mark=#ff000040><b><u>Gain 2 [SupportProtect]</u></b></mark></color>\n[WhenUse] The attacker does not lose [Laceration] Count before Attack End",
+                  "levelCorrection": 0,
+                  "name": "Curating the Exhibition"
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 7,
+                  "coinValue": 6,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Vulnerable] next turn",
+                        "[OnSucceedAttack] Gain 1 [Protection] next turn"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [ResultReduction] next turn",
+                        "[OnSucceedAttack] Gain 1 [ResultEnhancement] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "counter",
+                  "desc": "[DuelCounter]\n[SupportProtect] exclusive Skill\nCannot be Staggered before using this Skill\n[WhenUse] Gain 1 [Protection]\n[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+                  "levelCorrection": 4,
+                  "name": "Please. Vandalism is Prohibited."
+                }
+              ]
+            },
+            {
+              "name": "The Refracted Ring Apprentice - Albina",
+              "parts": [
+                {
+                  "breakSection": [
+                    40
+                  ],
+                  "defCorrection": 1,
+                  "hp": {
+                    "base": 417,
+                    "level": 14.38
+                  },
+                  "name": "Body",
+                  "partId": 955501,
+                  "resists": {
+                    "blunt": 1.2,
+                    "envy": 1,
+                    "gloom": 0.8,
+                    "gluttony": 1.2,
+                    "lust": 0.8,
+                    "pierce": 1,
+                    "pride": 1,
+                    "slash": 0.8,
+                    "sloth": 1.2,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    1,
+                    4
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Turn End: At 2 [HumanFleshTheRings], remove [HumanFleshTheRings] and gain [BoneBladeTheRings] next turn\n\nTurn Start: If this unit has [BoneBladeTheRings], use a powerful attack this turn\n\n<color=#ff6000><mark=#ff000040><b><u>When hit by an Attack Skill before using the powerful attack, gain 1 [PlusCoinValueDown] and 1 [ResultReduction]</u></b></mark></color> (once per Skill; max 3 times per turn)",
+                  "name": "Fascia, My Precious Artwork"
+                },
+                {
+                  "desc": "If this unit has [SupportProtect], <color=#ff6000><mark=#ff000040><b><u>lose 1 [SupportProtect] on Clash Start</u></b></mark></color> (once per Skill)",
+                  "name": "Visitors Must Respect the Rules of the Gallery"
+                },
+                {
+                  "desc": "On Hit with Attack Skills: If this unit inflicts negative effect and gains beneficial effect simultaneously, heal 4 SP\n- If this unit is at max SP when healing SP with the above effect, gain 1 [Agility] next turn (2 times per turn)",
+                  "name": "Corporism"
+                },
+                {
+                  "desc": "Take -30% HP, SP damage from [Combustion], [Burst], and [Sinking]; -30% to Stagger Threshold raised by [Vibration]\nTake -50% damage from [Laceration]\n\nTurn End: Gain 1 [DefenseDown] next turn for every 4 [Combustion] on self (max 15)",
+                  "name": "The Pulse and Beat of Corpus-turned-Ingredient"
+                },
+                {
+                  "desc": "At less than 20 SP when the Ring Nursefather enters the Encounter, heal SP to 20",
+                  "name": "With this Artwork, I will Prove Myself before the Maestro"
+                },
+                {
+                  "desc": "Turn End: if in Panic, reset SP to 0.",
+                  "name": "Panic Recovery"
+                },
+                {
+                  "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+                  "name": "Fixed Panic"
+                },
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                }
+              ],
+              "portrait": "1336",
+              "skills": [
+                {
+                  "affinity": "gluttony",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 4 [Laceration]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Vulnerable] next turn",
+                        "[OnSucceedAttack] Gain 1 [Protection] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+                  "levelCorrection": 0,
+                  "name": "Butcher - Ribs"
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                        "[OnSucceedAttack] Gain 1 [Agility] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+                  "levelCorrection": 0,
+                  "name": "Rotator Crush"
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 6 [Laceration]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [ResultReduction] next turn",
+                        "[OnSucceedAttack] Gain 1 [ResultEnhancement] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Coin Power +1 for every 4 [Laceration] on target (max 2)",
+                  "levelCorrection": 0,
+                  "name": "Tendon Tear"
+                },
+                {
+                  "affinity": "envy",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 10 [Laceration]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Laceration] Count"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Deal 5 SP damage",
+                        "[OnSucceedAttack] Heal 10 SP on self",
+                        "[OnSucceedAttack] Gain 1 [HumanFleshTheRings]"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 2,
+                  "name": "Time to Eat, Fascia"
+                },
+                {
+                  "affinity": "lust",
+                  "atkType": "slash",
+                  "atkWeight": 4,
+                  "baseValue": 6,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Deal 5 SP damage",
+                        "[OnSucceedAttack] Heal 5 SP (once per Skill)"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 1 [Vulnerable] next turn",
+                        "[OnSucceedAttack] Gain 1 [Protection] next turn (once per Skill)"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 1 [AttackDmgDown] next turn",
+                        "[OnSucceedAttack] Gain 1 [AttackDmgUp] next turn (once per Skill)"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "During the turn this unit has this Skill equipped, gain 1 [PlusCoinValueDown] and 1 [ResultReduction] <color=#ff6000><mark=#ff000040><b><u>when hit by Attack Skills</u></b></mark></color> (once per Skill; max 3 times per turn)\nCannot be Staggered before using this Skill\nOn Kill with this Skill: Heal 15 SP for every target killed\n[StartBattle] Gain 4 [Protection]\n[WhenUse] Deal +3% damage for every 6 ([Laceration] on main target + [Laceration] on sub-target) (max 30%)\n[DefeatDuel] Deal -90% damage and damage dealt by this Skill cannot Stagger the target\n[EndSkill] [BoneBladeTheRings] expires",
+                  "levelCorrection": 5,
+                  "name": "Liberation of the Repressed Flesh"
+                },
+                {
+                  "affinity": "sloth",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 10,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "evade",
+                  "desc": "[StartBattle] <color=#ff6000><mark=#ff000040><b><u> Gain 1 [SupportProtect]</u></b></mark></color>\n[StartBattle] Gain 1 [Agility] next turn",
+                  "levelCorrection": 0,
+                  "name": "The Exhibition Begins"
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Vulnerable] next turn",
+                        "[OnSucceedAttack] Gain 1 [Protection] next turn"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [ResultReduction] next turn",
+                        "[OnSucceedAttack] Gain 1 [ResultEnhancement] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "counter",
+                  "desc": "[DuelCounter]\n[SupportProtect] exclusive Skill\nCannot be Staggered before using this Skill\n[WhenUse] Gain 1 [Protection]\n[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+                  "levelCorrection": 4,
+                  "name": "You there. Vandalism is Prohibited."
+                }
+              ]
+            },
+            {
+              "name": "Corpus Theater",
+              "parts": [
+                {
+                  "breakSection": [
+                    80
+                  ],
+                  "defCorrection": 1,
+                  "hp": {
+                    "base": 31,
+                    "level": 1.07
+                  },
+                  "name": "Body",
+                  "partId": 133201,
+                  "resists": {
+                    "blunt": 2,
+                    "envy": 1,
+                    "gloom": 1,
+                    "gluttony": 1,
+                    "lust": 1,
+                    "pierce": 1,
+                    "pride": 1,
+                    "slash": 1,
+                    "sloth": 1,
+                    "wrath": 2
+                  },
+                  "speed": [
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "If Corpus Theater is destroyed by the Ring Nursefather, the tethered unit becomes unavailable for the Encounter",
+                  "name": "Ingredient Harvest"
+                },
+                {
+                  "desc": "If Corpus Theater is destroyed by units other than the Ring Nursefather, activate the following effects:\n- The tethered unit returns to battle next turn; if the unit is at less than 10 SP, heal SP to 10\n- The Ring Nursefather and The Ring Apprentice lose 10 SP\n- Gain 2 E.G.O Resource for all Affinities",
+                  "name": "Escape from the Art"
+                },
+                {
+                  "desc": "Take x2 damage from [Combustion]",
+                  "name": "Flammable Material"
+                },
+                {
+                  "desc": "Apply the following effects to the unit tethered to Corpus Theater:\n- Become 'immobilized'\n- This unit's buffs, HP, and SP cannot be changed",
+                  "name": "Bondage"
+                }
+              ],
+              "portrait": "1332"
+            }
+          ]
+        },
+        {
+          "targets": [
+            {
+              "name": "The Index Nursefather - Rien",
+              "parts": [
+                {
+                  "breakSection": [
+                    60
+                  ],
+                  "defCorrection": 8,
+                  "hp": {
+                    "base": 635,
+                    "level": 44
+                  },
+                  "name": "Body",
+                  "partId": 955101,
+                  "resists": {
+                    "blunt": 0.9,
+                    "envy": 1,
+                    "gloom": 1,
+                    "gluttony": 1,
+                    "lust": 1.2,
+                    "pierce": 0.9,
+                    "pride": 1,
+                    "slash": 1.2,
+                    "sloth": 1,
+                    "wrath": 1.2
+                  },
+                  "speed": [
+                    1,
+                    2
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Turn Start:\n- Gain [IndexPrescript_Base_2nd] based on [UnlockBuff_Base] stage on self\n- Apply [IndexPrescriptTargetToPersonality] against a random Sinner, and prioritize attacking them\n<color=#ff9000><mark=#ff000040><b><u>- When using a Skill against [IndexPrescriptTargetToPersonality], convert all Coins on that Skill to [SuperCoin]s</u></b></mark></color>\n\nWhen attacking, if [IndexPrescriptTargetToPersonality] is killed, or if this unit can no longer attack that target, <color=#ff9000><mark=#ff000040><b><u>use the remaining Skills against a random Sinner\n- Prioritizes targets with the lowest current HP, unless they have 1 HP\n- When the randomly chosen Sinner is killed, or if the said Sinner's HP is brought down to 1, repeat this effect on another Sinner</u></b></mark></color>\n\nDeal +2.5% damage against [IndexPrescriptTargetToPersonality] for every [BlessingOfIndexPrescriptEnemy] (max 20%)\n- At 9 [BlessingOfIndexPrescriptEnemy], deal +30% damage against all targets",
+                  "name": "Will of the Prescript"
+                },
+                {
+                  "desc": "Turn End: If [IndexPrescript_Base_2nd] was executed this turn, heal 10 SP and gain 3 [BlessingOfIndexPrescriptEnemy] (once per turn)\n\n<color=#ff9000><mark=#ff000040><b><u>Turn End: If [IndexPrescript_Base_2nd] was not executed this turn, gain 8 [KarmaOfIndexRien]</u></b></mark></color>\n- If this unit does not have [UnlockBuff_Base], gain 1 [BlessingOfIndexPrescriptEnemy] at Turn End\n- At 9 [BlessingOfIndexPrescriptEnemy], does not gain [KarmaOfIndexRien]",
+                  "name": "Undertake Prescript"
+                },
+                {
+                  "desc": "<color=#ff9000><mark=#ff000040><b><u>Take -50% damage from Unopposed Attacks</u></b></mark></color>\nTake -50% damage from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]\nWhen healing SP from [UnlockBuff_Base], if this unit's SP is below 15, heal SP up to 15\n\nEncounter Start: Gain [BurningWoundRien_Mask] and heal SP up to 45\n\nAt 55%- HP, end the turn and gain a new pattern\n- Remove all effects other than those exclusive to this unit\n- Change [StackRienSpecialSkill] Stack to 0",
+                  "name": "Rien, The Index Nursefather"
+                },
+                {
+                  "desc": "<color=#ff9000><mark=#ff000040><b><u>A random weapon is assigned to every Coin. Each weapon has a unique effect.</u></b></mark></color>\n- [RienWeapon01Hatchet]\n- [RienWeapon02Stiletto]\n- [RienWeapon03Greatsword]\n- [RienWeapon04Rapier]\n- [RienWeapon05Sledgehammer]\n- [RienWeapon06Ultragreatsword]\n- [RienWeapon07Lance]\n- [RienWeapon08Chain]\n- [RienWeapon09Scythe]\n\nWhen using an Attack Skill, gain 1 [StackRienSpecialSkill] (max 9)\n- Can be gained once per Skill; does not gain Stack from the same Skill twice\n\n<color=#ff9000><mark=#ff000040><b><u>Turn Start: At 9 [StackRienSpecialSkill] Stacks, use a powerful Skill</u></b></mark></color>\n- Attack End: After using the powerful Skill for the first time, gain [Shin_Rien]\n- Reset the per-Skill [StackRienSpecialSkill] cap\n- Min & Max Speed +15\n- Turn End: Gain 1 [Vulnerable] and 2 [ResultReduction] next turn\n\nTurn 4 Start after entering the field: At less than 9 [StackRienSpecialSkill], bring its Stack to 9; then, gain (Stack gained x 3) [KarmaOfIndexRien]\n- Then, activate this effect every 4 turns",
+                  "name": "Oracle Device [Caduceus]"
+                },
+                {
+                  "desc": "Turn End: At 3/6/9 [BlessingOfIndexPrescriptEnemy] or at 95%-/85%-/75%- HP,- Gain [UnlockBuff_Rien1]/[UnlockBuff_Rien2]/[UnlockBuff_Rien3]\n\nTurn 1 End after entering the field: At lower than [UnlockBuff_Base] stage 1, gain [UnlockBuff_Rien1]\nTurn 3 End after entering the field: At lower than [UnlockBuff_Base] stage 2, gain [UnlockBuff_Rien2]\n\nWhen [UnlockBuff_Base] is activated due to HP or Turn conditionals:\n- At less than 3/6/9 [BlessingOfIndexPrescriptEnemy] Stack, raise them to 3/6/9\nGain 5 [KarmaOfIndexRien] at the next Turn Start for every Stack gained",
+                  "name": "Unlock"
+                },
+                {
+                  "desc": "Apply the [PanicChangeLock] effect\nTurn End: If this unit is in Panic, raise SP to 15",
+                  "name": "Fixed Panic"
+                },
+                {
+                  "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash. (rounded down)",
+                  "name": "Refracted Struggle"
+                }
+              ],
+              "portrait": "1347",
+              "skills": [
+                {
+                  "affinity": "gluttony",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Gain 2 [Breath]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 2)\nThe following effects activate depending on the weapon's Attack Type\n- Blunt weapons deal +20% damage\n- Non-Blunt weapons deal -10% damage\n[WhenUse] Gain +1 [Breath] Count",
+                  "levelCorrection": -1,
+                  "name": "Slam Down with Weight, Topple the Body"
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Gain 1 [Breath]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Gain 1 [Breath]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 2)\nThe following effects activate depending on the weapon's Attack Type\n- Pierce weapons deal +20% damage\n- Non-Pierce weapons deal -10% damage\n[WhenUse] Gain +1 [Breath] Count",
+                  "levelCorrection": -1,
+                  "name": "Lay Vertical The End, Insert Up to the Wick"
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Gain 1 [Breath]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Gain +1 [Breath] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 2)\nThe following effects activate depending on the weapon's Attack Type\n- Slash weapons deal +20% damage\n- Non-Slash weapons deal -10% damage\n[WhenUse] Gain +1 [Breath] Count",
+                  "levelCorrection": -1,
+                  "name": "Lay the Blade on its Side, Slice Like a Severed Breath"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Gain +1 [Breath] Count",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +1 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 2)\nThe following effects activate depending on the weapon's Attack Type\n- Blunt weapons deal +30% damage\n- Non-Blunt weapons deal -15% damage\n[StartBattle] Gain the following effects (effects are cumulative)\n- At [UnlockBuff_Rien2], convert the final Coin to [SuperCoin]\n- At [UnlockBuff_Rien3], on Clash Win with this Skill, lower user's Stagger Threshold by 10\n[WhenUse] Gain 2 [Breath]",
+                  "levelCorrection": 0,
+                  "name": "Swing to Fell, Have it Meet the Ground"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +1 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Gain +1 [Breath] Count",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +1 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 2)\nThe following effects activate depending on the weapon's Attack Type\n- Pierce weapons deal +30% damage\n- Non-Pierce weapons deal -15% damage\n[StartBattle] Gain the following effects (effects are cumulative)\n- At [UnlockBuff_Rien2], convert the final Coin to [SuperCoin]\n- At [UnlockBuff_Rien3], on Clash Win with this Skill, inflict 1 [ResultReduction] next turn\n[WhenUse] Gain 2 [Breath]",
+                  "levelCorrection": 0,
+                  "name": "Aim Toward a Point, Let it Echo Within"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Gain +1 [Breath] Count",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +1 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 2)\nThe following effects activate depending on the weapon's Attack Type\n- Slash weapons deal +30% damage\n- Non-Slash weapons deal -15% damage\n[StartBattle] Gain the following effects (effects are cumulative)\n- At [UnlockBuff_Rien2], convert the final Coin to [SuperCoin]\n- At [UnlockBuff_Rien3], on Clash Win with this Skill, gain 1 [ResultEnhancement] next turn\n[WhenUse] Gain 2 [Breath]",
+                  "levelCorrection": 0,
+                  "name": "Carve at a Low Slant, Peel What Remains"
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[UnBrokenCoinOnSucceedAttack] Gain 2 [Breath]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[UnBrokenCoinOnSucceedAttack] Gain +2 [Breath] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Can Clash with this Skill regardless of Speed\nThe following effects activate depending on the weapon's Attack Type\n- Blunt weapons deal +50% damage\n- Non-Blunt weapons deal -25% damage\n[StartBattle] Gain the following effects (effects are cumulative)\n- At [UnlockBuff_Rien2], convert the 3rd and 4th Coins to [SuperCoin]s\n- At [UnlockBuff_Rien3], on Clash Win with this Skill, raise target's Stagger Threshold by 15\n[WhenUse] Gain 2 [Breath] and +2 [Breath] Count",
+                  "levelCorrection": 3,
+                  "name": "Destroy the Sound, Crush Flat the Thought"
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[UnBrokenCoinOnSucceedAttack] Gain 2 [Breath]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[UnBrokenCoinOnSucceedAttack] Gain +2 [Breath] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Can Clash with this Skill regardless of Speed\nThe following effects activate depending on the weapon's Attack Type\n- Pierce weapons deal +50% damage\n- Non-Pierce weapons deal -25% damage\n[StartBattle] Gain the following effects (effects are cumulative)\n- At [UnlockBuff_Rien2], convert the 3rd and 4th Coins to [SuperCoin]s\n- At [UnlockBuff_Rien3], on Clash Win with this Skill, gain 1 [AttackDmgUp] next turn\n[WhenUse] Gain 2 [Breath] and +2 [Breath] Count",
+                  "levelCorrection": 3,
+                  "name": "Stab the Silence's Heart, Penetrate the Memory"
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[UnBrokenCoinOnSucceedAttack] Gain 2 [Breath]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[UnBrokenCoinOnSucceedAttack] Gain +2 [Breath] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Can Clash with this Skill regardless of Speed\nThe following effects activate depending on the weapon's Attack Type\n- Slash weapons deal +50% damage\n- Non-Slash weapons deal -25% damage\n[StartBattle] Gain the following effects (effects are cumulative)\n- At [UnlockBuff_Rien2], convert the final Coin to [SuperCoin]\n- At [UnlockBuff_Rien3], on Clash Win with this Skill, Final Power +2\n[WhenUse] Gain 2 [Breath] and +2 [Breath] Count",
+                  "levelCorrection": 3,
+                  "name": "With Tempered Secret, Cut the Form"
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "slash",
+                  "atkWeight": 7,
+                  "baseValue": 5,
+                  "coinValue": 1,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Reuse this Coin (max 7 times)</u></b></mark></color>",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 1 [Sinking]"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WideAreaRampage]\n<color=#ff6000><mark=#ff000040><b><u>This Skill does not trigger the target's Defense Skills</u></b></mark></color>\nCan Clash with this Skill regardless of Speed\n[WhenUse]\n- Gain 3 [Breath] and +3 [Breath] Count\n- Clash Power +5 (<color=#ff6000><mark=#ff000040><b><u>Clash Power gained is reduced by 1 for every 8 [KarmaOfIndexRien] on self, down to 0</u></b></mark></color>)\n[WhenUse] At 0+ SP, generate 1 Mang\n- Deal +20% damage; Final Power +3\n[WinDuel]\n- Gain 3 [Breath] and +3 [Breath] Count\n- Attack End: Inflict 3 [Laceration], 1 [Binding], and 1 [Vulnerable] next turn to all targets this unit hit\n[DefeatDuel]\n- Gain 4 [AttackDmgDown] and 9 [Paralysis]\n- Damage dealt by this Skill cannot Stagger the target; On Hit, does not activate [Sinking] on target\n[EndSkill] If this Skill generated Mang, lose 20 SP\n[EndSkill] End this turn",
+                  "levelCorrection": 4,
+                  "name": "Furioso-Replica"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "targets": [
+            {
+              "name": "Refracted Illusory Butterfly of Entangled Lives::The Future",
+              "parts": [
+                {
+                  "defCorrection": 0,
+                  "hp": {
+                    "base": 1,
+                    "level": 0
+                  },
+                  "name": "Body",
+                  "partId": 956601,
+                  "resists": {
+                    "blunt": 1,
+                    "envy": 1,
+                    "gloom": 1,
+                    "gluttony": 1,
+                    "lust": 1,
+                    "pierce": 1,
+                    "pride": 1,
+                    "slash": 1,
+                    "sloth": 1,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Fix this unit's Speed to 1; this unit's HP does not drop below 1\nFirst Turn Start after entering the Encounter: Gain 333 Shield\n\nAt Attack End of the Skill \"Eclosion\", end Encounter\n- If the Shield is broken, proceed to the next turn instead and <color=#ff6000><mark=#ff000040><b><u>face a unique Choice Event</u></b></mark></color> before the Encounter ends",
+                  "name": "Eclosion - Life That Will Be"
+                },
+                {
+                  "desc": "Quadruple the effects of [RustedWingScales]\n\nTake +100% damage from E.G.O Skills",
+                  "name": "Erosion of Kalpas"
+                }
+              ],
+              "portrait": "9566",
+              "skills": [
+                {
+                  "affinity": "lust",
+                  "atkType": "pierce",
+                  "atkWeight": 7,
+                  "baseValue": 8,
+                  "coinValue": 8,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[CantDuel][CantChangeTarget]\nThis Attack Skill deals 0 damage\n[EndSkill] End the Encounter\n- If the Shield is broken, proceed to the next turn instead and <color=#ff6000><mark=#ff000040><b><u>face a unique Choice Event</u></b></mark></color> before the Encounter ends",
+                  "levelCorrection": 0,
+                  "name": "Eclosion"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Refracted Butterfly of Entangled Lives::Imago",
+          "parts": [
+            {
+              "breakSection": [
+                85,
+                65,
+                40,
+                10
+              ],
+              "defCorrection": 0,
+              "hp": {
+                "base": 9090,
+                "level": 275.44
+              },
+              "name": "Body",
+              "partId": 956701,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 0.75,
+                "lust": 1.25,
+                "pierce": 1,
+                "pride": 1.25,
+                "slash": 1,
+                "sloth": 0.75,
+                "wrath": 1.25
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Turn Start: <color=#ff6000><mark=#ff000040><b><u>Activate the highest-Stacked state of time</u></b></mark></color> between [StackPastActivate], [StackPresentActivate], and [StackFutureActivate] and use a special Skill\n- If multiple states of time share the highest Stack, the currently active state of time does not change\n- Inactive states of time become [StackPast], [StackPresent], or [StackFuture], respectively\n- When the <color=#ff6000><mark=#ff000040><b><u>currently active state of time changes</u></b></mark></color>, gain 1 [TimeGap]\n\n<color=#ff6000><mark=#ff000040><b><u>Every time Illusory Butterfly[TabExplain] of Entangled Lives::The Past / The Present / The Future are hit as main targets</u></b></mark></color>, Butterfly[TabExplain] of Entangled Lives::Imago loses [StackPastActivate] / [StackPresentActivate] / [StackFutureActivate] Stack\n\n<color=#ff6000><mark=#ff000040><b><u>Higher [StackPastActivate] / [StackPresentActivate] / [StackFutureActivate] Stacks</u></b></mark></color> lead to Butterfly[TabExplain] of Entangled Lives::Imago's Skill Power and damage output becoming <color=#ff6000><mark=#ff000040><b><u>greatly enhanced</u></b></mark></color>, and <color=#ff6000><mark=#ff000040><b><u>greatly increase the amount of status effects it inflicts or gains</u></b></mark></color>",
+              "name": "Moment of Entangled Lives"
+            },
+            {
+              "desc": "At 10+ Clashes against the same target, randomly gain or lose Clash Power by (Clash Count / 10) in a Clash (rounded down)\n\nEncounter Start:\n- Begin Encounter with the same HP as Butterfly[TabExplain] of Entangled Lives::The Pupa (excluding Shield)\n- Gain 10 Stacks each of [StackPastActivate] / [StackPresentActivate] / [StackFutureActivate]\n\nAt less than 66%/33% HP, gain new Slot patterns\n- <color=#ff6000><mark=#ff000040><b><u>When this unit's HP drops below 66%/33%</u></b></mark></color> for the first time in this Encounter, <color=#ff6000><mark=#ff000040><b><u>gain 10 Stacks each of [StackPastActivate], [StackPresentActivate], and [StackFutureActivate]</u></b></mark></color> next turn",
+              "name": "Causality that Threads the Past, the Present, and the Future [三世因果]"
+            },
+            {
+              "desc": "When [StackPastActivate], gain the following effects:\n- When hit by Sinners, inflict 1 [Combustion] and +1 [Combustion] Count on the\nattacking Sinner\n- Skill \"Kalpāgni\" gains Final Power +2 and its final Coin gains \"On Hit,\ninflict ([StackPastActivate] Stack / 2) SP damage (rounded down)\" effect\n- Turn Start: Inflict 5 [TakeHpHealReduce] and 3 [CrimsonTakeDamageUp] on all Sinners who have 10+ ([Combustion] Potency + [Combustion] Count)",
+              "name": "Past [過去]"
+            },
+            {
+              "desc": "When [StackPastActivate], gain the following effects:\n<mark=#000000AA>- <color=#ff9000><s></color>When hit by Sinners, inflict 1 [Combustion] and +1 [Combustion] Count on the\nattacking Sinner<color=#ff0000></s></color></mark>\n- Skill \"Kalpāgni\" gains Final Power +2 and its final Coin gains \"On Hit,\ninflict ([StackPastActivate] Stack / 2) SP damage (rounded down)\" effect\n- Turn Start: Inflict 5 [TakeHpHealReduce] and 3 [CrimsonTakeDamageUp] on all Sinners who have 10+ ([Combustion] Potency + [Combustion] Count)\n",
+              "name": "Past [過去]"
+            },
+            {
+              "desc": "When [StackPastActivate], gain the following effects:\n- When hit by Sinners, inflict 1 [Combustion] and +1 [Combustion] Count on the\nattacking Sinner\n<mark=#000000AA>- <color=#ff9000><s></color>Skill \"Kalpāgni\" gains Final Power +2 and its final Coin gains \"On Hit,\ninflict ([StackPastActivate] Stack / 2) SP damage (rounded down)\" effect<color=#ff0000></s></color></mark>\n- Turn Start: Inflict 5 [TakeHpHealReduce] and 3 [CrimsonTakeDamageUp] on all Sinners who have 10+ ([Combustion] Potency + [Combustion] Count)\n",
+              "name": "Past [過去]"
+            },
+            {
+              "desc": "When [StackPastActivate], gain the following effects:\n- When hit by Sinners, inflict 1 [Combustion] and +1 [Combustion] Count on the\nattacking Sinner\n- Skill \"Kalpāgni\" gains Final Power +2 and its final Coin gains \"On Hit,\ninflict ([StackPastActivate] Stack / 2) SP damage (rounded down)\" effect\n<mark=#000000AA>- <color=#ff9000><s></color>Turn Start: Inflict 5 [TakeHpHealReduce] and 3 [CrimsonTakeDamageUp] on all Sinners who have 10+ ([Combustion] Potency + [Combustion] Count)<color=#ff0000></s></color></mark>\n",
+              "name": "Past [過去]"
+            },
+            {
+              "desc": "When [StackPresentActivate], gain the following effects:\n- Does not lose [Breath] Count On Crit; Turn Start: gain (2 + # of Sinners) [Breath] and [Breath] Count\n- Skill \"Smite the Wicked\" gains Final Power +2 and its final Coin gains \"On Hit, raise Stagger Threshold by ([StackPresentActivate] Stack / 2) (rounded down)\" effect\n- On Hit, deal +(([Breath] Potency on self + [Breath] Count on self) x 2)% damage on Critical Hit (max 120%; on Clash Lose, apply only one-third of the effect's full value)\n",
+              "name": "Present [現在]"
+            },
+            {
+              "desc": "When [StackPresentActivate], gain the following effects:\n<mark=#000000AA>- <color=#e5e5e5><s></color>Does not lose [Breath] Count On Crit; Turn Start: gain (2 + # of Sinners) [Breath] and [Breath] Count<color=#ff0000></s></color></mark>\n- Skill \"Smite the Wicked\" gains Final Power +2 and its final Coin gains \"On Hit, raise Stagger Threshold by ([StackPresentActivate] Stack / 2) (rounded down)\" effect\n- On Hit, deal +(([Breath] Potency on self + [Breath] Count on self) x 2)% damage on Critical Hit (max 120%; on Clash Lose, apply only one-third of the effect's full value)\n",
+              "name": "Present [現在]"
+            },
+            {
+              "desc": "When [StackPresentActivate], gain the following effects:\n- Does not lose [Breath] Count On Crit; Turn Start: gain (2 + # of Sinners) [Breath] and [Breath] Count\n<mark=#000000AA>- <color=#e5e5e5><s></color>Skill \"Smite the Wicked\" gains Final Power +2 and its final Coin gains \"On Hit, raise Stagger Threshold by ([StackPresentActivate] Stack / 2) (rounded down)\" effect<color=#ff0000></s></color></mark>\n- On Hit, deal +(([Breath] Potency on self + [Breath] Count on self) x 2)% damage on Critical Hit (max 120%; on Clash Lose, apply only one-third of the effect's full value)\n",
+              "name": "Present [現在]"
+            },
+            {
+              "desc": "When [StackPresentActivate], gain the following effects:\n- Does not lose [Breath] Count On Crit; Turn Start: gain (2 + # of Sinners) [Breath] and [Breath] Count\n- Skill \"Smite the Wicked\" gains Final Power +2 and its final Coin gains \"On Hit, raise Stagger Threshold by ([StackPresentActivate] Stack / 2) (rounded down)\" effect\n<mark=#000000AA>- <color=#e5e5e5><s></color>On Hit, deal +(([Breath] Potency on self + [Breath] Count on self) x 2)% damage on Critical Hit (max 120%; on Clash Lose, apply only one-third of the effect's full value)<color=#ff0000></s></color></mark>\n",
+              "name": "Present [現在]"
+            },
+            {
+              "desc": "When [StackFutureActivate], gain the following effects:\n- Turn Start: All Sinners gain +(3 + # of current turn / 2) [Laceration] Count (rounded up)\n- Skill \"Bloodflower\" gains Final Power +2 and its final Coin gains \"On Hit,\nheal ([StackFutureActivate] Stack x 3) HP on self\" effect\n- Whenever [Laceration] activates on self or on Sinners, heal HP equal to the said [Laceration] damage (rounded down)\n",
+              "name": "Future [未來]"
+            },
+            {
+              "desc": "When [StackFutureActivate], gain the following effects:\n<mark=#000000AA>- <color=#d93737><s></color>Turn Start: All Sinners gain +(3 + # of current turn / 2) [Laceration] Count (rounded up)<color=#ff0000></s></color></mark>\n- Skill \"Bloodflower\" gains Final Power +2 and its final Coin gains \"On Hit,\nheal ([StackFutureActivate] Stack x 3) HP on self\" effect\n- Whenever [Laceration] activates on self or on Sinners, heal HP equal to the said [Laceration] damage (rounded down)\n",
+              "name": "Future [未來]"
+            },
+            {
+              "desc": "When [StackFutureActivate], gain the following effects:\n- Turn Start: All Sinners gain +(3 + # of current turn / 2) [Laceration] Count (rounded up)\n<mark=#000000AA>- <color=#d93737><s></color>Skill \"Bloodflower\" gains Final Power +2 and its final Coin gains \"On Hit,\nheal ([StackFutureActivate] Stack x 3) HP on self\" effect<color=#ff0000></s></color></mark>\n- Whenever [Laceration] activates on self or on Sinners, heal HP equal to the said [Laceration] damage (rounded down)\n",
+              "name": "Future [未來]"
+            },
+            {
+              "desc": "When [StackFutureActivate], gain the following effects:\n- Turn Start: All Sinners gain +(3 + # of current turn / 2) [Laceration] Count (rounded up)\n- Skill \"Bloodflower\" gains Final Power +2 and its final Coin gains \"On Hit,\nheal ([StackFutureActivate] Stack x 3) HP\" effect\n<mark=#000000AA>- <color=#d93737><s></color>Whenever [Laceration] activates on self or on Sinners, heal HP equal to the said [Laceration] damage (rounded down)<color=#ff0000></s></color></mark>\n",
+              "name": "Future [未來]"
+            }
+          ],
+          "portrait": "9567",
+          "skills": [
+            {
+              "affinity": "gloom",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Combustion]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Combustion] Count",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse]\n- Clash Power +1 for every 8 ([Combustion] on target + [Laceration] on target) (max 3)\n- Deal +10% damage for every 8 [Breath] on self (max 30%)\n- Gain 2 [Breath]\n- At less than 66% HP, convert the final Coin into [SuperCoin]\n- At less than 33% HP, convert all Coins into [SuperCoin]s",
+              "levelCorrection": 2,
+              "name": "Fluttering Havoc"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Combustion] Count",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Combustion]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse]\n- Clash Power +1 for every 8 ([Combustion] + [Laceration]) on target (max 3)\n- Deal +10% damage for every 8 [Breath] on self (max 30%)\n- Gain +2 [Breath] Count\n- At less than 66% HP, convert the final Coin into [SuperCoin]\n- At less than 33% HP, convert all Coins into [SuperCoin]s",
+              "levelCorrection": 2,
+              "name": "Pulverization"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "Reuse this Coin once for every 33% missing HP (max 2 times)",
+                    "[OnSucceedAttack] Inflict 1 [Combustion]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[OnSucceedAttack] Gain 1 [Breath]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse]\n- Clash Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 6)\n- Clash Power +1 for every 6 [Breath] on self (max 3)\n[DefeatDuel]\nGain <color=#ff6000><mark=#ff000040><b><u>2 [ResultReduction] and 2[AttackDmgDown]</u></b></mark></color>",
+              "levelCorrection": 3,
+              "name": "Chaotic Turmoil"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Combustion] and +1 [Combustion] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[UnBrokenCoinOnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Activate [Combustion] on target once</u></b></mark></color>. Target loses 1 [Combustion] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Can Clash with this Skill regardless of Speed\n[WhenUse]\n- Clash Power +1 for every 6 [Combustion] on target (max 6)\n- At less than 66% HP, convert the second Coin into [SuperCoin]\n- At less than 33% HP, convert all Coins into [SuperCoin]s\n[DefeatDuel] Target cannot be Staggered until this Skill's Attack End",
+              "levelCorrection": 3,
+              "name": "Temper and Cast"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 3,
+              "baseValue": 6,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Combustion]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Activate [Combustion] on target 2 times</u></b></mark></color>. Target loses 2 [Combustion] Count",
+                    "[DefeatDuelAttack]\n<color=#ff6000><mark=#ff000040><b><u>At less than 33% HP, activate [Combustion] on the main target once</u></b></mark></color>. Target loses 1 [Combustion] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Can Clash with this Skill regardless of Speed\n[WhenUse]\n- Clash Power +1 for every 6 [Combustion] on the main target (max 6)\n- <color=#ff6000><mark=#ff000040><b><u>Deal +([StackPastActivate] x 2)% damage</u></b></mark></color> (max 60%)\n- At less than 66% HP, convert the second Coin into [SuperCoin]\n- At less than 33% HP, convert all Coins into [SuperCoin]s\n[DefeatDuel] Target cannot be Staggered until this Skill's Attack End",
+              "levelCorrection": 4,
+              "name": "Immolation"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 7,
+              "baseValue": 10,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [Combustion] and +1 [Combustion] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [Combustion] and +1 [Combustion] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Activate [Combustion] on target once</u></b></mark></color>. Target loses 1 [Combustion] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Activate [Combustion] on target 2 times</u></b></mark></color>. Target loses 2 [Combustion] Count",
+                    "[DefeatDuelAttack]\n<color=#ff6000><mark=#ff000040><b><u>At less than 33% HP, activate [Combustion] on target once</u></b></mark></color>. Target loses 1 [Combustion] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Can Clash with this Skill regardless of Speed\n[WhenUse]\n- Final Power +1 for every 6 [Combustion] on the main target (max 6)\n- <color=#ff6000><mark=#ff000040><b><u>Deal +([StackPastActivate] x 4)% damage</u></b></mark></color> (max 120%)\n[WinDuel] Gain 5 [StackPastActivate]\n[DefeatDuel]\n- Halve [StackPastActivate] (rounded down)\n- Gain 2 [AttackDmgDown] and 4 [Paralysis] \n- Target cannot be Staggered until this Skill's Attack End",
+              "levelCorrection": 6,
+              "name": "Kalpāgni"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 1 [Breath] and +1 [Breath] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[UnBrokenCoinOnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Deal ([Breath] on self / 2) Pride damage on target</u></b></mark></color> and lose 1 [Breath] Count (rounded down)"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Can Clash with this Skill regardless of Speed\n[WhenUse]\n- Clash Power +1 and deal +10% damage for every 6 [Breath] on self (max 6 and 60%, respectively)\n- At less than 66% HP, convert the second Coin into [SuperCoin]\n- At less than 33% HP, convert all Coins into [SuperCoin]s\n[BeforeAttack] Gain 2 [Breath] and +2 [Breath] Count\n[DefeatDuel] Target cannot be Staggered until this Skill's Attack End",
+              "levelCorrection": 3,
+              "name": "Anitya"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +1 [Breath] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 1 [Breath]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Deal +([Breath] Count on self)% damage</u></b></mark></color> (max 50%)",
+                    "[DefeatDuelAttack]\n<color=#ff6000><mark=#ff000040><b><u>At less than 33% HP, deal +([Breath] Count on self)% damage</u></b></mark></color> (max 30%)"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Deal +([Breath] on self x 2)% damage</u></b></mark></color> (max 100%)",
+                    "[DefeatDuelAttack]\n<color=#ff6000><mark=#ff000040><b><u>At less than 33% HP, deal +([Breath] on self)% damage</u></b></mark></color> (max 50%)"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Can Clash with this Skill regardless of Speed\n[WhenUse]\n- Clash Power +1 and deal +10% damage for every 6 [Breath] on self (max 6 and 60%, respectively)\n- <color=#ff6000><mark=#ff000040><b><u>Deal +([StackPresentActivate] x 2)% damage</u></b></mark></color> (max 60%)\n- At less than 66% HP, convert the second Coin into [SuperCoin]\n- At less than 33% HP, convert all Coins into [SuperCoin]s\n[BeforeAttack] Gain 3 [Breath] and +2 [Breath] Count\n[DefeatDuel] Target cannot be Staggered until this Skill's Attack End",
+              "levelCorrection": 4,
+              "name": "Skypiercer"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 14,
+              "coinValue": 12,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "<color=#ff6000><mark=#ff000040><b><u>If target's Pierce Resist. is below \"Weak\" (1.5), treat is as Weak (1.5)</u></b></mark></color>\n- On Clash Lose, this effect does not activate",
+                    "[DefeatDuelAttack]\n<color=#ff6000><mark=#ff000040><b><u>At less than 33% HP, deal +(50% of this Coin's damage)% bonus Pierce damage</u></b></mark></color>"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Can Clash with this Skill regardless of Speed\n[WhenUse]\n- Final Power +1 and deal +20% damage for every 6 [Breath] on self (max 6 and 120%, respectively)\n- Gain 4 [Breath] and +4 [Breath] Count\n- <color=#ff6000><mark=#ff000040><b><u>Deal +([StackPresentActivate] x 4)% damage (max 120%)</u></b></mark></color>\n[BeforeAttack] If this unit has 20+ [Breath] Potency, consume up to 20 surplus [Breath] Potency past 20 to deal +([Breath] consumed x 5)% damage (max 100%)\n- On Clash Lose, this effect does not activate\n[WinDuel] Gain 5 [StackPresentActivate]\n[DefeatDuel]\n- Halve [StackPresentActivate] (rounded down)\n- Gain 2 [AttackDmgDown] and 1 [Paralysis]\n- Target cannot be Staggered until this Skill's Attack End\n[EndSkill] If target is killed, Reuse this Skill on the target that has the highest HP (once per turn)\n- On Clash Lose, this effect does not activate",
+              "levelCorrection": 6,
+              "name": "Smite the Wicked"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Laceration] and +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[UnBrokenCoinOnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Activate [Laceration] on target once</u></b></mark></color>. Target loses 1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Can Clash with this Skill regardless of Speed\n[WhenUse]\n- Clash Power +1 for every 6 [Laceration] on target (max 6)\n- At less than 66% HP, convert the second Coin into [SuperCoin]\n- At less than 33% HP, convert all Coins into [SuperCoin]s\n[DefeatDuel] Target cannot be Staggered until this Skill's Attack End",
+              "levelCorrection": 3,
+              "name": "Corrosive Disintegration"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 3,
+              "baseValue": 8,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[UnBrokenCoinOnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Activate [Laceration] on target 2 times</u></b></mark></color>. Target loses 2 [Laceration] Count",
+                    "[DefeatDuelAttack]\n<color=#ff6000><mark=#ff000040><b><u>At less than 33% HP, activate [Laceration] on the main target once</u></b></mark></color>. Target loses 1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Can Clash with this Skill regardless of Speed\nWhile Clashing with this Skill, <color=#ff6000><mark=#ff000040><b><u>the main target's [Laceration] Count does not drop below 1</u></b></mark></color>\n[WhenUse]\n- Clash Power +1 for every 6 [Laceration] on the main target (max 6)\n- Deal +([StackFutureActivate] x 2)% damage (max 60%)\n- At less than 66% HP, convert the second Coin into [SuperCoin]\n- At less than 33% HP, convert all Coins into [SuperCoin]s\n[DefeatDuel] Target cannot be Staggered until this Skill's Attack End",
+              "levelCorrection": 4,
+              "name": "Rotting Annihilation"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 5,
+              "baseValue": 10,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration] and +2 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +3 [Laceration] Count",
+                    "[UnBrokenCoinOnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Activate [Laceration] on target 2 times</u></b></mark></color>. Target loses 2 [Laceration] Count",
+                    "[DefeatDuelAttack]\n<color=#ff6000><mark=#ff000040><b><u>At less than 33% HP, activate [Laceration] on target once</u></b></mark></color>. Target loses 1 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Can Clash with this Skill regardless of Speed\nWhile Clashing with this Skill, <color=#ff6000><mark=#ff000040><b><u>the main target's [Laceration] Count does not drop below 1</u></b></mark></color>\n[WhenUse]\n- Final Power +1 for every 6 [Laceration] on the main target (max 6)\n- Deal +([StackFutureActivate] x 4)% damage (max 120%)\n[WinDuel] Gain 5 [StackFutureActivate]\n[DefeatDuel]\n- Halve [StackFutureActivate] (rounded down)\n- Gain 2 [AttackDmgDown] and 2 [Paralysis]\n- Target cannot be Staggered until this Skill's Attack End",
+              "levelCorrection": 6,
+              "name": "Bloodflower"
+            }
+          ]
+        },
+        {
+          "name": "Refracted Illusory Butterfly of Entangled Lives::The Past",
+          "parts": [
+            {
+              "defCorrection": 0,
+              "hp": {
+                "base": 1,
+                "level": 0
+              },
+              "name": "Body",
+              "partId": 956401,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                1
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Displays current [StackPastActivate] Stack on Butterfly[TabExplain] of Entangled Lives::Imago\n\nEvery time this unit is <color=#ff6000><mark=#ff000040><b><u>hit as the main target</u></b></mark></color>:\n- Butterfly[TabExplain] of Entangled Lives::Imago loses 1 [StackPastActivate] Stack (once per Coin)\n- The Sinner who attacked this unit heals 10 SP (once per turn per Sinner)\n\nIf this unit <color=#ff6000><mark=#ff000040><b><u>did not get hit as the main target this turn</u></b></mark></color>, Butterfly[TabExplain] of Entangled Lives::Imago gains 5 [StackPastActivate] Stack at Combat End\n- If Butterfly[TabExplain] of Entangled Lives::Imago is Staggered, this effect does not activate",
+              "name": "The Past - Segmentation [分節]"
+            },
+            {
+              "desc": "Fix this unit's Speed to 1; this unit's HP does not drop below 1\n\nWhen this unit takes HP damage, transfer half of damage taken to Butterfly[TabExplain] of Entangled Lives::Imago (rounded down)",
+              "name": "The Past - Origination [緣起]"
+            }
+          ],
+          "portrait": "9564"
+        },
+        {
+          "name": "Refracted Illusory Butterfly of Entangled Lives::The Present",
+          "parts": [
+            {
+              "defCorrection": 0,
+              "hp": {
+                "base": 1,
+                "level": 0
+              },
+              "name": "Body",
+              "partId": 956501,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                1
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Displays current [StackPresentActivate] Stack on Butterfly[TabExplain] of Entangled Lives::Imago\n\nEvery time this unit is <color=#ff6000><mark=#ff000040><b><u>hit as the main target</u></b></mark></color>:\n- Butterfly[TabExplain] of Entangled Lives::Imago loses 1 [StackPresentActivate] Stack (once per Coin)\n- The Sinner who attacked this unit heals 10 SP (once per turn per Sinner)\n\nIf this unit <color=#ff6000><mark=#ff000040><b><u>did not get hit as the main target this turn</u></b></mark></color>, Butterfly[TabExplain] of Entangled Lives::Imago gains 5 [StackPresentActivate] Stack at Combat End\n- If Butterfly[TabExplain] of Entangled Lives::Imago is Staggered, this effect does not activate",
+              "name": "The Present - Segmentation [分節]"
+            },
+            {
+              "desc": "Fix this unit's Speed to 1; this unit's HP does not drop below 1\n\nWhen this unit takes HP damage, transfer half of damage taken to Butterfly[TabExplain] of Entangled Lives::Imago (rounded down)",
+              "name": "The Present - Origination [緣起]"
+            }
+          ],
+          "portrait": "9565"
+        },
+        {
+          "name": "Refracted Illusory Butterfly of Entangled Lives::The Future",
+          "parts": [
+            {
+              "defCorrection": 0,
+              "hp": {
+                "base": 1,
+                "level": 0
+              },
+              "name": "Body",
+              "partId": 956601,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                1
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Displays current [StackFutureActivate] Stack on Butterfly[TabExplain] of Entangled Lives::Imago\n\nEvery time this unit is <color=#ff6000><mark=#ff000040><b><u>hit as the main target</u></b></mark></color>:\n- Butterfly[TabExplain] of Entangled Lives::Imago loses 1 [StackFutureActivate] Stack (once per Coin)\n- The Sinner who attacked this unit heals 10 SP (once per turn per Sinner)\n\nIf this unit <color=#ff6000><mark=#ff000040><b><u>did not get hit as the main target this turn</u></b></mark></color>, Butterfly[TabExplain] of Entangled Lives::Imago gains 5 [StackFutureActivate] Stack at Combat End\n- If Butterfly[TabExplain] of Entangled Lives::Imago is Staggered, this effect does not activate",
+              "name": "The Future - Segmentation [分節]"
+            },
+            {
+              "desc": "Fix this unit's Speed to 1; this unit's HP does not drop below 1\n\nWhen this unit takes HP damage, transfer half of damage taken to Butterfly[TabExplain] of Entangled Lives::Imago (rounded down)",
+              "name": "The Future - Origination [緣起]"
+            }
+          ],
+          "portrait": "9566"
+        }
+      ]
+    }
+  ],
   "name": "Line 6: Maru no Uchi no Sanzu no kawa",
   "siteId": "5f05ceec-8d9b-426d-88cf-796776c42a63"
 }

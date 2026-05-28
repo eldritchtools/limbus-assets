@@ -32,7 +32,7 @@
         ],
         "type": "owned"
       },
-      "desc": "Turn End: heal 1 ally with the least SP by (5 + highest Reson.) (max 10) (excludes: self and Panicked or E.G.O Corroded allies)\n- If the said ally has Base Skills that inflict [Combustion] Potency or Count, heal 5 additional SP to them",
+      "desc": "Turn End: Heal 1 ally that has the lowest SP by (5 + highest Reson.) (max 10) (excludes: self and Panicked or E.G.O Corroded allies)\n- If the said ally has Base Skills that inflict [Combustion] Potency or Count, heal 5 additional SP to them",
       "name": "Inner Ardor"
     },
     "1011211": {
@@ -45,7 +45,7 @@
         ],
         "type": "owned"
       },
-      "desc": "Turn End: heal 1 ally with the least SP by (5 + highest Reson.) (max 10) (excludes: self and Panicked or E.G.O Corroded allies)\n- If the said ally has Base Skills that inflict [Combustion] Potency or Count, heal 5 additional SP to them\n- At 4+ Wrath Reson., heal 1 additional ally",
+      "desc": "Turn End: Heal 1 ally that has the lowest SP by (5 + highest Reson.) (max 10) (excludes: self and Panicked or E.G.O Corroded allies)\n- If the said ally has Base Skills that inflict [Combustion] Potency or Count, heal 5 additional SP to them\n- At 4+ Wrath Reson., heal 1 additional ally",
       "name": "Inner Ardor"
     },
     "1011221": {
@@ -58,7 +58,7 @@
         ],
         "type": "res"
       },
-      "desc": "For 2 allies with the least SP: if they lost SP this turn, heal 5 SP at Turn End",
+      "desc": "For 2 allies that have the lowest SP: If they lost SP this turn, heal 5 SP at Turn End",
       "name": "Liu Defensive Square"
     },
     "1011231": {
@@ -71,7 +71,7 @@
         ],
         "type": "res"
       },
-      "desc": "For 2 allies with the least SP: if they lost SP this turn, heal 5 SP at Turn End\n- If the said allies have Base Skills that inflict [Combustion] Potency or Count, heal 5~10 SP instead",
+      "desc": "For 2 allies that have the lowest SP: If they lost SP this turn, heal 5 SP at Turn End\n- If the said allies have Base Skills that inflict [Combustion] Potency or Count, heal 5~10 SP instead",
       "name": "Liu Defensive Square"
     }
   },
@@ -371,13 +371,13 @@
               ],
               "descs": [
                 "Deal +2% damage for every [Combustion] on target (max 60%)",
-                "[OnSucceedAttack] Inflict Wrath Affinity damage equal to [Combustion] Potency on target. (max 30) Reduce Target's [Combustion] Count by 2"
+                "[OnSucceedAttack] Deal Wrath damage equal to [Combustion] Potency on target (max 30). Reduce target's [Combustion] Count by 2"
               ],
               "type": "normal"
             }
           ],
           "defType": "attack",
-          "desc": "If target has 6+ [Combustion], Coin Power +1\nDeal +10% damage for every 6 [Combustion] on target (max 30%)\n[EndSkill] Heal 10 SP for 1 other ally with the least SP\n- If this attack killed the target, or if target had 10+ [Combustion], heal 1 more ally",
+          "desc": "If target has 6+ [Combustion], Coin Power +1\nDeal +10% damage for every 6 [Combustion] on target (max 30%)\n[EndSkill] Heal 10 SP for 1 other ally that has the lowest SP\n- If this attack killed the target, or if target had 10+ [Combustion], heal 1 more ally",
           "levelCorrection": 4,
           "name": "Flow of the Sword",
           "uptie": 3
@@ -396,7 +396,7 @@
               "value": 0.3
             }
           ],
-          "desc": "Coin Power +1 for every 6 [Combustion] on target (max 2)\nDeal +10% damage for every 6 [Combustion] on target (max 30%)\n[EndSkill] Heal 15 SP for 1 other ally with the least SP\n- If this attack killed the target, or if target had 10+ [Combustion], heal 1 more ally",
+          "desc": "Coin Power +1 for every 6 [Combustion] on target (max 2)\nDeal +10% damage for every 6 [Combustion] on target (max 30%)\n[EndSkill] Heal 15 SP for 1 other ally that has the lowest SP\n- If this attack killed the target, or if target had 10+ [Combustion], heal 1 more ally",
           "name": "Flow of the Sword",
           "uptie": 4
         }

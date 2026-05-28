@@ -33,7 +33,7 @@
   ],
   "passiveData": {
     "1021101": {
-      "desc": "Cannot be Staggered or fall below 1 HP due to [Combustion] damage.",
+      "desc": "Cannot be Staggered or fall below 1 HP due to [Combustion] damage",
       "name": "Fireproof"
     },
     "1021111": {
@@ -46,7 +46,7 @@
         ],
         "type": "owned"
       },
-      "desc": "Combat Start: at 80%+ missing HP, and at less than 30 [Combustion], gain up to 30 [Combustion] (once per Encounter)\n\nTurn End: gain 1 [AttackUp] next turn for every 6 [Combustion] on self (max 5)\n\nOn death, activate the following:\n- Inflict 2 [Combustion] on all enemies; inflict [Combustion] on self between all enemies (max 3 per enemy)\n- Gain 2 E.G.O resource for 2 least-owned E.G.O resources\n\nIf this unit died due to the A.B.S. Max Attunement 【Degraded Corrosion】 Skill, enhance the effect:\n- Inflict 3 [Combustion] on all enemies; inflict [Combustion] on self between all enemies (max 5 per enemy)\n- Gain 2 E.G.O resource for 2 least-owned E.G.O resources\n- If this unit had 30+ [Combustion], apply 3 [AttackUp] to 1 ally that gets Substituted in",
+      "desc": "Combat Start: At 80%+ missing HP, and at less than 30 [Combustion], gain up to 30 [Combustion] (once per Encounter)\n\nTurn End: Gain 1 [AttackUp] next turn for every 6 [Combustion] on self (max 5)\n\nOn death, activate the following:\n- Inflict 2 [Combustion] on all enemies and inflict this unit's [Combustion] between all enemies (max 3 per enemy)\n- Gain 2 E.G.O resource for the 2 least-owned Affinities\n\nIf this unit died due to the A.B.S. Max Attunement 【Degraded Corrosion】 Skill, enhance the effect:\n- Inflict 3 [Combustion] on all enemies and inflict this unit's [Combustion] between all enemies (max 5 per enemy)\n- Gain 2 E.G.O resource for 2 least-owned E.G.O resources\n- If this unit had 30+ [Combustion], apply 3 [AttackUp] to 1 ally that Substitutes in",
       "name": "Flame Moth"
     },
     "1021121": {
@@ -59,7 +59,7 @@
         ],
         "type": "res"
       },
-      "desc": "When 1 ally that has the least SP inflicts [Combustion] with a Base Attack Skill's On Hit effect, inflict 2 additional [Combustion] (3 times max)\n- If the target the ally is attacking has 30+ [Combustion], inflict +1 [Combustion] Count instead (3 times max)",
+      "desc": "When 1 ally that has the lowest SP inflicts [Combustion] with a Base Skill's On Hit effect, inflict 2 additional [Combustion] (max 3 times)\n- If the target the ally is attacking has 30+ [Combustion], inflict +1 [Combustion] Count instead (max 3 times)",
       "name": "Residual Heat"
     }
   },
@@ -365,7 +365,7 @@
             }
           ],
           "defType": "attack",
-          "desc": "[StartBattle] Gain 7 [Combustion] and +1 [Combustion] Count\n[BeforeUse] At 30+ [Combustion], activate 'A.B.S Max Attunement 【Degraded Corrosion】’ instead\nDeal +7.5% damage for every 5 [Combustion] on self (max 30%)\n[WhenUse] At 10+ ([Combustion] on self + [Combustion] on target), Base Power +1\n[WhenUse] If this unit is missing 30%+ HP, Coin Power +1",
+          "desc": "[StartBattle] Gain 7 [Combustion] and +1 [Combustion] Count\n[BeforeUse] At 30+ [Combustion], activate \"A.B.S Max Attunement 【Degraded Corrosion】\" instead\nDeal +7.5% damage for every 5 [Combustion] on self (max 30%)\n[WhenUse] At 10+ ([Combustion] on self + [Combustion] on target), Base Power +1\n[WhenUse] If this unit is missing 30%+ HP, Coin Power +1",
           "levelCorrection": 5,
           "name": "Drawn by Flame",
           "uptie": 3
@@ -407,7 +407,7 @@
               "type": "normal"
             }
           ],
-          "desc": "[StartBattle] Gain 7 [Combustion] and +1 [Combustion] Count\n[BeforeUse] At 30+ [Combustion], activate 'A.B.S Max Attunement 【Degraded Corrosion】’ instead\nDeal +12.5% damage for every 5 [Combustion] on self (max 50%)\n[WhenUse] Base Power +1 for every 10 ([Combustion] on self + [Combustion] on target) (max 2)\n[WhenUse] If this unit is missing 30%+ HP, Coin Power +1 (max 2)",
+          "desc": "[StartBattle] Gain 7 [Combustion] and +1 [Combustion] Count\n[BeforeUse] At 30+ [Combustion], activate \"A.B.S Max Attunement 【Degraded Corrosion】\" instead\nDeal +12.5% damage for every 5 [Combustion] on self (max 50%)\n[WhenUse] Base Power +1 for every 10 ([Combustion] on self + [Combustion] on target) (max 2)\n[WhenUse] For every 30% missing HP on this unit, Coin Power +1 (max 2)",
           "name": "Drawn by Flame",
           "uptie": 4
         }
@@ -430,7 +430,7 @@
           "defType": "evade",
           "desc": "[WhenUse] Lose 5 [Combustion] (once per turn)\n[OnSucceedEvade] Lose 5 [Combustion] (once per turn)",
           "levelCorrection": -2,
-          "name": "Resonating by raising A.B.S Attunement.",
+          "name": "Resonating by Raising A.B.S Attunement.",
           "uptie": 1
         },
         {
@@ -449,7 +449,7 @@
             }
           ],
           "desc": "[WhenUse] At 10+ [Combustion], Coin Power +3\n[WhenUse] Lose 5 [Combustion] (once per turn)\n[OnSucceedEvade] Lose 5 [Combustion] (once per turn)",
-          "name": "Resonating by raising A.B.S Attunement.",
+          "name": "Resonating by Raising A.B.S Attunement.",
           "uptie": 4
         }
       ],
@@ -518,7 +518,7 @@
             }
           ],
           "defType": "attack",
-          "desc": "After using this Skill, dies.\n- If HP drops to 1 while using this Skill, maintains HP at 1 for the duration of the Skill.\n[WhenUse] Deal +7.5% damage for every 5 [Combustion] on self (max 30%)\n[WhenUse] At 10+ ([Combustion] on self + [Combustion] on target), Base Power +1\n[WhenUse] Coin Power +1 for every 30% missing HP on self (max 2)\n[BeforeAttack] Atk Weight +1 for every 20% missing HP on self (max 2)",
+          "desc": "This unit dies after using this Skill\n- If HP drops to 1 while using this Skill, maintains HP at 1 for the duration of the Skill\n[WhenUse] Deal +7.5% damage for every 5 [Combustion] on self (max 30%)\n[WhenUse] At 10+ ([Combustion] on self + [Combustion] on target), Base Power +1\n[WhenUse] Coin Power +1 for every 30% missing HP on self (max 2)\n[BeforeAttack] Atk Weight +1 for every 20% missing HP on self (max 2)",
           "levelCorrection": 5,
           "name": "A.B.S Max Attunement 【Degraded Corrosion】",
           "uptie": 3
@@ -579,7 +579,7 @@
               "type": "unbreakable"
             }
           ],
-          "desc": "After using this Skill, dies.\n- If HP drops to 1 while using this Skill, maintains HP at 1 for the duration of the Skill.\n[WhenUse] Deal +12.5% damage for every 5 [Combustion] on self (max 50%)\n[WhenUse] Base Power +1 for every 10 ([Combustion] on self + [Combustion] on target) (max 2)\n[WhenUse] Coin Power +1 for every 30% missing HP on self (max 3)\n[BeforeAttack] Atk Weight +1 for every 20% missing HP on self (max 4)",
+          "desc": "This unit dies after using this Skill\n- If HP drops to 1 while using this Skill, maintains HP at 1 for the duration of the Skill\n[WhenUse] Deal +12.5% damage for every 5 [Combustion] on self (max 50%)\n[WhenUse] Base Power +1 for every 10 ([Combustion] on self + [Combustion] on target) (max 2)\n[WhenUse] Coin Power +1 for every 30% missing HP on self (max 3)\n[BeforeAttack] Atk Weight +1 for every 20% missing HP on self (max 4)",
           "name": "A.B.S Max Attunement 【Degraded Corrosion】",
           "uptie": 4
         }

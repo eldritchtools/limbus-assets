@@ -54,6 +54,37 @@
           "desc": "",
           "name": "4th Match Flame",
           "uptie": 4
+        },
+        {
+          "atkWeight": 5,
+          "baseValue": 14,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 4
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": 12,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Combustion]",
+                "[OnSucceedAttackHead] Inflict 6 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeAttack] Apply the following effects:\n- Final Power +1 for every 6 [Combustion] on all targets (max 4)\n- Deal +1% damage for every 1 [Combustion] on all targets (max 30%)",
+          "levelCorrection": 3,
+          "name": "4th Match Flame",
+          "uptie": 5
         }
       ],
       "type": "awakening"
@@ -114,19 +145,57 @@
           "desc": "[CantIdentify]\nTargets randomly",
           "name": "4th Match Flame",
           "uptie": 4
+        },
+        {
+          "atkWeight": 5,
+          "baseValue": 26,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 6
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.45
+            }
+          ],
+          "coinValue": -12,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 4 [Combustion]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 6 [Combustion]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\n[BeforeAttack] Apply the following effects:\n- Final Power +1 for every 6 [Combustion] on all targets (max 6)\n- Deal +1.5% damage for every 1 [Combustion] on all targets (max 45%)\n[DefeatDuel] Base Power -12\n[EndSkill] Gain [MatchesPersonality] next turn (once per turn)",
+          "levelCorrection": 3,
+          "name": "4th Match Flame",
+          "uptie": 5
         }
       ],
       "type": "corrosion"
     }
   ],
+  "maxThreadspin": 5,
   "notes": {
     "main": [
-      "AoE {status:Combustion} E.G.O"
+      "AoE {status:Combustion} E.G.O",
+      "At Threadspin 5, the E.G.O has significantly higher damage and clashing. Its passive also now gives him additional Clash Power and {status:Combustion} application. "
     ]
   },
   "passiveList": [
     {
       "desc": "On Clash Win, inflict (Wrath A-Reson. / 2) [Combustion] (once per Skill)",
+      "name": "Ember"
+    },
+    {
+      "desc": "On Use of a Wrath Skill or a Skill that inflicts [Combustion] Potency or Count: At 6+ total sum of [Combustion] on all targets, Clash Power +1\n\nOn Clash Win, inflict (Wrath Reson. x 2) [Combustion] on the main target (max 8 per Skill)",
       "name": "Ember"
     }
   ]

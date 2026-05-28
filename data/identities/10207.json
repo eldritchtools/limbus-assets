@@ -33,7 +33,7 @@
         ],
         "type": "owned"
       },
-      "desc": "- In a clash, the target has -1 Clash Power if they have 3+ types of negative effects\n- When this unit is alive, enemies affected by [VibrationExplosion] gain 2 Defense Level Down. (Once per enemy per turn)\n- Mental Corruption: If at less than -25 SP at Turn End, gain 2 Bind and 1 Blunt Power Up next turn",
+      "desc": "- In a Clash, if target has 3+ types of negative effect, target's Clash Power -1\n- When this unit is alive, enemies affected by [VibrationExplosion] gain 2 [DefenseDown] (once per enemy per turn)\n- Mental Corruption: If at less than -25 SP at Turn End, gain 2 [Binding] and 1 [HitResultUp] next turn",
       "name": "Coerced Regret"
     },
     "1020711": {
@@ -46,7 +46,7 @@
         ],
         "type": "owned"
       },
-      "desc": "- In a clash, the target has -1 Clash Power for every 3 types of negative effects it has (Max -2 Clash Power)\n- When this unit is alive, enemies affected by [VibrationExplosion] gain 2 Defense Level Down. (3 times per enemy per turn)\n- Mental Corruption: If at less than -25 SP at Turn End, gain 2 Bind and 1 Blunt Power Up next turn",
+      "desc": "- In a Clash, target's Clash Power -1 for every 3 types of negative effect it has (max -2 Clash Power)\n- When this unit is alive, enemies affected by [VibrationExplosion] gain 2 [DefenseDown] (3 times per enemy per turn)\n- Mental Corruption: If at less than -25 SP at Turn End, gain 2 [Binding] and 1 [HitResultUp] next turn",
       "name": "Coerced Regret"
     },
     "1020721": {
@@ -59,7 +59,7 @@
         ],
         "type": "owned"
       },
-      "desc": "In a clash, the target of the slowest ally has -1 Clash Power if they have 3+ types of negative effects",
+      "desc": "In a Clash, if the target of the ally with the slowest Speed has 3+ types of negative effect, target's Clash Power -1",
       "name": "Repression Work"
     }
   },
@@ -195,13 +195,13 @@
               "type": "normal"
             }
           ],
-          "desc": "[StartBattle] Spend 5 [Vibration] Count and gain +1 Atk Weight for this Skill\n[WhenUse] Gain +4 [Vibration] Count",
+          "desc": "[StartBattle] Consume 5 [Vibration] Count on self and gain +1 Atk Weight for this Skill\n[WhenUse] Gain +4 [Vibration] Count",
           "name": "Metallic Ringing",
           "uptie": 2
         },
         {
           "baseValue": 4,
-          "desc": "[StartBattle] Spend 5 [Vibration] Count and gain +1 Atk Weight for this Skill\n[WhenUse] Gain +4 [Vibration] Count",
+          "desc": "[StartBattle] Consume 5 [Vibration] Count on self and gain +1 Atk Weight for this Skill\n[WhenUse] Gain +4 [Vibration] Count",
           "name": "Metallic Ringing",
           "uptie": 3
         },
@@ -232,7 +232,7 @@
               "type": "normal"
             }
           ],
-          "desc": "[StartBattle] Spend 5 [Vibration] Count and gain +1 Atk Weight for this Skill\n[WhenUse] Gain +4 [Vibration] Count",
+          "desc": "[StartBattle] Consume 5 [Vibration] Count on self and gain +1 Atk Weight for this Skill\n[WhenUse] Gain +4 [Vibration] Count",
           "name": "Metallic Ringing",
           "uptie": 4
         }
@@ -275,7 +275,7 @@
                 }
               ],
               "descs": [
-                "[OnSucceedAttack] Trigger [VibrationExplosion],\nThen deal Wrath Damage by 20% of the final Stagger Threshold Raised by [VibrationExplosion]. (Max 13)"
+                "[OnSucceedAttack] Trigger [VibrationExplosion],\nthen deal Wrath damage equal to 20% of the final Stagger Threshold raised by [VibrationExplosion] (max 13)"
               ],
               "type": "normal"
             },
@@ -291,7 +291,7 @@
                 }
               ],
               "descs": [
-                "[OnSucceedAttack] Trigger [VibrationExplosion],\nThen deal Wrath Damage by 20% of the final Stagger Threshold Raised by [VibrationExplosion]. (Max 13)"
+                "[OnSucceedAttack] Trigger [VibrationExplosion],\nthen deal Wrath damage equal to 20% of the final Stagger Threshold raised by [VibrationExplosion] (max 13)"
               ],
               "type": "normal"
             },
@@ -307,13 +307,13 @@
                 }
               ],
               "descs": [
-                "[OnSucceedAttack] Trigger [VibrationExplosion],\nThen deal Wrath Damage by 20% of the final Stagger Threshold Raised by [VibrationExplosion]. (Max 13)\nReduce [Vibration] Count by 3"
+                "[OnSucceedAttack] Trigger [VibrationExplosion],\nthen deal Wrath damage equal to 20% of the final Stagger Threshold raised by [VibrationExplosion] (max 13)\nReduce [Vibration] Count by 3"
               ],
               "type": "normal"
             }
           ],
           "defType": "attack",
-          "desc": "[StartBattle] Spend 5 [Vibration] Count and gain +1 Atk Weight for this Skill (Max +2)\n[DefeatDuel] Lose 20 SP\nDeal +3% Damage for every type of negative effect on target (Max 15%)\n[EnemyKill] Gain +2 [Vibration] Count",
+          "desc": "[StartBattle] Consume 5 [Vibration] Count on self and gain +1 Atk Weight for this Skill (max +2)\n[DefeatDuel] Lose 20 SP\nDeal +3% damage for every type of negative effect on target (max 15%)\n[EnemyKill] Gain +2 [Vibration] Count",
           "levelCorrection": 3,
           "name": "Unleashed Violence",
           "uptie": 3
@@ -346,7 +346,7 @@
                 }
               ],
               "descs": [
-                "[OnSucceedAttack] Trigger [VibrationExplosion],\nThen deal Wrath Damage by 30% of the final Stagger Threshold Raised by [VibrationExplosion]. (Max 20)"
+                "[OnSucceedAttack] Trigger [VibrationExplosion],\nthen deal Wrath damage equal to 30% of the final Stagger Threshold raised by [VibrationExplosion] (max 20)"
               ],
               "type": "normal"
             },
@@ -362,7 +362,7 @@
                 }
               ],
               "descs": [
-                "[OnSucceedAttack] Trigger [VibrationExplosion],\nThen deal Wrath Damage by 30% of the final Stagger Threshold Raised by [VibrationExplosion]. (Max 20)"
+                "[OnSucceedAttack] Trigger [VibrationExplosion],\nthen deal Wrath damage equal to 30% of the final Stagger Threshold raised by [VibrationExplosion] (max 20)"
               ],
               "type": "normal"
             },
@@ -378,12 +378,12 @@
                 }
               ],
               "descs": [
-                "[OnSucceedAttack] Trigger [VibrationExplosion],\nThen deal Wrath Damage by 30% of the final Stagger Threshold Raised by [VibrationExplosion]. (Max 20)\nReduce [Vibration] Count by 3"
+                "[OnSucceedAttack] Trigger [VibrationExplosion],\nthen deal Wrath damage equal to 30% of the final Stagger Threshold raised by [VibrationExplosion] (max 20)\nReduce [Vibration] Count by 3"
               ],
               "type": "normal"
             }
           ],
-          "desc": "[StartBattle] Spend 5 [Vibration] Count and gain +1 Atk Weight for this Skill (Max +2)\n[DefeatDuel] Lose 20 SP\nDeal +6% Damage for every type of negative effect on target (Max 30%)\n[EnemyKill] Gain +2 [Vibration] Count",
+          "desc": "[StartBattle] Consume 5 [Vibration] Count on self and gain +1 Atk Weight for this Skill (max +2)\n[DefeatDuel] Lose 20 SP\nDeal +6% damage for every type of negative effect on target (max 30%)\n[EnemyKill] Gain +2 [Vibration] Count",
           "name": "Unleashed Violence",
           "uptie": 4
         }

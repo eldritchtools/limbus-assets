@@ -46,7 +46,7 @@
       "name": "Fire.IShallFire."
     },
     "1011002": {
-      "desc": "Begin encounters with 10 of each of [BulletLament]\n\nWhen consuming [BulletLament], select randomly between The Living(Potency) and The Departed(Count) for each [BulletLament] value.\n\nWhen inflicting [SinkingWhite], inflict the same amount of The Living and The Departed as they were consumed. Example below:\n- If this unit consumed X Living, inflict X Living\n- If this unit consumed Y Departed, inflict Y Departed\n\nIf this unit runs out of [BulletLament] midway through Skill use, cancel all subsequent Coins and [ReloadLament]\n\nWhen [ReloadLament]ing, or when gaining [BulletLament], gain either The Living or The Departed based on this unit's current SP\n- At 0 or higher SP: 30% chance to gain The Living; 70% chance to gain The Departed.\n- At less than 0 SP: 70% chance to gain The Living; 30% chance to gain The Departed.\n- The probabilities are calculated separately for each ammo consumed.",
+      "desc": "Begin encounters with 10 of each of [BulletLament]\n\nWhen spending [BulletLament], select randomly between The Living(Potency) and The Departed(Count) for each [BulletLament] value\n\nWhen inflicting [SinkingWhite], inflict the same amount of The Living and The Departed as they were consumed. Example below:\n- If this unit spent X Living, inflict X Living\n- If this unit spent Y Departed, inflict Y Departed\n\nIf this unit runs out of [BulletLament] midway through Skill use, cancel all subsequent Coins and [ReloadLament]\n\nWhen [ReloadLament]ing, or when gaining [BulletLament], gain either The Living or The Departed based on this unit's current SP\n- At 0 or higher SP: 30% chance to gain The Living; 70% chance to gain The Departed\n- At less than 0 SP: 70% chance to gain The Living; 30% chance to gain The Departed\n- The probabilities are calculated separately for each ammo spent",
       "name": "ISeeTheDyingButterfly."
     },
     "1011011": {
@@ -89,15 +89,15 @@
           "coins": [
             {
               "descs": [
-                "Consume 1 of [BulletLament]",
-                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+                "Spend 1 [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] spent"
               ],
               "type": "normal"
             },
             {
               "descs": [
-                "Consume 1 of [BulletLament]",
-                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+                "Spend 1 [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] spent"
               ],
               "type": "normal"
             }
@@ -155,15 +155,15 @@
           "coins": [
             {
               "descs": [
-                "Consume 5 of [BulletLament]",
-                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+                "Spend 5 [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] spent"
               ],
               "type": "normal"
             },
             {
               "descs": [
-                "Consume 1 of [BulletLament]",
-                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+                "Spend 1 [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] spent"
               ],
               "type": "normal"
             }
@@ -190,15 +190,15 @@
           "coins": [
             {
               "descs": [
-                "Consume 5 of [BulletLament]",
-                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+                "Spend 5 [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] spent"
               ],
               "type": "normal"
             },
             {
               "descs": [
-                "Consume 1 of [BulletLament]",
-                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+                "Spend 1 [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] spent"
               ],
               "type": "normal"
             }
@@ -244,15 +244,15 @@
           "coins": [
             {
               "descs": [
-                "Consume 1 of [BulletLament]",
-                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+                "Spend 1 [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] spent"
               ],
               "type": "normal"
             },
             {
               "descs": [
-                "Consume 6 of [BulletLament]",
-                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+                "Spend 6 [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] spent"
               ],
               "type": "normal"
             },
@@ -267,9 +267,9 @@
                 }
               ],
               "descs": [
-                "Consume all of [BulletLament] on self",
-                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed",
-                "[OnSucceedAttack] Deal +2% damage for every value of [BulletLament] consumed by this Skill"
+                "Spend all of [BulletLament] on self",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] spent",
+                "[OnSucceedAttack] Deal +2% damage for every value of [BulletLament] spent by this Skill"
               ],
               "type": "normal"
             },
@@ -293,7 +293,7 @@
           "defType": "attack",
           "desc": "Base Power +1 for every 10 value of [BulletLament] (max 2)\n[WinDuel] Inflict +3 [Sinking] Count\n[EndSkill] [ReloadLament]",
           "levelCorrection": 5,
-          "name": "Goodbye Now, A Sorrow In You",
+          "name": "Goodbye Now, a Sorrow in You",
           "uptie": 3
         },
         {
@@ -311,15 +311,15 @@
           "coins": [
             {
               "descs": [
-                "Consume 1 of [BulletLament]",
-                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+                "Spend 1 [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] spent"
               ],
               "type": "normal"
             },
             {
               "descs": [
-                "Consume 6 of [BulletLament]",
-                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed"
+                "Spend 6 [BulletLament]",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] spent"
               ],
               "type": "normal"
             },
@@ -334,9 +334,9 @@
                 }
               ],
               "descs": [
-                "Consume all of [BulletLament] on self",
-                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] consumed",
-                "[OnSucceedAttack] Deal +4% damage for every value of [BulletLament] consumed by this Skill"
+                "Spend all of [BulletLament] on self",
+                "[OnSucceedAttack] Inflict [SinkingWhite] equal to [BulletLament] spent",
+                "[OnSucceedAttack] Deal +4% damage for every value of [BulletLament] spent by this Skill"
               ],
               "type": "normal"
             },
@@ -358,7 +358,7 @@
             }
           ],
           "desc": "Base Power +1 for every 5 value of [BulletLament] (max 4)\nCoin Power +1 for every 6 value of the sum of the target's [Sinking] and both [SinkingWhite] (max 2)\n[WinDuel] Inflict +3 [Sinking] Count\n[EndSkill] [ReloadLament]",
-          "name": "Goodbye Now, A Sorrow In You",
+          "name": "Goodbye Now, a Sorrow in You",
           "uptie": 4
         }
       ],
@@ -385,7 +385,7 @@
         },
         {
           "affinity": "gloom",
-          "desc": "[StartBattle] [ReloadLament] (once per turn)\n[StartBattle] Gain Shield equal to (the sum of both [SinkingWhite] on the selected target)% HP. (max 20% per turn)",
+          "desc": "[StartBattle] [ReloadLament] (once per turn)\n[StartBattle] Gain Shield equal to (the sum of both [SinkingWhite] on the selected target)% HP (max 20% per turn)",
           "name": "FromTheCoffinAButterflyTakesFlight",
           "uptie": 4
         }
