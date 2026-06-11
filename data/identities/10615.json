@@ -1,0 +1,471 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1061502"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1061502",
+        "1061501"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "other": [
+      "Use his S2 on the turn before his S3 to get the bonus damage against enemies with {st:ScratchesHurtID}"
+    ],
+    "usage": [
+      "Use his S3 or defense to inflict {st:TiedRopeHonglu} on his target. He gets bonuses like Final/Clash Power, Damage, additional {st:Laceration} and {st:Breath}, and {st:SuperCoin}s and can redirect attacks regardless of speed against targets with the debuff."
+    ]
+  },
+  "passiveBonuses": [
+    {
+      "extra": {
+        "op": "mul"
+      },
+      "type": "damage",
+      "value": 0.5
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1061503
+      },
+      "type": "damage",
+      "value": 0.1
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1061504
+      },
+      "type": "damage",
+      "value": 0.1
+    }
+  ],
+  "passiveData": {
+    "1061501": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "If this unit's Speed is faster than the target's, deal +(Speed difference x 2)% damage (max 10%)\n- If target is [TiedRopeHonglu], double the above damage increase effect (max 20%)\n\nCombat Start: Deal +5% damage for every ally that has a Slash Pride Skill equipped this turn (max 30%)",
+      "name": "Scouring Hunterband [推刷巾]"
+    },
+    "1061502": {
+      "desc": "If a target has [TiedRopeHonglu], gain [TiedWithRopeID]\nWhen chaining Skills, if there is an enemy this unit has inflicted [TiedRopeHonglu] on, then this unit can redirect that enemy's Attack Skill's targeting to itself regardless of Speed (Focused Encounters only)",
+      "name": "Ch'unokkun"
+    },
+    "1061521": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 5
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When 1 ally with the earliest Deployment order attacks an enemy that has [Binding], deal +10% damage",
+      "name": "Spiteful Pursuit"
+    }
+  },
+  "skills": {
+    "1061501": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] If target has [TiedRopeHonglu], inflict 1 [TiedRopeHonglu]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +3 [Breath] Count",
+          "levelCorrection": 2,
+          "name": "Constricting Ohra Bonds",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 4 [Breath]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] If target has [TiedRopeHonglu], inflict 1 [TiedRopeHonglu]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 6+ ([Breath] on self + [Laceration] on target), Coin Power +1\n[WhenUse] Gain +3 [Breath] Count",
+          "name": "Constricting Ohra Bonds",
+          "uptie": 2
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 4 [Breath]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] If target has [TiedRopeHonglu], inflict 1 [TiedRopeHonglu]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 6+ ([Breath] on self + [Laceration] on target), Coin Power +1\n[WhenUse] Gain +3 [Breath] Count",
+          "name": "Constricting Ohra Bonds",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "type": "final",
+              "value": 1
+            }
+          ],
+          "desc": "[WhenUse] Coin Power +1 for every 6 ([Breath] on self + [Laceration] on target) (max 2)\n[WhenUse] If target has [TiedRopeHonglu], Final Power +1\n[WhenUse] Gain +3 [Breath] Count",
+          "name": "Constricting Ohra Bonds",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1061502": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] If target has 2+ [TiedRopeHonglu], consume 1 [TiedRopeHonglu] on target to Reuse this Coin (once per Skill)",
+                "[CriticalOnSucceedAttack] Inflict 1 [ScratchesHurtID]",
+                "[ReUseOnSucceedAttack] Gain 2 [Agility] next turn",
+                "[ReUseOnSucceedAttack] Activate [Laceration] on target. Target loses 1 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "levelCorrection": 3,
+          "name": "Avulsion Slash",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "[WhenUse] At 6+ ([Breath] on self + [Laceration] on target), Coin Power +1\n[WhenUse] Gain +2 [Breath] Count",
+          "name": "Avulsion Slash",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "[WhenUse] At 6+ ([Breath] on self + [Laceration] on target), Coin Power +1\n[WhenUse] Gain +2 [Breath] Count",
+          "name": "Avulsion Slash",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "type": "final",
+              "value": 1
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath]",
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] If target has 2+ [TiedRopeHonglu], consume 1 [TiedRopeHonglu] on target to Reuse this Coin (once per Skill)",
+                "[CriticalOnSucceedAttack] Inflict 1 [ScratchesHurtID]",
+                "[ReUseOnSucceedAttack] Gain 2 [Agility] next turn",
+                "[ReUseOnSucceedAttack] Activate [Laceration] on target. Target loses 1 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Coin Power +1 for every 6 ([Breath] on self + [Laceration] on target) (max 2)\n[WhenUse] If target has [TiedRopeHonglu], Final Power +1\n[WhenUse] Gain +2 [Breath] Count",
+          "name": "Avulsion Slash",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1061503": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "final",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] If target does not have [TiedRopeHonglu], inflict [TiedRopeHonglu]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[OnSucceedAttack] Inflict 1 [ScratchesHurtID]",
+                "[CriticalOnSucceedAttack] Inflict 1 [ScratchesHurtID]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 6+ ([Breath] on self + [Laceration] on target), Coin Power +1\n[WhenUse] If target has [TiedRopeHonglu], convert all Coins in this Skill to [SuperCoin]s, gain Final Power +1, and the final Coin applies the following On Hit:\n- Inflict +2 [Laceration] Count\n- Inflict 1 [Reduction] next turn\n[WhenUse] Gain 5 [Breath]\n[WhenUse] Gain +3 [Breath] Count",
+          "levelCorrection": 4,
+          "name": "Hunter's Scouring",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            },
+            {
+              "type": "final",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] If target does not have [TiedRopeHonglu], inflict [TiedRopeHonglu]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "Deal +50% damage on Critical Hit",
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[OnSucceedAttack] Inflict 1 [ScratchesHurtID]",
+                "[CriticalOnSucceedAttack] Inflict 1 [ScratchesHurtID]",
+                "[CriticalOnSucceedAttack] Inflict 1 [IndigoTakeDamageUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Coin Power +1 for every 6 ([Breath] on self + [Laceration] on target) (max 2)\n[WhenUse] If target has [ScratchesHurtID], deal +20% damage\n[WhenUse] If target has [TiedRopeHonglu], convert all Coins in this Skill to [SuperCoin]s, gain Final Power +1, and the final Coin applies the following On Hit:\n- Inflict +2 [Laceration] Count\n- Inflict 1 [Reduction] next turn\n[WhenUse] Gain 5 [Breath]\n[WhenUse] Gain +3 [Breath] Count",
+          "name": "Hunter's Scouring",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1061504": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict [TiedRopeHonglu]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\n[WhenUse] At 6+ ([Breath] on self + [Laceration] on target), Clash Power +2\n[WhenUse] Gain 5 [Breath]",
+          "levelCorrection": 2,
+          "name": "Throwing the Ohra Bond",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "desc": "[DuelCounter]\n[WhenUse] At 6+ ([Breath] on self + [Laceration] on target), Clash Power +2\n[WhenUse] Gain 5 [Breath]\n[WinDuel] Gain +3 [Breath] Count",
+          "name": "Throwing the Ohra Bond",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1061521"
+      ],
+      "uptie": 3
+    }
+  ]
+}

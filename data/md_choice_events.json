@@ -15252,5 +15252,268 @@
       }
     ],
     "type": "Choice"
+  },
+  "971110": {
+    "advantages": [
+      "gluttony",
+      "pride"
+    ],
+    "desc": "\"Um, excuse me...\"\n\nAs we were slowly looking around the streets of S Corp., a youth, after fidgeting and hesitating for a moment, walked up to us and asked for help.\n\nThe youth explained that, wishing to better his own status, he took the Royal Examination—akin to a public employment policy in S Corp.—and was able to attain a high grade for himself.\n\nAnd that was where his problems began; as far as he knew, people who passed the exam with flying colors like himself had their travel expenses paid for the homeward trip and were to be granted a guide. But there must've been a misunderstanding or something, because when he left the exam grounds, no one was there to escort him.\n\nConfused by the unexpected turn of events, he wandered away from the exam grounds in search of his escort, lost his bearings, and found himself in these alleys.\n\nHe's asking if we could help him with directions... What should we do?",
+    "gifts": [
+      9276
+    ],
+    "messages": [
+      "\"Sorry, we've never been here before, either.\"",
+      "\"Let me ask my group if they can help.\""
+    ],
+    "name": "Bamboo-hatted Kim's Past 1",
+    "options": [
+      {
+        "message": "\"Sorry, we've never been here before, either.\"",
+        "messageDesc": "No particular effect",
+        "result": [
+          {
+            "condition": "None"
+          }
+        ]
+      },
+      {
+        "message": "\"Let me ask my group if they can help.\"",
+        "messageDesc": "Run a Gluttony & Pride Advantage check to gain a Keywordless E.G.O Gift.",
+        "result": [
+          {
+            "condition": "None",
+            "nextEvent": {
+              "advantageAffinities": [
+                "gluttony",
+                "pride"
+              ],
+              "advantageValue": 12,
+              "bonuses": [
+                {
+                  "target": {
+                    "tags": [
+                      "Blade Lineage"
+                    ],
+                    "type": "tag"
+                  },
+                  "value": 6
+                }
+              ],
+              "failureResults": [
+                {
+                  "condition": "None"
+                }
+              ],
+              "rollType": "min",
+              "successResults": [
+                {
+                  "condition": "None",
+                  "results": [
+                    {
+                      "id": 9276,
+                      "type": "getEgoGift"
+                    }
+                  ]
+                }
+              ],
+              "type": "Roll",
+              "value": 24
+            }
+          }
+        ]
+      }
+    ],
+    "type": "Choice"
+  },
+  "971111": {
+    "advantages": [
+      "sloth",
+      "pride"
+    ],
+    "desc": "Navigating our way through the streets of S Corp., we come across a young man hugging a blade, his gaze wandering blankly toward the sky.\n\n\"... Ah.\"\n\nHe seemed to have caught us staring—he turned his head toward us, gave us a once-over, then slumped back where he sat.\n\n\"Pass on by, folks. I have no intent of bringing you harm.\"\n\nHis voice was familiar... but I couldn't quite place my finger on it.\n\n\"Search not for a revelation in the clouds drifting by, for they hold no answers.\"\n\nKim blurted out of the blue as we were about to walk past the sword-hugging man.\nOh, then that man must be...\n\n\"... Do you know me?\"\n\"Must I know you to impart some unsolicited advice? A meddler in me simply cannot help himself when walking past a disadvantageous game of baduk.\"\n\nThe man widened his eyes in brief surprise, then began in a contemplative voice.\n\n\"You are a player of greater <i>dan</i> than I—that I can tell; so if you will, permit me to solicit some advice.\"\n\"Shamed I am of my past plays, for they were dishonorable and deserving of ridicule; thus I had begun to wonder if I would be of better use should I become a blade for hire...\"\n\"Then, a man of incorruptible integrity, a just soul, sought me out and asked me that I serve as his blade. Yet, I worry that my filth may befoul his hands, too.\"\n\"What say you? Would you say that I take this opportunity and make this play? Or...\"",
+    "gifts": [
+      9277
+    ],
+    "messages": [
+      "Let Bamboo-hatted Kim answer.",
+      "Let a Sinner answer instead."
+    ],
+    "name": "Bamboo-hatted Kim's Past 2",
+    "options": [
+      {
+        "message": "Let Bamboo-hatted Kim answer.",
+        "messageDesc": "Select to gain a Slash E.G.O Gift",
+        "result": [
+          {
+            "condition": "None",
+            "results": [
+              {
+                "id": 9277,
+                "type": "getEgoGift"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "message": "Let a Sinner answer instead.",
+        "messageDesc": "Run a Sloth & Pride Advantage check to heal the selected Identity.",
+        "result": [
+          {
+            "condition": "None",
+            "nextEvent": {
+              "advantageAffinities": [
+                "sloth",
+                "pride"
+              ],
+              "advantageValue": 12,
+              "bonuses": [
+                {
+                  "target": {
+                    "tags": [
+                      "Blade Lineage"
+                    ],
+                    "type": "tag"
+                  },
+                  "value": 6
+                }
+              ],
+              "failureResults": [
+                {
+                  "condition": "None"
+                }
+              ],
+              "rollType": "min",
+              "successResults": [
+                {
+                  "condition": "None",
+                  "results": [
+                    {
+                      "target": {
+                        "target": "chosen"
+                      },
+                      "type": "healHpPercent",
+                      "value": 20
+                    }
+                  ]
+                }
+              ],
+              "type": "Roll",
+              "value": 24
+            }
+          }
+        ]
+      }
+    ],
+    "type": "Choice"
+  },
+  "971112": {
+    "advantages": [
+      "lust",
+      "pride"
+    ],
+    "desc": "I catch a glimpse of a figure, staring off into the darkness of the unlit prison.\n\n\"Hah...\"\n\nBamboo-hatted Kim lets out a sigh, but before he even fully exhales...\n\n\"Who goes there?!\"\n\nA sharp cry cuts through the stagnant air. Someone here must've noticed us.\n\nWhat should we do?",
+    "gifts": [
+      9278
+    ],
+    "messages": [
+      "Claim that we are fellow guards keeping their eyes on the prisoner.",
+      "Unsheathe our weapons and stand ready for battle.",
+      "Say that you're not.",
+      "Say that you are, and explain the situation."
+    ],
+    "name": "Bamboo-hatted Kim's Past 3",
+    "options": [
+      {
+        "message": "Claim that we are fellow guards keeping their eyes on the prisoner.",
+        "messageDesc": "No particular effect",
+        "result": [
+          {
+            "condition": "None"
+          }
+        ]
+      },
+      {
+        "message": "Unsheathe our weapons and stand ready for battle.",
+        "messageDesc": "Gain a Slash E.G.O Gift depending on the result of the following choice",
+        "result": [
+          {
+            "condition": "None",
+            "nextEvent": {
+              "options": [
+                {
+                  "message": "Say that you're not.",
+                  "messageDesc": "No particular effect",
+                  "result": [
+                    {
+                      "condition": "None"
+                    }
+                  ]
+                },
+                {
+                  "message": "Say that you are, and explain the situation.",
+                  "messageDesc": "Run a Lust & Pride Advantage check to gain a Slash E.G.O Gift.",
+                  "result": [
+                    {
+                      "condition": "None",
+                      "nextEvent": {
+                        "advantageAffinities": [
+                          "lust",
+                          "pride"
+                        ],
+                        "advantageValue": 14,
+                        "bonuses": [
+                          {
+                            "target": {
+                              "tags": [
+                                "Blade Lineage"
+                              ],
+                              "type": "tag"
+                            },
+                            "value": 8
+                          }
+                        ],
+                        "failureResults": [
+                          {
+                            "condition": "None",
+                            "results": [
+                              {
+                                "hpValue": 15,
+                                "spValue": 15,
+                                "target": {
+                                  "target": "all"
+                                },
+                                "type": "loseHpSp"
+                              }
+                            ]
+                          }
+                        ],
+                        "rollType": "min",
+                        "successResults": [
+                          {
+                            "condition": "None",
+                            "results": [
+                              {
+                                "id": 9278,
+                                "type": "getEgoGift"
+                              }
+                            ]
+                          }
+                        ],
+                        "type": "Roll",
+                        "value": 28
+                      }
+                    }
+                  ]
+                }
+              ],
+              "type": "Choice"
+            }
+          }
+        ]
+      }
+    ],
+    "type": "Choice"
   }
 }

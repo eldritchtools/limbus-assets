@@ -9,7 +9,7 @@
                 9419, 9761, 9760, 9427, 9769, 
                 9779, 9821, 9154
             ]},
-            {"title": "Slash", "gifts": [9142, 9196, 9713, 9140, 9139, 9193, 9195]},
+            {"title": "Slash", "gifts": [9142, 9196, 9713, 9140, 9139, 9193, 9280, 9195]},
             {"title": "Pierce", "gifts": [9147, 9200, 9145, 9030, 9197, 9199]},
             {"title": "Blunt", "gifts": [9152, 9204, 9829, 9027, 9220, 9786, 9150, 9210, 9012, 9201, 9203]},
             {"title": "Affinity Specific", "gifts": [9027, 9828, 9208, 9026, 9782, 9414, 9032]}
@@ -25,12 +25,12 @@
                 9407, 9761, 9760, 9797, 9826, 
                 9781
             ]},
-            {"title": "Slash", "gifts": [9142, 9196, 9141, 9791, 9716, 9193, 9138, 9194, 9139]},
+            {"title": "Slash", "gifts": [9142, 9196, 9141, 9278, 9280, 9791, 9716, 9193, 9277, 9138, 9194, 9139]},
             {"title": "Pierce", "gifts": [9147, 9200, 9019, 9146, 9768, 9197, 9144, 9143]},
             {"title": "Blunt", "gifts": [9152, 9204, 9151, 9265, 9789, 9150, 9202, 9149]},
             {"title": "Affinity Specific", "gifts": [9019, 9237, 9767]}
         ]},
-        {"title": "E.G.O Resources", "gifts": [9068, 9021, 9006, 9266, 9002, 9037, 9153, 9058, 9766, 9712, 9811, 9439]},
+        {"title": "E.G.O Resources", "gifts": [9068, 9037, 9002, 9266, 9021, 9006, 9153, 9058, 9766, 9712, 9811, 9439]},
         {"title": "HP or Mitigation", "gifts": [
             9754, 9756, 9813, 9250, 9830, 
             9004, 9209, 9232, 9085, 9805, 
@@ -43,7 +43,7 @@
         {"title": "SP", "gifts": [9081, 9830, 9779, 9748, 9749, 9433, 9765, 9711, 9810, 9241, 9766, 9438, 9781, 9811]},
         {"title": "Cost", "gifts": [9191, 9189, 9190, 9079, 9080, 9078, 9188, 9185, 9186]},
         {"title": "Speed", "gifts": [9230, 9084, 9434, 9433, 9198, 9414, 9723, 9732, 9727, 9435, 9144, 9148, 9137]},
-        {"title": "Others", "gifts": [9082, 9014, 9432, 9764, 9434, 9040, 9187, 9762, 9763]}
+        {"title": "Others", "gifts": [9082, 9014, 9432, 9764, 9434, 9040, 9187, 9763, 9762]}
     ],
     "combo": [
         {"title": "Burn", "sections": [
@@ -62,12 +62,11 @@
             {
                 "title": "Exploiters", 
                 "gifts": [
+                    [9251, "Offense Level\nAdditional Trigger"], 
                     [9071, "Offense Level Down"], 
-                    [9104, "+Damage"], 
                     [9045, "Defense Level Down"], 
-                    [9240, "+Dmg Dealt\n-Dmg Taken"], 
                     [9267, "+Max Potency\nBonus Dmg"], 
-                    [9251, "Additional Trigger"], 
+                    [9240, "+Dmg Dealt\n-Dmg Taken"], 
                     [9156, "Additional Trigger"]
                 ]
             }
@@ -91,6 +90,7 @@
                 "title": "Exploiters", 
                 "gifts": [
                     [9050, "Lose Offense and Defense Level"], 
+                    [9274, "Offense down based on Bind"],
                     [9106, "Haste\nDamage\nOffense Level"], 
                     [9029, "+Dmg Dealt\n-Dmg Taken"], 
                     [9744, "+Dmg Dealt"], 
@@ -204,7 +204,9 @@
                     [9765, "Damage Dealt\nTurn Start"], 
                     [9709, "Damage Dealt"], 
                     [9710, "Turn Start"],
-                    [9178, "Convert Potency to Count"]
+                    [9274, "Against enemies with Bind"],
+                    [9178, "Convert Potency to Count"],
+                    [9277, "When hit"]
                 ]
             },
             {
@@ -216,8 +218,11 @@
                     [9429, "Haste\nOffense Level Up\nDamage Up"], 
                     [9796, "Crit Damage"],
                     [9428, "Pierce Power\nBonus Debuff"],
+                    [9280, "Slash Skills Damage"],
+                    [9279, "Slash Skills Damage"],
                     [9226, "Shield\nCrit Damage"],
                     [9127, "Haste"], 
+                    [9274, "Bind on Crit\n"],
                     [9129, "Defense Level Down"], 
                     [9770, "+Damage\nDefense Level and Power Up"], 
                     [9715, "Pride Damage"]
