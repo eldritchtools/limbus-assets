@@ -1,0 +1,723 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1071602",
+        "1071603",
+        "1071604"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1071602",
+        "1071603",
+        "1071604",
+        "1071601"
+      ],
+      "uptie": 2
+    }
+  ],
+  "notes": {
+    "other": [
+      "On death, he gives {id:10415} {st:Vibration} infliction and {st:VibrationExplosion} on clash win."
+    ],
+    "usage": [
+      "Clashing and attacking an enemy inflicts {st:DuelEdgeAlly}. If his S3's target has 5, he consumes it to use his S3-2 and gains {st:EvolvingManual} (also gained when killing enemies with {st:DuelEdgeAlly}). The total of both statuses affects his clashing, power, and damage, and at 3+ he inflicts {st:SeveredTendonAlly}, lowering the enemy's power next turn. Both statuses also buff his S2 and S3 with additional effects or damage.",
+      "He does an additional action when {id:10916} is on the field, depending on her {st:FutureEyeOnRodion} status. With {st:FutureEyeOnRodion}, he follows up her first attack with an additional S1 every turn.  With {st:FutureEyeOffRodion}, he uses an {st:SupportProtect} if she is targeted by an Unopposed Attack."
+    ]
+  },
+  "passiveBonusNotes": "Assumes max The Duel Escalates + Maturing Textbook",
+  "passiveBonuses": [
+    {
+      "extra": {
+        "op": "mul"
+      },
+      "type": "damage",
+      "value": 0.55
+    },
+    {
+      "type": "clash",
+      "value": 1
+    },
+    {
+      "type": "base",
+      "value": 1
+    },
+    {
+      "type": "final",
+      "value": 1
+    }
+  ],
+  "passiveData": {
+    "1071601": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 2
+          },
+          {
+            "type": "sloth",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Gain the following effects based on ([EvolvingManual] on self + [DuelEdgeAlly] on the main target)\n- Base Skills deal +3% damage for every combined Stack (max 15%)\n- 1+ Stack: Clash Power +1\n- 2+ Stack: Base Skills gain Base Power +1\n- 3+ Stack: On Hit using a Base Skill, inflict 1 [SeveredTendonAlly] next turn\n- 4+ Stack: Base Skills gain Final Power +1\n- 5+ Stack: Base Skills deal +15% damage\n\nTake -3% damage for every ([EvolvingManual] on self + [DuelEdgeAlly] on the enemy attacking this unit) (max -15%)",
+      "name": "Palermitan Style"
+    },
+    "1071602": {
+      "desc": "At Base Skill End against an enemy:\n- If the target is defeated while having [DuelEdgeAlly] (on any of its Parts), gain 1 [EvolvingManual]\n- If the main target isn't defeated, inflict 1 [DuelEdgeAlly] on the main target; if there was a Clash against the said main target using the said Base Skill, inflict 2 [DuelEdgeAlly] on the main target instead\n\nAt Clash Start against a target that has [DuelEdgeAlly], heal SP equal to [DuelEdgeAlly] Stack on target (max 5 per turn)",
+      "name": "Duello Disperato"
+    },
+    "1071603": {
+      "desc": "If The House of Spiders: The Thumb Nursefather Rodion is on the field, activate the following:\n(Does not activate in turns where this unit is Panicked or Staggered)\n- When The Thumb Nursefather Rodion (that has [FutureEyeOnRodion]) hits an enemy with a Base Skill, at its Attack End, follow up with \"La Spada di Palermo\" as an Unopposed Attack against the target (once per turn)\n- Combat Start: When The Thumb Nursefather Rodion (that has [FutureEyeOffRodion]) is targeted by an enemy's Unopposed Skill, The Thumb Apprentice Heathcliff gains 1 [SupportProtect]\n(This [SupportProtect] activates only for The House of Spiders: The Thumb Nursefather Rodion)",
+      "name": "Desperate Struggle"
+    },
+    "1071604": {
+      "desc": "If this unit is defeated at Encounter Start, or if this unit is defeated during the Encounter, Blade of the House of Spiders Ryōshū gains the following effects:\n- Gain 1 [SojiRyoshuEchoPast]\n- On Clash Win using a Base Skill, inflict 2 [Vibration] and trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1 (2 times per turn)",
+      "name": "Saikai [再会] - The Thumb"
+    },
+    "1071621": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "1 ally with the fastest Speed: On Clash Win using Base Attack Skills, inflict +1 [Combustion] Count on target (once per turn)\n- Prioritizes \"The Thumb\" Identities\n- If the ally is \"The Thumb\" Identity, inflict +1 [Combustion] Count and [Vibration] Count instead\n- Combat Start: If there is only 1 enemy on the field, (for Abnormalities, a Core), this effect inflicts +1 more [Combustion] Count and [Vibration] Count",
+      "name": "In One-on-one Duels..."
+    }
+  },
+  "skills": {
+    "1071601": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "iconId": "1071601",
+          "id": "1071601",
+          "levelCorrection": 2,
+          "name": "La Spada di Palermo",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 6+ ([Combustion] + [Vibration]), Coin Power +1",
+          "iconId": "1071601",
+          "id": "1071601",
+          "name": "La Spada di Palermo",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 6+ ([Combustion] + [Vibration]), Coin Power +1",
+          "iconId": "1071601",
+          "id": "1071601",
+          "name": "La Spada di Palermo",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Vibration]) on target (max 2)",
+          "iconId": "1071601",
+          "id": "1071601",
+          "name": "La Spada di Palermo",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1071602": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "iconId": "1071602",
+          "id": "1071602",
+          "levelCorrection": 3,
+          "name": "Colpi Sottani",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If this unit has [EvolvingManual], or if target has [DuelEdgeAlly], trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 6+ ([Combustion] + [Vibration]), Coin Power +1",
+          "iconId": "1071602",
+          "id": "1071602",
+          "name": "Colpi Sottani",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If this unit has [EvolvingManual], or if target has [DuelEdgeAlly], trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If target has 6+ ([Combustion] + [Vibration]), Coin Power +1",
+          "iconId": "1071602",
+          "id": "1071602",
+          "name": "Colpi Sottani",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion] and +2 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If this unit has [EvolvingManual], or if target has [DuelEdgeAlly], trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Vibration]) on target (max 2)\n[WinDuel] If target has [DuelEdgeAlly], inflict +1 [Vibration] Count",
+          "iconId": "1071602",
+          "id": "1071602",
+          "name": "Colpi Sottani",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1071603": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion] and +2 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "Deal +10% damage for every [EvolvingManual] on self (max 30%)",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] If this unit has [EvolvingManual], or if target has 3+ [DuelEdgeAlly], trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[BeforeUse] If target has 5 [DuelEdgeAlly], activate \"Sezionatura di Cervo\" instead (once per turn)\n[WhenUse] If target has 6+ ([Combustion] + [Vibration]), Coin Power +1\n[WhenUse] Gain the following effects based on [DuelEdgeAlly] Stack on target:\n- 1+ [DuelEdgeAlly]: Inflict +1 more [Vibration] Potency\n- 2+ [DuelEdgeAlly]: Inflict +1 more [Vibration] Count\n- 3+ [DuelEdgeAlly]: Inflict +1 more [Combustion] Potency\n- 4+ [DuelEdgeAlly]: Inflict +1 more [Combustion] Count\n[WhenUse] If this unit has [EvolvingManual], or if target has 3+ [DuelEdgeAlly], convert all Coins on this Skill to [SuperCoin]s",
+          "iconId": "1071603",
+          "id": "1071603",
+          "levelCorrection": 4,
+          "name": "Il Cacciatore",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Combustion] and +2 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration] and +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.75
+                }
+              ],
+              "descs": [
+                "Deal +25% damage for every [EvolvingManual] on self (max 75%)",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] If this unit has [EvolvingManual], or if target has 3+ [DuelEdgeAlly], trigger [VibrationExplosion] 2 times; then, reduce target's [Vibration] Count by 2"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[BeforeUse] If target has 5 [DuelEdgeAlly], activate \"Sezionatura di Cervo\" instead (once per turn)\n[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Vibration]) on target (max 2)\n[WhenUse] Gain the following effects based on [DuelEdgeAlly] Stack on target:\n- Deal +6% damage for every Stack (max 30%)\n- 1+ [DuelEdgeAlly]: Inflict +1 more [Vibration] Potency\n- 2+ [DuelEdgeAlly]: Inflict +1 more [Vibration] Count\n- 3+ [DuelEdgeAlly]: Inflict +1 more [Combustion] Potency\n- 4+ [DuelEdgeAlly]: Inflict +1 more [Combustion] Count\n[WhenUse] If this unit has [EvolvingManual], or if target has 3+ [DuelEdgeAlly], convert all Coins on this Skill to [SuperCoin]s",
+          "iconId": "1071603",
+          "id": "1071603",
+          "name": "Il Cacciatore",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1071604": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion] (2 times per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration] (2 times per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\nDeal +10% damage for every [DuelEdgeAlly] on target (max 50%)",
+          "iconId": "1071604",
+          "id": "1071604",
+          "levelCorrection": 1,
+          "name": "Measuring Blade Reach",
+          "uptie": 1
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1
+            },
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion] (2 times per turn)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration] (2 times per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[DuelCounter]\nDeal +20% damage for every [DuelEdgeAlly] on target (max 100%)\n[WhenUse] Final Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 2)",
+          "iconId": "1071604",
+          "id": "1071604",
+          "name": "Measuring Blade Reach",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1071605": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[CanDuelGuard]\n[SupportProtect] exclusive Skill",
+          "iconId": "1071605",
+          "id": "1071605",
+          "levelCorrection": 0,
+          "name": "I Will Protect.",
+          "uptie": 1
+        },
+        {
+          "affinity": "gloom",
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CanDuelGuard]\n[SupportProtect] exclusive Skill\n[WhenUse]\n- Gain 2 [Protection] (once per turn)\n- Heal 5 SP for the unit protected by the [SupportProtect]",
+          "iconId": "1071605_4",
+          "id": "1071605",
+          "name": "I Will Protect.",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1071606": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.45
+            },
+            {
+              "type": "atkweight",
+              "value": 2
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Combustion] and +3 [Combustion] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Vibration] and +3 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "coin",
+                  "value": 3
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "[OnStartCoin] This Coin gains Coin Power +1 for every [EvolvingManual] (max 3)",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion] 2 times; then, reduce target's [Vibration] Count by 2"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse]\n- Gain +([EvolvingManual] - 1) Atk Weight (max 2)\n- Coin Power +1 for every 6 ([Combustion] + [Vibration]) on the main target (max 2)\n- When attacking just 1 target, deal +15% damage (for Focused Encounters, 1 Part)\n- Deal +15% damage for every excess Atk Weight beyond the # of actual targets (for Focused Encounters, Parts)\n\n[EndSkill]\n- Consume all [DuelEdgeAlly] on the main target\n- Gain 1 [EvolvingManual]. If the main target is defeated, gain 2 [EvolvingManual] instead",
+          "iconId": "1071606",
+          "id": "1071606",
+          "levelCorrection": 5,
+          "name": "Sezionatura di Cervo",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.75
+            },
+            {
+              "type": "atkweight",
+              "value": 2
+            },
+            {
+              "type": "coin",
+              "value": 3
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 4 [Combustion] and +3 [Combustion] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 4 [Vibration] and +3 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "coin",
+                  "value": 3
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "[OnStartCoin] This Coin gains Coin Power +1 for every [EvolvingManual] (max 3)",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion] 3 times; then, reduce target's [Vibration] Count by 3"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[WhenUse]\n- Gain +([EvolvingManual] - 1) Atk Weight (max 2)\n- Coin Power +1 for every 6 ([Combustion] + [Vibration]) on the main target (max 3)\n- When attacking just 1 target, deal +25% damage (for Focused Encounters, 1 Part)\n- Deal +25% damage for every excess Atk Weight beyond the # of actual targets (for Focused Encounters, Parts)\n\n[EndSkill]\n- Consume all [DuelEdgeAlly] on the main target\n- Gain 1 [EvolvingManual]. If the main target is defeated, gain 2 [EvolvingManual] instead",
+          "iconId": "1071606",
+          "id": "1071606",
+          "name": "Sezionatura di Cervo",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1071621"
+      ],
+      "uptie": 3
+    }
+  ]
+}

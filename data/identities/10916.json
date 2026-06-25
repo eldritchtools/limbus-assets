@@ -1,0 +1,911 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1091602",
+        "1091603",
+        "1091604"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1091602",
+        "1091603",
+        "1091604",
+        "1091601"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1091612",
+        "1091603",
+        "1091604",
+        "1091601"
+      ],
+      "uptie": 3
+    }
+  ],
+  "notes": {
+    "other": [
+      "Gains {st:ObsessionAndGreedRodion} on the first time she hits 0 {st:LookingFutureRodion}, when staggered, or when {id:10716} dies.",
+      "On death, she gives {id:10415} Defense Coin Power and bonus damage against targets with Shield.",
+      "Has a single Stagger Recovery."
+    ],
+    "usage": [
+      "Starts with 30 {st:FutureEyeOnRodion}. When she has it, she gains {st:LookingFutureRodion} while clashing, making her clash better and deal more damage the more clashes happen, and she gets a free use of her Evade when attacked unopposed, with a {st:SuperCoin}, or on clash lose. She loses stacks for every Skill use, Clash, or use of the Defense.",
+      "At 0 {st:FutureEyeOnRodion}, she {st:FullReload}s, gains a copy of {skill:10916|07}, and converts it to {st:FutureEyeOffRodion}. At this state, she gains 3 {st:AttackUp}, 3 {st:DefenseDown}, and gains 10 stacks per turn. In 3 turns, she hits 30 and it converts back to {st:FutureEyeOnRodion}.",
+      "When she has {skill:10916|07}, she inflicts {st:TeachersPreyRodion} on her last target on the previous turn. Killing that enemy with {skill:10916|07} generates another copy of the skill. Killing with the generated copy doesn't generate another copy. You'll need to hit 0 {st:FutureEyeOnRodion} again to get another use.",
+      "Starts with 10 {st:AccelBullet} which are used by her S2 and S3. At 0 stacks, her S2 is replaced with her S2-2 instead. Spending rounds gives her {st:Breath} and both of her S3s gain bonus {st:VibrationExplosion}s, Coin Power, and Damage.",
+      "Using her Clashable Counter brings her up to 5 {st:AccelBullet}, ensuring she has enough to maximize  the damage bonus on {skill:10916|07}"
+    ]
+  },
+  "passiveBonusNotes": "Assumes max Accelerating Future, attacking Game Target, and target has shield",
+  "passiveBonuses": [
+    {
+      "extra": {
+        "op": "mul"
+      },
+      "type": "damage",
+      "value": 0.9
+    },
+    {
+      "type": "clash",
+      "value": 2
+    },
+    {
+      "type": "coin",
+      "value": 1
+    },
+    {
+      "extra": {
+        "skillId": 1091603
+      },
+      "type": "coin",
+      "value": 1
+    },
+    {
+      "extra": {
+        "skillId": 1091607
+      },
+      "type": "coin",
+      "value": 1
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1091603
+      },
+      "type": "damage",
+      "value": 0.25
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1091607
+      },
+      "type": "damage",
+      "value": 0.25
+    }
+  ],
+  "passiveData": {
+    "1091601": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 3
+          },
+          {
+            "type": "sloth",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "If this unit has 1+ [AccelBullet], Skill 3 gains Coin Power +1 and deals +25% damage\n\nBase Skills deal +1% damage for every 2 [Combustion] on the main target (max 15%)\n- If the main target has Shield, Base Skills deal +3% damage instead (max 45%)",
+      "name": "La Spada di Palermo"
+    },
+    "1091602": {
+      "desc": "Upon entering the Encounter for the first time, gain 30 [FutureEyeOnRodion]\nAt 0 [FutureEyeOnRodion] Stack, convert [FutureEyeOnRodion] into [FutureEyeOffRodion]\n\nWhile this unit has [FutureEyeOnRodion], activate the following effects:\n- In a Clash, gain 1 [LookingFutureRodion] with every Clash (5 times per Skill)\n- When attacked by an Unopposed Attack, [SuperCoin] Attack, or losing a Clash against an Attack Skill, activate the \"Precognition\" Skill (once per turn)\n\nThe following causes this unit to lose [FutureEyeOnRodion] Stack:\n- Lose 1 [FutureEyeOnRodion] with every Clash\n- When this unit activates the \"Precognition\" Skill via Passive effect due to being attacked by an Unopposed Attack or [SuperCoin] Attack, lose 3 [FutureEyeOnRodion]\n- When this unit activates the \"Precognition\" Skill via Passive effect due to losing a Clash, lose 5 [FutureEyeOnRodion]\n\nThe following causes this unit to gain [ObsessionAndGreedRodion] next turn:\n- If this unit's [FutureEyeOnRodion] Stack drops to 0\n- If this unit is Staggered\n- If The House of Spiders: The Thumb Apprentice Heathcliff is defeated (if the said Identity is already defeated when this unit Substitutes in, gain [ObsessionAndGreedRodion] at Turn Start)\n\nTurn End: When Staggered for the first time in this Encounter, recover from Stagger (excluding forced Staggers)",
+      "name": "The Eye of Precognition"
+    },
+    "1091603": {
+      "desc": "Gain 2 [Breath] and +2 [Breath] Count for every [AccelBullet] spent\nWhen flipping a Coin that spends [AccelBullet], the attack does not get canceled even when this unit is out of [AccelBullet]\n\nThis Identity counts only as an \"Identity that inflicts [Combustion] and [Vibration]\"\n\nTurn Start: If this unit has \"Disposal\" on its Dashboard, inflict [TeachersPreyRodion] on the enemy this unit attacked last in the previous turn (in Focused Encounters, the Parts count for this purpose)\n- If there are no targets that satisfy the condition above, inflict [TeachersPreyRodion] on the enemy that has the lowest HP",
+      "name": "The Shame of Famiglia Bognatelli"
+    },
+    "1091604": {
+      "desc": "If this unit is defeated at Encounter Start, or if this unit is defeated during the Encounter, Blade of the House of Spiders Ryōshū gains the following effects:\n- Gain 1 [SojiRyoshuEchoPast]\n- Defense Skill Coin Power +1, Base Attack Skills deal +10% damage against targets that have Shield",
+      "name": "Saikai [再会] - The Thumb"
+    },
+    "1091612": {
+      "desc": "Upon entering the Encounter for the first time, gain 30 [FutureEyeOnRodion]\nAt 0 [FutureEyeOnRodion] Stack, convert [FutureEyeOnRodion] into [FutureEyeOffRodion]\n\nWhile this unit has [FutureEyeOnRodion], activate the following effects:\n- In a Clash, gain 1 [LookingFutureRodion] with every Clash (5 times per Skill)\n- When attacked by an Unopposed Attack, [SuperCoin] Attack, or losing a Clash against an Attack Skill, activate the \"Precognition\" Skill (once per turn)\n\nThe following causes this unit to lose [FutureEyeOnRodion] Stack:\n- Lose 1 [FutureEyeOnRodion] with every Clash\n- When this unit activates the \"Precognition\" Skill via Passive effect due to being attacked by an Unopposed Attack or [SuperCoin] Attack, lose 3 [FutureEyeOnRodion]\n- When this unit activates the \"Precognition\" Skill via Passive effect due to losing a Clash, lose 5 [FutureEyeOnRodion]\n\nAt the end of the turn this unit's [FutureEyeOnRodion] is converted into [FutureEyeOffRodion], activate the following effects:\n- [FullReload] (once per Encounter)\n- At the start of the next turn, if this unit has no \"Disposal\" on its Dashboard, replace a Base Skill with \"Disposal\" (prioritizes the Skill on the leftmost Slot's top row)\n\nThe following causes this unit to gain [ObsessionAndGreedRodion] next turn:\n- If this unit's [FutureEyeOnRodion] Stack drops to 0\n- If this unit is Staggered\n- If The House of Spiders: The Thumb Apprentice Heathcliff is defeated (if the said Identity is already defeated when this unit Substitutes in, gain [ObsessionAndGreedRodion] at Turn Start)\n\nTurn End: When Staggered due to damage for the first time in this Encounter, recover from Stagger (excluding forced Staggers)",
+      "name": "The Eye of Precognition"
+    },
+    "1091621": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "1 ally with the fastest Speed: When triggering [VibrationExplosion] on the enemy, gain 2 Offense Level Up next turn (once per turn)\n- If the said ally is \"The Thumb\" Identity, gain 1 [Agility] as well (once per turn)",
+      "name": "Weaklings, Not Worth Shit"
+    }
+  },
+  "skills": {
+    "1091601": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Lose (# of remaining Coins) [FutureEyeOnRodion] Stack on self; deal +5% damage for every Stack lost (max 10%)",
+          "iconId": "1091601",
+          "id": "1091601",
+          "levelCorrection": 2,
+          "name": "Colpi di Taglio",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1
+            }
+          ],
+          "desc": "[WhenUse] At 6+ [Breath], Final Power +1\n[WinDuel] Lose (# of remaining Coins) [FutureEyeOnRodion] Stack on self; deal +5% damage for every Stack lost (max 10%)",
+          "iconId": "1091601",
+          "id": "1091601",
+          "name": "Colpi di Taglio",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 6+ [Breath], Final Power +1\n[WinDuel] Lose (# of remaining Coins) [FutureEyeOnRodion] Stack on self; deal +5% damage for every Stack lost (max 10%)",
+          "iconId": "1091601",
+          "id": "1091601",
+          "name": "Colpi di Taglio",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1
+            }
+          ],
+          "desc": "[WhenUse] At 6+ [Breath], Final Power +1\n[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Vibration]) on target (max 2)\n[WinDuel] Lose (# of remaining Coins) [FutureEyeOnRodion] Stack on self; deal +5% damage for every Stack lost (max 10%)",
+          "iconId": "1091601",
+          "id": "1091601",
+          "name": "Colpi di Taglio",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1091602": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "Spend 1 [AccelBullet]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [AccelBullet]",
+                "[OnSucceedAttack] Inflict 1 [Vibration] and +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Turn Start: If this unit does not have [AccelBullet], activate as \"Sezionatura di Cervo\"\n[WinDuel] Lose (# of remaining Coins) [FutureEyeOnRodion] Stack on self; deal +5% damage for every Stack lost (max 15%)",
+          "iconId": "1091602",
+          "id": "1091602",
+          "levelCorrection": 3,
+          "name": "I'll Gladly Blast a Hole Through Ya",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            }
+          ],
+          "desc": "Turn Start: If this unit does not have [AccelBullet], activate as \"Sezionatura di Cervo\"\n[WhenUse] At 6+ [Breath], Final Power +1\n[WinDuel] Lose (# of remaining Coins) [FutureEyeOnRodion] Stack on self; deal +5% damage for every Stack lost (max 15%)",
+          "iconId": "1091602",
+          "id": "1091602",
+          "name": "I'll Gladly Blast a Hole Through Ya",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "Turn Start: If this unit does not have [AccelBullet], activate as \"Sezionatura di Cervo\"\n[WhenUse] At 6+ [Breath], Final Power +1\n[WinDuel] Lose (# of remaining Coins) [FutureEyeOnRodion] Stack on self; deal +5% damage for every Stack lost (max 15%)",
+          "iconId": "1091602",
+          "id": "1091602",
+          "name": "I'll Gladly Blast a Hole Through Ya",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            }
+          ],
+          "desc": "Turn Start: If this unit does not have [AccelBullet], activate as \"Sezionatura di Cervo\"\n[WhenUse] At 6+ [Breath], Final Power +1\n[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Vibration]) on target (max 2)\n[WinDuel] Lose (# of remaining Coins) [FutureEyeOnRodion] Stack on self; deal +5% damage for every Stack lost (max 15%)",
+          "iconId": "1091602",
+          "id": "1091602",
+          "name": "I'll Gladly Blast a Hole Through Ya",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1091603": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "Spend 1 [AccelBullet]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [AccelBullet]",
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count",
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [AccelBullet]",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 6+ [Breath], Final Power +1\n[BeforeAttack] Lose up to 10 [FutureEyeOnRodion] on self (once per turn)",
+          "iconId": "1091603",
+          "id": "1091603",
+          "levelCorrection": 4,
+          "name": "Sezionatura di Elefante",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "Spend 1 [AccelBullet]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [AccelBullet]",
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count",
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend 1 [AccelBullet]",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1\n- Activate the above effect once more for every [AccelBullet] spent by this Skill (max 2 times)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 6+ [Breath], Final Power +1\n[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Vibration]) on target (max 2)\n[BeforeAttack] Lose up to 10 [FutureEyeOnRodion] on self (once per turn)",
+          "iconId": "1091603",
+          "id": "1091603",
+          "name": "Sezionatura di Elefante",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1091604": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\n[WhenUse] Lose 3 [FutureEyeOnRodion] on self\n[EndBattle] If this unit has less than 5 [AccelBullet], reload[TabExplain] [AccelBullet] to 5 (once per turn)",
+          "iconId": "1091604",
+          "id": "1091604",
+          "levelCorrection": 2,
+          "name": "Fuck Off!",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "desc": "[DuelCounter]\n[WhenUse] Final Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 2)\n[WhenUse] Lose 4 [FutureEyeOnRodion] on self\n[EndBattle] If this unit has less than 5 [AccelBullet], reload[TabExplain] [AccelBullet] to 5 (once per turn)",
+          "iconId": "1091604",
+          "id": "1091604",
+          "name": "Fuck Off!",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1091605": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count",
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nThis Skill does not trigger Defense Skills, and external effects cannot trigger this Skill to be Reused",
+          "iconId": "1091605",
+          "id": "1091605",
+          "levelCorrection": 2,
+          "name": "Sezionatura di Coniglio",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            }
+          ],
+          "desc": "[CantDuel]\nThis Skill does not trigger Defense Skills, and external effects cannot trigger this Skill to be Reused\n[WhenUse] At 6+ [Breath], Final Power +1",
+          "iconId": "1091605",
+          "id": "1091605",
+          "name": "Sezionatura di Coniglio",
+          "uptie": 2
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            },
+            {
+              "type": "base",
+              "value": 2
+            }
+          ],
+          "desc": "[CantDuel]\nThis Skill does not trigger Defense Skills, and external effects cannot trigger this Skill to be Reused\n[WhenUse] At 6+ [Breath], Final Power +1\n[WhenUse] Base Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 2)",
+          "iconId": "1091605",
+          "id": "1091605",
+          "name": "Sezionatura di Coniglio",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1091606": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 5 [Breath]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +2 [Vibration] Count",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If this unit is in [FutureEyeOffRodion] state, convert all Coins into [SuperCoin]s\n[WhenUse] Gain +4 [Breath] Count\n[WinDuel] Lose (# of remaining Coins) [FutureEyeOnRodion] Stack on self; deal +5% damage for every Stack lost (max 15%)",
+          "iconId": "1091606",
+          "id": "1091606",
+          "levelCorrection": 3,
+          "name": "Sezionatura di Cervo",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            }
+          ],
+          "desc": "[WhenUse] If this unit is in [FutureEyeOffRodion] state, gain Final Power +2 and convert all Coins into [SuperCoin]s\n[WhenUse] Gain +4 [Breath] Count\n[WinDuel] Lose (# of remaining Coins) [FutureEyeOnRodion] Stack on self; deal +5% damage for every Stack lost (max 15%)",
+          "iconId": "1091606",
+          "id": "1091606",
+          "name": "Sezionatura di Cervo",
+          "uptie": 2
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 5 [Breath]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +2 [Vibration] Count",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] If target has 10+ [Vibration], trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] If this unit is in [FutureEyeOffRodion] state, gain Final Power +2 and convert all Coins into [SuperCoin]s\n[WhenUse] Gain +4 [Breath] Count\n[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Vibration]) on target (max 2)\n[WinDuel] Lose (# of remaining Coins) [FutureEyeOnRodion] Stack on self; deal +5% damage for every Stack lost (max 15%)",
+          "iconId": "1091606",
+          "id": "1091606",
+          "name": "Sezionatura di Cervo",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1091607": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +3 [Combustion] Count",
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Spend up to 5 [AccelBullet]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1\n- Activate the above effect once more for every [AccelBullet] spent (max 2 times)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has 50%- current HP, deal +50% damage\nWhen attacking [TeachersPreyRodion], Coin Power +1\n[WhenUse] If this unit has 1+ [AccelBullet], Coin Power +1\n[EnemyKill] Upon killing [TeachersPreyRodion], add 1 \"Disposal\" to the list of Skills for the next upcoming turn (killing [TeachersPreyRodion] with the added \"Disposal\" does not trigger this effect again)\n[EnemyKill] [FullReload] (once per turn)",
+          "iconId": "1091607",
+          "id": "1091607",
+          "levelCorrection": 5,
+          "name": "Disposal",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "final",
+              "value": 5
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +3 [Combustion] Count",
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "Spend up to 5 [AccelBullet]\nDeal +10% damage for every [AccelBullet] that will be spent by this Coin effect (max 50%)",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1\n- Activate the above effect once more for every [AccelBullet] spent (max 3 times)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "If target has 50%- current HP, deal +50% damage\nWhen attacking [TeachersPreyRodion], Coin Power +1\n[WhenUse] If this unit has 1+ [AccelBullet], Coin Power +1\n[WhenUse] Final Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 5)\n[EnemyKill] Upon killing [TeachersPreyRodion], add 1 \"Disposal\" to the list of Skills for the next upcoming turn (killing [TeachersPreyRodion] with the added \"Disposal\" does not trigger this effect again)\n[EnemyKill] [FullReload] (once per turn)",
+          "iconId": "1091607",
+          "id": "1091607",
+          "name": "Disposal",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1091608": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 4
+            },
+            {
+              "type": "base",
+              "value": 4
+            }
+          ],
+          "coinValue": 7,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "Upon successfully evading all Coins on a Skill, use \"Sezionatura di Coniglio\" as an Unopposed Attack against the attacker (once per turn)\nCoin Power +1 for every 2 [FutureEyeOnRodion] Stacks on self (max 4)\nBase Power +1 for every 2 excess [FutureEyeOnRodion] Stacks on self past 10 Stacks (max 4)\n[WhenUse] Gain +3 [Breath] Count (once per turn)\n[OnSucceedEvade] Gain 2 [Breath] (2 times per turn)\n[EndSkillAll] Lose 2 [FutureEyeOnRodion] on self",
+          "iconId": "1091608",
+          "id": "1091608",
+          "levelCorrection": 2,
+          "name": "Precognition",
+          "uptie": 1
+        },
+        {
+          "affinity": "gloom",
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 4
+            },
+            {
+              "type": "base",
+              "value": 4
+            }
+          ],
+          "desc": "Upon successfully evading all Coins on a Skill, use \"Sezionatura di Coniglio\" as an Unopposed Attack against the attacker (once per turn)\nCoin Power +1 for every 2 [FutureEyeOnRodion] Stacks on self (max 4)\nBase Power +1 for every 2 excess [FutureEyeOnRodion] Stacks on self past 10 Stacks (max 4)\n[WhenUse] Gain +3 [Breath] Count (once per turn)\n[OnSucceedEvade] Gain 2 [Breath] (2 times per turn)\n[OnSucceedEvade] Heal 3 SP (2 times per turn)\n[EndSkillAll] Lose 2 [FutureEyeOnRodion] on self",
+          "iconId": "1091608_4",
+          "id": "1091608",
+          "name": "Precognition",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1091621"
+      ],
+      "uptie": 3
+    }
+  ]
+}
