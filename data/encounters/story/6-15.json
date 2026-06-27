@@ -1,0 +1,452 @@
+{
+  "name": "The Heartbreaking (6-15)",
+  "siteId": "9265df0d-e250-4b31-b6be-707a77e8161e",
+  "targets": [
+    {
+      "name": "Hostile Wuthering Heights Butler",
+      "num": 6,
+      "passives": [
+        {
+          "desc": "Turn End: if Staggered, heal 12 SP. Gain 2 Defense Level Down next turn. (one time max)",
+          "name": "I Will... Do My Best"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "Turn End: if this unit recovered from Panic, gain 1 Attack Power Up next turn",
+          "name": "Apologies... Mistress!"
+        }
+      ],
+      "portrait": "90126",
+      "resists": {
+        "blunt": 2,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 0.75,
+        "pride": 1,
+        "slash": 1,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Sinking]",
+                "[OnSucceedAttackHead] Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 4,
+          "name": "Housekeeping Start"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 8 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Gain 1 [PlusCoinValueUp]\n[DefeatDuel] Gain 3 [Sinking]",
+          "levelCorrection": 4,
+          "name": "Interloper Reception"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] Inflict 2 [DefenseDown]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] Inflict 2 [DefenseDown]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 8+ [Sinking] Potency, Reuse this Coin (1 time max)",
+                "[OnSucceedAttackHead] Inflict 4 [DefenseDown] 4 and 1 [Vulnerable]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Base Power +1 for every 5 [Sinking] Potency on target (max 2)",
+          "levelCorrection": 4,
+          "name": "Reception Arts 2: Bind"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "If this unit has remaining Shield HP at Turn End, lower Stagger threshold by 10\nIf this unit's Shield HP is depleted, the last attacker heals 10 SP",
+          "levelCorrection": 2,
+          "name": "Guard"
+        }
+      ]
+    },
+    {
+      "name": "Trained Wuthering Heights Butler",
+      "num": 9,
+      "passives": [
+        {
+          "desc": "Turn End: if Staggered, heal 12 SP. Gain 2 Defense Level Down next turn. (one time max)",
+          "name": "I Will... Do My Best"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "Turn End: if this unit recovered from Panic, gain 1 Attack Power Up next turn",
+          "name": "Apologies... Mistress!"
+        }
+      ],
+      "portrait": "90127",
+      "resists": {
+        "blunt": 2,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 0.75,
+        "pride": 1,
+        "slash": 1,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Sinking]",
+                "[OnSucceedAttackHead] Inflict 1 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 4,
+          "name": "Commence Housekeeping"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Gain 1 [PlusCoinValueUp]\n[DefeatDuel] Gain 3 [Sinking]",
+          "levelCorrection": 4,
+          "name": "Interloper Response"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Paralysis] next turn",
+                "[OnSucceedAttack] Inflict 2 [AttackDown]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Paralysis] next turn",
+                "[OnSucceedAttack] Inflict 2 [AttackDown]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 4+ [Sinking] Count, Reuse this Coin (1 time max)",
+                "[OnSucceedAttackHead] Inflict 4 [AttackDown] and 1 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Base Power +1 for every 5 [Sinking] Potency on target (max 2)",
+          "levelCorrection": 4,
+          "name": "Reception Arts 2: Topple"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "If this unit has remaining Shield HP at Turn End, lower Stagger threshold by 10\nIf this unit's Shield HP is depleted, the last attacker heals 10 SP",
+          "levelCorrection": 2,
+          "name": "Guard"
+        }
+      ]
+    },
+    {
+      "name": "Josephine",
+      "passives": [
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "Turn End: if Staggered, recover from the Staggered state and heal 20 SP. Gain 1 Offense Level Up next turn. (1 max)",
+          "name": "I'll Clean You Up..."
+        },
+        {
+          "desc": "Turn End: if this unit recovered from Panic, gain 1 Attack Power Up next turn",
+          "name": "Apologies... Mistress!"
+        },
+        {
+          "desc": "If this unit's Speed is faster than the target's, Clash Power +2",
+          "name": "Insolent Fool!"
+        },
+        {
+          "desc": "Heal 10 SP when every Coin of an Attack Skill flips heads",
+          "name": "The Mistress's Voice...!"
+        },
+        {
+          "desc": "If the target has Sinking, and if the target has -15 or less SP, gain 3 Offense Level Up next turn. (once per target)",
+          "name": "Will You Witness Me, Mistress?!"
+        }
+      ],
+      "portrait": "91014",
+      "resists": {
+        "blunt": 1.2,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 0.5,
+        "pride": 1,
+        "slash": 1,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Sinking]",
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Sinking]",
+                "[OnSucceedAttack] Inflict 1 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 5+ [Sinking] Potency, inflict 1 [AttackDown]",
+          "levelCorrection": 5,
+          "name": "Knocking"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 Plus Coin Drop next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count",
+                "[OnSucceedAttack] Inflict 2 [Vulnerable] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If the target is at 10 or less SP, inflict 2 [AttackDown]\n[WinDuel] Inflict 1 [Vulnerable]",
+          "levelCorrection": 5,
+          "name": "Time to Clean!"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 8 [Sinking]",
+                "[OnSucceedAttackHead] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 8 [Sinking]",
+                "[OnSucceedAttackHead] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [EchoOfMansion] next turn",
+                "[OnSucceedAttack] Inflict 8 [Sinking]",
+                "[OnSucceedAttackHead] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Base Power +1 for every 3 [Sinking] Potency on target (max 3)\n[WinDuel] All allies heal 5 SP",
+          "levelCorrection": 5,
+          "name": "As Mistress Commands...!"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict Gloom Affinity bonus damage equal to [Sinking] Potency on target. Reduce [Sinking] Count on target by 1"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict Gloom Affinity bonus damage equal to [Sinking] Potency on target. Reduce [Sinking] Count on target by 1"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict Gloom Affinity bonus damage equal to [Sinking] Potency on target. Reduce [Sinking] Count on target by 1",
+                "[OnSucceedAttack] Inflict 4 [Sinking]",
+                "[OnSucceedAttack] If target has 3+ [Sinking] Count, Reuse this Coin (twice)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] Apply 3 [AttackUp] and heal 15 SP for all allies, including this unit\n[StartBattle] Inflict 1 [Vulnerable] to all other allies",
+          "levelCorrection": 5,
+          "name": "Not Even a Speck of Dust!"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 20,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "If this unit has remaining Shield HP at Turn End, lower Stagger threshold by 50\nIf this unit's Shield HP is depleted, all enemies heal 10 SP",
+          "levelCorrection": 2,
+          "name": "Slippery Rat!"
+        }
+      ]
+    }
+  ]
+}

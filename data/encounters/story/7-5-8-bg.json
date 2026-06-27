@@ -1,0 +1,582 @@
+{
+  "name": "LCB Regular Check-up BokGak (7.5-8)",
+  "siteId": "02a87e99-271e-4073-b856-bbe5a0786d94",
+  "waves": [
+    {
+      "targets": [
+        {
+          "name": "Peccatulum Gulae",
+          "num": 2,
+          "parts": [
+            {
+              "breakSection": [
+                50
+              ],
+              "defCorrection": -3,
+              "hp": 36.95,
+              "name": "Body",
+              "partId": 108901,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 0.75,
+                "gluttony": 0.75,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 2,
+                "slash": 2,
+                "sloth": 1,
+                "wrath": 2
+              },
+              "speed": [
+                1,
+                4
+              ]
+            }
+          ],
+          "portrait": 8005,
+          "skills": [
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 2,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -5,
+              "name": "Nibble"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 2,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Heal 1 HP"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Heal 1 HP"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Heal 1 HP"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -5,
+              "name": "Greedy Gluttons"
+            }
+          ]
+        },
+        {
+          "name": "Peccatulum Morositatis",
+          "num": 3,
+          "parts": [
+            {
+              "breakSection": [
+                60
+              ],
+              "defCorrection": -3,
+              "hp": 39.7,
+              "name": "Body",
+              "partId": 109101,
+              "resists": {
+                "blunt": 1,
+                "envy": 2,
+                "gloom": 0.75,
+                "gluttony": 2,
+                "lust": 1,
+                "pierce": 2,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 0.75
+              },
+              "speed": [
+                4,
+                6
+              ]
+            }
+          ],
+          "portrait": 8016,
+          "skills": [
+            {
+              "affinity": "gloom",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 2,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -7,
+              "name": "Fire Off"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Inflict 3 Sinking next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -7,
+              "name": "Bursting Gloom"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Peccatulum Gulae?",
+          "num": 2,
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                0
+              ],
+              "defCorrection": 2,
+              "hp": 60.95,
+              "name": "Body",
+              "partId": 109001,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 0.5,
+                "gluttony": 0.5,
+                "lust": 1.75,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1.75,
+                "sloth": 1,
+                "wrath": 1.75
+              },
+              "speed": [
+                1,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Unless this unit is Staggered or Part Broken, take 50% less [Burst] damage",
+              "name": "Sin Resistance"
+            }
+          ],
+          "portrait": 8160,
+          "skills": [
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "When this Attack Skill hits, gain [TakeHpHealIncrease] next turn",
+              "levelCorrection": 2,
+              "name": "Maul"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 2,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                    "[OnSucceedAttackHead] Core and Part both gain 3 HP"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                    "[OnSucceedAttackHead] Core and Part both gain 3 HP"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                    "[OnSucceedAttackHead] Core and Part both gain 3 HP"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                    "[OnSucceedAttackHead] Core and Part both gain 3 HP"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has [Burst], Base Power +1",
+              "levelCorrection": 2,
+              "name": "Devouring"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                    "[OnSucceedAttackHead] Core and Part both gain 5 HP"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 [Burst]",
+                    "[OnSucceedAttackHead] Core and Part both gain 5 HP"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                    "[OnSucceedAttackHead] Core and Part both gain 5 HP"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 [Burst]",
+                    "[OnSucceedAttackHead] Core and Part both gain 5 HP"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 5+ [Burst], inflict 2 [DefenseDown]\nGain +1 Base Power for every [TakeHpHealIncrease] value on self (max 3)",
+              "levelCorrection": 2,
+              "name": "Ravenous Devouring"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 2,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst] and +2 [Burst] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst] and +2 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "At less than 50% Core HP, Core and Part heal on Coin Hit",
+              "levelCorrection": 2,
+              "name": "Counter"
+            }
+          ]
+        },
+        {
+          "name": "Peccatulum Morositatis?",
+          "num": 2,
+          "parts": [
+            {
+              "breakSection": [
+                50,
+                0
+              ],
+              "defCorrection": -3,
+              "hp": 80.8,
+              "name": "Body",
+              "partId": 109201,
+              "resists": {
+                "blunt": 1,
+                "envy": 1.75,
+                "gloom": 0.5,
+                "gluttony": 1.75,
+                "lust": 1,
+                "pierce": 1.75,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 0.5
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Unless this unit is Staggered or Part Broken, take 50% less [Sinking] damage.",
+              "name": "Sin Resistance"
+            }
+          ],
+          "portrait": 8152,
+          "skills": [
+            {
+              "affinity": "gloom",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Sinking] and +2 [Sinking] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Sinking] and +2 [Sinking] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -6,
+              "name": "Leap In"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Sinking] and +3 [Sinking] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WinDuel] If target has [Sinking], Base Power +2",
+              "levelCorrection": -6,
+              "name": "Snap At"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 8 [Sinking]",
+                    "[OnSucceedAttackHead] Inflict 2 [AzureTakeDamageUp] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 5+ [Sinking], Coin Power +1",
+              "levelCorrection": -6,
+              "name": "Water Bomb"
+            },
+            {
+              "affinity": "gloom",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[OnSucceedEvade] Inflict 2 [Sinking]",
+              "levelCorrection": -1,
+              "name": "Evade"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Peccatulum Morositatis??",
+          "parts": [
+            {
+              "breakSection": [
+                20
+              ],
+              "defCorrection": 0,
+              "hp": 563.0,
+              "name": "Body",
+              "partId": 108101,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 1.75,
+                "gloom": 0.5,
+                "gluttony": 1.5,
+                "lust": 0.8,
+                "pierce": 0.5,
+                "pride": 1,
+                "slash": 0.5,
+                "sloth": 0.8,
+                "wrath": 0.5
+              },
+              "speed": [
+                2,
+                5
+              ]
+            }
+          ],
+          "portrait": "1081",
+          "skills": [
+            {
+              "affinity": "gloom",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Sinking] and +2 [Sinking] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 5+ [Sinking], Coin Power +1",
+              "levelCorrection": 0,
+              "name": "Decay Collission"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 8 [Sinking] and +2 [Sinking] Count",
+                    "[OnSucceedAttack] Inflict 4 [Sinking] and +2 [Sinking] Count against 2 random targets"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has [Sinking], Base Power +2",
+              "levelCorrection": 0,
+              "name": "Torrent"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 [Sinking] and +4 [Sinking] Count",
+                    "[OnSucceedAttack] Next Coin Power +1 for every 3 [Sinking] on the target (3 times max)"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Cause [SinkingSurge]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Coin Power +1 for every 3 [Sinking] on target (max 3)\n[WinDuel] This Skill gains Atk Weight +1 for every 5 [Sinking] on the target (max 2)",
+              "levelCorrection": 0,
+              "name": "Cascading Gloom"
+            },
+            {
+              "affinity": "gloom",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 12,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[OnSucceedEvade] Target loses 5 SP",
+              "levelCorrection": 0,
+              "name": "Evade"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

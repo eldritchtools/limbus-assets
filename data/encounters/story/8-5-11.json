@@ -1,0 +1,744 @@
+{
+  "name": "Spring Cultivation (8.5-11)",
+  "siteId": "6018bdd3-4317-497f-8b3a-99240cfe488d",
+  "targets": [
+    {
+      "name": "True Night Drifter of the Drunken Palm",
+      "parts": [
+        {
+          "breakSection": [
+            60,
+            20,
+            0
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 810,
+            "level": 31.44
+          },
+          "name": "Body",
+          "partId": 127201,
+          "resists": {
+            "blunt": 0.5,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 1.25,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            1,
+            4
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+          "name": "Fixed Panic"
+        },
+        {
+          "desc": "When taking damage during the combat phase: +20% damage for the turn\nDuring the combat phase: On Clash Lose, take +15% damage from the Skill",
+          "name": "Damage Taken"
+        },
+        {
+          "desc": "Deal +2% damage for every 1% missing HP on self (max 100%)",
+          "name": "Plastered Training"
+        },
+        {
+          "desc": "Turn Start: at max [SipOfAlcoholJin] Stack, consume 2 of its Stack and gain [DrunkAwakening]",
+          "name": "I've got nothing to fear with a bottle of wine by my side"
+        },
+        {
+          "desc": "Encounter Start: reset this unit's SP to 10\nTake -50% damage from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking] (rounded down)\n\nTake -30% damage from Sinners\n\nIf this unit gained 2 or more [SipOfAlcoholJin] last turn, heal 5 SP for every 10% missing HP at Turn Start (max 40)\n\nWhen entering a new phase, if this unit is Staggered, recover from Stagger",
+          "name": "Night Drifter of the Drunken Palm"
+        },
+        {
+          "desc": "Activates if at least 1 enemy has 10+ [Laceration] at Turn End\nAgainst enemies with [Laceration], inflict 1 [DrunkBlood] for every 5 [Laceration] they have (3 times per enemy)",
+          "name": "River of Blooddrops (血滴成河)"
+        }
+      ],
+      "portrait": 91021,
+      "skills": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 5 [Laceration] on target (max 2)\n[WhenUse] Gain 1 [SipOfAlcoholJin]",
+          "levelCorrection": 0,
+          "name": "Frontal Swirl (前旋斬)"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]",
+                "[OnSucceedAttack] If target has 5+ [Laceration], inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 5 [Laceration] on target (max 2)\n[WhenUse] Gain 1 [SipOfAlcoholJin]",
+          "levelCorrection": 0,
+          "name": "Way of the Open-throat Chugging (咽道酒)"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict +3 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 5+ [Laceration], Coin Power +1\n[WhenUse] Base Power +1 for every [DrunkBlood] Count on target (max 2)\n[WinDuel] Gain 1 [SipOfAlcoholJin]\n[DefeatDuel] Lose 2 [SipOfAlcoholJin]",
+          "levelCorrection": 0,
+          "name": "Waterfall (落酒)"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Deal +1% damage for every ([Laceration] + [Laceration] Count) on the target (max 20%)",
+                "[OnSucceedAttack] If this unit has 3+ [SipOfAlcoholJin], reuse this Skill once (once per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 5 [Laceration] on target (max 2)\n[WhenUse] Base Power +1 for every [DrunkBlood] on target (max 2)\n[WhenUse] At 3+ [SipOfAlcoholJin], convert all Coins to [SuperCoin]s\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 0,
+          "name": "Drunklaim (取)"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 2,
+          "baseValue": 6,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "Deal +1% damage for every ([Laceration] + [Laceration] Count) on the target (max 100%)",
+                "Deal +10% damage for every [DrunkBlood] on target (max 50%)",
+                "[OnSucceedAttack] Gain 2 [SipOfAlcoholJin]",
+                "[OnSucceedAttack] Deal ([DrunkBlood] on target x 5) Lust damage (max 25)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +5 for every 6 [Laceration] on target (max 10)\n[WhenUse] If target has [DrunkBlood], convert all Coins to [SuperCoin]s\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 0,
+          "name": "True Decapitation Deathblow (眞鎭終斬)"
+        },
+        {
+          "affinity": "envy",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 13,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[WhenUse] Gain 10 Shield for every [SipOfAlcoholJin] on self (max 50)\n[WhenUse] If target has [DrunkBlood], inflict 5 [Laceration]",
+          "levelCorrection": 0,
+          "name": "Intoxicated Leaning (醉靠)"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [SlashResistDown] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Deal ([DrunkBlood] on target x 5) Lust damage (max 25)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\n[WhenUse] Deal +20% damage for every [SipOfAlcoholJin] on self (max 100%)\n[WhenUse] If target has [DrunkBlood], deal +50% damage",
+          "levelCorrection": 0,
+          "name": "Drunken Returning Strike (醉回攻)"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Deal +1% damage for every ([Laceration] + [Laceration] Count) on the target (max 100%)",
+                "Deal +10% damage for every [DrunkBlood] on target (max 50%)",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 10 [Laceration]",
+                "[UnBrokenCoinOnSucceedAttack] Deal ([DrunkBlood] on target x 10) Lust damage (max 50)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes Jia Xichun\n[CantChangeTarget]\n[WhenUse] If this unit's Speed is faster than the target's, Coin Power +1\n[WhenUse] Gain 1 [AttackUp] and 1 [Agility] next turn for every [SipOfAlcoholJin] on self (max 3)\n[WinDuel] Gain +7 Atk Weight",
+          "levelCorrection": 0,
+          "name": "Ultimate True Decapitation Deathblow (眞-眞鎭終斬)"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "Ultimate True Decapitation Deathblow (眞-眞鎭終斬) deals +20% damage",
+                "[CriticalOnSucceedAttack] Reuse this Coin (5 times max)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Base Power +1 for every 5 [Breath] on self (max 2)\n[WhenUse] If this unit's Speed is faster than the target's, Coin Power +1",
+          "levelCorrection": 0,
+          "name": "Drunken Decapitation Bladefall (落醉斬)"
+        },
+        {
+          "affinity": "envy",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 7,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[WhenUse] Base Power +6 for every 2 surviving ally (max 12)\n[OnSucceedEvade] Gain 3 [Breath]\n[EndBattle] Gain +2 [Breath] Count",
+          "levelCorrection": 0,
+          "name": "Drunken Shadowwalking (醉影步)"
+        }
+      ]
+    },
+    {
+      "name": "Heishou Pack - Si : Veilstriker",
+      "num": 2,
+      "parts": [
+        {
+          "breakSection": [
+            50,
+            0
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 52,
+            "level": 1.79
+          },
+          "name": "Body",
+          "partId": 127701,
+          "resists": {
+            "blunt": 0.75,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 1.25,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            2,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "For a turn, if this unit reduced the target's [BurstPoison] down to 0 Stack, gain 1 [PenetrateDamageUp] next turn (max 2)",
+          "name": "Now's Our Chance"
+        },
+        {
+          "desc": "If target has [BurstPoison], deal +2.5% damage for every [SnakeStance] on self (max 7.5%)",
+          "name": "Snake Venom"
+        }
+      ],
+      "portrait": "1277",
+      "skills": [
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 4 [Breath]",
+                "[OnSucceedAttack] If target has [BurstPoison], inflict +2 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 10 ([Breath] on self + [Burst] on target) (max 2)\n[WhenUse] Gain +2 [Breath] Count",
+          "levelCorrection": 1,
+          "name": "Elongating Palm"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 4 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                "[OnSucceedAttack] If target has [BurstPoison], inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 8 ([Breath] on self + [Burst] on target) (max 3)",
+          "levelCorrection": 2,
+          "name": "Puncturing Serpent Arm"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 13,
+          "coins": [
+            {
+              "descs": [
+                "Deal +25% damage for every [SnakeStance] on self (max 50%)",
+                "[OnSucceedAttack] Consume 3 [BurstPoison] for every [SnakeStance] on self (max 5 per turn)",
+                "[OnSucceedAttack] Inflict 8 [Burst]",
+                "[OnSucceedAttack] Inflict [BurstPoison] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If this unit has [SnakeStance] and target has [BurstPoison], this Skill becomes an Unclashable Skill\nCoin Power +1 for every 4 ([Breath] on self + [Burst] on target) (max 10)\n[WinDuel] Inflict +2 [Burst] Count and gain +2 [Breath] Count",
+          "levelCorrection": 4,
+          "name": "Serpent's Concealed Puncture"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[CanDuelGuard]\n[WhenUse] Coin Power +1 for every 4 [Burst] on target (max 2)\n[WhenUse] Gain 3 [SnakeStance] (once per Skill)",
+          "levelCorrection": 0,
+          "name": "Eyeing for a Chance"
+        }
+      ]
+    },
+    {
+      "name": "Heishou Pack - Si : Shadestriker",
+      "parts": [
+        {
+          "breakSection": [
+            50,
+            0
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 52,
+            "level": 1.79
+          },
+          "name": "Body",
+          "partId": 127801,
+          "resists": {
+            "blunt": 0.5,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 1.25,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            2,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "For a turn, if this unit reduced the target's [BurstPoison] down to 0 Stack, gain 1 [PenetrateDamageUp] next turn (max 2)",
+          "name": "Now's Our Chance"
+        },
+        {
+          "desc": "If target has [BurstPoison], deal +2.5% damage for every [SnakeStance] on self (max 7.5%)",
+          "name": "Snake Venom"
+        }
+      ],
+      "portrait": "1278",
+      "skills": [
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 4 [Breath]",
+                "[OnSucceedAttack] If target has [BurstPoison], inflict +2 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 10 ([Breath] on self + [Burst] on target) (max 2)\n[WhenUse] Gain +2 [Breath] Count",
+          "levelCorrection": 1,
+          "name": "Elongating Arm"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 4 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Burst]",
+                "[OnSucceedAttack] If target has [BurstPoison], inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 8 ([Breath] on self + [Burst] on target) (max 3)",
+          "levelCorrection": 2,
+          "name": "Gnawing Serpent Arm"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count",
+                "[OnSucceedAttack] Inflict [BurstPoison] next turn (once per Skill)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count",
+                "[OnSucceedAttack] If this unit has [SnakeStance], Reuse this Coin once (once per Skill)",
+                "- The Reused Coin deals -70% damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 8 ([Breath] on self + [Burst] on target) (max 4)\n[WinDuel] Inflict +2 [Burst] Count\n[WinDuel] Gain +2 [Breath] Count",
+          "levelCorrection": 4,
+          "name": "Serpent's Shadowed Puncture"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[CanDuelGuard]\n[WhenUse] Coin Power +1 for every 4 [Burst] on target (max 2)\n[WhenUse] Gain 3 [SnakeStance] (once per Skill)",
+          "levelCorrection": 0,
+          "name": "Observe for a Chance"
+        }
+      ]
+    },
+    {
+      "name": "Heishou Pack - Si : Depthstriker",
+      "parts": [
+        {
+          "breakSection": [
+            50,
+            0
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 76,
+            "level": 2.63
+          },
+          "name": "Body",
+          "partId": 127901,
+          "resists": {
+            "blunt": 0.5,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 1.25,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            3,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "When using an [WideAreaRampage] attack, when attacking the same target, deal +20% damage and inflict +1 more [Burst] Potency or Count",
+          "name": "I See Your Weakness"
+        },
+        {
+          "desc": "For a turn, if this unit reduced the target's [BurstPoison] down to 0 Stack, gain 1 [PenetrateDamageUp] next turn (max 2)",
+          "name": "I Spy an Opportunity"
+        },
+        {
+          "desc": "If target has [BurstPoison], deal +5% damage for every [SnakeStance] on self (max 15%)",
+          "name": "Snake Deathvenom"
+        }
+      ],
+      "portrait": "1279",
+      "skills": [
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]",
+                "[OnSucceedAttack] Gain 4 [Breath]",
+                "[OnSucceedAttack] If target has [BurstPoison], inflict +2 [Burst] Count",
+                "[CriticalOnSucceedAttack] If this unit has 10+ [Breath], gain 1 [SnakeStance] and Reuse Coin once (once per Skill; can gain up to 2 [SnakeStance] per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 10 ([Breath] on self + [Burst] on target) (max 2)\n[WinDuel] Gain +3 [Breath] Count",
+          "levelCorrection": 2,
+          "name": "Mutated Elongating Arm"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Burst]",
+                "[OnSucceedAttack] If target has [BurstPoison], inflict +2 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Burst]",
+                "[OnSucceedAttack] If target has [BurstPoison], inflict +2 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Burst]",
+                "[OnSucceedAttack] If target has [BurstPoison], inflict +2 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 8 ([Breath] on self + [Burst] on target) (max 3)\n[BeforeAttack] If this unit has [SnakeStance], gain +2 Atk Weight\n- Becomes a [WideAreaRampage] Skill\n- When attacking the same target, if target has 2 or fewer [Burst] Count, inflict +1 [Burst] Count and consume 1 [BurstPoison]\n[WinDuel] Inflict +1 [Burst] Count on all targets",
+          "levelCorrection": 2,
+          "name": "Elongating Serpent Arm"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 16,
+          "coins": [
+            {
+              "descs": [
+                "If this unit has [SnakeStance], deal +100% damage",
+                "[OnSucceedAttack] Consume 5 [BurstPoison] for every [SnakeStance] on self (once per turn)",
+                "[OnSucceedAttack] Inflict 10 [Burst]",
+                "[OnSucceedAttack] Inflict [BurstPoison] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If this unit has [SnakeStance] and target has [BurstPoison], this Skill becomes an Unclashable Skill\n[WhenUse] Coin Power +1 for every 4 ([Breath] on self + [Burst] on target) (max 10)\n[WinDuel] Inflict +2 [Burst] Count and gain +3 [Breath] Count",
+          "levelCorrection": 5,
+          "name": "Serpent's Keenlance"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[CanDuelGuard]\n[WhenUse] Coin Power +1 for every 4 [Burst] on target (max 3)\n[WhenUse] Gain 3 [SnakeStance] (once per Skill)",
+          "levelCorrection": 0,
+          "name": "Wait for a Chance"
+        }
+      ]
+    }
+  ]
+}

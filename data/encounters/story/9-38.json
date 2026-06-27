@@ -1,0 +1,722 @@
+{
+  "name": "The Unsevering (9-38)",
+  "siteId": "740091b9-24b8-4016-8eef-df9b9e4870f4",
+  "targets": [
+    {
+      "name": "The Middle Nursefather - Matthias",
+      "parts": [
+        {
+          "breakSection": [
+            35
+          ],
+          "defCorrection": 15,
+          "hp": {
+            "base": 500,
+            "level": 60
+          },
+          "name": "Body",
+          "partId": 132701,
+          "resists": {
+            "blunt": 0.8,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1.2,
+            "pride": 1,
+            "slash": 1,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            1,
+            3
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "On Clash Win, gain 1 [DaughterEducationSpider]\n\nOn Hit with a Skill, gain 1 [DaughterEducationSpider] (once per Skill; this effect does not activate for Cracked Coins)\n\nOn Clash Win with the first-used Skill in a turn, gain 1 more [DaughterEducationSpider] and the Skill gains Coin Power +1",
+          "name": "My Daughter's Education"
+        },
+        {
+          "desc": "When hit by 2 Skills, gain 1 [ResentmentSpider] and lose 1 [DaughterEducationSpider] (number of hits taken is always tracked)\n\nAt max [ResentmentSpider] Stack, use a powerful attack\n\nTurn End: At less than 80% / 60% / 40% HP, max out this unit's [ResentmentSpider] Stack",
+          "name": "Resentment"
+        },
+        {
+          "desc": "Encounter Start: Inflict [VengeanceBookSpider] on all Sinners and LCD units\n\nIf this unit hit with more than 3 Skills this turn, gain 1 [ReinforcedTattooSpider] next turn for every excess Skill that hit",
+          "name": "The Book of Vengeance"
+        },
+        {
+          "desc": "Takes -30% damage from [Combustion], [Laceration], [Vibration], and [Burst] (rounded down)\n-50% to the amount of Stagger Threshold raised (rounded down)",
+          "name": "Vengeance Tattoos [<s>Great Brother</s>]"
+        },
+        {
+          "desc": "???",
+          "name": "???"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+          "name": "Fixed Panic"
+        }
+      ],
+      "portrait": "1327",
+      "skills": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                "[UnBrokenCoinOnSucceedAttack] If this unit has [ReinforcedTattooSpider], inflict 2 [Paralysis]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has 4+ [Laceration], Coin Power +1",
+          "levelCorrection": 2,
+          "name": "Stomping"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 11,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Raise Stagger Threshold by 5"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Raise Stagger Threshold by 5"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has 4+ [Laceration], Coin Power +1",
+          "levelCorrection": 2,
+          "name": "Punting"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 13,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Laceration] Count",
+                "[UnBrokenCoinOnSucceedAttack] If this unit has [ReinforcedTattooSpider], inflict 2 [Paralysis]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Base Power +1 for every 3 [Laceration] on target (max 3)\n[EndSkill] Consume all [ResentmentSpider] on self and gain 1 [DaughterEducationSpider]",
+          "levelCorrection": 2,
+          "name": "Stamp of Vengeance"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 12,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Binding]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Deal 10 Blunt bonus damage"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Paralysis]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If this unit has [ReinforcedTattooSpider], deal 5 Blunt bonus damage On Coin Hit",
+          "levelCorrection": 2,
+          "name": "Don't Let Somethin' Like This Break Ya!"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 14,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by 10"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "When hit, Reuse this Skill once for every [ReinforcedTattooSpider] on self (1 time max)\n[WhenUse] If this unit has [ReinforcedTattooSpider], On Coin Hit, inflict +1 [Laceration] Count",
+          "levelCorrection": 2,
+          "name": "Rule Violation"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 15,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Deal 10 Blunt bonus damage"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Deal 10 Blunt bonus damage"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Deal 10 Blunt bonus damage"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantChangeTarget]\n[WhenUse] If this unit has [ReinforcedTattooSpider], deal 10 Blunt bonus damage on Coin Hit\n[EndSkill] [MiddleFatherSwordOne] becomes [MiddleFatherSwordTwo]",
+          "levelCorrection": 3,
+          "name": "Gonna Unbox a Layer of Packaging!"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 11,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                "[UnBrokenCoinOnSucceedAttack] If this unit has [ReinforcedTattooSpider], inflict 2 [Paralysis]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has 4+ [Laceration], Coin Power +1\n[WhenUse] If this unit has [ReinforcedTattooSpider], inflict 1 [Laceration] On Coin Hit\n[DefeatDuel] Gain 1 [ParryingResultUp] next turn (2 times per turn)",
+          "levelCorrection": 3,
+          "name": "Stomping"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 13,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Raise Stagger Threshold by 10"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Raise Stagger Threshold by 10"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has 4+ [Laceration], Coin Power +1\n[WhenUse] If this unit has [ReinforcedTattooSpider], inflict 1 [Laceration] On Coin Hit\n[DefeatDuel] Gain 1 [VioletDamageUp] next turn (2 times per turn)",
+          "levelCorrection": 3,
+          "name": "Punting"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 16,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Laceration] Count",
+                "[UnBrokenCoinOnSucceedAttack] If this unit has [ReinforcedTattooSpider], inflict 2 [Paralysis]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Base Power +1 for every 3 [Laceration] on target (max 3)\n[WhenUse] If this unit has [ReinforcedTattooSpider], inflict 1 [Laceration] On Coin Hit\n[EndSkill] Consume all [ResentmentSpider] on self and gain 1 [DaughterEducationSpider]",
+          "levelCorrection": 3,
+          "name": "Stamp of Vengeance"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 15,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict 2 [Binding]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Deal 15 Blunt bonus damage"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Paralysis]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If this unit has [ReinforcedTattooSpider], deal 10 Blunt bonus damage On Coin Hit\n[BeforeAttack] At 50% or less HP, deal +40% damage",
+          "levelCorrection": 3,
+          "name": "Are Ya Feelin' the Heat?!"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 16,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Lower user's Stagger Threshold by 10"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "When hit, <color=#ff6000><mark=#ff000040><b><u>Reuse this Skill once for every [ReinforcedTattooSpider] on self</u></b></mark></color> (1 time max)\n[WhenUse] If this unit has [ReinforcedTattooSpider], On Coin Hit, inflict +1 [Laceration] Count\n[BeforeAttack] At 50% or less HP, deal +40% damage",
+          "levelCorrection": 3,
+          "name": "Rule Violation"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 14,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Deal 10 Blunt bonus damage"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Deal 10 Blunt bonus damage"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Deal 10 Blunt bonus damage"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 5 [Vulnerable]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantChangeTarget]\n[WhenUse] If this unit has [ReinforcedTattooSpider], deal 10 Blunt bonus damage on Coin Hit\n[EndSkill] [MiddleFatherSwordTwo] becomes [MiddleFatherSwordThree]",
+          "levelCorrection": 4,
+          "name": "Looks Like I Gotta Unbox the Second Layer, too."
+        }
+      ]
+    },
+    {
+      "name": "The Middle Apprentice - Kira",
+      "parts": [
+        {
+          "breakSection": [
+            50,
+            30
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 400,
+            "level": 15.6
+          },
+          "name": "Body",
+          "partId": 132801,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1.25,
+            "pride": 1,
+            "slash": 1,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            2,
+            3
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "On Clash Win, gain 1 [GotACompliment]\n\nOn Hit with a Skill, gain 1 [GotACompliment] (once per Skill; this effect does not activate for Cracked Coins)\n\nOn Clash Win with the first-used Skill in a turn, gain 1 more [GotACompliment] and the Skill gains Coin Power +1",
+          "name": "Praise is the Wind in Her Sail"
+        },
+        {
+          "desc": "When hit by 2 Skills, gain 1 [ResentmentSpiderDaughter] and lose 1 [GotACompliment] (number of hits taken is always tracked)\n\nAt max [ResentmentSpiderDaughter] Stack, use a powerful attack\n\nTurn End: At less than 80% / 60% / 40% HP, max out this unit's [ResentmentSpiderDaughter] Stack",
+          "name": "I'm pretty sure the Middle never forgets"
+        },
+        {
+          "desc": "If this unit hit with more than 2 Skills, gain 1 [ReinforcedTattooSpiderDaughter] next turn for every excess Skill that hit",
+          "name": "The Middle Styled Tattoos"
+        },
+        {
+          "desc": "Begins Encounter with [HeatingWireOffSpider]\n\nTurn Start: At 3+ [GotACompliment], gain [HeatingWireOnSpider] for the turn and also inflict [Combustion] with Skills that inflict [Laceration]\n\nTurn End: At less than 3 [GotACompliment], convert this unit's [HeatingWireOnSpider] to [HeatingWireOffSpider]",
+          "name": "Am I doing this right, Papa?!"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+          "name": "Fixed Panic"
+        }
+      ],
+      "portrait": "1328",
+      "skills": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Deal 3 Blunt bonus damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Deal 3 Blunt bonus damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Deal 3 Blunt bonus damage",
+                "[UnBrokenCoinOnSucceedAttack] If this unit has [ReinforcedTattooSpiderDaughter], inflict 2 [Binding]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has 5+ [Laceration], Base Power +2\n[DefeatDuel] Damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 2,
+          "name": "Time for Some Warm-up!"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Deal 5 Blunt bonus damage",
+                "[OnSucceedAttack] Raise Stagger Threshold by 5"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Deal 5 Blunt bonus damage",
+                "[OnSucceedAttack] Raise Stagger Threshold by 5",
+                "[OnSucceedAttack] At 4+ [GotACompliment], Reuse this Coin 3 times"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has 5+ [Laceration], Base Power +2\n[WhenUse] If this unit has [ReinforcedTattooSpiderDaughter], inflict 2 [Laceration] On Coin Hit",
+          "levelCorrection": 2,
+          "name": "Totally Badass Ass-kicking"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Thermal Blade Skill. \nWhen in [HeatingWireOnSpider] state, this Skill activates its Thermal Blade effects\nIf target has 4+ [Laceration], Coin Power +1\n[WhenUse] If this unit has [ReinforcedTattooSpiderDaughter], inflict +1 [Laceration] Count On Coin Hit\n[EndSkill] At 2+ [GotACompliment], gain 1 [VioletDamageUp] next turn",
+          "levelCorrection": 2,
+          "name": "Fixer Disemboweling!"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Deal 5 Blunt bonus damage",
+                "[UnBrokenCoinOnSucceedAttack] If this unit has [ReinforcedTattooSpiderDaughter], inflict 2 [Binding]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Thermal Blade Skill. \nWhen in [HeatingWireOnSpider] state, this Skill activates its Thermal Blade effects\nIf target has 4+ [Laceration], Coin Power +1\n[WhenUse] If this unit has [ReinforcedTattooSpiderDaughter], inflict +1 [Laceration] Count On Coin Hit\n[DefeatDuel] Damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 2,
+          "name": "Crossing Dervish!"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Deal 5 Blunt bonus damage",
+                "[UnBrokenCoinOnSucceedAttack] Raise Stagger Threshold by 5"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Thermal Blade Skill. \nWhen in [HeatingWireOnSpider] state, this Skill activates its Thermal Blade effects\n[WhenUse] If this unit has [ReinforcedTattooSpiderDaughter], inflict +1 [Laceration] Count On Coin Hit\n[WhenUse] At 40% or less HP, deal +60% damage\n[WhenUse] At 5+ [GotACompliment], 50% chance to inflict 1 [Paralysis] On Coin Hit\n[DefeatDuel] Damage dealt by this Skill cannot Stagger the target\n[EndSkill] Consume all [ResentmentSpiderDaughter] on self and gain 1 [GotACompliment]",
+          "levelCorrection": 2,
+          "name": "Violet~ Breaking Slam!"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] Lower user's Stagger Threshold by 10"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "Thermal Blade Skill. \nWhen in [HeatingWireOnSpider] state, this Skill activates its Thermal Blade effects\nWhen Hit, <color=#ff6000><mark=#ff000040><b><u>Reuse this Skill once for every [ReinforcedTattooSpiderDaughter] on self</u></b></mark></color> (2 times max)\n[WhenUse] If this unit has [ReinforcedTattooSpiderDaughter], inflict 1 [Laceration] On Coin Hit\n[WhenUse] At 40% or less HP, deal +40% damage",
+          "levelCorrection": 2,
+          "name": "I'll Get You Back for This...!"
+        }
+      ]
+    }
+  ]
+}

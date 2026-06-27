@@ -1,0 +1,334 @@
+{
+  "name": "The Unchanging (4-3)",
+  "siteId": "0a86e28b-ea1a-44e9-88c3-92da4847973e",
+  "targets": [
+    {
+      "name": "K Corp. Filming Drone",
+      "num": 3,
+      "parts": [
+        {
+          "breakSection": [
+            30,
+            0,
+            -10
+          ],
+          "defCorrection": -4,
+          "hp": 113.9,
+          "name": "Body",
+          "partId": 804201,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 2,
+            "pride": 1,
+            "slash": 0.5,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            3,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Sanity is fixed at 0.",
+          "name": "Mechanical Mentality"
+        },
+        {
+          "desc": "This unit's stagger threshold rises by 50% more when affected by Tremor Burst",
+          "name": "Caution: Unsteady"
+        },
+        {
+          "desc": "Take +30% damage from <sprite name=\"Burst\"><color=#f8c200><u><link=\"Burst\">Rupture</color></link></u> (Rounded down)",
+          "name": "Caution: Delicate"
+        }
+      ],
+      "portrait": "8042",
+      "skills": [
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -8,
+          "name": "Proximity Shooting"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Retreat; Retreat;"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Target loses 10 SP",
+          "levelCorrection": -8,
+          "name": "Flash; Flash;"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 Fragile next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -8,
+          "name": "Scanning for weakness."
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 Paralyze next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -8,
+          "name": "Impeding movement."
+        }
+      ]
+    },
+    {
+      "name": "Brazen Bull - Tearful",
+      "parts": [
+        {
+          "breakSection": [
+            25,
+            0
+          ],
+          "defCorrection": 7,
+          "hp": 522.5,
+          "name": "Body",
+          "partId": 804101,
+          "resists": {
+            "blunt": 1.25,
+            "envy": 1,
+            "gloom": 2,
+            "gluttony": 0.5,
+            "lust": 1,
+            "pierce": 0.5,
+            "pride": 1,
+            "slash": 0.5,
+            "sloth": 1.5,
+            "wrath": 0.5
+          },
+          "speed": [
+            1,
+            4
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "When the head is broken, all parts become staggered next turn. Afterwards, all parts have 3 Attack Power Down for the duration of the battle.",
+          "name": "Downed by the Horns"
+        },
+        {
+          "desc": "At the end of the turn, if the unit has 3+ Unresolved Sorrow, generates a head next turn and changes behavior.",
+          "name": "Expanding Sorrow"
+        },
+        {
+          "desc": "At the end of the turn, if the unit has 3+ Unresolved Sorrow and the head is broken, becomes staggered next turn.",
+          "name": "Inconsolable Sorrow"
+        }
+      ],
+      "portrait": "8041",
+      "skills": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 Burn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 Burn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Ram"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 Burn Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Pin Down"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 Burn",
+                "[OnSucceedAttack] Raise Stagger Threshold by 20% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 Burn",
+                "[OnSucceedAttack] Raise Stagger Threshold by 20% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 Burn",
+                "[OnSucceedAttack] Raise Stagger Threshold by 20% of damage dealt"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Charge In"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Target loses 15 SP",
+                "[OnSucceedAttack] Raise Stagger Threshold by 50% of damage dealt"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[DefeatDuel] Gain 1 Unresolved Sorrow",
+          "levelCorrection": -5,
+          "name": "Overflowing Sorrow"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 Wavering Emotions",
+                "[OnSucceedAttack] Inflict +3 Sinking Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Gain 1 Haste and 1 Attack Power Up next turn",
+          "levelCorrection": 2,
+          "name": "Heated Cries"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 Wavering Emotions",
+                "[OnSucceedAttack] Inflict 2 Sinking"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 Wavering Emotions",
+                "[OnSucceedAttack] Inflict 2 Sinking"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Gain 1 Haste and 1 Attack Power Up next turn",
+          "levelCorrection": 2,
+          "name": "Heated Screams"
+        }
+      ]
+    }
+  ]
+}

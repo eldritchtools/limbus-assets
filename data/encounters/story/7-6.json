@@ -1,0 +1,208 @@
+{
+  "name": "The Dream Ending (7-6)",
+  "siteId": "929e69e9-06f7-460f-ac9a-c3c1d9754591",
+  "targets": [
+    {
+      "name": "Cinq West Section 3 Camille",
+      "parts": [
+        {
+          "breakSection": [
+            60,
+            30
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 52,
+            "level": 3.59
+          },
+          "name": "Body",
+          "partId": 837101,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 0.5,
+            "pride": 1,
+            "slash": 1.5,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            4,
+            7
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn Start: if this unit's Speed is faster than the target's, gain 1 [PenetrateDamageUp]",
+          "name": "Casual Opportunity"
+        },
+        {
+          "desc": "Turn End: Heal 7 SP\nTurn End: Gain [Agility] equal to ([Breath] on self/4) next turn (max 3)",
+          "name": "Leisurely Breathing"
+        },
+        {
+          "desc": "Use Salut if the target is Staggered",
+          "name": "Single Combat"
+        },
+        {
+          "desc": "When using a Skill against the same Slot this unit successfully hit last turn, gain the following effects based on the number of consecutive turns it successfully hit the Slot\nResets if this unit failed to attack last turn.\n- 1 Consecutive hit: Clash Power +1\n- 2 Consecutive hits: Base Power +1\n- 3 Consecutive hits: Base Power +1, Coin Power +1",
+          "name": "Focused Attack"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+          "name": "Fixed Panic"
+        }
+      ],
+      "portrait": "8371",
+      "skills": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 7,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Inflict [DuelDeclaration_Camille]\n[WhenUse] Gain 5 [Breath]\n[WinDuel] Gain +2 [Breath] Count",
+          "levelCorrection": 0,
+          "name": "Allez"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Breath] Count",
+                "[OnSucceedAttack] At 7+ Speed, inflict 3 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath]",
+                "[OnSucceedAttack] At 7+ Speed, inflict 3 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 2 [Breath]",
+          "levelCorrection": 0,
+          "name": "Coup Droit"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath]",
+                "[OnSucceedAttack] At 7+ Speed, inflict 3 [Burst] Count",
+                "[CriticalOnSucceedAttack] +50% Damage on Critical Hit"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 7+ [Breath], Coin Power +2\n[WinDuel] Gain +2 [Breath] Count",
+          "levelCorrection": 0,
+          "name": "Fente"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [Breath] Count",
+                "[OnSucceedAttack] At 7+ Speed, inflict 3 [Burst] and +1 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 5 [Breath]",
+                "[OnSucceedAttack] At 7+ Speed, inflict 3 [Burst] and +1 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 5 [Breath]",
+                "[OnSucceedAttack] At 7+ Speed, inflict 3 [Burst] and +1 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] +100% Damage on Critical Hit",
+                "[OnSucceedAttack] Deal +5% damage for every [Burst] on the target (Max 50%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If this unit's Speed is faster than the target's, Coin Power +1 (Coin Power +1 for every 2 Speed difference; max 3)",
+          "levelCorrection": 5,
+          "name": "Salut"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vulnerable] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Deal more damage based on number of Clashes (+10% damage for every Clash, max 50%)\n[WinDuel] Gain 2 [Agility] next turn\n[DefeatDuel] Gain 2 [Binding] next turn",
+          "levelCorrection": 0,
+          "name": "Parry"
+        },
+        {
+          "affinity": "lust",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[OnSucceedEvade] Gain 1 [Agility] next turn",
+          "levelCorrection": 0,
+          "name": "Défensive"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "name": "LCB Regular Check-up BokGak (7.5-11)",
+  "siteId": "997e33e3-3224-459f-838a-572b233bf39f",
+  "targets": [
+    {
+      "name": "Sancho",
+      "parts": [
+        {
+          "breakSection": [
+            50,
+            0
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 383,
+            "level": 26.43
+          },
+          "name": "Body",
+          "partId": 138901,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 0.5,
+            "gluttony": 1.2,
+            "lust": 1.5,
+            "pierce": 1.2,
+            "pride": 1,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 1.2
+          },
+          "speed": [
+            1,
+            2
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "If this unit is on field, or is one of the units that can appear on this Stage, increase [BloodDinner] value by the amount of [Laceration] damage collectively received by every unit. \nWhen this unit enters the field, the sleeping blood drenching the battlefield will fill the surface.",
+          "name": "Bloodfeast"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+          "name": "Fixed Panic"
+        }
+      ],
+      "portrait": 1079,
+      "skills": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Consume 20 [BloodDinner]: gain 1 [BloodArmor] for every 10 [BloodDinner] consumed\n[WhenUse] Coin Power +1 for every 10 [BloodArmor] (max 2)\n[WhenUse] Coin Power +1 for every 15 [Laceration] on self (max 3)",
+          "levelCorrection": 1,
+          "name": "Topple"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Consume 20 [BloodDinner]: gain 1 [BloodArmor] for every 10 [BloodDinner] consumed\n[WhenUse] Coin Power +1 for every 10 [BloodArmor] (max 2)\n[WhenUse] Coin Power +1 for every 15 [Laceration] on self (max 3)",
+          "levelCorrection": 1,
+          "name": "Wound"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 6+ [Laceration], Coin Power +1\n[WinDuel] With this Skill, deal +20% damage with every Stage of [BloodArmor] (max 60%)\n[DefeatDuel] Consume 4 [BloodArmor]",
+          "levelCorrection": 2,
+          "name": "Don Quixote Hardblood Arts 4 - Sundering"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Activate [Laceration] on the target equal to its Count. Use up the target's [Laceration] Count down to 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] For every 3 [Laceration] on the target, Base Power +1 (max 3)\n[WinDuel] With this Skill, deal +20% damage with every Stage of [BloodArmor] (max 60%)\n[DefeatDuel] Consume 4 [BloodArmor]",
+          "levelCorrection": 3,
+          "name": "Don Quixote Hardblood Arts 11 - Impaling"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 8 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn\n- If this Skill consumed 30 [BloodDinner], inflict 2 additional [Binding]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes targets with the most [Laceration]\n[BeforeAttack] Atk Weight +1 for every 10 [BloodArmor] on self (max 3)\n[WhenUse] Clash Power +1 for every 5 [Laceration] on the target (max 3)\n[WhenUse] Consume up to 30 [BloodDinner]: gain 1 [BloodArmor] and Coin Power +1 for every 15 [BloodDinner] consumed (max 2)\n- If this unit failed to consume [BloodDinner], gain 10 [Laceration], and activate [Laceration] immediately. Lose 1 [Laceration] Count\n[EndSkill] Increase [BloodDinner] equal to the damage this Skill dealt",
+          "levelCorrection": 3,
+          "name": "Variant Don Quixote Style: Sancho Arts 4 - Track"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Paralysis] next turn\n- If this Skill consumed 50 [BloodDinner], inflict 2 additional [Paralysis]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes targets with the most [Laceration]\n[BeforeAttack] Atk Weight +1 for every 10 [BloodArmor] on self (max 2)\n[WhenUse] Clash Power +1 for every 5 [Laceration] on the target (max 3)\n[WhenUse] Consume up to 30 [BloodDinner]: gain 1 [BloodArmor] and Coin Power +1 for every 15 [BloodDinner] consumed (max 2)\n- If this unit failed to consume [BloodDinner], gain 10 [Laceration], and activate [Laceration] immediately. Lose 1 [Laceration] Count\n[EndSkill] Increase [BloodDinner] equal to the damage this Skill dealt",
+          "levelCorrection": 3,
+          "name": "Variant Don Quixote Style: Sancho Arts 3 - Ambush"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 6,
+          "baseValue": 2,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 5 [Laceration] and +3 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Can Clash with this Skill regardless of Speed\n[StartBattle] Gain 1 [SwirlingBlood]\n[StartBattle] Consume 100 [BloodDinner]; gain 1 [BloodArmor] and 20 Shield HP for every 10 [BloodDinner] consumed\n- If this unit doesn't have enough [BloodDinner], gain 50 [Laceration], and activate it immediately. Lose 2 [Laceration] Count. Gain 200 Shield HP (this damage does not reduce this unit's HP to 0)\n[DefeatDuel] As long as the Shield HP from this Skill remains, gain 3 [Vulnerable]\n[DefeatDuel] This Skill deals -50% damage\n[EndSkill] End Combat Phase",
+          "levelCorrection": 3,
+          "name": "Don Quixote Hardblood Arts 2 - Hardblood"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 15,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 10 [Laceration] and +3 [Laceration] Count",
+                "[OnSucceedAttack] Inflict 5 [Laceration] and +3 [Laceration] Count to all enemies except for the target"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +10% damage for every [Laceration] on the target (max 200%)\nDeal +10% damage for every 3 [BloodArmor] (max 100%)\n[StartBattle] Consume (45 - current SP) [BloodDinner] and heal up to 45 SP\n- If there isn't enough [BloodDinner], gain 20 [Laceration] and heal up to 45 SP\n- Gain Shield HP equal to remaining [BloodDinner] (max 100)\n[WinDuel] Inflict 10 [Laceration]\n[EndSkill] Increase [BloodDinner] by HP damage dealt against the target\n[EndSkill] If the target is defeated, increase [BloodDinner] by the target's max HP",
+          "levelCorrection": 5,
+          "name": "La Aventura Ha Terminado"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 6,
+          "baseValue": 20,
+          "coinValue": 14,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Inflict 10 [Laceration] and +3 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +40% damage for every 10 (sum of [Laceration] on all targets]) (max 200%)\nDeal +10% damage for every cumulative [BloodDinner] this unit consumed (max 100%)\n[StartBattle] Consume (45 - current SP) [BloodDinner] and heal up to 45 SP\n- If there isn't enough [BloodDinner], gain 20 [Laceration] and heal up to 45 SP\n- Gain Shield HP equal to remaining [BloodDinner] (max 100)\n[WinDuel] Inflict 10 [Laceration]\n[EndSkill] Increase [BloodDinner] by HP damage dealt against the target\n[EndSkill] If the target is defeated, increase [BloodDinner] by the target's max HP",
+          "levelCorrection": 5,
+          "name": "La Aventura Ha Terminado..."
+        }
+      ]
+    }
+  ]
+}

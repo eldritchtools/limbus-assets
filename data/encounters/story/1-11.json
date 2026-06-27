@@ -1,0 +1,654 @@
+{
+  "battles": [
+    {
+      "targets": [
+        {
+          "name": "Ebony Queen's Apple",
+          "parts": [
+            {
+              "defCorrection": -1,
+              "hp": {
+                "base": 18,
+                "level": 0.51
+              },
+              "name": "Fruit",
+              "partId": 800101,
+              "resists": {
+                "blunt": 2,
+                "envy": 0.75,
+                "gloom": 0.5,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 2,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 2
+              },
+              "speed": [
+                1,
+                2
+              ]
+            },
+            {
+              "defCorrection": -1,
+              "hp": {
+                "base": 92,
+                "level": 2.54
+              },
+              "name": "Left Stem",
+              "partId": 800102,
+              "resists": {
+                "blunt": 1,
+                "envy": 0.75,
+                "gloom": 0.5,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 0.75,
+                "pride": 2,
+                "slash": 2,
+                "sloth": 1,
+                "wrath": 2
+              },
+              "speed": [
+                1,
+                3
+              ]
+            },
+            {
+              "breakSection": [
+                40
+              ],
+              "defCorrection": -1,
+              "hp": {
+                "base": 92,
+                "level": 2.54
+              },
+              "name": "Right Stem",
+              "partId": 800103,
+              "resists": {
+                "blunt": 1,
+                "envy": 0.75,
+                "gloom": 0.5,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 0.75,
+                "pride": 2,
+                "slash": 2,
+                "sloth": 1,
+                "wrath": 2
+              },
+              "speed": [
+                1,
+                3
+              ]
+            },
+            {
+              "breakSection": [
+                70,
+                30
+              ],
+              "defCorrection": -1,
+              "hp": {
+                "base": 148,
+                "level": 4.07
+              },
+              "name": "Roots",
+              "partId": 800104,
+              "resists": {
+                "blunt": 1,
+                "envy": 0.75,
+                "gloom": 0.5,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 0.5,
+                "pride": 2,
+                "slash": 2,
+                "sloth": 1,
+                "wrath": 2
+              },
+              "speed": [
+                1,
+                2
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "When the Fruit is destroyed, all parts are inflicted with 2 Fragile.\nThe Fruit regenerates after 1 turn.",
+              "name": "An Apple’s Twilight"
+            },
+            {
+              "desc": "At the start of the turn, inflict 1 Bind on all enemies.\nThis lasts until the Roots have been broken.",
+              "name": "Entangling Roots"
+            },
+            {
+              "desc": "The Roots gain 2 Attack Power Up for each intact Arm.",
+              "name": "One Sole Root"
+            }
+          ],
+          "portrait": "8001",
+          "skills": [
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 2,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 1,
+              "name": "Distrust"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 2,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 1,
+              "name": "Pale Stem"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 2,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 1,
+              "name": "Pale Stem"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Inflict +3 Bleed Count next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 1,
+              "name": "Root Spike"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 5,
+              "baseValue": 6,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Inflict 1 Fragile next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 1,
+              "name": "Shared Pain"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "",
+              "levelCorrection": 1,
+              "name": "Vain Fruit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Doomsday Calendar",
+          "passives": [
+            {
+              "desc": "The battle proceeds to the next phase after all the Clay Dolls are defeated.",
+              "name": "Let the Blood Festival Flow"
+            }
+          ],
+          "portrait": "8002"
+        },
+        {
+          "name": "Doomsday Clay Doll",
+          "num": 5,
+          "parts": [
+            {
+              "defCorrection": -3,
+              "hp": 40.34,
+              "name": "Head",
+              "partId": 800301,
+              "resists": {
+                "blunt": 2,
+                "envy": 2,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 0.75,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 2,
+                "wrath": 1.5
+              },
+              "speed": [
+                1,
+                4
+              ]
+            }
+          ],
+          "portrait": "8003",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 2,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Inflict +1 Bleed Count next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 3,
+              "name": "Lunge"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 1,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Inflict +1 Bleed Count next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 3,
+              "name": "Claw"
+            }
+          ]
+        },
+        {
+          "name": "Burning Clay Doll",
+          "num": 8,
+          "parts": [
+            {
+              "defCorrection": -3,
+              "hp": 40.34,
+              "name": "Head",
+              "partId": 800401,
+              "resists": {
+                "blunt": 2,
+                "envy": 2,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 0.75,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 2,
+                "wrath": 1.5
+              },
+              "speed": [
+                1,
+                4
+              ]
+            }
+          ],
+          "portrait": "8004",
+          "skills": [
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Burn next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 3,
+              "name": "Belch Fire"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 2,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Inflict +1 Bleed Count next turn",
+                    "[OnSucceedAttackHead] Inflict +1 Burn Count next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 3,
+              "name": "Severe Lunge"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 1,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Inflict +1 Bleed Count next turn",
+                    "[OnSucceedAttackHead] Inflict +1 Burn Count next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 3,
+              "name": "Raw Claw"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phases": [
+        {
+          "targets": [
+            {
+              "name": "Golden Apple",
+              "parts": [
+                {
+                  "breakSection": [
+                    50
+                  ],
+                  "defCorrection": 0,
+                  "hp": 220.29,
+                  "name": "Body",
+                  "partId": 800801,
+                  "resists": {
+                    "blunt": 2,
+                    "envy": 0.75,
+                    "gloom": 1,
+                    "gluttony": 1,
+                    "lust": 0.5,
+                    "pierce": 1,
+                    "pride": 0.75,
+                    "slash": 0.5,
+                    "sloth": 2,
+                    "wrath": 1.5
+                  },
+                  "speed": [
+                    1,
+                    4
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Heals HP every turn based on the amount of Golden Sheen.",
+                  "name": "Cracked Gold"
+                }
+              ],
+              "portrait": "8008",
+              "skills": [
+                {
+                  "affinity": "gluttony",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 1,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    },
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": -2,
+                  "name": "Sprout"
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[DefeatDuel] Take 20 damage",
+                        "[DefeatDuel] Lose 1 Golden Sheen"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": -2,
+                  "name": "Golden Fruit"
+                },
+                {
+                  "affinity": "none",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "guard",
+                  "desc": "",
+                  "levelCorrection": -2,
+                  "name": "Solid Gold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "targets": [
+            {
+              "name": "Golden Apple",
+              "parts": [
+                {
+                  "defCorrection": 0,
+                  "hp": 53.6,
+                  "name": "Head",
+                  "partId": 800901,
+                  "resists": {
+                    "blunt": 2,
+                    "envy": 1,
+                    "gloom": 0.75,
+                    "gluttony": 1,
+                    "lust": 0.5,
+                    "pierce": 1,
+                    "pride": 1,
+                    "slash": 1,
+                    "sloth": 2,
+                    "wrath": 1.5
+                  },
+                  "speed": [
+                    1,
+                    4
+                  ]
+                },
+                {
+                  "defCorrection": 0,
+                  "hp": 213.5,
+                  "name": "Body",
+                  "partId": 800902,
+                  "resists": {
+                    "blunt": 1.5,
+                    "envy": 1,
+                    "gloom": 0.75,
+                    "gluttony": 1,
+                    "lust": 0.5,
+                    "pierce": 1,
+                    "pride": 1,
+                    "slash": 2,
+                    "sloth": 2,
+                    "wrath": 1.5
+                  },
+                  "speed": [
+                    1,
+                    4
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "When the Head is destroyed, all parts are inflicted with Immobilize next turn.\nThe Head regenerates after 1 turn.",
+                  "name": "Frail Core"
+                },
+                {
+                  "desc": "After the body is destroyed, all parts are inflicted with 2 Attack Power Down every turn.",
+                  "name": "Rotting Apple"
+                }
+              ],
+              "portrait": "8009",
+              "skills": [
+                {
+                  "affinity": "lust",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 1,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Main body heals 3 HP"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": 2,
+                  "name": "Absorb Nutrients"
+                },
+                {
+                  "affinity": "lust",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 8,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 Bleed Count next turn",
+                        "[OnSucceedAttack] Inflict 2 Fragile next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": 2,
+                  "name": "Deteriorating Flesh"
+                },
+                {
+                  "affinity": "lust",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Main body heals 10 HP",
+                        "[OnSucceedAttack] Inflict 5 Bleed next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": 2,
+                  "name": "Entangle"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "name": "The Outcast Dungeon (1-11)",
+  "siteId": "6e7b5b04-e000-4534-93ea-f1741eeb2221"
+}

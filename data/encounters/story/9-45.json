@@ -1,0 +1,355 @@
+{
+  "name": "The Unsevering (9-45)",
+  "siteId": "9c5ec51e-999b-470f-8fe3-eb3f6bf75c62",
+  "targets": [
+    {
+      "name": "The Roach Emperor",
+      "parts": [
+        {
+          "breakSection": [
+            50
+          ],
+          "defCorrection": 10,
+          "hp": {
+            "base": 538,
+            "level": 27.81
+          },
+          "name": "Body",
+          "partId": 133901,
+          "resists": {
+            "blunt": 1.25,
+            "envy": 1.25,
+            "gloom": 0.75,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 0.75,
+            "pride": 1,
+            "slash": 1,
+            "sloth": 0.75,
+            "wrath": 1.2
+          },
+          "speed": [
+            1,
+            2
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "This unit's SP value cannot affect the outcome of Coin flips, which is fixed to 50-50\n\n<color=#ff6000><mark=#ff000040><b><u>On Clash Win against Sinners,</u></b></mark></color> lose 5 SP and deal -40% damage against them\n\n<color=#ff6000><mark=#ff000040><b><u>When in Low Morale or Panic states</u></b></mark></color>, gain [ParryingResultDown] and [ResultReduction]\nWhen recovering from Panic, gain 2 [ResultReduction]",
+          "name": "The Unwrapped Present"
+        },
+        {
+          "desc": "Turn Start: Gain 50 [DefenseBug] (Gain 3 fewer [DefenseBug] with every subsequent turn; max reduction 20)\n- If this unit has [Combustion], [Laceration], [Vibration], [Burst], or [Sinking], <color=#ff6000><mark=#ff000040><b><u>reduce their Potency by a random value; then, lose the same Stacks of [DefenseBug] as that random value</u></b></mark></color>\n- If the above effects are at 1 Potency but has 2+ Count, reduce their Count instead\n\n<color=#ff6000><mark=#ff000040><b><u>If all [DefenseBug] was lost</u></b></mark></color> during the combat phase, gain the following effects next turn:\n- Gain 10 [DefenseDown] instead of gaining [DefenseBug]\n- Generate 2 E.G.O resources for each of the 3 least-owned Affinities\n- Turn End: Remove all negative effects from this unit and start gaining [DefenseBug] again",
+          "name": "The Emperor's Subjects"
+        },
+        {
+          "desc": "Turn Start: Gain ([DefenseBug] x 40) Shield",
+          "name": "The Emperor's Mantle"
+        },
+        {
+          "desc": "- On Clash Win, inflict 3 [OffenseBug] on target\n- On Hit with a Skill, inflict 1 [OffenseBug] on target",
+          "name": "The Emperor's Legion"
+        },
+        {
+          "desc": "Take -50% HP, SP damage from [Combustion], [Laceration], [Burst], and [Sinking]; -50% to Stagger Threshold raised by [Vibration]\nCannot be Staggered due to this damage\nTurn Start: Gain 2 [ResultReduction] for every 25% missing HP on the Core",
+          "name": "The Emperor's Blood"
+        },
+        {
+          "desc": "At 50% HP, or when Staggered, recover from Stagger and remove all negative effects on this unit and gain a new pattern\nThen, gain the following effects:\n- Reset SP to 0\n- Gain 50 [DefenseBug]\n- Double the amount of [OffenseBug] inflicted by the Passive \"The Emperor's Legion\"",
+          "name": "The Emperor's Wrath"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+          "name": "Fixed Panic"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        }
+      ],
+      "portrait": "1339",
+      "skills": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 12,
+          "coinValue": 11,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 Potency and +2 Count of a random status, chosen from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 Potency and +2 Count of a random status, chosen from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +20% damage for every type of negative effect on target (max 100%)\nDeal +10% damage for every 2 [OffenseBug] on target",
+          "levelCorrection": 2,
+          "name": "The Emperor's Fist"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 12,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 Potency and +3 Count of a random status, chosen from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 Potency and +3 Count of a random status, chosen from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Gain 5 [Breath] and +3 [Breath] Count"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +20% damage for every type of negative effect on target (max 100%)\nDeal +10% damage for every 2 [OffenseBug] on target\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 3,
+          "name": "The Emperor's Whip & Fist"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 13,
+          "coinValue": 13,
+          "coins": [
+            {
+              "descs": [
+                "[ExtractCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Absorb all positive effects from the target",
+                "[OnSucceedAttack] <color=#ff6000><mark color=#ff000040><b><u>Halve the [OffenseBug] Stack on target</color></mark></b></u> (rounded down)",
+                "[OnSucceedAttack] Absorb all negative effects from the target\n- After activating the above effect, if this unit does not have [DefenseBug], gain 2 [ResultReduction] next turn"
+              ],
+              "type": "excision"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] <color=#ff6000><mark color=#ff000040><b><u>Base Power +10 for every [SuperCoin] on the Skill</color></mark></b></u> this unit Clashed with",
+          "levelCorrection": 0,
+          "name": "The Emperor's Devouring"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 7,
+          "baseValue": 14,
+          "coinValue": 13,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 Potency and +3 Count of a random status, chosen from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Consume all [Charge] Count on self and deal +([Charge] Count consumed x 20)% damage"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +20% damage for every type of negative effect on target (max 100%)\nDeal +10% damage for every 2 [OffenseBug] on target\n[WhenUse] Gain +10 [Charge] Count\n[StartDuel] Lose 5 [Charge] Count\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 0,
+          "name": "The Emperor's Flogging"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [OffenseBug]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [OffenseBug]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [OffenseBug]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +10% damage for every 2 [OffenseBug] on target",
+          "levelCorrection": 0,
+          "name": "March of Roaches"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 7,
+          "baseValue": 17,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into a random [Vibration] type"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 5,
+          "name": "The Emperor's Quaking"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 7,
+          "baseValue": 12,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[ExtractCoin]",
+                "[OnSucceedAttack] Inflict 3 Potency and +3 Count of a random status, chosen from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 5 [AttackDown]"
+              ],
+              "type": "excision"
+            },
+            {
+              "descs": [
+                "[ExtractCoin]",
+                "[OnSucceedAttack] Inflict 3 Potency and +3 Count of a random status, chosen from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 5 [DefenseDown]"
+              ],
+              "type": "excision"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +20% damage for every type of negative effect on target (max 100%)\nDeal +10% damage for every 2 [OffenseBug] on target\n[WhenUse] <color=#ff6000><mark color=#ff000040><b><u>Base Power +20 for every [SuperCoin] on the Skill</color></mark></b></u> this unit Clashed with\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 0,
+          "name": "The Emperor's Excision"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 9,
+          "coins": [
+            {
+              "descs": [
+                "[ExtractCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Remove target's Shield",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Paralysis]"
+              ],
+              "type": "excision"
+            },
+            {
+              "descs": [
+                "[ExtractCoin]",
+                "[UnBrokenCoinOnSucceedAttack] The Core and the Part both heal 25% of their respective max HP"
+              ],
+              "type": "excision"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +20% damage for every type of negative effect on target (max 100%)\nDeal +10% damage for every 2 [OffenseBug] on target\n[WhenUse] <color=#ff6000><mark color=#ff000040><b><u>Base Power +20 for every [SuperCoin] on the Skill</color></mark></b></u> this unit Clashed with\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 0,
+          "name": "The Emperor's Feast"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 7,
+          "baseValue": 60,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 5 Potency and +2 Count of a random status, chosen from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]",
+                "[CriticalOnSucceedAttack] Deal Pride damage equal to 25% of target's max HP"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 5 Potency and +2 Count of a random status, chosen from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]",
+                "[CriticalOnSucceedAttack] Deal Pride damage equal to 25% of target's max HP"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 5 Potency and +2 Count of a random status, chosen from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]",
+                "[CriticalOnSucceedAttack] Deal Pride damage equal to 25% of target's max HP"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 5 Potency and +2 Count of a random status, chosen from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]",
+                "[CriticalOnSucceedAttack] Deal Pride damage equal to 25% of target's max HP"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantChangeTarget]\n[WhenUse] Gain 10 [Breath] and +4 [Breath] Count\n[WinDuel] Gain 10 [Breath]\n[DefeatDuel] Deal -80% damage and does not hit Critically\nDamage dealt by this Skill cannot Stagger the target\n[DefeatDuel] Gain 5 [Vulnerable] next turn",
+          "levelCorrection": 5,
+          "name": "'Son, don't forget to go for the heart.'"
+        }
+      ]
+    }
+  ]
+}

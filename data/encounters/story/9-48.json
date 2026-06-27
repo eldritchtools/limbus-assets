@@ -1,0 +1,359 @@
+{
+  "name": "The Unsevering (9-48)",
+  "siteId": "1c624e70-16c3-4439-a51d-ecd8208192e6",
+  "targets": [
+    {
+      "name": "The Pinky Nursefather - ???",
+      "parts": [
+        {
+          "defCorrection": 0,
+          "hp": {
+            "base": 532,
+            "level": 18
+          },
+          "name": "Body",
+          "partId": 132401,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 1.2,
+            "gluttony": 0.8,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 0.8,
+            "slash": 1.2,
+            "sloth": 0.8,
+            "wrath": 1.2
+          },
+          "speed": [
+            2,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Encounter Start: Gain [LvDownLittleFingerBossTwo] and 4 [TimeEntangleUnstable]",
+          "name": "Tiansha Star's Bladewound [天殺星傷]"
+        },
+        {
+          "desc": "In this Encounter, when this unit takes damage that brings their HP down to 0, nullify that damage and apply the following effects (once per Encounter):\n- Heal max HP and remove all removable negative effects from this unit\n- For this Encounter, gain 1 [Vulnerable] and fix [TimeEntangleUnstable] to 1. Take (# of current turn x 10) fixed damage at the end of every turn\n- Afterward, end turn and the attack pattern becomes empowered",
+          "name": "The Final Battle"
+        },
+        {
+          "desc": "Turn Start: At 0+ SP, gain 1 [SojiAbiAgeFuture]\nGain 1 [SojiAbiAgeFuture] for every 2 SP above 0\n\nTurn Start: At less than 0 SP, gain 1 [SojiAbiAgePast]\nGain 1 [SojiAbiAgePast] for every 2 SP below 0",
+          "name": "From Dawn till Dusk"
+        },
+        {
+          "desc": "Turn End: Gain 1 [TimeEntangleUnstable] for every 5 SP difference between this unit's current SP and SP at Turn Start (max 5 per turn)\n\nFor every 100 damage taken cumulatively, lose 1 [TimeEntangleUnstable] (including Shield damage)",
+          "name": "Spacetime Afterimage Collapse"
+        },
+        {
+          "desc": "Every few turns, use the \"Destinated Opponent\" Skill\n<color=#ff6000><mark=#ff000040><b><u>Only the target of this unit's attack can Clash with the said Skill Slot</u></b></mark></color>\n\nIf this unit's \"Destinated Opponent\" Skill loses a Clash, take 36 ~ 60 fixed damage\n\nCombat End: <color=#ff6000><mark=#ff000040><b><u>If every \"Destinated Opponent\" Skill this unit used in this turn lost a Clash</u></b></mark></color>, gain 1 [Vulnerable] next turn",
+          "name": "Afterimage of the Future"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 30.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+          "name": "Fixed Panic"
+        },
+        {
+          "desc": "Attack Skill End: Deal (# of Slash Coins that hit Critically x 10) Slash damage against each target) (damage from this effect cannot Stagger target)\n\nAttack Skill End: Consume every surplus [Breath] Potency past 20 on self and inflict [PhantomIncision] to target by [Breath] Potency consumed",
+          "name": "Lacerating Afterimages from Myriad Moments"
+        }
+      ],
+      "portrait": "1322",
+      "skills": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "levelCorrection": -3,
+          "name": "Twinslash [二連]"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +3 [Breath] Count",
+          "levelCorrection": -3,
+          "name": "Tripleslash [三連]"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 3,
+          "baseValue": 10,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "+30% Damage on Critical Hit",
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Inflict 1 [PhantomIncision]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 1 [PhantomIncision]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[OnDirectAttack] Gain 5 [Breath]\n[DefeatDuel] -2 Atk Weight",
+          "levelCorrection": 1,
+          "name": "Swift Glimmer [快閃]"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 4,
+          "baseValue": 12,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Reuse this Coin (4 times max)",
+                "[OnSucceedAttack] Gain 1 [Breath]",
+                "[OnSucceedAttack] Inflict 1 [PhantomIncision]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 1 [PhantomIncision]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WideAreaRampage]\nCan Clash with this Skill regardless of Speed; cannot be Staggered until this Skill ends\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 1,
+          "name": "Formless Cut [無形斬]"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[DefeatDuel] <color=#ff6000><mark=#ff000040><b><u>Halve the [PhantomIncision] Stack on target</u></b></mark></color> (rounded down)",
+          "levelCorrection": -3,
+          "name": "Phantom Step [殘像步]"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 9,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [PhantomIncision] for every 1% missing HP on target"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Consume all [PhantomIncision] on target</u></b></mark></color> and deal ([PhantomIncision] consumed)% HP damage "
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "This Skill does not trigger the target's Defense Skill\nPrioritizes the target with the least HP percentage\n- Prioritizes targets that aren't Ryōshū",
+          "levelCorrection": 3,
+          "name": "Deathedge [絶命]"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 7,
+          "baseValue": 14,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Deal +100% Damage on Critical Hit",
+                "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Consume all [PhantomIncision] on target</u></b></mark></color> and deal ([PhantomIncision] consumed)% HP damage against each target hit, respectively"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Can Clash with this Skill regardless of Speed; this unit cannot be Staggered until this Skill ends\n[WhenUse] At 20+ SP, generate 3 Mang. Final Power +10\n[EndSkill] If this Skill generated Mang, lose 20 SP\n[WinDuel] Gain 2 [SlashDamageUp]\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 0,
+          "name": "Uttermost Rend Space - String Severance [空間斬 - 絕緣]"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 1,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "<color=#ff6000><mark=#ff000040><b><u>Only targets with the corresponding buff</u></b></mark></color> among [SojiAbiBuffOne], [SojiAbiBuffTwo], or [SojiAbiBuffThree] can Clash with this Skill\nThis Skill does not trigger the target's Defense Skill\n\n[DefeatDuel] Gain 1 [Vulnerable]\n[DefeatDuel] Remove [SojiAbiBuffOne], [SojiAbiBuffTwo], [SojiAbiBuffThree] from target\n\n[OnDirectAttack] Final Power +10",
+          "levelCorrection": 0,
+          "name": "Destinated Opponent"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[CriticalOnSucceedAttackHead] Reuse this Coin (once per Skill)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[DefeatDuel] Deal -80% final damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": -2,
+          "name": "Twinslash - Echoshear [二連 - 殘]"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 14,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[EndSkill] Reuse this Skill if target is defeated or Staggered (3 times per turn)",
+          "levelCorrection": 2,
+          "name": "Inevitable Termination [必然殺]"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] If the Skill Slot using this Skill is a main target of an Attack Skill, lose 10 [Breath] Potency",
+          "levelCorrection": 0,
+          "name": "Resentment [怨望]"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] If the Skill Slot using this Skill is a main target of an Attack Skill, lose 5 SP",
+          "levelCorrection": 0,
+          "name": "Futility [非望]"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Vulnerable]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "<color=#ff6000><mark=#ff000040><b><u>[DefeatDuel] Gain 3 [Reduction]</u></b></mark></color>",
+          "levelCorrection": 0,
+          "name": "Dismay [落望]"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 11,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Vulnerable]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "<color=#ff6000><mark=#ff000040><b><u>[DefeatDuel] Gain 2 [Vulnerable]</u></b></mark></color>",
+          "levelCorrection": 0,
+          "name": "I resent you so. But..."
+        }
+      ]
+    }
+  ]
+}

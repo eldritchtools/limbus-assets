@@ -1,0 +1,338 @@
+{
+  "name": "Spring Cultivation (8.5-8)",
+  "siteId": "94b4b26e-3e91-4151-b920-276dde6d02e0",
+  "targets": [
+    {
+      "name": "Wei",
+      "parts": [
+        {
+          "breakSection": [
+            40
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 816,
+            "level": 28.14
+          },
+          "name": "Body",
+          "partId": 124701,
+          "resists": {
+            "blunt": 0.5,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 1.25,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            2,
+            3
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Encounter Start: reset this unit's SP to -15 and gain 3 [LegStrengthHorse] and 1 [CrazyWei]\nTake -50% damage from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking] (rounded down)\n\nIf this unit hits with a Cracked [SuperCoin], it does not activate the target's [Burst] effect (does not consume Count either)\n\nDeal +50% damage against Staggered enemies",
+          "name": "Former Heishou - Wu Adept"
+        },
+        {
+          "desc": "If this unit has [LegStrengthHorse], inflict 1 [ConcussionWei] against the main target when this unit triggers [VibrationExplosion] against the main target",
+          "name": "I will trample... and crush you to mulch"
+        },
+        {
+          "desc": "If this unit has [LegStrengthHorse], gain 1 [ReboundWei] when hitting with a Skill that triggers [VibrationExplosion] against targets without [Vibration] (does not gain any [ReboundWei] if its Stack is already maxed)\n\nTurn End: if this unit's [ReboundWei] Stack is maxed, consume all of it; then, lose 1 [LegStrengthHorse] next turn",
+          "name": "Soul Lost in Daylight (魂飛中天)"
+        },
+        {
+          "desc": "Turn Start: gain 1 [AttackUp] for every 2 Speed this unit has (max 2)\nAt 5+ Speed, gain 1 [SlashDamageUp] and 1 [HitDamageUp] as well",
+          "name": "I'll scrape every filthy scale off your skin..."
+        },
+        {
+          "desc": "On Clash Lose: if the target's Coin was a Plus Coin, target heals 5 SP; if the target's Coin was a Minus Coin, target loses 5 SP (does not activate if the target's SP is at -40 or less). Then, give 2 E.G.O resources to the Affinity of the Skill the target used (3 times per turn)\n- If the Skill's Affinity was Wrath or Gluttony, give 2 E.G.O resources of the least-owned Affinities as well",
+          "name": "Intrepid trespasser...!"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        }
+      ],
+      "portrait": "1247",
+      "skills": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": -3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 6+ ([Burst] + [Vibration]), Base Power +3\n[DefeatDuel] Reduce target's [Vibration] Potency by 2",
+          "levelCorrection": 0,
+          "name": "Ironsteed Trample"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 9,
+          "coinValue": -2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Base Power +2 for every 4 ([Burst] + [Vibration]) on target (max 4)",
+          "levelCorrection": 0,
+          "name": "Rupturing Trample"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": -6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 8 [Burst] and +5 [Burst] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 6+ ([Burst] + [Vibration]), Base Power +2\n[WhenUse] At -30 or lower SP, this unit's Coins always flip Tails\n[DefeatDuel] Reduce target's [Vibration] Potency by 2",
+          "levelCorrection": 0,
+          "name": "Line-Crushing Cavalry Charge"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 11,
+          "coinValue": -3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Burst]",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Base Power +2 for every 4 ([Burst] + [Vibration]) on target (max 4)\n- At 15+ ([Burst] + [Vibration]) on target, Minus Coin Power +1",
+          "levelCorrection": 0,
+          "name": "Trample and Decapitate"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 12,
+          "coinValue": -2,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] Inflict [SweptAwayWei] against sub-targets next turn"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Base Power +2 for every 4 ([Burst] + [Vibration]) on the main target (max 4)\n[DefeatDuel] Base Power -8\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 0,
+          "name": "Filthy snakes... I'll crush you all..."
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 5,
+          "baseValue": 10,
+          "coinValue": -4,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] If it's the main target, inflict +5 [Vibration]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Vibration] against 1 sub-target"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[UnBrokenCoinOnSucceedAttack] Inflict [SweptAwayWei] against sub-targets next turn"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Base Power +2 for every 4 ([Burst] + [Vibration]) on the main target (max 6)\n[DefeatDuel] Base Power -5\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 0,
+          "name": "Swiftsteed Linebreaker"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 12,
+          "coinValue": -2,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes the target with the least [Vibration] Potency\n[WhenUse] If target does not have [Vibration], Base Power -5\n[BeforeAttack] If target does not have [Vibration], deal -90% damage\n[DefeatDuel] Base Power -4\n[DefeatDuel] Damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 0,
+          "name": "You Shall Not Pass...!"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 5,
+          "baseValue": 15,
+          "coinValue": -3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 5 [Burst]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 5 [Burst] and +5 [Burst] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 5 [Vibration]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 5 [Vibration] and +5 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[UnBrokenCoinOnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1."
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +1% damage for every 1% missing HP on self (max 80%)\n[BeforeAttack] At 50% or less HP, gain +2 more Atk Weight\n[BeforeAttack] If this unit does not have [LegStrengthHorse], this Skill deals +120% damage; then, gain 2 [Vulnerable] next turn\n[DefeatDuel] Base Power -12\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 0,
+          "name": "Mad Steed's Voidrender"
+        }
+      ]
+    }
+  ]
+}

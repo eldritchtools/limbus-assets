@@ -1,0 +1,421 @@
+{
+  "name": "LCB Regular Check-up (7.5-9)",
+  "siteId": "6014f1d3-4887-4b37-8821-5ed6c122e9cb",
+  "waves": [
+    {
+      "targets": [
+        {
+          "name": "Peccatulum Superbiae",
+          "num": 4,
+          "parts": [
+            {
+              "breakSection": [
+                40
+              ],
+              "defCorrection": -2,
+              "hp": 61.1,
+              "name": "Body",
+              "partId": 109601,
+              "resists": {
+                "blunt": 2,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 0.75,
+                "pierce": 1,
+                "pride": 0.75,
+                "slash": 1,
+                "sloth": 2,
+                "wrath": 2
+              },
+              "speed": [
+                3,
+                5
+              ]
+            }
+          ],
+          "portrait": 8018,
+          "skills": [
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 5,
+              "name": "Grind"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Inflict 1 Fragile next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Inflict 1 Fragile next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 5,
+              "name": "Prideful Runover"
+            }
+          ]
+        },
+        {
+          "name": "Peccatulum Luxuriae",
+          "parts": [
+            {
+              "breakSection": [
+                50
+              ],
+              "defCorrection": 2,
+              "hp": 63.4,
+              "name": "Body",
+              "partId": 109401,
+              "resists": {
+                "blunt": 1,
+                "envy": 2,
+                "gloom": 1,
+                "gluttony": 0.75,
+                "lust": 0.75,
+                "pierce": 1,
+                "pride": 2,
+                "slash": 2,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "portrait": 8017,
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Strike Down"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Inflict 2 Bleed next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Piercing Lust"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Peccatulum Luxuriae?",
+          "num": 2,
+          "parts": [
+            {
+              "breakSection": [
+                50
+              ],
+              "defCorrection": 2,
+              "hp": 69.95,
+              "name": "Body",
+              "partId": 109501,
+              "resists": {
+                "blunt": 1,
+                "envy": 1.75,
+                "gloom": 1,
+                "gluttony": 0.75,
+                "lust": 0.75,
+                "pierce": 1,
+                "pride": 1.75,
+                "slash": 1.75,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                5
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Unless this unit is Staggered or Part Broken, take 50% less [Laceration] damage",
+              "name": "Sin Resistance"
+            }
+          ],
+          "portrait": 8373,
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration] and +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Pin Down"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 6 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 4+ [Laceration], Coin Power +1",
+              "levelCorrection": 0,
+              "name": "Impaled Desire"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[WinDuelAttack] Inflict [Laceration] Count equal to the [Laceration] Count the target lost during the Clash"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 10 [Laceration]",
+                    "[OnSucceedAttack] Inflict 2 [ScarletTakeDamageUp] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 4+ [Laceration], Base Power +2",
+              "levelCorrection": 0,
+              "name": "Repressed Desire"
+            },
+            {
+              "affinity": "lust",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[WhenUse] Shield HP +10 for every 4 [Laceration] on the target (max 30)",
+              "levelCorrection": 0,
+              "name": "Guard"
+            }
+          ]
+        },
+        {
+          "name": "Peccatulum Superbiae?",
+          "parts": [
+            {
+              "breakSection": [
+                40
+              ],
+              "defCorrection": 2,
+              "hp": 84.7,
+              "name": "Body",
+              "partId": 109701,
+              "resists": {
+                "blunt": 1.75,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 0.75,
+                "pierce": 1,
+                "pride": 0.75,
+                "slash": 1,
+                "sloth": 1.75,
+                "wrath": 1.75
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Unless this unit is Staggered or Part Broken, take only half of Critical Damage.",
+              "name": "Sin Resistance"
+            }
+          ],
+          "portrait": 8374,
+          "skills": [
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 3 [Breath]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 3 [Breath]",
+                    "[CriticalOnSucceedAttack] Inflict 1 [Vulnerable] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +2 [Breath] Count",
+              "levelCorrection": 0,
+              "name": "Grinding"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Breath] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [IndigoTakeDamageUp] next turn",
+                    "[CriticalOnSucceedAttack] Inflict 1 [Vulnerable] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain 5 [Breath]",
+              "levelCorrection": 0,
+              "name": "Crush"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 12,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 4 [Breath] and +3 [Breath] Count",
+                    "[CriticalOnSucceedAttack] Deal +100% damage"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] At 5+ [Breath], Coin Power +2",
+              "levelCorrection": 0,
+              "name": "Prideful Crush"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Breath] Count next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[WhenUse] At 6+ [Breath], Coin Power +2",
+              "levelCorrection": 0,
+              "name": "Counter"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

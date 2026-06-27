@@ -1,0 +1,438 @@
+{
+  "name": "The 6th Walpurgis Night: Hatred and Despair (Easy)",
+  "siteId": "a1493072-19e7-422c-ae0a-fd40840e0d9a",
+  "targets": [
+    {
+      "name": "The Knight of Despair",
+      "parts": [
+        {
+          "breakSection": [
+            90,
+            10
+          ],
+          "defCorrection": 5,
+          "hp": {
+            "base": 783,
+            "level": 27
+          },
+          "name": "Body",
+          "partId": 122301,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 1,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            2,
+            4
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Takes -50% damage from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking] (rounded down)\nIf this unit hits with a Cracked [SuperCoin], it does not activate the target's [Sinking] effect (does not consume Count either)",
+          "name": "The Knight of Despair"
+        },
+        {
+          "desc": "Turn Start: if none of the swords on the field have [HelplessTear], apply [HelplessTear] to 1 random sword (once per turn; does not activate if a sword has [HelplessTear])",
+          "name": "River of Helpless Tears"
+        },
+        {
+          "desc": "When Staggered for the first time, recover from Stagger next turn; then, gain 10 [Protection] and 500 Shield every turn\nSummon a Forgotten Knight's Sword next turn",
+          "name": "Shared Sorrow"
+        },
+        {
+          "desc": "Every time a sword pierces this unit, gain 1 [CollapsedPride], and [Protection] gained every turn is reduced by 3 while Shield HP gained every turn is reduced by 100\nAt 3 [CollapsedPride], this unit no longer gains [Protection] and Shield every turn, and instead becomes Staggered next turn and gains [WornOutKnight]",
+          "name": "Weathered Knight"
+        },
+        {
+          "desc": "Turn End after getting Staggered for the first time: if there is a Sinner with 5+ [ColdBlackTear], uses an AoE Skill next turn\nTurn End after getting Staggered for the first time: if all Sinners have [ColdBlackTear], gain [SignOfDespair] next turn",
+          "name": "Hollow Pride"
+        },
+        {
+          "desc": "When this unit is hit by ARCANA[TabExplain] SLAVE while it has [WornOutKnight]: does not lose HP below 5%, and kills itself at Turn End",
+          "name": "One Last Justice"
+        }
+      ],
+      "portrait": "1223",
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 4+ [Sinking], Coin Power +1\n[WinDuel] Inflict [ColdBlackTear] equal to the # of remaining Coins",
+          "levelCorrection": 0,
+          "name": "Cascading Despair"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[OnSucceedAttack] Inflict +1 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[OnSucceedAttack] Inflict +1 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 4+ [Sinking], Coin Power +1\n[WhenUse] If target has 20 or higher SP, Base Power +1\n[WinDuel] Inflict [ColdBlackTear] equal to the # of remaining Coins",
+          "levelCorrection": 0,
+          "name": "Sharp Teardrops"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 1 [ColdBlackTear]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 1 [ColdBlackTear]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 1 [ColdBlackTear]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 1 [ColdBlackTear]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 1 [ColdBlackTear]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Base Power +1 for every 4 [Sinking] on target (max 2)\n[WhenUse] If target has 1+ [ColdBlackTear], Coin Power +1\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 0,
+          "name": "River of Despairing Tears"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 11,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 3+ [ColdBlackTear], inflict 1 [Vulnerable]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Inflict 1 [ColdBlackTear]",
+          "levelCorrection": 0,
+          "name": "Shared Sorrow, Dulled"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 10,
+          "baseValue": 6,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Deal fixed damage equal to ([ColdBlackTear] Stack on target x 6)% of target's max HP, then remove all [ColdBlackTear] on target"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes targets with the most [ColdBlackTear]\n[WhenUse] If the main target has 5+ [ColdBlackTear], Coin Power +5",
+          "levelCorrection": 0,
+          "name": "Violent Cascade of Hollow Despair"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 10,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [ColdBlackTear]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 1 [ColdBlackTear]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 1 [ColdBlackTear]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 1 [ColdBlackTear]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Deal fixed damage equal to ([ColdBlackTear] Stack on target x 6)% of target's max HP, then remove all [ColdBlackTear] on target (ignores Resistances)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "counter",
+          "desc": "Uses this Skill when an enemy uses Arcana[TabExplain] Slave, and when this unit does not have [CollapsedPride]\nCounterattacks only Arcana Slave",
+          "levelCorrection": 0,
+          "name": "Arcana: Tear and Pierce"
+        }
+      ]
+    },
+    {
+      "name": "Sword of a Forgotten Knight",
+      "num": 3,
+      "parts": [
+        {
+          "defCorrection": 0,
+          "hp": {
+            "base": 42,
+            "level": 1.45
+          },
+          "name": "Body",
+          "partId": 122401,
+          "resists": {
+            "blunt": 1,
+            "envy": 1.5,
+            "gloom": 1.1,
+            "gluttony": 0.8,
+            "lust": 0.8,
+            "pierce": 1,
+            "pride": 1.5,
+            "slash": 1,
+            "sloth": 0.8,
+            "wrath": 0.8
+          },
+          "speed": [
+            1,
+            3
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "If a sword with [HelplessTear] reaches 0 HP, it stabs the Knight of Despair[TabExplain]",
+          "name": "Despair-piercing Sword"
+        },
+        {
+          "desc": "If this unit hits with a Cracked [SuperCoin], it does not activate the target's [Sinking] effect",
+          "name": "Sword of a Forgotten Knight"
+        },
+        {
+          "desc": "If there is an enemy with [ChasingArcana], prioritizes that unit",
+          "name": "The Sword Points Toward Those Who Could Not be Protected"
+        },
+        {
+          "desc": "This unit's HP does not drop below 1 when it does not have [HelplessTear]\nTurn End: if this unit's HP drops to 1 when it does not have [HelplessTear], heals back to full HP",
+          "name": "Respite"
+        }
+      ],
+      "portrait": "1224",
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Clash Power +1 for every 4 [Sinking] on target (max 2)\n[WhenUse] If target has 10 or higher SP, Base Power +1\n[WhenUse] If target has 20 or higher SP, Coin Power +1",
+          "levelCorrection": 1,
+          "name": "Faded Faith"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[OnSucceedAttack] Inflict +1 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Clash Power +1 for every 4 [Sinking] on target (max 2)\n[WhenUse] If target has 10 or higher SP, Base Power +1\n[WhenUse] If target has 20 or higher SP, Coin Power +1",
+          "levelCorrection": 1,
+          "name": "Weathered Pride"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[OnSucceedAttack] Inflict +1 [Sinking] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[OnSucceedAttack] Inflict +1 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Clash Power +1 for every 4 [Sinking] on target (max 2)\n[WhenUse] If target has 10 or higher SP, Base Power +1\n[WhenUse] If target has 20 or higher SP, Coin Power +1",
+          "levelCorrection": 1,
+          "name": "Endless Despair"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 6+ [Sinking], inflict ([Sinking] on target / 10) [DefenseDown] next turn (rounded down)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +5 for every 6 [Sinking] on target (max 10)\n[WhenUse] If target has [ColdBlackTear], Final Power +1",
+          "levelCorrection": 1,
+          "name": "Sword Sharpened with Tears"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Deal bonus Gloom damage equal to (Skill Power)% of target's max HP (max 30)\n- If target has 2+ [ColdBlackTear], deal bonus Gloom damage again"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +3 for every 6 [Sinking] on target (max 6)\n[WhenUse] Base Power +1 for every [ColdBlackTear] Count on target (max 3)",
+          "levelCorrection": 1,
+          "name": "Sword Laced with Grief"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,333 @@
+{
+  "name": "The Heartbreaking (6-45)",
+  "siteId": "01c6bd68-8247-4563-8a54-8a8c15e36969",
+  "targets": [
+    {
+      "name": "Nelly",
+      "parts": [
+        {
+          "breakSection": [
+            75,
+            20,
+            0
+          ],
+          "defCorrection": 0,
+          "hp": 728,
+          "name": "Body",
+          "partId": 817101,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 0.5,
+            "pride": 1,
+            "slash": 1.25,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            2,
+            3
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Clash Win: If this unit's Speed is faster than the target's, heal 3 SP",
+          "name": "Superiority"
+        },
+        {
+          "desc": "If there are Staggered enemies, this unit prioritizes Staggered targets with its Attack Skills\nDeal +20% damage to Staggered enemies On Hit",
+          "name": "The Uninvited"
+        },
+        {
+          "desc": "After this unit gains a new pattern, and after Combat End, inflict [AaCfPcBc] to a random Identity without [AaCfPcBc] next turn",
+          "name": "Receiving Arts 9: Binding"
+        },
+        {
+          "desc": "All [AaCfPcBc] less than or equal to 2 expires when this unit is Staggered",
+          "name": "Release From Binds"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+          "name": "Fixed Panic"
+        }
+      ],
+      "portrait": "8171",
+      "skills": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [DefenseUp] next turn",
+                "[OnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Inflict 1 [AaCfPcBb]",
+          "levelCorrection": 1,
+          "name": "Mark Interloper"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Paralysis] next turn",
+                "[OnSucceedAttack] Gain 3 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [AttackUp] next turn",
+                "[OnSucceedAttack] Inflict 1 [AaCfPcBb]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has [AaCfPcBb], Clash Power +1\n[WinDuel] Gain 1 [Agility] next turn",
+          "levelCorrection": 1,
+          "name": "Receiving Arts 1: The Hunt"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "[OnSucceedAttack] Gain +2 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [DefenseUp] next turn",
+                "[OnSucceedAttack] Inflict 1 [AaCfPcBb]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has [AaCfPcBb], Clash Power +1\n[WinDuel] Gain 1 [Agility] next turn",
+          "levelCorrection": 1,
+          "name": "Reverse Receiving Arts 1: The Hunt"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vulnerable]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [DefenseDown] next turn",
+                "[OnSucceedAttack] If target has 3+ negative effects, reuse this Coin (1 time max)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If this unit's Speed is faster than the target's, Clash Power +2",
+          "levelCorrection": 2,
+          "name": "Overwhelm Interloper"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If the target does not have a Stagger Threshold, deal 200 HP damage.",
+                "[OnSucceedAttack] Raise Stagger Threshold by 200"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has [AaCfPcBb], Clash Power +10",
+          "levelCorrection": 3,
+          "name": "Receiving Arts 2: Collapse"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Binding] next turn",
+                "[OnSucceedAttack] Inflict 2 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Agility] next turn",
+                "[OnSucceedAttack] If target has 4+ negative effects, deal 30% of damage dealt as bonus Slash damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] Gain Atk Weight equal to the number of enemies with [AaCfPcBb]\n[WhenUse] If this unit's Speed is faster than the main target's by 3 or more, inflict 2 Slash Resist Down\n[WhenUse] If target has [AaCfPcBb], Clash Power +8\n[EndBattle] All [AaCfPcBb] expires",
+          "levelCorrection": 2,
+          "name": "Receiving Arts 7: Capture"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration]",
+                "[OnSucceedAttack] Inflict 6 [DefenseDown] next turn",
+                "[OnSucceedAttack] If this unit's Speed is faster than the target's by 3 or more, reuse this Coin (1 time max)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes targets with [AaCfPcBc]\n[DefeatDuel] If target has [AaCfPcBc] [AaCfPcBc] expires",
+          "levelCorrection": 3,
+          "name": "Interloper Apprehension"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vulnerable]",
+                "[OnSucceedAttack] Gain 3 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vulnerable]",
+                "[OnSucceedAttack] Gain +2 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [DefenseDown] next turn",
+                "[OnSucceedAttack] If target has 3+ negative effects, reuse this coin (1 time max)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has [AaCfPcBc], Base Power +5\n[WhenUse] If target has [AaCfPcBc], inflict 1 [AaCfPcBc]",
+          "levelCorrection": 2,
+          "name": "Receiving Arts 3: Binding"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[OnSucceedEvade] Heal 5 SP\n[OnSucceedEvade] Gain 1 more Slot just for the next Turn. (1 time max)",
+          "levelCorrection": -6,
+          "name": "Evade"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Stagger target."
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes targets with [AaCfPcBc]\nIf target has [AaCfPcBc], Base Power +10\nIf the target does not have [AaCfPcBc], this Skill deals 0 damage.",
+          "levelCorrection": 3,
+          "name": "Receiving Arts 9: Dissolution"
+        }
+      ]
+    }
+  ]
+}

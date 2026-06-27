@@ -1,0 +1,217 @@
+{
+  "name": "The Unsevering (9-8)",
+  "siteId": "2d09a5a6-9790-4b98-82c7-5f4b0a479090",
+  "targets": [
+    {
+      "name": "Faelantern",
+      "parts": [
+        {
+          "breakSection": [
+            50,
+            0
+          ],
+          "defCorrection": -7,
+          "hp": 55.6,
+          "name": "Fairy",
+          "partId": 130801,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 0.5,
+            "gluttony": 0.75,
+            "lust": 2,
+            "pierce": 0.5,
+            "pride": 1.5,
+            "slash": 2,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            1,
+            1
+          ]
+        },
+        {
+          "breakSection": [
+            70,
+            40,
+            0
+          ],
+          "defCorrection": 3,
+          "hp": 486.3,
+          "name": "Body",
+          "partId": 130802,
+          "resists": {
+            "blunt": 1,
+            "envy": 1,
+            "gloom": 0.5,
+            "gluttony": 0.75,
+            "lust": 1.5,
+            "pierce": 0.5,
+            "pride": 2,
+            "slash": 2,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            1,
+            1
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Reveal body when the Fairy Part is broken\nAll Buffs and Debuffs expire when the Body hides again",
+          "name": "Uncovered Abyss"
+        },
+        {
+          "desc": "When the Body is broken:\n- Fairy will have 60% of its max HP upon restoration\n- Core heals +20 more HP with Skill effects",
+          "name": "Broken Stump"
+        },
+        {
+          "desc": "Turn Start: based on the number of units in the Encounter, inflict [FairyCharm] on Sinners with the slowest Speed\nNumber of [FairyCharm] units increases every time the Fairy Part is restored ",
+          "name": "Charmed"
+        },
+        {
+          "desc": "Cannot damage Core HP by damaging the Fairy\nA certain Skill gains Atk Weight based on the number of [FairyCharm] units",
+          "name": "Leading Lure"
+        },
+        {
+          "desc": "Fairy gains 30% increased max HP with each restoration",
+          "name": "Evolving Lure"
+        },
+        {
+          "desc": "When the Fairy is killed, all Identities gain 5 [Breath] and +2 [Breath] Count next turn",
+          "name": "Fairy Dust"
+        },
+        {
+          "desc": "Use more powerful Skills after the Fairy is restored for the second time",
+          "name": "Increased Aggression - Partial Deterrence Release"
+        }
+      ],
+      "portrait": 8549,
+      "skills": [
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[OnSucceedAttack] Core, Body heals 15 HP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nPrioritizes Sinners with [FairyCharm]\nThis Skill's Atk Weight = Number of Sinners with [FairyCharm]",
+          "levelCorrection": 2,
+          "name": "Snagged Lure"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 9,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Burst] Count",
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Burrowing Roots"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 2,
+          "baseValue": 6,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Burst]",
+                "[OnSucceedAttack] Inflict 5 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Expanding Roots"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 5,
+          "baseValue": 7,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]\n[OnSucceedAttack] Deal +5% damage for every [Burst] on target (max 100%)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 2,
+          "name": "Infusing Stems"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 5,
+          "baseValue": 10,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has 5+ [Burst], deal +100% damage\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 2,
+          "name": "Uncovered Abyss"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Burst] and +3 [Burst] Count",
+                "[OnSucceedAttack] Inflict 3 [Laceration] and +3 [Laceration] Count",
+                "[OnSucceedAttack] Core and Body heal 30 HP"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nCannot be Staggered before using this Skill\nPrioritizes Sinners with [FairyCharm]\nThis Skill's Atk Weight = Number of Sinners with [FairyCharm]",
+          "levelCorrection": 2,
+          "name": "Snagged Lure"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,970 @@
+{
+  "name": "Murder on the WARP Express (6.5-28)",
+  "siteId": "eceb98f4-6501-482d-b9fd-9df38a150851",
+  "waves": [
+    {
+      "targets": [
+        {
+          "name": "Craving Bloodbag Passenger",
+          "num": 6,
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                20,
+                0
+              ],
+              "defCorrection": -2,
+              "hp": 57.37,
+              "name": "Body",
+              "partId": 834901,
+              "resists": {
+                "blunt": 1.5,
+                "envy": 1.5,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 0.75,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Gain +1 [Laceration] Count every time this unit is hit\nTurn End: consume 3 [Laceration] Count on self to gain 1 [HardenedBlood]",
+              "name": "Blood Coagulation"
+            },
+            {
+              "desc": "Prioritizes targets with [Laceration]\nTurn End: if this unit failed to deal any damage this turn, gain 2 [Vulnerable] and 2 [AttackUp] next turn",
+              "name": "Thirst for Blood"
+            },
+            {
+              "desc": "Damage taken from [Laceration] -10% (rounded down)\nOn Hit, if the target has [Laceration], heal 10% of the damage dealt",
+              "name": "Bloodsucking"
+            },
+            {
+              "desc": "Combat Start: starts the Encounter only with half of max HP",
+              "name": "Burst Bloodbag"
+            }
+          ],
+          "portrait": 90145,
+          "skills": [
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 2,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -3,
+              "name": "Coagulated Arm"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -3,
+              "name": "Hardblood Jag"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Absorb up to 10 [Laceration] Potency from the target and heal ([Laceration] Potency absorbed x 2)% HP (this effect does not lower the target's [Laceration] Potency under 1)"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "If target has 10+ [Laceration], deal +20% damage",
+              "levelCorrection": 0,
+              "name": "Collecting Blood"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[WhenUse] Base Power +1 for every 3 [Laceration] Count on self (max 2)",
+              "levelCorrection": 0,
+              "name": "Counter"
+            }
+          ]
+        },
+        {
+          "name": "Hungering Bloodbag Cleanup Agent",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                10,
+                0
+              ],
+              "defCorrection": 3,
+              "hp": 80.56,
+              "name": "Body",
+              "partId": 834801,
+              "resists": {
+                "blunt": 1.5,
+                "envy": 1.5,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 0.75,
+                "pierce": 0.75,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Gain +1 [Laceration] Count every time this unit is hit\nTurn End: consume 3 [Laceration] Count on self to gain 1 [HardenedBlood]",
+              "name": "Blood Coagulation"
+            },
+            {
+              "desc": "Prioritizes targets with [Laceration]\nTurn End: if this unit failed to deal any damage this turn, gain 2 [Vulnerable] and 2 [AttackUp] next turn",
+              "name": "Thirst for Blood"
+            },
+            {
+              "desc": "Damage taken from [Laceration] -20% (rounded down)\nOn Hit, if the target has [Laceration], heal 15% of the damage dealt",
+              "name": "Rough Bloodsucking"
+            },
+            {
+              "desc": "Every time this unit is hit, if the attacker used a Skill that gains [Charge], the attacker steals 1 [Charge] Count from this unit.\n(Once per Skill. Does not activate if this unit does not have [Charge])",
+              "name": "Power Leakage"
+            },
+            {
+              "desc": "Self-inflicted damage due to this unit's Skills does not reduce this unit's HP under 1",
+              "name": "Tenacious"
+            },
+            {
+              "desc": "Combat Start: starts the Encounter only with half of max HP",
+              "name": "Burst Bloodbag"
+            }
+          ],
+          "portrait": 90150,
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +2 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Spear Swing"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +5 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Tear Up Wound"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 6 [Laceration]",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [AttackDown]",
+                    "[OnSucceedAttack] Absorb up to 10 [Laceration] Potency from the target and heal ([Laceration] Potency absorbed x 2)% HP (this effect does not lower the target's [Laceration] Potency under 1)"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume all [Charge] Count on self and consume 2(15 - [Charge] Count consumed)% HP to gain Coin Power +2",
+              "levelCorrection": 2,
+              "name": "Hardblood Weapon"
+            },
+            {
+              "affinity": "envy",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[WhenUse] Base Power +1 for every 3 [Laceration] Count on self (max 2)",
+              "levelCorrection": 0,
+              "name": "Guard"
+            }
+          ]
+        },
+        {
+          "name": "Bloodbag Prosthetic Fixer",
+          "num": 2,
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                0
+              ],
+              "defCorrection": 3,
+              "hp": 69.51,
+              "name": "Body",
+              "partId": 834601,
+              "resists": {
+                "blunt": 1.2,
+                "envy": 1.5,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 0.75,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 0.75,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                3,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Gain +1 [Laceration] Count every time this unit is hit\nTurn End: consume 3 [Laceration] Count on self to gain 1 [HardenedBlood]",
+              "name": "Blood Coagulation"
+            },
+            {
+              "desc": "Prioritizes targets with [Laceration]\nTurn End: if this unit failed to deal any damage this turn, gain 2 [Vulnerable] and 2 [AttackUp] next turn",
+              "name": "Thirst for Blood"
+            },
+            {
+              "desc": "Every time this unit is hit, if the attacker used a Skill that gains [Charge], the attacker steals 1 [Charge] Count from this unit.\n(Once per Skill. Does not activate if this unit does not have [Charge])",
+              "name": "Power Leakage"
+            },
+            {
+              "desc": "Self-inflicted damage due to this unit's Skills does not reduce this unit's HP under 1",
+              "name": "Tenacious"
+            },
+            {
+              "desc": "Damage taken from [Laceration] -30% (rounded down)\nOn Hit, if the target has [Laceration], heal 15% of the damage dealt",
+              "name": "Blood to Brain"
+            },
+            {
+              "desc": "Turn Start: At less than 5 [Charge] Count, gain 1 [Reduction]\nTurn Start: At 5+ [Charge] Count, gain 2 [ParryingResultUp]",
+              "name": "Prosthesis Model - L37"
+            },
+            {
+              "desc": "Combat Start: starts the Encounter only with half of max HP",
+              "name": "Burst Bloodbag"
+            }
+          ],
+          "portrait": 90151,
+          "skills": [
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] At 10+ [Charge] Count, consume 5 [Charge] Count to gain 3 [AttackUp]",
+              "levelCorrection": 0,
+              "name": "Activate Prosthesis"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] At 5- [Charge] Count, gain 5 [Charge] Count, 3 [Laceration] Count, and 1 [Vulnerable]\n[WhenUse] At 10+ [Charge] Count, consume 5 [Charge] Count to gain 3 [AttackUp]",
+              "levelCorrection": 0,
+              "name": "Harpoon Mark"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 6 [Laceration]",
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count.",
+                    "[OnSucceedAttack] Inflict 2 [Paralysis]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume 10% HP on self to gain +10 [Charge] Count",
+              "levelCorrection": 1,
+              "name": "Hardblood Harpoon"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[WhenUse] Base Power +1 for every 3 [Laceration] Count on self (max 2)",
+              "levelCorrection": 2,
+              "name": "Counter"
+            }
+          ]
+        },
+        {
+          "name": "Sasha",
+          "parts": [
+            {
+              "breakSection": [
+                50,
+                0
+              ],
+              "defCorrection": 5,
+              "hp": 218.49,
+              "name": "Body",
+              "partId": 834701,
+              "resists": {
+                "blunt": 1.2,
+                "envy": 1.5,
+                "gloom": 1.25,
+                "gluttony": 1,
+                "lust": 0.5,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 0.75,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                5
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Turn End: if in Panic, reset SP to 0.",
+              "name": "Panic Recovery"
+            },
+            {
+              "desc": "Gain +1 [Laceration] Count every time this unit is hit\nTurn End: consume 3 [Laceration] Count on self to gain 1 [HardenedBlood]",
+              "name": "Blood Coagulation"
+            },
+            {
+              "desc": "Prioritizes targets with [Laceration]\nTurn End: if this unit failed to deal any damage this turn, gain 2 [Vulnerable] and 2 [AttackUp] next turn",
+              "name": "Thirst for Blood"
+            },
+            {
+              "desc": "Every time this unit is hit, if the attacker used a Skill that gains [Charge], the attacker steals 1 [Charge] Count from this unit.\n(Once per Skill. Does not activate if this unit does not have [Charge])",
+              "name": "Power Leakage"
+            },
+            {
+              "desc": "Self-inflicted damage due to this unit's Skills does not reduce this unit's HP under 1",
+              "name": "Tenacious"
+            },
+            {
+              "desc": "Turn Start: At less than 5 [Charge] Count, gain 1 [Reduction]\nTurn Start: At 5+ [Charge] Count, gain 2 [ParryingResultUp]",
+              "name": "Prosthesis Model - L37"
+            },
+            {
+              "desc": "Damage taken from [Laceration] -30% (rounded down)\nOn Hit, if the target has [Laceration], heal 25% of the damage dealt",
+              "name": "A Young Kindred"
+            }
+          ],
+          "portrait": 91018,
+          "skills": [
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] At 10+ [Charge] Count, consume 3 [Charge] Count to gain Coin Power +1\n[WhenUse] At 15+ [Charge] Count, consume 3 additional [Charge] Count to deal +20% damage\n[WhenUse] At 5- [Charge] Count, lose 10% HP and gain +5 [Charge] Count",
+              "levelCorrection": 3,
+              "name": "Activate Prosthesis"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]",
+                    "[OnSucceedAttack] Inflict 2 [Paralysis]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] At 10+ [Charge] Count, consume 3 [Charge] Count to gain Coin Power +1\n[WhenUse] At 15+ [Charge] Count, consume 3 additional [Charge] Count to deal +20% damage\n[WhenUse] At 5- [Charge] Count, lose 10% HP and gain +5 [Charge] Count",
+              "levelCorrection": 3,
+              "name": "Hardblood Reflux"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 6 [Laceration]",
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                    "[OnSucceedAttack] Inflict 2 [AttackDown]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume 10% HP on self to gain +15 [Charge] Count",
+              "levelCorrection": 5,
+              "name": "Bioenergy Conversion Charge"
+            },
+            {
+              "affinity": "wrath",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[WhenUse] Base Power +1 for every 3 [Laceration] Count on self (max 2)",
+              "levelCorrection": 2,
+              "name": "Guard"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] At 10+ [Charge] Count, consume 3 [Charge] Count to gain Coin Power +1\n[WhenUse] At 15+ [Charge] Count, consume 3 additional [Charge] Count to deal +20% damage\n[WhenUse] At 5- [Charge] Count, lose 10% HP and gain +5 [Charge] Count",
+              "levelCorrection": 3,
+              "name": "Hardblood Transfusion"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [Vulnerable]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 6 [Laceration]",
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                    "[OnSucceedAttack] Inflict 2 [AttackDown]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume 10% HP on self to gain +15 [Charge] Count",
+              "levelCorrection": 5,
+              "name": "Bioenergy Conversion Recharge"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Cassetti",
+          "parts": [
+            {
+              "breakSection": [
+                33,
+                -20
+              ],
+              "defCorrection": -5,
+              "hp": {
+                "base": 417,
+                "level": 28.76
+              },
+              "name": "Body",
+              "partId": 835001,
+              "resists": {
+                "blunt": 1.2,
+                "envy": 1.5,
+                "gloom": 1.25,
+                "gluttony": 1,
+                "lust": 0.5,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 0.75,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "At Turn End, depending on the [KeptBlood] Stack on self:\n- At 5 or fewer Stack: gain 1 [Binding], 1 [Vulnerable], and 1 [AttackDown] next turn for every (6 - Stack)\n- At more than 5 Stack: gain 2 [AttackUp] and 2 [DefenseUp] next turn for every (Stack - 5)",
+              "name": "Stored Blood"
+            },
+            {
+              "desc": "Gains a new pattern when [KeptBlood] reaches 0 for the first time\nFix this unit's speed to 10 when using the Skill 'I Am... The Prince... of the Parade...!'",
+              "name": "Must Retain Blood"
+            },
+            {
+              "desc": "When this unit reaches 30% HP, gain [BloodyCrave]",
+              "name": "The Prince's Frenzy"
+            },
+            {
+              "desc": "Prioritizes targets with the highest sum of [Laceration] Potency and Count\nOn Hit, if the target has [Laceration], heal 2% HP",
+              "name": "Hardblood Glaive"
+            },
+            {
+              "desc": "When this unit has [Laceration]:\n- Gain 1 Offense Level Up and 1 Defense Level Up for every 5 [Laceration] (max 10)\n- Gain 1 Clash Power Up for every 10 [Laceration] (max 5)\n- Damage taken from [Laceration] -50% (rounded down)",
+              "name": "Sanguivore - Coagulation"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+              "name": "Fixed Panic"
+            },
+            {
+              "desc": "Turn End: if in Panic, reset SP to 0.",
+              "name": "Panic Recovery"
+            }
+          ],
+          "portrait": "8350",
+          "skills": [
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 4+ [Laceration], Clash Power +1",
+              "levelCorrection": 0,
+              "name": "Grovel Before Me"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 4+ [Laceration], Clash Power +1",
+              "levelCorrection": 0,
+              "name": "Pathetic One"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 8 [Laceration] and +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 4+ [Laceration], Clash Power +1\n[WhenUse] Deal +5% damage for every [Laceration] Count on the target (max 20%)",
+              "levelCorrection": 0,
+              "name": "Go... Go Away...!"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Gain Atk Weight equal to the number of targets with [Laceration] (max 5)\n[WhenUse] If target has 4+ [Laceration], Base Power +1\n[WhenUse] If target has 3+ [Laceration] Count, Coin Power +1\n[DefeatDuel] Lose 1 [KeptBlood]",
+              "levelCorrection": 0,
+              "name": "The Parade's Prince"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 [Laceration] and +3 [Laceration] Count",
+                    "[OnSucceedAttack] If target has 10+ [Laceration], the next Coin deals +20% damage"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain 1 [KeptBlood]",
+                    "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 8+ [Laceration], Coin Power +1\n[DefeatDuel] Lose 1 [KeptBlood]",
+              "levelCorrection": 0,
+              "name": "Blood... Blood... Blood...!"
+            },
+            {
+              "affinity": "none",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[WhenUseEvade] Base Power +1 for every [Laceration] Count on the target (max 4)",
+              "levelCorrection": 0,
+              "name": "Leave Me Alone...!"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 6,
+              "baseValue": 1,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel]\n[WhenUse] Double the amount healed by Hardblood[TabExplain] Glaive\n[WhenUse] Reset SP to 0\n[EndSkill] Gain 10 [KeptBlood]\nDoes not get Staggered this turn; ends turn after using this Skill.",
+              "levelCorrection": 0,
+              "name": "I Am... The Prince... of the Parade...!"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 6,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration] and +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration] and +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration] and +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration] and +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Clash Power +1 for every 5 [Laceration] on the main target (max 3)\n[WhenUse] If the main target has 4+ [Laceration], Coin Power +1\n[WhenUse] Deal +5% damage for every [Laceration] on the main target (max 20%)\n[WhenUse] Double the amount healed by Hardblood[TabExplain] Glaive\n[EndSkill] Gain 10 [KeptBlood]",
+              "levelCorrection": 0,
+              "name": "I'm... Never... Going Back...!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

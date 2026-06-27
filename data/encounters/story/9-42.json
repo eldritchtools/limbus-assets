@@ -1,0 +1,540 @@
+{
+  "name": "The Unsevering (9-42)",
+  "siteId": "429ca358-8939-414b-bfd0-6fdd0788a549",
+  "targets": [
+    {
+      "name": "The Thumb Apprentice - Lucio",
+      "parts": [
+        {
+          "breakSection": [
+            50
+          ],
+          "defCorrection": 2,
+          "hp": 1587.8,
+          "name": "Body",
+          "partId": 132601,
+          "resists": {
+            "blunt": 0.5,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 1.25,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            1,
+            3
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Begins battle with 20% missing HP\nFor the first 3 turns of the Encounter, gain 2 [ResultReduction]",
+          "name": "Grueling Battle"
+        },
+        {
+          "desc": "Gain the following effects based on the target's [DuelEdge] Stack\n- For every Stack, deal +10% damage against and take -10% damage from the target with [DuelEdge]\n- At 3+ Stack, in a Clash against targets with [DuelEdge], gain Clash Power +1\n- At 5+ Stack, in a Clash against targets with [DuelEdge], gain Base Power +1\n- At 7+ Stack, in a Clash against targets with [DuelEdge], gain Coin Power +1\n- At 10+ Stack, in a Clash against targets with [DuelEdge], gain Final Power +1",
+          "name": "Crumbling Form"
+        },
+        {
+          "desc": "Randomly select an enemy, reduce their Speed to 1, and target it with all of this unit's Skills\nActivates every 4 turns after the initial activation",
+          "name": "Hunter's Mark"
+        },
+        {
+          "desc": "After Clashing, inflict 1 [DuelEdge] against the target this unit Clashed against\nIn a Clash against targets with [DuelEdge], heal 2 SP for every [DuelEdge] Stack on target (max 10)",
+          "name": "Duello Disperato"
+        },
+        {
+          "desc": "If this unit's Skill effects triggered [VibrationExplosion], gain 2 [AttackUp] next turn (3 times per turn)",
+          "name": "Palermitan Rapier / The Cleaving Blade"
+        },
+        {
+          "desc": "After the Thumb Nursefather enters the field, deactivate the \"Hunter's Mark\" Passive and gain the following effects instead:\n- At less than 30 SP, heal up to 30 SP\n- Turn Start: Gain 3 [SupportProtect]\n<color=#ff6000><mark=#ff000040><b><u>- Can Clash regardless of Speed\n- Prioritize Clashing against Vergilius</u></b></mark></color>\n- When the Thumb Nursefather wins a Clash, and uses an Attack against the target, follow up with \"Colpi Sottani\" as an Unopposed Attack against the same target (2 times per turn)",
+          "name": "Desperate Struggle"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+          "name": "Fixed Panic"
+        }
+      ],
+      "portrait": 1306,
+      "skills": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has 6+ [Vibration], Clash Power +1",
+          "levelCorrection": 0,
+          "name": "La Spada di Palermo"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion] and +2 [Combustion] Count",
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion] and +2 [Combustion] Count",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Base Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 2)",
+          "levelCorrection": 0,
+          "name": "Colpi Sottani"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +2 [Vibration] Count",
+                "[OnSucceedAttack] Trigger [FusionVibration] into [VibrationIgnition]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttackHead] Gain 2 [Agility] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Coin Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 2)\n\n[WhenUse] If target has [DuelEdge], convert all Coins on this Skill to [SuperCoin]s",
+          "levelCorrection": 3,
+          "name": "Il Cacciatore"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 3,
+          "baseValue": 6,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Combustion] and +2 [Combustion] Count",
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +2 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Combustion] and +2 [Combustion] Count",
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +2 [Vibration] Count",
+                "[UnBrokenCoinOnSucceedAttack] Trigger [FusionVibration] into [VibrationIgnition]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Trigger [VibrationExplosion] 2 times; then, reduce target's [Vibration] Count by 2"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Trigger [VibrationExplosion] 2 times; then, reduce target's [Vibration] Count by 2"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantChangeTarget]\nCannot be Staggered before using this Skill\n\nFor <color=#ff6000><mark color=#ff000040><b><u>every Attack Skill of this unit that lost a Clash this turn</color></mark></b></u>, Final Power -2 and Atk Weight -1\n(Min. Atk Weight: 1)\n\n[DefeatDuel] Deal -90% damage and damage dealt by this Skill cannot Stagger the target\n[DefeatDuel] Lose 15 SP; next turn, gain 6 Offense Level Down",
+          "levelCorrection": 4,
+          "name": "Sezionatura di Cervo"
+        }
+      ]
+    },
+    {
+      "name": "The Thumb Nursefather - Valencina",
+      "parts": [
+        {
+          "breakSection": [
+            50
+          ],
+          "defCorrection": 2,
+          "hp": 3203.75,
+          "name": "Body",
+          "partId": 131401,
+          "resists": {
+            "blunt": 0.5,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 1.2,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            2,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "When this unit enters the Encounter, gain 30 [FutureEyeOn]\nAt 0 [FutureEyeOn] Stack, convert [FutureEyeOn] to [FutureEyeOff]",
+          "name": "The Eye of Precognition"
+        },
+        {
+          "desc": "In a Clash, <color=#ff6000><mark=#ff000040><b><u>gain 1 [LookingFuture] with every Clash</u></b></mark></color>\nCan gain up to ([FutureEyeOn] Stack at Turn Start / 3) [LookingFuture] per turn\nWhile this unit has [FutureEyeOn], <color=#ff6000><mark=#ff000040><b><u>getting attacked by Unopposed Attacks or losing a Clash activates the \"Precognition\" Skill</u></b></mark></color>",
+          "name": "Accelerating Future"
+        },
+        {
+          "desc": "The following causes this unit to lose [FutureEyeOn] Stack:\n- If this unit fails to gain [LookingFuture], lose 1 [FutureEyeOn] with every Clash\n- When this unit is attacked by an Unopposed Attack, lose 1 [FutureEyeOn]\n- On Clash Lose, lose 3 [FutureEyeOn]",
+          "name": "Overloaded"
+        },
+        {
+          "desc": "Take -30% HP, SP damage from [Combustion], [Laceration], [Burst], [Sinking]; -30% to Stagger Threshold raised by [Vibration]\nAt 1+ [AccelBullet], Skills that spend [AccelBullet] deal +30% damage and deal +150% damage against Shields\nGain 4 [Breath] for every [AccelBullet] spent\nWhen flipping a Coin that spends [AccelBullet], does not cancel the attack even if this unit does not have Acceleration Round",
+          "name": "The Shame of Famiglia Bognatelli"
+        },
+        {
+          "desc": "Deal +15% more damage against Shields for every Burn on the main target (max 300%)\nOn Skill Use, if target's Attack Skill is either a Slash or a Pierce Skill, Clash Power +1\nIf this unit's Skill effects triggered [VibrationExplosion], gain 2 [AttackDmgUp] next turn (3 times per turn)\nIf this unit hit Critically with its Skill effects, heal 5 SP",
+          "name": "La Spada di Palermo"
+        },
+        {
+          "desc": "When hit, or when \"The Thumb Apprentice - Lucio\" is defeated, gain [ObsessionAndGreed] next turn",
+          "name": "Shin (心) - Valencina"
+        },
+        {
+          "desc": "When \"The Thumb Apprentice - Lucio\" is defeated, activate \"Time to Hunt\" Passive",
+          "name": "Lucio, you useless little shit!"
+        },
+        {
+          "desc": "Turn Start: If this unit is Staggered, recover from Stagger\n\nSelect a random Sinner and inflict [TeachersPrey]\n- Activates every 4 turns after the initial activation\n- If this unit kills the target with the Skill \"Disposal,\" activate it again next turn",
+          "name": "Time to Hunt"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+          "name": "Fixed Panic"
+        }
+      ],
+      "portrait": "1314",
+      "skills": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion] and +2 [Combustion] Count",
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]",
+                "[OnSucceedAttack] Inflict Wrath damage equal to [Combustion] on target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At 6+ [Breath], Coin Power +1\nIf target has 6+ [Vibration], Clash Power +1",
+          "levelCorrection": 0,
+          "name": "Colpi di Taglio"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "Spend [AccelBullet]",
+                "[OnSucceedAttack] Inflict 2 [Combustion] and +2 [Combustion] Count",
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend [AccelBullet]",
+                "[OnSucceedAttack] Inflict 2 [Combustion] and +2 [Combustion] Count",
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At 6+ [Breath], Coin Power +1\n[WhenUse] Base Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 2)\n[WhenUse] Gain +2 [Breath] Count",
+          "levelCorrection": 0,
+          "name": "Colpo di Punta"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Combustion] and +3 [Combustion] Count",
+                "[OnSucceedAttack] Inflict 3 [Vibration] and +3 [Vibration] Count",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict Wrath damage equal to [Combustion] on target",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At 6+ [Breath], Coin Power +1\n[WhenUse] Base Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 2)",
+          "levelCorrection": 0,
+          "name": "Sezionatura di Coniglio"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Combustion]",
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration] and +3 [Vibration] Count",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion] twice; then, reduce target's [Vibration] Count by 2",
+                "[CriticalOnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At 6+ [Breath], Coin Power +1\nCoin Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 2)\n[WhenUse] At 0+ SP, generate 1 Mang (望)\n- Base Power +4\n[WhenUse] Gain +3 [Breath] Count\n[WinDuel] Gain 5 [Breath]\n[EndSkill] If this Skill generated Mang, lose 10 SP",
+          "levelCorrection": 3,
+          "name": "Sezionatura di Cervo"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "Spend [AccelBullet]",
+                "[OnSucceedAttack] Inflict 2 [Combustion] and +2 [Combustion] Count",
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Spend [AccelBullet]",
+                "[OnSucceedAttack] Inflict 2 [Combustion] and +2 [Combustion] Count",
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict Wrath damage equal to [Combustion] on target",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[CriticalOnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At 6+ [Breath], Coin Power +1\nCoin Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 2)\n[WhenUse] Gain +3 [Breath] Count",
+          "levelCorrection": 2,
+          "name": "I'll Gladly Blast a Hole Through You"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Spend [AccelBullet]",
+                "[OnSucceedAttack] Inflict 4 [Combustion]",
+                "[OnSucceedAttack] Inflict 4 [Vibration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Spend [AccelBullet]",
+                "[OnSucceedAttack] Inflict +4 [Combustion] Count",
+                "[OnSucceedAttack] Inflict +4 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Spend [AccelBullet]",
+                "[UnBrokenCoinOnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict Wrath damage equal to [Combustion] on target",
+                "[OnSucceedAttack] Trigger [VibrationExplosion] twice; then, reduce target's [Vibration] Count by 2",
+                "[CriticalOnSucceedAttack] Trigger [VibrationExplosion] twice; then, reduce target's [Vibration] Count by 2"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At 6+ [Breath], Coin Power +1\nCoin Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 2)\n[WhenUse] Gain +3 [Breath] Count\n[DefeatDuel] Deal -50% final damage and does not hit Critically.\nDamage dealt by this Skill cannot Stagger the target",
+          "levelCorrection": 3,
+          "name": "Sezionatura di Elefante"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Combustion]",
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Combustion]",
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +6 [Combustion] Count",
+                "[OnSucceedAttack] Inflict +6 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Spend all [AccelBullet]",
+                "[UnBrokenCoinOnSucceedAttack] Trigger [VibrationExplosion] 3 times; then, reduce target's [Vibration] Count by 3",
+                "[CriticalOnSucceedAttack] Trigger [VibrationExplosion] twice; then, reduce target's [Vibration] Count by 2"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantChangeTarget]\nCannot be Staggered before using this Skill\n<color=#ff6000><mark color=#ff000040><b><u>Base Power +1 and deal +10% damage for every [FutureEyeOn] Stack</color></mark></b></u>\n[WhenUse] If target has 50% or less HP, deal +100% damage\n[WhenUse] At 0+ SP, generate 1 Mang (望)\n- Base Power +4\n[WhenUse] Gain +3 [Breath] Count\n[WinDuel] Gain 5 [Breath]\n[DefeatDuel] Deal -50% final damage and does not hit Critically.\nDamage dealt by this Skill cannot Stagger the target\n[EnemyKill] Inflict [TeachersPrey] against a random Sinner next turn\n[EndSkill] [FullReload] (once per turn)\n[EndSkill] If this Skill generated Mang, lose 10 SP",
+          "levelCorrection": 3,
+          "name": "Disposal"
+        }
+      ]
+    }
+  ]
+}

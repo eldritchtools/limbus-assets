@@ -1,0 +1,318 @@
+{
+  "name": "The Heartbreaking (6-32)",
+  "siteId": "5984247b-632b-40cf-b14e-6c406e5d95a3",
+  "targets": [
+    {
+      "name": "Hindley, The Reaved Lamenter",
+      "parts": [
+        {
+          "breakSection": [
+            75,
+            25,
+            0
+          ],
+          "defCorrection": -1,
+          "hp": 1007.74,
+          "name": "Body",
+          "partId": 816501,
+          "resists": {
+            "blunt": 1,
+            "envy": 1.5,
+            "gloom": 1.2,
+            "gluttony": 1,
+            "lust": 1.2,
+            "pierce": 1,
+            "pride": 0.5,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 1.5
+          },
+          "speed": [
+            2,
+            4
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+          "name": "Fixed Panic"
+        },
+        {
+          "desc": "HP does not drop below 40% for 1 turn.\nGains a new pattern",
+          "name": "A Place for Me"
+        },
+        {
+          "desc": "At less than 65% HP: gain 1 [AttackUp] and 1 [TakeHpHealIncrease] on Clash Win\nAt less than 40% HP: gain 1 [AttackUp] and 1 [TakeHpHealIncrease] On Use\nThe effects linger even after the conditions no longer apply, as long as they have been activated at least once.",
+          "name": "Endless Insecurity"
+        },
+        {
+          "desc": "After the first recovery from Stagger, and after Clash Win, deal 10% of the damage dealt On Hit as Wrath bonus damage.",
+          "name": "Directed Wrath"
+        },
+        {
+          "desc": "On Kill, heal 200 HP for Core and Part.\nGain 1 [Agility], 3 [DefenseUp], and 2 [AttackUp] next turn.",
+          "name": "Predation"
+        },
+        {
+          "desc": "Prioritizes targets with [AaCfPbBe]",
+          "name": "Marked"
+        }
+      ],
+      "portrait": "8165",
+      "skills": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [AttackUp]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [AttackUp]",
+                "[OnSucceedAttackHead] Gain 1 [Agility] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Core and Part heal by 10% of the damage dealt by this Attack Skill",
+          "levelCorrection": 0,
+          "name": "I'll Remove You"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration] and +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration] and +2 [Laceration] Count",
+                "[OnSucceedAttack] If this unit's Speed is faster than the target's by 3 or more, reuse this Coin (once)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If this unit's Speed is faster than the target's Clash Power +2",
+          "levelCorrection": 0,
+          "name": "Bloody Bastard!"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Agility] next turn",
+                "[OnSucceedAttack] Inflict 1 [Vulnerable]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration] and +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration] and +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 20+ [Laceration], deal +100% damage",
+                "[EnemyKill] Reuse this Skill (1 time max)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritize targets with the least HP\n[WhenUse] If target has less than 70% HP, Clash Power +2",
+          "levelCorrection": 0,
+          "name": "This Is My Home!"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [AttackUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [AttackUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes Heathcliff\n[WhenUse] If the target is the enemy with the slowest Speed, Base Power +3\n[WhenUse] Inflict [AaCfPbBe], 2 [Vulnerable], 3 [Paralysis], and 5 [Binding] next turn",
+          "levelCorrection": 0,
+          "name": "I'll Get You...!"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [AttackUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [AttackUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Gain 2 [AttackUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 10+ [Laceration], deal 30% of damage dealt as Blunt damage",
+                "[OnSucceedAttack] If target has 5+ [Laceration], heal by 50% of damage dealt"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]",
+          "levelCorrection": 0,
+          "name": "Give It Back...!!"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal Core and Part by 50% of damage dealt"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal Core and Part by 50% of damage dealt"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Prioritizes targets with [AaCfPbBe]\nIf this unit's Speed is faster than the target's by 3 or more, reuse this Skill (1 time max)",
+          "levelCorrection": 0,
+          "name": "You Little..."
+        },
+        {
+          "affinity": "pride",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 20,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "If this Unit has remaining Shield HP at Turn End, gain 4 [Protection] next turn",
+          "levelCorrection": 0,
+          "name": "Guard"
+        },
+        {
+          "affinity": "pride",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 7,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[OnSucceedEvade] Inflict 1 [Binding] next turn (2 times max)",
+          "levelCorrection": 0,
+          "name": "Evade"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 10+ [Laceration], deal 30% of damage dealt as Blunt damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 10+ [Laceration], deal 30% of damage dealt as Blunt damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 10+ [Laceration], deal 30% of damage dealt as Blunt damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] If target has 10+ [Laceration], deal 30% of damage dealt as Blunt damage",
+                "[OnSucceedAttack] If target has 10+ [Laceration], heal by 70% of damage dealt"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If this unit's Speed is faster than the target's, Coin Power +1",
+          "levelCorrection": 5,
+          "name": "This is My Place!"
+        }
+      ]
+    }
+  ]
+}

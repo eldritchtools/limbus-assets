@@ -1,0 +1,2901 @@
+{
+  "battles": [
+    {
+      "targets": [
+        {
+          "name": "???",
+          "parts": [
+            {
+              "breakSection": [
+                50,
+                0,
+                -50
+              ],
+              "defCorrection": 0,
+              "hp": 330,
+              "name": "Body",
+              "partId": 810301,
+              "resists": {
+                "blunt": 2,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                2
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "At Turn Start, gain Offense Level and Defense Level by the number of surviving allies (not including this unit)",
+              "name": "Suppressed Pallidification"
+            },
+            {
+              "desc": "Turn Start: If not at -45 SP, heal (# of surviving other allies x 5) SP.\nTurn Start: If at -45 SP, recover from panic at Turn End and reset SP to 0.",
+              "name": "Captain's Orders"
+            },
+            {
+              "desc": "Every time a Pequod Town faction ally is defeated, lose 1 Poise Count and 10 SP.",
+              "name": "Mutilated Tattoos"
+            },
+            {
+              "desc": "The lower this unit's HP gets, the more damage this unit's Skills deal.",
+              "name": "The Indomitable Harpooneer"
+            },
+            {
+              "desc": "Turn End: If 50%- of max HP, move on to Phase 2.\nThis unit's HP does not drop below 1 before Phase 2 start.\nPhase 2 Start: Heal HP to 50% of max HP and summon 4 allies. Inflict [AaCePcBj] against 1 enemy with the lowest HP percentage at the start of every turn.",
+              "name": "Injected Hatred and Animosity"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+              "name": "Fixed Panic"
+            }
+          ],
+          "portrait": "8103",
+          "resists": {
+            "blunt": 2,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 0.5,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "skills": [
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Summon 4 allies next turn\n[WhenUse] Apply Prey Mark next turn",
+              "levelCorrection": -3,
+              "name": "Starting Hunt"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Harpooning"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Offense Level Down",
+                    "[OnSucceedAttack] Inflict 2 Bind next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 Bleed"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Piercing Harpoon"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[StartBattle] Gain 10 Poise and +10 Poise Count.\nCritical Hits do not consume Poise Count with this Skill.\nTurn End: Gain [PlusCoinValueUp] next turn by the number of surviving other allies.",
+              "levelCorrection": -3,
+              "name": "Deep Breath"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 Bleed Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "Critical Hits do not consume Poise Count with this Skill.",
+              "levelCorrection": 3,
+              "name": "Counter"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Bleed"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Bleed",
+                    "[CriticalOnSucceedAttack] Raise target's first Stagger Threshold by 50% of damage dealt"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 Bleed"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "+30% Damage on Critical Hit",
+              "levelCorrection": 3,
+              "name": "Stalk Prey"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 3,
+              "baseValue": 13,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "+50% Damage on Critical Hit",
+                    "[OnSucceedAttack] Stagger target next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "This Skill does not consume Poise Count upon Critical Hit.\nDeal +5% damage for every [Laceration] on target\n[WhenUse] Staggered at Turn End if this unit does not have Poise on self.",
+              "levelCorrection": 3,
+              "name": "Cut Throat"
+            }
+          ]
+        },
+        {
+          "name": "Blinded Pequod Town Villager",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                20
+              ],
+              "defCorrection": 0,
+              "hp": 27.5,
+              "name": "Body",
+              "partId": 811001,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 2,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                2
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "At Turn Start, gain Offense Level and Defense Level by the number of surviving allies (not including this unit)",
+              "name": "Suppressed Pallidification"
+            },
+            {
+              "desc": "At Turn Start, heal SP by (# of other surviving allies x 3)",
+              "name": "Captain's Orders"
+            },
+            {
+              "desc": "Turn End: At 50%- HP, gain 1 Attack Power Up next turn. (once per encounter)",
+              "name": "Injected Hatred and Animosity"
+            },
+            {
+              "desc": "Turn End: At less than 0 SP, 50% chance to change Skill patterns.",
+              "name": "Crashing Pallidification"
+            }
+          ],
+          "portrait": 90098,
+          "resists": {
+            "blunt": 0.75,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 2,
+            "pride": 1,
+            "slash": 1,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "skills": [
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Inflict 4 Bleed"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -3,
+              "name": "Stab"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Bleed"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Bleed"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Bleed"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WinDuel] Heal 5 SP.\nDeal +5% damage per [Laceration] on target",
+              "levelCorrection": 0,
+              "name": "Tear Up Wound"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": -1,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +1 Poise Count",
+                    "[OnSucceedAttack] Heal 4 SP"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +1 Poise Count",
+                    "[OnSucceedAttack] Heal 4 SP"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +1 Poise Count",
+                    "[OnSucceedAttack] Heal 4 SP"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +1 Poise Count",
+                    "[OnSucceedAttack] Heal 4 SP"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain 5 Poise",
+              "levelCorrection": 3,
+              "name": "Protect the Town!"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 7,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict Tangle",
+                    "[OnSucceedAttack] Inflict 2 Bind next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain 5 Poise and +2 Poise Count",
+              "levelCorrection": 3,
+              "name": "Tangling Javelin"
+            },
+            {
+              "affinity": "sloth",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "When attacked while this unit has Shield, gain 1 Offense Level Up next turn",
+              "levelCorrection": 5,
+              "name": "Guard"
+            }
+          ]
+        },
+        {
+          "name": "Gagged Pequod Town Villager",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                20
+              ],
+              "defCorrection": 0,
+              "hp": 27.5,
+              "name": "Body",
+              "partId": 811101,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 2,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                2
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "At Turn Start, gain Offense Level and Defense Level by the number of surviving allies (not including this unit)",
+              "name": "Suppressed Pallidification"
+            },
+            {
+              "desc": "At Turn Start, heal SP by (# of other surviving allies x 3)",
+              "name": "Captain's Orders"
+            },
+            {
+              "desc": "Turn End: At 50%- HP, gain 1 Attack Power Up next turn. (once per encounter)",
+              "name": "Injected Hatred and Animosity"
+            },
+            {
+              "desc": "Turn End: At less than 0 SP, 50% chance to change Skill patterns.",
+              "name": "Crashing Pallidification"
+            }
+          ],
+          "portrait": 90099,
+          "resists": {
+            "blunt": 0.75,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 2,
+            "pride": 1,
+            "slash": 1,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "skills": [
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Inflict +2 Bleed Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttackHead] Inflict +1 Bleed Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": -3,
+              "name": "Quick Jabs"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WinDuel] Heal 5 SP.\nDeal +5% damage per [Laceration] on target",
+              "levelCorrection": 0,
+              "name": "Carve Wound"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": -1,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +1 Poise Count",
+                    "[OnSucceedAttack] Heal 4 SP"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +1 Poise Count",
+                    "[OnSucceedAttack] Heal 4 SP"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +1 Poise Count",
+                    "[OnSucceedAttack] Heal 4 SP"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +1 Poise Count",
+                    "[OnSucceedAttack] Heal 4 SP"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain 5 Poise",
+              "levelCorrection": 3,
+              "name": "Protect the Town!"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 7,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict Capture",
+                    "[OnSucceedAttack] Inflict 2 Bind next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain 5 Poise and +2 Poise Count",
+              "levelCorrection": 3,
+              "name": "Capturing Javelin"
+            },
+            {
+              "affinity": "sloth",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[OnSucceedEvade] Gain 1 Offense Level Up next turn (Max 3)",
+              "levelCorrection": -1,
+              "name": "Evade"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Ambling Pearl",
+          "parts": [
+            {
+              "breakSection": [
+                50,
+                0,
+                -50
+              ],
+              "defCorrection": 5,
+              "hp": {
+                "base": 165,
+                "level": 6.81
+              },
+              "name": "Shell",
+              "partId": 810101,
+              "resists": {
+                "blunt": 0.7,
+                "envy": 0.7,
+                "gloom": 0.7,
+                "gluttony": 0.7,
+                "lust": 0.7,
+                "pierce": 0.7,
+                "pride": 0.7,
+                "slash": 0.7,
+                "sloth": 0.7,
+                "wrath": 0.7
+              },
+              "speed": [
+                1,
+                3
+              ]
+            },
+            {
+              "breakSection": [
+                50
+              ],
+              "defCorrection": -5,
+              "hp": {
+                "base": 306,
+                "level": 12
+              },
+              "name": "Pearl",
+              "partId": 810102,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1.2,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1.2
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Turn Start: If at 0 Green Slime, become Staggered. Pearl loses all Affinity Resistances by 0.5.\nGain 10 Green Slime when recovering from Stagger.",
+              "name": "Exposed Pearl"
+            },
+            {
+              "desc": "Fix this Part's speed to 1 for a turn when using Devouring Fluid.",
+              "name": "Gathering Slime"
+            },
+            {
+              "desc": "The Shell Part retains its resistances even during Staggered state.",
+              "name": "Solid Shell"
+            }
+          ],
+          "portrait": "8101",
+          "skills": [
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Poison"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Poison"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Consume 1 Green Slime",
+              "levelCorrection": -4,
+              "name": "Toxic Fluid"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict Defense Level Down by [Poison] on target",
+                    "[OnSucceedAttack] Inflict 1 Larva"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict Defense Level Down by [Poison] on target",
+                    "[OnSucceedAttack] Inflict 1 Larva"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Consume 1 Green Slime",
+              "levelCorrection": -4,
+              "name": "Corrosive Fluid"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target has [Poison], inflict 1 Paralyze",
+                    "[OnSucceedAttack] Inflict 2 Larva"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target has [Poison], inflict 1 Paralyze",
+                    "[OnSucceedAttack] Inflict 2 Larva"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Consume 1 Green Slime",
+              "levelCorrection": -4,
+              "name": "Paralytic Fluid"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 Poison",
+                    "[OnSucceedAttackHead] Inflict 1 Paralyze next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 Poison",
+                    "[OnSucceedAttackHead] Inflict 1 Paralyze next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Consume 2 Green Slime\n[WhenUse] Inflict 3 Larva",
+              "levelCorrection": -4,
+              "name": "Devouring Fluid"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 5,
+              "baseValue": 15,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 10 Poison",
+                    "[OnSucceedAttack] Lose 7 SP",
+                    "[OnSucceedAttack] Inflict 3 Larva",
+                    "[OnSucceedAttackHead] Inflict 1 Paralyze and 3 Defense Level Down next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Gain Atk Weight by [AaCePcBh]\n[StartBattle] Gain 10 [AaCePcBh]",
+              "levelCorrection": -4,
+              "name": "Effervescent Green Slime"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 50,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "descs": [
+                    "[TargetKill] Gain 3 [AaCePcBh]."
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel][CantChangeTarget]\nTargets Green Slime primarily\nDefeats Green Slime upon attacking",
+              "levelCorrection": -4,
+              "name": "Predation"
+            },
+            {
+              "affinity": "pride",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[OnSucceedEvade] Inflict 5 Poison",
+              "levelCorrection": -4,
+              "name": "Overflowing Poison"
+            }
+          ]
+        },
+        {
+          "name": "Green Slime",
+          "parts": [
+            {
+              "defCorrection": 0,
+              "hp": {
+                "base": 11,
+                "level": 0.36
+              },
+              "name": "Green Slime",
+              "partId": 810901,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1.2,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1.2
+              },
+              "speed": [
+                1,
+                2
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Apply 3 Green Slime to Ambling Pearl when defeated by Ambling Pearl.",
+              "name": "Green Slime"
+            },
+            {
+              "desc": "Turn End: Apply (2 + Surviving Green Slime) Poison to all enemies.",
+              "name": "Contaminating Slime"
+            }
+          ],
+          "portrait": "8109"
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Skin Prophet",
+          "parts": [
+            {
+              "breakSection": [
+                50,
+                0
+              ],
+              "defCorrection": 5,
+              "hp": {
+                "base": 380,
+                "level": 14.4
+              },
+              "name": "Body",
+              "partId": 810001,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 1,
+                "gloom": 2,
+                "gluttony": 0.75,
+                "lust": 0.5,
+                "pierce": 1,
+                "pride": 1.25,
+                "slash": 1.2,
+                "sloth": 1.5,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Light all Candles every 4 turns after a Candle is snuffed. All Candles' HP is reduced to 1.",
+              "name": "Darkness Deterred"
+            },
+            {
+              "desc": "If every Candle is snuffed and at full HP, gain resistance until all Candles are lit again.\nWhen all Candles are lit, lose resistance.",
+              "name": "The All-Illuminating Light"
+            }
+          ],
+          "portrait": "8100",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Deal SP damage by the number of lit Candles"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Deal SP damage by the number of lit Candles"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes enemies with Marked",
+              "levelCorrection": -4,
+              "name": "All Shall Scatter"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Wrath Fragility next turn",
+                    "[OnSucceedAttack] If target has [Combustion], inflict 4 Burn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Wrath Fragility next turn",
+                    "[OnSucceedAttack] If target has [Combustion], inflict 4 Burn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes enemies with Marked",
+              "levelCorrection": -4,
+              "name": "Longing..."
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 7,
+              "baseValue": 20,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Target's max HP decreases by 10%.",
+                    "[OnSucceedAttack] Inflict 5 Burn and +2 Burn Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Target's max HP decreases by 10%.",
+                    "[OnSucceedAttack] Inflict 5 Burn and +2 Burn Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Snuffs out all Candles next turn.\nUpon hitting targets with [AaCePcBa], target loses additional 5% of its max HP.\n[DefeatDuel] Inflict 10 Burn. Inflict target with Marked next turn.\n[EndBattle] All Candles heal to max HP.",
+              "levelCorrection": -4,
+              "name": "9:2"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 20,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] This unit's max HP decreases by 10%.",
+                    "[OnSucceedAttack] Inflict 10 Burn on self"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] This unit's max HP decreases by 10%.",
+                    "[OnSucceedAttack] Inflict 10 Burn on self"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel][CantChangeTarget]\nTake damage in the target's place. Get staggered next turn.\nInflict Marked on a random enemy without [AaCePcBa].\n[EndBattle] All Candles heal to max HP",
+              "levelCorrection": -4,
+              "name": "6:5"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Wrath Fragility"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel]",
+              "levelCorrection": -4,
+              "name": "All Shall be Revealed"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target has [Combustion], inflict 3 Burn."
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel]",
+              "levelCorrection": -4,
+              "name": "All Shall Burn"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 [Combustion] and 2 [Combustion] Count on target"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "",
+              "levelCorrection": -4,
+              "name": "Scorn Not the Prophecy"
+            }
+          ]
+        },
+        {
+          "name": "Candle",
+          "num": 4,
+          "parts": [
+            {
+              "defCorrection": 2,
+              "hp": {
+                "base": 11,
+                "level": 0.39
+              },
+              "name": "Candle",
+              "partId": 810701,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 2,
+                "gluttony": 0.75,
+                "lust": 0.5,
+                "pierce": 1,
+                "pride": 1.25,
+                "slash": 1,
+                "sloth": 1.5,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                1
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "HP does not drop below 1.\nAt 1 HP, light the Candles and uses an Attack Skill.",
+              "name": "Burning Embers"
+            },
+            {
+              "desc": "When all Candles are lit, use a Defensive Skill.\nSnuff out the Candles next turn when out of Shield.",
+              "name": "Sinking Darkness"
+            }
+          ],
+          "portrait": "8107",
+          "skills": [
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 6 Burn and +2 Burn Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes targets with [AaCePcBa]",
+              "levelCorrection": 0,
+              "name": "Sparked Flame"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 2,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Burn and +1 Burn Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[StartBattle] Gain 20 Shield\nSnuff out the lights next turn when out of Shield",
+              "levelCorrection": 0,
+              "name": "So That It Will Burn"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Dream-Devouring Siltcurrent",
+          "parts": [
+            {
+              "breakSection": [
+                50,
+                0
+              ],
+              "defCorrection": 5,
+              "hp": {
+                "base": 350,
+                "level": 13.29
+              },
+              "name": "Body",
+              "partId": 810201,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 1.5,
+                "gloom": 0.5,
+                "gluttony": 1,
+                "lust": 0.5,
+                "pierce": 1,
+                "pride": 1.5,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 0.75
+              },
+              "speed": [
+                2,
+                4
+              ]
+            },
+            {
+              "breakSection": [
+                0,
+                -50
+              ],
+              "defCorrection": 5,
+              "hp": {
+                "base": 131,
+                "level": 4.98
+              },
+              "name": "Fluorescence",
+              "partId": 810202,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 1.5,
+                "gloom": 0.5,
+                "gluttony": 1,
+                "lust": 0.5,
+                "pierce": 1.5,
+                "pride": 1.5,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 0.75
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "When the Fluorescence Part is broken, inflict [AaCePcBb] on all enemies.\nFluorescence Part regenerates after 2 turns.",
+              "name": "Expanding Oxygen"
+            },
+            {
+              "desc": "Starting from turn 2, gain 8 Poise this turn if the Fluorescence Part isn't broken.\nGain +3 Poise Count. Starting from turn 2, gain 2 Paralyze and 2 Damage Down this turn if the Fluorescence Part is broken.",
+              "name": "Underwater Breathing"
+            },
+            {
+              "desc": "Starting from turn 2, all Identities without [AaCePcBb] are inflicted with 1 Bind and 1 Paralyze; Identities without [AaCePcBb] lose 3 SP.",
+              "name": "Siltcurrent"
+            }
+          ],
+          "portrait": "8102",
+          "skills": [
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 Sinking"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 3,
+              "name": "Headbutt"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 Sinking Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 Sinking Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 3,
+              "name": "Pound"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Sinking]",
+                    "[OnSucceedAttack] Inflict +2 Sinking Count if target has [AaCePcBb]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Sinking]",
+                    "[OnSucceedAttack] Inflict +2 Sinking Count if target has [AaCePcBb]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 3,
+              "name": "Press"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 15,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 Sinking Count",
+                    "[OnSucceedAttackHead] Inflict 4 Sinking"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 Sinking Count",
+                    "[OnSucceedAttackHead] Inflict 4 Sinking"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 Sinking",
+                    "[OnSucceedAttackHead] Inflict 4 Sinking"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Sinking Deluge"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[DefeatDuel] This unit's Fluorescence Part loses 34% of Max HP.\n[DefeatDuel] Gain 1 Blind Obsession",
+              "levelCorrection": 3,
+              "name": "Blind Obsession"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "pierce",
+              "atkWeight": 6,
+              "baseValue": 4,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Sinking and +2 Sinking Count",
+                    "[OnSucceedAttackHead] Gain -2 SP Loss Efficiency next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Sinking and +2 Sinking Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel][StartBattle] Alters the environment",
+              "levelCorrection": 3,
+              "name": "Crashing Siltcurrent"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 15,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Destroys target."
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel][CantChangeTarget] Targets destroyed Flotsam\n[EndSkill] Fluorescence Part loses 34% of Max HP.\n[EndBattle] Gain 1 Blind Obsession.",
+              "levelCorrection": 3,
+              "name": "Wayward Blind Obsession"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 Sinking",
+                    "[OnSucceedAttack] Inflict +2 Sinking Count if target has [AaCePcBb]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 Sinking",
+                    "[OnSucceedAttack] Inflict +2 Sinking Count if target has [AaCePcBb]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[EndBattle] Create Flotsam",
+              "levelCorrection": 3,
+              "name": "Sweep"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 Sinking"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Spend all Blind Obsession\n[StartBattle] Destroy all Flotsam and destroyed Flotsam",
+              "levelCorrection": 3,
+              "name": "Wriggle"
+            }
+          ]
+        },
+        {
+          "name": "Flotsam",
+          "parts": [
+            {
+              "defCorrection": 0,
+              "hp": {
+                "base": 21,
+                "level": 0.72
+              },
+              "name": "Flotsam",
+              "partId": 810801,
+              "resists": {
+                "blunt": 2,
+                "envy": 1,
+                "gloom": 0.75,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 2,
+                "pride": 1.5,
+                "slash": 2,
+                "sloth": 1.5,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                1
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Can be damaged only with damages equal to or higher than 12.\nAll damage under 12 is nullified.",
+              "name": "Harden"
+            },
+            {
+              "desc": "After the Dream-devouring Siltcurrent uses Blind Obsession, and if this unit is not destroyed at Turn End, deal 20 damage to a random Identity.",
+              "name": "Rolling Flotsam"
+            },
+            {
+              "desc": "HP does not drop below 1 upon defeat.\nTurns into a Destroyed Flotsam.",
+              "name": "Destroyed Flotsam"
+            }
+          ],
+          "portrait": "8108"
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Ahab",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                30,
+                0
+              ],
+              "defCorrection": -3,
+              "hp": 268,
+              "name": "Body",
+              "partId": 810501,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1.5,
+                "pride": 1.2,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "At Turn Start, gain Offense Level and Defense Level by the number of surviving allies (not including this unit)",
+              "name": "Suppressed Pallidification"
+            },
+            {
+              "desc": "Turn Start: If not at -45 SP, heal 15 SP.\nTurn End: If panicked, recover from panic. Reset SP to 0.",
+              "name": "Captain of the Pequod"
+            },
+            {
+              "desc": "When this unit is Staggered, and when all other allies are at less than 0 SP at Turn End, reset their SP to 0.",
+              "name": "Muddled Orders"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+              "name": "Fixed Panic"
+            }
+          ],
+          "portrait": "8105",
+          "resists": {
+            "blunt": 0.5,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 2,
+            "pride": 1,
+            "slash": 1,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "skills": [
+            {
+              "affinity": "pride",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[WhenUse] Heal 10 SP for self and 1 other ally with the least SP ",
+              "levelCorrection": -3,
+              "name": "Obey My Orders"
+            },
+            {
+              "affinity": "gluttony",
+              "atkWeight": 1,
+              "baseValue": 15,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] Order Queequeg to activate Assist Defense next turn. Order is canceled when this unit is Staggered.",
+              "levelCorrection": -3,
+              "name": "To Me!"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Order Starbuck to activate Assist Attack next turn. Order is canceled when this unit is Staggered.\n[WhenUse] Apply 1 Prey Mark next turn",
+              "levelCorrection": -3,
+              "name": "Track Them to the End!"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Bleed"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Bleed"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Veteran's Harpoon"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Bleed"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Bleed"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict Burn by Bleed on target"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Final Power +1 for every negative effect on main target (Max 5)\nDeal +5% damage per [Laceration] on target",
+              "levelCorrection": 0,
+              "name": "Burning Harpoon"
+            },
+            {
+              "affinity": "pride",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "evade",
+              "desc": "[WhenUse] Heal 5 SP\n[OnSucceedEvade] Target loses 5 SP",
+              "levelCorrection": 0,
+              "name": "Foolishness!"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Apply 4 Poise to 2 other allies.\nIf there are no other allies, gain 2 Poise Count instead."
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Inflict 1 Prey Mark next turn\n[WinDuel] Gain 4 Poise",
+              "levelCorrection": 0,
+              "name": "Exhale!"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Fragile"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Apply Undefiable Command to 1 ally with the lowest SP\n[DefeatDuel] Raise Stagger Threshold by 20 for 1 ally with the lowest SP",
+              "levelCorrection": 5,
+              "name": "Tempering of Death"
+            }
+          ]
+        },
+        {
+          "name": "Queequeg",
+          "parts": [
+            {
+              "breakSection": [
+                50,
+                0,
+                -50
+              ],
+              "defCorrection": 0,
+              "hp": 331.6,
+              "name": "Body",
+              "partId": 811201,
+              "resists": {
+                "blunt": 1.5,
+                "envy": 1.25,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                2
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "At Turn Start, gain Offense Level and Defense Level by the number of surviving allies (not including this unit)",
+              "name": "Suppressed Pallidification"
+            },
+            {
+              "desc": "Turn Start: If not at -45 SP, heal (# of surviving other allies x 5) SP.\nTurn Start: If at -45 SP, recover from panic at Turn End and reset SP to 0.",
+              "name": "Captain's Orders"
+            },
+            {
+              "desc": "Every time a Pequod Town faction ally is defeated, lose 1 Poise Count and 10 SP.",
+              "name": "Mutilated Tattoos"
+            },
+            {
+              "desc": "The lower this unit's HP gets, the more damage this unit's Skills deal.",
+              "name": "The Indomitable Harpooneer"
+            },
+            {
+              "desc": "When Staggered and when at less than 0 SP at Turn End, reset SP to 0.",
+              "name": "Clouded Mind"
+            },
+            {
+              "desc": "At 1 HP, heal up to 50% of max HP and gain 2 Attack Power Up next turn. (Once per encounter)",
+              "name": "Engraved Hatred and Animosity"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+              "name": "Fixed Panic"
+            }
+          ],
+          "portrait": 8103,
+          "resists": {
+            "blunt": 1.5,
+            "envy": 1.25,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 0.5,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "skills": [
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Harpooning"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 Offense Level Down",
+                    "[OnSucceedAttack] Inflict 2 Bind next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 Bleed"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Piercing Harpoon"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Bleed"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Bleed",
+                    "[CriticalOnSucceedAttack] Raise target's first Stagger Threshold by 50% of damage dealt"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 5 Bleed"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "+30% Damage on Critical Hit",
+              "levelCorrection": 3,
+              "name": "Stalk Prey"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 3,
+              "baseValue": 13,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "+50% Damage on Critical Hit",
+                    "[OnSucceedAttack] Stagger target next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "This Skill does not consume Poise Count upon Critical Hit.\nDeal +5% damage for every [Laceration] on target\n[WhenUse] Staggered at Turn End if this unit does not have Poise on self.",
+              "levelCorrection": 3,
+              "name": "Cut Throat"
+            },
+            {
+              "affinity": "pride",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] Gain 3 Poise and +5 Poise Count.\nFor this turn, gain Final Power equal to Poise Potency on self.\nFor this turn, lose 1 Poise Count when attacked.",
+              "levelCorrection": 5,
+              "name": "Deep Breathing"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[TurnStartBattle] Upon using this Skill, if this unit has more than 0 Assist Barrier, activate Assist Defense.\n[StartBattle] Gain 10% of max HP as Assist Barrier.",
+              "levelCorrection": 0,
+              "name": "Must... Protect"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 14,
+              "coinValue": -3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Heal Core and Part HP by 50% of damage dealt"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict Tangle",
+                    "[OnSucceedAttack] Heal Core and Part HP by 50% of damage dealt"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Final Power +1 when attacking the same target as Starbuck",
+              "levelCorrection": 3,
+              "name": "Persistent Harpoon"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 3,
+              "baseValue": 18,
+              "coinValue": -10,
+              "coins": [
+                {
+                  "descs": [
+                    "+50% Damage on Critical Hit",
+                    "[OnSucceedAttack] Stagger target next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Critical Hits do not consume Poise Count with this Skill.\nDeal +5% damage per [Laceration] on target",
+              "levelCorrection": 3,
+              "name": "Must Finish Hunt..."
+            }
+          ]
+        },
+        {
+          "name": "Starbuck",
+          "parts": [
+            {
+              "breakSection": [
+                70,
+                40,
+                20,
+                0
+              ],
+              "defCorrection": -5,
+              "hp": 213.0,
+              "name": "Body",
+              "partId": 810401,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1.25,
+                "lust": 1,
+                "pierce": 1.5,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                3,
+                5
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "At Turn Start, gain Offense Level and Defense Level by the number of surviving allies (not including this unit)",
+              "name": "Suppressed Pallidification"
+            },
+            {
+              "desc": "Turn Start: If not at -45 SP, heal (# of surviving other allies x 5) SP.\nTurn Start: If at -45 SP, recover from panic at Turn End and reset SP to 0.",
+              "name": "Captain's Orders"
+            },
+            {
+              "desc": "On Critical Hit, inflict 1 additional negative effect with Skill effects.",
+              "name": "Puncturing Harpoon"
+            },
+            {
+              "desc": "When Staggered and when at less than 0 SP at Turn End, reset SP to 0.",
+              "name": "Clouded Mind"
+            },
+            {
+              "desc": "Turn End: At 50- HP, gain 2 Haste and 2 Attack Power Up next turn. (once per encounter)",
+              "name": "Engraved Hatred and Animosity"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+              "name": "Fixed Panic"
+            }
+          ],
+          "portrait": "8104",
+          "resists": {
+            "blunt": 0.5,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 2,
+            "pride": 1,
+            "slash": 1,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "skills": [
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +3 Poise Count",
+              "levelCorrection": -2,
+              "name": "Impale"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Fragile next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 Defense Level Down next turn",
+                    "[OnSucceedAttackHead] Reuse this Coin once (Max 3)"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain 5 Poise",
+              "levelCorrection": -2,
+              "name": "Piercing Thrust"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[TurnStartBattle] If Queequeg has more than 0 Assist Barrier, activate Assist Attack",
+              "levelCorrection": 0,
+              "name": "I Follow Orders..."
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 9,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 Bleed Count",
+                    "[CriticalOnSucceedAttack] Raise target's first Stagger Threshold by 50% of damage dealt"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Deal +50% damage with Critical Hit\nDeal +5% damage per [Laceration] on target",
+              "levelCorrection": 3,
+              "name": "Ambush"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 12,
+              "coinValue": -3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +6 Poise Count",
+              "levelCorrection": 1,
+              "name": "Fearful Sigh"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 16,
+              "coinValue": -5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict Capture",
+                    "[OnSucceedAttack] Inflict 5 Defense Level Down next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 Fragile next turn",
+                    "[OnSucceedAttackTail] Reuse this Coin once (Max 3)"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Final Power +2 when attacking the same target as Queequeg",
+              "levelCorrection": 3,
+              "name": "Determined Harpoon"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 20,
+              "coinValue": -10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 Bleed Count",
+                    "[CriticalOnSucceedAttack] Raise target's first Stagger Threshold by 50% of damage dealt"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Deal +100% damage with Critical Hit\nDeal +5% damage per [Laceration] on target",
+              "levelCorrection": 5,
+              "name": "To Escape..."
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[TurnStartBattle] If Queequeg has more than 0 Assist Barrier, activate Assist Attack",
+              "levelCorrection": -3,
+              "name": "I Follow Orders..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phases": [
+        {
+          "targets": [
+            {
+              "name": "Effloresced E.G.O::GasHarpoon",
+              "parts": [
+                {
+                  "breakSection": [
+                    50,
+                    0,
+                    -20
+                  ],
+                  "defCorrection": -3,
+                  "hp": 299.0,
+                  "name": "Body",
+                  "partId": 810601,
+                  "resists": {
+                    "blunt": 1,
+                    "envy": 1.5,
+                    "gloom": 1,
+                    "gluttony": 1,
+                    "lust": 1,
+                    "pierce": 1.2,
+                    "pride": 1.5,
+                    "slash": 1,
+                    "sloth": 1,
+                    "wrath": 1.2
+                  },
+                  "speed": [
+                    2,
+                    3
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Gain Offense Level and Defense Level every time this unit gains other characters' Ego\nLose SP when losing certain Skill Clashes",
+                  "name": "Price of Nobility"
+                },
+                {
+                  "desc": "Turn Start: If not at -45 SP, heal 15 SP.\nTurn End: If panicked, recover from panic. Reset SP to 0 and gain 2 Attack Power Up and 2 Defense Power Up.",
+                  "name": "Ahab"
+                },
+                {
+                  "desc": "Phase Start: Gain 20 Pip's Ego.\nTurn End: Heal 3 SP for every Pip's Ego.\nTurn End: If [AaCePcBo] is at 0, get Staggered next turn.",
+                  "name": "Pip's Sin and Innocence"
+                },
+                {
+                  "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+                  "name": "Fixed Panic"
+                }
+              ],
+              "portrait": "8106",
+              "resists": {
+                "blunt": 1,
+                "envy": 1.5,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1.2,
+                "pride": 1.5,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1.2
+              },
+              "skills": [
+                {
+                  "affinity": "pride",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 Bleed",
+                        "[OnSucceedAttack] Inflict +3 Bleed Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 Bleed",
+                        "[OnSucceedAttack] Inflict +3 Bleed Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": 0,
+                  "name": "Strike Me Down!"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 6 Offense Level Down"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 Bleed Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Targets the unit with the least Max HP",
+                  "levelCorrection": 2,
+                  "name": "Stab to Kill"
+                },
+                {
+                  "affinity": "lust",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 7,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "evade",
+                  "desc": "Re-use Evade upon Evade failure (Up to 2 times)\n[OnDefeatEvade] Lose 2 Pip's Ego",
+                  "levelCorrection": 0,
+                  "name": "Undying Soul"
+                },
+                {
+                  "affinity": "sloth",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttackHead] Inflict 1 Pallid Noise",
+                        "[OnSucceedAttack] Inflict 1 Paralyze"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttackHead] Inflict 1 Pallid Noise",
+                        "[OnSucceedAttack] Inflict 1 Bind next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[DefeatDuel] Gain 2 Defense Power Down. Lose 10 SP on self",
+                  "levelCorrection": -3,
+                  "name": "Murky Innocence"
+                },
+                {
+                  "affinity": "sloth",
+                  "atkType": "blunt",
+                  "atkWeight": 3,
+                  "baseValue": 8,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 Pallid Noise",
+                        "[OnSucceedAttack] Raise Stagger Threshold by 30 ",
+                        "[OnSucceedAttackHead] Target loses 10 SP"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Targets 3 units with the least Max HP\n[StartBattle] Gain Base Power +2 and Atk Weight +1 for every 5 Pip's Ego\n[WhenUse] Lose 3 Pip's Ego",
+                  "levelCorrection": -3,
+                  "name": "Weight of Guilt"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "targets": [
+            {
+              "name": "Effloresced E.G.O::GasHarpoon",
+              "parts": [
+                {
+                  "breakSection": [
+                    50,
+                    0,
+                    -20
+                  ],
+                  "defCorrection": -3,
+                  "hp": 299.0,
+                  "name": "Body",
+                  "partId": 810601,
+                  "resists": {
+                    "blunt": 1,
+                    "envy": 1.5,
+                    "gloom": 1,
+                    "gluttony": 1,
+                    "lust": 1,
+                    "pierce": 1.2,
+                    "pride": 1.5,
+                    "slash": 1,
+                    "sloth": 1,
+                    "wrath": 1.2
+                  },
+                  "speed": [
+                    2,
+                    3
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Gain Offense Level and Defense Level every time this unit gains other characters' Ego\nLose SP when losing certain Skill Clashes",
+                  "name": "Price of Nobility"
+                },
+                {
+                  "desc": "Turn Start: If not at -45 SP, heal 15 SP.\nTurn End: If panicked, recover from panic. Reset SP to 0 and gain 2 Attack Power Up and 2 Defense Power Up.",
+                  "name": "Ahab"
+                },
+                {
+                  "desc": "Phase Start: Gain 20 Starbuck's Ego.\nLose 1 [AaCePcBp] for every Coin destroyed in Clash against targets with [AaCePcBj].\nTurn Start: Gain 1 Protection for every 5 Starbuck's Ego.\nTurn End: If [AaCePcBp] is at 0, get Staggered next turn.",
+                  "name": "Starbuck's Fears"
+                },
+                {
+                  "desc": "During this Phase, on Critical Hit, inflict 1 additional negative effect with Skill effects.",
+                  "name": "Puncturing Harpoon"
+                },
+                {
+                  "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+                  "name": "Fixed Panic"
+                }
+              ],
+              "portrait": 8106,
+              "resists": {
+                "blunt": 1,
+                "envy": 1.5,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1.2,
+                "pride": 1.5,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1.2
+              },
+              "skills": [
+                {
+                  "affinity": "pride",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 Bleed",
+                        "[OnSucceedAttack] Inflict +3 Bleed Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 Bleed",
+                        "[OnSucceedAttack] Inflict +3 Bleed Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": 0,
+                  "name": "Strike Me Down!"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 6 Offense Level Down"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 Bleed Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Targets the unit with the least Max HP",
+                  "levelCorrection": 2,
+                  "name": "Stab to Kill"
+                },
+                {
+                  "affinity": "sloth",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 7,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttackHead] Inflict 1 Pallid Noise",
+                        "[OnSucceedAttack] Inflict 3 Bleed and +4 Bleed Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Inflict 1 Prey Mark next turn",
+                  "levelCorrection": -3,
+                  "name": "Swathed Fear"
+                },
+                {
+                  "affinity": "sloth",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttackHead] Inflict 1 Pallid Noise",
+                        "[OnSucceedAttack] Inflict 3 Offense Level Down next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Inflict 1 Prey Mark next turn",
+                  "levelCorrection": -3,
+                  "name": "Punctured Weakness"
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 Bleed",
+                        "[OnSucceedAttack] Inflict 3 SP damage on 3 random enemies"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 Bleed",
+                        "[OnSucceedAttack] Inflict 3 SP damage on 3 random enemies"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 Bleed",
+                        "[OnSucceedAttack] Inflict 3 SP damage on 3 random enemies"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 Bleed",
+                        "[OnSucceedAttack] Inflict 3 SP damage on 3 random enemies"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 Bleed",
+                        "[OnSucceedAttack] Inflict 3 SP damage on 3 random enemies",
+                        "[OnSucceedAttack] Reuse the final Coin once for every 10 Starbuck's Ego"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Deal +5% damage for every 1 Bleed on target\nIf target does not have Prey Mark, Coin Power +1\n[DefeatDuel] Lose 5 SP",
+                  "levelCorrection": -3,
+                  "name": "Echoing Cry"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "targets": [
+            {
+              "name": "Effloresced E.G.O::GasHarpoon",
+              "parts": [
+                {
+                  "breakSection": [
+                    50,
+                    0,
+                    -20
+                  ],
+                  "defCorrection": -3,
+                  "hp": 299.0,
+                  "name": "Body",
+                  "partId": 810601,
+                  "resists": {
+                    "blunt": 1,
+                    "envy": 1.5,
+                    "gloom": 1,
+                    "gluttony": 1,
+                    "lust": 1,
+                    "pierce": 1.2,
+                    "pride": 1.5,
+                    "slash": 1,
+                    "sloth": 1,
+                    "wrath": 1.2
+                  },
+                  "speed": [
+                    2,
+                    3
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Gain Offense Level and Defense Level every time this unit gains other characters' Ego\nLose SP when losing certain Skill Clashes",
+                  "name": "Price of Nobility"
+                },
+                {
+                  "desc": "Turn Start: If not at -45 SP, heal 15 SP.\nTurn End: If panicked, recover from panic. Reset SP to 0 and gain 2 Attack Power Up and 2 Defense Power Up.",
+                  "name": "Ahab"
+                },
+                {
+                  "desc": "Phase Start: Gain 30 Queequeg's Ego.\nTurn End: If this unit still has remaining Shield, regain 5 Queequeg's Ego. If this unit does not have remaining Shield, lose 10 [AaCePcBq].\nTurn End: If [AaCePcBq] is at 0, get Staggered next turn.",
+                  "name": "Queequeg's Atonement"
+                },
+                {
+                  "desc": "The lower this unit's HP gets, the more damage this unit deals with its Skills.\nDeal 1% more HP for every 0.75% missing HP on self\n(Max 100%. Maxes out when this unit is at 25% HP)",
+                  "name": "The Indomitable Harpooneer"
+                },
+                {
+                  "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+                  "name": "Fixed Panic"
+                }
+              ],
+              "portrait": 8106,
+              "resists": {
+                "blunt": 1,
+                "envy": 1.5,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1.2,
+                "pride": 1.5,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1.2
+              },
+              "skills": [
+                {
+                  "affinity": "pride",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 Bleed",
+                        "[OnSucceedAttack] Inflict +3 Bleed Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 Bleed",
+                        "[OnSucceedAttack] Inflict +3 Bleed Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "",
+                  "levelCorrection": 0,
+                  "name": "Strike Me Down!"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 6 Offense Level Down"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 Bleed Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Targets the unit with the least Max HP",
+                  "levelCorrection": 2,
+                  "name": "Stab to Kill"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 Damage Down"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 Bleed Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttackHead] Inflict 1 Pallid Noise",
+                        "[OnSucceedAttack] Inflict 5 Bleed"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Inflict 1 Prey Mark next turn",
+                  "levelCorrection": -3,
+                  "name": "Clouded Path"
+                },
+                {
+                  "affinity": "envy",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 10,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 Pallid Noise",
+                        "[OnSucceedAttack] Stagger target"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Lose 5 Queequeg's Ego\n[WinDuel] Gain 6 Defense Level Up\n[DefeatDuel] Lose 5 SP",
+                  "levelCorrection": 0,
+                  "name": "Bleached Atonement"
+                },
+                {
+                  "affinity": "sloth",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 Bleed"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 Bleed"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "counter",
+                  "desc": "[StartBattle] Gain 10% of Max HP as Shield. For every Queequeg's Ego, gain additional 0.5% of Max HP as additional Shield.\nWhen attacked while Shielded, attacker loses 5 SP\nWhen attacked, use this Skill once for every 10 Queequeg's Ego",
+                  "levelCorrection": -5,
+                  "name": "Insidious Pallidification"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "name": "The Evil Defining (5-36)",
+  "siteId": "49f59599-db84-459e-a981-8469ec65a098"
+}

@@ -1,0 +1,569 @@
+{
+  "name": "Hell's Chicken Dungeon 2 (3.5-10)",
+  "siteId": "076b009e-e422-47b5-91b7-1ef4d3d9bd90",
+  "targets": [
+    {
+      "name": "Spiced-up Papa Bongy",
+      "parts": [
+        {
+          "breakSection": [
+            40
+          ],
+          "defCorrection": -2,
+          "hp": 299.1,
+          "name": "Body",
+          "partId": 804001,
+          "resists": {
+            "blunt": 0.5,
+            "envy": 1.25,
+            "gloom": 0.5,
+            "gluttony": 1,
+            "lust": 1.25,
+            "pierce": 0.75,
+            "pride": 1,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 1
+          },
+          "speed": [
+            3,
+            5
+          ]
+        },
+        {
+          "breakSection": [
+            40
+          ],
+          "defCorrection": -2,
+          "hp": 128.8,
+          "name": "Chicken Bucket",
+          "partId": 804002,
+          "resists": {
+            "blunt": 0.75,
+            "envy": 1,
+            "gloom": 0.5,
+            "gluttony": 1,
+            "lust": 1.5,
+            "pierce": 1.5,
+            "pride": 1,
+            "slash": 1,
+            "sloth": 0.5,
+            "wrath": 1
+          },
+          "speed": [
+            3,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "At the end of the turn, heal 5 HP for each Raw Chicken in battle.",
+          "name": "Vigorous Volaille"
+        },
+        {
+          "desc": "At the end of the turn, deal 5 SP damage to all enemies for each Raw Chicken in battle.",
+          "name": "Gloomy Gallus"
+        },
+        {
+          "desc": "When a Part breaks, gain 1 Fragile every turn for each Raw Chicken that died before the Part was broken.",
+          "name": "Fragile Fowl"
+        },
+        {
+          "desc": "If the Part isn’t broken, gain 1 Damage Up for each living Raw Chicken.",
+          "name": "Powerful Poussin"
+        }
+      ],
+      "portrait": 8038,
+      "skills": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 Bleed"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 3 Tremor"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Kgh!"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 Bleed"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 3 Tremor"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Inflict 1 Paralyze and 5 Tremor"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger Tremor Burst"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Khk"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 Sinking"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Targets the unit with the least SP\n[OnSucceedAttack] Spawn a Raw Chicken",
+          "levelCorrection": 2,
+          "name": "Keghgh!"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 11,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "",
+          "levelCorrection": 2,
+          "name": "Keghgh…"
+        }
+      ]
+    },
+    {
+      "name": "Headchicken a.k.a. Bongy",
+      "num": 2,
+      "parts": [
+        {
+          "breakSection": [
+            40
+          ],
+          "defCorrection": -3,
+          "hp": 38.5,
+          "name": "Body",
+          "partId": 803501,
+          "resists": {
+            "blunt": 0.75,
+            "envy": 1.5,
+            "gloom": 0.75,
+            "gluttony": 1,
+            "lust": 2,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 1.5,
+            "sloth": 0.75,
+            "wrath": 1
+          },
+          "speed": [
+            1,
+            2
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "At the end of the turn, deal 3 SP damage to a random enemy.",
+          "name": "Bongy Chicken Struts"
+        }
+      ],
+      "portrait": "8035",
+      "skills": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 Fragile"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Targets the unit with the least HP",
+          "levelCorrection": -7,
+          "name": "Baaawkbawk"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal 7 HP",
+                "[OnSucceedAttackHead] Inflict 5 Bleed"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Targets the unit with the least HP",
+          "levelCorrection": -7,
+          "name": "Bawkbabawk"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[OnSucceedEvade] Target loses 15 SP",
+          "levelCorrection": -7,
+          "name": "Khgh"
+        }
+      ]
+    },
+    {
+      "name": "Headchicken a.k.a. Bongy",
+      "num": 2,
+      "parts": [
+        {
+          "breakSection": [
+            70
+          ],
+          "defCorrection": -4,
+          "hp": 37.4,
+          "name": "Body",
+          "partId": 803601,
+          "resists": {
+            "blunt": 0.75,
+            "envy": 1.5,
+            "gloom": 0.75,
+            "gluttony": 1,
+            "lust": 2,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 1.5,
+            "sloth": 0.75,
+            "wrath": 1
+          },
+          "speed": [
+            3,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "At the end of the turn, deal 3 SP damage to a random enemy.",
+          "name": "Bongy Chicken Struts"
+        }
+      ],
+      "portrait": "8036",
+      "skills": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 Haste next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If user took no damage last turn, Coin Power +3",
+          "levelCorrection": -1,
+          "name": "Khghgh!"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal 7 HP",
+                "[OnSucceedAttackHead] Inflict 2 Paralyze next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If user took no damage last turn, Coin Power +3",
+          "levelCorrection": -1,
+          "name": "Kawkbaawk!"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Krgh!"
+        }
+      ]
+    },
+    {
+      "name": "Headchicken a.k.a. Bongy",
+      "num": 2,
+      "parts": [
+        {
+          "breakSection": [
+            70
+          ],
+          "defCorrection": -2,
+          "hp": 66.3,
+          "name": "Body",
+          "partId": 803701,
+          "resists": {
+            "blunt": 0.75,
+            "envy": 1.5,
+            "gloom": 0.75,
+            "gluttony": 1,
+            "lust": 2,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 1.5,
+            "sloth": 0.75,
+            "wrath": 1
+          },
+          "speed": [
+            2,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "At the end of the turn, deal 3 SP damage to a random enemy.",
+          "name": "Bongy Chicken Struts"
+        },
+        {
+          "desc": "At the end of the turn, apply 2 Damage Up and 2 Protection to all allies next turn.",
+          "name": "Bongy Chicken Beefs Up"
+        }
+      ],
+      "portrait": "8037",
+      "skills": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 Paralyze"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Targets the unit with the most HP",
+          "levelCorrection": -1,
+          "name": "Khgh"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal 7 HP",
+                "[OnSucceedAttack] Inflict 3 Paralyze"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Targets the unit with the most HP",
+          "levelCorrection": -1,
+          "name": "Khgaawahk"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "",
+          "levelCorrection": -1,
+          "name": "Khk!"
+        }
+      ]
+    },
+    {
+      "name": "Headchicken a.k.a. Bongy",
+      "parts": [
+        {
+          "breakSection": [
+            60
+          ],
+          "defCorrection": -3,
+          "hp": 38.5,
+          "name": "Body",
+          "partId": 803401,
+          "resists": {
+            "blunt": 0.75,
+            "envy": 1.5,
+            "gloom": 0.75,
+            "gluttony": 1,
+            "lust": 2,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 1.5,
+            "sloth": 0.75,
+            "wrath": 1
+          },
+          "speed": [
+            1,
+            4
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "At the end of the turn, deal 3 SP damage to a random enemy.",
+          "name": "Bongy Chicken Struts"
+        }
+      ],
+      "portrait": "8034",
+      "skills": [
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Deal 5 SP damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Targets the unit with the least SP",
+          "levelCorrection": 0,
+          "name": "Bawkbawbawbawk"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Heal 7 HP",
+                "[OnSucceedAttackHead] Inflict 3 Sinking"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Targets the unit with the least SP",
+          "levelCorrection": -5,
+          "name": "Babawbawk"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "If user doesn’t take damage this turn, apply 2 Attack Power Up to all allies next turn",
+          "levelCorrection": -5,
+          "name": "Keghgh"
+        }
+      ]
+    }
+  ]
+}

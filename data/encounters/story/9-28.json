@@ -1,0 +1,266 @@
+{
+  "name": "The Unsevering (9-28)",
+  "siteId": "81643957-6334-4bf9-a1bf-f555f8922315",
+  "targets": [
+    {
+      "name": "Ardor Blossom Moth",
+      "parts": [
+        {
+          "breakSection": [
+            52
+          ],
+          "defCorrection": 2,
+          "hp": {
+            "base": 40,
+            "level": 18
+          },
+          "name": "Body",
+          "partId": 132001,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 1.2,
+            "gluttony": 1,
+            "lust": 0.5,
+            "pierce": 0.5,
+            "pride": 1,
+            "slash": 1,
+            "sloth": 1.2,
+            "wrath": 0.2
+          },
+          "speed": [
+            1,
+            1
+          ]
+        },
+        {
+          "breakSection": [
+            53
+          ],
+          "defCorrection": 2,
+          "hp": {
+            "base": 40,
+            "level": 3.5
+          },
+          "name": "Wings",
+          "partId": 132002,
+          "resists": {
+            "blunt": 1,
+            "envy": 0.75,
+            "gloom": 2,
+            "gluttony": 1,
+            "lust": 0.5,
+            "pierce": 0.5,
+            "pride": 1,
+            "slash": 1.5,
+            "sloth": 1.5,
+            "wrath": 0.2
+          },
+          "speed": [
+            1,
+            1
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "When the Wings Part is broken, inflict [MRcAiBb] equal to [MRcAiBa] Stack to the last attacker; then, all [MRcAiBa] on self expires.\n\nWhen using 'Ardor Blossom Star' at 0 [MRcAiBa], use 'Stoke the Flames' as well",
+          "name": "Stoke the Flames"
+        },
+        {
+          "desc": "If this unit has [MRcAiBa], convert a number of non-Wrath Skills equal to [MRcAiBa] Stack into Wrath Skills\n\nOn Hit, inflict [Combustion] equal to (# of Wrath Skills that the Ardor Blossom Moth will use this turn)\n\nOn Hit, heal HP equal to (# of Wrath Skills that the Ardor Blossom Moth will use this turn x 2)",
+          "name": "Interlocking Ardor Blossom"
+        },
+        {
+          "desc": "At 30%- HP, gain +1 more [MRcAiBa]",
+          "name": "The Last Ember"
+        },
+        {
+          "desc": "Convert a number of non-Wrath Skills equal to [MRcAiBa] Stack into Wrath Skills",
+          "name": "Flaming Ember"
+        },
+        {
+          "desc": "Does not take [Combustion] damage\n\nTurn End: Heal Core by ([Combustion] on self x 5)",
+          "name": "Flaming Wings - Partial Deterrence Release"
+        },
+        {
+          "desc": "When the Wings Part is broken, gain 2 E.G.O Resource of all Affinity and heal all Sinners' SP by 15",
+          "name": "Supply Resources"
+        }
+      ],
+      "portrait": 8577,
+      "skills": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Combustion] and +3 [Combustion] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 1 [MRcAiBa]",
+          "levelCorrection": 4,
+          "name": "Flame Strike"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [CrimsonResistDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 2 [MRcAiBa]",
+          "levelCorrection": 4,
+          "name": "Ardor Blossom Pinions"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] If target has 3+ [MRcAiBb]...\n- Inflict 10 [Combustion]\n- Inflict +2 [Combustion] Count\n- Inflict 2 [MRcAiBc]\n- [MRcAiBb] expires completely"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 6 [Combustion] and +4 [Combustion] Count",
+                "[OnSucceedAttack] Inflict 2 [CrimsonResistDown] next turn"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Inflict +2 [Combustion] Count\n[WinDuel] Inflict [Combustion] equal to [Combustion] on target\n[DefeatDuel] Gain the following effects:\n- Damage dealt by this Skill cannot Stagger the target\n- If this is a Wrath Skill, remove [Combustion] on the target\n- Halve the amount of [Combustion] and [Combustion] Count this Skill inflicts",
+          "levelCorrection": 4,
+          "name": "Spark"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [Combustion] Count equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn",
+                "[OnSucceedAttackHead] Against the enemy with the slowest Speed, inflict [Combustion] Count equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict [Combustion] equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn",
+                "[OnSucceedAttackHead] Against the enemy with the lowest Speed, inflict [Combustion] equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 5+ [Combustion], this Skill gains Clash Power +2",
+          "levelCorrection": 4,
+          "name": "Dust Explosion"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 4,
+          "baseValue": 10,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict [Combustion] equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn",
+                "[UnBrokenCoinOnSucceedAttack] Against the enemy with the slowest Speed, Inflict [Combustion] and [Combustion] Count equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict [Combustion] equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn",
+                "[UnBrokenCoinOnSucceedAttack] Against the enemy with the slowest Speed, Inflict [Combustion] and [Combustion] Count equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Raise the target's Stagger Threshold by 70% of damage dealt",
+                "- Inflict 10 [Combustion] against targets that have been Staggered by this"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Gain Clash Power equal to (# of Wrath Skills that the Ardor Blossom Moth will use this turn x2)\n[WhenUse] Inflict (# of Wrath Skills that the Ardor Blossom Moth will use this turn x2) [Combustion] to all enemies\n[DefeatDuel] Gain the following effects:\n- This Attack Skill deals 0 damage\n- Remove [Combustion] from all targets\n- Halve the amount of [Combustion] and [Combustion] Count this Skill inflicts",
+          "levelCorrection": 4,
+          "name": "Ardor Blossom Star"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[WhenUse] Base Power +1 for every 4 [Combustion] on target (max 3)\n[WhenUse] Inflict 4 [Combustion]\n[OnSucceedEvade] Gain 1 [MRcAiBa] next turn",
+          "levelCorrection": -2,
+          "name": "Evade"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 4,
+          "baseValue": 10,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [MRcAiBb] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel] [CantChangeTarget]\nDamage dealt by this Attack Skill is fixed to 0",
+          "levelCorrection": 4,
+          "name": "Stoke the Flames"
+        }
+      ]
+    }
+  ]
+}

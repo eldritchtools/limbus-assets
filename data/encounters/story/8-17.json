@@ -1,0 +1,433 @@
+{
+  "name": "The Surrendered Witnessing (8-17)",
+  "siteId": "8aa554ba-8da5-44ea-abf0-96781eca6473",
+  "targets": [
+    {
+      "name": "Large Podao Assailant",
+      "num": 3,
+      "parts": [
+        {
+          "breakSection": [
+            70,
+            0
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 69,
+            "level": 2.61
+          },
+          "name": "Body",
+          "partId": 113801,
+          "resists": {
+            "blunt": 0.75,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 1.5,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            3,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "When hit during the combat phase: +10% damage for the turn\nWhen hit during the combat phase: on Clash Win, +20% damage",
+          "name": "Damage Taken"
+        },
+        {
+          "desc": "Prioritizes Hong Lu",
+          "name": "Target - Jia Baoyu"
+        },
+        {
+          "desc": "Deal +0.5% damage for every 1% missing HP on self (max 50%)",
+          "name": "Mission Progress"
+        },
+        {
+          "desc": "At 70%+ HP: at Turn End, if this unit failed to hit Hong Lu with a Skill, gain 1 [Reduction] next turn\nAt less than 70% HP: at Turn End, if this unit failed to hit Hong Lu with a Skill, gain 1 [Enhancement] next turn\n- inflict +1 more [Laceration] and [Laceration] Count next turn",
+          "name": "Honing in on Target"
+        }
+      ],
+      "portrait": 90200,
+      "skills": [
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 8+ [Laceration], Clash Power +1",
+          "levelCorrection": 0,
+          "name": "Parrying Slash"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 5+ [Laceration], Clash Power +1",
+          "levelCorrection": 0,
+          "name": "Pressuring Slash"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Deal +1% damage for every ([Laceration] + [Laceration] Count) on the target (max 20%)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 5 [Laceration] on target (max 2)",
+          "levelCorrection": 0,
+          "name": "Waveslash"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration] and +3 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "Deal +2% damage for every ([Laceration] + [Laceration] Count) on the target (max 50%)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 5 [Laceration] on target (max 3)",
+          "levelCorrection": 3,
+          "name": "Becalming of a Bewildered Steed"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]",
+                "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [AttackDown] and [DefenseDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] If target has 6+ [Laceration], Base Power +1",
+          "levelCorrection": 0,
+          "name": "Counter"
+        }
+      ]
+    },
+    {
+      "name": "Night Drifter of the Drunken Palm",
+      "parts": [
+        {
+          "breakSection": [
+            60,
+            0
+          ],
+          "defCorrection": 0,
+          "hp": {
+            "base": 200,
+            "level": 14.5
+          },
+          "name": "Body",
+          "partId": 113401,
+          "resists": {
+            "blunt": 0.5,
+            "envy": 1,
+            "gloom": 1,
+            "gluttony": 1,
+            "lust": 1,
+            "pierce": 1,
+            "pride": 1,
+            "slash": 1.25,
+            "sloth": 1,
+            "wrath": 1
+          },
+          "speed": [
+            3,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "At 50% HP, recover from Stagger and end this turn.\nFix this unit's Speed to 10 next turn",
+          "name": "Well, well... Hic. This won't do"
+        },
+        {
+          "desc": "Turn End: if in Panic, reset SP to 0.",
+          "name": "Panic Recovery"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+          "name": "Fixed Panic"
+        },
+        {
+          "desc": "Prioritizes Hong Lu",
+          "name": "Target - Jia Baoyu"
+        },
+        {
+          "desc": "When hit during the combat phase: +20% damage for the turn\nDuring the combat phase: On Clash Lose, take +15% damage from the Skill",
+          "name": "Damage Taken"
+        },
+        {
+          "desc": "Deal +2% damage for every 1% missing HP on self (max 100%)",
+          "name": "Plastered Training"
+        },
+        {
+          "desc": "At 70%+ HP: at Turn End, if this unit failed to hit Hong Lu with a Skill, gain 3 [AttackDown] next turn\nAt less than 70% HP: at Turn End, if this unit failed to hit Hong Lu with a Skill, gain 6 [AttackUp] next turn",
+          "name": "Clear Target"
+        }
+      ],
+      "portrait": 91021,
+      "skills": [
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 5+ [Laceration], Base Power +1\n[WhenUse] Gain 1 [SipOfAlcohol]",
+          "levelCorrection": 0,
+          "name": "Frontal Swirl"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Base Power +1 for every 5 [Laceration] on target (max 2)\n[WhenUse] Gain 1 [SipOfAlcohol]",
+          "levelCorrection": 0,
+          "name": "Way of the Open-throat Chugging"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration]",
+                "[WinDuelAttack] Inflict +3 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 5+ [Laceration], Coin Power +1\n\n[DefeatDuel] Lose 3 [SipOfAlcohol]",
+          "levelCorrection": 1,
+          "name": "Waterfall"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Deal +1% damage for every ([Laceration] + [Laceration] Count) on the target (max 20%)",
+                "[OnSucceedAttack] If this unit has 3+ [SipOfAlcohol], reuse this Skill once (once per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 5 [Laceration] on target (max 2)\n[WhenUse] At 3+ [SipOfAlcohol], convert all Coins on this Skill to [SuperCoin]s",
+          "levelCorrection": 2,
+          "name": "Drunklaim"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]",
+                "[OnSucceedAttack] Inflict 4 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [AttackDown] and [DefenseDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] If target has 5+ [Laceration], Base Power +1",
+          "levelCorrection": 0,
+          "name": "Drunken Returning Strike"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 20,
+          "coins": [
+            {
+              "descs": [
+                "Deal +1% damage for every ([Laceration] + [Laceration] Count) on the target (max 100%)",
+                "[OnSucceedAttack] Gain 5 [SipOfAlcohol]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] HP does not drop below 1 before this Skill ends.\n[WhenUse] Gain 10 [AttackUp]\n[WhenUse] Gain 5 [Enhancement]\n[WhenUse] Gain 10 [AttackDmgUp]",
+          "levelCorrection": 5,
+          "name": "True Decapitation Deathblow"
+        },
+        {
+          "affinity": "envy",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[WhenUse] Gain 5 Shield for every [SipOfAlcohol] on self (max 25)\n[WhenUse] Gain [SipOfAlcohol] equal to the number of Skills targeting this unit (max 5)",
+          "levelCorrection": 0,
+          "name": "Intoxicated Leaning"
+        }
+      ]
+    }
+  ]
+}

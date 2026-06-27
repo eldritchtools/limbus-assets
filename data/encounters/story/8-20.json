@@ -1,0 +1,5069 @@
+{
+  "battles": [
+    {
+      "targets": [
+        {
+          "name": "Shi Hua... something?",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                0
+              ],
+              "defCorrection": 0,
+              "hp": {
+                "base": 192,
+                "level": 6.63
+              },
+              "name": "Body",
+              "partId": 116701,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1.25,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                3,
+                5
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Deal +10% damage against Hong Lu",
+              "name": "Rival Candidate"
+            },
+            {
+              "desc": "Deal +5% damage for every 6 [Burst] on target (Max 10%)",
+              "name": "Charge Circuitry Activation"
+            },
+            {
+              "desc": "Turn End: if in Panic, reset SP to 0.",
+              "name": "Panic Recovery"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+              "name": "Fixed Panic"
+            },
+            {
+              "desc": "Gain 1 [Charge] every time this unit consumes 10 cumulative [Charge] Count in this Encounter\nTurn End: At 2+ [Charge], gain 1 [ParryingResultUp] next turn",
+              "name": "Shi(史) Family Charge Circuitry"
+            },
+            {
+              "desc": "Turn End: at 7+ [Charge], gain 4 [DefenseDown] and 3 [AttackDmgUp] next turn",
+              "name": "Ugh... these damn engravings...!"
+            },
+            {
+              "desc": "If this unit inflicted 4 or more [Burst] during this turn, gain +3 [Charge] Count at Turn End (once per turn)",
+              "name": "Your shabby weapons are incomparable to mine"
+            },
+            {
+              "desc": "Turn Start: gain 1 [AttackDmgUp] for every [Charge] on self",
+              "name": "Is that all you've got?"
+            },
+            {
+              "desc": "When Shi Hua... something? loses all HP in this Encounter, the Encounter ends",
+              "name": "The Battle's End"
+            },
+            {
+              "desc": "Turn Start: if this unit has [Charge], gain (100 - (([Charge] - 1) x 10)) Shield. At 7+ [Charge], this unit no longer gains Shield with this Passive.",
+              "name": "Deploy Lightning Shield"
+            }
+          ],
+          "portrait": "1167",
+          "skills": [
+            {
+              "affinity": "gloom",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict 4 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume 5 [Charge] Count to gain Final Power +1 (max 2)\n[WhenUse] Gain +2 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Blade Style - Downward Cleave"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict 3 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume 5 [Charge] Count to gain Clash Power +1 (max 2)\n[WhenUse] Gain +5 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Blade Style - Windup Slash"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Burst]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [Burst]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Burst] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict Gluttony damage equal to [Burst] Potency on target; then, reduce [Burst] Count by 1 (max 30)",
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count for every 5 [Charge] Count consumed On Use (max 4)"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume 5 [Charge] Count to gain Coin Power +1 (max 2)\n[WhenUse] If this unit consumed 5+ [Charge] Count, inflict +2 more [Burst]\n[WhenUse] If this unit consumed 10+ [Charge] Count, inflict +3 [Burst] Count\n[WhenUse] At 5~9 [Charge] Count, gain 2(13 - current [Charge] Count) [Burst] to raise this unit's [Charge] Count to 10\n[DefeatDuel] Deal -75% damage; damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 0,
+              "name": "Charge Blade Style - Crushing Slice"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[WhenUse] Gain +5 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Blade Style - Flowing Slash"
+            }
+          ]
+        },
+        {
+          "name": "Swift Shi Family Mercenary",
+          "num": 2,
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                20,
+                0
+              ],
+              "defCorrection": 1,
+              "hp": {
+                "base": 65,
+                "level": 2.69
+              },
+              "name": "Body",
+              "partId": 116801,
+              "resists": {
+                "blunt": 0.75,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 2,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Deal +10% damage against Hong Lu",
+              "name": "Rival Candidate"
+            },
+            {
+              "desc": "Deal +5% damage for every 6 [Burst] on target (Max 10%)",
+              "name": "Charge Circuitry Activation"
+            },
+            {
+              "desc": "Gain 1 [Charge] every time this unit consumes 10 cumulative [Charge] Count in this Encounter\nTurn End: At 2+ [Charge], gain 1 [ParryingResultUp] next turn",
+              "name": "Shi(史) Family Charge Circuitry"
+            },
+            {
+              "desc": "Turn End: at 3+ [Charge], gain 3 [DefenseDown] and 1 [AttackDmgUp] next turn",
+              "name": "Overload"
+            }
+          ],
+          "portrait": "90210",
+          "skills": [
+            {
+              "affinity": "gloom",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +2 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Slam"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict 1 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +5 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Swing"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst] for every 5 [Charge] Count consumed On Use"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume 5 [Charge] Count on self to gain Coin Power +1 (max 2)\n[BeforeAttack] If this unit consumed 5+ [Charge] Count, inflict +1 more [Burst]\n[BeforeAttack] Is this unit consumed 10 [Charge] Count, inflict +3 [Burst] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Crush"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[WhenUse] Gain +5 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Rhythm"
+            }
+          ]
+        },
+        {
+          "name": "Veteran Shi Family Mercenary",
+          "num": 2,
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                20,
+                0
+              ],
+              "defCorrection": 1,
+              "hp": {
+                "base": 65,
+                "level": 2.69
+              },
+              "name": "Body",
+              "partId": 116901,
+              "resists": {
+                "blunt": 0.75,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 2,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Deal +10% damage against Hong Lu",
+              "name": "Rival Candidate"
+            },
+            {
+              "desc": "Deal +5% damage for every 6 [Burst] on target (Max 10%)",
+              "name": "Charge Circuitry Activation"
+            },
+            {
+              "desc": "Gain 1 [Charge] every time this unit consumes 10 cumulative [Charge] Count in this Encounter\nTurn End: At 2+ [Charge], gain 1 [ParryingResultUp] next turn",
+              "name": "Shi(史) Family Charge Circuitry"
+            },
+            {
+              "desc": "Turn End: at 3+ [Charge], gain 3 [DefenseDown] and 1 [AttackDmgUp] next turn",
+              "name": "Overload"
+            }
+          ],
+          "portrait": "90211",
+          "skills": [
+            {
+              "affinity": "gloom",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +2 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Cleave"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +5 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Coil"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst] for every 5 [Charge] Count consumed On Use"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume 5 [Charge] Count on self to gain Coin Power +1 (max 2)\n[BeforeAttack] If this unit consumed 5+ [Charge] Count, inflict +1 more [Burst]\n[BeforeAttack] Is this unit consumed 10 [Charge] Count, inflict +3 [Burst] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Burst"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[WhenUse] Gain +5 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Rhythm"
+            }
+          ]
+        },
+        {
+          "name": "Heavy Shi Family Mercenary",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                20,
+                0
+              ],
+              "defCorrection": 3,
+              "hp": {
+                "base": 91,
+                "level": 3.14
+              },
+              "name": "Body",
+              "partId": 117001,
+              "resists": {
+                "blunt": 0.75,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1.5,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Deal +10% damage against Hong Lu",
+              "name": "Rival Candidate"
+            },
+            {
+              "desc": "Deal +5% damage for every 6 [Burst] on target (Max 10%)",
+              "name": "Charge Circuitry Activation"
+            },
+            {
+              "desc": "Gain 1 [Charge] every time this unit consumes 10 cumulative [Charge] Count in this Encounter\nTurn End: At 2+ [Charge], gain 1 [ParryingResultUp] next turn",
+              "name": "Shi(史) Family Charge Circuitry"
+            },
+            {
+              "desc": "Turn End: at 5+ [Charge], gain 4 [DefenseDown] and 3 [AttackDmgUp] next turn",
+              "name": "Severe Overload"
+            }
+          ],
+          "portrait": "90212",
+          "skills": [
+            {
+              "affinity": "gloom",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict 4 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +2 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Cleave and Crush"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict 3 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +5 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Windup Crush"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 6 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst]",
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict Gluttony damage equal to [Burst] Potency on target; then, reduce [Burst] Count by 1 (max 30)"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume 5 [Charge] Count on self to gain Coin Power +1 (max 2)\n[BeforeAttack] If this unit consumed 5+ [Charge] Count, inflict +2 more [Burst]\n[BeforeAttack] Is this unit consumed 10 [Charge] Count, inflict +3 [Burst] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Shatter"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[WhenUse] Gain +5 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Rhythm Matching"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Wang Qingshan",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                0
+              ],
+              "defCorrection": 2,
+              "hp": {
+                "base": 184,
+                "level": 6.34
+              },
+              "name": "Body",
+              "partId": 115901,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 1,
+                "gloom": 0.75,
+                "gluttony": 1.25,
+                "lust": 0.5,
+                "pierce": 1,
+                "pride": 1.25,
+                "slash": 1.25,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Encounter Start: enters the battle with 80% HP",
+              "name": "Wounded"
+            },
+            {
+              "desc": "Turn End: at 20 or less SP, this unit siphons 10 SP from 3 random allies with the highest SP to heal its own SP\n\nTurn Start: Apply 2 [AttackDmgUp] to all other allies with -20 or less SP",
+              "name": "Master of the Deathrite Monks"
+            },
+            {
+              "desc": "When inflicting [OminousTalisman] on an enemy, if the target already has [OminousTalisman], consume up to 3 [OminousTalisman] on the target and inflict the same value as [DefenseDown] Stacks to the target this turn and next turn",
+              "name": "Wicked Energy"
+            },
+            {
+              "desc": "In this Encounter, if this unit takes damage that brings this unit's HP down to half or less, nullify that damage and end the turn. Then, move to the rearmost position of the Substitution order (when Staggered, recover immediately)\n\nIf there are no more enemies to Substitute in, or if there aren't enough of them left, (as in, if there are more dead enemies this turn than there are waiting to Substitute into the Encounter) this effect does not activate",
+              "name": "Dammit... Take them out!"
+            },
+            {
+              "desc": "When Wang Qingshan loses all HP in this Encounter, the Encounter ends",
+              "name": "The Battle's End"
+            },
+            {
+              "desc": "Turn End: if in Panic, reset SP to 0.",
+              "name": "Panic Recovery"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+              "name": "Fixed Panic"
+            }
+          ],
+          "portrait": "1159",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst] and +2 [Burst] Count",
+                    "[OnSucceedAttack] Inflict 10 [OminousTalisman]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Burst] on target (max 3)\n[WhenUse] Clash Power +1 for every 30% missing HP on self (max 2)",
+              "levelCorrection": 1,
+              "name": "Spirit Talisman School - Talisman Strike"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst] and +2 [Burst] Count",
+                    "[OnSucceedAttack] Inflict 10 [OminousTalisman]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Reduce [OminousTalisman] on target by 2"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Burst] on target (max 3)\n[WhenUse] Clash Power +1 for every 30% missing HP on self (max 2)",
+              "levelCorrection": 2,
+              "name": "Spirit Talisman School - Trigger Effect"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [Burst] and +3 [Burst] Count",
+                    "[UnBrokenCoinOnSucceedAttack] Reduce [OminousTalisman] on target by 5"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Burst] on target (max 4)",
+              "levelCorrection": 3,
+              "name": "Spirit Talisman School - Deathrite Doll"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [Burst]",
+                    "[OnSucceedAttack] Inflict 10 [OminousTalisman]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +3 [Burst] Count",
+                    "[OnSucceedAttack] Inflict 10 [OminousTalisman]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Remove all [OminousTalisman] on target"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Atk Weight +1 for every 20% missing HP on self (max 4)\n[WhenUse] Final Power +1 for every 4 [Burst] on target (max 4\n[DefeatDuel] Deal -50% damage; this Skill cannot Stagger the target with damage or effect\n[EndSkill] If this Skill has defeated an enemy, apply 2 [ResultEnhancement] and 2 [AttackDmgUp] to all allies, including this unit, next turn (once per turn)",
+              "levelCorrection": 4,
+              "name": "Spirit Talisman School - Vilerage"
+            }
+          ]
+        },
+        {
+          "name": "Wicked Deathrite Monk",
+          "num": 6,
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                30,
+                0
+              ],
+              "defCorrection": -2,
+              "hp": {
+                "base": 75,
+                "level": 2.59
+              },
+              "name": "Body",
+              "partId": 116501,
+              "resists": {
+                "blunt": 0.75,
+                "envy": 1,
+                "gloom": 0.75,
+                "gluttony": 1.25,
+                "lust": 0.75,
+                "pierce": 1,
+                "pride": 1.25,
+                "slash": 1.5,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Whenever this unit inflicts [OminousTalisman] against an enemy, lose 10 SP\n\nAgainst targets with [OminousTalisman], deal +(0 - SP on self)% damage (max 30%, min 0%)",
+              "name": "Talisman Sorcerer"
+            },
+            {
+              "desc": "On death, apply 10 [OminousTalisman] against a random enemy without [OminousTalisman]\n- If all enemies already have [OminousTalisman], then reduce all enemies' [OminousTalisman] by 1 instead",
+              "name": "Proliferating Misfortune"
+            },
+            {
+              "desc": "When inflicting [OminousTalisman] on an enemy, if the target already has [OminousTalisman], consume 1~2 [OminousTalisman] on the target and inflict the same value as [DefenseDown] Stacks to the target this turn and next turn ",
+              "name": "Wicked Energy"
+            }
+          ],
+          "portrait": "90208",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 7,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]",
+                    "[OnSucceedAttack] Inflict 10 [OminousTalisman]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Burst] on target (max 2)",
+              "levelCorrection": 1,
+              "name": "Spirit Talisman School - Talisman Strike"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst]",
+                    "[OnSucceedAttack] Inflict 10 [OminousTalisman]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Reduce [OminousTalisman] on target by 2"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Burst] on target (max 2)",
+              "levelCorrection": 2,
+              "name": "Spirit Talisman School - Trigger Effect"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 11,
+              "coinValue": -6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst] and +2 [Burst] Count",
+                    "[OnSucceedAttack] Reduce [OminousTalisman] on target by 5"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Burst] on target (max 2)",
+              "levelCorrection": 3,
+              "name": "Spirit Talisman School - Deathrite Doll"
+            },
+            {
+              "affinity": "envy",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": -6,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] Gain (20 - this unit's SP) Shield (min 0, max 20)",
+              "levelCorrection": 2,
+              "name": "Spirit Talisman School - Defend"
+            }
+          ]
+        },
+        {
+          "name": "Evil-possessed Deathrite Monk",
+          "num": 3,
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                20,
+                0
+              ],
+              "defCorrection": -1,
+              "hp": {
+                "base": 99,
+                "level": 3.41
+              },
+              "name": "Body",
+              "partId": 116601,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 1,
+                "gloom": 0.75,
+                "gluttony": 1.25,
+                "lust": 0.5,
+                "pierce": 1,
+                "pride": 1.25,
+                "slash": 1.25,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                3,
+                5
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Whenever this unit inflicts [OminousTalisman] against an enemy, lose 10 SP\n\nAgainst targets with [OminousTalisman], deal +(10 - SP on self)% damage (max 50%, min 0%)",
+              "name": "Skilled Talisman Sorcerer"
+            },
+            {
+              "desc": "Turn Start: at 50% or less HP, sacrifice a random Wicked Deathrite Monk to heal (10% of this unit's HP + 50% of the sacrificed unit's HP) HP, heal 25 SP, and recover from Stagger (once per turn)",
+              "name": "Soul Siphon Technique"
+            },
+            {
+              "desc": "When inflicting [OminousTalisman] on an enemy, if the target already has [OminousTalisman], consume up to 3 [OminousTalisman] on the target and inflict the same value as [DefenseDown] Stacks to the target this turn and next turn ",
+              "name": "Wicked Energy"
+            }
+          ],
+          "portrait": "90209",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst]",
+                    "[OnSucceedAttack] Inflict 10 [OminousTalisman]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Burst] on target (max 3)",
+              "levelCorrection": 2,
+              "name": "Spirit Talisman School - Talisman Strike"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 11,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Burst]",
+                    "[OnSucceedAttack] Inflict 10 [OminousTalisman]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Reduce [OminousTalisman] on target by 3"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Burst] on target (max 3)",
+              "levelCorrection": 3,
+              "name": "Spirit Talisman School - Trigger Effect"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 12,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]",
+                    "[OnSucceedAttack] Inflict 10 [OminousTalisman]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                    "[OnSucceedAttackTail] Inflict 10 [OminousTalisman]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[UnBrokenCoinOnSucceedAttack] Reduce [OminousTalisman] on target by 5"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] At -30 SP or less, convert this Skill's final Coin to [SuperCoin]\n[DefeatDuel] Reduce this Skill's Base Power by 75% (rounded down)\n[WhenUse] Final Power +1 for every 4 [Burst] on target (max 3)",
+              "levelCorrection": 4,
+              "name": "Spirit Talisman School - Execution"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 14,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [Burst] and +3 [Burst] Count",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 10 [OminousTalisman]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Remove all [OminousTalisman] on target"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Final Power +1 for every 10 SP below 0 (max 3)\n[DefeatDuel] Reduce this Skill's Base Power by 75% (rounded down); also, this Skill's damage or effect cannot stagger the target(s)\n[EndSkill] Reset SP to 0",
+              "levelCorrection": 4,
+              "name": "Spirit Talisman School - Vile Burst"
+            },
+            {
+              "affinity": "envy",
+              "atkWeight": 1,
+              "baseValue": 12,
+              "coinValue": -8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] Gain (20 - this unit's SP) Shield (min 0, max 40)",
+              "levelCorrection": 2,
+              "name": "Spirit Talisman School - Defend"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Xue Pan",
+          "parts": [
+            {
+              "breakSection": [
+                40,
+                0
+              ],
+              "defCorrection": 4,
+              "hp": {
+                "base": 261,
+                "level": 13.5
+              },
+              "name": "Body",
+              "partId": 115701,
+              "resists": {
+                "blunt": 0.8,
+                "envy": 1.5,
+                "gloom": 1.25,
+                "gluttony": 1,
+                "lust": 0.75,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 0.75,
+                "wrath": 1.25
+              },
+              "speed": [
+                3,
+                5
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Final Power +2 in Clashes against Hong Lu",
+              "name": "Hate"
+            },
+            {
+              "desc": "Turn Start: gain [AttackUp] equal to the number of Jars defeated in this Encounter (max 5)",
+              "name": "Unleashed Curse"
+            },
+            {
+              "desc": "Deal +1% damage for every 1% missing HP on self (max 50%)",
+              "name": "Returning the Pain"
+            },
+            {
+              "desc": "When hit during the combat phase: +10% damage for the turn\nWhen hit during the combat phase: on Clash Win, +20% damage",
+              "name": "Damage Taken"
+            },
+            {
+              "desc": "Turn End: if in Panic, reset SP to 0.",
+              "name": "Panic Recovery"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+              "name": "Fixed Panic"
+            },
+            {
+              "desc": "When Xue Pan loses all HP in this Encounter, the Encounter ends",
+              "name": "The Battle's End"
+            }
+          ],
+          "portrait": "1157",
+          "skills": [
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Apply 2 [AttackDmgUp] to the fastest ally",
+              "levelCorrection": 2,
+              "name": "Weaklings..."
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Vulnerable] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Apply 2 [Agility] to the slowest ally next turn",
+              "levelCorrection": 2,
+              "name": "Dolts..."
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                    "[OnSucceedAttack] Deal 5 SP damage"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [Burst]",
+                    "[OnSucceedAttack] Deal 5 SP damage"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 3+ types of negative effects, Base Power +1\n[WhenUse] Coin Power +1 for every 6 [Burst] on target (max 2)\n[DefeatDuel] Gain 1 [Vulnerable]",
+              "levelCorrection": 4,
+              "name": "I'm Gonna Kill You!"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                    "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Heal 15 SP\n[WhenUse] If target has 3+ types of negative effects, Base Power +1\n[EndSkill] 1 Jar with the least current HP uses the Skill 'Leaping Cracked Jar' at the target (ignores Stagger)",
+              "levelCorrection": 3,
+              "name": "Jump In!!"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Burst]",
+                    "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Summon 2 Jars next turn\n[WhenUse] If target has 3+ negative effects, Base Power +1",
+              "levelCorrection": 3,
+              "name": "Let's Watch This Spectacle, All Together!"
+            }
+          ]
+        },
+        {
+          "name": "Talisman Jar Monster",
+          "num": 2,
+          "parts": [
+            {
+              "breakSection": [
+                80,
+                0
+              ],
+              "defCorrection": -1,
+              "hp": {
+                "base": 65,
+                "level": 2.24
+              },
+              "name": "Body",
+              "partId": 116101,
+              "resists": {
+                "blunt": 1,
+                "envy": 1.25,
+                "gloom": 1.25,
+                "gluttony": 1.3,
+                "lust": 0.75,
+                "pierce": 1.2,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 0.75
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "When this unit is Staggered, halve the [Burst] Potency and [Burst] Count on the target this unit hit last",
+              "name": "Off-mark Curse"
+            },
+            {
+              "desc": "Turn End: If this unit hit a target this turn, gain 1 [Enhancement] next turn\nIf this unit kills itself, apply 1 [Enhancement] to all allies",
+              "name": "Jar-haunting Curse"
+            }
+          ],
+          "portrait": "90195",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Clawing"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 4+ [Burst], Base Power +1",
+              "levelCorrection": 0,
+              "name": "Wild Clawing"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [Burst] and +3 [Burst] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Base Power +1 for every 20% missing HP on self (max 4)\n[WhenUse] Coin Power +1 for every 6 [Burst] (max 2)",
+              "levelCorrection": 0,
+              "name": "Tear Off"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Counter"
+            }
+          ]
+        },
+        {
+          "name": "Nailed Jar Monster",
+          "num": 2,
+          "parts": [
+            {
+              "breakSection": [
+                70,
+                0
+              ],
+              "defCorrection": -1,
+              "hp": {
+                "base": 66,
+                "level": 2.28
+              },
+              "name": "Body",
+              "partId": 116201,
+              "resists": {
+                "blunt": 1,
+                "envy": 1.25,
+                "gloom": 1.25,
+                "gluttony": 1.3,
+                "lust": 0.75,
+                "pierce": 1.2,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 0.75
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "When this unit is Staggered, halve the [Burst] Potency and [Burst] Count on the target this unit hit last",
+              "name": "Off-mark Curse"
+            },
+            {
+              "desc": "On Skill hit: if target has 1 remaining [Burst] Count, inflict +1 [Burst] Count (2 times per turn)\nOn Hit: if target has 1 remaining [Burst], inflict 2 [Burst] (2 times per turn)\nIf this unit kills itself, inflict 2 [Burst] and +1 [Burst] Count on all enemies",
+              "name": "Jar-haunting Curse"
+            }
+          ],
+          "portrait": "90196",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Claw Scratch"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 4+ [Burst], Base Power +1",
+              "levelCorrection": 0,
+              "name": "Wild Scratching"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Base Power +1 for every 20% missing HP on self (max 4)\n[WhenUse] Coin Power +1 for every 6 [Burst] (max 2)",
+              "levelCorrection": 0,
+              "name": "Latching On"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst] and +1 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Counter"
+            }
+          ]
+        },
+        {
+          "name": "Entangled Jar Monster",
+          "num": 2,
+          "parts": [
+            {
+              "breakSection": [
+                75,
+                0
+              ],
+              "defCorrection": -1,
+              "hp": {
+                "base": 68,
+                "level": 2.34
+              },
+              "name": "Body",
+              "partId": 116301,
+              "resists": {
+                "blunt": 1,
+                "envy": 1.25,
+                "gloom": 1.25,
+                "gluttony": 1.3,
+                "lust": 0.75,
+                "pierce": 1.2,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 0.75
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "When this unit is Staggered, halve the [Burst] Potency and [Burst] Count on the target this unit hit last",
+              "name": "Off-mark Curse"
+            },
+            {
+              "desc": "On Skill hit: if target has 4+ [Burst], inflict 1 [DefenseDown] next turn (3 times per turn)\nIf this unit kills itself, inflict 3 [DefenseDown] on all enemies",
+              "name": "Jar-haunting Curse"
+            }
+          ],
+          "portrait": "90197",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Wound Digging"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 4+ [Burst], Coin Power +1",
+              "levelCorrection": 0,
+              "name": "Wild Digging"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +4 [Burst] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Base Power +1 for every 20% missing HP on self (max 4)\n[WhenUse] Coin Power +1 for every 6 [Burst] (max 2)",
+              "levelCorrection": 0,
+              "name": "Flesh Digging"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Counter"
+            }
+          ]
+        },
+        {
+          "name": "Monster from the Gorged and Devoured Jar of Loneliness",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                0
+              ],
+              "defCorrection": 3,
+              "hp": {
+                "base": 73,
+                "level": 2.52
+              },
+              "name": "Body",
+              "partId": 116401,
+              "resists": {
+                "blunt": 0.8,
+                "envy": 1.25,
+                "gloom": 1.25,
+                "gluttony": 1.3,
+                "lust": 0.5,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 0.8,
+                "sloth": 1,
+                "wrath": 0.5
+              },
+              "speed": [
+                3,
+                5
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "When this unit is Staggered, eliminate the [Burst] Potency and [Burst] Count on the target this unit hit last",
+              "name": "Off-mark Curse"
+            },
+            {
+              "desc": "On Hit, if the target has 5+ ([Burst] Potency + [Burst] Count), inflict 1 [DefenseDown] (5 times per turn)",
+              "name": "Cursed Spirit Jar"
+            },
+            {
+              "desc": "Turn End: against all enemies, inflict [Poison] equal to the number of turns that passed since this unit joined the battle (max 5)\nIf this unit kills itself, apply (# of turns x 5) [Poison] and inflict +2 [Burst] Count on all enemies next turn (max 25)",
+              "name": "Jar-haunting Curse"
+            }
+          ],
+          "portrait": "91022",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 4+ [Burst], Coin Power +1",
+              "levelCorrection": 0,
+              "name": "Wound Clawing"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Burst] Count",
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Coin Power +1 for every 4 [Burst] on target (max 2)",
+              "levelCorrection": 0,
+              "name": "Flesh Tearing"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Burst]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Burst]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Burst]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] At 15+ ([Burst] + [Burst] Count), inflict ([Burst] Potency x [Burst] Count) Gluttony damage. (max 40)",
+                    "[OnSucceedAttack] Inflict +5 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Base Power +1 for every 10% missing HP on self (max 5)\n[WhenUse] Coin Power +1 for every 4 [Burst] on target (max 3)\n\n[WhenUse] If target has 10+ ([Burst] + [Burst] Count), inflict [Burst] Count equal to [Burst] Count on target",
+              "levelCorrection": 0,
+              "name": "Writhing in Loneliness"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Burst]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] If target has 5+ [Burst], reuse this Skill (2 times max)"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "",
+              "levelCorrection": 0,
+              "name": "Counter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Shi Sijing",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                20,
+                0
+              ],
+              "defCorrection": 2,
+              "hp": {
+                "base": 205,
+                "level": 7.07
+              },
+              "name": "Body",
+              "partId": 116001,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 1.25,
+                "gloom": 1.25,
+                "gluttony": 1.25,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1.25,
+                "wrath": 1
+              },
+              "speed": [
+                3,
+                5
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Turn Start: if this unit has 50% or less HP, sacrifice a random Shi Family Mercenary to heal (10% of this unit's HP + 50% of the sacrificed unit's HP) HP, heal 25 SP, and recover from Stagger (once per turn)",
+              "name": "That's how you use your human resources"
+            },
+            {
+              "desc": "Turn End: if in Panic, reset SP to 0.",
+              "name": "Panic Recovery"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+              "name": "Fixed Panic"
+            },
+            {
+              "desc": "When Shi Sijing loses all HP in this Encounter, the Encounter ends",
+              "name": "The Battle's End"
+            },
+            {
+              "desc": "Deal +10% damage against Hong Lu",
+              "name": "Rival Candidate"
+            },
+            {
+              "desc": "Gain 1 [Charge] every time this unit consumes 10 cumulative [Charge] Count in this Encounter\nTurn End: At 2+ [Charge], gain 1 [ParryingResultUp] next turn",
+              "name": "Shi(史) Family Charge Circuitry"
+            },
+            {
+              "desc": "Deal +5% damage for every 6 [Burst] on target (Max 10%)",
+              "name": "Charge Circuitry Activation"
+            },
+            {
+              "desc": "Turn End: at 5+ [Charge], gain 4 [DefenseDown] and 3 [AttackDmgUp] next turn",
+              "name": "Severe Overload"
+            },
+            {
+              "desc": "Turn Start: gain 5 [Protection]\n- Gain fewer Stacks depending on this unit's [Charge]\n- At 5+ [Charge], this unit no longer gains [Protection] with this Passive",
+              "name": "Jin Gang, Unbreakable Diamond"
+            }
+          ],
+          "portrait": "1160",
+          "skills": [
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 7,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +3 [Charge] Count",
+                    "[OnSucceedAttack] Inflict 3 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Burst] on target (max 2)\n[WhenUse] Gain +3 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Fist Style - Faceoff"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +5 [Charge] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst]",
+                    "[OnSucceedAttack] At 2+ [Charge], inflict +2 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 5 [Burst] on target (max 2)\n[WhenUse] Consume 5 [Charge] Count to gain Final Power +1\n[WhenUse] At 5~9 [Charge] Count, gain 2(13 - current [Charge] Count) [Burst] Potency to raise [Charge] Count to 10 (once per turn)\n[WhenUse] Gain +5 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Fist Style - Roundhouse Punch"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Gain +5 [Charge] Count",
+                    "[OnSucceedAttack] Inflict 3 [Burst]",
+                    "[OnSucceedAttack] If this unit consumed [Charge] Count, inflict 10 [OminousTalisman]\n- If this unit consumed 10+ [Charge] Count, inflict ([Charge] Count consumed - 10) [Burst] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +5 [Charge] Count",
+                    "[OnSucceedAttack] Remove all [OminousTalisman] on target"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] If this unit consumed 5+ [Charge] Count On Use, inflict 10 [OminousTalisman]",
+                    "[WinDuelAttack] If this unit consumed 10+ [Charge] Count On Use, consume all [OminousTalisman] on target"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 6 [Burst] on target (max 2)\n[WhenUse] Consume 5 [Charge] Count to gain Coin Power +1 (max 3)\n[WhenUse] If this unit consumed 5+ [Charge] Count, inflict +2 more [Burst]\n[WhenUse] If this unit consumed 10+ [Charge] Count, inflict +3 [Burst] Count\n[DefeatDuel] Deal -80% damage; damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 0,
+              "name": "Charge Fist Style - Destroy"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Reduce [OminousTalisman] on target by 3"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[WhenUse] Gain +5 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Fist Style - Rhythm Matching"
+            }
+          ]
+        },
+        {
+          "name": "Swift Shi Family Mercenary",
+          "num": 4,
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                20,
+                0
+              ],
+              "defCorrection": 1,
+              "hp": {
+                "base": 65,
+                "level": 2.69
+              },
+              "name": "Body",
+              "partId": 116801,
+              "resists": {
+                "blunt": 0.75,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 2,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Deal +10% damage against Hong Lu",
+              "name": "Rival Candidate"
+            },
+            {
+              "desc": "Deal +5% damage for every 6 [Burst] on target (Max 10%)",
+              "name": "Charge Circuitry Activation"
+            },
+            {
+              "desc": "Gain 1 [Charge] every time this unit consumes 10 cumulative [Charge] Count in this Encounter\nTurn End: At 2+ [Charge], gain 1 [ParryingResultUp] next turn",
+              "name": "Shi(史) Family Charge Circuitry"
+            },
+            {
+              "desc": "Turn End: at 3+ [Charge], gain 3 [DefenseDown] and 1 [AttackDmgUp] next turn",
+              "name": "Overload"
+            }
+          ],
+          "portrait": "90210",
+          "skills": [
+            {
+              "affinity": "gloom",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +2 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Slam"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict 1 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +5 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Swing"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst] for every 5 [Charge] Count consumed On Use"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume 5 [Charge] Count on self to gain Coin Power +1 (max 2)\n[BeforeAttack] If this unit consumed 5+ [Charge] Count, inflict +1 more [Burst]\n[BeforeAttack] Is this unit consumed 10 [Charge] Count, inflict +3 [Burst] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Crush"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[WhenUse] Gain +5 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Rhythm"
+            }
+          ]
+        },
+        {
+          "name": "Veteran Shi Family Mercenary",
+          "num": 4,
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                20,
+                0
+              ],
+              "defCorrection": 1,
+              "hp": {
+                "base": 65,
+                "level": 2.69
+              },
+              "name": "Body",
+              "partId": 116901,
+              "resists": {
+                "blunt": 0.75,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 2,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Deal +10% damage against Hong Lu",
+              "name": "Rival Candidate"
+            },
+            {
+              "desc": "Deal +5% damage for every 6 [Burst] on target (Max 10%)",
+              "name": "Charge Circuitry Activation"
+            },
+            {
+              "desc": "Gain 1 [Charge] every time this unit consumes 10 cumulative [Charge] Count in this Encounter\nTurn End: At 2+ [Charge], gain 1 [ParryingResultUp] next turn",
+              "name": "Shi(史) Family Charge Circuitry"
+            },
+            {
+              "desc": "Turn End: at 3+ [Charge], gain 3 [DefenseDown] and 1 [AttackDmgUp] next turn",
+              "name": "Overload"
+            }
+          ],
+          "portrait": "90211",
+          "skills": [
+            {
+              "affinity": "gloom",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +2 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Cleave"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +5 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Coil"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst] for every 5 [Charge] Count consumed On Use"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume 5 [Charge] Count on self to gain Coin Power +1 (max 2)\n[BeforeAttack] If this unit consumed 5+ [Charge] Count, inflict +1 more [Burst]\n[BeforeAttack] Is this unit consumed 10 [Charge] Count, inflict +3 [Burst] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Burst"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[WhenUse] Gain +5 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Rhythm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Shi Yihua",
+          "parts": [
+            {
+              "breakSection": [
+                40,
+                0
+              ],
+              "defCorrection": 0,
+              "hp": {
+                "base": 313,
+                "level": 12.3
+              },
+              "name": "Body",
+              "partId": 115801,
+              "resists": {
+                "blunt": 0.8,
+                "envy": 1,
+                "gloom": 0.5,
+                "gluttony": 1.5,
+                "lust": 0.75,
+                "pierce": 0.8,
+                "pride": 1.25,
+                "slash": 0.8,
+                "sloth": 1,
+                "wrath": 0.75
+              },
+              "speed": [
+                4,
+                6
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "On Hit with a Skill: heal 10% of the damage dealt (rounded down)\nIf target has [MadFeather], heal additional ([MadFeather] Stack on target)% HP",
+              "name": "Bolus of... Immortality?"
+            },
+            {
+              "desc": "On Hit, heal 3 SP on self",
+              "name": "I'VE NEVER FELT BETTER!"
+            },
+            {
+              "desc": "Gain 1 [AttackUp] next turn every time this unit loses a Clash (max 3)",
+              "name": "MY REVENGEANCE HAS JUST BEGUN!"
+            },
+            {
+              "desc": "Whenever this unit hits the same target three times in the same turn, inflict 1 [Vulnerable] next turn",
+              "name": "Rupture by Feathers"
+            },
+            {
+              "desc": "Offense Level +1 and Defense Level -1 for every 15% HP this unit cumulatively lost in this Encounter (max 6)",
+              "name": "Rampage"
+            },
+            {
+              "desc": "When Shi Yihua loses all HP in this Encounter, the Encounter ends",
+              "name": "The Battle's End"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+              "name": "Fixed Panic"
+            },
+            {
+              "desc": "Turn End: if in Panic, reset SP to 0.",
+              "name": "Panic Recovery"
+            }
+          ],
+          "portrait": "1158",
+          "skills": [
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [MadFeather]",
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [MadFeather]",
+                    "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Coin Power +1 for every 2 types of negative effect on target (max 2)",
+              "levelCorrection": 1,
+              "name": "Take This!"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 5,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [MadFeather]",
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [MadFeather]",
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantIdentify]\n[WhenUse] Coin Power +1 for every 2 types of negative effect on target (max 2)",
+              "levelCorrection": 2,
+              "name": "KNEEL!"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 3,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [MadFeather]",
+                    "[OnSucceedAttack] Inflict 4 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Activate [Burst] on target once. Target loses 1 [Burst] Count",
+                    "[OnSucceedAttack] Inflict [Laceration] and [Burst] Potency equal to [MadFeather] Stack"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Coin Power +1 for every 2 types of negative effect on target (max 2)",
+              "levelCorrection": 2,
+              "name": "Look at You Flaming Idiots!"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 3,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [MadFeather]",
+                    "[OnSucceedAttack] Inflict 1 [Burst]",
+                    "[OnSucceedAttack] Inflict 1 [ShamrockTakeDamageUp] next turn"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [MadFeather]",
+                    "[OnSucceedAttack] Inflict 2 [Burst]",
+                    "[OnSucceedAttack] Inflict 1 [ShamrockTakeDamageUp] next turn"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [MadFeather]",
+                    "[OnSucceedAttack] Inflict 3 [Burst]",
+                    "[OnSucceedAttack] Inflict 1 [ShamrockTakeDamageUp] next turn"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WideAreaRampage]\n[WhenUse] Consume 3% HP on self (this damage does not kill this unit)",
+              "levelCorrection": 3,
+              "name": "Know Your Place!"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 10,
+              "baseValue": 6,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict ([MadFeather] on target x 10) [Burst]; all [MadFeather] on target expires"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Activate [Burst] on target 2 times. Target loses 2 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantIdentify]\n[WhenUse] Consume 5% HP on self (this damage does not kill this unit)",
+              "levelCorrection": 5,
+              "name": "Kowtow Before Me!"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [MadFeather]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [MadFeather]",
+                    "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[DuelCounter] \n[DefeatDuel] All [MadFeather] on target expires",
+              "levelCorrection": 2,
+              "name": "I'll Give You a Chance"
+            }
+          ]
+        },
+        {
+          "name": "Swift Shi Family Mercenary",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                20,
+                0
+              ],
+              "defCorrection": 1,
+              "hp": {
+                "base": 65,
+                "level": 2.69
+              },
+              "name": "Body",
+              "partId": 116801,
+              "resists": {
+                "blunt": 0.75,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 2,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Deal +10% damage against Hong Lu",
+              "name": "Rival Candidate"
+            },
+            {
+              "desc": "Deal +5% damage for every 6 [Burst] on target (Max 10%)",
+              "name": "Charge Circuitry Activation"
+            },
+            {
+              "desc": "Gain 1 [Charge] every time this unit consumes 10 cumulative [Charge] Count in this Encounter\nTurn End: At 2+ [Charge], gain 1 [ParryingResultUp] next turn",
+              "name": "Shi(史) Family Charge Circuitry"
+            },
+            {
+              "desc": "Turn End: at 3+ [Charge], gain 3 [DefenseDown] and 1 [AttackDmgUp] next turn",
+              "name": "Overload"
+            }
+          ],
+          "portrait": "90210",
+          "skills": [
+            {
+              "affinity": "gloom",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +2 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Slam"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict 1 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +5 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Swing"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst] for every 5 [Charge] Count consumed On Use"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume 5 [Charge] Count on self to gain Coin Power +1 (max 2)\n[BeforeAttack] If this unit consumed 5+ [Charge] Count, inflict +1 more [Burst]\n[BeforeAttack] Is this unit consumed 10 [Charge] Count, inflict +3 [Burst] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Crush"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[WhenUse] Gain +5 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Rhythm"
+            }
+          ]
+        },
+        {
+          "name": "Veteran Shi Family Mercenary",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                20,
+                0
+              ],
+              "defCorrection": 1,
+              "hp": {
+                "base": 65,
+                "level": 2.69
+              },
+              "name": "Body",
+              "partId": 116901,
+              "resists": {
+                "blunt": 0.75,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 2,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Deal +10% damage against Hong Lu",
+              "name": "Rival Candidate"
+            },
+            {
+              "desc": "Deal +5% damage for every 6 [Burst] on target (Max 10%)",
+              "name": "Charge Circuitry Activation"
+            },
+            {
+              "desc": "Gain 1 [Charge] every time this unit consumes 10 cumulative [Charge] Count in this Encounter\nTurn End: At 2+ [Charge], gain 1 [ParryingResultUp] next turn",
+              "name": "Shi(史) Family Charge Circuitry"
+            },
+            {
+              "desc": "Turn End: at 3+ [Charge], gain 3 [DefenseDown] and 1 [AttackDmgUp] next turn",
+              "name": "Overload"
+            }
+          ],
+          "portrait": "90211",
+          "skills": [
+            {
+              "affinity": "gloom",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +2 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Cleave"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [Charge] Count",
+                    "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +5 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Coil"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Burst]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst] for every 5 [Charge] Count consumed On Use"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Consume 5 [Charge] Count on self to gain Coin Power +1 (max 2)\n[BeforeAttack] If this unit consumed 5+ [Charge] Count, inflict +1 more [Burst]\n[BeforeAttack] Is this unit consumed 10 [Charge] Count, inflict +3 [Burst] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Burst"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[WhenUse] Gain +5 [Charge] Count",
+              "levelCorrection": 0,
+              "name": "Charge Axe Style - Rhythm"
+            }
+          ]
+        },
+        {
+          "name": "Wicked Deathrite Monk",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                30,
+                0
+              ],
+              "defCorrection": -2,
+              "hp": {
+                "base": 75,
+                "level": 2.59
+              },
+              "name": "Body",
+              "partId": 116501,
+              "resists": {
+                "blunt": 0.75,
+                "envy": 1,
+                "gloom": 0.75,
+                "gluttony": 1.25,
+                "lust": 0.75,
+                "pierce": 1,
+                "pride": 1.25,
+                "slash": 1.5,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Whenever this unit inflicts [OminousTalisman] against an enemy, lose 10 SP\n\nAgainst targets with [OminousTalisman], deal +(0 - SP on self)% damage (max 30%, min 0%)",
+              "name": "Talisman Sorcerer"
+            },
+            {
+              "desc": "On death, apply 10 [OminousTalisman] against a random enemy without [OminousTalisman]\n- If all enemies already have [OminousTalisman], then reduce all enemies' [OminousTalisman] by 1 instead",
+              "name": "Proliferating Misfortune"
+            },
+            {
+              "desc": "When inflicting [OminousTalisman] on an enemy, if the target already has [OminousTalisman], consume 1~2 [OminousTalisman] on the target and inflict the same value as [DefenseDown] Stacks to the target this turn and next turn ",
+              "name": "Wicked Energy"
+            }
+          ],
+          "portrait": "90208",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 7,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]",
+                    "[OnSucceedAttack] Inflict 10 [OminousTalisman]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Burst] on target (max 2)",
+              "levelCorrection": 1,
+              "name": "Spirit Talisman School - Talisman Strike"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst]",
+                    "[OnSucceedAttack] Inflict 10 [OminousTalisman]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Reduce [OminousTalisman] on target by 2"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Burst] on target (max 2)",
+              "levelCorrection": 2,
+              "name": "Spirit Talisman School - Trigger Effect"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 11,
+              "coinValue": -6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst] and +2 [Burst] Count",
+                    "[OnSucceedAttack] Reduce [OminousTalisman] on target by 5"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Burst] on target (max 2)",
+              "levelCorrection": 3,
+              "name": "Spirit Talisman School - Deathrite Doll"
+            },
+            {
+              "affinity": "envy",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": -6,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] Gain (20 - this unit's SP) Shield (min 0, max 20)",
+              "levelCorrection": 2,
+              "name": "Spirit Talisman School - Defend"
+            }
+          ]
+        },
+        {
+          "name": "Evil-possessed Deathrite Monk",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                20,
+                0
+              ],
+              "defCorrection": -1,
+              "hp": {
+                "base": 99,
+                "level": 3.41
+              },
+              "name": "Body",
+              "partId": 116601,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 1,
+                "gloom": 0.75,
+                "gluttony": 1.25,
+                "lust": 0.5,
+                "pierce": 1,
+                "pride": 1.25,
+                "slash": 1.25,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                3,
+                5
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Whenever this unit inflicts [OminousTalisman] against an enemy, lose 10 SP\n\nAgainst targets with [OminousTalisman], deal +(10 - SP on self)% damage (max 50%, min 0%)",
+              "name": "Skilled Talisman Sorcerer"
+            },
+            {
+              "desc": "Turn Start: at 50% or less HP, sacrifice a random Wicked Deathrite Monk to heal (10% of this unit's HP + 50% of the sacrificed unit's HP) HP, heal 25 SP, and recover from Stagger (once per turn)",
+              "name": "Soul Siphon Technique"
+            },
+            {
+              "desc": "When inflicting [OminousTalisman] on an enemy, if the target already has [OminousTalisman], consume up to 3 [OminousTalisman] on the target and inflict the same value as [DefenseDown] Stacks to the target this turn and next turn ",
+              "name": "Wicked Energy"
+            }
+          ],
+          "portrait": "90209",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Burst]",
+                    "[OnSucceedAttack] Inflict 10 [OminousTalisman]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Burst] on target (max 3)",
+              "levelCorrection": 2,
+              "name": "Spirit Talisman School - Talisman Strike"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 11,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Burst]",
+                    "[OnSucceedAttack] Inflict 10 [OminousTalisman]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Reduce [OminousTalisman] on target by 3"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Burst] on target (max 3)",
+              "levelCorrection": 3,
+              "name": "Spirit Talisman School - Trigger Effect"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 12,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Burst]",
+                    "[OnSucceedAttack] Inflict 10 [OminousTalisman]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                    "[OnSucceedAttackTail] Inflict 10 [OminousTalisman]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[UnBrokenCoinOnSucceedAttack] Reduce [OminousTalisman] on target by 5"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] At -30 SP or less, convert this Skill's final Coin to [SuperCoin]\n[DefeatDuel] Reduce this Skill's Base Power by 75% (rounded down)\n[WhenUse] Final Power +1 for every 4 [Burst] on target (max 3)",
+              "levelCorrection": 4,
+              "name": "Spirit Talisman School - Execution"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 14,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [Burst] and +3 [Burst] Count",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 10 [OminousTalisman]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Remove all [OminousTalisman] on target"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] Final Power +1 for every 10 SP below 0 (max 3)\n[DefeatDuel] Reduce this Skill's Base Power by 75% (rounded down); also, this Skill's damage or effect cannot stagger the target(s)\n[EndSkill] Reset SP to 0",
+              "levelCorrection": 4,
+              "name": "Spirit Talisman School - Vile Burst"
+            },
+            {
+              "affinity": "envy",
+              "atkWeight": 1,
+              "baseValue": 12,
+              "coinValue": -8,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] Gain (20 - this unit's SP) Shield (min 0, max 40)",
+              "levelCorrection": 2,
+              "name": "Spirit Talisman School - Defend"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "waves": [
+        {
+          "targets": [
+            {
+              "name": "Heishou Pack - Mao: Featherstriker",
+              "num": 2,
+              "parts": [
+                {
+                  "breakSection": [
+                    75,
+                    50,
+                    25
+                  ],
+                  "defCorrection": 0,
+                  "hp": {
+                    "base": 52,
+                    "level": 3.59
+                  },
+                  "name": "Body",
+                  "partId": 113101,
+                  "resists": {
+                    "blunt": 2,
+                    "envy": 1,
+                    "gloom": 1,
+                    "gluttony": 1,
+                    "lust": 1,
+                    "pierce": 1,
+                    "pride": 1,
+                    "slash": 0.5,
+                    "sloth": 1,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    2,
+                    5
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "First Turn Start: gain [RepressedMurderousIntendTwo]\nEnds Encounter when Hong Lu dies",
+                  "name": "Jia Qiu's Test"
+                },
+                {
+                  "desc": "Turn End: if this unit lost a Clash this turn, gain 2 [Binding] next turn",
+                  "name": "Failed Ambush"
+                }
+              ],
+              "portrait": "90185",
+              "skills": [
+                {
+                  "affinity": "lust",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 7,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] If target has 3+ [Burst], Clash Power +1",
+                  "levelCorrection": 2,
+                  "name": "Startling Strike"
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Burst]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Inflict 2 [Burst]",
+                        "[UnBrokenCoinOnSucceedAttack] Reuse this Coin (this unit's Speed / 3) times (max 2)"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] If target has 4+ [Burst], Base Power +1",
+                  "levelCorrection": 3,
+                  "name": "Restraint"
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Burst]",
+                        "[OnSucceedAttack] Inflict [BurstAgility]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "If target has [BurstAgility], deal +50% damage",
+                        "[UnBrokenCoinOnSucceedAttack] Gain 3 [LegStrength]",
+                        "[WinDuelAttack] Reuse this Coin once (once per Skill)"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "If this unit's Speed is faster than the main target's gain Coin Power based on Speed difference (Coin Power +1 for every 2 Speed difference; max 3)\n[WhenUse] If target has 4+ [Burst], Coin Power +1\n[WinDuel] Inflict +3 [Burst] Count",
+                  "levelCorrection": 4,
+                  "name": "Feather Strike"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 8,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "counter",
+                  "desc": "[WhenUse] Gain 3 [Agility] next turn",
+                  "levelCorrection": 0,
+                  "name": "Windup"
+                }
+              ]
+            },
+            {
+              "name": "Heishou Pack - Mao: Umbrastriker",
+              "num": 2,
+              "parts": [
+                {
+                  "breakSection": [
+                    75,
+                    50,
+                    25
+                  ],
+                  "defCorrection": 0,
+                  "hp": {
+                    "base": 52,
+                    "level": 3.59
+                  },
+                  "name": "Body",
+                  "partId": 113201,
+                  "resists": {
+                    "blunt": 2,
+                    "envy": 1,
+                    "gloom": 1,
+                    "gluttony": 1,
+                    "lust": 1,
+                    "pierce": 1,
+                    "pride": 1,
+                    "slash": 0.5,
+                    "sloth": 1,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    2,
+                    5
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "First Turn Start: gain [RepressedMurderousIntendTwo]\nEnds Encounter when Hong Lu dies",
+                  "name": "Jia Qiu's Test"
+                },
+                {
+                  "desc": "Turn End: if this unit lost a Clash this turn, gain 2 [Binding] next turn",
+                  "name": "Failed Ambush"
+                }
+              ],
+              "portrait": "90186",
+              "skills": [
+                {
+                  "affinity": "lust",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 7,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Burst]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] If target has 3+ [Burst], Clash Power +1",
+                  "levelCorrection": 2,
+                  "name": "Pursuit"
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Inflict 2 [Burst]",
+                        "[UnBrokenCoinOnSucceedAttack] Reuse this Coin (this unit's Speed / 3) times (max 2)"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] If target has 4+ [Burst], Base Power +1",
+                  "levelCorrection": 3,
+                  "name": "Overwhelm"
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Burst]",
+                        "[OnSucceedAttack] Inflict [BurstAgility]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "If target has [BurstAgility], deal +50% damage",
+                        "[UnBrokenCoinOnSucceedAttack] Gain 3 [LegStrength]",
+                        "[WinDuelAttack] Reuse this Coin once (once per Skill)"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "If this unit's Speed is faster than the main target's gain Coin Power based on Speed difference (Coin Power +1 for every 2 Speed difference; max 3)\n[WhenUse] If target has 4+ [Burst], Coin Power +1\n[WinDuel] Inflict +3 [Burst] Count",
+                  "levelCorrection": 4,
+                  "name": "Umbra Strike"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 8,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "counter",
+                  "desc": "[WhenUse] Gain 3 [Agility] next turn",
+                  "levelCorrection": 0,
+                  "name": "Windup"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phases": [
+            {
+              "targets": [
+                {
+                  "name": "Jia Qiu",
+                  "parts": [
+                    {
+                      "breakSection": [
+                        30,
+                        0
+                      ],
+                      "defCorrection": 0,
+                      "hp": {
+                        "base": 182,
+                        "level": 25.08
+                      },
+                      "name": "Body",
+                      "partId": 113701,
+                      "resists": {
+                        "blunt": 0.8,
+                        "envy": 1,
+                        "gloom": 0.75,
+                        "gluttony": 1.3,
+                        "lust": 1.2,
+                        "pierce": 0.8,
+                        "pride": 1.2,
+                        "slash": 0.8,
+                        "sloth": 0.75,
+                        "wrath": 1
+                      },
+                      "speed": [
+                        3,
+                        5
+                      ]
+                    }
+                  ],
+                  "passives": [
+                    {
+                      "desc": "First Turn Start: heal 30 SP and gain [ExaminationOfQiu]",
+                      "name": "Effloresced E.G.O::Érlì"
+                    },
+                    {
+                      "desc": "Gains a new pattern at 85% HP\nEnter a new phase at 60% HP",
+                      "name": "Heed me, Zilu"
+                    },
+                    {
+                      "desc": "Ends encounter when Hong Lu dies",
+                      "name": "This is where your path ends"
+                    },
+                    {
+                      "desc": "Attack End: heal 5 SP for every Deathrite on the target\nOn Hit, when the target's Deathrite is triggered, heal 3 SP for every Deathrite triggered",
+                      "name": "Infinite Song of Erudition"
+                    },
+                    {
+                      "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+                      "name": "Fixed Panic"
+                    },
+                    {
+                      "desc": "If target has 4+ negative effects, Clash Power +1",
+                      "name": "Deteriorate (削貶)"
+                    },
+                    {
+                      "desc": "Deal +10% damage against targets with [BurstStop]",
+                      "name": "Deathrite [Halt (勿動)]"
+                    },
+                    {
+                      "desc": "Take -20% damage from targets with [BurstSuppress]",
+                      "name": "Deathrite [Impede (掣肘)]"
+                    },
+                    {
+                      "desc": "Turn End: if in Panic, reset SP to 0.",
+                      "name": "Panic Recovery"
+                    }
+                  ],
+                  "portrait": "1137",
+                  "skills": [
+                    {
+                      "affinity": "gluttony",
+                      "atkType": "blunt",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 7,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                          ],
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] If target has 5+ [Burst], Coin Power +1",
+                      "levelCorrection": 2,
+                      "name": "Question (問)"
+                    },
+                    {
+                      "affinity": "gluttony",
+                      "atkType": "blunt",
+                      "atkWeight": 1,
+                      "baseValue": 3,
+                      "coinValue": 8,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 4 [Burst]"
+                          ],
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] If target has 5+ [Burst], Coin Power +1",
+                      "levelCorrection": 2,
+                      "name": "Answer (答)"
+                    },
+                    {
+                      "affinity": "gloom",
+                      "atkType": "blunt",
+                      "atkWeight": 1,
+                      "baseValue": 5,
+                      "coinValue": 4,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 4 [Burst]",
+                            "[WinDuelAttack] Inflict 1 [Binding] next turn"
+                          ],
+                          "type": "normal"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict 2 [Binding] next turn",
+                            "[OnSucceedAttack] Inflict [BurstStop]"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] Coin Power +1 for every 4 [Burst] on target (max 2)\n[WhenUse] Clash Power +1 for every 2 [Burst] Count on target (max 3)",
+                      "levelCorrection": 2,
+                      "name": "Act Not With Impropriety (非禮勿動)"
+                    },
+                    {
+                      "affinity": "none",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 10,
+                      "coins": [
+                        {
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "evade",
+                      "desc": "If this unit failed to use this Skill, gain 1 [Binding] next turn\n[WhenUse] Coin Power +1 for every 2 [Burst] on target (max 3)",
+                      "levelCorrection": 0,
+                      "name": "Evade"
+                    },
+                    {
+                      "affinity": "wrath",
+                      "atkType": "blunt",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 8,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 4 [Burst]",
+                            "[OnSucceedAttack] Inflict [BurstWave]"
+                          ],
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] If target has 5+ [Burst], Coin Power +1\n[WinDuel] Inflict +2 [Burst] Count",
+                      "levelCorrection": 2,
+                      "name": "Thunderstrike"
+                    },
+                    {
+                      "affinity": "pride",
+                      "atkType": "blunt",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 6,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 4 [Burst]"
+                          ],
+                          "type": "normal"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                            "[OnSucceedAttack] Inflict [BurstSuppress]"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] Heal 10 SP\n[WhenUse] If target has 5+ [Burst], Coin Power +1\n[WinDuel] Inflict 2 [Burst]",
+                      "levelCorrection": 2,
+                      "name": "Cut them Down, Mao"
+                    },
+                    {
+                      "affinity": "envy",
+                      "atkType": "blunt",
+                      "atkWeight": 1,
+                      "baseValue": 5,
+                      "coinValue": 5,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[UnBrokenCoinOnSucceedAttack] Inflict +4 [Burst] Count"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Burst]"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "Deal +5% damage for every ([Burst] Potency on target + [Burst] Count on target) (max 200%)\n[OnSucceedAttack] Reduce all Deathrites on target to 0"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] Coin Power +1 for every 4 [Burst] on target (max 2)\n[WhenUse] Clash Power +1 for every 2 [Burst] Count on target (max 3)\n[WinDuel] Inflict 2 [Burst] and +2 [Burst] Count",
+                      "levelCorrection": 2,
+                      "name": "I Must Push You Further"
+                    },
+                    {
+                      "affinity": "gluttony",
+                      "atkType": "blunt",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 5,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 1 [Burst]"
+                          ],
+                          "type": "normal"
+                        },
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 1 [Burst]",
+                            "[OnSucceedAttack] Inflict [BurstWave]"
+                          ],
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "counter",
+                      "desc": "[WhenUse] Coin Power +1 for every 4 [Burst] on target (max 3)\n[WinDuel] Inflict +2 [Burst] Count",
+                      "levelCorrection": 2,
+                      "name": "Do Not Meddle"
+                    }
+                  ]
+                },
+                {
+                  "name": "Zilu",
+                  "parts": [
+                    {
+                      "breakSection": [
+                        50,
+                        0
+                      ],
+                      "defCorrection": 0,
+                      "hp": {
+                        "base": 209,
+                        "level": 26.67
+                      },
+                      "name": "Body",
+                      "partId": 113301,
+                      "resists": {
+                        "blunt": 0.5,
+                        "envy": 1,
+                        "gloom": 1,
+                        "gluttony": 1,
+                        "lust": 1,
+                        "pierce": 1,
+                        "pride": 1,
+                        "slash": 1.25,
+                        "sloth": 1,
+                        "wrath": 1
+                      },
+                      "speed": [
+                        3,
+                        5
+                      ]
+                    }
+                  ],
+                  "passives": [
+                    {
+                      "desc": "First Turn Start: heal 30 SP\nGains a new pattern at 85% HP\nGain 500 Shield at Turn Start, at 60% HP\n- After this effect activates, this unit does not drop below 1 HP",
+                      "name": "Shin (心) Radiance"
+                    },
+                    {
+                      "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+                      "name": "Fixed Panic"
+                    },
+                    {
+                      "desc": "On Hit against enemy with [BurstAgility]: inflict +2 [Burst] Count on the target (6 times per turn)",
+                      "name": "Vigor [Mao]"
+                    },
+                    {
+                      "desc": "When attacking targets with slower Speed than this unit's, inflict +1 more [Burst] or [Burst] Count and deal +10% damage",
+                      "name": "Strider [Mao]"
+                    },
+                    {
+                      "desc": "On Skill Use, if this unit's Speed is faster than the target's by 2 or more, Coin Power +1",
+                      "name": "Dominator [Mao]"
+                    },
+                    {
+                      "desc": "Turn End: for every Clash this unit lost, gain 1 Binding next turn (max 6)",
+                      "name": "Estimation"
+                    },
+                    {
+                      "desc": "Turn End: if in Panic, reset SP to 0.",
+                      "name": "Panic Recovery"
+                    }
+                  ],
+                  "portrait": "1126",
+                  "skills": [
+                    {
+                      "affinity": "lust",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 7,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 3 [Burst]"
+                          ],
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] If target has 5+ [Burst], Clash Power +1",
+                      "levelCorrection": 2,
+                      "name": "Startling Strike"
+                    },
+                    {
+                      "affinity": "gluttony",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 5,
+                      "coinValue": 6,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                            "[OnSucceedAttack] If target has [BurstAgility], gain 1 [Agility] next turn"
+                          ],
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] If target has 5+ [Burst], Coin Power +1\n[WhenUse] Gain 3 [LegStrength]",
+                      "levelCorrection": 3,
+                      "name": "Perforating Kill"
+                    },
+                    {
+                      "affinity": "sloth",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 5,
+                      "coinValue": 5,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 3 [Burst]"
+                          ],
+                          "type": "normal"
+                        },
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 3 [Burst]",
+                            "[OnSucceedAttack] Inflict [BurstAgility]"
+                          ],
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] If target has 5+ [Burst], Coin Power +1",
+                      "levelCorrection": 4,
+                      "name": "Etching Strike"
+                    },
+                    {
+                      "affinity": "pride",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 5,
+                      "coinValue": 4,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict 5 [Burst]"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "If target has [BurstAgility], deal +50% damage",
+                            "[OnSucceedAttack] Inflict 5 [Burst]",
+                            "[UnBrokenCoinOnSucceedAttack] Reuse this Coin once (once per Skill)"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "Prioritizes targets with [BurstAgility]\n[StartBattle] Gain 1 [SupportProtect]\nDeal +15% damage for every 2 Speed difference between this unit and the target (max 60%)\n[WhenUse] Coin Power +1 for every 5 [Burst] on the target (max 2)\n[WhenUse] Base Power +1 for every 2 [Burst] Count on the target (max 3)\n[WinDuel] Inflict +2 [Burst] Count",
+                      "levelCorrection": 5,
+                      "name": "Cursewrit Butcherblade - Blinkstep"
+                    },
+                    {
+                      "affinity": "envy",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 5,
+                      "coinValue": 4,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                          ],
+                          "type": "normal"
+                        },
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                          ],
+                          "type": "normal"
+                        },
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                          ],
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "counter",
+                      "desc": "[WhenUse] If this unit's Speed is faster than the target's by 3 or more, Clash Power +1\n[WhenUse] If target has [BurstAgility], inflict +1 more [Burst] Count with this Skill",
+                      "levelCorrection": 0,
+                      "name": "Cursewrit"
+                    },
+                    {
+                      "affinity": "pride",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 6,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Burst] Count"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[UnBrokenCoinOnSucceedAttack] Inflict 5 [Burst]"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict [BurstZilu]"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "+20% damage for every 2 Speed difference between this unit and the target (max 60%)\n[WhenUse] Coin Power +1 for every 5 [Burst] on target (max 3)\n[WhenUse] Clash Power +1 for every 2 [Burst] Count on target (max 3)",
+                      "levelCorrection": 5,
+                      "name": "Incomplete Seal Release: <Tianjiu Star's Blade>"
+                    },
+                    {
+                      "affinity": "envy",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 10,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[SuperCoin]"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "guard",
+                      "desc": "[CanDuelGuard]\n[BeforeUse] At 2+ [SupportProtect], activates 'Ascendant Heishou - Mao Technique: Cloudsplitting Manifestation' instead\n[WhenUse] Gain 1 Defense Level for every 5% HP this unit cumulatively lost in this Encounter (max 10)\n[WhenUse] Cannot be Staggered by damage until this Skill ends",
+                      "levelCorrection": 0,
+                      "name": "Swiftfeet Protection"
+                    },
+                    {
+                      "affinity": "pride",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 6,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Burst] Count"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[UnBrokenCoinOnSucceedAttack] Inflict 5 [Burst]"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict [BurstZilu]"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "counter",
+                      "desc": "+20% damage for every 2 Speed difference between this unit and the target (max 60%)\n[WhenUse] Coin Power +1 for every 5 [Burst] on target (max 3)\n[WhenUse] Clash Power +1 for every 2 [Burst] Count on target (max 3)",
+                      "levelCorrection": 5,
+                      "name": "Ascendant Heishou - Mao Technique: Cloudsplitting Manifestation"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "targets": [
+                {
+                  "name": "Jia Qiu",
+                  "parts": [
+                    {
+                      "breakSection": [
+                        30,
+                        0
+                      ],
+                      "defCorrection": 0,
+                      "hp": {
+                        "base": 173,
+                        "level": 35.89
+                      },
+                      "name": "Body",
+                      "partId": 114101,
+                      "resists": {
+                        "blunt": 0.8,
+                        "envy": 1,
+                        "gloom": 0.75,
+                        "gluttony": 1.3,
+                        "lust": 1.2,
+                        "pierce": 0.8,
+                        "pride": 1.2,
+                        "slash": 0.8,
+                        "sloth": 0.75,
+                        "wrath": 1
+                      },
+                      "speed": [
+                        3,
+                        5
+                      ]
+                    }
+                  ],
+                  "passives": [
+                    {
+                      "desc": "Ends encounter when Hong Lu dies",
+                      "name": "This is where your path ends"
+                    },
+                    {
+                      "desc": "Attack End: heal 5 SP for every Deathrite on the target\nOn Hit, when the target's Deathrite is triggered, heal 3 SP for every Deathrite triggered",
+                      "name": "Infinite Song of Erudition"
+                    },
+                    {
+                      "desc": "First Turn Start: gain [ExaminationOfQiu]",
+                      "name": "Effloresced E.G.O::Érlì"
+                    },
+                    {
+                      "desc": "Begins the Encounter with half the Potency and Count for the following effects this unit had at the start of this phase: [Burst], [Combustion], [Sinking], [Vibration], [Laceration]",
+                      "name": "Focus"
+                    },
+                    {
+                      "desc": "Every Turn Start: Core and Part gain 900 Shield.\n- When Hong Lu has [Teaching], lose 300 Shield per Stack on Hong Lu\n- When Hong Lu has 3+ [Teaching], this unit does not gain Shield for the rest of the Encounter",
+                      "name": "I still await your answer."
+                    },
+                    {
+                      "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+                      "name": "Fixed Panic"
+                    },
+                    {
+                      "desc": "If target has 3+ types of Deathrites, Coin Power +1",
+                      "name": "Diminish (貶)"
+                    },
+                    {
+                      "desc": "Turn End: if in Panic, reset SP to 0.",
+                      "name": "Panic Recovery"
+                    }
+                  ],
+                  "portrait": 1137,
+                  "skills": [
+                    {
+                      "affinity": "gluttony",
+                      "atkType": "blunt",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 7,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict 2 [Burst]"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] If target has 5+ [Burst], Clash Power +1\n[WinDuel] Inflict +2 [Burst] Count",
+                      "levelCorrection": 2,
+                      "name": "I Ask Again"
+                    },
+                    {
+                      "affinity": "gluttony",
+                      "atkType": "blunt",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 4,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 2 [Burst]"
+                          ],
+                          "type": "normal"
+                        },
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 2 [Burst]",
+                            "[OnSucceedAttack] Inflict [BurstStop]"
+                          ],
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] If target has 5+ [Burst], Clash Power +1\n[WinDuel] Inflict +2 [Burst] Count",
+                      "levelCorrection": 2,
+                      "name": "Act Not With Impropriety (非禮勿動)"
+                    },
+                    {
+                      "affinity": "gloom",
+                      "atkType": "blunt",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 4,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 2 [Burst]"
+                          ],
+                          "type": "normal"
+                        },
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 2 [Burst]",
+                            "[OnSucceedAttack] Inflict [BurstSuppress]"
+                          ],
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] If target has 5+ [Burst], Clash Power +1\n[WinDuel] Inflict +2 [Burst] Count",
+                      "levelCorrection": 2,
+                      "name": "You Will Not Meddle"
+                    },
+                    {
+                      "affinity": "envy",
+                      "atkType": "blunt",
+                      "atkWeight": 3,
+                      "baseValue": 7,
+                      "coinValue": 13,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict +3 [Burst] Count",
+                            "[OnSucceedAttack] If the target has 2+ types of Deathrite, inflict [BurstWave]"
+                          ],
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "Prioritizes targets with the most types of Deathrite\n[WhenUse] Coin Power +1 for every 2 [Burst] on the main target (max 4)",
+                      "levelCorrection": 2,
+                      "name": "Thunderstrike - Ripple (波)"
+                    },
+                    {
+                      "affinity": "wrath",
+                      "atkType": "blunt",
+                      "atkWeight": 1,
+                      "baseValue": 3,
+                      "coinValue": 3,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict 2 [Burst]"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict 2 [Burst]"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict [BurstAgility]"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] Heal 10 SP\n[WhenUse] Coin Power +1 for every 5 [Burst] on target (max 2)\n[WinDuel] Inflict 2 [Burst]",
+                      "levelCorrection": 2,
+                      "name": "Heishou - Mao Linkstrike - Bladestorm"
+                    },
+                    {
+                      "affinity": "wrath",
+                      "atkType": "blunt",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 3,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict 2 [Burst]"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict 2 [Burst]"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict [BurstZilu]"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] Heal 10 SP\n[WhenUse] Coin Power +1 for every 5 [Burst] on target (max 2)\n[WinDuel] Inflict 2 [Burst]",
+                      "levelCorrection": 2,
+                      "name": "Heed Me, Zilu"
+                    },
+                    {
+                      "affinity": "pride",
+                      "atkType": "blunt",
+                      "atkWeight": 1,
+                      "baseValue": 7,
+                      "coinValue": 13,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "Deal +5% damage for every ([Burst] Potency on target + [Burst] Count on target + number of Deathrite types on target) (max 200%)\n[OnSucceedAttack] Reduce all Deathrites on target to 0"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[CantChangeTarget]\nPrioritizes targets with the most types of Deathrite\n[WhenUse] Coin Power +1 for every type of Deathrite on target (max 3)",
+                      "levelCorrection": 2,
+                      "name": "Deathrite Deluge"
+                    },
+                    {
+                      "affinity": "lust",
+                      "atkType": "blunt",
+                      "atkWeight": 1,
+                      "baseValue": 3,
+                      "coinValue": 2,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Burst]"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Burst]"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Burst]"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Burst]"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[CantChangeTarget]\nPrioritizes Hong Lu\n[WinDuel] Inflict +4 [Burst] Count\n[DefeatDuel] If the target is Hong Lu, inflict 1 [Teaching]",
+                      "levelCorrection": 2,
+                      "name": "Answer Me, Jia Baoyu"
+                    },
+                    {
+                      "affinity": "pride",
+                      "atkType": "blunt",
+                      "atkWeight": 7,
+                      "baseValue": 5,
+                      "coinValue": 8,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Burst]"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Burst]"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Burst]"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[UnBrokenCoinOnSucceedAttack] Deal +5% damage for every ([Burst] Potency on target + [Burst] Count on target + number of Deathrite types on target) (max 100%)"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "Prioritizes Hong Lu\nCoin Power -2 for every [Teaching] on target\n[DefeatDuel] Cannot Stagger with this attack. Gain 24 [DefenseDown] for this Encounter\n[DefeatDuel] Deal -50% damage",
+                      "levelCorrection": 2,
+                      "name": "Tiangang Star - Form (格)"
+                    },
+                    {
+                      "affinity": "pride",
+                      "atkType": "blunt",
+                      "atkWeight": 6,
+                      "baseValue": 5,
+                      "coinValue": 8,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                          ],
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[CantDuel]\n[CantChangeTarget]\nThis Skill attacks targets that aren't Hong Lu\nUses the Heishou Pack - Mao Branch to Stagger every Identity except for Hong Lu next turn; this unit recovers from Stagger\n[EndSkill] Ends turn",
+                      "levelCorrection": 2,
+                      "name": "Like a Roaring Storm"
+                    }
+                  ]
+                },
+                {
+                  "name": "Heishou Pack - Mao: Featherstriker",
+                  "parts": [
+                    {
+                      "breakSection": [
+                        75,
+                        50,
+                        25
+                      ],
+                      "defCorrection": 0,
+                      "hp": {
+                        "base": 52,
+                        "level": 3.59
+                      },
+                      "name": "Body",
+                      "partId": 113101,
+                      "resists": {
+                        "blunt": 2,
+                        "envy": 1,
+                        "gloom": 1,
+                        "gluttony": 1,
+                        "lust": 1,
+                        "pierce": 1,
+                        "pride": 1,
+                        "slash": 0.5,
+                        "sloth": 1,
+                        "wrath": 1
+                      },
+                      "speed": [
+                        2,
+                        5
+                      ]
+                    }
+                  ],
+                  "passives": [
+                    {
+                      "desc": "First Turn Start: gain [RepressedMurderousIntendTwo]\nEnds Encounter when Hong Lu dies",
+                      "name": "Jia Qiu's Test"
+                    },
+                    {
+                      "desc": "Turn End: if this unit lost a Clash this turn, gain 2 [Binding] next turn",
+                      "name": "Failed Ambush"
+                    }
+                  ],
+                  "portrait": "90185",
+                  "skills": [
+                    {
+                      "affinity": "lust",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 7,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                          ],
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] If target has 3+ [Burst], Clash Power +1",
+                      "levelCorrection": 2,
+                      "name": "Startling Strike"
+                    },
+                    {
+                      "affinity": "wrath",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 5,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 2 [Burst]"
+                          ],
+                          "type": "normal"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict 2 [Burst]",
+                            "[UnBrokenCoinOnSucceedAttack] Reuse this Coin (this unit's Speed / 3) times (max 2)"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] If target has 4+ [Burst], Base Power +1",
+                      "levelCorrection": 3,
+                      "name": "Restraint"
+                    },
+                    {
+                      "affinity": "gluttony",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 4,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                          ],
+                          "type": "normal"
+                        },
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 2 [Burst]",
+                            "[OnSucceedAttack] Inflict [BurstAgility]"
+                          ],
+                          "type": "normal"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "If target has [BurstAgility], deal +50% damage",
+                            "[UnBrokenCoinOnSucceedAttack] Gain 3 [LegStrength]",
+                            "[WinDuelAttack] Reuse this Coin once (once per Skill)"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "If this unit's Speed is faster than the main target's gain Coin Power based on Speed difference (Coin Power +1 for every 2 Speed difference; max 3)\n[WhenUse] If target has 4+ [Burst], Coin Power +1\n[WinDuel] Inflict +3 [Burst] Count",
+                      "levelCorrection": 4,
+                      "name": "Feather Strike"
+                    },
+                    {
+                      "affinity": "pride",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 8,
+                      "coins": [
+                        {
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "counter",
+                      "desc": "[WhenUse] Gain 3 [Agility] next turn",
+                      "levelCorrection": 0,
+                      "name": "Windup"
+                    }
+                  ]
+                },
+                {
+                  "name": "Heishou Pack - Mao: Umbrastriker",
+                  "parts": [
+                    {
+                      "breakSection": [
+                        75,
+                        50,
+                        25
+                      ],
+                      "defCorrection": 0,
+                      "hp": {
+                        "base": 52,
+                        "level": 3.59
+                      },
+                      "name": "Body",
+                      "partId": 113201,
+                      "resists": {
+                        "blunt": 2,
+                        "envy": 1,
+                        "gloom": 1,
+                        "gluttony": 1,
+                        "lust": 1,
+                        "pierce": 1,
+                        "pride": 1,
+                        "slash": 0.5,
+                        "sloth": 1,
+                        "wrath": 1
+                      },
+                      "speed": [
+                        2,
+                        5
+                      ]
+                    }
+                  ],
+                  "passives": [
+                    {
+                      "desc": "First Turn Start: gain [RepressedMurderousIntendTwo]\nEnds Encounter when Hong Lu dies",
+                      "name": "Jia Qiu's Test"
+                    },
+                    {
+                      "desc": "Turn End: if this unit lost a Clash this turn, gain 2 [Binding] next turn",
+                      "name": "Failed Ambush"
+                    }
+                  ],
+                  "portrait": "90186",
+                  "skills": [
+                    {
+                      "affinity": "lust",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 7,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 2 [Burst]"
+                          ],
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] If target has 3+ [Burst], Clash Power +1",
+                      "levelCorrection": 2,
+                      "name": "Pursuit"
+                    },
+                    {
+                      "affinity": "wrath",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 5,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                          ],
+                          "type": "normal"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict 2 [Burst]",
+                            "[UnBrokenCoinOnSucceedAttack] Reuse this Coin (this unit's Speed / 3) times (max 2)"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] If target has 4+ [Burst], Base Power +1",
+                      "levelCorrection": 3,
+                      "name": "Overwhelm"
+                    },
+                    {
+                      "affinity": "gluttony",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 4,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                          ],
+                          "type": "normal"
+                        },
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 1 [Burst]",
+                            "[OnSucceedAttack] Inflict [BurstAgility]"
+                          ],
+                          "type": "normal"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "If target has [BurstAgility], deal +50% damage",
+                            "[UnBrokenCoinOnSucceedAttack] Gain 3 [LegStrength]",
+                            "[WinDuelAttack] Reuse this Coin once (once per Skill)"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "If this unit's Speed is faster than the main target's gain Coin Power based on Speed difference (Coin Power +1 for every 2 Speed difference; max 3)\n[WhenUse] If target has 4+ [Burst], Coin Power +1\n[WinDuel] Inflict +3 [Burst] Count",
+                      "levelCorrection": 4,
+                      "name": "Umbra Strike"
+                    },
+                    {
+                      "affinity": "pride",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 8,
+                      "coins": [
+                        {
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "counter",
+                      "desc": "[WhenUse] Gain 3 [Agility] next turn",
+                      "levelCorrection": 0,
+                      "name": "Windup"
+                    }
+                  ]
+                },
+                {
+                  "name": "Zilu",
+                  "parts": [
+                    {
+                      "breakSection": [
+                        0
+                      ],
+                      "defCorrection": 0,
+                      "hp": {
+                        "base": 209,
+                        "level": 26.67
+                      },
+                      "name": "Body",
+                      "partId": 114401,
+                      "resists": {
+                        "blunt": 0.5,
+                        "envy": 1,
+                        "gloom": 1,
+                        "gluttony": 1,
+                        "lust": 1,
+                        "pierce": 1,
+                        "pride": 1,
+                        "slash": 1.25,
+                        "sloth": 1,
+                        "wrath": 1
+                      },
+                      "speed": [
+                        3,
+                        5
+                      ]
+                    }
+                  ],
+                  "passives": [
+                    {
+                      "desc": "Turn Start: heal 30 SP\nTurn Start: gain up to 500 Shield\n- This unit does not drop below 1 HP",
+                      "name": "My Lord"
+                    },
+                    {
+                      "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+                      "name": "Fixed Panic"
+                    },
+                    {
+                      "desc": "On Hit against enemy with [BurstAgility]: inflict +2 [Burst] Count on the target (6 times per turn)",
+                      "name": "Vigor [Mao]"
+                    },
+                    {
+                      "desc": "When attacking targets with slower Speed than this unit's, inflict +1 more [Burst] or [Burst] Count and deal +10% damage",
+                      "name": "Strider [Mao]"
+                    },
+                    {
+                      "desc": "On Skill Use, if this unit's Speed is faster than the target's by 2 or more, Coin Power +1",
+                      "name": "Dominator [Mao]"
+                    },
+                    {
+                      "desc": "Turn End: for every Clash this unit lost, gain 1 Binding next turn (max 6)",
+                      "name": "Estimation"
+                    },
+                    {
+                      "desc": "Turn End: if in Panic, reset SP to 0.",
+                      "name": "Panic Recovery"
+                    }
+                  ],
+                  "portrait": 1126,
+                  "skills": [
+                    {
+                      "affinity": "lust",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 7,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 3 [Burst]"
+                          ],
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] If target has 5+ [Burst], Clash Power +1",
+                      "levelCorrection": 2,
+                      "name": "Startling Strike"
+                    },
+                    {
+                      "affinity": "gluttony",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 5,
+                      "coinValue": 6,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                            "[OnSucceedAttack] If target has [BurstAgility], gain 1 [Agility] next turn"
+                          ],
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] If target has 5+ [Burst], Coin Power +1\n[WhenUse] Gain 3 [LegStrength]",
+                      "levelCorrection": 3,
+                      "name": "Perforating Kill"
+                    },
+                    {
+                      "affinity": "sloth",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 5,
+                      "coinValue": 5,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 3 [Burst]"
+                          ],
+                          "type": "normal"
+                        },
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict 3 [Burst]",
+                            "[OnSucceedAttack] Inflict [BurstAgility]"
+                          ],
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "[WhenUse] If target has 5+ [Burst], Coin Power +1",
+                      "levelCorrection": 4,
+                      "name": "Etching Strike"
+                    },
+                    {
+                      "affinity": "pride",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 5,
+                      "coinValue": 4,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict 5 [Burst]"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "If target has [BurstAgility], deal +50% damage",
+                            "[OnSucceedAttack] Inflict 5 [Burst]",
+                            "[UnBrokenCoinOnSucceedAttack] Reuse this Coin once (once per Skill)"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "Prioritizes targets with [BurstAgility]\n[StartBattle] Gain 1 [SupportProtect]\nDeal +15% damage for every 2 Speed difference between this unit and the target (max 60%)\n[WhenUse] Coin Power +1 for every 5 [Burst] on the target (max 2)\n[WhenUse] Base Power +1 for every 2 [Burst] Count on the target (max 3)\n[WinDuel] Inflict +2 [Burst] Count",
+                      "levelCorrection": 5,
+                      "name": "Cursewrit Butcherblade - Blinkstep"
+                    },
+                    {
+                      "affinity": "envy",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 5,
+                      "coinValue": 4,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                          ],
+                          "type": "normal"
+                        },
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                          ],
+                          "type": "normal"
+                        },
+                        {
+                          "descs": [
+                            "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                          ],
+                          "type": "normal"
+                        }
+                      ],
+                      "defType": "counter",
+                      "desc": "[WhenUse] If this unit's Speed is faster than the target's by 3 or more, Clash Power +1\n[WhenUse] If target has [BurstAgility], inflict +1 more [Burst] Count with this Skill",
+                      "levelCorrection": 0,
+                      "name": "Cursewrit"
+                    },
+                    {
+                      "affinity": "pride",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 6,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Burst] Count"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[UnBrokenCoinOnSucceedAttack] Inflict 5 [Burst]"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict [BurstZilu]"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "attack",
+                      "desc": "+20% damage for every 2 Speed difference between this unit and the target (max 60%)\n[WhenUse] Coin Power +1 for every 5 [Burst] on target (max 3)\n[WhenUse] Clash Power +1 for every 2 [Burst] Count on target (max 3)",
+                      "levelCorrection": 5,
+                      "name": "Incomplete Seal Release: <Tianjiu Star's Blade>"
+                    },
+                    {
+                      "affinity": "envy",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 10,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[SuperCoin]"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "guard",
+                      "desc": "[CanDuelGuard]\n[BeforeUse] At 2+ [SupportProtect], activates 'Ascendant Heishou - Mao Technique: Cloudsplitting Manifestation' instead\n[WhenUse] Gain 1 Defense Level for every 5% HP this unit cumulatively lost in this Encounter (max 10)\n[WhenUse] Cannot be Staggered by damage until this Skill ends",
+                      "levelCorrection": 0,
+                      "name": "Swiftfeet Protection"
+                    },
+                    {
+                      "affinity": "pride",
+                      "atkType": "slash",
+                      "atkWeight": 1,
+                      "baseValue": 4,
+                      "coinValue": 6,
+                      "coins": [
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Burst] Count"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[UnBrokenCoinOnSucceedAttack] Inflict 5 [Burst]"
+                          ],
+                          "type": "unbreakable"
+                        },
+                        {
+                          "descs": [
+                            "[SuperCoin]",
+                            "[OnSucceedAttack] Inflict [BurstZilu]"
+                          ],
+                          "type": "unbreakable"
+                        }
+                      ],
+                      "defType": "counter",
+                      "desc": "+20% damage for every 2 Speed difference between this unit and the target (max 60%)\n[WhenUse] Coin Power +1 for every 5 [Burst] on target (max 3)\n[WhenUse] Clash Power +1 for every 2 [Burst] Count on target (max 3)",
+                      "levelCorrection": 5,
+                      "name": "Ascendant Heishou - Mao Technique: Cloudsplitting Manifestation"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "name": "The Surrendered Witnessing Dungeon (8-20)",
+  "siteId": "511afc6c-f082-46fe-bc7c-56009dc450fe"
+}

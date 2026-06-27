@@ -1,0 +1,255 @@
+{
+  "name": "The Unchanging (4-47)",
+  "siteId": "77717c15-6044-4850-84d7-4bba33c0176a",
+  "targets": [
+    {
+      "name": "Lobotomy E.G.O::Sunshower - Dongbaek",
+      "parts": [
+        {
+          "breakSection": [
+            0,
+            -20
+          ],
+          "defCorrection": -3,
+          "hp": 289.4,
+          "name": "Body",
+          "partId": 804301,
+          "resists": {
+            "blunt": 1.5,
+            "envy": 1,
+            "gloom": 2,
+            "gluttony": 1,
+            "lust": 0.5,
+            "pierce": 1,
+            "pride": 1.5,
+            "slash": 1,
+            "sloth": 1,
+            "wrath": 0.5
+          },
+          "speed": [
+            3,
+            5
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Starts the battle with 1200 Shield HP",
+          "name": "Lobotomy E.G.O"
+        },
+        {
+          "desc": "At the end of each turn, lose 10 SP.",
+          "name": "Perilous Mind"
+        },
+        {
+          "desc": "While in low morale, gain 2 Attack Power Up and 3 Bind.",
+          "name": "Perilous Heart"
+        },
+        {
+          "desc": "In panic, become staggered.",
+          "name": "Faltering Heart"
+        },
+        {
+          "desc": "When recovering from panic, fully heal SP, and gain 2 Haste and 2 Attack Power Up.",
+          "name": "Determination"
+        },
+        {
+          "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+          "name": "Fixed Panic"
+        }
+      ],
+      "portrait": "8043",
+      "skills": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 Sinking and 2 Rupture"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 Sinking and 2 Rupture"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 Sinking and 2 Rupture"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Heal 8 SP\n[DefeatDuel] Lose 5 SP",
+          "levelCorrection": -1,
+          "name": "Stinging Memories"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 Sinking Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 Rupture Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Heal 8 SP\n[DefeatDuel] Lose 5 SP",
+          "levelCorrection": -1,
+          "name": "Thorny Memories"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": -5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 Bind and 2 Attack Power Down next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[DefeatDuel] Lose 8 SP and gain 3 Sinking",
+          "levelCorrection": -1,
+          "name": "Self-defense"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 13,
+          "coinValue": -4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 Rupture"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 Rupture Count.",
+                "[OnSucceedAttack] Raise Stagger Threshold by 50% of damage dealt"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "",
+          "levelCorrection": 3,
+          "name": "Aching Heart"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 7,
+          "baseValue": 26,
+          "coinValue": -10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Target loses 15 SP.",
+                "[OnSucceedAttack] Inflict 8 Sinking and 8 Poison next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Lose 30 SP and gain 5 Sinking; Gain Corroding Heart next turn",
+          "levelCorrection": 3,
+          "name": "Sink It All"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": -5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[OnDefeatEvade] Lose 8 SP",
+          "levelCorrection": 3,
+          "name": "Get It Away"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 20,
+          "coinValue": -5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "guard",
+          "desc": "[StartBattle] Gain Thorns",
+          "levelCorrection": 3,
+          "name": "Don't Touch Me...!"
+        }
+      ]
+    },
+    {
+      "name": "Old Umbrella",
+      "num": 4,
+      "parts": [
+        {
+          "breakSection": [
+            50
+          ],
+          "defCorrection": -3,
+          "hp": 8.2,
+          "name": "Umbrella",
+          "partId": 805301,
+          "resists": {
+            "blunt": 1.5,
+            "envy": 1,
+            "gloom": 2,
+            "gluttony": 1,
+            "lust": 0.5,
+            "pierce": 1,
+            "pride": 1.5,
+            "slash": 1,
+            "sloth": 1,
+            "wrath": 0.5
+          },
+          "speed": [
+            1,
+            4
+          ]
+        }
+      ],
+      "passives": [
+        {
+          "desc": "Whenever this unit is broken, Dongbaek is inflicted with +5 Sinking Count, and all Sinners lose 2 Sinking Count; all Sinners gain 1 Protection and 2 Attack Power Up next turn.",
+          "name": "Walled Heart"
+        }
+      ],
+      "portrait": "8053"
+    }
+  ]
+}
