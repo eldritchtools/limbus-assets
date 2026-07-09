@@ -7803,8 +7803,69 @@
       "Critical Hit",
       "Pride Skill Used",
       "Wrath Skill Used"
+    ]
+  },
+  "9282": {
+    "affinity": "wrath",
+    "descs": [
+      "Turn Start: Activates when there are 3 or more Dawn Office Identities (counts Backup Identities)\n\nTurn 1: Apply 2 [DawnLight] on all allies\nCombat Start: Dawn Office Fixer Sinclair heals 10 SP, and the said Identity may enter the \"Volatile E.G.O::Waxen Pinion\" state via the Passive effect of \"Unstable Shell of Ego\" at 25+ SP instead of 40+ SP\n\n[Dawn Office Identities Exclusive Effect]\nOn Hit using Base Skills, inflict 2 [Combustion] and 2 [Vibration] on target (once per Skill)\nDawn Office Identities are considered \"Identities that inflict [Combustion] and [Vibration]\"\n- Dawn Office Identities' Base Skills count as \"Skills that inflict [Combustion] and [Vibration]\"\nEncounter Start: If Dawn Office Faust is on the field, apply 1 [Firstlight] on the said Identity"
     ],
-    "updated": true
+    "effects": [
+      "Inflict Burn Potency",
+      "Inflict Tremor Potency",
+      "Other Uncommon Effects",
+      "Gain Buff",
+      "Deal More Damage",
+      "Gain Skill Power"
+    ],
+    "exclusiveTo": [
+      "1302",
+      "1402"
+    ],
+    "hardonly": true,
+    "keyword": "Burn",
+    "names": [
+      "Wing-shaped Waxen Candle"
+    ],
+    "new": true,
+    "search_desc": "Turn Start: Activates when there are 3 or more Dawn Office Identities (counts Backup Identities)\n\nTurn 1: Apply 2 Dawnherald on all allies\nCombat Start: Dawn Office Fixer Sinclair heals 10 SP, and the said Identity may enter the \"Volatile E.G.O::Waxen Pinion\" state via the Passive effect of \"Unstable Shell of Ego\" at 25+ SP instead of 40+ SP\n\n[Dawn Office Identities Exclusive Effect]\nOn Hit using Base Skills, inflict 2 Burn and 2 Tremor on target (once per Skill)\nDawn Office Identities are considered \"Identities that inflict Burn and Tremor\"\n- Dawn Office Identities' Base Skills count as \"Skills that inflict Burn and Tremor\"\nEncounter Start: If Dawn Office Faust is on the field, apply 1 Battle Instinct on the said Identity",
+    "srcPath": "9282",
+    "tier": "3",
+    "triggers": [
+      "Burn Skill Used",
+      "Wrath Skill Used",
+      "Dawn Office Identities"
+    ]
+  },
+  "9283": {
+    "affinity": "sloth",
+    "descs": [
+      "Turn Start: Activates when there are 3 or more \"The Thumb\" Identities (only counts Identities on the field)\nTurn Start: \"The Thumb\" Identities gain 1 [PlusCoinValueUp] and 2 [AttackDmgUp]\n\"The Thumb\" Identities gain 1 [AttackUp] for every \"The Thumb\" Identity on the field (max 4)\nDeal +1% damage for every [VibrationIgnition] on target (max 20%)\n- Skills that spend [Bullet] deal an additional +1% damage (max 20%)\n- \"The Thumb\" Identities deal an additional +1% damage (max 20%)\n\nUnits that triggered [VibrationExplosion] with their Skill effects gain 2 [AttackUp] next turn (3 times per turn)\n\nAt Attack End of The House of Spiders: The Thumb Nursefather Rodion's Skill 3, apply 1 [EvolvingManual] on The House of Spiders: The Thumb Apprentice Heathcliff"
+    ],
+    "effects": [
+      "Gain Coin Power",
+      "Deal More Damage",
+      "Other Uncommon Effects",
+      "Gain Offense Level Up"
+    ],
+    "exclusiveTo": [
+      "1025"
+    ],
+    "hardonly": true,
+    "keyword": "Tremor",
+    "names": [
+      "Tributary Cigar"
+    ],
+    "new": true,
+    "search_desc": "Turn Start: Activates when there are 3 or more \"The Thumb\" Identities (only counts Identities on the field)\nTurn Start: \"The Thumb\" Identities gain 1 Plus Coin Boost and 2 Damage Up\n\"The Thumb\" Identities gain 1 Offense Level Up for every \"The Thumb\" Identity on the field (max 4)\nDeal +1% damage for every Tremor - Scorch on target (max 20%)\n- Skills that spend Ammo deal an additional +1% damage (max 20%)\n- \"The Thumb\" Identities deal an additional +1% damage (max 20%)\n\nUnits that triggered Tremor Burst with their Skill effects gain 2 Offense Level Up next turn (3 times per turn)\n\nAt Attack End of The House of Spiders: The Thumb Nursefather Rodion's Skill 3, apply 1 Maturing Textbook on The House of Spiders: The Thumb Apprentice Heathcliff",
+    "srcPath": "9283",
+    "tier": "4",
+    "triggers": [
+      "The Thumb Identities",
+      "Ammo Skill Used",
+      "Hit Enemy with Tremor",
+      "Trigger Tremor Burst"
+    ]
   },
   "9403": {
     "affinity": "gluttony",
@@ -9196,8 +9257,7 @@
       "Blade Lineage Identities",
       "Slash Skill Used",
       "Single-Coin Skill Used"
-    ],
-    "updated": true
+    ]
   },
   "9721": {
     "affinity": "lust",

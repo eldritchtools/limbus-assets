@@ -31,9 +31,11 @@
     ],
     "usage": [
       "Gains increased SP from standard sources (clash win, killing an enemy, etc) letting him reach max SP faster.",
-      "At 40+ SP, he consumes 20 SP to go into his Volatile E.G.O state, upgrading his skills and giving him bonus {status:Combustion} application and Final Power against enemies with {status:Combustion}. He loses an increasing amount of SP every turn in this state and if he hits 0 or below SP, he loses the Volatile E.G.O state. He can only trigger this once, so once he loses it, he can't activate it again by bringing his SP back up."
+      "At 40+ SP, he consumes 20 SP to go into his Volatile E.G.O state, upgrading his skills and giving him bonus {status:Combustion} application and Final Power against enemies with {status:Combustion}. He loses an increasing amount of SP every turn in this state and if he hits 0 or below SP, he loses the Volatile E.G.O state. He can only trigger this once, so once he loses it, he can't activate it again by bringing his SP back up.",
+      "Gains {st:DawnFaust} and {st:DawnGregor} from having {id:10216} and {id:11216} fielded respectively. These upgrade to {st:DawnFaustDying} and {st:DawnGregorDying} if they die. Both massively buff Sinclair's speed, power, damage, and survivability."
     ]
   },
+  "passiveBonusNotes": "Assumes max stacks of Dawn Office from Dawn Office Rep. Gregor. Assumes both other Dawn Office identities are present and alive.",
   "passiveBonuses": [
     {
       "type": "final",
@@ -42,6 +44,46 @@
     {
       "type": "coin",
       "value": 3
+    },
+    {
+      "type": "offlevel",
+      "value": 3
+    },
+    {
+      "type": "base",
+      "value": 2
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1100901
+      },
+      "type": "damage",
+      "value": 0.45
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1100902
+      },
+      "type": "damage",
+      "value": 0.15
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1100903
+      },
+      "type": "damage",
+      "value": 0.225
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1100905
+      },
+      "type": "damage",
+      "value": 2.45
     }
   ],
   "passiveData": {

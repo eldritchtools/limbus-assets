@@ -1,0 +1,674 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1121602",
+        "1121603"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1121602",
+        "1121603",
+        "1121601"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1121602",
+        "1121603",
+        "1121611"
+      ],
+      "uptie": 3
+    }
+  ],
+  "notes": {
+    "other": [
+      "He applies {st:VibrationIgnition} with his S3. {st:VibrationExplosion} on his S2 (at 20+ {st:StigmaWorkshopHandStep1}) and S3.",
+      "He passively gains {st:Combustion} on himself from {st:StigmaWorkshopHandStep1}, but gets reduced damage from it.",
+      "Forces {id:11009} to retreat if he falls below 50% HP."
+    ],
+    "usage": [
+      "Passively gains {st:StigmaWorkshopHandStep1} when hitting enemies or using his defense, buffing his skills with {st:SuperCoin}s, {st:Combustion} application, and other effects. At 30 stacks, his S3 {skill:11216|03} and defense consume all stacks to upgrade to {skill:11216|05}.",
+      "His S3 applies 1-2 and his upgraded skill applies 3 turns of {st:DawnLight} to the party buffing {st:Combustion} skills with more damage and power.",
+      "Applies {st:DawnGregor} to {id:11009}, giving him less staggers, a stagger protection, a free S3 from stagger, SP support, free shield, {st:Combustion} application when hit, and triggering {st:FireField}. Upgrades to {st:DawnGregorDying}, which is a stronger version, when he dies.",
+      "When other Dawn Office identities stagger enemies or use their S3s or upgraded skills, he uses {skill:11216|01} as a follow up attack."
+    ]
+  },
+  "passiveBonusNotes": "Assumes max stacks of Dawn Office.",
+  "passiveBonuses": [
+    {
+      "type": "offlevel",
+      "value": 3
+    },
+    {
+      "extra": {
+        "op": "mul"
+      },
+      "type": "damage",
+      "value": 0.1
+    },
+    {
+      "type": "base",
+      "value": 1
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1121603
+      },
+      "type": "damage",
+      "value": 0.05
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1121605
+      },
+      "type": "damage",
+      "value": 0.05
+    }
+  ],
+  "passiveData": {
+    "1121601": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 2
+          },
+          {
+            "type": "sloth",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When other Dawn Office[TabExplain] Identities meet the following conditions, Dawn Office[TabExplain] Rep Gregor uses the \"Flash of Sunup\" Skill against the targeted enemy (once per turn per Identity)\n- At Base Skill Attack End: If the enemy that was hit is Staggered, use \"Flash of Sunup\" against said enemy\n(Does not activate if the said enemy was already Staggered Before Attack of the said Skill)\n- At Attack End of the following Skills, use \"Flash of Sunup\" on the enemy they hit (prioritizes Staggered targets):\n  · Dawn Office[TabExplain] Fixer Faust's \"Eject\", \"Eject - High Noon[TabExplain]\", and \"Dismemberment at High Noon[TabExplain]\"\n  · Dawn Office[TabExplain] Fixer Sinclair's \"Stigmatize\" and \"Blazing[TabExplain] Strike\"\n\nIf Dawn Office[TabExplain] Fixer Sinclair is on the field: On Hit using Coins added to Dawn Office[TabExplain] Rep Gregor's Base Skills, deal additional Wrath damage equal to [Combustion] on targeted enemy (max 10; max 20 per turn)\n- Counts as activating [Combustion]",
+      "name": "Morgenfeuer [Stigma Workshop]"
+    },
+    "1121602": {
+      "desc": "Upon entering the Encounter for the first time, gain 0 [StigmaWorkshopHandStep1]\n\nCannot be Staggered or fall below 1 HP due to [Combustion] damage\nTake -50% damage from [Combustion] effects (rounded down)\n- At less than 50% HP, take -75% damage from [Combustion] effects instead (rounded down)",
+      "name": "The Fixer at the Crack of Dawn"
+    },
+    "1121603": {
+      "desc": "Upon entering the Encounter for the first time, if there are 2+ allied Dawn Office[TabExplain] Identities (including this unit) on the field, apply [DawnTeam] Stack on all Dawn Office[TabExplain] Identities equal to the number of Dawn Office[TabExplain] Identities on the field\n\nIf Dawn Office[TabExplain] Fixer Sinclair is on the field, activate the following effects:\n- Dawn Office[TabExplain] Fixer Sinclair gains [DawnGregor]\n- Turn Start: If Dawn Office[TabExplain] Rep Gregor is defeated, convert [DawnGregor] on Dawn Office[TabExplain] Fixer Sinclair into [DawnGregorDying]\n- Turn Start: If Dawn Office[TabExplain] Fixer Sinclair has less than 50% HP, apply [RunSinclair] on that unit (once per Encounter)",
+      "name": "Dawn Office"
+    },
+    "1121611": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 2
+          },
+          {
+            "type": "sloth",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When this unit has [DawnLight], gain 2 [StigmaWorkshopHandStep1] On Hit using Base Attack Skills\n\nWhen other Dawn Office[TabExplain] Identities meet the following conditions, Dawn Office[TabExplain] Rep Gregor uses the \"Flash of Sunup\" Skill against the targeted enemy (once per turn per Identity)\n- At Base Skill Attack End: If the enemy that was hit is Staggered, use \"Flash of Sunup\" against said enemy\n(Does not activate if the said enemy was already Staggered Before Attack of the said Skill)\n- At Attack End of the following Skills, use \"Flash of Sunup\" on the enemy they hit (prioritizes Staggered targets):\n  · Dawn Office[TabExplain] Fixer Faust's \"Eject\", \"Eject - High Noon[TabExplain]\", and \"Dismemberment at High Noon[TabExplain]\"\n  · Dawn Office[TabExplain] Fixer Sinclair's \"Stigmatize\" and \"Blazing[TabExplain] Strike\"\n\nIf Dawn Office[TabExplain] Fixer Sinclair is on the field: On Hit using Coins added to Dawn Office[TabExplain] Rep Gregor's Base Skills, deal additional Wrath damage equal to [Combustion] on the targeted enemy (max 10; max 20 per turn)\n- Counts as activating [Combustion]",
+      "name": "Morgenfeuer [Stigma Workshop]"
+    },
+    "1121621": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "wrath",
+            "value": 3
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "The ally who has the highest current HP inflicts 2 [Vibration] On Hit against enemies that have [Combustion] (once per turn)\n- If said enemy has 10+ [Combustion], trigger [VibrationExplosion] On final Coin Hit; then, reduce target's [Vibration] Count by 1 (once per turn)",
+      "name": "Stigma Workshop Prosthesis"
+    }
+  },
+  "skills": {
+    "1121601": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "extra": {
+                "num": 2
+              },
+              "type": "addcoin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 30+ [StigmaWorkshopHandStep1], this Skill gains an extra Coin 2 as an [SuperCoin]",
+          "iconId": "1121601",
+          "id": "1121601",
+          "levelCorrection": 2,
+          "name": "Flash of Sunup",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 3
+            },
+            {
+              "extra": {
+                "num": 2
+              },
+              "type": "addcoin",
+              "value": 1
+            }
+          ],
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 3)\n[WhenUse] At 30+ [StigmaWorkshopHandStep1], this Skill gains an extra Coin 2 as an [SuperCoin]",
+          "iconId": "1121601",
+          "id": "1121601",
+          "name": "Flash of Sunup",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 3)\n[WhenUse] At 30+ [StigmaWorkshopHandStep1], this Skill gains an extra Coin 2 as an [SuperCoin]",
+          "iconId": "1121601",
+          "id": "1121601",
+          "name": "Flash of Sunup",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 3
+            },
+            {
+              "extra": {
+                "num": 2
+              },
+              "type": "addcoin",
+              "value": 1
+            }
+          ],
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 3)\n[WhenUse] At 20+ [StigmaWorkshopHandStep1], this Skill gains an extra Coin 2 as an [SuperCoin]",
+          "iconId": "1121601",
+          "id": "1121601",
+          "name": "Flash of Sunup",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1121602": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "extra": {
+                "num": 3
+              },
+              "type": "addcoin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 20+ [StigmaWorkshopHandStep1], this Skill gains an extra Coin 3 as an [SuperCoin]",
+          "iconId": "1121602",
+          "id": "1121602",
+          "levelCorrection": 3,
+          "name": "Sunset Blade",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 4
+            },
+            {
+              "extra": {
+                "num": 3
+              },
+              "type": "addcoin",
+              "value": 1
+            }
+          ],
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 4)\n[WhenUse] At 20+ [StigmaWorkshopHandStep1], this Skill gains an extra Coin 3 as an [SuperCoin]",
+          "iconId": "1121602",
+          "id": "1121602",
+          "name": "Sunset Blade",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 4)\n[WhenUse] At 20+ [StigmaWorkshopHandStep1], this Skill gains an extra Coin 3 as an [SuperCoin]",
+          "iconId": "1121602",
+          "id": "1121602",
+          "name": "Sunset Blade",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 4
+            },
+            {
+              "extra": {
+                "num": 3
+              },
+              "type": "addcoin",
+              "value": 1
+            }
+          ],
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 4)\n[WhenUse] At 20+ [StigmaWorkshopHandStep1], gain the following effects:\n- This Skill gains an extra Coin 3 as an [SuperCoin]\n- On Hit using the extra Coin, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+          "iconId": "1121602",
+          "id": "1121602",
+          "name": "Sunset Blade",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1121603": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count",
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] Apply 2 [Protection] on 2 random other allies\n(prioritize allies that do not have [Protection]; among them, prioritize Dawn Office[TabExplain] allies)\n[BeforeUse] At 30 [StigmaWorkshopHandStep1], activate \"Crack of Dawn\" instead (once per turn)\n[WhenUse] At 20+ [StigmaWorkshopHandStep1], activate the following effects:\n- Final Power +1\n- Convert all Coins in this Skill into [SuperCoin]s\n[EndSkill] Apply 1 [DawnLight] next turn on all allies\n- At 20+ [StigmaWorkshopHandStep1], apply 1 additional [DawnLight]",
+          "iconId": "1121603",
+          "id": "1121603",
+          "levelCorrection": 4,
+          "name": "Dawnsplitter",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            },
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "type": "final",
+              "value": 1
+            }
+          ],
+          "desc": " Deal +([Combustion] on self + [Combustion] on target)% damage (max 30%)\n[StartBattle] Apply 2 [Protection] on 2 random other allies\n(prioritize allies that do not have [Protection]; among them, prioritize Dawn Office[TabExplain] allies)\n[BeforeUse] At 30 [StigmaWorkshopHandStep1], activate \"Crack of Dawn\" instead (once per turn)\n[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Vibration]) on target (max 2)\n[WhenUse] At 20+ [StigmaWorkshopHandStep1], activate the following effects:\n- Final Power +1\n- Convert all Coins in this Skill into [SuperCoin]s\n- On final Coin Hit, activate [Combustion] on target; then, reduce target's [Combustion] Count by 1\n[EndSkill] Apply 1 [DawnLight] next turn on all allies\n- At 20+ [StigmaWorkshopHandStep1], apply 1 additional [DawnLight]",
+          "iconId": "1121603",
+          "id": "1121603",
+          "name": "Dawnsplitter",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1121604": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\n[StartBattle] Gain 1 [SupportProtect] (once per turn)\n[WhenUse] Gain 5 [StigmaWorkshopHandStep1] (once per turn)\n[WinDuel] Lose 2 [Combustion] Count (once per turn)\n[EndSkillAll] Lose 5 [Combustion] Potency (once per turn)",
+          "iconId": "1121604",
+          "id": "1121604",
+          "levelCorrection": 2,
+          "name": "Guardian",
+          "uptie": 1
+        },
+        {
+          "desc": "[DuelCounter]\n[StartBattle] Gain 1 [SupportProtect] (once per turn)\n[BeforeUse] At 30 [StigmaWorkshopHandStep1], activate \"Crack of Dawn\" instead (once per turn)\n[WhenUse] Gain 5 [StigmaWorkshopHandStep1] (once per turn)\n[WinDuel] Lose 2 [Combustion] Count (once per turn)\n[EndSkillAll] Lose 5 [Combustion] Potency (once per turn)",
+          "iconId": "1121604",
+          "id": "1121604",
+          "name": "Guardian",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "desc": "[DuelCounter]\n[StartBattle] Gain 1 [SupportProtect] (once per turn)\n[BeforeUse] At 30 [StigmaWorkshopHandStep1], activate \"Crack of Dawn\" instead (once per turn)\n[WhenUse] Gain 5 [StigmaWorkshopHandStep1] (once per turn)\n[WhenUse] Final Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 2)\n[WinDuel] Lose 2 [Combustion] Count (once per turn)\n[EndSkillAll] Lose 5 [Combustion] Potency (once per turn)",
+          "iconId": "1121604",
+          "id": "1121604",
+          "name": "Guardian",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1121605": {
+      "bonusNotes": "Assumes a single target",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 3,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +3 [Combustion] Count",
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Combustion]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] Activate [Combustion] on target; then, reduce target's [Combustion] Count by 1"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +50% damage for every excess Atk Weight beyond the # of actual targets (for Focused Encounters, Parts)\n[WhenUse] Apply 2 [Protection] next turn on 2 random other allies\n(prioritize allies that do not have [Protection]; among them, prioritize Dawn Office[TabExplain] allies)\n[WhenUse] At 15+ [Combustion], Coin Power +1\n[EndSkill] Activate the following effects:\n- Apply 3 [DawnLight] next turn on all allies\n- Consume up to 15 [Combustion] on self and heal (15 + [Combustion] consumed)% HP\n- Consume all [StigmaWorkshopHandStep1] on self",
+          "iconId": "1121605",
+          "id": "1121605",
+          "levelCorrection": 4,
+          "name": "Crack of Dawn",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1.5
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +3 [Combustion] Count",
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 5 [Vibration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 5 [Combustion]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] Activate [Combustion] on target; then, reduce target's [Combustion] Count by 1"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "Deal +75% damage for every excess Atk Weight beyond the # of actual targets (for Focused Encounters, Parts)\n[WhenUse] Apply 2 [Protection] next turn on 2 random other allies\n(prioritize allies that do not have [Protection]; among them, prioritize Dawn Office[TabExplain] allies)\n[WhenUse] At 15+ [Combustion], Coin Power +1\n[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Vibration]) on the main target (max 2)\n[EndSkill] Activate the following effects:\n- Apply 3 [DawnLight] next turn on all allies\n- Consume up to 15 [Combustion] on self and heal (15 + [Combustion] consumed)% HP\n- Consume all [StigmaWorkshopHandStep1] on self",
+          "iconId": "1121605",
+          "id": "1121605",
+          "name": "Crack of Dawn",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1121606": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\n[SupportProtect] exclusive Skill\n[WhenUse] Gain 5 [StigmaWorkshopHandStep1] (once per turn)\n[WhenUse] Gain 2 [Protection] (once per turn)",
+          "iconId": "1121606",
+          "id": "1121606",
+          "levelCorrection": 2,
+          "name": "Heat Haze",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "desc": "[DuelCounter]\n[SupportProtect] exclusive Skill\n[WhenUse] Gain 5 [StigmaWorkshopHandStep1] (once per turn)\n[WhenUse] Gain 2 [Protection] (once per turn)\n[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Vibration]) on target (max 2)\n[WhenUse] At 20+ [StigmaWorkshopHandStep1], or if this unit used \"Crack of Dawn\" Skill this turn, convert all Coins in this Skill into [SuperCoin]s",
+          "iconId": "1121606",
+          "id": "1121606",
+          "name": "Heat Haze",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1121621"
+      ],
+      "uptie": 3
+    }
+  ]
+}
