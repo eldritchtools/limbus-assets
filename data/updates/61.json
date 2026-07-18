@@ -1,0 +1,21 @@
+{
+    "date": "2026-07-19",
+    "title": "Update on internal rework part 1",
+    "body": [
+        {
+            "type": "text",
+            "text": "Hi! I've been working on site internals for the past week, trying to improve how the site works under the hood. I've finished a first pass through about a fourth or a third of the pages on the site. The changes should ideally help with crawlability for Google and improve initial load times for some pages. My next course of action is to reduce file sizes of images so they load faster for people before continuing with the rest of the site. I've also been making some minor changes to different parts of the site while working on this. Below is a non-comprehensive list of the additional changes."
+        },
+        {
+            "type": "list",
+            "texts": [
+                "Stopped the sidebar on mobile from starting opened and immediately closing on load. It now always starts closed on mobile.",
+                "Reduced the max height of modals to make it easier to close them on mobile.",
+                "Fixed last updated time sometimes not updating properly.",
+                "Changed the default display type in the identities and egos pages to icons. Only affects those who haven't changed display type before.",
+                "Removed the Ko-Fi icon from the sidebar since it now lives in the Support page.",
+                "Removed the slight left drift of horizontally draggable sections on mobile. This is because of the nudge hint on hover when using the site on desktop conflicting with behavior on mobile. They have been properly separated now."
+            ]
+        }
+    ]
+}
