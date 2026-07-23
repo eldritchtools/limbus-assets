@@ -1,0 +1,14 @@
+name: Revalidate Server Cache
+
+on:
+  workflow_dispatch:
+
+jobs:
+  revalidate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Revalidate Next.js cache
+        run: |
+          curl -X POST "${{ secrets.SITE_URL }}/api/revalidate" \
+            -H "Authorization: Bearer ${{ secrets.REVALIDATE_TOKEN }}"
