@@ -355,7 +355,7 @@
   },
   "AccumulatedPast": {
     "buffType": "Neutral",
-    "desc": "Gain 11 at the end of the Turn.\nSpent completely when the Body Part is broken.",
+    "desc": "This displays the Total Turns taken in the Refraction Railway\nThe number goes up by 1 at the end of the turn\nSpent completely when Body is broken",
     "name": "Accumulated Past",
     "srcPath": "Accumulated Past"
   },
@@ -1005,7 +1005,7 @@
   },
   "BloomingRose": {
     "buffType": "Neutral",
-    "desc": "At the end of the turn\n- Gain 1 Count.\n- Bound Identity loses HP equal to 25% of Max HP.\n- Lose 10% of E.G.O resource corresponding to the Rose's.\n- The Sign of Roses heals HP equal to 5% of its Max HP.\n\nAt 4 Count,\n- Bound Identity dies.\n- Lose all of E.G.O resource corresponding to the Rose's.",
+    "desc": "Turn End:\n- Gain 1 Stack\n- Bound Identity loses HP equal to 25% of max HP\n- Lose 10% of E.G.O Resource corresponding to the Rose's (rounded down)\n- The Sign of Roses's Core heals HP equal to 5% of the Core's max HP\n\nAt 4 Stacks,\n- Bound Identity dies\n- Lose all of E.G.O Resource corresponding to the Rose's",
     "name": "Blooming Sin",
     "srcPath": "Blooming Sin"
   },
@@ -1954,7 +1954,7 @@
   },
   "DawnFaustDying": {
     "buffType": "Positive",
-    "desc": "- Min Speed +2\n- On Base Attack Skill Use: Gain Base Power +3 and deal +(90 / # of Coins)% damage\n\n- Apply the following effects to \"Sunset Blade\"\n· On final Coin Hit: If target has 15+ Burn, activate Burn on target; then, reduce target's Burn Count by 1\n\n- Apply the following effects to \"Blazing Strike\"\n· Deal +150% damage\n· On Use: Convert all Coins into Unbreakable Coins\n· On Hit against an enemy, activate Burn on target; then, reduce target's Burn Count by 1\n· On Use: Consume up to 100 Scorchfield and deal +1% damage for every Scorchfield consumed (max 150%)\n\n- When this unit takes damage that brings its HP down to 0 this turn, this unit's HP cannot drop below 1 for the turn, and recovers from Stagger when Staggered due to damage (once per Encounter)\n\n* Scorchfield Effects\n- Stores all Burn damage dealt in this zone\n- Resets when moving to a different zone\n- This value is shared by all characters",
+    "desc": "- Min Speed +2\n- On Base Attack Skill Use: Gain Base Power +3 and deal +(90 / # of Coins)% damage\n\n- Apply the following effects to \"Sunset Blade\"\n· On final Coin Hit: If target has 15+ Burn, activate Burn on target; then, reduce target's Burn Count by 1\n\n- Apply the following effects to \"Blazing Strike\"\n· Deal +150% damage\n· On Use: Convert all Coins into Unbreakable Coins\n· On Hit against an enemy, activate Burn on target; then, reduce target's Burn Count by 1\n· On Use: Consume up to 100 Scorchfield and deal +1.5% damage for every Scorchfield consumed (max 150%)\n\n- When this unit takes damage that brings its HP down to 0 this turn, this unit's HP cannot drop below 1 for the turn, and recovers from Stagger when Staggered due to damage (once per Encounter)\n\n* Scorchfield Effects\n- Stores all Burn damage dealt in this zone\n- Resets when moving to a different zone\n- This value is shared by all characters",
     "name": "Loneliness at High Noon",
     "srcPath": "DawnFaustDying"
   },
@@ -1989,7 +1989,7 @@
   },
   "DecoyRegenerated": {
     "buffType": "Neutral",
-    "desc": "Gain 1 every time a part is restored",
+    "desc": "Gain 1 every time a Part is restored",
     "name": "Regenerate",
     "srcPath": "Regenerate"
   },
@@ -2098,7 +2098,7 @@
   },
   "DimensionRift": {
     "buffType": "Negative",
-    "desc": "At the end of the turn, gain Rupture Count by this effect’s amount. Then, remove this effect.",
+    "desc": "At the end of the turn, gain Rupture Count by this effect’s Stack. Then, remove this effect.",
     "name": "Dimensional Rift",
     "srcPath": "Dimensional Rift"
   },
@@ -2273,6 +2273,12 @@
     "name": "Dreamy Hesitation",
     "srcPath": "Dreamy"
   },
+  "DriftingDimensionYisang": {
+    "buffType": "Positive",
+    "desc": "Max Stack: 3\nBefore Getting Hit, gain Shield equal to (Stack)% HP (3 times per turn)",
+    "name": "Dimensional Castaway",
+    "srcPath": "DriftingDimensionYisang"
+  },
   "DrunkAwakening": {
     "buffType": "Positive",
     "desc": "- Max Stack: 1\n- As long as this unit has this effect, gain 4 Final Power and take +30% damage\n- On Hit with a Coin that inflicts Bleed Potency: inflict +2 more Bleed On Hit (max 10 per turn)\n- If this unit has Poise, deal +50% damage",
@@ -2367,7 +2373,7 @@
   },
   "EatingSin": {
     "buffType": "Neutral",
-    "desc": "Max HP increases by (E.G.O resource drained)%\n\nOn Death\n- Recover E.G.O resource it drained.\n- Heal bound Identity's HP by (25% of Identity's Max HP * Blooming Sin Count).",
+    "desc": "Max HP increases by (E.G.O resource drained)%\n\nOn Death\n- Recover E.G.O Resource it drained\n- Heal bound Identity's HP by (25% of Identity's Max HP * Blooming Sin Stack)",
     "name": "Drenched Sin",
     "srcPath": "Drenched Sin"
   },
@@ -2568,7 +2574,7 @@
   },
   "FairyCharm": {
     "buffType": "Neutral",
-    "desc": "- All damage dealt to Fairy reduced to 0.\n- Expires when Fairy dies.",
+    "desc": "- All damage dealt to Fairy reduced to 0\n- Expires when Fairy dies",
     "name": "Charmed",
     "srcPath": "Charmed"
   },
@@ -2819,6 +2825,12 @@
     "desc": "When this unit's attack with 1 Atk Weight hits, inflict 50% of the resulting Coin value On Hit as (Affinity/Attack Type of the Attack Skill used to hit) damage against 2 other attackable enemies with the least HP.",
     "name": "Before the King",
     "srcPath": "Before the King"
+  },
+  "FourDimensionYisang": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 4\n- Gain the following effects based on Stack:\n· 1+: Offense Level +1\n· 2+: Defense Level +2\n· 3+: Gain +1 more Charge Count from this unit's Skills\n· 4+: This unit's Skills deal +(Charge Potency x 4)% damage (max 20%)\n\n- If this unit gains this effect past its max cap, this unit gains the surplus Stack next turn\n- Turn End: Lose 1 Stack",
+    "name": "Quadricolor Dimensions",
+    "srcPath": "FourDimensionYisang"
   },
   "FragmentOfHope": {
     "buffType": "Positive",
@@ -3822,13 +3834,19 @@
   },
   "InterlockingTime": {
     "buffType": "Negative",
-    "desc": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 1.5 times the accumulated damage, and gain 3 Bind next turn.",
+    "desc": "Reduce final damage by 30% and store it. At 3 Stacks, take fixed damage equal to 1.5 times the accumulated damage",
+    "name": "Interlocking Time",
+    "srcPath": "Interlocking Time"
+  },
+  "InterlockingTimeBokGak": {
+    "buffType": "Negative",
+    "desc": "- Reduce final damage by 30% and store it\n- At 3 Stacks, take fixed damage equal to 2 times the accumulated damage and remove this effect\n- Turn End: Gain Bind next turn equal to Stack\n- Remove this effect in waves that do not feature Refracted T Corp. Class 3 Collector",
     "name": "Interlocking Time",
     "srcPath": "Interlocking Time"
   },
   "InterlockingTime_Re": {
     "buffType": "Negative",
-    "desc": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 2 times the accumulated damage, and gain 3 Bind next turn.",
+    "desc": "Reduce final damage by 30% and store it. At 3 Stacks, take fixed damage equal to 2 times the accumulated damage. Gain Bind next turn equal to Stack",
     "name": "Interlocking Time",
     "srcPath": "Interlocking Time"
   },
@@ -3878,7 +3896,7 @@
   },
   "KalpaVine": {
     "buffType": "Neutral",
-    "desc": "All characters deal less damage\nAll characters receive less damage",
+    "desc": "All characters deal less damage\nAll characters take less damage",
     "name": "Brambles of Eternity",
     "srcPath": "Brambles of Eternity"
   },
@@ -6439,7 +6457,7 @@
   },
   "PassedPortal_Yellow": {
     "buffType": "Neutral",
-    "desc": "Boost Speed by 1",
+    "desc": "Min & Max Speed +1",
     "name": "Tremoring Dimension",
     "srcPath": "Tremoring Dimension"
   },
@@ -6644,7 +6662,7 @@
   },
   "PrepareSinRose": {
     "buffType": "Neutral",
-    "desc": "Generates a Rose unit whose Affinity corresponds to the most-owned Skill Affinity of the target inflicted with this effect",
+    "desc": "Generates a Rose unit whose Affinity corresponds to the most-owned Skill Affinity of the target inflicted with this effect\n- If this effect causes the number of Rose units on the field to exceed 7, remove Rose units that are bound with defeated Sinners equal to the excess amount (does not count as death)",
     "name": "Crown of Thorns",
     "srcPath": "Crown of Thorns"
   },
@@ -6751,7 +6769,7 @@
   },
   "ReattachedCurseTag_Re": {
     "buffType": "Neutral",
-    "desc": "At 9+, gain 5 Bind at the start of the turn.\nAt 12+, gain 5 Attack Power Down at the start of the turn. (Max 12)",
+    "desc": "- Max Stack: 12\n- At 8- Stacks, deal +30% damage\n- At 9+ Stacks, gain 5 Bind at Turn Start\n- At 12 Stacks, gain 5 Attack Power Down at Turn Start",
     "name": "Reattached Curse Talisman",
     "srcPath": "Reattached Curse Talisman"
   },
@@ -7276,7 +7294,7 @@
   },
   "RunSinclair": {
     "buffType": "Neutral",
-    "desc": "- When this unit takes damage that brings its HP down to 10, this unit's HP does not drop below 10 for the turn\n- Turn End: Recover from Stagger and Retreat from the Encounter (excluding forced Staggers; does not count as death)\n  · In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n  · When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
+    "desc": "- When this unit takes damage that brings its HP down to 10, this unit's HP does not drop below 10 for the turn\n- Turn End after the above effect activates: Recover from Stagger and Retreat from the Encounter (excluding forced Staggers; does not count as death; in Encounters where Retreat is disabled, the Retreat effect does not activate and expires at Turn End)\n  · In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n  · When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
     "name": "Escape Apparatus",
     "srcPath": "RunSinclair"
   },
@@ -8354,7 +8372,7 @@
   },
   "TimeRental": {
     "buffType": "Positive",
-    "desc": "At the end of the turn, gain 3 Haste and 2 Damage Up; If only 1 Count remains, gain 4 Bind and 1 Attack Power Down next turn",
+    "desc": "At the end of the turn, gain 3 Haste and 2 Damage Up; If only 1 Stack remains, gain 4 Bind and 1 Attack Power Down next turn",
     "imageOverride": "Borrowed Time",
     "name": "Borrowed Time of the Fathoms",
     "srcPath": "Borrowed Time"
@@ -8375,7 +8393,7 @@
   },
   "TimeRental_Re": {
     "buffType": "Positive",
-    "desc": "At the end of the turn, gain 3 Haste, 2 Damage Up, and 2 Offense Level Up; If only 1 Count remains, gain 3 Bind 1 Attack Power Down, and 2 Fragile next turn",
+    "desc": "Turn End:\n- Gain 3 Haste, 2 Damage Up, and 2 Offense Level Up\n- If only 1 Stack remains, gain 3 Bind, 1 Attack Power Down, and 2 Fragile next turn\n- Lose 1 Stack",
     "name": "Borrowed Time",
     "srcPath": "Borrowed Time"
   },
@@ -8393,13 +8411,13 @@
   },
   "Tipsiness": {
     "buffType": "Neutral",
-    "desc": "Lose Clash Power by the effect's Count (Max 5)",
+    "desc": "Lose Clash Power equal to Stack (max 5)",
     "name": "Tipsy",
     "srcPath": "Tipsy"
   },
   "TipsinessRail": {
     "buffType": "Neutral",
-    "desc": "Lose Clash Power by the effect's Count (Max 5)",
+    "desc": "Lose Clash Power equal to Stack (max 5)",
     "name": "Tipsy",
     "srcPath": "Tipsy"
   },
@@ -8854,7 +8872,7 @@
   },
   "WaveFoxUmbrella": {
     "buffType": "Neutral",
-    "desc": "All parts gain Protection equal to the value\nWhen using Waiting Skill, Summon Old Umbrella equal to the value\n1 Spent every time an Umbrella is broken.",
+    "desc": "All parts gain Protection equal to Stack\nWhen using the \"Waiting\" Skill, spawn Old Umbrella equal to Stack\n1 Spent every time an Umbrella is broken",
     "name": "Protection Umbrella",
     "srcPath": "Protection Umbrella"
   },
@@ -8949,13 +8967,13 @@
   },
   "WrappedCurseTag": {
     "buffType": "Neutral",
-    "desc": "Deal +1% damage per Count\nAt 9+ Count, gain 2 Attack Power Down at turn start",
+    "desc": "Deal +1% damage per Stack\nAt 9+ Stack, gain 2 Attack Power Down at turn start",
     "name": "Entangled Curse Talisman",
     "srcPath": "Entangled Curse Talisman"
   },
   "WrappedCurseTagRe": {
     "buffType": "Neutral",
-    "desc": "Deal +1% damage per Count\nAt 9+ Count, gain 2 Attack Power Down at turn start (Max 9)",
+    "desc": "- Max Stack: 9\n- Deal +1% damage for every Stack\n- At 9 Stacks, gain 2 Attack Power Down at Turn Start\nRemove this effect at the end of the wave",
     "name": "Entangled Curse Talisman",
     "srcPath": "Entangled Curse Talisman"
   },
