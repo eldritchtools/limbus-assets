@@ -48,6 +48,33 @@
           "id": "2090211",
           "name": "4th Match Flame",
           "uptie": 4
+        },
+        {
+          "baseValue": 38,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": -13,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[UnBrokenCoinOnSucceedAttack] Inflict 6 [Combustion]",
+                "[OnSucceedAttack] Inflict 3 [CrimsonTakeDamageUp] next turn"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "Deal +5% damage for every highest Reson. (max 30%)\n[EndSkill] Gain 1 [CrimsonResultUp] and 1 [CrimsonDamageUp] next turn",
+          "id": "2090211",
+          "name": "4th Match Flame",
+          "uptie": 5
         }
       ],
       "type": "awakening"
@@ -102,19 +129,53 @@
           "id": "2090221",
           "name": "4th Match Flame",
           "uptie": 4
+        },
+        {
+          "atkWeight": 5,
+          "baseValue": 38,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": -18,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 10 [Combustion]",
+                "[OnSucceedAttack] Inflict 3 [CrimsonTakeDamageUp] next turn"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\nDeal +5% damage for every highest Reson. (max 30%)\n[DefeatDuel] Base Power -18\n[EndSkill] Gain 2 [CrimsonResultUp] and 1 [CrimsonDamageUp] next turn",
+          "id": "2090221",
+          "name": "4th Match Flame",
+          "uptie": 5
         }
       ],
       "type": "corrosion"
     }
   ],
+  "maxThreadspin": 5,
   "notes": {
     "main": [
-      "High rolling aoe E.G.O. Negative coin on awakening makes it risky to use."
+      "High rolling aoe E.G.O. Negative coin on awakening makes it risky to use.",
+      "Useful setup for a {kw:Wrath} burst next turn."
     ]
   },
   "passiveList": [
     {
       "desc": "After defeating an enemy that has [Combustion], heal (Wrath A-Reson.)% HP",
+      "name": "Spark of Flame"
+    },
+    {
+      "desc": "Combat Start: If Wrath A-Reson. was activated, inflict 1 [CrimsonTakeDamageUp] on the main target on Clash Win (once per turn)\n\nAfter defeating an enemy that has [Combustion], heal (Wrath Reson.)% HP (max 12%)",
       "name": "Spark of Flame"
     }
   ]
