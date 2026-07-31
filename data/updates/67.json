@@ -1,0 +1,19 @@
+{
+    "date": "2026-07-31",
+    "title": "Search/Ranking and Voiceline Guesser rework, internal rework part 5",
+    "body": [
+        {
+            "type": "text",
+            "text": "This step of the internal rework improved on indexability and caching related issues which should make search engines focus on more important pages and reduce the amount of data needed to load the site for users over longer periods of time. The following changes have also been added to the site:"
+        },
+        {
+            "type": "list",
+            "texts": [
+                "The 'Popular' criteria for Builds, MD Plans, and Collections has been split into 'Active' and 'Top'. Active is equivalent to the previous Popular, being scored based on likes, comments, and views with older posts gradually losing score over time, however the exact formula has been tweaked to give high scoring posts more time before they get replaced by newer ones. Top is the raw score based on likes, comments, and views without age affecting the placement. The homepage preview has been changed to Active, while the Builds in the Identity, E.G.O, and Ranking pages have been changed to Top.",
+                "Search results when searching for Builds, MD Plans, and Collections using search terms has been adjusted. Previously, results were only based on how closely the search terms matched the title and body of the post. Now results will still be based on that, but also slightly influenced by their score based on likes, comments, and views, so more popular posts should rank higher in the search results. Sinner notes and floor information (for MD Plans) are not included due to limitations in how the database is designed.",
+                "Builds, MD Plans, and Collections now have a bronze/silver/gold border if they've reached certain score thresholds based on likes, comments, and views. The exact formula will be adjusted over time if posts start getting more activity.",
+                "Reworked the problem generator of the Voiceline Guesser. It will now always try to pick a segment that's mostly voiced, unlike before where it could pick any segment from a clip even if it was mostly silence."
+            ]
+        }
+    ]
+}
