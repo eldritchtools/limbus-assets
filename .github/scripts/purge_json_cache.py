@@ -11,10 +11,7 @@ GITHUB_BEFORE = os.environ.get("GITHUB_BEFORE", "")
 GITHUB_AFTER = os.environ.get("GITHUB_AFTER", "")
 
 ORIGINS = [
-    "https://limbus-teams.eldritchtools.com",
-    "https://limbus-md.eldritchtools.com",
-    "https://limbus.eldritchtools.com",
-    "http://localhost:3000"
+    "https://limbus.eldritchtools.com"
 ]
 
 
@@ -35,14 +32,22 @@ def get_changed_json_files(before, after):
         print(f"Error getting git diff: {e}", file=sys.stderr)
         return []
 
-
 def build_purge_payload(files, origins):
-    """Return a single payload with all files for all origins."""
     payload_files = []
-    for origin in origins:
-        for f in files:
-            full_url = f"{DOMAIN}/{f}"
-            payload_files.append({"url": full_url, "headers": {"Origin": origin}})
+
+    for f in files:
+        url = f"{DOMAIN}/{f}"
+
+        # Purge cache entry with no Origin header (SSR)
+        payload_files.append({"url": url})
+
+        # Purge browser cache entries
+        for origin in origins:
+            payload_files.append({
+                "url": url,
+                "headers": {"Origin": origin},
+            })
+
     return {"files": payload_files}
 
 
