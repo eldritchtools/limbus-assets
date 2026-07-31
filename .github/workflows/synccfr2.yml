@@ -52,10 +52,11 @@ jobs:
 
       # - name: List R2 buckets
       #   run: rclone ls "r2:${{ secrets.R2_BUCKET }}"
-      
+
       - name: Sync assets to R2 (checksum-based)
         run: |
-          rclone sync assets r2:${{ secrets.R2_BUCKET }}/assets --checksum --fast-list
+          rclone sync assets r2:${{ secrets.R2_BUCKET }}/assets --checksum --fast-list \
+            --header-upload "Cache-Control: public, max-age=31536000, immutable"
 
       - name: Sync data to R2 (checksum-based)
         run: |
