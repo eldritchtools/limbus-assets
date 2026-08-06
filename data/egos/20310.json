@@ -1,0 +1,157 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 3,
+          "baseValue": 12,
+          "coinValue": 12,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[WinDuelAttack] Inflict 1 [ResultReduction] next turn (once per turn per target)",
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuelEndSkill] Heal 2% HP and 5 SP each for (2 + Envy Reson. / 2) allies that have the lowest current HP percentages (max 3 units)\n[DefeatDuel] Gain (Envy Reson. x 5) Shield (max 20)\n[DefeatDuel] Deal +100% damage to the main target",
+          "id": "2031011",
+          "levelCorrection": 2,
+          "name": "I'll Go fer Scissors. How 'Bout You?",
+          "spCost": 20,
+          "uptie": 1
+        },
+        {
+          "desc": "[WinDuelEndSkill] Heal 4% HP and 5 SP each for (2 + Envy Reson. / 2) allies that have the lowest current HP percentages (max 4 units)\n[DefeatDuel] Gain (Envy Reson. x 5) Shield (max 25)\n[DefeatDuel] Deal +150% damage to the main target",
+          "id": "2031011",
+          "name": "I'll Go fer Scissors. How 'Bout You?",
+          "uptie": 3
+        },
+        {
+          "desc": "[WinDuelEndSkill] Heal 6% HP and 5 SP each for (2 + Envy Reson. / 2) allies that have the lowest current HP percentages (max 4 units)\n[DefeatDuel] Gain (Envy Reson. x 5) Shield (max 30)\n[DefeatDuel] Deal +200% damage to the main target",
+          "id": "2031011",
+          "name": "I'll Go fer Scissors. How 'Bout You?",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 3,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.6
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 1 [ResultReduction] next turn (once per turn per target)",
+                "[OnSucceedAttack] Inflict 6 [Laceration]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly\nAt 2+ Envy Reson., Final Power +1\n[WinDuel] Deal +60% damage to the main target\n[DefeatDuel] Gain Shield equal to (Envy Reson. x 5) (max 20)\n[DefeatDuel] This Skill inflicts +1 more [ResultReduction]",
+          "id": "2031021",
+          "levelCorrection": 3,
+          "name": "I'll Go fer Scissors. How 'Bout You?",
+          "spCost": 20,
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.8
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\nFinal Power +1 for every 2 Envy Reson. (max 2)\n[WinDuel] Deal +80% damage to the main target\n[DefeatDuel] Gain Shield equal to (Envy Reson. x 5) (max 25)\n[DefeatDuel] This Skill inflicts +1 more [ResultReduction]",
+          "id": "2031021",
+          "name": "I'll Go fer Scissors. How 'Bout You?",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "skilllevel",
+              "value": 3
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\nFinal Power +1 for every 2 Envy Reson. (max 3)\n[WinDuel] Deal +100% damage to the main target\n[DefeatDuel] Gain Shield equal to (Envy Reson. x 5) (max 30)\n[DefeatDuel] This Skill inflicts +1 more [ResultReduction]",
+          "id": "2031021",
+          "name": "I'll Go fer Scissors. How 'Bout You?",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "notes": {
+    "main": [
+      "Awakening: AoE HP healing, SP healing, and {st:ResultReduction} on clash win. Deal bonus damage on clash lose.",
+      "Corrosion: Applies {st:ResultReduction}. 2 on clash lose.",
+      "Passive buffs her {kw:Envy} skills, gives her {st:AttackUp} based on the total damage she's taken, and inflicts {st:NiddleEGO} to all enemies on {kw:Envy} A-Reson."
+    ],
+    "other": [
+      "Both versions give her shield based on {kw:Envy} Reson on clash lose, letting her tank part of the incoming damage while triggering her clash lose mechanics."
+    ]
+  },
+  "passiveList": [
+    {
+      "desc": "Envy Skills deal +10% damage\n- Said Skills deal +1% more damage for every 1 Envy Reson. (max 7%)\n\nTurn Start: Gain [AttackUp] equal to (cumulative HP damage taken by this unit in this Encounter (including Shield damage) / 20) (max 3)\n\nCombat Start: On Envy A-Reson., inflict 1 [NiddleEGO] to all enemies (in Focused Encounters, all Parts)",
+      "name": "'Tis Thy Turn to Swallow the Needle!"
+    }
+  ]
+}

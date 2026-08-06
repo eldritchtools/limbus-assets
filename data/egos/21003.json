@@ -49,6 +49,26 @@
           "id": "2100311",
           "name": "Lifetime Stew",
           "uptie": 4
+        },
+        {
+          "baseValue": 24,
+          "coinValue": -8,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] If target is an ally,",
+                "- Heal target for (5 x number of allies targeted by this Skill)% of user's Max HP (max 20%)",
+                "- Gain 1 [GainSinStockAdder] and 2 [Agility] next turn",
+                "[OnSucceedAttackTail] Inflict 7 [Combustion]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets the unit with the least HP\nRequired Gluttony E.G.O resource to use this Skill is reduced to 0\nIf target is an ally, this Skill deals 0 damage and does not trigger Defense Skills (including Clashable Defense Skills)\n[DefeatDuel] Base Power -8\n[EndSkill] If this Skill hit an ally, this unit heals SP equal to the number of allies targeted by this Skill\n[EndSkill] Heal this unit for (5 x number of allies targeted by this Skill)% Max HP (min 5%, max 20%)\n[EndSkill] Gain 1 [GainSinStockAdder] and 2 [Agility] next turn",
+          "id": "2100311",
+          "name": "Lifetime Stew",
+          "uptie": 5
         }
       ],
       "type": "awakening"
@@ -137,20 +157,74 @@
           "id": "2100321",
           "name": "Lifetime Stew",
           "uptie": 4
+        },
+        {
+          "baseValue": 28,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.6
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": -12,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "lust"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count",
+                "[UnBrokenCoinOnSucceedAttack] If E.G.O resource was spent due to this Skill's effect, deal Lust damage equal to 50% of this Coin's final damage"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets the unit with the least HP\nRequired Gluttony E.G.O resource to use this Skill is reduced to 0\n[DefeatDuel] Base Power -12\n[BeforeAttack] Deal +15% damage for every 4 ([Combustion] Potency on all targets) (max 60%)\n[BeforeAttack] Consume up to 3 of the most-owned E.G.O resource, and deal +10% damage for every 1 of the said E.G.O resource consumed (max 30%)",
+          "id": "2100321",
+          "name": "Lifetime Stew",
+          "uptie": 5
         }
       ],
       "type": "corrosion"
     }
   ],
+  "maxThreadspin": 5,
   "notes": {
     "main": [
       "Hits the 7 targets with the least HP. Only damages enemy targets. Allied targets are healed on a heads hit. Applies {status:Combustion} on tails hit regardless of target. Very low power.",
-      "{status:GainSinStockAdder} allows allies to generate more E.G.O resources but is very inconsistent."
+      "{status:GainSinStockAdder} allows allies to generate more E.G.O resources but is very inconsistent.",
+      "Threadspin V: The main effects have been made much stronger and more consistent. His healing has been changed from Heads Hit to On Hit and goes up to 20% and he gains some SP healing. His {st:GainSinStockAdder} and {st:Agility} have been moved from Tails Hit to Attack End with more On Hit to allies targets. Since this is an aoe E.G.O, On Hit effects trigger for each target hit, meaning {sinner:10} can get a lot of {st:GainSinStockAdder} and {st:Agility} from this."
+    ],
+    "other": [
+      "Threadspin V: His passive now gives him additional SP or damage support when using {st:Combustion} skills."
     ]
   },
   "passiveList": [
     {
       "desc": "On Tails Hit, inflict 1 [Combustion] if target is an enemy",
+      "name": "Stew Spewage"
+    },
+    {
+      "desc": "On Tails Hit, inflict 1 [Combustion] if target is an enemy\n\nWhen using Base Attack Skills that inflict [Combustion] Potency or Count against enemies,\n\n- For Plus Coin Skills:\n· At lower than 40 SP, heal 4 SP\n· At 40 or higher SP, deal +10% damage\n\n- For Minus Coin Skills:\n· At higher than -25 SP, lose 4 SP (this effect cannot reduce this unit's SP below -40)\n· At -25 or lower SP, deal +10% damage",
       "name": "Stew Spewage"
     }
   ]

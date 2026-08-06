@@ -65,6 +65,35 @@
           "id": "2030411",
           "name": "Lifetime Stew",
           "uptie": 4
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 3
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1.2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Combustion] Count",
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Final Power +1 for every 4 ([Combustion] + [Laceration]) on the main target (max 3)\n[BeforeAttack] Apply 1 [ScarletResultUp] next turn to allies according to their Deployment Order for every 6 Lust E.G.O resource owned (max 5 units)\n[BeforeAttack] Deal +6% damage for every 1 Lust E.G.O resource owned (max 120%)",
+          "id": "2030411",
+          "name": "Lifetime Stew",
+          "uptie": 5
         }
       ],
       "type": "awakening"
@@ -147,23 +176,67 @@
         },
         {
           "atkWeight": 3,
-          "desc": "[CantIdentify]\nTargets the unit with the most HP\n\n[BeforeAttack] Boost damage based on current Lust resources (Up to 50%)\nThen spend Lust resources by (Lust Reson.); further boost damage by 10% per resource spent",
+          "desc": "[CantIdentify]\nTargets the unit with the most HP\n\n[BeforeAttack] Boost damage based on current Lust resources (up to 50%)\nThen spend Lust resources by (Lust Reson.); further boost damage by 10% per resource spent",
           "id": "2030421",
           "name": "Lifetime Stew",
           "uptie": 4
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 3
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1.6
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +4 [Combustion] Count",
+                "[OnSucceedAttack] Inflict +4 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets the unit with the most HP\n\nFinal Power +1 for every 4 ([Combustion] + [Laceration]) on the main target (max 3)\n[BeforeAttack] Apply 1 [ScarletResultUp] and 1 [ScarletDamageUp] next turn to allies according to their Deployment Order for every 6 Lust E.G.O resource owned (max 5 units)\n[BeforeAttack]\n- Deal +5% damage for every 1 Lust E.G.O resource owned (max 100%)\n- Then, consume (Lust Reson. x 2) Lust E.G.O resource (max 8)\n- Deal +20% damage for every 1 Lust E.G.O resource consumed (max 160%)",
+          "id": "2030421",
+          "name": "Lifetime Stew",
+          "uptie": 5
         }
       ],
       "type": "corrosion"
     }
   ],
+  "maxThreadspin": 5,
   "notes": {
     "main": [
-      "Converts non-{keyword:Lust} resources into {keyword:Lust}. Careful when using this ego if you're lacking other E.G.O resources."
+      "Converts non-{keyword:Lust} resources into {keyword:Lust}. Careful when using this ego if you're lacking other E.G.O resources.",
+      "Threadspin V: Buffs {kw:Lust} skills next turn, further increases the damage, and gives it {st:Laceration} Count application.",
+      "Threadspin V: Her passive becomes more efficient in converting E.G.O resources and stops after having 20. It also buffs all her {kw:Lust} skills."
     ]
   },
   "passiveList": [
     {
       "desc": "Turn Start: Convert 2 random non-Lust E.G.O resources into 1 Lust resource",
+      "name": "Cauldron of Gorging"
+    },
+    {
+      "desc": "Turn Start: Convert 1 random non-Lust E.G.O resource into 1 Lust E.G.O resource\n- At 20+ Lust E.G.O resource, this effect does not activate and this unit gains 1 [ScarletResultUp] instead\n\nLust Base Skills deal +1% damage for every Lust Resource owned Before Attack (max 10%)",
       "name": "Cauldron of Gorging"
     }
   ]
