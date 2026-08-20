@@ -1,0 +1,475 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1061602"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1061602",
+        "1061601"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1061602",
+        "1061611"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "usage": [
+      "Applies {st:DianxueHongLu} on enemies, giving him more power and coin reuses. The stack goes up every turn he hits the same target and expires if he applies it to a different target. It's replaced when someone else applies Nerve Strike, but retains its stacks allowing you to swap between Nerve Strikes.",
+      "Gains {st:Agility} based on his {st:Breath} and gains Coin Power when faster than his target."
+    ]
+  },
+  "passiveBonusNotes": "Assumes max Nerve Strike and max Cinq allies.",
+  "passiveBonuses": [
+    {
+      "type": "offlevel",
+      "value": 3
+    },
+    {
+      "type": "clash",
+      "value": 1
+    },
+    {
+      "type": "base",
+      "value": 1
+    },
+    {
+      "type": "critdamage",
+      "value": 0.3
+    }
+  ],
+  "passiveData": {
+    "1061601": {
+      "desc": "On Clash Win, if target has Nerve Strike, inflict 1 [DianxueHongLu] (once per turn)\n\nTurn End: Gain 1 [Agility] next turn for every 5 [Breath] Potency on self (max 2)\n\nDeal +([Combustion] Potency on target)% damage on Critical Hit (max 15%)",
+      "name": "Virescent Pyrojade"
+    },
+    "1061602": {
+      "desc": "Upon entering the Encounter for the first time, gain [DuelSousTemoinsEast] equal to the number of \"Cinq Association\" Identities set as Backup or Support Units (max 3, including defeated units)\n\nAgainst the target a Base Attack Skill hit last, inflict 1 [DianxueHongLu] next turn (once per turn; in Focused Encounters, the Part)",
+      "name": "A Duel Witnessed"
+    },
+    "1061611": {
+      "desc": "On Clash Win, if target has Nerve Strike, inflict 1 [DianxueHongLu] (once per turn)\n\nTurn End: Gain 1 [Agility] next turn for every 3 [Breath] Potency on self (max 2)\n\nDeal +([Combustion] Potency on target)% damage on Critical Hit (max 15%)\n- Increase max cap by 5% for every 1 [DianxueHongLu] on the target",
+      "name": "Virescent Pyrojade"
+    },
+    "1061621": {
+      "desc": "1 ally with the fastest Speed: On Clash Win against enemies that have [Combustion] or \"Unique [Combustion]\", inflict 1 [Binding] next turn (once per turn)\n- If target has 4- [Combustion] Count, also inflict +1 [Combustion] Count to the said target this turn\n- If target has 5+ [Combustion] Count, also inflict 3 [Combustion] to the said target this turn",
+      "name": "I'll Melt Open the Way Out"
+    }
+  },
+  "skills": {
+    "1061601": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 7,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] If target has 3+ [DianxueHongLu], Reuse this Coin (once per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target does not have [DianxueHongLu], Clash Power +1\n[WhenUse] Gain +3 [Breath] Count",
+          "iconId": "1061601",
+          "id": "1061601",
+          "levelCorrection": 2,
+          "name": "Fa Jin",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 7,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] If target has 3+ [DianxueHongLu], Reuse this Coin (once per Skill)",
+                "[ReUseOnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's by 2 or more, Coin Power +1\n[WhenUse] If target does not have [DianxueHongLu], Clash Power +1\n[WhenUse] Gain +3 [Breath] Count",
+          "iconId": "1061601",
+          "id": "1061601",
+          "name": "Fa Jin",
+          "uptie": 2
+        },
+        {
+          "baseValue": 6,
+          "desc": "If this unit's Speed is faster than the target's by 2 or more, Coin Power +1\n[WhenUse] If target does not have [DianxueHongLu], Clash Power +1\n[WhenUse] Gain +3 [Breath] Count",
+          "iconId": "1061601",
+          "id": "1061601",
+          "name": "Fa Jin",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 2
+            },
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 7,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] If target has 3+ [DianxueHongLu], Reuse this Coin (once per Skill)",
+                "[ReUseOnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's by 2 or more, Coin Power +1\n[WhenUse] Clash Power +1 for every 6 ([Breath] on self + [Combustion] on target) (max 2)\n[WhenUse] If target does not have [DianxueHongLu], Clash Power +1\n[WhenUse] Gain +3 [Breath] Count",
+          "iconId": "1061601",
+          "id": "1061601",
+          "name": "Fa Jin",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1061602": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count",
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] If target has 2+ [DianxueHongLu], Reuse this Coin (once per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WinDuel] Gain 3 [Breath]\n- Gain [Breath] Count equal to [DianxueHongLu] on target",
+          "iconId": "1061602",
+          "id": "1061602",
+          "levelCorrection": 2,
+          "name": "Virescent Flame Palm",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Breath] Count",
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count",
+                "[OnSucceedAttack] If target has 2+ [DianxueHongLu], Reuse this Coin (once per Skill)",
+                "[ReUseOnSucceedAttack] Inflict [DefenseDown] equal to [DianxueHongLu] on target (once per turn)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's, gain Coin Power based on Speed difference (Coin Power +1 for every 2 Speed difference; max 2)\n[WinDuel] Gain 3 [Breath]\n- Gain [Breath] Count equal to [DianxueHongLu] on target",
+          "iconId": "1061602",
+          "id": "1061602",
+          "name": "Virescent Flame Palm",
+          "uptie": 2
+        },
+        {
+          "baseValue": 6,
+          "desc": "If this unit's Speed is faster than the target's, gain Coin Power based on Speed difference (Coin Power +1 for every 2 Speed difference; max 2)\n[WinDuel] Gain 3 [Breath]\n- Gain [Breath] Count equal to [DianxueHongLu] on target",
+          "iconId": "1061602",
+          "id": "1061602",
+          "name": "Virescent Flame Palm",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "type": "final",
+              "value": 1
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's, gain Coin Power based on Speed difference (Coin Power +1 for every 2 Speed difference; max 2)\n[WhenUse] At 6+ ([Breath] on self + [Combustion] on target), Final Power +1\n[WinDuel] Gain 3 [Breath]\n- Gain [Breath] Count equal to [DianxueHongLu] on target",
+          "iconId": "1061602",
+          "id": "1061602",
+          "name": "Virescent Flame Palm",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1061603": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.2
+                },
+                {
+                  "type": "reuse",
+                  "value": 1
+                },
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "wrath"
+                  },
+                  "type": "damage",
+                  "value": 0.4
+                }
+              ],
+              "descs": [
+                "Deal +([Breath] on self + [Combustion] on target)% damage on Critical Hit (max 20%)",
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count",
+                "[CriticalOnSucceedAttack] Inflict 2 [DefenseDown] (2 times per turn)",
+                "[OnSucceedAttack] If target has [DianxueHongLu], Reuse this Coin (once per Skill)",
+                "[ReUseOnSucceedAttack] Deal Wrath damage equal to ([Combustion] on target x 2)% of this Coin's final damage (max 40%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If this unit's Speed is faster than the target's by 2 or more, Coin Power +1\n[WinDuel] Gain 3 [Breath]\n- Gain [Breath] Count equal to [DianxueHongLu] on target",
+          "iconId": "1061603",
+          "id": "1061603",
+          "levelCorrection": 3,
+          "name": "Take the Hit to the Last Blow, Please?",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.3
+                },
+                {
+                  "type": "reuse",
+                  "value": 1
+                },
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "wrath"
+                  },
+                  "type": "damage",
+                  "value": 0.4
+                }
+              ],
+              "descs": [
+                "Deal +([Breath] on self + [Combustion] on target)% damage on Critical Hit (max 30%)",
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count",
+                "[CriticalOnSucceedAttack] Inflict 2 [DefenseDown] (2 times per turn)",
+                "[OnSucceedAttack] If target has [DianxueHongLu], Reuse this Coin (once per Skill)",
+                "[ReUseOnSucceedAttack] Deal Wrath damage equal to ([Combustion] on target x 2)% of this Coin's final damage (max 40%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the target's by 2 or more, Coin Power +1\n[WhenUse] At 6+ ([Breath] on self + [Combustion] on target), Coin Power +1\n[WinDuel] Gain 5 [Breath]\n- Gain [Breath] Count equal to [DianxueHongLu] on target",
+          "iconId": "1061603",
+          "id": "1061603",
+          "name": "Take the Hit to the Last Blow, Please?",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1061604": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "If this unit's Speed is faster than the attacker's by 2 or more, Coin Power +1\n[StartBattle] Gain +2 [Breath] Count (once per turn)",
+          "iconId": "1061604",
+          "id": "1061604",
+          "levelCorrection": 2,
+          "name": "Light as a Tuft of Cloud",
+          "uptie": 1
+        },
+        {
+          "affinity": "wrath",
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "If this unit's Speed is faster than the attacker's by 2 or more, Coin Power +1\n[StartBattle] Gain +3 [Breath] Count (once per turn)",
+          "iconId": "1061604_4",
+          "id": "1061604",
+          "name": "Light as a Tuft of Cloud",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1061621"
+      ],
+      "uptie": 3
+    }
+  ]
+}
