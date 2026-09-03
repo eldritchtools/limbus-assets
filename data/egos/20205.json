@@ -72,6 +72,40 @@
           "id": "2020511",
           "name": "9:2",
           "uptie": 4
+        },
+        {
+          "bonuses": [
+            {
+              "type": "atkweight",
+              "value": 1
+            },
+            {
+              "type": "atkweight",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1.0
+            }
+          ],
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Combustion]",
+                "[OnSucceedAttack] Inflict 5 [DefenseDown]",
+                "[OnSucceedAttack] Convert 2 [Combustion] on target into 1 [DefenseDown] (max 5; this effect cannot lower target's [Combustion] Potency below 1)\n- If target has fewer than 10 [Combustion] Potency, this unit may use excess [Combustion] Potency on self past 30 for the above effect"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Required Gluttony E.G.O resource to use this Skill is reduced by 1\n[BeforeAttack] At 4+ (highest Reson.), Atk Weight +1\nAt 6+ (highest Reson.), additional Atk Weight +1\n\n[BeforeAttack] Deal +5% damage for every ([Combustion] on all targets + [Combustion] on self) (max 100%)",
+          "id": "2020511",
+          "name": "9:2",
+          "uptie": 5
         }
       ],
       "type": "awakening"
@@ -153,20 +187,63 @@
           "id": "2020521",
           "name": "9:2",
           "uptie": 4
+        },
+        {
+          "bonuses": [
+            {
+              "type": "atkweight",
+              "value": 1
+            },
+            {
+              "type": "atkweight",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1.2
+            }
+          ],
+          "coinValue": -12,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Binding] next turn",
+                "[OnSucceedAttack] Inflict 4 [Combustion]",
+                "[OnSucceedAttack] Inflict 5 [DefenseDown]",
+                "[OnSucceedAttack] Convert 2 [Combustion] on target into 1 [DefenseDown] (max 5; this effect cannot lower target's [Combustion] Potency below 1)\n- If target has fewer than 10 [Combustion] Potency, this unit may use excess [Combustion] Potency on self past 30 for the above effect"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\nRequired Gluttony E.G.O resource to use this Skill is reduced by 1\n[BeforeAttack] At 4+ (highest Reson.), Atk Weight +1\nAt 6+ (highest Reson.), additional Atk Weight +1\n\n[BeforeAttack] Deal +6% damage for every ([Combustion] on all targets + [Combustion] on self) (max 120%)\n[DefeatDuel] Base Power -10",
+          "id": "2020521",
+          "name": "9:2",
+          "uptie": 5
         }
       ],
       "type": "corrosion"
     }
   ],
+  "maxThreadspin": 5,
   "notes": {
     "main": [
       "Gains aoe with {keyword:Lust} A-Reson.",
-      "Converts {status:Combustion} on her targets to {status:DefenseDown}."
+      "Converts {status:Combustion} on her targets to {status:DefenseDown}.",
+      "Threadspin V: Her skill now requires less {st:Combustion} on the target to maximize the {st:DefenseDown} application. She can also consume her own {st:Combustion} if the target doesn't have enough. It also deals more damage and doesn't need a {kw:Lust} reson for the Atk Weight increase.",
+      "Threadspin V: Her passive now works for both {kw:Wrath} and {kw:Lust} skills and inflicts {st:DefenseDown} instead if the enemy {st:Combustion} potency is capped. She also gains a bonus {kw:Gluttony} resource if she uses a {kw:Gluttony} skill."
     ]
   },
   "passiveList": [
     {
-      "desc": "On Heads Hit with a Lust affinity Skill, inflict 1 [Combustion] on target (6 times per turn)",
+      "desc": "On Heads Hit using a Lust affinity Skill, inflict 1 [Combustion] on target (6 times per turn)",
+      "name": "Flamebrand"
+    },
+    {
+      "desc": "On Heads Hit using a Wrath or a Lust Skill, inflict 1 [Combustion] (6 times per turn)\n- If target has max [Combustion] Potency, inflict 1 [DefenseDown] instead\n\nOn Gluttony Base Skill Use, gain 1 Gluttony E.G.O resource (once per turn)",
       "name": "Flamebrand"
     }
   ]

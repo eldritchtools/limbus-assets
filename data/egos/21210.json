@@ -1,0 +1,261 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 9,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] If target has [IDMicroChip] or [Binding],  inflict +2 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [IDMicroChip]",
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Gain Coin Power based on the following conditions (max 3):\n- Coin Power +1 for every 6 [Combustion] Potency on the main target\n- Gain Coin Power equal to ([Charge] Potency on self - 1)\n[BeforeAttack] This Skill inflicts +([Charge] Potency on self - 1) more [Combustion] Potency (max 2)\n[BeforeAttack] Gain +(highest Reson. + 1) [Charge] Count (max 7)\n[BeforeAttack] Consume up to 15 [Charge] Count and deal +1% damage for every [Charge] Count consumed (max 15%)",
+          "id": "2121011",
+          "levelCorrection": 3,
+          "name": "Move-in Reg.",
+          "spCost": 20,
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]",
+                "[OnSucceedAttack] If target has [IDMicroChip] or [Binding],  inflict +2 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count",
+                "[OnSucceedAttack] Inflict 1 [IDMicroChip]",
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Gain Coin Power based on the following conditions (max 3):\n- Coin Power +1 for every 6 [Combustion] Potency on the main target\n- Gain Coin Power equal to ([Charge] Potency on self - 1)\n[BeforeAttack] This Skill inflicts +([Charge] Potency on self - 1) more [Combustion] Potency (max 2)\n[BeforeAttack] Gain +(highest Reson. + 1) [Charge] Count (max 7)\n- At 3 or fewer [Charge] Count, gain 3 more [Charge] Count\n[BeforeAttack] Consume up to 15 [Charge] Count and deal +2% damage for every [Charge] Count consumed (max 30%)\n[EndSkill] If the Before Attack effects consumed 15 [Charge] Count, gain +5 [Charge] Count",
+          "id": "2121011",
+          "name": "Move-in Reg.",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Combustion]",
+                "[OnSucceedAttack] If target has [IDMicroChip] or [Binding],  inflict +2 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count",
+                "[OnSucceedAttack] Inflict 2 [IDMicroChip]",
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Gain Coin Power based on the following conditions (max 3):\n- Coin Power +1 for every 6 [Combustion] Potency on the main target\n- Gain Coin Power equal to ([Charge] Potency on self - 1)\n[BeforeAttack] This Skill inflicts +([Charge] Potency on self - 1) more [Combustion] Potency (max 2)\n[BeforeAttack] Gain +(highest Reson. + 1) [Charge] Count (max 7)\n- At 3 or fewer [Charge] Count, gain 3 more [Charge] Count\n[BeforeAttack] Consume up to 15 [Charge] Count and deal +3% damage for every [Charge] Count consumed (max 45%)\n[EndSkill] If the Before Attack effects consumed 15 [Charge] Count, gain +5 [Charge] Count",
+          "id": "2121011",
+          "name": "Move-in Reg.",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 7,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            }
+          ],
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count",
+                "[OnSucceedAttack] Inflict 1 [IDMicroChip]",
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly\nGain Coin Power based on the following conditions (max 3):\n- Coin Power +1 for every 6 [Combustion] Potency on the main target\n- Gain Coin Power equal to ([Charge] Potency on self - 1)\n[BeforeAttack] Gain +(highest Reson. + 3) [Charge] Count (max 10)\n[BeforeAttack] Deal +([Charge] Potency + Count - 1)% damage (max 20%)\n[EnemyKill] Gain +4 [Charge] Count",
+          "id": "2121021",
+          "levelCorrection": 3,
+          "name": "Move-in Reg.",
+          "spCost": 20,
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.4
+            }
+          ],
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count",
+                "[OnSucceedAttack] Inflict 1 [IDMicroChip]",
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "envy"
+                  },
+                  "type": "damage",
+                  "value": 0.4
+                }
+              ],
+              "descs": [
+                "[OnStartCoin] Consume up to 8 [Charge] Count",
+                "[OnSucceedAttack] If this Coin consumed [Charge] Count, deal Envy damage equal to ([Charge] Count consumed x 5)% of this Coin's final damage (min 5%, max 40%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\nGain Coin Power based on the following conditions (max 3):\n- Coin Power +1 for every 6 [Combustion] Potency on the main target\n- Gain Coin Power equal to ([Charge] Potency on self - 1)\n[BeforeAttack] Gain +(highest Reson. + 3) [Charge] Count (max 10)\n[BeforeAttack] Deal +(([Charge] Potency + Count - 1) x 2)% damage (max 40%)\n[EnemyKill]\n- Gain +4 [Charge] Count\n- Gain 1 [AttackDmgUp] next turn (once per turn)",
+          "id": "2121021",
+          "name": "Move-in Reg.",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 3
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.6
+            }
+          ],
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Combustion] Count",
+                "[OnSucceedAttack] Inflict 2 [IDMicroChip]",
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "envy"
+                  },
+                  "type": "damage",
+                  "value": 0.4
+                }
+              ],
+              "descs": [
+                "[OnStartCoin] Consume up to 8 [Charge] Count",
+                "[OnSucceedAttack] If this Coin consumed [Charge] Count, deal Envy damage equal to ([Charge] Count consumed x 5)% of this Coin's final damage (min 5%, max 40%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\nGain Coin Power based on the following conditions (max 3):\n- Coin Power +1 for every 6 [Combustion] Potency on the main target\n- Gain Coin Power equal to ([Charge] Potency on self - 1)\n[BeforeAttack] Gain +(highest Reson. + 3) [Charge] Count (max 10)\n[BeforeAttack] Deal +(([Charge] Potency + Count - 1) x 3)% damage (max 60%)\n[EnemyKill]\n- Gain +4 [Charge] Count\n- Gain 1 [AttackDmgUp] next turn (once per turn)",
+          "id": "2121021",
+          "name": "Move-in Reg.",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "notes": {
+    "main": [
+      "Inflicts more {st:Combustion} based on {st:Charge} Potency on self. Also generates and consumes a lot of {st:Charge} Count.",
+      "Increases the target's damage taken from {keyword:Wrath} and {keyword:Envy} skills for the current and next turn.",
+      "Passive gives him consistent {st:Binding} application in a Reson team and bonus damage when using {st:Combustion} or {st:Charge} skills at 3+ {st:Charge} Potency."
+    ]
+  },
+  "passiveList": [
+    {
+      "desc": "At 3+ highest Reson.: On Hit using a Skill, inflict 1 [Binding] next turn on the main target (once per turn)\n\nAt 3+ [Charge] Potency, the following Base Skills deal +10% damage:\n- Base Skills that gain or consume [Charge] Count\n- Base Skills that inflict [Combustion] Potency or Count on the enemy",
+      "name": "Processing Transfer Reg"
+    }
+  ]
+}
