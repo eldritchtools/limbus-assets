@@ -41,6 +41,13 @@
       "base": 5,
       "coin": 7,
       "coins": 1,
+      "conditionals": [
+        {
+          "target": "clash",
+          "type": "always",
+          "value": 2
+        }
+      ],
       "iconId": "1010201",
       "levelCorrection": 0,
       "name": "Flèche",
@@ -52,6 +59,13 @@
       "base": 5,
       "coin": 4,
       "coins": 2,
+      "conditionals": [
+        {
+          "target": "clash",
+          "type": "always",
+          "value": 2
+        }
+      ],
       "iconId": "1010203",
       "levelCorrection": 0,
       "name": "Riposte",
@@ -63,13 +77,20 @@
       "base": 5,
       "coin": 3,
       "coins": 3,
+      "conditionals": [
+        {
+          "target": "clash",
+          "type": "always",
+          "value": 2
+        }
+      ],
       "iconId": "1010202",
       "levelCorrection": 0,
       "name": "Moulinet",
       "rank": 3,
       "type": "identity"
     },
-    "points": 5
+    "points": 8
   },
   "10103": {
     "1": {
@@ -77,6 +98,22 @@
       "base": 6,
       "coin": 7,
       "coins": 1,
+      "conditionals": [
+        {
+          "max": 3,
+          "per": 5,
+          "status": [
+            {
+              "owner": "self",
+              "status": "Breath",
+              "type": "Count"
+            }
+          ],
+          "target": "coin",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1010301",
       "levelCorrection": 5,
       "name": "Striker’s Stance",
@@ -88,6 +125,22 @@
       "base": 7,
       "coin": 2,
       "coins": 2,
+      "conditionals": [
+        {
+          "max": 3,
+          "per": 5,
+          "status": [
+            {
+              "owner": "self",
+              "status": "Breath",
+              "type": "Count"
+            }
+          ],
+          "target": "coin",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1010302",
       "levelCorrection": 5,
       "name": "Heel Turn",
@@ -99,13 +152,29 @@
       "base": 8,
       "coin": 2,
       "coins": 3,
+      "conditionals": [
+        {
+          "max": 3,
+          "per": 5,
+          "status": [
+            {
+              "owner": "self",
+              "status": "Breath",
+              "type": "Count"
+            }
+          ],
+          "target": "coin",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1010303",
       "levelCorrection": 5,
       "name": "Flank Thrust",
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 8
   },
   "10104": {
     "1": {
@@ -225,7 +294,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 5
+    "points": 4
   },
   "10106": {
     "1": {
@@ -323,7 +392,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 6
   },
   "10107": {
     "1": {
@@ -469,7 +538,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 3
+    "points": 2
   },
   "10109": {
     "1": {
@@ -581,7 +650,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 6
   },
   "10110": {
     "1": {
@@ -609,8 +678,8 @@
           "per": 10,
           "status": [
             {
-              "owner": "self",
-              "status": "Bullet",
+              "owner": "unique",
+              "status": "BulletLament",
               "type": "Potency"
             }
           ],
@@ -650,8 +719,8 @@
           "per": 10,
           "status": [
             {
-              "owner": "self",
-              "status": "Bullet",
+              "owner": "unique",
+              "status": "BulletLament",
               "type": "Potency"
             }
           ],
@@ -691,8 +760,8 @@
           "per": 5,
           "status": [
             {
-              "owner": "self",
-              "status": "Bullet",
+              "owner": "unique",
+              "status": "BulletLament",
               "type": "Potency"
             }
           ],
@@ -707,7 +776,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 9
+    "points": 8,
+    "statuses": [
+      {
+        "id": "BulletLament",
+        "values": [
+          0,
+          10,
+          15,
+          20
+        ]
+      }
+    ]
   },
   "10111": {
     "1": {
@@ -834,7 +914,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 6
   },
   "10113": {
     "1": {
@@ -946,7 +1026,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 9
+    "points": 8
   },
   "10114": {
     "1": {
@@ -982,6 +1062,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 2,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BreakthroughHorse",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 2
         }
       ],
       "iconId": "1011401",
@@ -1023,6 +1117,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 2,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BreakthroughHorse",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 2
         }
       ],
       "iconId": "1011402",
@@ -1064,6 +1172,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 2,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BreakthroughHorse",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 2
         }
       ],
       "iconId": "1011403",
@@ -1072,7 +1194,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 8,
+    "statuses": [
+      {
+        "id": "BreakthroughHorse",
+        "values": [
+          0,
+          1,
+          3,
+          5
+        ]
+      }
+    ]
   },
   "10115": {
     "1": {
@@ -1097,6 +1230,20 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BlessingOfIndexPrescriptAlly",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
           "type": "status",
           "value": 1
         }
@@ -1131,6 +1278,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 3,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BlessingOfIndexPrescriptAlly",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1011502",
@@ -1163,6 +1324,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 3,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BlessingOfIndexPrescriptAlly",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1011503",
@@ -1171,7 +1346,27 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 9,
+    "statuses": [
+      {
+        "id": "StackYisangSpecialSkill",
+        "values": [
+          0,
+          3,
+          6,
+          9
+        ]
+      },
+      {
+        "id": "BlessingOfIndexPrescriptAlly",
+        "values": [
+          0,
+          3,
+          6,
+          9
+        ]
+      }
+    ]
   },
   "10116": {
     "1": {
@@ -1193,6 +1388,11 @@
               "owner": "target",
               "status": "Burst",
               "type": "Potency"
+            },
+            {
+              "owner": "unique",
+              "status": "DimensionRift",
+              "type": "Potency"
             }
           ],
           "target": "base",
@@ -1210,6 +1410,20 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "FourDimensionYisang",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
           "type": "status",
           "value": 1
         }
@@ -1233,6 +1447,11 @@
             {
               "owner": "target",
               "status": "Burst",
+              "type": "Potency"
+            },
+            {
+              "owner": "unique",
+              "status": "DimensionRift",
               "type": "Potency"
             }
           ],
@@ -1265,6 +1484,20 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "FourDimensionYisang",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
           "type": "status",
           "value": 1
         }
@@ -1303,9 +1536,28 @@
               "owner": "target",
               "status": "Burst",
               "type": "Potency"
+            },
+            {
+              "owner": "unique",
+              "status": "DimensionRift",
+              "type": "Potency"
             }
           ],
           "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "FourDimensionYisang",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
           "type": "status",
           "value": 1
         }
@@ -1316,7 +1568,27 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 10
+    "points": 10,
+    "statuses": [
+      {
+        "id": "DimensionRift",
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "FourDimensionYisang",
+        "values": [
+          0,
+          1,
+          2,
+          4
+        ]
+      }
+    ]
   },
   "10201": {
     "1": {
@@ -1352,7 +1624,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 3
+    "points": 2
   },
   "10202": {
     "1": {
@@ -1404,7 +1676,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 5
   },
   "10203": {
     "1": {
@@ -1483,7 +1755,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 3
+    "points": 2
   },
   "10205": {
     "1": {
@@ -1502,6 +1774,22 @@
       "base": 4,
       "coin": 3,
       "coins": 3,
+      "conditionals": [
+        {
+          "max": 2,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DefenseUp",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 2
+        }
+      ],
       "iconId": "1020502",
       "levelCorrection": -1,
       "name": "Client Protection",
@@ -1513,13 +1801,40 @@
       "base": 6,
       "coin": 5,
       "coins": 2,
+      "conditionals": [
+        {
+          "max": 1,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DefenseUp",
+              "type": "Potency"
+            }
+          ],
+          "target": "coin",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1020503",
       "levelCorrection": -1,
       "name": "Law and Order",
       "rank": 3,
       "type": "identity"
     },
-    "points": 2
+    "points": 4,
+    "statuses": [
+      {
+        "id": "DefenseUp",
+        "values": [
+          0,
+          1,
+          3,
+          5
+        ]
+      }
+    ]
   },
   "10206": {
     "1": {
@@ -1595,6 +1910,15 @@
       "base": 4,
       "coin": 7,
       "coins": 1,
+      "conditionals": [
+        {
+          "max": 2,
+          "per": 3,
+          "target": "clash",
+          "type": "negative-statuses",
+          "value": 1
+        }
+      ],
       "iconId": "1020701",
       "levelCorrection": 3,
       "name": "Contracting Straight-jacket",
@@ -1606,6 +1930,15 @@
       "base": 4,
       "coin": 4,
       "coins": 3,
+      "conditionals": [
+        {
+          "max": 2,
+          "per": 3,
+          "target": "clash",
+          "type": "negative-statuses",
+          "value": 1
+        }
+      ],
       "iconId": "1020702",
       "levelCorrection": 3,
       "name": "Metallic Ringing",
@@ -1617,13 +1950,22 @@
       "base": 3,
       "coin": 5,
       "coins": 3,
+      "conditionals": [
+        {
+          "max": 2,
+          "per": 3,
+          "target": "clash",
+          "type": "negative-statuses",
+          "value": 1
+        }
+      ],
       "iconId": "1020703",
       "levelCorrection": 3,
       "name": "Unleashed Violence",
       "rank": 3,
       "type": "identity"
     },
-    "points": 5
+    "points": 6
   },
   "10208": {
     "1": {
@@ -1805,7 +2147,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 5
+    "points": 4
   },
   "10210": {
     "1": {
@@ -1883,7 +2225,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 8
+    "points": 7
   },
   "10211": {
     "1": {
@@ -1990,7 +2332,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 8
+    "points": 7
   },
   "10212": {
     "1": {
@@ -2098,7 +2440,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 6,
+    "statuses": [
+      {
+        "id": "EnhanceZilu",
+        "values": [
+          0,
+          5,
+          10,
+          20
+        ]
+      }
+    ]
   },
   "10213": {
     "1": {
@@ -2197,7 +2550,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 8
+    "points": 7,
+    "statuses": [
+      {
+        "id": "AimForTheGoal",
+        "values": [
+          0,
+          0,
+          2,
+          4
+        ]
+      }
+    ]
   },
   "10214": {
     "1": {
@@ -2222,6 +2586,20 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BlessingOfIndexPrescriptAlly",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
           "type": "status",
           "value": 1
         }
@@ -2256,6 +2634,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 3,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BlessingOfIndexPrescriptAlly",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1021402",
@@ -2288,6 +2680,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 3,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BlessingOfIndexPrescriptAlly",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1021403",
@@ -2296,7 +2702,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 9,
+    "statuses": [
+      {
+        "id": "BlessingOfIndexPrescriptAlly",
+        "values": [
+          0,
+          3,
+          6,
+          9
+        ]
+      }
+    ]
   },
   "10215": {
     "1": {
@@ -2319,6 +2736,34 @@
             {
               "owner": "target",
               "status": "Laceration",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "FasciaPersonality",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 4,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "FasciaPersonality",
               "type": "Potency"
             }
           ],
@@ -2373,6 +2818,34 @@
           "target": "clash",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "FasciaPersonality",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 4,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "FasciaPersonality",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1021502",
@@ -2414,6 +2887,34 @@
           "target": "base",
           "type": "status",
           "value": 2
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "FasciaPersonality",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 4,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "FasciaPersonality",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1021503",
@@ -2422,7 +2923,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 10
+    "points": 10,
+    "statuses": [
+      {
+        "id": "FasciaPersonality",
+        "values": [
+          0,
+          1,
+          2,
+          4
+        ]
+      }
+    ]
   },
   "10216": {
     "1": {
@@ -2447,6 +2959,20 @@
             }
           ],
           "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "per": 10,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "StigmaWorkshopCelloCaseOne",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
           "type": "status",
           "value": 1
         }
@@ -2481,6 +3007,20 @@
           "target": "base",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 3,
+          "per": 10,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "StigmaWorkshopCelloCaseOne",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1021602",
@@ -2513,6 +3053,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 3,
+          "per": 10,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "StigmaWorkshopCelloCaseOne",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1021603",
@@ -2521,7 +3075,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 8
+    "points": 9,
+    "statuses": [
+      {
+        "id": "StigmaWorkshopCelloCaseOne",
+        "values": [
+          0,
+          10,
+          20,
+          30
+        ]
+      }
+    ]
   },
   "10301": {
     "1": {
@@ -2695,7 +3260,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 6
   },
   "10304": {
     "1": {
@@ -2785,7 +3350,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 5,
+    "statuses": [
+      {
+        "id": "DuelDeclaration_DonQuixote",
+        "values": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ]
   },
   "10306": {
     "1": {
@@ -2793,6 +3369,22 @@
       "base": 4,
       "coin": 3,
       "coins": 2,
+      "conditionals": [
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "RetaliationBook",
+              "type": "Potency"
+            }
+          ],
+          "target": "coin",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1030601",
       "levelCorrection": 2,
       "name": "Checking the Book",
@@ -2804,6 +3396,22 @@
       "base": 4,
       "coin": 6,
       "coins": 2,
+      "conditionals": [
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "RetaliationBook",
+              "type": "Potency"
+            }
+          ],
+          "target": "coin",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1030602",
       "levelCorrection": 3,
       "name": "Proof of Loyalty",
@@ -2815,13 +3423,40 @@
       "base": 4,
       "coin": 3,
       "coins": 4,
+      "conditionals": [
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "RetaliationBook",
+              "type": "Potency"
+            }
+          ],
+          "target": "coin",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1030603",
       "levelCorrection": 3,
       "name": "A Just Vengeance",
       "rank": 3,
       "type": "identity"
     },
-    "points": 4
+    "points": 5,
+    "statuses": [
+      {
+        "id": "RetaliationBook",
+        "values": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ]
   },
   "10307": {
     "1": {
@@ -2829,6 +3464,22 @@
       "base": 5,
       "coin": 7,
       "coins": 1,
+      "conditionals": [
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "Aggro",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1030701",
       "levelCorrection": -1,
       "name": "I Shall Nibble Thee!",
@@ -2852,6 +3503,20 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "Aggro",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
           "type": "status",
           "value": 1
         }
@@ -2881,6 +3546,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "Aggro",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1030703",
@@ -2889,7 +3568,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 5
+    "points": 5,
+    "statuses": [
+      {
+        "id": "Aggro",
+        "values": [
+          0,
+          3,
+          4,
+          5
+        ]
+      }
+    ]
   },
   "10308": {
     "1": {
@@ -3055,7 +3745,7 @@
           "per": 1,
           "status": [
             {
-              "owner": "target",
+              "owner": "unique",
               "status": "Binding",
               "type": "Potency"
             }
@@ -3085,7 +3775,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 6,
+    "statuses": [
+      {
+        "id": "Binding",
+        "values": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ]
   },
   "10310": {
     "1": {
@@ -3105,6 +3806,20 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "per": 10,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BloodArmorPersonalityFirst",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
           "type": "status",
           "value": 1
         }
@@ -3134,6 +3849,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 3,
+          "per": 10,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BloodArmorPersonalityFirst",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1031002",
@@ -3161,6 +3890,34 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 2,
+          "per": 10,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BloodArmorPersonalityFirst",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "per": 10,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BloodArmorPersonalityFirst",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1031003",
@@ -3169,7 +3926,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 9,
+    "statuses": [
+      {
+        "id": "BloodArmorPersonalityFirst",
+        "values": [
+          0,
+          10,
+          20,
+          30
+        ]
+      }
+    ]
   },
   "10311": {
     "1": {
@@ -3184,6 +3952,34 @@
           "per": 2,
           "target": "coin",
           "type": "spd-diff",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DianxueDonQuixote",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DianxueDonQuixote",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
           "value": 1
         }
       ],
@@ -3206,6 +4002,34 @@
           "target": "coin",
           "type": "spd-diff",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DianxueDonQuixote",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DianxueDonQuixote",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1031102",
@@ -3227,6 +4051,34 @@
           "target": "coin",
           "type": "spd-diff",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DianxueDonQuixote",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DianxueDonQuixote",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1031103",
@@ -3235,7 +4087,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 8,
+    "statuses": [
+      {
+        "id": "DianxueDonQuixote",
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ]
   },
   "10312": {
     "1": {
@@ -3347,7 +4210,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 9
+    "points": 8,
+    "statuses": [
+      {
+        "id": "HystericGauge",
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ]
   },
   "10313": {
     "1": {
@@ -3446,7 +4320,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 6
   },
   "10314": {
     "1": {
@@ -3471,6 +4345,20 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BlessingOfIndexPrescriptAlly",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
           "type": "status",
           "value": 1
         }
@@ -3505,6 +4393,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 3,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BlessingOfIndexPrescriptAlly",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1031402",
@@ -3537,6 +4439,20 @@
           "target": "base",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 3,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BlessingOfIndexPrescriptAlly",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1031403",
@@ -3545,7 +4461,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 8
+    "points": 9,
+    "statuses": [
+      {
+        "id": "BlessingOfIndexPrescriptAlly",
+        "values": [
+          0,
+          3,
+          6,
+          9
+        ]
+      }
+    ]
   },
   "10401": {
     "1": {
@@ -3581,7 +4508,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 3
+    "points": 2
   },
   "10402": {
     "1": {
@@ -3606,7 +4533,7 @@
           "per": 1,
           "status": [
             {
-              "owner": "target",
+              "owner": "unique",
               "status": "SlashTakeDamageUp",
               "type": "Potency"
             }
@@ -3633,7 +4560,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 6,
+    "statuses": [
+      {
+        "id": "SlashTakeDamageUp",
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ]
   },
   "10403": {
     "1": {
@@ -3669,7 +4607,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 5
   },
   "10404": {
     "1": {
@@ -3865,7 +4803,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 5
+    "points": 4
   },
   "10407": {
     "1": {
@@ -4049,6 +4987,20 @@
           "target": "coin",
           "type": "spd-diff",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "MarkOfButler",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1040803",
@@ -4057,7 +5009,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 8
+    "points": 7,
+    "statuses": [
+      {
+        "id": "MarkOfButler",
+        "values": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ]
   },
   "10409": {
     "1": {
@@ -4183,9 +5146,9 @@
           "per": 7,
           "status": [
             {
-              "owner": "self",
-              "status": "Charge",
-              "type": "Count"
+              "owner": "unique",
+              "status": "RedEyeFirst",
+              "type": "Potency"
             }
           ],
           "target": "coin",
@@ -4197,9 +5160,9 @@
           "per": 7,
           "status": [
             {
-              "owner": "self",
-              "status": "Charge",
-              "type": "Count"
+              "owner": "unique",
+              "status": "PenanceFirst",
+              "type": "Potency"
             }
           ],
           "target": "clash",
@@ -4224,9 +5187,14 @@
           "per": 15,
           "status": [
             {
-              "owner": "self",
-              "status": "Charge",
-              "type": "Count"
+              "owner": "unique",
+              "status": "RedEyeFirst",
+              "type": "Potency"
+            },
+            {
+              "owner": "unique",
+              "status": "PenanceFirst",
+              "type": "Potency"
             }
           ],
           "target": "coin",
@@ -4270,6 +5238,7 @@
         },
         {
           "mode": "higher",
+          "owner": "self",
           "sp": 44,
           "target": "clash",
           "type": "sp-fixed",
@@ -4277,6 +5246,7 @@
         },
         {
           "mode": "higher",
+          "owner": "self",
           "sp": 44,
           "target": "coin",
           "type": "sp-fixed",
@@ -4289,7 +5259,27 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 9
+    "points": 8,
+    "statuses": [
+      {
+        "id": "RedEyeFirst",
+        "values": [
+          0,
+          7,
+          15,
+          20
+        ]
+      },
+      {
+        "id": "PenanceFirst",
+        "values": [
+          0,
+          7,
+          15,
+          20
+        ]
+      }
+    ]
   },
   "10411": {
     "1": {
@@ -4397,7 +5387,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 6
   },
   "10412": {
     "1": {
@@ -4422,6 +5412,25 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "GazeRyoshu",
+              "type": "Potency"
+            },
+            {
+              "owner": "unique",
+              "status": "ContemptRyoshu",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
           "type": "status",
           "value": 1
         }
@@ -4454,6 +5463,25 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "GazeRyoshu",
+              "type": "Potency"
+            },
+            {
+              "owner": "unique",
+              "status": "ContemptRyoshu",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
           "type": "status",
           "value": 1
         }
@@ -4537,7 +5565,27 @@
       "rank": 4,
       "type": "identity"
     },
-    "points": 6
+    "points": 7,
+    "statuses": [
+      {
+        "id": "GazeRyoshu",
+        "values": [
+          0,
+          1,
+          4,
+          7
+        ]
+      },
+      {
+        "id": "ContemptRyoshu",
+        "values": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    ]
   },
   "10413": {
     "1": {
@@ -4643,7 +5691,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 10
+    "points": 8
   },
   "10414": {
     "1": {
@@ -4668,6 +5716,20 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "per": 10,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "AlriuneEGOWe",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
           "type": "status",
           "value": 1
         }
@@ -4702,6 +5764,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 3,
+          "per": 10,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "AlriuneEGOWe",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1041402",
@@ -4734,6 +5810,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 3,
+          "per": 10,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "AlriuneEGOWe",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1041403",
@@ -4742,7 +5832,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 9
+    "points": 9,
+    "statuses": [
+      {
+        "id": "AlriuneEGOWe",
+        "values": [
+          0,
+          10,
+          20,
+          30
+        ]
+      }
+    ]
   },
   "10415": {
     "1": {
@@ -4777,6 +5878,20 @@
             {
               "owner": "target",
               "status": "Laceration",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "SojiRyoshuEchoFuture",
               "type": "Potency"
             }
           ],
@@ -4829,6 +5944,20 @@
           "target": "base",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "SojiRyoshuEchoFuture",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1041502",
@@ -4875,6 +6004,20 @@
           "target": "base",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "SojiRyoshuEchoFuture",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1041503",
@@ -4883,7 +6026,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 10
+    "points": 10,
+    "statuses": [
+      {
+        "id": "SojiRyoshuEchoFuture",
+        "values": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ]
   },
   "10501": {
     "1": {
@@ -4919,7 +6073,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 3
+    "points": 2
   },
   "10502": {
     "1": {
@@ -4971,7 +6125,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 3
+    "points": 2
   },
   "10503": {
     "1": {
@@ -5085,7 +6239,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 3
+    "points": 2
   },
   "10505": {
     "1": {
@@ -5107,6 +6261,20 @@
           "target": "coin",
           "type": "status",
           "value": 2
+        },
+        {
+          "max": 1,
+          "per": 5,
+          "status": [
+            {
+              "owner": "target",
+              "status": "Vibration",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1050501",
@@ -5132,6 +6300,20 @@
             }
           ],
           "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 5,
+          "status": [
+            {
+              "owner": "target",
+              "status": "Vibration",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
           "type": "status",
           "value": 1
         }
@@ -5161,6 +6343,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 5,
+          "status": [
+            {
+              "owner": "target",
+              "status": "Vibration",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1050503",
@@ -5169,7 +6365,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 3
+    "points": 5
   },
   "10506": {
     "1": {
@@ -5245,6 +6441,22 @@
       "base": 3,
       "coin": 4,
       "coins": 2,
+      "conditionals": [
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "RetaliationBook",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1050701",
       "levelCorrection": 1,
       "name": "We Remember",
@@ -5256,6 +6468,22 @@
       "base": 4,
       "coin": 5,
       "coins": 2,
+      "conditionals": [
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "RetaliationBook",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1050702",
       "levelCorrection": 1,
       "name": "Chains of Loyalty",
@@ -5267,13 +6495,40 @@
       "base": 4,
       "coin": 3,
       "coins": 3,
+      "conditionals": [
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "RetaliationBook",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1050703",
       "levelCorrection": 3,
       "name": "Recording",
       "rank": 3,
       "type": "identity"
     },
-    "points": 2
+    "points": 3,
+    "statuses": [
+      {
+        "id": "RetaliationBook",
+        "values": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ]
   },
   "10508": {
     "1": {
@@ -5341,7 +6596,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 8
+    "points": 7
   },
   "10509": {
     "1": {
@@ -5361,6 +6616,34 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 2
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "target",
+              "status": "Burst",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 2,
+          "per": 5,
+          "status": [
+            {
+              "owner": "target",
+              "status": "Burst",
+              "type": "Count"
+            }
+          ],
+          "target": "clash",
           "type": "status",
           "value": 2
         }
@@ -5390,6 +6673,34 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "target",
+              "status": "Burst",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 2,
+          "per": 5,
+          "status": [
+            {
+              "owner": "target",
+              "status": "Burst",
+              "type": "Count"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 2
         }
       ],
       "iconId": "1050902",
@@ -5431,6 +6742,34 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "target",
+              "status": "Burst",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 2,
+          "per": 5,
+          "status": [
+            {
+              "owner": "target",
+              "status": "Burst",
+              "type": "Count"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 2
         }
       ],
       "iconId": "1050903",
@@ -5439,7 +6778,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 5
+    "points": 7
   },
   "10510": {
     "1": {
@@ -5447,6 +6786,36 @@
       "base": 3,
       "coin": 4,
       "coins": 2,
+      "conditionals": [
+        {
+          "max": 1,
+          "per": 2,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "KnowledgeExplored",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "KnowledgeExplored",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1051001",
       "levelCorrection": 0,
       "name": "Studious Dedication",
@@ -5507,7 +6876,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 6,
+    "statuses": [
+      {
+        "id": "KnowledgeExplored",
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ]
   },
   "10511": {
     "1": {
@@ -5522,6 +6902,34 @@
           "per": 3,
           "target": "coin",
           "type": "spd-diff",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "ConcentratedAttackMeursault",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "ConcentratedAttackMeursault",
+              "type": "Potency"
+            }
+          ],
+          "target": "coin",
+          "type": "status",
           "value": 1
         }
       ],
@@ -5544,6 +6952,34 @@
           "target": "coin",
           "type": "spd-diff",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "ConcentratedAttackMeursault",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "ConcentratedAttackMeursault",
+              "type": "Potency"
+            }
+          ],
+          "target": "coin",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1051102",
@@ -5565,6 +7001,34 @@
           "target": "coin",
           "type": "spd-diff",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "ConcentratedAttackMeursault",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "ConcentratedAttackMeursault",
+              "type": "Potency"
+            }
+          ],
+          "target": "coin",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1051103",
@@ -5573,7 +7037,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 8,
+    "statuses": [
+      {
+        "id": "ConcentratedAttackMeursault",
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ]
   },
   "10512": {
     "1": {
@@ -5672,7 +7147,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 9
+    "points": 8,
+    "statuses": [
+      {
+        "id": "BulletPropellantSpecialAlly",
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ]
   },
   "10513": {
     "1": {
@@ -5703,6 +7189,34 @@
               "owner": "target",
               "status": "Laceration",
               "type": "Count"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 2,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BloodArmorMeursault",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 2
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "FocusOnActing",
+              "type": "Potency"
             }
           ],
           "target": "base",
@@ -5749,6 +7263,34 @@
           "target": "base",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 2,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BloodArmorMeursault",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 2
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "FocusOnActing",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1051302",
@@ -5776,6 +7318,34 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 2,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BloodArmorMeursault",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 2
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "FocusOnActing",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1051303",
@@ -5784,7 +7354,27 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 9,
+    "statuses": [
+      {
+        "id": "BloodArmorMeursault",
+        "values": [
+          0,
+          1,
+          3,
+          5
+        ]
+      },
+      {
+        "id": "FocusOnActing",
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ]
   },
   "10514": {
     "1": {
@@ -5809,6 +7399,20 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "MeursaultWorkerBee",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
           "type": "status",
           "value": 1
         }
@@ -5843,6 +7447,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "MeursaultWorkerBee",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1051402",
@@ -5875,6 +7493,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "MeursaultWorkerBee",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1051403",
@@ -5883,7 +7515,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 8
+    "points": 8,
+    "statuses": [
+      {
+        "id": "MeursaultWorkerBee",
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ]
   },
   "10515": {
     "1": {
@@ -5982,7 +7625,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 6
   },
   "10601": {
     "1": {
@@ -6032,7 +7675,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 3
+    "points": 4
   },
   "10602": {
     "1": {
@@ -6104,7 +7747,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 10
+    "points": 8
   },
   "10604": {
     "1": {
@@ -6235,7 +7878,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 8
+    "points": 7
   },
   "10606": {
     "1": {
@@ -6341,7 +7984,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 3
+    "points": 2
   },
   "10608": {
     "1": {
@@ -6349,6 +7992,36 @@
       "base": 5,
       "coin": 5,
       "coins": 1,
+      "conditionals": [
+        {
+          "max": 1,
+          "per": 2,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "KnowledgeExplored",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "KnowledgeExplored",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1060801",
       "levelCorrection": 2,
       "name": "Expend Knowledge",
@@ -6360,6 +8033,36 @@
       "base": 4,
       "coin": 4,
       "coins": 3,
+      "conditionals": [
+        {
+          "max": 1,
+          "per": 2,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "KnowledgeExplored",
+              "type": "Potency"
+            }
+          ],
+          "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "KnowledgeExplored",
+              "type": "Potency"
+            }
+          ],
+          "target": "coin",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1060802",
       "levelCorrection": 2,
       "name": "Unveil",
@@ -6371,13 +8074,54 @@
       "base": 5,
       "coin": 3,
       "coins": 3,
+      "conditionals": [
+        {
+          "max": 2,
+          "per": 2,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "KnowledgeExplored",
+              "type": "Potency"
+            }
+          ],
+          "target": "coin",
+          "type": "status",
+          "value": 2
+        },
+        {
+          "max": 1,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "KnowledgeExplored",
+              "type": "Potency"
+            }
+          ],
+          "target": "coin",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1060803",
       "levelCorrection": 4,
       "name": "Cyclical Knowledge",
       "rank": 3,
       "type": "identity"
     },
-    "points": 4
+    "points": 7,
+    "statuses": [
+      {
+        "id": "KnowledgeExplored",
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ]
   },
   "10609": {
     "1": {
@@ -6597,7 +8341,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 5
+    "points": 4
   },
   "10611": {
     "1": {
@@ -6622,7 +8366,7 @@
           "per": 1,
           "status": [
             {
-              "owner": "self",
+              "owner": "unique",
               "status": "Bullet",
               "type": "Potency"
             }
@@ -6649,7 +8393,7 @@
           "per": 1,
           "status": [
             {
-              "owner": "self",
+              "owner": "unique",
               "status": "Bullet",
               "type": "Potency"
             }
@@ -6665,7 +8409,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 6,
+    "statuses": [
+      {
+        "id": "Bullet",
+        "values": [
+          0,
+          1,
+          3,
+          5
+        ]
+      }
+    ]
   },
   "10612": {
     "1": {
@@ -6791,7 +8546,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 9
+    "points": 7
   },
   "10613": {
     "1": {
@@ -6825,6 +8580,20 @@
           "target": "clash",
           "type": "negative-statuses",
           "value": 1
+        },
+        {
+          "max": 3,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "HeishouSynergy",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1061301",
@@ -6855,6 +8624,20 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "HeishouSynergy",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
           "type": "status",
           "value": 1
         }
@@ -6889,6 +8672,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 3,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "HeishouSynergy",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1061303",
@@ -6897,7 +8694,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 10
+    "points": 10,
+    "statuses": [
+      {
+        "id": "HeishouSynergy",
+        "values": [
+          0,
+          3,
+          6,
+          9
+        ]
+      }
+    ]
   },
   "10614": {
     "1": {
@@ -6913,6 +8721,48 @@
             {
               "owner": "target",
               "status": "Laceration",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "TibiaPersonality",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 4,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "TibiaPersonality",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "TibiaPersonality",
               "type": "Potency"
             }
           ],
@@ -6960,6 +8810,48 @@
           "target": "clash",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "TibiaPersonality",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 4,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "TibiaPersonality",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "TibiaPersonality",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1061402",
@@ -7001,6 +8893,48 @@
           "target": "base",
           "type": "status",
           "value": 2
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "TibiaPersonality",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 4,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "TibiaPersonality",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "TibiaPersonality",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1061403",
@@ -7009,7 +8943,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 9
+    "points": 10,
+    "statuses": [
+      {
+        "id": "TibiaPersonality",
+        "values": [
+          0,
+          1,
+          3,
+          5
+        ]
+      }
+    ]
   },
   "10615": {
     "1": {
@@ -7034,6 +8979,34 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "TiedRopeHonglu",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "TiedRopeHonglu",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
           "type": "status",
           "value": 1
         }
@@ -7068,6 +9041,34 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "TiedRopeHonglu",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "TiedRopeHonglu",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1061502",
@@ -7100,6 +9101,34 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "TiedRopeHonglu",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "TiedRopeHonglu",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1061503",
@@ -7108,7 +9137,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 8,
+    "statuses": [
+      {
+        "id": "TiedRopeHonglu",
+        "values": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ]
   },
   "10616": {
     "1": {
@@ -7141,6 +9181,48 @@
             }
           ],
           "target": "clash",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DianxueHongLu",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "always",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DianxueHongLu",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DuelSousTemoinsEast",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
           "type": "status",
           "value": 1
         }
@@ -7183,6 +9265,48 @@
           "target": "base",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DianxueHongLu",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DianxueHongLu",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DuelSousTemoinsEast",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1061602",
@@ -7223,6 +9347,48 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DianxueHongLu",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DianxueHongLu",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DuelSousTemoinsEast",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1061603",
@@ -7231,7 +9397,27 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 10
+    "points": 10,
+    "statuses": [
+      {
+        "id": "DianxueHongLu",
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "DuelSousTemoinsEast",
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ]
   },
   "10701": {
     "1": {
@@ -7347,6 +9533,22 @@
       "base": 4,
       "coin": 2,
       "coins": 3,
+      "conditionals": [
+        {
+          "max": 1,
+          "per": 5,
+          "status": [
+            {
+              "owner": "self",
+              "status": "Charge",
+              "type": "Count"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1070301",
       "levelCorrection": 5,
       "name": "Graze the Grass",
@@ -7364,6 +9566,20 @@
           "speed": 5,
           "target": "coin",
           "type": "spd-fixed",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 5,
+          "status": [
+            {
+              "owner": "self",
+              "status": "Charge",
+              "type": "Count"
+            }
+          ],
+          "target": "base",
+          "type": "status",
           "value": 1
         }
       ],
@@ -7385,6 +9601,20 @@
           "target": "coin",
           "type": "spd-fixed",
           "value": 2
+        },
+        {
+          "max": 1,
+          "per": 5,
+          "status": [
+            {
+              "owner": "self",
+              "status": "Charge",
+              "type": "Count"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1070303",
@@ -7393,7 +9623,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 3
+    "points": 4
   },
   "10704": {
     "1": {
@@ -7451,14 +9681,16 @@
       "conditionals": [
         {
           "mode": "lower",
-          "sp": -15,
+          "owner": "self",
+          "sp": -14,
           "target": "base",
           "type": "sp-fixed",
           "value": 3
         },
         {
           "mode": "lower",
-          "sp": -25,
+          "owner": "self",
+          "sp": -24,
           "target": "base",
           "type": "sp-fixed",
           "value": 2
@@ -7691,6 +9923,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 3,
+          "status": [
+            {
+              "owner": "self",
+              "status": "Charge",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1070901",
@@ -7712,6 +9958,20 @@
           "targetCount": 10,
           "type": "charge-consume-hp",
           "value": 2
+        },
+        {
+          "max": 1,
+          "per": 3,
+          "status": [
+            {
+              "owner": "self",
+              "status": "Charge",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1070902",
@@ -7737,6 +9997,20 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 3,
+          "status": [
+            {
+              "owner": "self",
+              "status": "Charge",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
           "type": "status",
           "value": 1
         }
@@ -7783,6 +10057,34 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 3,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "NightPathfinding",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 3
+        },
+        {
+          "max": 2,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "Coffin",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1071001",
@@ -7808,6 +10110,34 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "NightPathfinding",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 3
+        },
+        {
+          "max": 2,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "Coffin",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
           "type": "status",
           "value": 1
         }
@@ -7837,6 +10167,34 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 3,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "NightPathfinding",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 3
+        },
+        {
+          "max": 2,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "Coffin",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1071003",
@@ -7845,7 +10203,27 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 8
+    "points": 10,
+    "statuses": [
+      {
+        "id": "NightPathfinding",
+        "values": [
+          0,
+          0,
+          1,
+          3
+        ]
+      },
+      {
+        "id": "Coffin",
+        "values": [
+          0,
+          3,
+          6,
+          10
+        ]
+      }
+    ]
   },
   "10711": {
     "1": {
@@ -7881,7 +10259,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 10
+    "points": 10,
+    "statuses": [
+      {
+        "id": "Bullet_LogicAtelier",
+        "values": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    ]
   },
   "10712": {
     "1": {
@@ -7901,6 +10290,20 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BlackCloudBlade",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
           "type": "status",
           "value": 1
         }
@@ -7930,6 +10333,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BlackCloudBlade",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1071202",
@@ -7957,6 +10374,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BlackCloudBlade",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1071203",
@@ -7965,7 +10396,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 7,
+    "statuses": [
+      {
+        "id": "BlackCloudBlade",
+        "values": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ]
   },
   "10713": {
     "1": {
@@ -8091,7 +10533,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 9
+    "points": 7
   },
   "10714": {
     "1": {
@@ -8233,7 +10675,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 8
+    "points": 7,
+    "statuses": [
+      {
+        "id": "ChickenFightlust",
+        "values": [
+          0,
+          10,
+          15,
+          20
+        ]
+      }
+    ]
   },
   "10715": {
     "1": {
@@ -8258,6 +10711,34 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "RetaliationBook",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 6,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "VengeanceBookHeathcliff",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
           "type": "status",
           "value": 1
         }
@@ -8292,6 +10773,34 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 2,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "RetaliationBook",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 2
+        },
+        {
+          "max": 6,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "VengeanceBookHeathcliff",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1071502",
@@ -8324,6 +10833,34 @@
           "target": "base",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 2,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "RetaliationBook",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 2
+        },
+        {
+          "max": 6,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "VengeanceBookHeathcliff",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1071503",
@@ -8332,7 +10869,27 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 8
+    "points": 10,
+    "statuses": [
+      {
+        "id": "RetaliationBook",
+        "values": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "VengeanceBookHeathcliff",
+        "values": [
+          0,
+          10,
+          20,
+          30
+        ]
+      }
+    ]
   },
   "10716": {
     "1": {
@@ -8357,6 +10914,20 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 4,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DuelEdgeAlly",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
           "type": "status",
           "value": 1
         }
@@ -8391,6 +10962,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 4,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DuelEdgeAlly",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1071602",
@@ -8423,6 +11008,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 4,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DuelEdgeAlly",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1071603",
@@ -8431,7 +11030,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 9,
+    "statuses": [
+      {
+        "id": "DuelEdgeAlly",
+        "values": [
+          0,
+          1,
+          3,
+          5
+        ]
+      }
+    ]
   },
   "10801": {
     "1": {
@@ -8439,6 +11049,16 @@
       "base": 4,
       "coin": 7,
       "coins": 1,
+      "conditionals": [
+        {
+          "max": 1,
+          "owner": "self",
+          "per": 0.75,
+          "target": "clash",
+          "type": "missing-hp",
+          "value": 1
+        }
+      ],
       "iconId": "1080101",
       "levelCorrection": -1,
       "name": "Loggerhead",
@@ -8450,6 +11070,16 @@
       "base": 6,
       "coin": 9,
       "coins": 1,
+      "conditionals": [
+        {
+          "max": 1,
+          "owner": "self",
+          "per": 0.75,
+          "target": "clash",
+          "type": "missing-hp",
+          "value": 1
+        }
+      ],
       "iconId": "1080102",
       "levelCorrection": -1,
       "name": "Slide",
@@ -8461,13 +11091,23 @@
       "base": 8,
       "coin": 12,
       "coins": 1,
+      "conditionals": [
+        {
+          "max": 1,
+          "owner": "self",
+          "per": 0.75,
+          "target": "clash",
+          "type": "missing-hp",
+          "value": 1
+        }
+      ],
       "iconId": "1080103",
       "levelCorrection": -1,
       "name": "Shield Bash",
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 7
   },
   "10802": {
     "1": {
@@ -8503,7 +11143,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 9
+    "points": 8
   },
   "10803": {
     "1": {
@@ -8607,7 +11247,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 3
+    "points": 2
   },
   "10805": {
     "1": {
@@ -8831,7 +11471,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 5
   },
   "10809": {
     "1": {
@@ -8912,6 +11552,22 @@
       "base": 3,
       "coin": 4,
       "coins": 2,
+      "conditionals": [
+        {
+          "max": 2,
+          "per": 4,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DefenseUp",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1081001",
       "levelCorrection": 0,
       "name": "Zwei Knight's Greatsword Form",
@@ -8923,6 +11579,22 @@
       "base": 4,
       "coin": 4,
       "coins": 3,
+      "conditionals": [
+        {
+          "max": 1,
+          "per": 4,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DefenseUp",
+              "type": "Potency"
+            }
+          ],
+          "target": "coin",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1081002",
       "levelCorrection": 1,
       "name": "Can't Let You Through.",
@@ -8934,13 +11606,40 @@
       "base": 5,
       "coin": 4,
       "coins": 3,
+      "conditionals": [
+        {
+          "max": 4,
+          "per": 4,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DefenseUp",
+              "type": "Potency"
+            }
+          ],
+          "target": "coin",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1081003",
       "levelCorrection": 2,
       "name": "Ward",
       "rank": 3,
       "type": "identity"
     },
-    "points": 4
+    "points": 6,
+    "statuses": [
+      {
+        "id": "DefenseUp",
+        "values": [
+          0,
+          4,
+          8,
+          16
+        ]
+      }
+    ]
   },
   "10811": {
     "1": {
@@ -8960,6 +11659,20 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BlackCloudBlade",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
           "type": "status",
           "value": 1
         }
@@ -8989,6 +11702,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BlackCloudBlade",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1081102",
@@ -9016,6 +11743,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BlackCloudBlade",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1081103",
@@ -9024,7 +11765,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 7,
+    "statuses": [
+      {
+        "id": "BlackCloudBlade",
+        "values": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ]
   },
   "10812": {
     "1": {
@@ -9141,7 +11893,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 9
+    "points": 8
   },
   "10813": {
     "1": {
@@ -9166,6 +11918,20 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 5,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "HanafudaCombo",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
           "type": "status",
           "value": 1
         }
@@ -9200,6 +11966,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 5,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "HanafudaCombo",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1081302",
@@ -9232,6 +12012,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 5,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "HanafudaCombo",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1081303",
@@ -9240,7 +12034,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 9
+    "points": 10,
+    "statuses": [
+      {
+        "id": "HanafudaCombo",
+        "values": [
+          0,
+          1,
+          3,
+          5
+        ]
+      }
+    ]
   },
   "10814": {
     "1": {
@@ -9265,6 +12070,34 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 2,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "ReinforcedTattooIshmael",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "GotAComplimentIshmael",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
           "type": "status",
           "value": 1
         }
@@ -9299,6 +12132,34 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 2,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "ReinforcedTattooIshmael",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "GotAComplimentIshmael",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1081402",
@@ -9331,6 +12192,48 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 2,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "ReinforcedTattooIshmael",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "ResentmentIshmael",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "GotAComplimentIshmael",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1081403",
@@ -9339,7 +12242,45 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 5
+    "points": 8,
+    "statuses": [
+      {
+        "id": "RetaliationBook",
+        "values": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "ReinforcedTattooIshmael",
+        "values": [
+          0,
+          3,
+          6,
+          10
+        ]
+      },
+      {
+        "id": "GotAComplimentIshmael",
+        "values": [
+          0,
+          3,
+          6,
+          10
+        ]
+      },
+      {
+        "id": "ResentmentIshmael",
+        "values": [
+          0,
+          5,
+          10,
+          15
+        ]
+      }
+    ]
   },
   "10815": {
     "1": {
@@ -9381,12 +12322,26 @@
           "per": 3,
           "status": [
             {
-              "owner": "self",
+              "owner": "unique",
               "status": "Agility",
               "type": "Potency"
             }
           ],
           "target": "clash",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BladelineagePride",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
           "type": "status",
           "value": 1
         }
@@ -9436,7 +12391,7 @@
           "per": 3,
           "status": [
             {
-              "owner": "self",
+              "owner": "unique",
               "status": "Agility",
               "type": "Potency"
             }
@@ -9444,6 +12399,20 @@
           "target": "clash",
           "type": "status",
           "value": 2
+        },
+        {
+          "max": 3,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BladelineagePride",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1081502",
@@ -9463,7 +12432,7 @@
           "per": 2,
           "status": [
             {
-              "owner": "self",
+              "owner": "unique",
               "status": "Agility",
               "type": "Potency"
             }
@@ -9490,6 +12459,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 3,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BladelineagePride",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1081503",
@@ -9498,7 +12481,36 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 9
+    "points": 9,
+    "statuses": [
+      {
+        "id": "BladelineagePride",
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "WindBladeIshmael",
+        "values": [
+          0,
+          5,
+          10,
+          20
+        ]
+      },
+      {
+        "id": "Agility",
+        "values": [
+          0,
+          2,
+          3,
+          4
+        ]
+      }
+    ]
   },
   "10901": {
     "1": {
@@ -9531,6 +12543,7 @@
       "conditionals": [
         {
           "mode": "lower",
+          "owner": "self",
           "sp": 0,
           "target": "base",
           "type": "sp-fixed",
@@ -9611,7 +12624,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 8
+    "points": 7
   },
   "10903": {
     "1": {
@@ -9846,7 +12859,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 2
+    "points": 2,
+    "statuses": [
+      {
+        "id": "KnowledgeExplored",
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ]
   },
   "10908": {
     "1": {
@@ -10039,15 +13063,35 @@
       "conditionals": [
         {
           "max": 2,
-          "per": 6,
           "status": [
             {
               "owner": "target",
+              "per": 6,
               "status": "Burst",
+              "type": "Potency"
+            },
+            {
+              "owner": "unique",
+              "per": 10,
+              "status": "DevyatDimensionalSack",
               "type": "Potency"
             }
           ],
           "target": "coin",
+          "type": "status-individual",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 20,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DevyatDimensionalSack",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
           "type": "status",
           "value": 1
         }
@@ -10066,15 +13110,35 @@
       "conditionals": [
         {
           "max": 2,
-          "per": 6,
           "status": [
             {
               "owner": "target",
+              "per": 6,
               "status": "Burst",
+              "type": "Potency"
+            },
+            {
+              "owner": "unique",
+              "per": 10,
+              "status": "DevyatDimensionalSack",
               "type": "Potency"
             }
           ],
           "target": "coin",
+          "type": "status-individual",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 20,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DevyatDimensionalSack",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
           "type": "status",
           "value": 1
         }
@@ -10093,15 +13157,35 @@
       "conditionals": [
         {
           "max": 2,
-          "per": 6,
           "status": [
             {
               "owner": "target",
+              "per": 6,
               "status": "Burst",
+              "type": "Potency"
+            },
+            {
+              "owner": "unique",
+              "per": 10,
+              "status": "DevyatDimensionalSack",
               "type": "Potency"
             }
           ],
           "target": "coin",
+          "type": "status-individual",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 20,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DevyatDimensionalSack",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
           "type": "status",
           "value": 1
         }
@@ -10112,7 +13196,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 7,
+    "statuses": [
+      {
+        "id": "DevyatDimensionalSack",
+        "values": [
+          0,
+          10,
+          20,
+          30
+        ]
+      }
+    ]
   },
   "10911": {
     "1": {
@@ -10196,7 +13291,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 5,
+    "statuses": [
+      {
+        "id": "BloomingThornsRodionFirst",
+        "values": [
+          0,
+          10,
+          20,
+          30
+        ]
+      }
+    ]
   },
   "10912": {
     "1": {
@@ -10295,7 +13401,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 6
   },
   "10913": {
     "1": {
@@ -10393,7 +13499,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 8
+    "points": 7
   },
   "10914": {
     "1": {
@@ -10618,7 +13724,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 10
+    "points": 9
   },
   "10916": {
     "1": {
@@ -10759,7 +13865,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 8
+    "points": 7,
+    "statuses": [
+      {
+        "id": "AccelBullet",
+        "values": [
+          0,
+          0,
+          3,
+          5
+        ]
+      }
+    ]
   },
   "11001": {
     "1": {
@@ -10847,7 +13964,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 5
   },
   "11003": {
     "1": {
@@ -11107,6 +14224,20 @@
           "target": "coin",
           "type": "spd-diff",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DuelDeclaration_Sinclair",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1100801",
@@ -11127,6 +14258,20 @@
           "per": 2,
           "target": "coin",
           "type": "spd-diff",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DuelDeclaration_Sinclair",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
           "value": 1
         }
       ],
@@ -11149,6 +14294,20 @@
           "target": "coin",
           "type": "spd-diff",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DuelDeclaration_Sinclair",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1100803",
@@ -11157,7 +14316,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 7,
+    "statuses": [
+      {
+        "id": "DuelDeclaration_Sinclair",
+        "values": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ]
   },
   "11009": {
     "1": {
@@ -11165,6 +14335,32 @@
       "base": 3,
       "coin": 7,
       "coins": 1,
+      "conditionals": [
+        {
+          "mode": "higher",
+          "owner": "self",
+          "sp": 19,
+          "target": "coin",
+          "type": "sp-fixed",
+          "value": 1
+        },
+        {
+          "mode": "higher",
+          "owner": "self",
+          "sp": 39,
+          "target": "coin",
+          "type": "sp-fixed",
+          "value": 1
+        },
+        {
+          "mode": "higher",
+          "owner": "self",
+          "sp": 44,
+          "target": "coin",
+          "type": "sp-fixed",
+          "value": 1
+        }
+      ],
       "iconId": "1100901",
       "levelCorrection": 2,
       "name": "Fierce Charge",
@@ -11189,6 +14385,30 @@
           ],
           "target": "clash",
           "type": "status",
+          "value": 1
+        },
+        {
+          "mode": "higher",
+          "owner": "self",
+          "sp": 19,
+          "target": "coin",
+          "type": "sp-fixed",
+          "value": 1
+        },
+        {
+          "mode": "higher",
+          "owner": "self",
+          "sp": 39,
+          "target": "coin",
+          "type": "sp-fixed",
+          "value": 1
+        },
+        {
+          "mode": "higher",
+          "owner": "self",
+          "sp": 44,
+          "target": "coin",
+          "type": "sp-fixed",
           "value": 1
         }
       ],
@@ -11217,6 +14437,30 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "mode": "higher",
+          "owner": "self",
+          "sp": 19,
+          "target": "coin",
+          "type": "sp-fixed",
+          "value": 1
+        },
+        {
+          "mode": "higher",
+          "owner": "self",
+          "sp": 39,
+          "target": "coin",
+          "type": "sp-fixed",
+          "value": 1
+        },
+        {
+          "mode": "higher",
+          "owner": "self",
+          "sp": 44,
+          "target": "coin",
+          "type": "sp-fixed",
+          "value": 1
         }
       ],
       "iconId": "1100903",
@@ -11225,7 +14469,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 4
+    "points": 6
   },
   "11010": {
     "1": {
@@ -11260,6 +14504,22 @@
       "base": 4,
       "coin": 5,
       "coins": 2,
+      "conditionals": [
+        {
+          "max": 1,
+          "per": 4,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DefenseUp",
+              "type": "Potency"
+            }
+          ],
+          "target": "coin",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1101002",
       "levelCorrection": 1,
       "name": "Combat Preparation",
@@ -11271,13 +14531,40 @@
       "base": 4,
       "coin": 3,
       "coins": 3,
+      "conditionals": [
+        {
+          "max": 3,
+          "per": 3,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DefenseUp",
+              "type": "Potency"
+            }
+          ],
+          "target": "coin",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1101003",
       "levelCorrection": 2,
       "name": "Fence",
       "rank": 3,
       "type": "identity"
     },
-    "points": 3
+    "points": 5,
+    "statuses": [
+      {
+        "id": "DefenseUp",
+        "values": [
+          0,
+          4,
+          8,
+          12
+        ]
+      }
+    ]
   },
   "11011": {
     "1": {
@@ -11288,15 +14575,35 @@
       "conditionals": [
         {
           "max": 2,
-          "per": 6,
           "status": [
             {
               "owner": "target",
+              "per": 6,
               "status": "Burst",
+              "type": "Potency"
+            },
+            {
+              "owner": "unique",
+              "per": 10,
+              "status": "DevyatDimensionalSackSinclair",
               "type": "Potency"
             }
           ],
           "target": "coin",
+          "type": "status-individual",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 20,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DevyatDimensionalSackSinclair",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
           "type": "status",
           "value": 1
         }
@@ -11315,15 +14622,35 @@
       "conditionals": [
         {
           "max": 2,
-          "per": 6,
           "status": [
             {
               "owner": "target",
+              "per": 6,
               "status": "Burst",
+              "type": "Potency"
+            },
+            {
+              "owner": "unique",
+              "per": 10,
+              "status": "DevyatDimensionalSackSinclair",
               "type": "Potency"
             }
           ],
           "target": "coin",
+          "type": "status-individual",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 20,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DevyatDimensionalSackSinclair",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
           "type": "status",
           "value": 1
         }
@@ -11342,15 +14669,35 @@
       "conditionals": [
         {
           "max": 2,
-          "per": 6,
           "status": [
             {
               "owner": "target",
+              "per": 6,
               "status": "Burst",
+              "type": "Potency"
+            },
+            {
+              "owner": "unique",
+              "per": 10,
+              "status": "DevyatDimensionalSackSinclair",
               "type": "Potency"
             }
           ],
           "target": "coin",
+          "type": "status-individual",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 20,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DevyatDimensionalSackSinclair",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
           "type": "status",
           "value": 1
         }
@@ -11361,7 +14708,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 7,
+    "statuses": [
+      {
+        "id": "DevyatDimensionalSackSinclair",
+        "values": [
+          0,
+          10,
+          20,
+          30
+        ]
+      }
+    ]
   },
   "11012": {
     "1": {
@@ -11386,9 +14744,24 @@
         },
         {
           "mode": "higher",
+          "owner": "self",
           "sp": 44,
           "target": "clash",
           "type": "sp-fixed",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 20,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "VengeanceBookSinclair",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
           "value": 1
         }
       ],
@@ -11415,6 +14788,20 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 20,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "VengeanceBookSinclair",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
           "type": "status",
           "value": 1
         }
@@ -11444,6 +14831,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 20,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "VengeanceBookSinclair",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1101203",
@@ -11452,7 +14853,27 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 7,
+    "statuses": [
+      {
+        "id": "RetaliationBook",
+        "values": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "VengeanceBookSinclair",
+        "values": [
+          0,
+          10,
+          20,
+          30
+        ]
+      }
+    ]
   },
   "11013": {
     "1": {
@@ -11549,8 +14970,8 @@
           "per": 3,
           "status": [
             {
-              "owner": "self",
-              "status": "Bullet",
+              "owner": "unique",
+              "status": "FireBulletPropellant",
               "type": "Potency"
             }
           ],
@@ -11565,7 +14986,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 6,
+    "statuses": [
+      {
+        "id": "FireBulletPropellant",
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ]
   },
   "11014": {
     "1": {
@@ -11591,6 +15023,14 @@
           ],
           "target": "coin",
           "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "owner": "self",
+          "per": 0.2,
+          "target": "offense-level",
+          "type": "missing-hp",
           "value": 1
         }
       ],
@@ -11623,6 +15063,14 @@
           ],
           "target": "coin",
           "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "owner": "self",
+          "per": 0.2,
+          "target": "offense-level",
+          "type": "missing-hp",
           "value": 1
         }
       ],
@@ -11664,6 +15112,14 @@
           "target": "clash",
           "type": "missing-hp",
           "value": 1
+        },
+        {
+          "max": 3,
+          "owner": "self",
+          "per": 0.2,
+          "target": "offense-level",
+          "type": "missing-hp",
+          "value": 1
         }
       ],
       "iconId": "1101403",
@@ -11672,7 +15128,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 8
   },
   "11015": {
     "1": {
@@ -11748,6 +15204,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 5,
+          "per": 4,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "LittleFingerID",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1101503",
@@ -11756,7 +15226,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 9
+    "points": 9,
+    "statuses": [
+      {
+        "id": "LittleFingerID",
+        "values": [
+          0,
+          4,
+          12,
+          20
+        ]
+      }
+    ]
   },
   "11101": {
     "1": {
@@ -11792,7 +15273,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 3
+    "points": 2
   },
   "11102": {
     "1": {
@@ -11977,7 +15458,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 8
+    "points": 9
   },
   "11105": {
     "1": {
@@ -12053,6 +15534,22 @@
       "base": 3,
       "coin": 4,
       "coins": 2,
+      "conditionals": [
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DuelDeclaration_Outis",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1110601",
       "levelCorrection": -1,
       "name": "Marche",
@@ -12072,6 +15569,20 @@
           "target": "coin",
           "type": "spd-diff",
           "value": 2
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DuelDeclaration_Outis",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1110602",
@@ -12099,6 +15610,20 @@
           "target": "base",
           "type": "status",
           "value": 4
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DuelDeclaration_Outis",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1110603",
@@ -12107,7 +15632,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 7,
+    "statuses": [
+      {
+        "id": "DuelDeclaration_Outis",
+        "values": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ]
   },
   "11107": {
     "1": {
@@ -12189,8 +15725,8 @@
           "per": 7,
           "status": [
             {
-              "owner": "self",
-              "status": "Bullet",
+              "owner": "unique",
+              "status": "FreischutzShotCount",
               "type": "Potency"
             }
           ],
@@ -12203,8 +15739,8 @@
           "per": 4,
           "status": [
             {
-              "owner": "self",
-              "status": "Bullet",
+              "owner": "unique",
+              "status": "FreischutzShotCount",
               "type": "Potency"
             }
           ],
@@ -12217,8 +15753,8 @@
           "per": 7,
           "status": [
             {
-              "owner": "self",
-              "status": "Bullet",
+              "owner": "unique",
+              "status": "FreischutzShotCount",
               "type": "Potency"
             }
           ],
@@ -12233,7 +15769,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 10
+    "points": 10,
+    "statuses": [
+      {
+        "id": "FreischutzShotCount",
+        "values": [
+          0,
+          3,
+          6,
+          7
+        ]
+      }
+    ]
   },
   "11108": {
     "1": {
@@ -12254,6 +15801,14 @@
           ],
           "target": "coin",
           "type": "status",
+          "value": 1
+        },
+        {
+          "mode": "lower",
+          "owner": "target",
+          "sp": 0,
+          "target": "clash",
+          "type": "sp-fixed",
           "value": 1
         }
       ],
@@ -12282,6 +15837,14 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "mode": "lower",
+          "owner": "target",
+          "sp": 0,
+          "target": "clash",
+          "type": "sp-fixed",
+          "value": 1
         }
       ],
       "iconId": "1110802",
@@ -12309,6 +15872,14 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "mode": "lower",
+          "owner": "target",
+          "sp": 0,
+          "target": "clash",
+          "type": "sp-fixed",
+          "value": 1
         }
       ],
       "iconId": "1110803",
@@ -12317,7 +15888,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 5
+    "points": 6
   },
   "11109": {
     "1": {
@@ -12507,7 +16078,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 8
+    "points": 7
   },
   "11111": {
     "1": {
@@ -12527,6 +16098,34 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "LineCutting",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "per": 10,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BloodScissorPersonalityFirst",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
           "type": "status",
           "value": 1
         }
@@ -12554,6 +16153,34 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "LineCutting",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "per": 10,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BloodScissorPersonalityFirst",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
           "type": "status",
           "value": 1
         }
@@ -12597,6 +16224,34 @@
           "target": "clash",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "LineCutting",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "per": 10,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BloodScissorPersonalityFirst",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1111103",
@@ -12605,7 +16260,27 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 9,
+    "statuses": [
+      {
+        "id": "LineCutting",
+        "values": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "BloodScissorPersonalityFirst",
+        "values": [
+          0,
+          10,
+          20,
+          30
+        ]
+      }
+    ]
   },
   "11112": {
     "1": {
@@ -12713,7 +16388,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 6
   },
   "11113": {
     "1": {
@@ -12795,7 +16470,7 @@
           "per": 1,
           "status": [
             {
-              "owner": "target",
+              "owner": "unique",
               "status": "Binding",
               "type": "Potency"
             }
@@ -12811,7 +16486,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 6,
+    "statuses": [
+      {
+        "id": "Binding",
+        "values": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ]
   },
   "11114": {
     "1": {
@@ -12836,6 +16522,20 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "TheUdjatOutis",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
           "type": "status",
           "value": 1
         }
@@ -12870,6 +16570,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 2,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "TheUdjatOutis",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 2
         }
       ],
       "iconId": "1111402",
@@ -12908,8 +16622,8 @@
           "per": 1,
           "status": [
             {
-              "owner": "self",
-              "status": "Bullet",
+              "owner": "unique",
+              "status": "LCA_Bullet",
               "type": "Potency"
             }
           ],
@@ -12924,7 +16638,27 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 8
+    "points": 8,
+    "statuses": [
+      {
+        "id": "TheUdjatOutis",
+        "values": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "LCA_Bullet",
+        "values": [
+          0,
+          4,
+          12,
+          16
+        ]
+      }
+    ]
   },
   "11115": {
     "1": {
@@ -12949,6 +16683,34 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 2,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "ReinforcedTattooSpiderOutis",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DaughterEducationSpiderOutis",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
           "type": "status",
           "value": 1
         }
@@ -12983,6 +16745,34 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 2,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "ReinforcedTattooSpiderOutis",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DaughterEducationSpiderOutis",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1111502",
@@ -13015,6 +16805,34 @@
           "target": "base",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 2,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "ReinforcedTattooSpiderOutis",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 1,
+          "per": 5,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DaughterEducationSpiderOutis",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1111503",
@@ -13023,7 +16841,45 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 9,
+    "statuses": [
+      {
+        "id": "RetaliationBook",
+        "values": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "ReinforcedTattooSpiderOutis",
+        "values": [
+          0,
+          3,
+          6,
+          10
+        ]
+      },
+      {
+        "id": "DaughterEducationSpiderOutis",
+        "values": [
+          0,
+          3,
+          6,
+          10
+        ]
+      },
+      {
+        "id": "MiddleFatherSwordFour",
+        "values": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    ]
   },
   "11201": {
     "1": {
@@ -13059,7 +16915,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 5
+    "points": 4
   },
   "11202": {
     "1": {
@@ -13328,6 +17184,22 @@
       "base": 3,
       "coin": 3,
       "coins": 4,
+      "conditionals": [
+        {
+          "max": 1,
+          "per": 6,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DefenseUp",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1120602",
       "levelCorrection": 0,
       "name": "Flexible Suppression",
@@ -13339,13 +17211,40 @@
       "base": 5,
       "coin": 3,
       "coins": 3,
+      "conditionals": [
+        {
+          "max": 3,
+          "per": 6,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DefenseUp",
+              "type": "Potency"
+            }
+          ],
+          "target": "coin",
+          "type": "status",
+          "value": 1
+        }
+      ],
       "iconId": "1120603",
       "levelCorrection": 0,
       "name": "Guardian",
       "rank": 3,
       "type": "identity"
     },
-    "points": 2
+    "points": 4,
+    "statuses": [
+      {
+        "id": "DefenseUp",
+        "values": [
+          0,
+          6,
+          12,
+          18
+        ]
+      }
+    ]
   },
   "11207": {
     "1": {
@@ -13429,7 +17328,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 5
   },
   "11208": {
     "1": {
@@ -13527,7 +17426,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 5
   },
   "11209": {
     "1": {
@@ -13639,7 +17538,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 9
+    "points": 7
   },
   "11210": {
     "1": {
@@ -13659,6 +17558,20 @@
             }
           ],
           "target": "coin",
+          "type": "status",
+          "value": 1
+        },
+        {
+          "max": 3,
+          "per": 10,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BloodyHandGregFirst",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
           "type": "status",
           "value": 1
         }
@@ -13688,6 +17601,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 3,
+          "per": 10,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BloodyHandGregFirst",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1121002",
@@ -13715,6 +17642,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 3,
+          "per": 10,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "BloodyHandGregFirst",
+              "type": "Potency"
+            }
+          ],
+          "target": "offense-level",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1121003",
@@ -13723,7 +17664,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 9,
+    "statuses": [
+      {
+        "id": "BloodyHandGregFirst",
+        "values": [
+          0,
+          10,
+          20,
+          30
+        ]
+      }
+    ]
   },
   "11211": {
     "1": {
@@ -13821,7 +17773,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 6
   },
   "11212": {
     "1": {
@@ -13896,7 +17848,9 @@
       "conditionals": [
         {
           "max": 4,
+          "maxCond": 6,
           "per": 8,
+          "perCond": 5,
           "status": [
             {
               "owner": "self",
@@ -13909,9 +17863,11 @@
               "type": "Potency"
             }
           ],
+          "statusCond": "SnakeStance",
           "target": "coin",
-          "type": "status",
-          "value": 1
+          "type": "status-optional-condition",
+          "value": 1,
+          "valueCond": 1
         }
       ],
       "iconId": "1121203",
@@ -13920,7 +17876,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 9
+    "points": 7,
+    "statuses": [
+      {
+        "id": "SnakeStance",
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ]
   },
   "11213": {
     "1": {
@@ -14019,7 +17986,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 7
+    "points": 6,
+    "statuses": [
+      {
+        "id": "CriHurtNightStiletto",
+        "values": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    ]
   },
   "11214": {
     "1": {
@@ -14032,8 +18010,9 @@
           "mode": "lower",
           "per": 3,
           "speed": 2,
+          "status": "DelusionGregBigBird",
           "target": "coin",
-          "type": "spd-fixed-or-diff",
+          "type": "spd-fixed-or-diff-or-status",
           "value": 1
         },
         {
@@ -14072,8 +18051,9 @@
           "mode": "lower",
           "per": 3,
           "speed": 2,
+          "status": "DelusionGregBigBird",
           "target": "clash",
-          "type": "spd-fixed-or-diff",
+          "type": "spd-fixed-or-diff-or-status",
           "value": 2
         },
         {
@@ -14112,8 +18092,9 @@
           "mode": "lower",
           "per": 3,
           "speed": 2,
+          "status": "DelusionGregBigBird",
           "target": "coin",
-          "type": "spd-fixed-or-diff",
+          "type": "spd-fixed-or-diff-or-status",
           "value": 1
         },
         {
@@ -14134,6 +18115,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 3,
+          "per": 1,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "DelusionGregBigBird",
+              "type": "Potency"
+            }
+          ],
+          "target": "clash",
+          "type": "status",
+          "value": 3
         }
       ],
       "iconId": "1121403",
@@ -14142,7 +18137,18 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 6
+    "points": 6,
+    "statuses": [
+      {
+        "id": "DelusionGregBigBird",
+        "values": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ]
   },
   "11215": {
     "1": {
@@ -14310,7 +18316,7 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 9
+    "points": 8
   },
   "11216": {
     "1": {
@@ -14401,6 +18407,20 @@
           "target": "coin",
           "type": "status",
           "value": 1
+        },
+        {
+          "max": 1,
+          "per": 20,
+          "status": [
+            {
+              "owner": "unique",
+              "status": "StigmaWorkshopHandStep1",
+              "type": "Potency"
+            }
+          ],
+          "target": "base",
+          "type": "status",
+          "value": 1
         }
       ],
       "iconId": "1121603",
@@ -14409,6 +18429,17 @@
       "rank": 3,
       "type": "identity"
     },
-    "points": 8
+    "points": 7,
+    "statuses": [
+      {
+        "id": "StigmaWorkshopHandStep1",
+        "values": [
+          0,
+          10,
+          20,
+          30
+        ]
+      }
+    ]
   }
 }
