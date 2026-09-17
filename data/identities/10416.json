@@ -1,0 +1,839 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1041602",
+        "1041604"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1041602",
+        "1041604",
+        "1041601"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1041603",
+        "1041604",
+        "1041601"
+      ],
+      "uptie": 3
+    }
+  ],
+  "notes": {
+    "other": [
+      "{st:ChargeNoirAlly} is her Unique Charge and is produced and consumed (if she has enough) by all her skills. Her passive gives her +1 Coin Power at 3+ potency and bonus damage per count. The passive also gives her +1 Coin Power when the target has 6+ {st:Vibration}."
+    ],
+    "usage": [
+      "Swaps between {st:NoirSuitAlly} and {st:RealisationAlly} as a build-up and payoff phase. She starts with 25 {st:NoirSuitAlly} and gains it whenever she gains or consumes her Unique Charge {st:ChargeNoirAlly} or gets hit with a shield. At 100 stacks, it transforms into {st:RealisationAlly} which is consumed to give her skills additional power and damage and upgrades her S3 to {skill:10416|05}. Once it hits 0 stacks, it transforms back to {st:NoirSuitAlly} to start building up again.",
+      "Passively gains shields every turn based on {st:NoirSuitAlly} and {st:RealisationAlly}."
+    ]
+  },
+  "passiveBonuses": [
+    {
+      "type": "deflevel",
+      "value": 4
+    },
+    {
+      "type": "offlevel",
+      "value": 4
+    },
+    {
+      "type": "coin",
+      "value": 2
+    },
+    {
+      "extra": {
+        "op": "mul"
+      },
+      "type": "damage",
+      "value": 0.1
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1041603
+      },
+      "type": "damage",
+      "value": 0.1
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1041605
+      },
+      "type": "damage",
+      "value": 0.1
+    }
+  ],
+  "passiveData": {
+    "1041601": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 1
+          },
+          {
+            "type": "pride",
+            "value": 1
+          },
+          {
+            "type": "envy",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "When triggering [VibrationExplosion] on the enemy, increase the Stagger Threshold raise by +15%\n- At 12+ [ChargeNoirAlly] Count, consume 1 [ChargeNoirAlly] Count when triggering [VibrationExplosion] to increase the Stagger Threshold raise by +30% instead (effect applied per target)\n\nWhen hit, if this unit has Shield, inflict 2 [Vibration] Potency on the attacker (2 times per turn per enemy)",
+      "name": "Feedback"
+    },
+    "1041602": {
+      "desc": "Upon entering the field, gain 25 [NoirSuitAlly]\n\nTurn Start: Gain Shield equal to (([NoirSuitAlly] + [RealisationAlly]) / 5)% of this unit's max HP",
+      "name": "Le Noir: Gabardine Fabric"
+    },
+    "1041603": {
+      "desc": "Upon entering the field, gain 25 [NoirSuitAlly]\n\nTurn Start:\n- Gain Shield equal to (([NoirSuitAlly] + [RealisationAlly]) / 5)% of this unit's max HP\n- If this unit has [RealisationAlly], convert \"Triple Stamped Stitching\" into \"Single Kick - Couture Multiple\"",
+      "name": "Le Noir: Gabardine Fabric"
+    },
+    "1041604": {
+      "desc": "Gain 1 [ChargeNoirAlly] Potency for every 10 cumulative [ChargeNoirAlly] Count this unit consumes in this Encounter\n\nTurn End: At fewer than 3 [ChargeNoirAlly] Potency, consume all [ChargeNoirAlly] Count to gain ([ChargeNoirAlly] Count consumed x 5) Shield next turn\n\nAt 3+ [ChargeNoirAlly] Potency, this unit's Base Skills gain +1 more [ChargeNoirAlly] Count when this unit has fewer than 12 [ChargeNoirAlly] Count\n\nOn Base Attack Skill Use,\n- If target has 6+ [Vibration] Potency, Coin Power +1\n- At 3+ [ChargeNoirAlly] Potency, Coin Power +1\n- Deal +([ChargeNoirAlly] Potency x 2)% damage (max 10%)\n· If the said Skill is \"Triple Stamped Stitching\" or \"Single Kick - Couture Multiple\", deal +([ChargeNoirAlly] Potency x 4)% damage instead (max 20%)",
+      "name": "Conservation"
+    },
+    "1041621": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "sloth",
+            "value": 6
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Among allies that have [Charge] or Unique [Charge], when 1 ally with the earliest Deployment Order triggers [VibrationExplosion] using its Base Skills, increase the Stagger Threshold raise by +12.5%",
+      "name": "Le Noir's Virtue and Worth"
+    }
+  },
+  "skills": {
+    "1041601": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.45
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [ChargeNoirAlly] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] At 3+ [ChargeNoirAlly] Potency and 12+ [ChargeNoirAlly] Count, consume 6 [ChargeNoirAlly] Count to gain Shield equal to 5% of this unit's max HP (2 times per turn)\n[WhenUse] At fewer than 10 [ChargeNoirAlly] Count, gain +1 [ChargeNoirAlly] Count\n[WhenUse] Consume up to 15 [RealisationAlly] to apply the following:\n- Clash Power +1\n- Deal +([RealisationAlly] consumed x 3)% damage (max 45%)",
+          "iconId": "1041601",
+          "id": "1041601",
+          "levelCorrection": 2,
+          "name": "You, Revolting Thing.",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.45
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [ChargeNoirAlly] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] At 3+ [ChargeNoirAlly] Potency and 12+ [ChargeNoirAlly] Count, consume 6 [ChargeNoirAlly] Count to gain Shield equal to 5% of this unit's max HP (2 times per turn)\n[WhenUse] At fewer than 10 [ChargeNoirAlly] Count, gain +2 [ChargeNoirAlly] Count\n[WhenUse] Consume up to 15 [RealisationAlly] to apply the following:\n- Clash Power +1\n- Deal +([RealisationAlly] consumed x 3)% damage (max 45%)",
+          "iconId": "1041601",
+          "id": "1041601",
+          "name": "You, Revolting Thing.",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [ChargeNoirAlly] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] At 3+ [ChargeNoirAlly] Potency and 12+ [ChargeNoirAlly] Count, consume 6 [ChargeNoirAlly] Count to gain Shield equal to 5% of this unit's max HP (2 times per turn)\n[WhenUse] At fewer than 10 [ChargeNoirAlly] Count, gain +2 [ChargeNoirAlly] Count\n[WhenUse] Consume up to 15 [RealisationAlly] to apply the following:\n- Clash Power +1\n- Deal +([RealisationAlly] consumed x 3)% damage (max 45%)",
+          "iconId": "1041601",
+          "id": "1041601",
+          "name": "You, Revolting Thing.",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            },
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "type": "final",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.45
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +5 [ChargeNoirAlly] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] At 3+ [ChargeNoirAlly] Potency and 12+ [ChargeNoirAlly] Count, consume 6 [ChargeNoirAlly] Count to gain Shield equal to 5% of this unit's max HP (2 times per turn)\n[WhenUse] At fewer than 12 [ChargeNoirAlly] Count, gain +2 [ChargeNoirAlly] Count\n[WhenUse] At 50+ [NoirSuitAlly], Clash Power +1 and deal +30% damage\n[WhenUse] Consume up to 15 [RealisationAlly] to apply the following:\n- Final Power +1\n- Deal +([RealisationAlly] consumed x 3)% damage (max 45%)",
+          "iconId": "1041601",
+          "id": "1041601",
+          "name": "You, Revolting Thing.",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1041602": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1
+            },
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +([ChargeNoirAlly] Potency + 1) [ChargeNoirAlly] Count (max 4)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse]\n- At 12+ [ChargeNoirAlly] Count, consume 6 [ChargeNoirAlly] Count to gain Clash Power +1 and deal +10% damage\n- Gain +2 [ChargeNoirAlly] Count\n[WhenUse] Consume up to 20 [RealisationAlly] to apply the following:\n- Clash Power +1\n- Deal +([RealisationAlly] consumed)% damage (max 20%)",
+          "iconId": "1041602",
+          "id": "1041602",
+          "levelCorrection": 2,
+          "name": "Come and Try It On",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1
+            },
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +([ChargeNoirAlly] Potency + 1) [ChargeNoirAlly] Count (max 6)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] At 3+ [ChargeNoirAlly] Potency, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse]\n- At 12+ [ChargeNoirAlly] Count, consume 6 [ChargeNoirAlly] Count to gain Clash Power +1 and deal +10% damage\n- Gain +2 [ChargeNoirAlly] Count\n[WhenUse] Consume up to 20 [RealisationAlly] to apply the following:\n- Clash Power +1\n- Deal +([RealisationAlly] consumed)% damage (max 20%)",
+          "iconId": "1041602",
+          "id": "1041602",
+          "name": "Come and Try It On",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +([ChargeNoirAlly] Potency + 1) [ChargeNoirAlly] Count (max 6)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +1 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] At 3+ [ChargeNoirAlly] Potency, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse]\n- At 12+ [ChargeNoirAlly] Count, consume 6 [ChargeNoirAlly] Count to gain Clash Power +1 and deal +10% damage\n- Gain +2 [ChargeNoirAlly] Count\n[WhenUse] Consume up to 20 [RealisationAlly] to apply the following:\n- Clash Power +1\n- Deal +([RealisationAlly] consumed)% damage (max 20%)",
+          "iconId": "1041602",
+          "id": "1041602",
+          "name": "Come and Try It On",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.15
+            },
+            {
+              "type": "final",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +([ChargeNoirAlly] Potency + 3) [ChargeNoirAlly] Count (max 6)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] At 3+ [ChargeNoirAlly] Potency, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse]\n- At 12+ [ChargeNoirAlly] Count, consume 6 [ChargeNoirAlly] Count to gain Final Power +1 and deal +20% damage\n- Gain +4 [ChargeNoirAlly] Count\n[WhenUse] At 50+ [NoirSuitAlly], deal +15% damage\n[WhenUse] Consume up to 20 [RealisationAlly] to apply the following:\n- Final Power +1\n- Deal +([RealisationAlly] consumed)% damage (max 20%)",
+          "iconId": "1041602",
+          "id": "1041602",
+          "name": "Come and Try It On",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1041603": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            },
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [ChargeNoirAlly] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration] and +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "Deal +([NoirSuitAlly] Stack / 2)% damage (max 50%)",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] At 3+ [ChargeNoirAlly] Potency, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse]\n- At 10+ [ChargeNoirAlly] Count, consume up to 20 [ChargeNoirAlly] Count to deal +([ChargeNoirAlly] Count consumed)% damage (max 20%)\n- Gain +3 [ChargeNoirAlly] Count\n[WhenUse] For every 40 [NoirSuitAlly], Clash Power +1 and deal +10% damage (max 2 and 20% respectively)",
+          "iconId": "1041603",
+          "id": "1041603",
+          "levelCorrection": 3,
+          "name": "Triple Stamped Stitching",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.6
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            },
+            {
+              "type": "clash",
+              "value": 3
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +5 [ChargeNoirAlly] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration] and +3 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "Deal +([NoirSuitAlly] Stack)% damage (max 100%)",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] At 3+ [ChargeNoirAlly] Potency, trigger [VibrationExplosion] 2 times; then, reduce target's [Vibration] Count by 2"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] Gain 20 [NoirSuitAlly] (once per turn)\n[WhenUse]\n- At 10+ [ChargeNoirAlly] Count, consume up to 20 [ChargeNoirAlly] Count to deal +([ChargeNoirAlly] Count consumed)% damage (max 20%)\n- Gain +5 [ChargeNoirAlly] Count\n[WhenUse] For every 30 [NoirSuitAlly], Clash Power +1 and deal +20% damage (max 3 and 60% respectively)",
+          "iconId": "1041603",
+          "id": "1041603",
+          "name": "Triple Stamped Stitching",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1041604": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "clashable": true,
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 1 [Vibration] (2 times per turn)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\n[StartBattle]\n- At 60+ [NoirSuitAlly], convert the said effect into [RealisationAlly] next turn\n- At fewer than 60 [RealisationAlly], convert the said effect into [NoirSuitAlly] next turn\n[WhenUse] Gain +2 [ChargeNoirAlly]  Count (2 times per turn)",
+          "iconId": "1041604",
+          "id": "1041604",
+          "levelCorrection": 2,
+          "name": "Tch. Stupid Customer. You're Wrinkling the Merchandise!",
+          "uptie": 1
+        },
+        {
+          "desc": "[DuelCounter]\n[StartBattle]\n- At 60+ [NoirSuitAlly], convert the said effect into [RealisationAlly] next turn\n- At fewer than 60 [RealisationAlly], convert the said effect into [NoirSuitAlly] next turn\n[BeforeUse] At 60+ [RealisationAlly], activate as \"Single Kick - Couture Multiple\" (once per turn)\n- If the above effect was triggered, consume all [RealisationAlly] at Attack End\n[WhenUse] Gain +2 [ChargeNoirAlly] Count (2 times per turn)",
+          "iconId": "1041604",
+          "id": "1041604",
+          "name": "Tch. Stupid Customer. You're Wrinkling the Merchandise!",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Vibration] (2 times per turn)"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[DuelCounter]\n[StartBattle]\n- At 60+ [NoirSuitAlly], convert the said effect into [RealisationAlly] next turn\n- At fewer than 60 [RealisationAlly], convert the said effect into [NoirSuitAlly] next turn\n[BeforeUse] At 60+ [RealisationAlly], activate as \"Single Kick - Couture Multiple\" (once per turn)\n- If the above effect was triggered, consume all [RealisationAlly] at Attack End\n[WhenUse] At 3+/5+ [ChargeNoirAlly] Potency, Coin Power +1/+2 \n[WhenUse] Gain +2 [ChargeNoirAlly] Count (2 times per turn)",
+          "iconId": "1041604",
+          "id": "1041604",
+          "name": "Tch. Stupid Customer. You're Wrinkling the Merchandise!",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1041605": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1998
+            },
+            {
+              "type": "final",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [ChargeNoirAlly] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration] and +3 [Vibration] Count",
+                "[OnSucceedAttack] At 3+ [ChargeNoirAlly] Potency, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] At 2+ [ChargeNoirAlly] Potency, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] Deal Pierce damage equal to 10% of this Coin's final damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse]\n- Consume up to 20 [ChargeNoirAlly] Count to deal +([ChargeNoirAlly] Count consumed)% damage (max 20%)\n- Gain +3 [ChargeNoirAlly] Count\n[WhenUse] Consume up to 60 [RealisationAlly] to apply the following:\n- If 60+ [RealisationAlly] was consumed, Final Power +1\n- Deal +([RealisationAlly] consumed / 3)% damage (max 20%)",
+          "iconId": "1041605",
+          "id": "1041605",
+          "levelCorrection": 3,
+          "name": "Single Kick - Couture Multiple",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1998
+            },
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +5 [ChargeNoirAlly] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration] and +3 [Vibration] Count",
+                "[OnSucceedAttack] At 3+ [ChargeNoirAlly] Potency, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] At 2+ [ChargeNoirAlly] Potency, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] Deal Pierce damage equal to 10% of this Coin's final damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.15
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] Deal Pierce damage equal to 15% of this Coin's final damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse]\n- Consume up to 20 [ChargeNoirAlly] Count to deal +([ChargeNoirAlly] Count consumed)% damage (max 20%)\n- Gain +5 [ChargeNoirAlly] Count\n[WhenUse] Consume up to 60 [RealisationAlly] to apply the following:\n- Final Power +1 for every 30 [RealisationAlly] consumed (max 2)\n- Deal +([RealisationAlly] consumed / 3)% damage (max 20%)",
+          "iconId": "1041605",
+          "id": "1041605",
+          "name": "Single Kick - Couture Multiple",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1041621"
+      ],
+      "uptie": 3
+    }
+  ]
+}

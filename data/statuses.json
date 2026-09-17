@@ -464,7 +464,8 @@
   "AmberResistDown": {
     "buffType": "Negative",
     "desc": "Increase Sloth Resistance based on Stack.\n(0.1 per Stack)",
-    "name": "Sloth Resist Down"
+    "name": "Sloth Resist Down",
+    "srcPath": "AmberResistDown"
   },
   "AmberResistUp": {
     "buffType": "Positive",
@@ -1003,6 +1004,12 @@
     "name": "Bloodied Hand III",
     "srcPath": "Bloodied Hand III"
   },
+  "BloodyMucus": {
+    "buffType": "Negative",
+    "desc": "- Max Effect: 5\n- Offense Level +1 for every 3 Bleed Potency on self (max 3)\n- At max Stack, double the amount of damage taken from Bleed; this unit cannot be defeated due to Bleed damage\n- On Base Attack Skill Use, gain +(Stack x 2) Bleed Count\n- On E.G.O Skill or Defense Skill Use, lose 3 Stacks",
+    "name": "Baptism [Crimson]",
+    "srcPath": "BloodyMucus"
+  },
   "BloomingRose": {
     "buffType": "Neutral",
     "desc": "Turn End:\n- Gain 1 Stack\n- Bound Identity loses HP equal to 25% of max HP\n- Lose 10% of E.G.O Resource corresponding to the Rose's (rounded down)\n- The Sign of Roses's Core heals HP equal to 5% of the Core's max HP\n\nAt 4 Stacks,\n- Bound Identity dies\n- Lose all of E.G.O Resource corresponding to the Rose's",
@@ -1143,6 +1150,18 @@
     "desc": "- Unique Ammo\n- Spent by certain Skills\n- Max Stack: 4",
     "name": "Propellant Ammo",
     "srcPath": "Propellant Ammo"
+  },
+  "BuffetFailed": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 3\n- Min & Max Speed -1 for every Stack\n- Turn Start: Gain 1 Fragile\n- Turn End: Lose 1 Stack\n(Applies on all Parts)",
+    "name": "Exhausted",
+    "srcPath": "BuffetFailed"
+  },
+  "BuffetSick": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 30\n- Turn End: This effect expires when Uncontrollable Rampage effect expires. Then, this unit gains 1 Fragile next turn for every 5 Stacks",
+    "name": "Sac of Suffering",
+    "srcPath": "BuffetSick"
   },
   "Bull_BuzzingEmotion": {
     "buffType": "Neutral",
@@ -1393,7 +1412,8 @@
   "CandyForCharon": {
     "buffType": "Negative",
     "desc": "- Max Value: 1\n- Where's the candy?",
-    "name": "Candy?"
+    "name": "Candy?",
+    "srcPath": "CandyForCharon"
   },
   "CaseOverheating": {
     "buffType": "Negative",
@@ -1448,6 +1468,46 @@
     "desc": "- Max Value : 6\n- Attack Skills that consumed Charge Count deal +2.5% damage for every value on self (max 15%)\n- If the affected unit is a W Corp. employee., deal +5% damage for every value instead (max 30%)\n- Turn End: this effect expires",
     "name": "Load",
     "srcPath": "Load"
+  },
+  "ChargeNoir": {
+    "buffType": "Positive",
+    "categoryKeywordList": [
+      "SIN",
+      "CHARGE"
+    ],
+    "desc": "- Unique Charge\n- Max Count: 20\n- Interacts the same way as normal Charge does to effects that raise or reduce Charge Potency and Count\n- Turn End: Lose 1 Count",
+    "name": "Preservation",
+    "srcPath": "ChargeNoir"
+  },
+  "ChargeNoirAlly": {
+    "buffType": "Positive",
+    "categoryKeywordList": [
+      "SIN",
+      "CHARGE"
+    ],
+    "desc": "- Unique Charge\n- Max Count: 20\n- Interacts the same way as normal Charge does to effects that raise or reduce Charge Potency and Count\n- Turn End: Lose 1 Count",
+    "name": "Preservation",
+    "srcPath": "ChargeNoir"
+  },
+  "ChargeRouge": {
+    "buffType": "Positive",
+    "categoryKeywordList": [
+      "SIN",
+      "CHARGE"
+    ],
+    "desc": "- Unique Charge\n- Max Count: 20\n- Interacts the same way as normal Charge does to effects that raise or reduce Charge Potency and Count\n- Turn End: Lose 1 Count",
+    "name": "Pulsation",
+    "srcPath": "ChargeRouge"
+  },
+  "ChargeRougeAlly": {
+    "buffType": "Positive",
+    "categoryKeywordList": [
+      "SIN",
+      "CHARGE"
+    ],
+    "desc": "- Unique Charge\n- Max Count: 20\n- Interacts the same way as normal Charge does to effects that raise or reduce Charge Potency and Count\n- Turn End: Lose 1 Count",
+    "name": "Pulsation",
+    "srcPath": "ChargeRouge"
   },
   "ChargedSting": {
     "buffType": "Negative",
@@ -2066,6 +2126,12 @@
     "desc": "- Max Stack: 2\n- For every Stack, Base Attack Skill Clash Power +1, Base Power +1\n- At 2 Stack, Base Attack Skill Plus Coin Power +1, Minus Coin Power -1\n- Expires at Turn End",
     "name": "Desperado",
     "srcPath": "DesperadoBuff"
+  },
+  "DeterioratingBody": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 5\n- HP does not drop below 1\n- When hit, lose 1 Stack (2 times per Skill)\n- Turn End: Lose 1 Stack; this unit is defeated when this effect expires",
+    "name": "Instinctive Cling to Life",
+    "srcPath": "DeterioratingBody"
   },
   "DevyatDimensionalSack": {
     "buffType": "Neutral",
@@ -3148,7 +3214,7 @@
     "buffType": "Negative",
     "desc": "Max Stack: 99\n- Are you hoarding candy all for yourself?",
     "name": "Candy",
-    "srcPath": "Candy"
+    "srcPath": "CandyForCharon"
   },
   "GlowingLantern": {
     "buffType": "Negative",
@@ -3198,6 +3264,12 @@
     "desc": "- Max Stack: 10\n- Reduced by 1 when this unit is hit by 2 Skills\n- At 5+ Stack, Base Skills gain Final Power +1\n- Blunt Skills deal +1% damage for every Stack (max 10%)",
     "name": "I Got Praised!",
     "srcPath": "GotAComplimentIshmael"
+  },
+  "Gourmandise": {
+    "buffType": "Positive",
+    "desc": "- Base Stack: 3\n- Deal +5% damage for every 3 Bleed on self (max 30%)\n- All Parts cannot be Staggered; take -75% damage from Bleed\n- Turn End: Lose 1 Stack\n- Consume all Pulsation Count when this effect expires",
+    "name": "Uncontrollable Rampage",
+    "srcPath": "Gourmandise"
   },
   "GraspReplica": {
     "buffType": "Negative",
@@ -3483,6 +3555,18 @@
     "name": "Fatal Wound",
     "srcPath": "Fatal Wound"
   },
+  "HorribleEat": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 15\n- Gain Offense Level equal to Stack",
+    "name": "Repeat on Repeat",
+    "srcPath": "HorribleEat"
+  },
+  "HorribleTerror": {
+    "buffType": "Neutral",
+    "desc": "- Max Stack: 1\n- Turn Start: If this unit is in E.G.O Corrosion state, deal -50% damage to all targets this turn\n- Turn End: This unit takes 50% HP damage; then, this effect expires (rounded down, this effect cannot Stagger this unit)",
+    "name": "Horribly Infinite Replay",
+    "srcPath": "HorribleTerror"
+  },
   "HostageCharon": {
     "buffType": "Negative",
     "desc": "- When Clashing with 'The Thumb Apprentice - Lucio', Clash Power -1\n- Deal -20% damage to 'The Thumb Apprentice - Lucio'",
@@ -3500,6 +3584,18 @@
     "desc": "- Max Stack: 4\n- Deal +20% damage for every Stack\n- Consumed when using certain Skills",
     "name": "The Audacity...!",
     "srcPath": "The Audacity...!"
+  },
+  "HowlingCocoon": {
+    "buffType": "Positive",
+    "desc": "- The Cocoon is crying intermittently.\n- Skill Final Power +2",
+    "name": "Cry of the Cocoon - Frail",
+    "srcPath": "HowlingCocoon"
+  },
+  "HowlingCocoonTwo": {
+    "buffType": "Positive",
+    "desc": "- The Cocoon does not cease its cries.\n- Skill Final Power +3",
+    "name": "Cry of the Cocoon - Vicious",
+    "srcPath": "HowlingCocoonTwo"
   },
   "HugeIrritation": {
     "buffType": "Positive",
@@ -3835,7 +3931,8 @@
   "IndigoResistDown": {
     "buffType": "Negative",
     "desc": "Increase Pride Resistance based on Stack.\n(0.1 per Stack)",
-    "name": "Pride Resist Down"
+    "name": "Pride Resist Down",
+    "srcPath": "IndigoResistDown"
   },
   "IndigoResistUp": {
     "buffType": "Positive",
@@ -4062,6 +4159,14 @@
     "desc": "- Max Stack: 10\n- Turn Start: Gain 1 Offense Level Down for every 2 Bind (max 3)\n- Turn Start: Gain Bleed equal to Stack\n- On Tremor Burst, gain Bleed Count equal to Stack (once per turn)\n- Turn End: Gain Bind equal to Stack next turn (max 6), then lose 1 Stack",
     "name": "Pinning Nail",
     "srcPath": "LensmanNail"
+  },
+  "LensmanPower": {
+    "buffType": "Positive",
+    "categoryKeywordList": [
+      "IGNORE_CHECED_CORRECTION_EXCLUSION"
+    ],
+    "desc": "- Base Offense Level +5\n- Base Defense Level +5",
+    "name": "Investigation Order"
   },
   "LimitedAwakenSinclair": {
     "buffType": "Positive",
@@ -5971,6 +6076,12 @@
     "name": "Spore",
     "srcPath": "MeursaultBeeSpore"
   },
+  "MeursaultBuffet": {
+    "buffType": "Positive",
+    "desc": "- In this Encounter, if this unit uses its Skill, gain 2 E.G.O Resource of the corresponding Affinity (2 times per turn)\n- Turn Start: If another ally is on the field, damage taken by this unit does not kill this unit this turn\n- Cannot Retreat",
+    "name": "He Who Nails",
+    "srcPath": "MeursaultBuffet"
+  },
   "MeursaultSporeBulletLong": {
     "buffType": "Neutral",
     "categoryKeywordList": [
@@ -6266,6 +6377,27 @@
     "name": "Needle",
     "srcPath": "Needle"
   },
+  "NiddleExpected": {
+    "buffType": "Negative",
+    "desc": "- If this unit equipped Defense Skills:\n· Lose 1 Naildle on self\n· This effect expires\n\n- Turn End: Gain 3 Naildle; then, this effect expires",
+    "name": "Tongue-pinning Needle",
+    "srcPath": "NiddleExpected"
+  },
+  "NiddlePin": {
+    "buffType": "Negative",
+    "categoryKeywordList": [
+      "LACERATION"
+    ],
+    "desc": "- Unique Bleed\n- When taking Pierce damage, gain +1 Bleed Count and reduce this effect's Stack by 1\n- Turn End: Gain 1 Bleed and reduce this effect's Stack by 1",
+    "name": "Naildle",
+    "srcPath": "NiddlePin"
+  },
+  "NiddlePinned": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 2\n\n- When hit, gain +1 Bleed Count (3 times per turn)\n- Becomes Immobilized while this unit has this effect\n\n- Turn End: Lose 15 HP and 5 Naildle on self\n- Turn End: Lose 1 Stack",
+    "name": "Taxidermized",
+    "srcPath": "NiddlePinned"
+  },
   "NightDrifterGuilty": {
     "buffType": "Negative",
     "categoryKeywordList": [
@@ -6316,6 +6448,36 @@
     "buffType": "Positive",
     "desc": "- Turn Start: Gain 1 Offense Level Up for every ally defeated in this Encounter (max 6)\n- Combat Start: On A-Reson., Skills that are a part of the A-Reson. chain deal +20% damage",
     "name": "Sunset Wayfarer's Moth"
+  },
+  "NoirBindArmor": {
+    "buffType": "Neutral",
+    "desc": "- Max Stack: 15\n- For every 5 Stacks, Max Speed -1, Offense Level +1, Defense Level +1\n- Turn End: Lose 1 Stack",
+    "name": "Le Noir: Worsted",
+    "srcPath": "NoirBindArmor"
+  },
+  "NoirNoComply": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 3\n- Take +5% damage for every Stack",
+    "name": "Instruction Incompliance",
+    "srcPath": "NoirNoComply"
+  },
+  "NoirSuit": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 100\n- Turn Start: Gain 1 Defense Level Up for every 20 Stacks (max 4)\n- Gain Stack equal to Preservation Count this unit consumes or gains due to its Skill or Passive effects (max 30 per turn; this effect's Stack is gained regardless of Preservation's max Count)\n- When hit while this unit has Shield, gain 2 Stacks (20 per turn)\n- Turn End: If this unit has Shield, gain 10 Stacks\n- At 100 Stacks, convert this effect into \"Armure Éveillée\" next turn",
+    "name": "Le Noir: Gabardine Overcoat",
+    "srcPath": "NoirSuit"
+  },
+  "NoirSuitAlly": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 100\n- Defense Level +1 for every 25 Stacks\n- Gain +5 Aggro to the leftmost Slot\n- When hit while this unit has Shield, gain 5 Stacks (10 per turn)\n- Turn End: If this unit has remaining Shield, gain 10 Stacks\n- Apply the following when this unit gains or consumes Preservation Count due to its Skill or Passive effects:\n · Gain Stack equal to Preservation Count gained (this effect's Stack is gained regardless of Preservation's max Count)\n · Gain Stack equal to (Preservation Count consumed x 2)\n · Can gain up to 30 Stacks per turn via this effect\n- At 100 Stacks, convert this effect into Armure Éveillée next turn",
+    "name": "Le Noir: Gabardine Overcoat",
+    "srcPath": "NoirSuit"
+  },
+  "Nutrition": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 5\n- Turn End: Gain +(Stack x 2) Pulsation Count next turn; then, this effect expires\n- If this effect is at max Stack when expiring, all Parts gain Shield equal to 3% of the Core's HP next turn (Shield gained due to this effect does not expire at Turn End)",
+    "name": "A Seized Something.",
+    "srcPath": "Nutrition"
   },
   "ObedienceGregBigBird": {
     "buffType": "Positive",
@@ -6492,6 +6654,12 @@
   "PassedPortal_Green": {
     "buffType": "Neutral",
     "desc": "Max HP +20%",
+    "name": "Poisonous Dimension",
+    "srcPath": "Poisonous Dimension"
+  },
+  "PassedPortal_GreenBokGak": {
+    "buffType": "Neutral",
+    "desc": "Core's max HP +20%",
     "name": "Poisonous Dimension",
     "srcPath": "Poisonous Dimension"
   },
@@ -6813,6 +6981,18 @@
     "name": "An Actual Bear",
     "srcPath": "An Actual Bear"
   },
+  "Realisation": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 100\n- Turn Start: Heal 5 SP for every 10 Stacks\n- Turn Start: Gain 1 Offense Level Up and 1 Defense Level Up for every 20 Stacks (max 4 each)\n- Convert all Base Attack Skill Coins into Unbreakable Coins\n- After this effect is converted, starting from the end of the next turn, lose 10 Stacks\n- At 0 Stacks, convert this effect into \"Le Noir: Gabardine Overcoat\"",
+    "name": "Armure Éveillée",
+    "srcPath": "Realisation"
+  },
+  "RealisationAlly": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 100\n- Min & Max Speed +2\n- Offense Level +1 and Defense Level +1 for every 25 Stacks\n- Convert all Base Attack Skill Coins into Unbreakable Coins\n- Turn Start: Heal 8 SP\n- At 0 Stacks, convert this effect into \"Le Noir: Gabardine Overcoat\"",
+    "name": "Armure Éveillée",
+    "srcPath": "Realisation"
+  },
   "ReattachedCurseTag": {
     "buffType": "Neutral",
     "desc": "At 9+, gain 5 Bind at the start of the turn.\nAt 12+, gain 5 Attack Power Down at the start of the turn.",
@@ -7017,6 +7197,12 @@
     "desc": "- Max Value: 1\n- At 20+ Poise Potency, gain +1 Count as well whenever this unit gains Poise Potency with Skill and Coin effects\n- Expires at Turn End",
     "name": "Shallow Exhale",
     "srcPath": "Shallow Exhale"
+  },
+  "ReliefSense": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 3\n- Turn Start: Gain 1 Stack and heal 10 SP\n- Skills against this Stage's boss deal +(Stack x 50)% damage; then, this effect expires on Attack End of the Skill used\n- At 3 Stacks, damage dealt by this unit disregards Layered Patchwork's Defense Level effects",
+    "name": "Gratitude for Listening",
+    "srcPath": "ReliefSense"
   },
   "ReloadKeepAmmo": {
     "buffType": "Neutral",
@@ -7313,6 +7499,42 @@
     "name": "Beauty of the Physique",
     "srcPath": "RingFingerPhysical"
   },
+  "RisingMadnessNoir": {
+    "buffType": "Neutral",
+    "desc": "- Max Stack: 2\n- Turn End: Lose 1 Stack\n- Turn Start: At 0 Stack, apply the following effects:\n· Gain 1 Damage Up and 1 Fragile\n· Convert Coins on all Skills to Unbreakable Coins, starting from the final Coin (number of Coins converted on each Skill is equal to Preservation Potency on self)\n· Turn End: Restore this effect to Max Stack next turn",
+    "name": "Sunshine",
+    "srcPath": "RisingMadnessRouge"
+  },
+  "RisingMadnessNoir2nd": {
+    "buffType": "Neutral",
+    "desc": "- Max Stack: 1\n- Turn End: Lose 1 Stack\n- Turn Start: At 0 Stack, apply the following effects:\n· Gain 2 Power Up, 2 Damage Up, and 3 Fragile\n· Convert Coins on all Skills to Unbreakable Coins, starting from the final Coin (number of Coins converted on each Skill is equal to Preservation Potency on self)\n· Turn End: Restore this effect to Max Stack next turn",
+    "name": "Stinging Sunshine",
+    "srcPath": "RisingMadnessRouge2nd"
+  },
+  "RisingMadnessRouge": {
+    "buffType": "Neutral",
+    "desc": "- Max Stack: 2\n- Turn End: Lose 1 Stack\n- Turn Start: At 0 Stack, apply the following effects:\n· Gain 1 Damage Up and 1 Fragile\n· Convert Coins on all Skills to Unbreakable Coins, starting from the final Coin (number of Coins converted on each Skill is equal to Pulsation Potency on self)\n· Turn End: Restore this effect to Max Stack next turn",
+    "name": "Sunshine",
+    "srcPath": "RisingMadnessRouge"
+  },
+  "RisingMadnessRouge2nd": {
+    "buffType": "Neutral",
+    "desc": "- Max Stack: 1\n- Turn End: Lose 1 Stack\n- Turn Start: At 0 Stack, apply the following effects:\n· Gain 2 Power Up, 2 Damage Up, and 3 Fragile\n· Convert Coins on all Skills to Unbreakable Coins, starting from the final Coin (number of Coins converted on each Skill is equal to Pulsation Potency on self)\n· Turn End: Restore this effect to Max Stack next turn",
+    "name": "Stinging Sunshine",
+    "srcPath": "RisingMadnessRouge2nd"
+  },
+  "RisingMadnessSisyphe": {
+    "buffType": "Neutral",
+    "desc": "- Max Stack: 2\n- Turn End: Lose 1 Stack\n- Turn Start: At 0 Stack, apply the following effects:\n· Gain 1 Damage Up and 1 Fragile\n· Convert Coins on all Skills to Unbreakable Coins\n· Turn End: Restore this effect to Max Stack next turn",
+    "name": "Sunshine",
+    "srcPath": "RisingMadnessRouge"
+  },
+  "RisingMadnessSisyphe2nd": {
+    "buffType": "Neutral",
+    "desc": "- Max Stack: 1\n- Turn End: Lose 1 Stack\n- Turn Start: At 0 Stack, apply the following effects:\n· Gain 2 Power Up, 2 Damage Up, and 3 Fragile\n· Convert Coins on all Skills to Unbreakable Coins\n· Turn End: Restore this effect to Max Stack next turn",
+    "name": "Stinging Sunshine",
+    "srcPath": "RisingMadnessRouge2nd"
+  },
   "RootSoupKimPersonal": {
     "buffType": "Positive",
     "desc": "- When an ally, including this unit, takes HP damage, gain Growing Resentment equal to damage taken\n- In Memoriam Passive now ignores conditionals and activates at max potential\n- When activating Pride Reson., apply Swordplay of the Homeland - The True Essence on all Blade Lineage allies other than this unit\n\n- On Using \"Yield My Flesh\", until Skill End:\n· This unit's HP does not drop below 10 (once per turn)\n· Lose (Poise on self / 2) Clash Power (rounded down)\n- On Using \"To Claim Their Bones\", gain 4 Poise\n\n※ Sword of the Homeland - The True Essence effects:\n- Base Attack Skills gain Final Power +(# of Blade Lineage allies on the field / 3) (max 2, rounded down)\n- If this unit is a Blade Lineage Salsu, Base Skills gain Final Power +1 and deal +(120 / # of Coins)% damage\n- Turn End: Gain 1 Haste next turn and this effect expires",
@@ -7337,6 +7559,45 @@
     "desc": "- Max Potency: 10\n- Max Count: 4\n- Gain 1 Potency every time this unit takes 10 Bleed damage\n- When gaining Bleed or 'Unique Bleed' from getting hit, gain 2 Bleed and inflict 1 Bleed against the Attacker. (5 times per turn)\n· At 10 Potency, gain +1 Bleed Count as well when triggering the above effect.\n- Turn End: lose 1 Count\n- Combat End: at 10 Potency or 1 Count, this effect expires, and this unit takes (Potency x 10) Lust damage.\n- If the unit inflicted with this effect dies, or when this effect expires: increase Bloodfeast by (Potency x 10), and deal (Potency x 2) Lust damage against all of its allies (min 1)",
     "name": "Rose Wedge",
     "srcPath": "Rose Wedge"
+  },
+  "RougeIshmaelCocoon": {
+    "buffType": "Neutral",
+    "desc": "- Max Stack: 2\n- Fix this unit's Speed to 1\n- Take -50% damage from Skills\n- Immediately after gaining this effect, remove Stagger Thresholds; when Staggered, recover from Stagger\n- Turn Start: Gain 10 Aggro\n- When hit, gain +1 Pulsation Count (20 times per turn)\n- Turn End: Lose 1 Stack\n- Cannot Retreat\n- Cannot enter E.G.O Corrosion; instead, enters default Panic state (is affected by Panic-changing effects)\n- While in this state, aside from its exclusive Skill \"As the Voice Says, I Gladly Withdraw into Myself\", cannot equip Defense Skills or E.G.O Skills",
+    "name": "Changing Room",
+    "srcPath": "RougeIshmaelCocoon"
+  },
+  "RougeIshmaelEclose": {
+    "buffType": "Neutral",
+    "desc": "- Min & Max Speed +1\n- Max HP increased by 25%\n- Take -10% damage from Skills\n- Base Skills inflict +1 more Bleed Potency on enemies",
+    "name": "Full Makeover",
+    "srcPath": "RougeIshmaelEclose"
+  },
+  "RougeThreeCocoon": {
+    "buffType": "Neutral",
+    "desc": "- Max Stack: 3\n- Does not take HP damage\n- When hit, apply the following effects: (20 times per turn):\n· Gain +1 Pulsation Count\n· Gain 1 Damage Up\n· Gain 1 Defense Level Down next turn",
+    "name": "Changing Room",
+    "srcPath": "RougeThreeCocoon"
+  },
+  "RougeThreeCocoonHit": {
+    "buffType": "Neutral",
+    "desc": "- Max Stack: 20",
+    "name": "Persecution",
+    "srcPath": "RougeThreeCocoonHit"
+  },
+  "RougeThreeCocoonShield": {
+    "buffType": "Positive",
+    "categoryKeywordList": [
+      "SHIELD_MANAGER"
+    ],
+    "desc": "- Turn Start: Gain Shield equal to Stack\n- Lose Stack when losing Shield",
+    "name": "Devotion",
+    "srcPath": "RougeThreeCocoonShield"
+  },
+  "RougeThreeNormal": {
+    "buffType": "Neutral",
+    "desc": "- Max Stack: 20\n\nOn Skill Use, consume 1% of max HP on self to deal +(HP consumed) Skill damage",
+    "name": "Boutique: New Releases",
+    "srcPath": "RougeThreeNormal"
   },
   "RunHallway": {
     "buffType": "Neutral",
@@ -7460,11 +7721,53 @@
     "name": "Responsibility",
     "srcPath": "Responsibility"
   },
+  "SapsareeCooking": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 5\n- Expires at Turn End",
+    "name": "Chopped Ingredients",
+    "srcPath": "SapsareeCooking"
+  },
+  "SapsareeHungry": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 3\n- Offense Level +1 for every Stack\n- At 3 Stacks, deal +50% damage\n- Expires when Sous Chef uses the \"Aah! I'm on lunch break, you hear?\" Skill",
+    "name": "Got an appetite, you hear?",
+    "srcPath": "SapsareeHungry"
+  },
+  "SapsareeShield": {
+    "buffType": "Positive",
+    "categoryKeywordList": [
+      "SUPPORTIVE_PROTECT"
+    ],
+    "desc": "- When Sous Chef is about to take an Unopposed Attack from an enemy, consume 1 Stack to redirect the enemy's targeting to self; then use Assist Defense-exclusive Skill\n- When there are multiple allies that have Assist Defense Stacks, the ally that has the highest Stack has the highest activation priority\n- This effect counts as Assist Defense, and is counted toward calculating Assist Defense Stacks\n- Expires at Turn End",
+    "name": "Please, eat me...",
+    "srcPath": "SapsareeShield"
+  },
+  "SapsareeSpices": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 3\n- Offense Level -1 for every Stack",
+    "name": "Fiery, Tongue-scorching Sauce",
+    "srcPath": "SapsareeSpices"
+  },
+  "SapsareeYammi": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 5\n- Offense Level +1 for every Stack\n- Turn Start: Lose 1 Stack for every \"Got an appetite, you hear?\" on self",
+    "name": "Eat yummies and perk up, you hear?",
+    "srcPath": "SapsareeYammi"
+  },
   "SatisfyingEsteemNeeds": {
     "buffType": "Positive",
     "desc": "- Deal +7.5% damage with Skills marked with Mark of the Prescript\n- Deal +7.5% damage against The Prescript's Targets",
     "name": "Desire for Acknowledgement Sated",
     "srcPath": "SatisfyingEsteemNeeds"
+  },
+  "SavePlacenta": {
+    "buffType": "Positive",
+    "categoryKeywordList": [
+      "SUPPORTIVE_PROTECT"
+    ],
+    "desc": "- When Lifecord is about to take an Unopposed Attack from an enemy, consume 1 Stack to redirect the enemy's targeting to the Body; then, use Assist Defense-exclusive Skill\n- Turn End: This effect expires",
+    "name": "Self-preservation",
+    "srcPath": "SavePlacenta"
   },
   "Scared": {
     "buffType": "Negative",
@@ -7493,7 +7796,8 @@
   "ScarletResistDown": {
     "buffType": "Negative",
     "desc": "Increase Lust Resistance based on Stack.\n(0.1 per Stack)",
-    "name": "Lust Resist Down"
+    "name": "Lust Resist Down",
+    "srcPath": "ScarletResistDown"
   },
   "ScarletResistUp": {
     "buffType": "Positive",
@@ -7582,7 +7886,8 @@
   "ShamrockResistDown": {
     "buffType": "Negative",
     "desc": "Increase Gluttony Resistance based on Stack.\n(0.1 per Stack)",
-    "name": "Gluttony Resist Down"
+    "name": "Gluttony Resist Down",
+    "srcPath": "ShamrockResistDown"
   },
   "ShamrockResistUp": {
     "buffType": "Positive",
@@ -7714,6 +8019,42 @@
     "name": "Swig (眞)",
     "srcPath": "Swig (眞)"
   },
+  "SisyphusAmber": {
+    "buffType": "Positive",
+    "desc": "- Skills inflict 1 more Burn, Bleed, Tremor, Rupture, and Sinking Potency against enemies\n- Gain +1 more Count when gaining Charge Count and Poise Count",
+    "name": "Amber",
+    "srcPath": "SisyphusAmber"
+  },
+  "SisyphusAmethyst": {
+    "buffType": "Positive",
+    "desc": "- Skills inflict 1 more Burn, Bleed, Tremor, Rupture, and Sinking Potency against enemies",
+    "name": "Amethyst",
+    "srcPath": "SisyphusAmethyst"
+  },
+  "SisyphusEmerald": {
+    "buffType": "Positive",
+    "desc": "- Skills inflict 1 more Burn, Bleed, Tremor, Rupture, and Sinking Potency against enemies\n- Gain +1 more Count when gaining Charge Count and Poise Count\n- Gain +10 Charge Count when gaining this effect (once per Encounter)",
+    "name": "Emerald",
+    "srcPath": "SisyphusEmerald"
+  },
+  "SisyphusGold": {
+    "buffType": "Positive",
+    "desc": "- Skills inflict 1 more Burn, Bleed, Tremor, Rupture, and Sinking Potency against enemies\n- Gain +1 more Count when gaining Charge Count and Poise Count\n- Gain +10 Charge Count when gaining this effect (once per Encounter)\n- Clash Power +1",
+    "name": "Gold",
+    "srcPath": "SisyphusGold"
+  },
+  "SisyphusRuby": {
+    "buffType": "Positive",
+    "desc": "- Skills inflict 1 more Burn, Bleed, Tremor, Rupture, and Sinking Potency against enemies\n- Gain +1 more Count when gaining Charge Count and Poise Count\n- Gain +10 Charge Count when gaining this effect (once per Encounter)\n- Clash Power +1\n- Final Power +1",
+    "name": "Ruby",
+    "srcPath": "SisyphusRuby"
+  },
+  "SisyphusTopaz": {
+    "buffType": "Positive",
+    "desc": "- No effect",
+    "name": "Topaz",
+    "srcPath": "SisyphusTopaz"
+  },
   "SkillPowerUp": {
     "buffType": "Positive",
     "desc": "Raise the Base Power of Skills by the effect's Count.",
@@ -7760,6 +8101,14 @@
     "desc": "Take more damage from Slash skills based on the effect’s Count for one turn. (Max 10)",
     "name": "Slash Fragility",
     "srcPath": "Slash Fragility"
+  },
+  "SlaveHunersPower": {
+    "buffType": "Positive",
+    "categoryKeywordList": [
+      "IGNORE_CHECED_CORRECTION_EXCLUSION"
+    ],
+    "desc": "- Base Offense Level +5\n- Base Defense Level +5",
+    "name": "Prisoner Transport Order"
   },
   "Smoke": {
     "buffType": "Negative",
@@ -8614,6 +8963,12 @@
     "name": "Unlock - III",
     "srcPath": "Unlock - III"
   },
+  "UnresolvedFeelings": {
+    "buffType": "Neutral",
+    "desc": "- Max Stack: 30\n- Gain Defense Level equal to Stack\n- When hit by target that has \"Gratitude for Listening\", lose Stack equal to \"Gratitude for Listening\" (2 times per turn per Identity)\n- On Clash Lose using the \"Thank you... for listening...\" Skill, lose 5 Stacks",
+    "name": "Layered Patchwork",
+    "srcPath": "UnresolvedFeelings"
+  },
   "UnstableFeeling": {
     "buffType": "Neutral",
     "desc": "- On Hit, inflict 1 Burn\n- If the main target has Burn, Final Power +1\n- When hit, if this unit had a Defense Skill chained at Combat Start, inflict Burn against the attacker for the turn\n- Turn End: lose (# of turns spent in Volatile E.G.O state x 5) SP. (Max SP loss : 40)",
@@ -8915,6 +9270,12 @@
     "desc": "- SP Units: change their Panic Type to \"Ruin\".\n(Ruin: When this unit enters Low Morale state, gain 3 Sinking at every Turn End and lose 1 Clash Power. When this unit Panics, gain 5 Sinking and 3 Sinking Count at every Turn End and lose 2 Clash Power)\n- Non-SP Units: -10% chance to flip Heads\n- Reduced by 1 at Turn End\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value.\n※ Apply the \"Non-SP Units\" conditional to certain enemies that have SP but can't change their Panic Types.",
     "name": "Impending Ruin",
     "srcPath": "Impending Ruin"
+  },
+  "Wariness": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 10\n- Lose Offense Level and Defense Level equal to Stack\n- If this unit loses a Clash, lose 3 Stacks",
+    "name": "Guarded Caution",
+    "srcPath": "Wariness"
   },
   "WaterPocket": {
     "buffType": "Positive",
