@@ -1,0 +1,142 @@
+{
+  "name": "Level 63 - Pierce",
+  "siteId": "9274b718-b878-41eb-825c-b09373363cec",
+  "targets": [
+    {
+      "name": "Le Noir Sales Associate [Sunshone]",
+      "num": 12,
+      "passives": [
+        {
+          "desc": "Upon entering the Encounter for the first time, gain 5 [NoirBindArmor]\n\nTurn Start: Gain Shield equal to (10 + [NoirBindArmor] Stack)% of this unit's max HP",
+          "name": "Le Noir: Fabric"
+        },
+        {
+          "desc": "Gain 1 [NoirBindArmor] for every 5 cumulative [ChargeNoir] Count this unit consumes in this Encounter\nGain 1 [ChargeNoir] for every 10 cumulative [ChargeNoir] Count this unit consumes in this Encounter",
+          "name": "Preservation"
+        },
+        {
+          "desc": "Turn Start: At 10+ [ChargeNoir] Count, use a powerful Skill\n\nOn Skill Use, at 15+ [ChargeNoir] Count, consume 3 [ChargeNoir] Count to deal +20% damage",
+          "name": "Change for Inertness"
+        },
+        {
+          "desc": "Upon entering the Encounter for the first time, gain 2 [RisingMadnessNoir]\n- Turn Start: When this unit's HP drops below 50% for the first time in this Encounter, convert [RisingMadnessNoir] into [RisingMadnessNoir2nd]\n\nOn Clash Lose, gain +2 [ChargeNoir] Count",
+          "name": "I hear it... the Voice of another god...!"
+        }
+      ],
+      "portrait": "91066",
+      "resists": {
+        "blunt": 0.75,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 2.0,
+        "pride": 1,
+        "slash": 0.5,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "skills": [
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [ChargeNoir] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse]\n- If target has 6+ [Vibration], Coin Power +1\n- At 10+ [ChargeNoir] Count, Coin Power +1\n\n[WhenUse] Gain +2 [ChargeNoir] Count",
+          "levelCorrection": 1,
+          "name": "Don't touch me...!"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [ChargeNoir] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse]\n- If target has 6+ [Vibration], Coin Power +1\n- At 10+ [ChargeNoir] Count, Coin Power +1\n\n[WhenUse] Gain +4 [ChargeNoir] Count",
+          "levelCorrection": 1,
+          "name": "Get your hands off me...!"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +4% damage for every [ChargeNoir] Potency on self (max 20%)\n\n[WhenUse] At 10+ [ChargeNoir] Count, consume 10 [ChargeNoir] Count to gain Coin Power +1 and deal +20% damage",
+          "levelCorrection": 2,
+          "name": "We shouldn't be doing anything...!"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2770 @@
+{
+  "battles": [
+    {
+      "targets": [
+        {
+          "name": "Le Rouge Sales Associate Mimosa",
+          "parts": [
+            {
+              "breakSection": [
+                20
+              ],
+              "defCorrection": 12,
+              "hp": {
+                "base": 313,
+                "level": 10.79
+              },
+              "name": "Body",
+              "partId": 149401,
+              "resists": {
+                "blunt": 0.8,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1.25,
+                "lust": 1.5,
+                "pierce": 1.2,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Upon entering the Encounter for the first time, gain 10 [ChargeRouge] Count\n\nGain 1 [ChargeRouge] for every 10 cumulative [ChargeRouge] Count this unit consumes in this Encounter",
+              "name": "Metabolic Action and Reaction"
+            },
+            {
+              "desc": "Turn End: Gain or lose up to 10 [ChargeRouge] Count\n\nWhen hit, if the attacker used Skills that gain [Charge], transfer 1 [ChargeRouge] Count as [Charge] Count to the attacker (once per the attacker's Skill)\nGain 1 [AttackUp] every time the effect above activates\nTurn Start: Consume up to 5 excess [ChargeRouge] Count beyond 15 on self to heal ([ChargeRouge] Count consumed)% HP",
+              "name": "Le Rouge: Jacket"
+            },
+            {
+              "desc": "Skills deal +1% damage for every [ChargeRouge] Potency on self (max 10%)\n\nOn Skill Use, if this unit has less than 50% HP, the said Skill gains +2 more [ChargeRouge] Count\nSkills deal +1% damage for every 1% missing HP on self",
+              "name": "Myofiber Denim"
+            }
+          ],
+          "portrait": "1494",
+          "skills": [
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [ChargeRouge] Count",
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +6 [ChargeRouge] Count",
+              "levelCorrection": 1,
+              "name": "Stitching"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [ChargeRouge] Count",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Vulnerable]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +4 [ChargeRouge] Count",
+              "levelCorrection": 2,
+              "name": "Stamping"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 4 [Laceration]",
+                    "[OnSucceedAttack] Gain +2 [ChargeRouge] Count",
+                    "[OnSucceedAttack] Heal HP on self equal to this Coin's final damage"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 4 [Laceration]",
+                    "[OnSucceedAttack] Gain +2 [ChargeRouge] Count",
+                    "[OnSucceedAttack] Heal HP on self equal to this Coin's final damage"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 4 [Laceration]",
+                    "[OnSucceedAttack] Gain +2 [ChargeRouge] Count",
+                    "[OnSucceedAttack] Heal HP on self equal to this Coin's final damage"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] At lower than 50% HP, convert all Coins in this Skill to [SuperCoin]s\n[DefeatDuel] Damage dealt by this Skill cannot Stagger the target\n[EndSkill] Consume 3 [ChargeRouge] Count on self to heal 30 HP",
+              "levelCorrection": 3,
+              "name": "Triple Stitching"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 7,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 4 [Laceration] and +2 [Laceration] Count",
+                    "[UnBrokenCoinOnSucceedAttack] Heal HP on self equal to this Coin's final damage (max 100 HP per Skill)",
+                    "[OnSucceedAttack] Consume 3 [ChargeRouge] Count on self to Reuse this Coin (max 3 times)",
+                    "[ReUseOnSucceedAttack] Activate [Laceration] on target. Target loses 1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] At lower than 50% HP, convert all Coins in this Skill to [SuperCoin]s, gain 3 [DefenseDown], and +6 [ChargeRouge] Count\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target\n[WhenUse] This Skill deals +10% damage for every [ChargeRouge] on self (max 30%)",
+              "levelCorrection": 5,
+              "name": "Aggressive Marketing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Le Noir Sales Associate Gustave",
+          "parts": [
+            {
+              "breakSection": [
+                40
+              ],
+              "defCorrection": 5,
+              "hp": {
+                "base": 417,
+                "level": 17.26
+              },
+              "name": "Body",
+              "partId": 146501,
+              "resists": {
+                "blunt": 1.2,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 0.8,
+                "sloth": 1.5,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Encounter Start: Gain 5 [NoirBindArmor]\nTurn Start: Gain Shield equal to ([NoirBindArmor] Stack)% of this unit's max HP",
+              "name": "Le Noir: Fabric"
+            },
+            {
+              "desc": "Deal +10% damage to and take +10% damage from target for every [NoirNoComply] on target\nDeal +200% damage to targets that have 3 [NoirNoComply]",
+              "name": "Ushering Customers"
+            },
+            {
+              "desc": "Gain 1 [NoirBindArmor] for every 3 cumulative [ChargeNoir] Count this unit consumes in this Encounter\nGain 1 [ChargeNoir] for every 10 cumulative [ChargeNoir] Count this unit consumes in this Encounter",
+              "name": "Preservation"
+            }
+          ],
+          "portrait": "1465",
+          "skills": [
+            {
+              "affinity": "envy",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +3 [ChargeNoir] Count next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Vibration] Count",
+                    "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +7 [ChargeNoir] Count",
+              "levelCorrection": 2,
+              "name": "Right this way for the shirts."
+            },
+            {
+              "affinity": "envy",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +3 [ChargeNoir] Count next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Vibration]",
+                    "[OnSucceedAttack] Inflict 2 [Reduction] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +4 [ChargeNoir] Count",
+              "levelCorrection": 2,
+              "name": "The slacks display is right here."
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 7,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [NoirNoComply]",
+                    "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                    "[OnSucceedAttack] Consume 5 [Charge] Count to trigger [VibrationExplosion]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantChangeTarget]\n<color=#ff6000><mark=#ff000040><b><u>If target has equipped Defense Skills, cancel this Skill</u></b></mark></color>\n[WhenUse] Deal +10% damage for every [ChargeNoir] on self (max 50%)",
+              "levelCorrection": 3,
+              "name": "I'm afraid this item cannot be tried on, Dear Customer."
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [NoirNoComply]",
+                    "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                    "[OnSucceedAttack] Consume 5 [Charge] Count to trigger [VibrationExplosion]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantChangeTarget]\n[StartBattle] <color=#ff6000><mark=#ff000040><b><u>If target has equipped Defense Skills, convert all Coins in this Skill to [SuperCoin]s and gain Final Power +5</u></b></mark></color>\n[WhenUse] Deal +10% damage for every [ChargeNoir] on self (max 50%)",
+              "levelCorrection": 3,
+              "name": "Please, feel free to try something on, Dear Customer."
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target has equipped Attack Skills, inflict 1 [NoirNoComply]",
+                    "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                    "[OnSucceedAttack] Consume 5 [ChargeNoir] Count to trigger [VibrationExplosion]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantChangeTarget]\n[StartBattle] <color=#ff6000><mark=#ff000040><b><u>If target has equipped Attack Skills, convert all Coins in this Skill to [SuperCoin]s and gain Final Power +5</u></b></mark></color>\n[WhenUse] Deal +10% damage for every [ChargeNoir] on self (max 50%)",
+              "levelCorrection": 3,
+              "name": "Please take care not to damage the merchandise."
+            },
+            {
+              "affinity": "pride",
+              "atkType": "blunt",
+              "atkWeight": 7,
+              "baseValue": 7,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] If target has equipped Defense Skills, target loses 1 [NoirNoComply]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] If target has not equipped Defense Skills, deal +([NoirNoComply] on target x 100)% damage, respectively",
+              "levelCorrection": 4,
+              "name": "Excuse me! Please try not to wrinkle the clothes!"
+            },
+            {
+              "affinity": "pride",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] If the Skill Slot using this Skill is a main target of 3 or more Skills, lose 3 [NoirBindArmor] and gain 2 [Enhancement] next turn",
+              "levelCorrection": 3,
+              "name": "We don't have that item in your size. Allow me to check the stocks with the head office."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Four-legs",
+          "parts": [
+            {
+              "breakSection": [
+                40,
+                0
+              ],
+              "defCorrection": 2,
+              "hp": 1452.6,
+              "name": "Body",
+              "partId": 148201,
+              "resists": {
+                "blunt": 1.2,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1.25,
+                "pierce": 1.2,
+                "pride": 1,
+                "slash": 1.2,
+                "sloth": 1.5,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Encounter Start: Gain 3 [NoirBindArmor]\n\nTurn Start: Gain Shield equal to ([NoirBindArmor] Stack)% of this unit's max HP (unless Staggered)",
+              "name": "Le Noir: Fabric"
+            },
+            {
+              "desc": "Gain 1 [NoirBindArmor] for every 3 cumulative [ChargeNoir] Count this unit consumes in this Encounter\nGain 1 [ChargeNoir] for every 10 cumulative [ChargeNoir] Count this unit consumes in this Encounter\n\nAt 3+ [ChargeNoir] Potency, max [ChargeNoir] Count +5",
+              "name": "Preservation"
+            },
+            {
+              "desc": "Turn Start: At 3+ [ChargeNoir] Potency and 10+ [ChargeNoir] Count, use a powerful Skill",
+              "name": "Unleash the Condensed"
+            },
+            {
+              "desc": "If this unit has Shield, gain +1 [ChargeNoir] Count when hit by a Sinner (once per Skill, 3 times per turn)\n- At 3+/5+ [ChargeNoir] Potency, gain +2/+3 [ChargeNoir] Count instead\n\nTurn End: If this unit has Shield,\nGain +1 [ChargeNoir] Count and 1 [DefenseUp] next turn for every [ChargeNoir] Potency on self (max 3 each)",
+              "name": "Conservation-Conversion Paradox"
+            }
+          ],
+          "portrait": "1482",
+          "skills": [
+            {
+              "affinity": "gloom",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Vibration]",
+                    "[OnSucceedAttack] Gain +1 [ChargeNoir] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Vibration]",
+                    "[OnSucceedAttack] Gain +1 [ChargeNoir] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse]\n- Final Power +1 for every 4 [Vibration] on target (max 3)\n- At 8+ [ChargeNoir] Count, Coin Power +1\n[WhenUse] At fewer than 15 [ChargeNoir] Count, gain +2 [ChargeNoir] Count",
+              "levelCorrection": 0,
+              "name": "Clip-clop"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Vibration] and +2 [Vibration] Count",
+                    "[OnSucceedAttack] Gain +3 [ChargeNoir] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [ChargeNoir] Count",
+                    "[OnSucceedAttack] At 15+ [ChargeNoir] Count, consume 3 [ChargeNoir] Count to trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse]\n- Final Power +1 for every 4 [Vibration] on target (max 3)\n- At 8+ [ChargeNoir] Count, Coin Power +1\n[WhenUse]\n- Gain +3 [ChargeNoir] Count\n- At 3+ [ChargeNoir], convert the final coin to [SuperCoin]",
+              "levelCorrection": 1,
+              "name": "Clip-clop, Buck!"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 2,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Vibration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                    "[OnSucceedAttack] If this Skill consumed [ChargeNoir] Count, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Can Clash with this Skill regardless of Speed\n[WhenUse]\n- At 10+ [ChargeNoir] Count, consume 10 [ChargeNoir] Count to gain Base Power +1 and Coin Power +1\n- At fewer than 10 [ChargeNoir] Count, gain +5 [ChargeNoir] Count\n- At 3+ [ChargeNoir], convert all Coins on this Skill to [SuperCoin]s",
+              "levelCorrection": 2,
+              "name": "Please, cut them off! I beg you!"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 3,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WideAreaRampage]\nDeal +3% damage for every [ChargeNoir] on self (max 15%)\nOn Hit, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count\n[StartBattle] Gain ([ChargeNoir] on self - 2) [NoirBindArmor] (max 3)\n[WhenUse]\n- Inflict 3 [Vibration] and +3 [Vibration] Count on all targets\n- At 10+ [ChargeNoir] Count, consume 10 [ChargeNoir] Count to gain Base Power +2 and Coin Power +2\n[DefeatDuel]\n- Deal -50% damage\n- Damage and effects caused by this Skill cannot Stagger the target",
+              "levelCorrection": 4,
+              "name": "Clippety-clop, what an awful sound..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "One-leg",
+          "parts": [
+            {
+              "breakSection": [
+                40,
+                0
+              ],
+              "defCorrection": 2,
+              "hp": 1452.6,
+              "name": "Body",
+              "partId": 148301,
+              "resists": {
+                "blunt": 1,
+                "envy": 0.75,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1.25,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 0.8,
+                "sloth": 1.5,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Encounter Start: Gain 30 [NoirSuit]\n\nTurn Start: Gain Shield equal to ([NoirSuit] / 5)% of this unit's max HP (unless Staggered)",
+              "name": "Le Noir: Gabardine Fabric"
+            },
+            {
+              "desc": "Gain 1 [ChargeNoir] Potency for every 10 cumulative [ChargeNoir] Count this unit consumes in this Encounter\n\nAt 3+ [ChargeNoir] Potency, max [ChargeNoir] Count +5",
+              "name": "Preservation"
+            },
+            {
+              "desc": "Turn Start: If this unit has [Realisation], activate \"Single Kick\" as \"Single Kick - Couture Multiple\" instead\n\nWhen triggering [VibrationExplosion], apply +20% to Stagger Threshold raised by [VibrationExplosion]\n- At 12+ [ChargeNoir] Count, when triggering [VibrationExplosion], consume 1 [ChargeNoir] Count on self and instead apply +40% to Stagger Threshold raised by [VibrationExplosion] (per-target)\n\nWhen triggering [VibrationExplosion], if target does not have a Stagger threshold, deal fixed damage equal to [DefenseUp] Stack on self (max 20)",
+              "name": "Feedback"
+            },
+            {
+              "desc": "If this unit has Shield, when hit by a Sinner,\n- Inflict 1 [Vibration] on the Sinner (once per Skill)\n- Gain +1 [ChargeNoir] Count (once per Skill, 3 times per turn)\n  · At 3+/5+ [ChargeNoir] Potency, gain +2/+3 [ChargeNoir] Count instead\n\nTurn End: If this unit has Shield,\nGain +1 [ChargeNoir] Count and 2 [DefenseUp] next turn for every [ChargeNoir] Potency on self (max 3, max 6 respectively)",
+              "name": "Paradox of the Conservation-Conversion Paradox"
+            }
+          ],
+          "portrait": "1483",
+          "skills": [
+            {
+              "affinity": "gloom",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Vibration]",
+                    "[OnSucceedAttack] Gain +1 [ChargeNoir] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Vibration] and +1 [Vibration] Count",
+                    "[OnSucceedAttack] Gain +1 [ChargeNoir] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] At 50+ [NoirSuit], gain 1 Defense Level Up\n[WhenUse] If this unit has [Realisation]:\n- Deal +([ChargeNoir] Potency on self x 8)% damage (max 40%)\n- Consume 4 [Realisation]\n[WhenUse] At 12+ [ChargeNoir] Count, consume 2 [ChargeNoir] Count to gain Clash Power +1\n[WhenUse] At fewer than 10 [ChargeNoir] Count, gain +2 [ChargeNoir] Count",
+              "levelCorrection": 1,
+              "name": "Revolting Thing!"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Vibration] and +2 [Vibration] Count",
+                    "[OnSucceedAttack] Gain +2 [ChargeNoir] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +1 [ChargeNoir] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] At 3+ [ChargeNoir] Potency, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If this unit has [NoirSuit]:\n- Gain 1 [DefenseUp] for every 40 Stack (max 2)\n[WhenUse] If this unit has [Realisation]:\n- Deal +([ChargeNoir] Potency on self x 6)% damage (max 30%)\n- Consume 6 [Realisation]\n[WhenUse] At 12+ [ChargeNoir] Count, consume 2 [ChargeNoir] Count to gain Final Power +1\n[WhenUse] At fewer than 15 [ChargeNoir] Count, gain +3 [ChargeNoir] Count",
+              "levelCorrection": 2,
+              "name": "Aren't you ashamed of that extra leg?"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Vibration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                    "[OnSucceedAttack] If this Skill consumed [ChargeNoir] Count, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Can Clash with this Skill regardless of Speed\n[WhenUse] If this unit has [NoirSuit], Clash Power +1 for every 30 Stack (max 3)\n[WhenUse] If this unit has [Realisation], deal +1% damage for every 2 Stack (max 50%)\n[WhenUse]\n- At 10+ [ChargeNoir] Count, consume 10 [ChargeNoir] Count to gain Coin Power +2\n- At fewer than 10 [ChargeNoir] Count, gain +5 [ChargeNoir] Count\n[DefeatDuel]\n- Deal -50% damage\n- Raise this unit's Stagger Threshold equal to its [DefenseUp] Stack",
+              "levelCorrection": 2,
+              "name": "I'll cut that one off You. Consider it a mercy."
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [Vibration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "Deal +5% damage for every [DefenseUp] on self (max 100%)",
+                    "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                    "[UnBrokenCoinOnSucceedAttack] At 3+/5+ [ChargeNoir] Potency, trigger [VibrationExplosion] once/twice; then, reduce target's [Vibration] Count by 1/2"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If this unit has [NoirSuit]:\n- Deal +1% damage for every 3 Stack (max 30%)\n- Gain 1 [DefenseUp] for every 15 Stack (max 5)\n[WhenUse] At 10+ [ChargeNoir], consume 10 [ChargeNoir] Count to gain Coin Power +2\n- At 50% or lower HP, additionally consume up to 10 remaining [ChargeNoir] Count and deal +(additionally consumed [ChargeNoir] Count x 2.5)% damage (max 25%)\n[WhenUse] At 3+/5+ [ChargeNoir] Potency, Coin Power +1/+2\n[DefeatDuel]\n- Deal -75% damage\n- Damage and effects caused by this Skill cannot Stagger the target",
+              "levelCorrection": 4,
+              "name": "Single Kick"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [Vibration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                    "[UnBrokenCoinOnSucceedAttack] At 3+/5+ [ChargeNoir] Potency, trigger [VibrationExplosion] once/twice; then, reduce target's [Vibration] Count by 1/2",
+                    "[UnBrokenCoinOnSucceedAttack] Deal (20% of this Coin's final damage) Pierce damage"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If this unit has [Realisation]:\n- Deal +1% damage for every 2 Stack (max 50%)\n- Deal +([ChargeNoir] Potency on self x 6)% damage (max 30%)\n- Consume 15 [Realisation]\n[WhenUse] At 10+ [ChargeNoir] Count, consume 10 [ChargeNoir] Count to gain Final Power +2 and Coin Power +1\n[WhenUse] At 3+/5+ [ChargeNoir] Potency, Coin Power +1/+2\n[DefeatDuel]\n- Deal -75% damage\n- Damage and effects caused by this Skill cannot Stagger the target",
+              "levelCorrection": 5,
+              "name": "Single Kick - Couture Multiple"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "3F Floor Manager",
+          "parts": [
+            {
+              "breakSection": [
+                40
+              ],
+              "defCorrection": 0,
+              "hp": {
+                "base": 313,
+                "level": 64.76
+              },
+              "name": "Body",
+              "partId": 148101,
+              "resists": {
+                "blunt": 0.9,
+                "envy": 1,
+                "gloom": 0.75,
+                "gluttony": 1.25,
+                "lust": 1.5,
+                "pierce": 0.9,
+                "pride": 0.75,
+                "slash": 0.9,
+                "sloth": 1,
+                "wrath": 1.25
+              },
+              "speed": [
+                1,
+                2
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Encounter Start: Gain 30 [UnresolvedFeelings]\nAt 50% or lower HP, convert a Skill used in a certain pattern into a powerful Skill",
+              "name": "Patchwork"
+            },
+            {
+              "desc": "Turn Start: Activate the effects below\n<color=#ff6000><mark=#ff000040><b><u>-If 1 or more Sinners have 10 [Wariness], gain an Attack Slot and equip the \"Warning Announcement\" Skill on the said Slot</u></b></mark></color>\n- Apply 1 [Wariness] on all Sinners that do not have [ReliefSense]\n- Gain 1 [HorribleEat] for every Identity that has [HorribleTerror]\n\n<color=#ff6000><mark=#ff000040><b><u>When hit by a Sinner's Skill:</u></b></mark></color>\nAt Attack End of the said Skill, <color=#ff6000><mark=#ff000040><b><u>apply [Wariness]</u></b></mark></color> on the said Sinner equal to the number of times this unit was hit by that Skill",
+              "name": "Cautionary Inspection"
+            },
+            {
+              "desc": "Turn Start: <color=#ff6000><mark=#ff000040><b><u>-If 1 or more Sinners have 3 [ReliefSense], gain an Attack Slot and equip the \"Thank you... for listening...\" Skill on the said Slot</u></b></mark></color>",
+              "name": "Gratitude"
+            },
+            {
+              "desc": "Deal +200% damage to targets that are in Panic",
+              "name": "Expunge the Panicked"
+            }
+          ],
+          "portrait": "1481",
+          "skills": [
+            {
+              "affinity": "pride",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "<color=#ff6000><mark=#ff000040><b><u>[UnBrokenCoinOnSucceedAttack] Remove all [Wariness] on target and apply 1 [ReliefSense] (once per Sinner per turn)</u></b></mark></color>"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "In a Clash against a Clashable Defense Skill, Clash Power +20\nThis Skill does not trigger the target's Defense Skill\nThis Skill deals 0 damage\n<color=#ff6000><mark=#ff000040><b><u>[DefeatDuel] Inflict 10 [Wariness] on target</u></b></mark></color>",
+              "levelCorrection": -3,
+              "name": "Customer Announcement"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Deal (target's SP + 45) SP damage; then, inflict 1 [HorribleTerror] next turn</u></b></mark></color>"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantChangeTarget]\n- Any Sinner that has the same [Wariness] Stack as the targeted Sinner can draw this Skill to itself regardless of Speed\nPrioritizes targets that have the highest [Wariness] Stack\nThis Skill does not trigger the target's Defense Skill\n[EndSkill] Consume all [Wariness] on target",
+              "levelCorrection": 4,
+              "name": "Warning Announcement"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantChangeTarget]\n- Any Sinner that has the same [ReliefSense] Stack as the targeted Sinner can draw this Skill to itself regardless of Speed\nPrioritizes targets that have the highest [ReliefSense] Stack\n[DefeatDuel] Take +150% damage from the Skill that Clashed with this Skill\n[EndSkill] Remove all [ReliefSense] on target",
+              "levelCorrection": 0,
+              "name": "Thank you... for listening..."
+            },
+            {
+              "affinity": "envy",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Vibration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 ([Vibration] + [Sinking]) on target (max 3)\n[WhenUse] At lower than 50% HP, gain the following effects:\n- This Skill inflicts +2 more [Vibration] Potency and Count\n- Convert the final Coin to [SuperCoin]; On Hit, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+              "levelCorrection": 1,
+              "name": "Onrush"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Vibration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 ([Vibration] + [Sinking]) on target (max 3)\n[WhenUse] At lower than 50% HP, gain the following effects:\n- This Skill inflicts +2 more [Vibration] Potency and Count\n- Convert the second and third Coins to [SuperCoin]s; On Hit using the second Coin, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+              "levelCorrection": 2,
+              "name": "Crushing Onrush"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict [Sinking] equal to [UnresolvedFeelings] (max 15)"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantChangeTarget]\nPrioritizes targets that are in Panic\nSinners that have [ReliefSense] can draw this Skill to itself\n[WhenUse] If target does not have [ReliefSense], gain +2 Atk Weight\n[WhenUse] Final Power +1 for every 4 ([Vibration] + [Sinking]) on the main target (max 4)\n[DefeatDuel] Gain the Following effects:\n- Deal -50% damage\n- Damage dealt by this Skill cannot Stagger the target; On Hit, does not activate [Sinking] effect on target",
+              "levelCorrection": 2,
+              "name": "Floorwide Echo"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 7,
+              "baseValue": 6,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict ([UnresolvedFeelings] / 3) [Sinking] (max 10)",
+                    "[ReUseOnSucceedAttack] If target does not have [ReliefSense], inflict 1 [Wariness]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Can Clash with this Skill regardless of Speed\n[StartBattle] Gain 100 Shield\n- Gain 4 more Shield for every 1% missing HP (max 200)\n- Before Attack, if Shield is not broken, Reuse final Coin once for every 100 remaining Shield (max 2 times)\n[WhenUse] Final Power +1 and Coin Power +1 for every 6 ([Vibration] + [Sinking]) on the main target (max 4 each)\n[DefeatDuel] Gain the following effects:\n- Deal -75% damage\n- Damage dealt by this Skill cannot Stagger the target; On Hit, does not activate [Sinking] effect on target",
+              "levelCorrection": 3,
+              "name": "WHUMP! THUMP! KRA-KOOM!"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict +3 [Sinking] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict [Sinking] equal to [UnresolvedFeelings] (max 15)"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict [Sinking] equal to [UnresolvedFeelings] (max 15)"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantChangeTarget]\nPrioritizes targets that are in Panic\nSinners that have [ReliefSense] can draw this Skill to itself\nThis Skill does not trigger the target's Defense Skill\nCan Clash with this Skill regardless of Speed\n[WhenUse] Gain +3 Atk Weight\n- Reduce Atk Weight gain by 1 for every 1 [ReliefSense] on the main target\n[WhenUse] Gain the following effects:\n- Final Power +1 for every 4 ([Vibration] + [Sinking]) on the main target (max 4)\n- Clash Power +1 for every 3 [Wariness] on the main target (max 3)\n- Deal +([Wariness] on target x 10)% damage (max 100%; calculated separately for each target)\n[DefeatDuel] Gain the following effects:\n- Deal -50% damage\n- Damage dealt by this Skill cannot Stagger the target; On Hit, does not activate [Sinking] effect on target",
+              "levelCorrection": 4,
+              "name": "Floorwide Echo"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 7,
+              "baseValue": 8,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict ([UnresolvedFeelings] / 2) [Sinking] (max 15)",
+                    "[ReUseOnSucceedAttack] If target does not have [ReliefSense], inflict 1 [Wariness]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "This Skill does not trigger the target's Defense Skill\nCan Clash with this Skill regardless of Speed\n[StartBattle] Gain 100 Shield\n- Gain 4 more Shield for every 1% missing HP (max 400)\n- Before Attack, if Shield is not broken, Reuse final Coin once for every 100 remaining Shield (max 3 times)\n[WhenUse] Gain the following effects:\n- Final Power +1 and Coin Power +1 for every 6 ([Vibration] + [Sinking]) on the main target (max 4 each)\n- Clash Power +1 for every 2 [Wariness] on the main target (max 5)\n- Deal +([Wariness] on target x 10)% damage (max 100%; calculated separately for each target)\n[DefeatDuel] Gain the following effects:\n- Deal -75% damage\n- Damage dealt by this Skill cannot Stagger the target; On Hit, does not activate [Sinking] effect on target",
+              "levelCorrection": 5,
+              "name": "WHUMP! THUMP! KRA-KOOM! BOOM-CRACK!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "Sous Chef",
+          "parts": [
+            {
+              "breakSection": [
+                30
+              ],
+              "defCorrection": 11,
+              "hp": {
+                "base": 480,
+                "level": 29.81
+              },
+              "name": "Body",
+              "partId": 147401,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 1,
+                "gloom": 0.75,
+                "gluttony": 1.2,
+                "lust": 1.2,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1.2,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "<color=#ff6000><mark=#ff000040><b><u>Upon killing a target using Attack Skills, gain 1 [SapsareeCooking]</u></b></mark></color>\n- On Skill Use, gain 1 more [SapsareeCooking] for every 3 status effects on the said target (max 2)",
+              "name": "Sous Chef"
+            },
+            {
+              "desc": "<color=#ff6000><mark=#ff000040><b><u>If this unit has [SapsareeCooking], use the \"Aah! I'm on lunch break, you hear?\" Skill at the very end of the turn</u></b></mark></color>\n(does not activate if all other targets are defeated, or if this unit is Staggered)\nTurn End: If this unit failed to use the \"Aah! I'm on lunch break, you hear?\" Skill, gain 1 [SapsareeHungry]",
+              "name": "I can cook up delicious dishes so good, you hear?"
+            },
+            {
+              "desc": "Use a powerful Gluttony Skill every 4 turns\n(If this effect could not be activated due to Stagger, activate it next turn)\n- Turn End: At 5+ [SapsareeYammi], use a powerful Gluttony Skill next turn\n\nTurn End: At 3+ [SapsareeHungry], use a powerful Wrath Skill next turn",
+              "name": "Culinary Ambitions"
+            },
+            {
+              "desc": "Turn Start: Heal 3 SP for every [SapsareeYammi] on self",
+              "name": "Yummies yummers, you hear?"
+            }
+          ],
+          "portrait": "1474",
+          "skills": [
+            {
+              "affinity": "sloth",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has [SapsareeSpices], Final Power +1",
+              "levelCorrection": 2,
+              "name": "Cutting up the meat, you hear?"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every [SapsareeSpices] on target (max 2)",
+              "levelCorrection": 3,
+              "name": "Cutting up big chunks, you hear?"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has [SapsareeSpices], Coin Power +1\n[WhenUse] Coin Power +1 for every 6 [Laceration] on target (max 2)",
+              "levelCorrection": 4,
+              "name": "Chop, mince, dice, you hear?"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 5,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Coin Power +1 for every 2 [SapsareeYammi] on self\n[WhenUse] If the main target has [SapsareeSpices], Final Power +3\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target\n[EndSkill] Consume all [SapsareeYammi] on self",
+              "levelCorrection": 5,
+              "name": "My signature knife work, you hear?"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 7,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Kill the targeted ally</u></b>"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel] [CantChangeTarget]\nPrioritizes allies that have the most types of effects\nDeactivates allies' \"Base factors decreasing Sanity\" while using this Skill",
+              "levelCorrection": 0,
+              "name": "I'm collecting ingredients, you hear?"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "slash",
+              "atkWeight": 4,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target is an enemy, inflict 1 [SapsareeSpices]",
+                    "[OnSucceedAttack] If target is an ally , apply 2 [AttackUp] next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target is an enemy, inflict 1 [SapsareeSpices]",
+                    "[OnSucceedAttack] If target is an ally , apply 2 [DefenseUp] next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target is an enemy, inflict 1 [SapsareeSpices]",
+                    "[OnSucceedAttack] If target is an ally , apply 1 [ParryingResultUp] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "This Skill targets allies for both main and sub-targets\nWhen targeting an ally, always deal 0 damage",
+              "levelCorrection": 1,
+              "name": "Yummers! Slurp that up, you hear?"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 11,
+              "baseValue": 0,
+              "coinValue": 0,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantIdentify]\nThis Skill does not hit and deals 0 damage\n[EndSkill] For every [SapsareeCooking] on self, heal 1% HP on self and gain 1 [SapsareeYammi]\n[EndSkill] For every [SapsareeCooking] on self, all other allies heal 20% HP and gain 1 [SapsareeYammi]\n[EndSkill] Consume all [SapsareeCooking]",
+              "levelCorrection": 0,
+              "name": "Aah! I'm on lunch break, you hear?"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 10,
+              "baseValue": 5,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantIdentify]\nSummon all available Leather Wallets to the field\n[EndSkill] Consume all [SapsareeHungry]; does not gain [SapsareeHungry] for the rest of this turn",
+              "levelCorrection": 5,
+              "name": "Cooking!! Lemme get cooking, you hear?!"
+            }
+          ]
+        },
+        {
+          "name": "Leather Wallet",
+          "num": 5,
+          "parts": [
+            {
+              "breakSection": [
+                50,
+                0
+              ],
+              "defCorrection": 12,
+              "hp": {
+                "base": 42,
+                "level": 1.45
+              },
+              "name": "Body",
+              "partId": 147501,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 0.75,
+                "gluttony": 1.5,
+                "lust": 1.5,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1.25,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "If this unit has 5 or more status effects, gain 3 Offense Level and 3 Defense Level",
+              "name": "Flavorful Cooking Ingredient."
+            },
+            {
+              "desc": "When hit, gain 1 Defense Level Down and 1 Offense Level Up next turn (3 per turn)",
+              "name": "Enzymatic Tenderization"
+            },
+            {
+              "desc": "Turn End: If Sous Chef failed to use the \"Aah! I'm on lunch break, you hear?\" Skill, gain 1 [SapsareeHungry]",
+              "name": "Hungry..."
+            }
+          ],
+          "portrait": "1475",
+          "skills": [
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 2)",
+              "levelCorrection": 1,
+              "name": "Nom Nom"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Coin Power +1 for every 6 [Laceration] on target (max 2)",
+              "levelCorrection": 2,
+              "name": "Munch Munch"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 7,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Deal 10 SP damage",
+                    "[OnSucceedAttack] Inflict 1 [SapsareeSpices]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +2 for every 4 [Laceration] on target (max 4)\n[WhenUse] At 3+ [SapsareeYammi], convert all Coins on this Skill to [SuperCoin]s\n[WhenUse] At 5+ [SapsareeYammi], gain +2 Atk Weight\n[WhenUse] Consume all [SapsareeYammi] on self",
+              "levelCorrection": 3,
+              "name": "Buuuurp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "King of Needleworks",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                0
+              ],
+              "defCorrection": 2,
+              "hp": {
+                "base": 730,
+                "level": 25.17
+              },
+              "name": "Body",
+              "partId": 149601,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 0.75,
+                "gloom": 0.75,
+                "gluttony": 1.2,
+                "lust": 1.2,
+                "pierce": 1.2,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1.2,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Skill Final Power +1 for every Needlekin on the field",
+              "name": "Handmade"
+            },
+            {
+              "desc": "\"Cry of the Cocoon\" is heard every \"multiple of 3\" turns\nUpon entering Phase 2, \"Cry of the Cocoon\" continues to be heard every turn\n\nThis unit cannot be immobilized in the turn \"Cry of the Cocoon\" is heard\n\nIf this unit's HP is brought past its Stagger Threshold, gain 2 [Vulnerable] next turn",
+              "name": "Unending, Unavoidable Stream of Customer Complaints"
+            },
+            {
+              "desc": "Turn Start: Inflict [NiddleExpected] on 2 random enemies",
+              "name": "The Sewing Commences"
+            }
+          ],
+          "portrait": "1496",
+          "skills": [
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 1,
+              "name": "Bla Bla Warp Bla"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 4,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [NiddlePin]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [NiddlePin]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [NiddlePin]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WideAreaRampage]\n\nDeal +5% damage for every [NiddlePin] on target (max 25%)\n\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 3,
+              "name": "Yap Yap Weft Yap"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [NiddlePin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [NiddlePin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [NiddlePin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [NiddlePin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 1,
+              "name": "Stitch! Per! Inch!"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 7,
+              "baseValue": 8,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 4 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [NiddlePin]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 3,
+              "name": "20 stitches an inch, minimum!!!"
+            },
+            {
+              "affinity": "sloth",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] Summon 3 Needlekin next turn",
+              "levelCorrection": 0,
+              "name": "Too even, you say? Not pick-stitching, you say? Assemble!!!"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 1,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Apply 1 Attack Power Up this turn and next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes allies that are not Staggered; deals 0 damage\nDoes not trigger the target's Defense Skill\n\n[EndSkill] Targeted Needlekin activates a random Attack Skill (ignores Stagger)",
+              "levelCorrection": 0,
+              "name": "You want me to hand-stitch this?! HAND-STITCH???!!!"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 7,
+              "baseValue": 8,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Deal +100% damage against [NiddlePinned] targets"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] <color=#ff6000><mark=#ff000040><b><u>Deal +50% damage for every Needlekin on the field\n • If there are no Needlekin on the field, cancel this Skill</u></b></mark></color>\n\n[EndSkill] Kill every Needlekin\n • Gain 1 [Enhancement] next turn for every Needlekin killed by this effect",
+              "levelCorrection": 0,
+              "name": "Double stitching past the side seam? Double-needle! Rejected!"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Consume 1 [NiddlePin] on target to deal 5 fixed damage"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Consume 1 [NiddlePin] on target to deal 5 fixed damage"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[DefeatDuel] Reduce [NiddlePin] on target by 2",
+              "levelCorrection": -2,
+              "name": "No cross-stitch buttons? Rejected!"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 7,
+              "baseValue": 1,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Inflict 2 [NiddlePinned] against targets that have 5+ [NiddlePin]</u></b></mark></color>"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel]",
+              "levelCorrection": 4,
+              "name": "Pick stitch too obvious, you say?! I'll pick-stitch your ass!"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 12,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>If target is [NiddlePinned], deal fixed damage equal to 99% of target's max HP</u></b></mark></color>",
+                    "[EnemyKill] Heal 5% HP on self"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes [NiddlePinned] enemies\n- Prioritizes targets that have the highest [NiddlePin] Stack\nTargets that have 5+ [NiddlePin] Stack cannot redirect this Skill to itself\n\nDeal +10% damage for every [NiddlePin] on target (max 50%)",
+              "levelCorrection": 5,
+              "name": "Just... Eat!!"
+            }
+          ]
+        },
+        {
+          "name": "Warp Needlekin",
+          "parts": [
+            {
+              "breakSection": [
+                40,
+                0
+              ],
+              "defCorrection": 0,
+              "hp": {
+                "base": 43,
+                "level": 1.2
+              },
+              "name": "Body",
+              "partId": 149801,
+              "resists": {
+                "blunt": 0.8,
+                "envy": 1.2,
+                "gloom": 1,
+                "gluttony": 1.2,
+                "lust": 1,
+                "pierce": 1.5,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1.2
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Inflict +1 more [NiddlePin] Stack against targets that have 1.5+ Pierce Resist. or Envy Resist.",
+              "name": "Sewing"
+            },
+            {
+              "desc": "When using Skills to inflict [Laceration] Potency against enemies that have [NiddlePin], inflict +([NiddlePin] Stack on target) more [Laceration] Potency (max 3)",
+              "name": "A Tiny Sharp Needle"
+            }
+          ],
+          "portrait": "91063",
+          "skills": [
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [PenetrateResistDown] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "If target has 4+ [Laceration], Final Power +1\n\n[WhenUse] If target has 6+ [Laceration], convert all Coins to [SuperCoin]s",
+              "levelCorrection": 1,
+              "name": "Running Stitch - Warp"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [NiddlePin]",
+                    "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "If target has 4+ [Laceration], Final Power +1 ",
+              "levelCorrection": 1,
+              "name": "Tacking Stitch - Warp"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +2 [Laceration] Count",
+                    "[UnBrokenCoinOnSucceedAttack] Reuse this Coin once (once per Skill)",
+                    "[UnBrokenCoinOnSucceedAttack] Deal Pierce damage equal to [Laceration] Potency on target (max 30)",
+                    "[ReUseOnSucceedAttack] Inflict 1 [NiddlePin]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Final Power +1 for every 4 [Laceration] on target (max 2)\n\n[WhenUse] Deal +1% damage for every [Laceration] on target (max 20%)",
+              "levelCorrection": 2,
+              "name": "Backstitch - Warp"
+            },
+            {
+              "affinity": "sloth",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] Gain 1 [PenetrateResultUp] next turn",
+              "levelCorrection": -3,
+              "name": "Blind Stitch - Warp"
+            }
+          ]
+        },
+        {
+          "name": "Weft Needlekin",
+          "parts": [
+            {
+              "breakSection": [
+                40,
+                0
+              ],
+              "defCorrection": 0,
+              "hp": {
+                "base": 43,
+                "level": 1.2
+              },
+              "name": "Body",
+              "partId": 149901,
+              "resists": {
+                "blunt": 0.8,
+                "envy": 1.2,
+                "gloom": 1,
+                "gluttony": 1.2,
+                "lust": 1.2,
+                "pierce": 1.5,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Inflict +1 more [NiddlePin] Stack against targets that have 1.5+ Pierce Resist. or Envy Resist.",
+              "name": "Sewing"
+            },
+            {
+              "desc": "When using Skills to inflict [Laceration] Potency against enemies that have [NiddlePin], inflict +([NiddlePin] Stack on target) more [Laceration] Potency (max 3)",
+              "name": "A Tiny Sharp Needle"
+            }
+          ],
+          "portrait": "91064",
+          "skills": [
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                    "[OnSucceedAttack] Inflict 1 [PenetrateTakeDamageUp] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "If target has 4+ [Laceration], Final Power +1\n\n[WhenUse] If target has 6+ [Laceration], convert all Coins to [SuperCoin]s",
+              "levelCorrection": 1,
+              "name": "Running Stitch - Weft"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [NiddlePin]",
+                    "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "If target has 4+ [Laceration], Final Power +1 ",
+              "levelCorrection": 1,
+              "name": "Tacking Stitch - Weft"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +2 [Laceration] Count",
+                    "[UnBrokenCoinOnSucceedAttack] Reuse this Coin once (once per Skill)",
+                    "[UnBrokenCoinOnSucceedAttack] Deal Pierce damage equal to [Laceration] Potency on target (max 30)",
+                    "[ReUseOnSucceedAttack] Inflict 1 [NiddlePin]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Final Power +1 for every 4 [Laceration] on target (max 2)\n\n[WhenUse] Deal +1% damage for every [Laceration] on target (max 20%)",
+              "levelCorrection": 2,
+              "name": "Backstitch - Weft"
+            },
+            {
+              "affinity": "sloth",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] Gain 1 [PenetrateResultUp] next turn",
+              "levelCorrection": -3,
+              "name": "Blind Stitch - Weft"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "L'Inamovible",
+          "parts": [
+            {
+              "breakSection": [
+                20
+              ],
+              "defCorrection": 5,
+              "hp": {
+                "base": 626,
+                "level": 25.9
+              },
+              "name": "Body",
+              "partId": 146601,
+              "resists": {
+                "blunt": 0.9,
+                "envy": 1,
+                "gloom": 0.5,
+                "gluttony": 1,
+                "lust": 1.5,
+                "pierce": 0.9,
+                "pride": 1,
+                "slash": 0.9,
+                "sloth": 1.5,
+                "wrath": 0.75
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "[RougeThreeNormal] Pattern\n\nRemove [RougeThreeCocoon] and [RougeThreeCocoonShield] on self, and gain [RougeThreeNormal]\n<color=#ff6000><mark=#ff000040><b><u>When hit, gain 1 [RougeThreeNormal]\nTurn End: At 20 [RougeThreeNormal], enter [RougeThreeCocoon] pattern next turn</u></b></mark></color>\n\nWhile in [RougeThreeNormal] state:\nIf this unit takes damage that brings its HP below 10, nullify that damage, heal 30% HP, and end the turn. Then, this unit enters [RougeThreeCocoon] state and gains 2 [Enhancement] for the rest of this Encounter (once per Encounter)",
+              "name": "Boutique du Rouge: New Arrivals Lookbook"
+            },
+            {
+              "desc": "[RougeThreeCocoon] Pattern\n\nRemove [RougeThreeNormal] on self. Gain 1 [RougeThreeCocoon] and 500 [RougeThreeCocoonShield]\n\n<color=#ff6000><mark=#ff000040><b><u>When hit, gain [RougeThreeCocoonHit]</u></b></mark></color>\nAt 0 [RougeThreeCocoonShield] or 3 [RougeThreeCocoon], lose 20 SP and end the turn. Then, enter [RougeThreeNormal] pattern next turn and gain 1 [AttackDmgUp] for the rest of this Encounter (if this unit is Staggered, recover from Stagger)",
+              "name": "Into the Changing Room"
+            },
+            {
+              "desc": "Upon entering the Encounter for the first time, gain 10 [ChargeRouge] Count\n\nGain 1 [ChargeRouge] for every 10 cumulative [ChargeRouge] Count this unit consumes in this Encounter",
+              "name": "Metabolic Action and Reaction"
+            }
+          ],
+          "portrait": "1466",
+          "skills": [
+            {
+              "affinity": "envy",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [ChargeRouge] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [ChargeRouge] Count",
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +5 [ChargeRouge] Count",
+              "levelCorrection": 2,
+              "name": "I hear it... I can hear it!"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 9,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [ChargeRouge] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [ChargeRouge] Count",
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +5 [ChargeRouge] Count",
+              "levelCorrection": 2,
+              "name": "I have been granted another chance to change my clothes!"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 12,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Deal +10% damage for every [ChargeRouge] on self (max 50%)\n[WhenUse] Consume 5 [ChargeRouge] Count to gain Final Power +2",
+              "levelCorrection": 3,
+              "name": "My faith wasn't in vain!"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 13,
+              "coinValue": -5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] At lower than 50% HP, convert all Coins in this Skill to [SuperCoin]s\n[WhenUse] Deal +10% damage for every [ChargeRouge] on self (max 50%)\n[WhenUse] Deal +3% damage for every [ChargeRouge] Count on self (max 60%)\n\n[BeforeAttack] Base Power -2 for every Cracked Coin",
+              "levelCorrection": 3,
+              "name": "Scrape! Flay! Peel!"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 7,
+              "baseValue": 15,
+              "coinValue": -5,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] This Skill deals -10% damage for every target that has equipped Defense Skills\n[StartBattle] Gain 1 [DefenseDown] next turn for every target that has equipped Attack Skills\n\n[BeforeAttack] Base Power -1 for every Cracked Coin",
+              "levelCorrection": 4,
+              "name": "So this world wasn't meaningless after all!"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 12,
+              "coinValue": -5,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[DefeatDuelAttack] Heal HP equal to this Skill's final damage"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[OnDirectAttack] This Skill deals -80% damage",
+              "levelCorrection": 3,
+              "name": "The Voice is with me, this I know!"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 11,
+              "coinValue": -4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Laceration]",
+                    "[OnSucceedAttack] At 10+ <color=#ff6000><mark=#ff000040><b><u>[RougeThreeCocoonHit] on self, Reuse this Coin (once per Skill)</u></b></mark></color>",
+                    "[ReUseOnSucceedAttack]<color=#ff6000><mark=#ff000040><b><u> At 20+ [RougeThreeCocoonHit], Reuse this Coin (once per Skill)</u></b></mark></color>",
+                    "[ReUseOnSucceedAttack] Gain +1 [ChargeRouge] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[DuelCounter]\n[RougeThreeCocoon] exclusive Skill\n\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 2,
+              "name": "Be myself... Be utterly myself...!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "The Crimson God [Inchoate Life]",
+          "parts": [
+            {
+              "breakSection": [
+                20,
+                0
+              ],
+              "defCorrection": 2,
+              "hp": 2023.0,
+              "name": "Lifecord",
+              "partId": 148401,
+              "resists": {
+                "blunt": 1.2,
+                "envy": 1,
+                "gloom": 0.75,
+                "gluttony": 1.2,
+                "lust": 1.2,
+                "pierce": 1.2,
+                "pride": 1,
+                "slash": 1.2,
+                "sloth": 1.2,
+                "wrath": 0.75
+              },
+              "speed": [
+                2,
+                4
+              ]
+            },
+            {
+              "breakSection": [
+                65,
+                35,
+                0
+              ],
+              "defCorrection": 2,
+              "hp": 2438.5,
+              "name": "Body",
+              "partId": 148402,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 0.75,
+                "gluttony": 1.2,
+                "lust": 1.2,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1.2,
+                "wrath": 0.75
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Turn End: Does not lose [ChargeRouge] Count\n<color=#ff6000><mark=#ff000040><b><u>In a Clash, gain +1 [ChargeRouge] Count every time target's [Laceration] is activated</u></b></mark></color>\nOn Kill, gain [ChargeRouge] Count equal to ([Laceration] Potency + [Laceration] Count) on target\nTurn Start: Heal 3 SP for every [ChargeRouge] Count on self",
+              "name": "The Preterm Crimson God"
+            },
+            {
+              "desc": "Turn Start: <color=#ff6000><mark=#ff000040><b><u>At 15+ [ChargeRouge] Count, if this unit does not have [Gourmandise], consume all [ChargeRouge] Count on self and gain [Gourmandise]</u></b></mark></color>\n\nGain the following effects while this unit has [Gourmandise]:\n- On Skill Use, gain +3 [Laceration] Count\n- On Hit, gain 1 [Laceration]\n- When hit on one of its Parts, gain 1 [BuffetSick]\n- On Clash Lose, gain 3 [BuffetSick]\n- On Kill, if target has 3+ [BloodyMucus], generate \"Ripped Flesh of the Crimson God\" next turn\n- Combat End: Heal 3 SP for every enemy that has [BloodyMucus]\n\nTurn End: <color=#ff6000><mark=#ff000040><b><u>If this unit has 30+ [BuffetSick]</u></b></mark></color> when [Gourmandise] expires, next turn, weaken this unit's patterns and Stagger \"Ripped Flesh of the Crimson God\" units on the field\n\n※ [BloodyMucus] Stack can be reduced by the following means: <color=#ff6000><mark=#ff000040><b>E.G.O Skill Use and Defense Skill Use</u></b></mark></color>\n※ \"Ripped Flesh of the Crimson God\" gains [DeterioratingBody] equal to [BloodyMucus] on the defeated target\n※ \"Ripped Flesh of the Crimson God\" that has [DeterioratingBody] cannot be defeated\n※ Up to 3 \"Ripped Flesh of the Crimson God\" can be generated on the field",
+              "name": "Roseate Pulsation of Musculature"
+            },
+            {
+              "desc": "Deal +50% damage against slower targets",
+              "name": "Disparity"
+            },
+            {
+              "desc": "Turn End: If the Lifecord Part isn't broken, and at lower than 50% Core HP, gain [Gourmandise]\nThen, does not lose [Gourmandise] Stack until the Lifecord Part is broken",
+              "name": "Rampage of a Violent, Traumatic Birth"
+            },
+            {
+              "desc": "Turn End: if in Panic, reset SP to 0.",
+              "name": "Panic Recovery"
+            },
+            {
+              "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+              "name": "Fixed Panic"
+            },
+            {
+              "desc": "Turn End: If the Lifecord Part is broken, the Body Part gains 3 [Vulnerable] next turn",
+              "name": "Severed Lifecord"
+            },
+            {
+              "desc": "Turn Start: Gain 1 [SavePlacenta] and apply 5 [Protection] on the Lifecord Part\nIf this unit has [Gourmandise], or if it is Staggered, this Passive does not activate",
+              "name": "Survival Instinct"
+            }
+          ],
+          "portrait": "1484",
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]",
+                    "[OnSucceedAttack] Inflict 2 [BloodyMucus]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 2)\n<color=#ff6000><mark=#ff000040><b><u>[WhenUse] If target does not have [Laceration], deal -80% damage and convert all Coins on this Skill to [SuperCoin]s</u></b></mark></color>\n[WinDuel] Remove 1 random positive effect on target (excluding Charge and Poise); then, gain 1 [Nutrition]",
+              "levelCorrection": 1,
+              "name": "Hrgh..."
+            },
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [BloodyMucus]",
+                    "[OnSucceedAttack] Remove 1 random positive effect on target (excluding Charge and Poise) to gain 1 [Nutrition]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [BloodyMucus]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 2)\n<color=#ff6000><mark=#ff000040><b><u>[WhenUse] If target does not have [Laceration], deal -80% damage and convert all Coins on this Skill to [SuperCoin]s</u></b></mark></color>",
+              "levelCorrection": 2,
+              "name": "Nngh..."
+            },
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 3,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [BloodyMucus]",
+                    "[OnSucceedAttack] Remove 1 random positive effect on target (excluding Charge and Poise) to gain 1 [Nutrition]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [BloodyMucus]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Laceration] on the main target (max 3)\n<color=#ff6000><mark=#ff000040><b><u>[WhenUse] If the main target does not have [Laceration], deal -80% damage and convert all Coins on this Skill to [SuperCoin]s</u></b></mark></color>",
+              "levelCorrection": 2,
+              "name": "Pw... ffeh..."
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 4 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [BloodyMucus]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [BloodyMucus]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritize targets that have the lowest current HP\nDeal +5% damage for every 1% missing HP on target (max 250%)\n[WhenUse] Final Power +2 for every 4 [Laceration] on target (max 4)\n[WhenUse] If target has lower than 50% HP, Base Power +3\n[WinDuel] Remove 1 random positive effect on target (excluding Charge and Poise) to gain 2 [Nutrition]\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 2,
+              "name": "It's... cold..."
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 3,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [BloodyMucus]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [BloodyMucus]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [BloodyMucus]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [BloodyMucus]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [BloodyMucus]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [BloodyMucus]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritize targets that have the lowest current HP as the main target\nDeal +5% damage for every 3% missing HP on target (max 50%)\n[WhenUse] Final Power +2 for every 4 [Laceration] on the main target (max 4)\n[WhenUse] If the main target has lower than 50% HP, Base Power +2\n[WinDuel] Remove 1 random positive effect on the main target (excluding Charge and Poise) to gain 2 [Nutrition]\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 3,
+              "name": "It hurts...! My body... won't listen..."
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 5,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 6 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [BloodyMucus]",
+                    "[UnBrokenCoinOnSucceedAttack] Activate [Laceration] on target once. Target loses 1 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [BloodyMucus]",
+                    "[UnBrokenCoinOnSucceedAttack] Activate [Laceration] on target once. Target loses 1 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [BloodyMucus]",
+                    "[UnBrokenCoinOnSucceedAttack] Activate [Laceration] on target once. Target loses 1 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritize targets that have the lowest current HP as the main target\nDeal +1% damage for every 1% missing HP on target (max 30%)\n[WhenUse] Coin Power +1 for every 6 [Laceration] on the main target (max 2)\n[WhenUse] If the main target has lower than 50% HP, Base Power +2\n[WhenUse] At 10+ [ChargeRouge] Count, consume all [ChargeRouge] on self and gain Coin Power +2 and +2 Atk Weight\n[DefeatDuel] Deal -95% damage and damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 5,
+              "name": "Hungry... cold... hurts...!"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]",
+                    "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 2)\n[WinDuel] Gain +3 [ChargeRouge] Count",
+              "levelCorrection": 1,
+              "name": "Go... away..."
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 2)\n[WinDuel] Gain +3 [ChargeRouge] Count",
+              "levelCorrection": 1,
+              "name": "I'm... hungry..."
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 3,
+              "baseValue": 5,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Laceration] on the main target (max 2)\n[WinDuel] Gain +3 [ChargeRouge] Count",
+              "levelCorrection": 2,
+              "name": "Something... to eat... Anything..."
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 3,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Coin Power +1 for every 6 [Laceration] on the main target (max 2)\n[WhenUse] At fewer than 15 [ChargeRouge] Count, gain up to 15 [ChargeRouge] Count and gain 1 [BuffetFailed] next turn for every 5 [ChargeRouge] Count gained from this effect\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 3,
+              "name": "I hear... the Voice..."
+            },
+            {
+              "affinity": "pride",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[CanDuelGuard]\n[SupportProtect] Exclusive Skill\n[WhenUse] Gain ([ChargeRouge] Count on self x 10) Shield\n[WinDuel] Gain +3 [ChargeRouge] Count",
+              "levelCorrection": 3,
+              "name": "Don't... do that..."
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "At 6+ [Laceration], Coin Power +1\n[WhenUse] Final Power +2 for every 4 [Laceration] on the main target (max 4)\n[DefeatDuel] Lose 2 [ChargeRouge] Count\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 3,
+              "name": "I... wanna..."
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 3,
+              "baseValue": 5,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 4 [Binding] next turn"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Laceration] on the main target (max 3)\n[WhenUse] At 10+ [ChargeRouge] Count, consume 10 [ChargeRouge] Count to gain Coin Power +2\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 4,
+              "name": "What... am I...?"
+            }
+          ]
+        },
+        {
+          "name": "Ripped Flesh of the Crimson God",
+          "parts": [
+            {
+              "defCorrection": 2,
+              "hp": 1,
+              "name": "Body",
+              "partId": 149701,
+              "resists": {
+                "blunt": 0.8,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1.2,
+                "lust": 1.2,
+                "pierce": 1.2,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1.2,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "- When generated, gain [DeterioratingBody] equal to [BloodyMucus] Stack on target that was defeated to generate this unit\n\nDefeated when [DeterioratingBody] expires",
+              "name": "Mindless Pulsation"
+            }
+          ],
+          "portrait": "1497",
+          "skills": [
+            {
+              "affinity": "wrath",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [BloodyMucus]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [BloodyMucus]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 1,
+              "name": "Feeble Beckoning"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "name": "Grand Magasin Sisyphe (10-4)",
+  "siteId": "224686e7-a4cd-42d5-9d2c-a949a27fa982"
+}

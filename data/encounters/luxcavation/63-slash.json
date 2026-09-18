@@ -1,0 +1,160 @@
+{
+  "name": "Level 63 - Slash",
+  "siteId": "8e02d66c-d6f4-4c86-912d-ec9ac4704b50",
+  "targets": [
+    {
+      "name": "Le Rouge Sales Associate [Sunshone]",
+      "num": 12,
+      "passives": [
+        {
+          "desc": "Upon entering the Encounter for the first time, gain 10 [ChargeRouge] Count\n\nGain 1 [ChargeRouge] for every 10 cumulative [ChargeRouge] Count this unit consumes in this Encounter",
+          "name": "Metabolic Action and Reaction"
+        },
+        {
+          "desc": "Turn End: Gain or lose up to 10 [ChargeRouge] Count\n\nWhen hit, if the attacker used Skills that gain [Charge], transfer 1 [ChargeRouge] Count as [Charge] Count to the attacker (once per the attacker's Skill)\nGain 1 [AttackUp] every time the effect above activates\nTurn Start: Consume up to 5 excess [ChargeRouge] Count beyond 15 on self to heal ([ChargeRouge] Count consumed)% HP",
+          "name": "Le Rouge: Jacket"
+        },
+        {
+          "desc": "Turn Start: At 3+ [ChargeRouge] Potency and 10+ [ChargeRouge] Count, use a powerful Skill\n\nSkills deal +1% damage for every 1% missing HP on self",
+          "name": "Desperation"
+        },
+        {
+          "desc": "Encounter Start: Gain [RisingMadnessRouge]\n- Turn Start: When this unit's HP drops below 50% for the first time in this Encounter, convert [RisingMadnessRouge] into [RisingMadnessRouge2nd]\n\nOn Clash Lose, gain +2 [ChargeRouge] Count",
+          "name": "I hear it... the Voice of another god...!"
+        }
+      ],
+      "portrait": "91067",
+      "resists": {
+        "blunt": 0.5,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 0.75,
+        "pride": 1,
+        "slash": 2.0,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "skills": [
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [ChargeRouge] Count",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +6 [ChargeRouge] Count",
+          "levelCorrection": 1,
+          "name": "Stitching"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [ChargeRouge] Count",
+                "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vulnerable]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain +4 [ChargeRouge] Count",
+          "levelCorrection": 2,
+          "name": "Stamping"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[UnBrokenCoinOnSucceedAttack] Inflict 4 [Laceration]",
+                "[OnSucceedAttack] Gain +2 [ChargeRouge] Count",
+                "[OnSucceedAttack] Heal HP on self equal to this Coin's final damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[UnBrokenCoinOnSucceedAttack] Inflict 4 [Laceration]",
+                "[OnSucceedAttack] Gain +2 [ChargeRouge] Count",
+                "[OnSucceedAttack] Heal HP on self equal to this Coin's final damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[UnBrokenCoinOnSucceedAttack] Inflict 4 [Laceration]",
+                "[OnSucceedAttack] Gain +2 [ChargeRouge] Count",
+                "[OnSucceedAttack] Heal HP on self equal to this Coin's final damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] At lower than 50% HP, convert all Coins in this Skill to [SuperCoin]s\n[DefeatDuel] Damage dealt by this Skill cannot Stagger the target\n[EndSkill] Consume 3 [ChargeRouge] Count on self to heal 30 HP",
+          "levelCorrection": 3,
+          "name": "Triple Stitching"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[UnBrokenCoinOnSucceedAttack] Inflict 4 [Laceration] and +2 [Laceration] Count",
+                "[UnBrokenCoinOnSucceedAttack] Heal HP on self equal to this Coin's final damage (max 100 HP per Skill)",
+                "[OnSucceedAttack] Consume 3 [ChargeRouge] Count on self to Reuse this Coin (max 3 times)",
+                "[ReUseOnSucceedAttack] Activate [Laceration] on target. Target loses 1 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] At lower than 50% HP, convert all Coins in this Skill to [SuperCoin]s, gain 3 [DefenseDown], and +6 [ChargeRouge] Count\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target\n[WhenUse] This Skill deals +10% damage for every [ChargeRouge] on self (max 30%)",
+          "levelCorrection": 5,
+          "name": "Aggressive Marketing"
+        }
+      ]
+    }
+  ]
+}
