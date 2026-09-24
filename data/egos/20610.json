@@ -1,0 +1,219 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 10,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[BeforeAttack] Gain +1 [Charge] Count\n[BeforeAttack] Consume up to 6 [Charge] Count on self; then, apply 5 [ChargeForceField] on self and on (1 + ([Charge] Count consumed / 2)) random other allies (max 5 units; rounded down)",
+          "id": "2061011",
+          "levelCorrection": 2,
+          "name": "Repudiation",
+          "spCost": 15,
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [PhotoElectricity]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain Clash Power equal to [Charge] Potency on self (max 2)\n[BeforeAttack] Gain +3 [Charge] Count\n[BeforeAttack] Consume up to 8 [Charge] Count on self; then, apply 5 [ChargeForceField] on self and on (1 + ([Charge] Count consumed / 2)) random other allies (max 6 units; rounded down)",
+          "id": "2061011",
+          "name": "Repudiation",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 3
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [PhotoElectricity]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Gain Clash Power equal to [Charge] Potency on self (max 3)\n[BeforeAttack] Gain +5 [Charge] Count\n[BeforeAttack] Consume up to 10 [Charge] Count on self; then, apply 5 [ChargeForceField] on self and on (1 + ([Charge] Count consumed / 2)) random other allies (max 7 units; rounded down)",
+          "id": "2061011",
+          "name": "Repudiation",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusNotes": "Ignores damage bonus against targets with shield.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 22,
+          "coinValue": -6,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "final",
+                  "value": 10
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "[OnStartCoin] Consume up to 10 [Charge] Count; then, this Coin gains Final Power equal to Count consumed"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly\nDeal +15% damage against targets that have Shield\n[BeforeAttack] Base Power -6 for every Cracked Coin (max -12)\n[BeforeAttack] Gain +3 [Charge] Count\n[BeforeAttack] Consume up to 6 [Charge] Count; then, apply 7 [ChargeForceField] on self and on (1 + ([Charge] Count consumed / 2)) random other allies (max 5 units; rounded down)",
+          "id": "2061021",
+          "levelCorrection": 3,
+          "name": "Repudiation",
+          "spCost": 20,
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "coinValue": -6,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "final",
+                  "value": 10
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "[OnStartCoin] Consume up to 10 [Charge] Count; then, this Coin gains Final Power equal to Count consumed",
+                "[OnSucceedAttack] Inflict 1 [PhotoElectricity]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\nDeal +20% damage against targets that have Shield\n[BeforeAttack] Base Power -6 for every Cracked Coin (max -12)\n[BeforeAttack] Gain Final Power equal to [Charge] Potency on self (max 2)\n[BeforeAttack] Gain +4 [Charge] Count\n[BeforeAttack] Consume up to 8 [Charge] Count on self; then, apply 7 [ChargeForceField] on self and on (1 + ([Charge] Count consumed / 2)) random other allies (max 6 units; rounded down)",
+          "id": "2061021",
+          "name": "Repudiation",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 3
+            }
+          ],
+          "coinValue": -6,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Gain +2 [Charge] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "final",
+                  "value": 10
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "[OnStartCoin] Consume up to 10 [Charge] Count; then, this Coin gains Final Power equal to Count consumed",
+                "[OnSucceedAttack] Inflict 2 [PhotoElectricity]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\nDeal +25% damage against targets that have Shield\n[BeforeAttack] Base Power -6 for every Cracked Coin (max -12)\n[BeforeAttack] Gain Final Power equal to [Charge] Potency on self (max 3)\n[BeforeAttack] Gain +5 [Charge] Count\n[BeforeAttack] Consume up to 10 [Charge] Count on self; then, apply 7 [ChargeForceField] on self and on (1 + ([Charge] Count consumed / 2)) random other allies (max 7 units; rounded down)",
+          "id": "2061021",
+          "name": "Repudiation",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "notes": {
+    "main": [
+      "Consumes {st:Charge} Count to apply {st:ChargeForceField} to self and allies.",
+      "Applies {st:PhotoElectricity} to enemies, allowing allies to generate more {st:Charge}. This is a current turn effect, so only allies that hit the same target/s after the E.G.O hits will gain the bonus {st:Charge}.",
+      "Passive increases {sinner:6}'s max {st:Charge} count, increases the damage on his {st:Charge} S3s and passively heals his SP every turn he isn't hit."
+    ]
+  },
+  "passiveList": [
+    {
+      "desc": "Max [Charge] Count +5\n\nSkill 3 (except E.G.O Skills) that consume [Charge] Count or Unique [Charge] deals +10% damage\n\nTurn End: If this unit was not hit this turn, heal 4 SP\n- If this unit has 2+ Minus Coin Base Attack Skills, lose 4 SP instead (this effect cannot reduce this unit's SP below -40)",
+      "name": "The City Where No One Can Hurt Another"
+    }
+  ]
+}

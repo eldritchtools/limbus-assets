@@ -39,7 +39,7 @@
     "buffType": "Positive",
     "desc": "- Offense Level +2\n- Final Power +1\n- Expires at Turn End",
     "name": "Liferender",
-    "srcPath": "Liferender"
+    "srcPath": "AStrokeOfDeath"
   },
   "ATL_Agility": {
     "buffType": "Positive",
@@ -341,7 +341,7 @@
     "buffType": "Positive",
     "desc": "- Max Stack : 100\n- Consumed when using certain Skills\n- Every time this effect is consumed, Heal SP on self by the amount consumed",
     "name": "Abyssal Vitality",
-    "srcPath": "Abyssal Vitality"
+    "srcPath": "AbyssalVitality"
   },
   "AccelBullet": {
     "buffType": "Neutral",
@@ -423,7 +423,7 @@
     "buffType": "Positive",
     "desc": "- Max Stack: 4\n- Expires if this unit does not have \"Ready to Loose\"",
     "name": "Target Aim",
-    "srcPath": "Target Aim"
+    "srcPath": "AimForTheGoal"
   },
   "AlcoholKimPersonal": {
     "buffType": "Positive",
@@ -448,6 +448,18 @@
     "desc": "- Max Stack: 30\n- Offense Level +1 for every 10 Stack\n- Can be gained up to 15 Stacks per turn",
     "name": "Petals",
     "srcPath": "AlriuneEGOWe"
+  },
+  "AlriunePetal": {
+    "buffType": "Positive",
+    "desc": "Max Stack: 3\n- At 3 Stacks, use a powerful Skill that turn\n- Deal +(Petals Stack on self x 10)% damage to Staggered targets\n- Turn End: Gain 1 Stack",
+    "name": "Petals",
+    "srcPath": "AlriunePetal"
+  },
+  "AlriuneSillage": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 30\n- Turn End: Take SP damage equal to Stack\n- If this unit took Sinking damage, gain 1 Stack\n- On Tremor Burst, apply 1 ~ 2 Faint Aroma on 3 other random allies\n- At max Stack:\n · Gain 2 Tremor and trigger Tremor Burst on self\n · Take Gloom damage equal to Sinking on self\n · Faint Aroma expires\n · Cannot gain for the rest of the turn\n- On death, apply half of this unit's Faint Aroma Stack randomly between this unit's allies (rounded down)",
+    "name": "Faint Aroma",
+    "srcPath": "AlriuneSillage"
   },
   "AmberDamageDown": {
     "buffType": "Negative",
@@ -490,6 +502,12 @@
     "name": "Sloth Fragility",
     "srcPath": "Sloth Fragility"
   },
+  "AngryBlackYarn": {
+    "buffType": "Positive",
+    "desc": "- All Parts gain Clash Power +2 for every Part that has this effect\n- Deal +5% damage for every 3 Tangling Stacks on target (max 50%)\n- Expires at Turn End",
+    "name": "Instinct of the Predator of Eld",
+    "srcPath": "AngryBlackYarn"
+  },
   "AntiSheepGround": {
     "buffType": "Positive",
     "desc": "- Max 1\n- When a unit under this effect wins a Clash against the 'Grounding Refusal' Skill, inflict 1 Plugged In against the target\n- Halve the Charge Count on the target\n- Expires next turn",
@@ -500,19 +518,19 @@
     "buffType": "Positive",
     "desc": "- Max Stack: 3\n- Base Attack Skills deal +(Stack x 5)% damage\n- Turn End: At 3 Stack and with -25 or higher SP, change SP to -25",
     "name": "Magical Arcana",
-    "srcPath": "Magical Arcana"
+    "srcPath": "ArcanaQueenOfHate"
   },
   "ArrowInTheEyeFau": {
     "buffType": "Negative",
     "desc": "- Max Stack: 4\n- Turn Start: gain Bleed Potency by Stack\n- Lose Defense Level by Stack\n- Turn End: at 2+ Stack, gain 1 Fragile next turn (once per turn)\n- Expires on: Death, Retreat, buff removal/expiration. When it expires, apply Arrow - Shi to Shi East Section 3 Faust by Stack",
     "name": "Lodged Arrow",
-    "srcPath": "Lodged Arrow"
+    "srcPath": "ArrowInTheEyeFau"
   },
   "ArrowShiFau": {
     "buffType": "Neutral",
     "desc": "- Min Capacity: 0\n- Max Capacity: 4\n- Arrows spent by certain Skills",
     "name": "Arrow - Shi",
-    "srcPath": "Arrow - Shi"
+    "srcPath": "ArrowShiFau"
   },
   "ArtifactBeeSting": {
     "buffType": "Negative",
@@ -583,7 +601,7 @@
     "buffType": "Negative",
     "desc": "Increase Gloom Resistance based on Stack.\n(0.1 per Stack)",
     "name": "Gloom Resist Down",
-    "srcPath": "Gloom Resist Down"
+    "srcPath": "AzureResistDown"
   },
   "AzureResistUp": {
     "buffType": "Positive",
@@ -608,6 +626,12 @@
     "name": "Gloom Fragility",
     "srcPath": "Gloom Fragility"
   },
+  "B3FreshMob": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 1\n- Turn Start: Gain 20 Shield\n- Turn End: Gain 2 Protection\n- Expires at Turn End",
+    "name": "Uncreased Hide",
+    "srcPath": "B3FreshMob"
+  },
   "BabayagaTimeLimit": {
     "buffType": "Neutral",
     "desc": "",
@@ -630,7 +654,7 @@
     "buffType": "Positive",
     "desc": "- Gain 1 Clash Power and 2 Defense Level\n- Expires at Turn End",
     "name": "Commanding Cry",
-    "srcPath": "Commanding Cry"
+    "srcPath": "BattlefieldHorse"
   },
   "BearClawWound": {
     "buffType": "Negative",
@@ -679,7 +703,7 @@
     "buffType": "Neutral",
     "desc": "- When inflicting Burn, Bleed, Rupture, Sinking, and Tremor Potency with this unit's Skills, inflict +1 more of each (including 'Unique Status Effects')\n- Instead of Panicking or Corroding, reset this unit's SP to 0 next turn (once per Encounter)\n- If this effect is applied to Lobotomy E.G.O::The Sword Sharpened with Tears Rodion, gain 1 Pierce DMG Up at every Turn Start",
     "name": "Welfare Team Model Employee",
-    "srcPath": "Welfare Team Model Employee"
+    "srcPath": "BestWelfareTeamMember"
   },
   "BigWelcome": {
     "buffType": "Positive",
@@ -703,7 +727,7 @@
     "buffType": "Positive",
     "desc": "- On Hit against enemies: (50 / # of Coins)% chance to gain 1 E.G.O resource corresponding to the used Skill's Affinity\n- When an enemy dies after an allied unit's Skill attack ends, gain 2 least-owned E.G.O Resources\n- In an Encounter, gain 1 E.G.O resource of each Affinity consumed when using the following E.G.O Skills (2 of each when using Overclocked Skills)\n· To Remain Oneself Hong Lu\n· Command : Meltdown Faust\n· Unbrilliant Glory Gregor\n· Tidal Elegy Ishmael",
     "name": "Emotional Connection",
-    "srcPath": "Emotional Connection"
+    "srcPath": "BitOfEmotion"
   },
   "BlackCloud": {
     "buffType": "Neutral",
@@ -736,7 +760,7 @@
     ],
     "desc": "- Unique Charge (fixed Potency)\n- Resource used by certain skills for additional effects\n- Max Stack: 20",
     "name": "Deep Tears",
-    "srcPath": "Deep Tears"
+    "srcPath": "BlackTearsAlly"
   },
   "BladeResultUpTier1": {
     "buffType": "Positive",
@@ -791,19 +815,19 @@
     "buffType": "Positive",
     "desc": "- Turn Start: gain 1 Protecting Sword for every 8 SP (max 5)\n- When Clash ends, inflict 2 Sinking (once per turn)\n- When hit, inflict 2 Sinking on the attacker (once per turn)\n- For every 20 SP, inflict +1 more Sinking Potency with above effects (max 2)\n- Replace this unit's Base Skills with Plus Coin Skills",
     "name": "Blessing",
-    "srcPath": "Blessing"
+    "srcPath": "BlessingAlly"
   },
   "BlessingOfIndexPrescriptAlly": {
     "buffType": "Positive",
     "desc": "- Offense Level +1 for every 3 Stacks\n- Max Stack: 9",
     "name": "Grace of the Prescript",
-    "srcPath": "Grace of the Prescript"
+    "srcPath": "BlessingOfIndexPrescriptAlly"
   },
   "BlessingOfIndexPrescriptEnemy": {
     "buffType": "Positive",
     "desc": "- Offense Level +1 for every 3 Stack\n- Max Stack: 9",
     "name": "Grace of the Prescript",
-    "srcPath": "Grace of the Prescript"
+    "srcPath": "BlessingOfIndexPrescriptAlly"
   },
   "BloodArmor": {
     "buffType": "Positive",
@@ -815,13 +839,13 @@
     "buffType": "Positive",
     "desc": "- Max Stack: 3\n- When clashing against enemies with Bleed or Unique Bleed, Clash Power +1\n- When consuming Bloodfeast with an Attack Skill, if there isn't enough Bloodfeast, consume 1 HP for every 1 missing Bloodfeast to generate it before consuming it (the damage from this effect does not Stagger or reduce this unit's HP below 1)\n- Reduced by 1 at Turn End",
     "name": "Hardblood Cast",
-    "srcPath": "Hardblood Cast"
+    "srcPath": "BloodArmorCasting"
   },
   "BloodArmorMeursault": {
     "buffType": "Positive",
     "desc": "- Max Stack: 5\n- If this unit isn't at max HP: after its Skill attack, heal 10% of HP damage dealt (once per turn; max 40 healing)\n- Attack End: If this unit dealt HP damage, lose 1 Stack (once per turn)\n• If Lust Reson. was activated, halve the amount of HP healed, but do not lose any Hardblood Armor Stack",
     "name": "Hardblood Armor",
-    "srcPath": "Hardblood Armor"
+    "srcPath": "BloodArmorMeursault"
   },
   "BloodArmorPersonalityFirst": {
     "buffType": "Positive",
@@ -943,7 +967,8 @@
   "BloodborneDOQ": {
     "buffType": "Negative",
     "desc": "Take +80% damage",
-    "name": "The Knight's Corpus"
+    "name": "The Knight's Corpus",
+    "srcPath": "BloodborneDOQ"
   },
   "Bloodthirst": {
     "buffType": "Negative",
@@ -1010,6 +1035,12 @@
     "name": "Baptism [Crimson]",
     "srcPath": "BloodyMucus"
   },
+  "BloodyMucusAlly": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 3\n- On Attack Skill Use, gain Bleed Count equal to Stack (once per Skill)\n- On Defense Skill Use, lose 1 Stack\n- Turn End: Lose 1 Stack",
+    "name": "Baptism [Crimson]",
+    "srcPath": "BloodyMucusAlly"
+  },
   "BloomingRose": {
     "buffType": "Neutral",
     "desc": "Turn End:\n- Gain 1 Stack\n- Bound Identity loses HP equal to 25% of max HP\n- Lose 10% of E.G.O Resource corresponding to the Rose's (rounded down)\n- The Sign of Roses's Core heals HP equal to 5% of the Core's max HP\n\nAt 4 Stacks,\n- Bound Identity dies\n- Lose all of E.G.O Resource corresponding to the Rose's",
@@ -1065,7 +1096,7 @@
     "buffType": "Negative",
     "desc": "- On Clash Lose, gain +1 Sinking Count (3 times per turn)\n- SP Units: change their Panic Type to \"Blue Sand\"\n- Non-SP Units: Min & Max Speed -1\n- Turn End: Reduce 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Non-SP Units\" conditional to certain enemies that have SP but can't change their Panic Types\n\n※ Blue Sand Panic Effects\n- Low Morale: Clash Power -1, Min & Max Speed -1\n- Panic: Clash Power -2, Min & Max Speed -1",
     "name": "Blue Sand",
-    "srcPath": "Blue Sand"
+    "srcPath": "BlueSand"
   },
   "BoldBrushstrokes": {
     "buffType": "Negative",
@@ -1123,7 +1154,7 @@
     "buffType": "Positive",
     "desc": "- Max Stack: 5\n- Turn Start: gain (Stack x 10) Shield for the turn\n- At max Stack, gain 2 Final Power\n- When hit: if this unit took 100+ damage from a single Skill, gain 1 Protection after that Skill ends (2 times per turn; includes damage against Shield HP; does not count damage from Keywords)",
     "name": "Linebreaker",
-    "srcPath": "Linebreaker"
+    "srcPath": "BreakthroughHorse"
   },
   "Breath": {
     "buffType": "Positive",
@@ -1156,6 +1187,48 @@
     "desc": "- Max Stack: 3\n- Min & Max Speed -1 for every Stack\n- Turn Start: Gain 1 Fragile\n- Turn End: Lose 1 Stack\n(Applies on all Parts)",
     "name": "Exhausted",
     "srcPath": "BuffetFailed"
+  },
+  "BuffetField": {
+    "buffType": "Neutral",
+    "desc": "- After entering the Encounter, Le Vomissement's influence expands at Turn Start every 2 turns\n· Stage 1: Pwie\n· Stage 2: All allied Sinners\n· Stage 3: All targets",
+    "name": "Le Vomissement",
+    "srcPath": "BuffetField"
+  },
+  "BuffetField_0": {
+    "buffType": "Neutral",
+    "desc": "- After entering the Encounter, Le Vomissement's influence expands at Turn Start every 2 turns",
+    "name": "Le Vomissement",
+    "srcPath": "BuffetField_0"
+  },
+  "BuffetField_1": {
+    "buffType": "Neutral",
+    "desc": "- After entering the Encounter, Le Vomissement's influence expands at Turn Start every 2 turns",
+    "name": "Le Vomissement",
+    "srcPath": "BuffetField_1"
+  },
+  "BuffetField_2": {
+    "buffType": "Neutral",
+    "desc": "- After entering the Encounter, Le Vomissement's influence expands at Turn Start every 2 turns",
+    "name": "Le Vomissement",
+    "srcPath": "BuffetField_2"
+  },
+  "BuffetGold": {
+    "buffType": "Negative",
+    "desc": "- Max Speed: 5\n- Take +5% damage for every Stack\n- At max Stack, take +10% damage if this unit has Bleed",
+    "name": "Golden Revelation",
+    "srcPath": "BuffetGold"
+  },
+  "BuffetGoldenClothes": {
+    "buffType": "Positive",
+    "desc": "- Defense Level +10\n- Turn End: If this unit is Staggered, recover from Stagger and heal 50% HP (once per Encounter)",
+    "name": "Golden Shroud",
+    "srcPath": "BuffetGoldenClothes"
+  },
+  "BuffetShoes": {
+    "buffType": "Positive",
+    "desc": "- Min & Max Speed +3",
+    "name": "Pink Mary Janes",
+    "srcPath": "BuffetShoes"
   },
   "BuffetSick": {
     "buffType": "Negative",
@@ -1223,7 +1296,7 @@
     ],
     "desc": "- Unique Ammo\n- The sum of Potency and Count maxes out at 20.\n- Consumed for certain Skills.\n- Whether The Living(Potency) or The Departed(Count) will be consumed for each shot is randomly determined\n- Some attacks cancel if this unit runs out of ammo.",
     "name": "The Living & The Departed",
-    "srcPath": "The Living & The Departed"
+    "srcPath": "BulletLament"
   },
   "BulletPropellant": {
     "buffType": "Positive",
@@ -1401,7 +1474,7 @@
     "buffType": "Positive",
     "desc": "- Deal +25% damage to Faelantern",
     "name": "Untroubled Analysis",
-    "srcPath": "Untroubled Analysis"
+    "srcPath": "CalmAnalysisMoses"
   },
   "CanDuelGuard": {
     "buffType": "Neutral",
@@ -1432,7 +1505,7 @@
     "buffType": "Neutral",
     "desc": "- Skill Slot +1\n- Modify Skill pool: Gain 1 use of Skill 3, but lose 1 use of Skill 1\n- Increase the amount of Burn, Bleed, Rupture, Sinking, or Tremor Potency inflicted with Skills by +1 (including 'Unique Status Effects')\n- Increase the amount of Poise Potency or Charge Count(including 'Unique Charge') gained from Skills by +1\n- Instead of Panicking or Corroding, reset SP to 0 next turn (once per Encounter)\n- Base Attack Skills with 2+ Atk Weight deal +30% damage\n- On Kill, Gain +2 E.G.O resource to the Affinity of the Skill that defeated the enemy; gain +1 E.G.O resource to rest of the Affinities",
     "name": "Central Command Team Captain",
-    "srcPath": "Central Command Team Captain"
+    "srcPath": "CentralCommandTeamCaptain"
   },
   "Charge": {
     "buffType": "Positive",
@@ -1459,6 +1532,26 @@
     "desc": "- Gain (Charge Barrier # x 3) Shield.\n- Lose 1 Charge Barrier after losing (Charge Barrier # x 3) Shield.\n- (If the unit is a W Corp. employee, ALL Charge Barrier effects activate at (Charge Barrier # x 5) instead of at (Charge Barrier # x 3))\n- Turn End: Gain a Charge Count for each Charge Barrier #, and Charge Barrier and Shield gained from Charge Barrier expire completely next turn",
     "name": "Charge Barrier",
     "srcPath": "Charge Barrier"
+  },
+  "ChargeKhaki": {
+    "buffType": "Positive",
+    "categoryKeywordList": [
+      "SIN",
+      "CHARGE"
+    ],
+    "desc": "- Unique Charge\n- Max Count: 20\n- Interacts the same way as normal Charge does to effects that raise or reduce Charge Potency and Count\n- Turn End: Lose 1 Count",
+    "name": "Inertia of Drifting",
+    "srcPath": "ChargeKhaki"
+  },
+  "ChargeKhakiAlly": {
+    "buffType": "Positive",
+    "categoryKeywordList": [
+      "SIN",
+      "CHARGE"
+    ],
+    "desc": "- Max Count: 20\n- Unique Charge\n- Interacts the same way as normal Charge does to effects that raise or reduce Charge Potency and Count\n- Turn End: Lose 1 Count",
+    "name": "Inertia of Drifting",
+    "srcPath": "ChargeKhaki"
   },
   "ChargeLoad": {
     "buffType": "Positive",
@@ -1519,19 +1612,19 @@
     "buffType": "Positive",
     "desc": "- Max Stack: 3\n- Gain 1 at Turn Start\n- At 3 Stack, gains 20 Speed and uses ARCANA SLAVE next turn",
     "name": "Chanting - Arcana Slave",
-    "srcPath": "Chanting - Arcana Slave"
+    "srcPath": "ChasingArcana"
   },
   "ChasingArcanahard": {
     "buffType": "Positive",
     "desc": "- Max Stack: 3\n- Gain 1 at Turn Start\n- At 3 Stack: next turn, gain 20 Bind and use ARCANA SLAVE",
     "name": "Chanting - Arcana Slave",
-    "srcPath": "Chanting - Arcana Slave"
+    "srcPath": "ChasingArcana"
   },
   "CheerUpXichun": {
     "buffType": "Positive",
     "desc": "- Max Stack: 1\n- If target has 5+ types of negative effects, Clash Power +1, deal +10% damage",
     "name": "Assist [援]",
-    "srcPath": "Assist [援]"
+    "srcPath": "CheerUpXichun"
   },
   "Chesed_Mercy": {
     "buffType": "Neutral",
@@ -1550,13 +1643,13 @@
     "buffType": "Positive",
     "desc": "- Max Stack: 3\n- This unit inflicts +1 more Burn and Rupture Potency with its Base Skills\n- While this unit has this effect, heal 3 SP upon Staggering or killing an enemy (3 times per turn)\n· If this unit's SP is at max when the above effect activates, gain 1 Offense Level Up and 1 Haste next turn\n- Lose 1 Stack at Turn End",
     "name": "Bloodflame [血炎]",
-    "srcPath": "Bloodflame [血炎]"
+    "srcPath": "ChickenStance"
   },
   "ChoSuperCharge": {
     "buffType": "Positive",
     "desc": "- Max Stack: 100\n- When consuming Charge Count, add the amount consumed to this buff's Stack\n- Max Charge Count Cap +10\n- Gain 1 Charge Count when allies gain Charge Potency or Count\n- When this unit consumes Charge Count with its Skills, consume the same amount of Charge Count 1 more time (when there isn't enough Charge Count, consume as much as available)\n- Deal +10% damage for every 10 Stack\n- Enemies gain +0.1 Resistance against this unit's attacks for every 20 Stack (max +0.5 Resist; does not activate against Staggered enemies)\n- When the Identity with this effect dies, the buff transfers to the ally who is second earliest to this unit in the Deployment order. The Stack carries over as well.\n- This effect works on 'Unique Charge' as well.",
     "name": "Near-light Superbattery",
-    "srcPath": "Near-light Superbattery"
+    "srcPath": "ChoSuperCharge"
   },
   "ChoiSwordsmanship": {
     "buffType": "Neutral",
@@ -1637,7 +1730,7 @@
     "buffType": "Positive",
     "desc": "- Turn Start: gain 1 Offense Level Up and 1 Defense Level Up\n- Turn End: lose 1 Stack\n- Max Stack: 5",
     "name": "Thunderer",
-    "srcPath": "Thunderer"
+    "srcPath": "Cianjing"
   },
   "CloudWall": {
     "buffType": "Positive",
@@ -1655,13 +1748,13 @@
     "buffType": "Negative",
     "desc": "- Max Stack: 3\n- Lose 1 Speed for every Cold Stack\n- If this unit has 3 Stacks after Skill End: take 20 Gloom damage and 20 SP damage; then, gain 1 Frozen this turn and next turn.\n- Cold Stack expires after all effects are activated\n- Turn End: if this unit did not attack The Last Knight, expires",
     "name": "Cold",
-    "srcPath": "Cold"
+    "srcPath": "ColdAirDOQ"
   },
   "ColdBlackTear": {
     "buffType": "Negative",
     "desc": "- Max Stack: 5\n- Turn Start: gain 1 Clash Power Down\n- If this unit is hit while it has this effect, lose (Stack x 2) SP (once per turn; does not activate when hit by a Cracked Coin)\n- If Queen of Hatred reduced this effect, heal 5 SP\n- This effect cannot reduce this unit's SP below -40",
     "name": "Cold, Black Tears",
-    "srcPath": "Cold, Black Tears"
+    "srcPath": "ColdBlackTear"
   },
   "CollapseAmpoule": {
     "buffType": "Negative",
@@ -1673,7 +1766,7 @@
     "buffType": "Negative",
     "desc": "Used for \"Weathered Knight\" Passive",
     "name": "Crumbled Pride",
-    "srcPath": "Crumbled Pride"
+    "srcPath": "CollapsedPride"
   },
   "Combustion": {
     "buffType": "Negative",
@@ -1724,7 +1817,7 @@
     "buffType": "Negative",
     "desc": "- Max Stack: 3\n- When hit, take +30% damage for every Stack (max 90%)\n- Multiply the amount of Stagger Threshold raised by Tremor Burst and Rupture damage dealt against this unit by 1.5 (rounded down)\n- At max Stack, consume all of it at Turn End and enter forced Stagger state next turn",
     "name": "Concussion",
-    "srcPath": "Concussion"
+    "srcPath": "ConcussionWei"
   },
   "ConcussionYisang": {
     "buffType": "Negative",
@@ -1803,7 +1896,7 @@
     ],
     "desc": "- Lose 15 Offense Level\n- Lose 15 Defense Level\n\n- Turn End: does not gain Defense Level from Strider【Wu】; instead, gain Offense Level Up equal to Strider【Wu】 Stack",
     "name": "Berserking",
-    "srcPath": "Berserking"
+    "srcPath": "CrazyWei"
   },
   "CriHurtNightStiletto": {
     "buffType": "Negative",
@@ -1898,7 +1991,7 @@
     "buffType": "Positive",
     "desc": "- Turn Start: gain (Stack / 3) Defense Level Up (max 3; rounded down)\n- Immediately before getting hit by an enemy, consume half of Hardened Shell-Barrier and gain Protection equal to the Stack consumed (once per turn, rounded up)\n- Turn End: lose 3 Stack\n- Max Stack: 10",
     "name": "Hardened Shell-Barrier",
-    "srcPath": "Hardened Shell-Barrier"
+    "srcPath": "CuredFilm"
   },
   "Curse": {
     "buffType": "Negative",
@@ -1936,6 +2029,12 @@
     "name": "Cyclical Karma",
     "srcPath": "Cyclical Karma"
   },
+  "DamagedFabric": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 30\n- Turn Start : Gain 1 HP Healing Down for every 6 Stacks (max 5)\n- Upon Clashing against \"Patterning\" or \"Surfile à la Chaîne\", lose Clash Power equal to Stack",
+    "name": "Sheared Apart",
+    "srcPath": "DamagedFabric"
+  },
   "DarkFlame": {
     "buffType": "Negative",
     "categoryKeywordList": [
@@ -1956,43 +2055,43 @@
     "buffType": "Neutral",
     "desc": "- Hong Lu's Skills gain +1 Final Power\n- On Clash Win, 1 ally(including this unit) with the least SP heals 5 SP\n- When an ally dies, next turn, this unit gains 2 Attack Power Up and remaining allies gain 1 Attack Power Up (once per turn)",
     "name": "One Who Walks The Way of the Hegemon",
-    "srcPath": "One Who Walks The Way of the Hegemon"
+    "srcPath": "DarkHongluQiuAndHonglu"
   },
   "DarkHongluTeaching": {
     "buffType": "Positive",
     "desc": "Max Stack: 3\n- Turn End: heal 5 SP\n- When HP drops to 0 during the Encounter, heal up to max HP (activates as many times as this unit has Stacks)\n- When healed by this effect, gain 1 Power Up next turn",
     "name": "Uncompromising Imposition",
-    "srcPath": "Uncompromising Imposition"
+    "srcPath": "DarkHongluTeaching"
   },
   "DarkHonglu_Ai": {
     "buffType": "Positive",
     "desc": "- Hong Lu's Final Power +3\n- On Clash Win, heal 5 SP for 1 ally with the least SP (including this unit)\n- When an ally is killed, the remaining allies at Turn End gain 1 Attack Power Up next turn (once per turn)\n- When there are 1 or more surviving allies in this Encounter: upon taking fatal damage, Hong Lu does not die and heals 50% HP instead\nOn Clash Win against Jia Mu, gain 1 random E.G.O Resource each from 3 of the E.G.O Affinities with the least amount of resources",
     "name": "Happiness, Joy, Sorrow",
-    "srcPath": "Happiness, Joy, Sorrow"
+    "srcPath": "DarkHonglu_Ai"
   },
   "DarkHonglu_EGOResourceup": {
     "buffType": "Positive",
     "desc": "[Hong Lu Exclusive Effect]\n- For this Encounter: after using a Skill Attack, gain 2 additional E.G.O resources of the Skill's Affinity (once per turn)\n- When this unit takes damage, it gains 2 Slash DMG Up next turn (once per turn)",
     "name": "No Matter How Many Must Bleed...",
-    "srcPath": "No Matter How Many Must Bleed..."
+    "srcPath": "DarkHonglu_EGOResourceup"
   },
   "DarkHonglu_Le": {
     "buffType": "Positive",
     "desc": "- Hong Lu's Final Power +1\n- On Clash Win, heal 5 SP for 1 ally with the least SP (including this unit)\n- When there are 1 or more surviving allies in this Encounter: upon taking fatal damage, Hong Lu does not die and heals 50% HP instead\nOn Clash Win against Jia Mu, gain 1 random E.G.O Resource each from 3 of the E.G.O Affinities with the least amount of resources",
     "name": "Happiness, Joy",
-    "srcPath": "Happiness, Joy"
+    "srcPath": "DarkHonglu_Le"
   },
   "DarkHonglu_Nu": {
     "buffType": "Positive",
     "desc": "- Hong Lu's Final Power +5\n- Allies heal 5 SP at every Turn Start (including this unit)\n- When an ally is killed, the remaining allies at Turn End gain 1 Attack Power Up next turn (once per turn)\n- When there are 1 or more surviving allies in this Encounter: upon taking fatal damage, Hong Lu does not die and heals 50% HP instead\n- Increases damage dealt by 30% of the total HP percentage this unit has cumulatively lost during this Encounter (max 100%)\nOn Clash Win against Jia Mu, gain 1 random E.G.O Resource each from 3 of the E.G.O Affinities with the least amount of resources",
     "name": "Happiness, Joy, Sorrow, Wrath",
-    "srcPath": "Happiness, Joy, Sorrow, Wrath"
+    "srcPath": "DarkHonglu_Nu"
   },
   "DarkHonglu_Xi": {
     "buffType": "Positive",
     "desc": "- Hong Lu's Clash Power +1\n- When there are 1 or more surviving allies in this Encounter: upon taking fatal damage, Hong Lu does not die and heals 50% HP instead\n- Nullfies the effect that turns this unit into a Precious Jade once. When clashing against Skills that turns this unit into a Precious Jade, Clash Power +5; if this unit wins that Clash, this unit does not become a Precious Jade, recovers from Stagger, reduces Jia Mu's SP by 10, and inflicts 2 Fragile against Jia Mu\nOn Clash Win against Jia Mu, gain 1 random E.G.O Resource each from 3 of the E.G.O Affinities with the least amount of resources",
     "name": "Happiness",
-    "srcPath": "Happiness"
+    "srcPath": "DarkHonglu_Xi"
   },
   "DaughterEducationSpider": {
     "buffType": "Positive",
@@ -2119,7 +2218,7 @@
     "buffType": "Positive",
     "desc": "- Turn Start: gain 1 Piercing Sword for every -8 SP (max 5)\n- When Clash ends, inflict +1 Sinking Count (once per turn)\n- On Hit with the first Coin of a Base Attack Skill, inflict +1 Sinking Count (once per turn)\n- For every -20 SP, inflict +1 more Sinking Count with above effects (max 2)\n- Replace this unit's Base Skills with Minus Coin Skills",
     "name": "Despair",
-    "srcPath": "Despair"
+    "srcPath": "DespairAlly"
   },
   "DesperadoBuff": {
     "buffType": "Positive",
@@ -2247,7 +2346,7 @@
     "buffType": "Neutral",
     "desc": "At 4+ Count, Dongrang becomes staggered.",
     "name": "Emptiness",
-    "srcPath": "Emptiness"
+    "srcPath": "DistortedDongrangEmptiness"
   },
   "DistortedDongrangEmptyHonor": {
     "buffType": "Neutral",
@@ -2358,7 +2457,7 @@
     "buffType": "Positive",
     "desc": "- Max Stack: 1\n- As long as this unit has this effect, gain 4 Final Power and take +30% damage\n- On Hit with a Coin that inflicts Bleed Potency: inflict +2 more Bleed On Hit (max 10 per turn)\n- If this unit has Poise, deal +50% damage",
     "name": "Mental Awakening",
-    "srcPath": "Mental Awakening"
+    "srcPath": "DrunkAwakening"
   },
   "DrunkBlood": {
     "buffType": "Negative",
@@ -2367,7 +2466,7 @@
     ],
     "desc": "- Max Stack: 5\n- Unique Bleed\n- When tossing an attack Coin, take fixed damage by the effect’s Stack.",
     "name": "Bloodpour (血注)",
-    "srcPath": "Bloodpour (血注)"
+    "srcPath": "DrunkBlood"
   },
   "DuelDeclaration_Camille": {
     "buffType": "Negative",
@@ -2413,7 +2512,7 @@
     "buffType": "Negative",
     "desc": "- Max Stack: 20\n- 'The Thumb Apprentice - Lucio' gains Skill Power and deals more damage with every Clash with this unit\n- Expires at Turn End if this unit did not Clash with 'The Thumb Apprentice - Lucio' this turn",
     "name": "The Duel Escalates",
-    "srcPath": "The Duel Escalates"
+    "srcPath": "DuelEdge"
   },
   "DuelEdgeAlly": {
     "buffType": "Negative",
@@ -2516,7 +2615,7 @@
     "buffType": "Positive",
     "desc": "- Max Stack: 7\n- When Staggered, consume all Emergency Barrier Battery Stack and gain Charge Barrier by the Stack consumed",
     "name": "Emergency Barrier Battery",
-    "srcPath": "Emergency Barrier Battery"
+    "srcPath": "EmergencyChargeForceField"
   },
   "EmergencyFeed": {
     "buffType": "Neutral",
@@ -2529,6 +2628,12 @@
     "desc": "When hit, the attacker gains +1 Charge Count; when hit with a Gloom attack, gain +1 Rupture Count, then reduce Count by 1",
     "name": "Spark Discharge",
     "srcPath": "Spark Discharge"
+  },
+  "EmpathicDistressAlly": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 5\n- When other allies are hit, gain +1 Tremor Count, and lose 1 Stack (once per Skill)\n- If there are no other allies on the field, gain 2 Tremor Potency when hit, and lose 1 Stack (once per Skill)\n- When hit by Crit Attack, take +(Tremor Potency on self)% damage (max 15%)",
+    "name": "Fracturing of the Senses",
+    "srcPath": "EmpathicDistressAlly"
   },
   "Emptiness": {
     "buffType": "Negative",
@@ -2634,7 +2739,7 @@
     "buffType": "Positive",
     "desc": "- For 3 turns after gaining this effect: gain 2 Power Up and 2 Damage Up at the start of each turn (Substituting units earn it in the turn they Substitute in)",
     "name": "Little Handy - External Upgrade Module",
-    "srcPath": "Little Handy - External Upgrade Module"
+    "srcPath": "ExternalUpgradeModule"
   },
   "ExtractCoin": {
     "buffType": "Neutral",
@@ -2645,7 +2750,8 @@
   "FailedToAssistQueen": {
     "buffType": "Negative",
     "desc": "- Max Stack: 1\n- Lose 3 Offense Levels\n- Lose 3 Defense Levels",
-    "name": "What use... am I...?"
+    "name": "What use... am I...?",
+    "srcPath": "FailedToAssistQueen"
   },
   "FaintMemory": {
     "buffType": "Neutral",
@@ -2854,7 +2960,7 @@
     "buffType": "Positive",
     "desc": "Max Stack: 1\n+3% damage on Critical Hit for every Torn Memory (max 18%)\nOn Hit, inflict 1 Bleed (3 per turn)\nOn Kill, gain 3 Poise and +2 Poise Count (2 times per turn)\nExpires at Turn End",
     "name": "Fell Bullet",
-    "srcPath": "Fell Bullet"
+    "srcPath": "FellBulletPersonality"
   },
   "FerrisWheel": {
     "buffType": "Neutral",
@@ -2874,6 +2980,12 @@
     "name": "Festive Fever",
     "srcPath": "Festive Fever"
   },
+  "FinishedFabric": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 30\n- Skills that gain or consume Charge Count (including Unique Charge) deal +(Stack)% damage (max 30%)\n- Turn End: Lose 5 Stacks\n  · If Shield was broken this turn, lose 10 Stacks instead",
+    "name": "Cut Fabric",
+    "srcPath": "FinishedFabric"
+  },
   "FireBulletPropellant": {
     "buffType": "Positive",
     "categoryKeywordList": [
@@ -2882,7 +2994,7 @@
     ],
     "desc": "- Unique Ammo\n- Max Stack : 15\n- Consumed when using certain Skills",
     "name": "Scorch Propellant Ammo",
-    "srcPath": "Scorch Propellant Ammo"
+    "srcPath": "FireBulletPropellant"
   },
   "FireField": {
     "buffType": "Neutral",
@@ -2913,11 +3025,17 @@
     "name": "Battle Instinct",
     "srcPath": "Firstlight"
   },
+  "FlowerLaurelWreath": {
+    "buffType": "Positive",
+    "desc": "- Remove all Stagger Thresholds\n- Clash Power +2\n- Take -50% SP damage from Sinking (rounded down)\n- Turn End: Heal 10 SP and gain 5 Haste next turn\n- Clash Win: Heal 5 SP for all allies including this unit and Assist Units",
+    "name": "Laurel Wreath of Atonement",
+    "srcPath": "FlowerLaurelWreath"
+  },
   "FocusOnActing": {
     "buffType": "Positive",
     "desc": "- Max Stack: 3\n- <La Manchaland> Identities only; includes Empowered Skills\n- Skill 1 and Skill 2 gain Final Power +1; deal +5% damage for every Stack (max 15%)\n- Skill 3 gains Final Power +2; deals +10% damage for every Stack (max 30%)\n- Lose 1 Stack when:\n  1) Skill 3 Attack End\n  2) If this unit does not have Hardblood Armor at Turn Start",
     "name": "Focused Performance",
-    "srcPath": "Focused Performance"
+    "srcPath": "FocusOnActing"
   },
   "ForwardToTheBoundKing": {
     "buffType": "Positive",
@@ -2975,7 +3093,7 @@
     "buffType": "Negative",
     "desc": "- Unique Cold\n- Cannot act for this turn\n- Certain Skill activations become nullified at 1 HP",
     "name": "Frozen",
-    "srcPath": "Frozen"
+    "srcPath": "FreezingDOQ"
   },
   "FreischutzShotCount": {
     "buffType": "Neutral",
@@ -3104,7 +3222,7 @@
     "buffType": "Negative",
     "desc": "Turn Start: for every 2 Stack, gain 1 Clash Power Down (max 5)",
     "name": "Indulged",
-    "srcPath": "Indulged"
+    "srcPath": "FullCharon"
   },
   "FullReload": {
     "buffType": "Neutral",
@@ -3247,6 +3365,16 @@
     "name": "Supernatural, Strength, Chaos, and Spirits",
     "srcPath": "Supernatural, Strength, Chaos, and Spirits"
   },
+  "GoldenLeatherEnhance": {
+    "buffType": "Positive",
+    "desc": "Skill Final Power +1 for every 3 Naildle on the target (max 3)",
+    "name": "Shower of Stinging Sunshine [King of Needleworks]"
+  },
+  "GoldenManager": {
+    "buffType": "Positive",
+    "desc": "- Deal +5% damage for every Guarded Caution on target (max 50%)\n- Base Power +3 On Skill Use against target that has 0 or less SP",
+    "name": "Shower of Stinging Sunshine [3F Floor Manager]"
+  },
   "GoldenOpportunity": {
     "buffType": "Neutral",
     "desc": "- If The House of Spiders: The Ring Apprentice Faust is on the field, gain 2 Protection at Turn Start\n- Turn End: Lose 2 Stack",
@@ -3270,6 +3398,12 @@
     "desc": "- Base Stack: 3\n- Deal +5% damage for every 3 Bleed on self (max 30%)\n- All Parts cannot be Staggered; take -75% damage from Bleed\n- Turn End: Lose 1 Stack\n- Consume all Pulsation Count when this effect expires",
     "name": "Uncontrollable Rampage",
     "srcPath": "Gourmandise"
+  },
+  "GourmandiseAlly": {
+    "buffType": "Positive",
+    "desc": "- Base Power +1, convert all Coins on all Skills into Unbreakable Coins\n- Deal +5% damage for every 3 Bleed on self (max 30%); heal +10% more HP on target (max 100%, rounded down)\n- Cannot be Staggered; take -90% damage from Bleed (excluding forced Staggers)\n- Turn End: Lose 1 Stack",
+    "name": "Uncontrollable Rampage",
+    "srcPath": "GourmandiseAlly"
   },
   "GraspReplica": {
     "buffType": "Negative",
@@ -3392,35 +3526,41 @@
     "name": "Tiansha Star's Blade - Arayashiki [天殺星刀阿賴耶識]",
     "srcPath": "HeavenlyKillerStar"
   },
+  "HeavyBlackYarn": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 5\n- Gain Slot Weight equal to Stack (per Part)\n- Take +10% damage for every Stack",
+    "name": "Clumped Black Threads",
+    "srcPath": "HeavyBlackYarn"
+  },
   "HeishouAttack": {
     "buffType": "Neutral",
     "desc": "- If unit A applies this effect to unit B: Unit B follows up with an Unopposed Attack with its Skill 1 against the same enemy unit A attacked with its Skill. Activates at unit A's Skill Attack End.\n- The Skill used as an Assist Attack does not affect Unit B's upcoming Skills list.",
     "name": "Your Will Guides My Blade.",
-    "srcPath": "Your Will Guides My Blade."
+    "srcPath": "HeishouAttack"
   },
   "HeishouCombo": {
     "buffType": "Neutral",
     "desc": "- If unit A applies this effect to unit B: Unit B follows up with an Unopposed Attack with its Base Skill 3 against the same enemy unit A attacked with its Skill. Activates at unit A's Attack End. (Does not activate as Empowered Skills)\n- The Skill used as an Assist Attack does not affect Unit B's upcoming Skills list.\n- Does not activate if affected ally's Skill 3 is not unlocked.",
     "name": "Exalted Command",
-    "srcPath": "Exalted Command"
+    "srcPath": "HeishouCombo"
   },
   "HeishouComboCount": {
     "buffType": "Positive",
     "desc": "- Number of times this unit activated combo with The Lord of Hongyuan Hong Lu Identity\n- Max Stack: 2\n- Turn Start: gain 1 Offense Level Up and 1 Defense Level Up for every Stack",
     "name": "Unrelenting Storm",
-    "srcPath": "Unrelenting Storm"
+    "srcPath": "HeishouComboCount"
   },
   "HeishouComboCountHonglu": {
     "buffType": "Positive",
     "desc": "- Max Stack: 11\n- Empowers The Lord of Hongyuan Hong Lu based on which Heishou he activated combo with\n- The Heishou Bolus Contamination effects can stack with each other\n\n· Heishou - Mao Adept Faust: take -5% damage from Skills\n· Heishou - Mao Ryōshū: if this unit's Speed is faster than the target's, deal +5% damage\n· Heishou - Mao Outis: inflict +1 Rupture Count On Hit with Unopposed Attacks (once per turn)\n· Heishou - Si Rodion: Inflict 1 Rupture On Critical Hit (3 times per turn)\n· Heishou - Si Gregor: Gain +1 Poise Count when dealing Rupture damage (once per turn)",
     "name": "Heishou Bolus Contamination [黑獣丸染]",
-    "srcPath": "Heishou Bolus Contamination [黑獣丸染]"
+    "srcPath": "HeishouComboCountHonglu"
   },
   "HeishouDeathCount": {
     "buffType": "Positive",
     "desc": "- Max Stack: 5\n- Turn Start: activate the following\n· Gain 1 Offense Level Up for every 1 Stack (max 5)\n· Gain 1 Damage Up for every 2 Stack (max 2)\n· Gain 1 Attack Power Up at 3+ Stack",
     "name": "Life from Death [死中求活]",
-    "srcPath": "Life from Death [死中求活]"
+    "srcPath": "HeishouDeathCount"
   },
   "HeishouSupportProtect": {
     "buffType": "Neutral",
@@ -3429,19 +3569,25 @@
     ],
     "desc": "- Unique Assist Defense\n- Max Stack: 1\n- When The Lord of Hongyuan Hong Lu is about to take an Unopposed Attack from an enemy, consume 1 Stack to redirect the enemy's targeting to self; then, copy and use The Lord of Hongyuan Hong Lu's 'Lordsguard' Skill\n- When there are multiple allies that have Assist Defense Stacks, the ally that has the highest Stack has the highest activation priority\n- This effect counts as Assist Defense, and is counted toward calculating Assist Defense Stacks\n- Expires at Turn End",
     "name": "Lordsguard",
-    "srcPath": "Lordsguard"
+    "srcPath": "HeishouSupportProtect"
   },
   "HeishouSynergy": {
     "buffType": "Positive",
     "desc": "- Max Stack: 11\n- Gain the following effects based on Stack:\n· For every 1 Stack, gain 1 Max Speed (max 5) and deal +1% damage with Skills\n· For every 2 Stack, gain 1 Min Speed (max 2) and 1 Defense Level Up (max 5)\n· For every 3 Stack, gain 1 Offense Level Up (max 3)\n· At 5+ Stack, gain 1 Damage Up and apply 1 Offense Level Up to all Heishou Pack Identities",
     "name": "Leash-holder of All Heishou",
-    "srcPath": "Leash-holder of All Heishou"
+    "srcPath": "HeishouSynergy"
   },
   "HelplessTear": {
     "buffType": "Positive",
     "desc": "- Max Stack: 1\n- Gain 3 Offense Levels\n- Lose 6 Defense Levels\n- All Skills gain +1 Atk Weight\n- All Skills become Unbreakable Coins\n- Inflict +1 more Sinking Potency and Count",
     "name": "Helpless Tears",
-    "srcPath": "Helpless Tears"
+    "srcPath": "HelplessTear"
+  },
+  "HideBlackYarn": {
+    "buffType": "Neutral",
+    "desc": "- Max Potency: 6\n- Max Count: 2\n- When hit, lose 1 Potency (once per Skill)\n- Turn End: Lose 1 Count\n- Expires if Potency or Count reaches 0\n- Cannot be Staggered\n- On Unopposed Attack, deal +100% damage\n- Take -100% damage",
+    "name": "Pool of Black Water",
+    "srcPath": "HideBlackYarn"
   },
   "HighVoltageExoshell": {
     "buffType": "Positive",
@@ -3571,19 +3717,19 @@
     "buffType": "Negative",
     "desc": "- When Clashing with 'The Thumb Apprentice - Lucio', Clash Power -1\n- Deal -20% damage to 'The Thumb Apprentice - Lucio'",
     "name": "Hostage Situation",
-    "srcPath": "Hostage Situation"
+    "srcPath": "HostageCharon"
   },
   "HousekeepingAssistantModule": {
     "buffType": "Positive",
     "desc": "- When activating the Hand of the Saint, it activates again once next turn\n- Turn Start: gain Offense Level Up and Defense Level Up equal to the number of times Nethersea Brand was removed by using the Hand of the Saint during this Encounter (max 4 each)",
     "name": "Little Handy - Housekeeping Assistant Module",
-    "srcPath": "Little Handy - Housekeeping Assistant Module"
+    "srcPath": "HousekeepingAssistantModule"
   },
   "HowDareYouApple": {
     "buffType": "Positive",
     "desc": "- Max Stack: 4\n- Deal +20% damage for every Stack\n- Consumed when using certain Skills",
     "name": "The Audacity...!",
-    "srcPath": "The Audacity...!"
+    "srcPath": "HowDareYouApple"
   },
   "HowlingCocoon": {
     "buffType": "Positive",
@@ -3643,7 +3789,7 @@
     ],
     "desc": "- Max Stack: 2\n- Unique Charge (fixed Potency)",
     "name": "Corpus Ingredient",
-    "srcPath": "Corpus Ingredient"
+    "srcPath": "HumanFleshTheRings"
   },
   "Hunger": {
     "buffType": "Neutral",
@@ -3655,7 +3801,7 @@
     "buffType": "Negative",
     "desc": "Max Stack: 3\nI'm starving. I want candy now",
     "name": "Hunger-Rage",
-    "srcPath": "Hunger-Rage"
+    "srcPath": "HungryCharon"
   },
   "HurtNightStiletto": {
     "buffType": "Negative",
@@ -3667,7 +3813,7 @@
     "buffType": "Negative",
     "desc": "- Base Stack: 0\n- Max Stack: 3\n- At Turn End...\n· At 0 or higher SP, lose 1 Stack\n· At less than 0 SP, gain 1 Stack",
     "name": "Hysteria",
-    "srcPath": "Hysteria"
+    "srcPath": "HystericGauge"
   },
   "IDMicroChip": {
     "buffType": "Negative",
@@ -3679,7 +3825,7 @@
     "buffType": "Neutral",
     "desc": "Turn End: Lose 1 Stack\nTurn Start: At 1- Stack, use a special Skill",
     "name": "Imminent Decay",
-    "srcPath": "Imminent Decay"
+    "srcPath": "ImpendingCollapse"
   },
   "ImperfectEternalLife": {
     "buffType": "Negative",
@@ -3703,13 +3849,13 @@
     "buffType": "Positive",
     "desc": "- Remove 1 highest Stagger threshold from every allied unit\n- When Staggered, immediately recover from Stagger at the start of the next turn (once)",
     "name": "Little Handy - Incremental Motion Firmware",
-    "srcPath": "Little Handy - Incremental Motion Firmware"
+    "srcPath": "IncrementalMotionFirmware"
   },
   "IndelibleGoodwill": {
     "buffType": "Positive",
     "desc": "- This unit does not lose Shield at Turn End (unless removed by damage or certain effects)\n- When the Shield breaks due to getting hit, become Staggered and gain 5 Fragile until next turn\n- When becoming Staggered due to raised Stagger threshold, gain 5 Fragile until next turn\n- Fragile gained due to this buff's effects do not stack\n- Shield HP can stack, however; when this effect is active, the shield HP cannot be more than 50% of the Shielded unit's max HP\n- This effect counts as a 'Shield Management' effect. (replaced when gaining a different Shield Management effect)",
     "name": "Indelible Compassion",
-    "srcPath": "Indelible Compassion"
+    "srcPath": "IndelibleGoodwill"
   },
   "IndexPrescriptDon_0": {
     "buffType": "Neutral",
@@ -3744,56 +3890,56 @@
     "desc": "Attack and hit a Sinner.\n\n- Turn Start: At 0~2 Grace of the Prescript, gain this effect\n- Maximum stackable Grace of the Prescript with this Prescript is limited to 3",
     "imageOverride": "Prescript",
     "name": "Prescript: [Paper Slip] I",
-    "srcPath": "Prescript"
+    "srcPath": "IndexPrescript_Base"
   },
   "IndexPrescriptEnemy_1": {
     "buffType": "Neutral",
     "desc": "Attack and hit a Prescript's Target.\n\n- Turn Start: At 3~5 Grace of the Prescript, gain this effect\n- Maximum stackable Grace of the Prescript with this Prescript is limited to 6",
     "imageOverride": "Prescript",
     "name": "Prescript: [Paper Slip] II",
-    "srcPath": "Prescript"
+    "srcPath": "IndexPrescript_Base"
   },
   "IndexPrescriptEnemy_2": {
     "buffType": "Neutral",
     "desc": "Stagger or eliminate a random Sinner, either by you or your ally.\n\n- Turn Start: At 6~8 Grace of the Prescript, gain this effect\n- Maximum stackable Grace of the Prescript with this Prescript is limited to 9",
     "imageOverride": "Prescript",
     "name": "Prescript: [Paper Slip] III",
-    "srcPath": "Prescript"
+    "srcPath": "IndexPrescript_Base"
   },
   "IndexPrescriptEnemy_3": {
     "buffType": "Neutral",
     "desc": "Eliminate all enemies before the next Prescript arrives.\n\n- Turn Start: At 9 Grace of the Prescript, gain this effect",
     "imageOverride": "Prescript",
     "name": "Prescript: [Paper Slip] IV",
-    "srcPath": "Prescript"
+    "srcPath": "IndexPrescript_Base"
   },
   "IndexPrescriptFaust_0": {
     "buffType": "Neutral",
     "desc": "Use a Skill marked with Mark of the Prescript or hit a target with a marked Skill.\n\n- Turn Start: At 0~2 Grace of the Prescript, gain this effect \n- Maximum stackable Grace of the Prescript with this Prescript is limited to 3",
     "imageOverride": "Prescript",
     "name": "Prescript: [Paper Slip] I",
-    "srcPath": "Prescript"
+    "srcPath": "IndexPrescript_Base"
   },
   "IndexPrescriptFaust_1": {
     "buffType": "Neutral",
     "desc": "Hit a target with a Skill marked with Mark of the Prescript.\n\n- Turn Start: At 3~5 Grace of the Prescript, gain this effect\n- Maximum stackable Grace of the Prescript with this Prescript is limited to 6",
     "imageOverride": "Prescript",
     "name": "Prescript: [Paper Slip] II",
-    "srcPath": "Prescript"
+    "srcPath": "IndexPrescript_Base"
   },
   "IndexPrescriptFaust_2": {
     "buffType": "Neutral",
     "desc": "Hit a target with E.G.O Awakening Skill or 'Skill 3' marked with Mark of the Prescript.\n\n- Turn Start: At 6~8 Grace of the Prescript, gain this effect\n- Maximum stackable Grace of the Prescript with this Prescript is limited to 9",
     "imageOverride": "Prescript",
     "name": "Prescript: [Paper Slip] III",
-    "srcPath": "Prescript"
+    "srcPath": "IndexPrescript_Base"
   },
   "IndexPrescriptFaust_3": {
     "buffType": "Neutral",
     "desc": "Eliminate all enemies before the next Prescript arrives.\n\n- Turn Start: At 9 Grace of the Prescript, gain this effect",
     "imageOverride": "Prescript",
     "name": "Prescript: [Paper Slip] IV",
-    "srcPath": "Prescript"
+    "srcPath": "IndexPrescript_Base"
   },
   "IndexPrescriptRien_0": {
     "buffType": "Neutral",
@@ -3855,19 +4001,19 @@
     "buffType": "Neutral",
     "desc": "- Apply Mark of the Prescript to a Base Attack Skill on this unit's Dashboard",
     "name": "Mark of the Prescript",
-    "srcPath": "Mark of the Prescript"
+    "srcPath": "IndexPrescriptTargetMarkToEnemy"
   },
   "IndexPrescriptTargetToEnemy": {
     "buffType": "Neutral",
     "desc": "- Take +10% damage from The Index units\n- This effect is applied to a single target every turn regardless of the number of The Index units deployed",
     "name": "The Prescript's Target",
-    "srcPath": "The Prescript's Target"
+    "srcPath": "IndexPrescriptTargetToEnemy"
   },
   "IndexPrescriptTargetToPersonality": {
     "buffType": "Neutral",
     "desc": "Skill Power -2 against and take +20% damage from The Index enemies",
     "name": "The Prescript's Target - The Index",
-    "srcPath": "The Prescript's Target - The Index"
+    "srcPath": "IndexPrescriptTargetToPersonality"
   },
   "IndexPrescriptYi_0": {
     "buffType": "Neutral",
@@ -3901,7 +4047,7 @@
     "buffType": "Neutral",
     "desc": "- Receive 'Prescript: [Paper Slip]' under specific conditions",
     "name": "Prescript",
-    "srcPath": "Prescript"
+    "srcPath": "IndexPrescript_Base"
   },
   "IndexPrescript_Base_2nd": {
     "buffType": "Neutral",
@@ -4047,19 +4193,19 @@
     "buffType": "Negative",
     "desc": "- Turn Start:\n· Gain 1 Defense Level Down for every 10 Stacks\n· Gain 1 Fragile for every 20 Stacks\n- Max Stack: 100",
     "name": "Karmic Consequence",
-    "srcPath": "Karmic Consequence"
+    "srcPath": "KarmaOfIndexAlly"
   },
   "KarmaOfIndexEnemy": {
     "buffType": "Negative",
     "desc": "- Turn Start:\n· Gain 1 Defense Level Down for every 10 Stacks\n· Gain 1 Fragile for every 20 Stacks\n- Max Stack: 100",
     "name": "Karmic Consequence",
-    "srcPath": "Karmic Consequence"
+    "srcPath": "KarmaOfIndexAlly"
   },
   "KarmaOfIndexRien": {
     "buffType": "Negative",
     "desc": "- Turn Start:\n· Gain 1 Defense Level Down for every 10 Stack\n· Gain 1 Fragile for every 20 Stack\n· Gain 1 Clash Power Down for every 40 Stack\n- Max Stack: 100",
     "name": "Karmic Consequence",
-    "srcPath": "Karmic Consequence"
+    "srcPath": "KarmaOfIndexAlly"
   },
   "KarmaOfIndexRien_2Phase": {
     "buffType": "Negative",
@@ -4071,7 +4217,7 @@
     "buffType": "Negative",
     "desc": "- Turn Start:\n· Gain 1 Defense Level Down for every 10 Stacks\n· Gain 1 Fragile for every 20 Stacks\n- Max Stack: 100",
     "name": "Karmic Consequence",
-    "srcPath": "Karmic Consequence"
+    "srcPath": "KarmaOfIndexAlly"
   },
   "KeptBlood": {
     "buffType": "Positive",
@@ -4083,7 +4229,7 @@
     "buffType": "Positive",
     "desc": "- Turn Start: gain 2 Protection\n- Adjust any Attack Type Resistances exceeding 1 to 1 (unless Staggered)",
     "name": "Blessing",
-    "srcPath": "Blessing"
+    "srcPath": "KnightBless"
   },
   "KnowledgeExplored": {
     "buffType": "Neutral",
@@ -4105,7 +4251,7 @@
     ],
     "desc": "- Unique Ammo\n- Max Capacity: 16\n- Spent by certain Skills\n- Some attacks cancel if lacking Ammo",
     "name": "LCA Fracture Round",
-    "srcPath": "LCA Fracture Round"
+    "srcPath": "LCA_Bullet"
   },
   "Laceration": {
     "buffType": "Negative",
@@ -4130,6 +4276,12 @@
     "name": "Lamp",
     "srcPath": "LanternHohenheimBigBird"
   },
+  "LargeTailoringShears": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 3\n- Deal +(5 + Stack x 5)% damage against Sinners (max 20%)\n- On Skill Use against Alteration Target Sinners, gain Clash Power equal to Stack",
+    "name": "Blossom Scissors",
+    "srcPath": "LargeTailoringShears"
+  },
   "LeakedOutSauce": {
     "buffType": "Positive",
     "desc": "- Turn End: Gain 1 Haste next turn for every 2 Stack (max 10)\n- Expires at Turn End",
@@ -4146,7 +4298,7 @@
     "buffType": "Positive",
     "desc": "- Max Stack: 3\n- Turn End: gain 2 Haste and (Stack x 2) Defense Level Up next turn\n- On Hit with a Skill, inflict additional Tremor Potency equal to Stack (max 6 per turn)",
     "name": "Strider【Wu】",
-    "srcPath": "Strider【Wu】"
+    "srcPath": "LegStrengthHorse"
   },
   "LegStrengthHorseYisang": {
     "buffType": "Positive",
@@ -4955,7 +5107,8 @@
   "MD6LimitBaseN": {
     "buffType": "Negative",
     "desc": "",
-    "name": "Mounting Adversities"
+    "name": "Mounting Adversities",
+    "srcPath": "MD6LimitBaseN"
   },
   "MD7Limit101": {
     "buffType": "Positive",
@@ -5971,7 +6124,7 @@
     "buffType": "Positive",
     "desc": "- For this turn, this unit uses Plus Coin Base Attack Skills\n\n- Base Attack Skills deal +3% damage for every Love/Hate on self (max 15%)",
     "name": "Here Comes Magical Girl!",
-    "srcPath": "Here Comes Magical Girl!"
+    "srcPath": "MagicalGirlAppear"
   },
   "MagicalGirlResponse": {
     "buffType": "Positive",
@@ -6038,7 +6191,7 @@
     "buffType": "Negative",
     "desc": "SP Loss Efficiency +1 per Stack (max 5)\nExpires when it reaches 5 Stack, and take 10 SP damage\nLose 1 Stack per turn",
     "name": "Mental Fracture",
-    "srcPath": "Mental Fracture"
+    "srcPath": "MentalCrack"
   },
   "MentalIncreaseDown": {
     "buffType": "Negative",
@@ -6203,7 +6356,8 @@
   "MiddleFingerEzraSin": {
     "buffType": "Positive",
     "desc": "- Base Defense Level +2\n- Base Attack Power +1, Defense Power +2\n For every 'Deep Breath - Red' Stack on Moses, Ezra and Vespa's Assist Defense heals 4 more SP for Ezra (max 12)",
-    "name": "Shin (心) - Ezra"
+    "name": "Shin (心) - Ezra",
+    "srcPath": "MiddleFingerEzraSin"
   },
   "MiddleFingerLeashBuff": {
     "buffType": "Negative",
@@ -6227,7 +6381,7 @@
     "buffType": "Positive",
     "desc": "- Nethersea Brand no longer inflicts Nervous Impairment or deals damage to allies",
     "name": "Little Handy - Mini Decontamination Kit",
-    "srcPath": "Little Handy - Mini Decontamination Kit"
+    "srcPath": "MiniDecontaminationKit"
   },
   "MinusCoinValueDown": {
     "buffType": "Positive",
@@ -6245,7 +6399,7 @@
     "buffType": "Positive",
     "desc": "- Max Stack: 40\n- For every (Stack / 8), gain 1 Aggro (max 5; rounded down; affects the leftmost Skill Slot on the Dashboard)\n- For every (Stack / 20), gain 1 Protection (max 2; rounded down)\n- Gain 10 Stacks at Turn End\n※ Can gain up to 20 per turn",
     "name": "Man in Scabbard",
-    "srcPath": "Man in Scabbard"
+    "srcPath": "MlynarWaiting"
   },
   "MosesPurpleBreathBind": {
     "buffType": "Negative",
@@ -6280,7 +6434,8 @@
   "MosesSin": {
     "buffType": "Positive",
     "desc": "- Defense Level +3, Defense Power +2\n- If this unit lost SP due to its Skill's SP loss effects, gain Protection equal to (SP lost / 5) next turn",
-    "name": "Shin (心) - Moses"
+    "name": "Shin (心) - Moses",
+    "srcPath": "MosesSin"
   },
   "MosesWarPTSD": {
     "buffType": "Negative",
@@ -6307,7 +6462,7 @@
     "buffType": "Positive",
     "desc": "- Max Stack: 2\n- Deal +15% damage per Stack\n- Combat Start: At 2 Stacks, convert all Coins of this unit's Attack Skills into Unbreakable Coins.\n- Attack End: Lose this effect",
     "name": "Automated Myofiber Activity",
-    "srcPath": "Automated Myofiber Activity"
+    "srcPath": "MuscleContraction"
   },
   "Nail": {
     "buffType": "Negative",
@@ -6348,7 +6503,7 @@
     "buffType": "Negative",
     "desc": "- Max Stack : 30\n- At 30 Stack, become Staggered; then, take fixed damage equal to 25% HP, and remove this effect",
     "name": "Nervous Impairment",
-    "srcPath": "Nervous Impairment"
+    "srcPath": "NervousImpairment"
   },
   "NetherseaBrand": {
     "buffType": "Neutral",
@@ -6360,7 +6515,7 @@
     "buffType": "Neutral",
     "desc": "- Sinners on top of Nethersea Brand: at Turn End, take fixed damage equal to 5% HP and gain 3 Nervous Impairment\n- Greatly increases the Nervous Impairment Stack Sea Terrors on top of Nethersea Brand inflict against Sinners\n- Nethersea Brand's influence expands toward Sinner territory with each passing turn\n· Stage 1 : Sea Terror territory\n· Stage 2 : Affects 2 frontmost Sinners\n· Stage 3 : Affects 5 frontmost Sinners\n· Stage 4 : Affects all Sinners",
     "name": "Nethersea Brand",
-    "srcPath": "Nethersea Brand"
+    "srcPath": "NetherseaBrandUnit"
   },
   "NextHallway": {
     "buffType": "Neutral",
@@ -6405,7 +6560,7 @@
     ],
     "desc": "- Offense Level -15\n- Defense Level -15",
     "name": "Faint Guilt",
-    "srcPath": "Faint Guilt"
+    "srcPath": "NightDrifterGuilty"
   },
   "NightPathfinding": {
     "buffType": "Positive",
@@ -6417,7 +6572,7 @@
     "buffType": "Negative",
     "desc": "- For this turn, this unit uses Minus Coin Base Attack Skills",
     "name": "Regressive Transformation - Reversed",
-    "srcPath": "Regressive Transformation - Reversed"
+    "srcPath": "NoVillain"
   },
   "NoeulNageuneBuffA3": {
     "buffType": "Positive",
@@ -6455,11 +6610,61 @@
     "name": "Le Noir: Worsted",
     "srcPath": "NoirBindArmor"
   },
+  "NoirField": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 2\n- Turn Start: Gain 1 Power Up and 1 Damage Up for every 20% missing HP (max 3 respectively)\n- Turn Start: All \"Le Noir\" allies' Skills gain Final Power equal to Stack\n\n- Turn Start: At 1+ Stack, apply the following effects to all \"Le Noir\" allies, including this unit:\n · SP +10\n · Attack Power +2\n · Defense Level +2\n\n- Turn Start: At 2+ Stacks, apply the following effects to all non-\"Le Noir\" enemies:\n · Max Speed -1\n · Offense Level -6\n · Defense Level -2",
+    "name": "Sanctum of Conservation",
+    "srcPath": "NoirField"
+  },
+  "NoirNail": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 3\n- When Tremor Burst is triggered on this unit,\n · Take Sloth damage equal to Tremor Potency on self\n · Gain 1 Fragile\n · Lose 1 Stack",
+    "name": "Promised Nail"
+  },
   "NoirNoComply": {
     "buffType": "Negative",
     "desc": "- Max Stack: 3\n- Take +5% damage for every Stack",
     "name": "Instruction Incompliance",
     "srcPath": "NoirNoComply"
+  },
+  "NoirScissorAlly": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 4\n- When a target that has this effect is defeated, the unit that inflicted this effect heals 5 SP and gains 1 Offense Level Up next turn (3 times per turn)",
+    "name": "Mark of Shearing",
+    "srcPath": "ScissorsMark"
+  },
+  "NoirScissorCut": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 2\n- Deal +7% damage for every Stack",
+    "name": "Blossom Scissors",
+    "srcPath": "LargeTailoringShears"
+  },
+  "NoirScissorShield": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 1\n- Offense Level +3, Defense Level +3\n- On Skill Use, heal 5 SP if this unit is a Charge Identity (once per turn)\n- On Base Skill Hit, deal Slash damage equal to 5% of each Coin's final damage\n- Expires at Turn End",
+    "name": "Second is Welcome-snipping",
+    "srcPath": "NoirScissorShield"
+  },
+  "NoirShieldPiece": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 2\n- Take -10% damage\n- At 2 Stacks, Final Power -2",
+    "name": "Apocalyptic Vengeance",
+    "srcPath": "NoirShieldPiece"
+  },
+  "NoirShieldUp": {
+    "buffType": "Positive",
+    "categoryKeywordList": [
+      "SHIELD_MANAGER"
+    ],
+    "desc": "- Max Potency: 999\n- Base Count: 2\n- Cannot be Staggered\n- Turn Start: The Part gains Shield equal to Stack\n- This effect counts as a \"Shield Management\" effect\n- Lose Stack when losing Shield\n- Turn End: Lose 1 Count",
+    "name": "Blessing of the Obsidian God",
+    "srcPath": "NoirShieldUp"
+  },
+  "NoirSquareCollapse": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 10\n- Lose Defense Level equal to Stack",
+    "name": "Formation Collapse",
+    "srcPath": "NoirSquareCollapse"
   },
   "NoirSuit": {
     "buffType": "Positive",
@@ -6501,7 +6706,7 @@
     "buffType": "Positive",
     "desc": "- Cannot be targeted for Charmed\n- Deal +25% damage to Fairy",
     "name": "Keen Observation",
-    "srcPath": "Keen Observation"
+    "srcPath": "ObservationMoses"
   },
   "ObservationTheRings": {
     "buffType": "Negative",
@@ -6584,7 +6789,7 @@
     "buffType": "Positive",
     "desc": "- If this unit has Haste, gain +1 more Tremor Count from its Base Skills\n- If this unit's Speed is faster than the target's, deal +(Speed difference x 3)% damage (max 15%)",
     "name": "Violent Collections",
-    "srcPath": "Violent Collections"
+    "srcPath": "OutisNoHat"
   },
   "OutpouringAnger": {
     "buffType": "Positive",
@@ -6619,7 +6824,7 @@
     "buffType": "Negative",
     "desc": "- Max Stack: 4\n- Take +10% damage from Lust Skills\n• If the target is a <La Manchaland> Identity, take +20% damage regardless of the Skill's Affinity\n• At max Stack, deal -20% damage against <La Manchaland> Identities\n- Lose 1 Stack either after this unit's Skill hits and ends or after the Skill that attacked this unit hits and ends",
     "name": "La Mancha Parade",
-    "srcPath": "La Mancha Parade"
+    "srcPath": "ParadeConcentration"
   },
   "Paralysis": {
     "buffType": "Negative",
@@ -6643,7 +6848,7 @@
     "buffType": "Neutral",
     "desc": "- After taking damage, this unit has begun to use its Attack Skills.\n- Turn Start while in Combat-Ready State:\n· Inflict 3 Nervous Impairment to all enemies\n· Min & Max Speed +3\n· Gain 1 Offense Level Up for every 10% missing HP (max 8)\n- Turn End while in Combat-Ready State: take fixed damage equal to 10% HP",
     "name": "Combat-Ready State",
-    "srcPath": "Combat-Ready State"
+    "srcPath": "ParticipationMod"
   },
   "PassedPortal_Blue": {
     "buffType": "Neutral",
@@ -6682,7 +6887,7 @@
     ],
     "desc": "- Heal 2 SP On Hit with Base Skill Coins that gain Penitence\n- Max Value : 20\n- Unique Charge (fixed Potency)\n- Turn Start: gain (Penitence)% of max HP as Shield\n- Resource used by certain Skills for additional effects\n- Enhances the buff Stage based on Value\n· Stage 1 (1~7) : Penitence\n· Stage 2 (8~15) : Penitence - Periphery\n· Stage 3 (16~20) : Penitence - Confession\n- The amount of SP healed by the first line of this buff is based on the enhancement Stage (enhancement Stage x 2)",
     "name": "Penitence",
-    "srcPath": "Penitence"
+    "srcPath": "PenanceFirst"
   },
   "PenanceSecond": {
     "buffType": "Positive",
@@ -6691,7 +6896,7 @@
     ],
     "desc": "- Heal 4 SP On Hit with Base Skill Coins that gain Penitence\n- Max Value : 20\n- Unique Charge (fixed Potency)\n- Turn Start: gain (Penitence)% of max HP as Shield\n- Resource used by certain Skills for additional effects\n- Enhances the buff Stage based on Value\n· Stage 1 (1~7) : Penitence\n· Stage 2 (8~15) : Penitence - Periphery\n· Stage 3 (16~20) : Penitence - Confession\n- The amount of SP healed by the first line of this buff is based on the enhancement Stage (enhancement Stage x 2)",
     "name": "Penitence - Periphery",
-    "srcPath": "Penitence - Periphery"
+    "srcPath": "PenanceSecond"
   },
   "PenanceThird": {
     "buffType": "Positive",
@@ -6700,7 +6905,7 @@
     ],
     "desc": "- Heal 6 SP On Hit with Base Skill Coins that gain Penitence\n- Max Value : 20\n- Unique Charge (fixed Potency)\n- Turn Start: gain (Penitence)% of max HP as Shield\n- Resource used by certain Skills for additional effects\n- Enhances the buff Stage based on Value\n· Stage 1 (1~7) : Penitence\n· Stage 2 (8~15) : Penitence - Periphery\n· Stage 3 (16~20) : Penitence - Confession\n- The amount of SP healed by the first line of this buff is based on the enhancement Stage (enhancement Stage x 2)",
     "name": "Penitence - Confession",
-    "srcPath": "Penitence - Confession"
+    "srcPath": "PenanceThird"
   },
   "PenetrateDamageDown": {
     "buffType": "Negative",
@@ -6747,7 +6952,7 @@
     "buffType": "Positive",
     "desc": "- Turn Start: gain 1 Offense Level Up for every Stack (max 5)\n- Turn Start: -(Stack x 0.15) Aggro to all Skill Slots on the Dashboard (max 0.75)\n- Max Stack: 5\n- Expires at Turn End",
     "name": "Piercing Sword",
-    "srcPath": "Piercing Sword"
+    "srcPath": "PenetratingSword"
   },
   "Penetration": {
     "buffType": "Negative",
@@ -6760,6 +6965,24 @@
     "desc": "Max Stack: 4\nWhen taking lethal damage, 80% chance to not take that damage, heal 60 HP, recover from Stagger, and lose this effect\n\nThe above effects do not activate under the following conditions:\n- When the Coin damage taken exceeds this unit's max HP\n- When this unit has the HP Healing Down effect\nReduced by 1 at Turn End",
     "name": "Persistence",
     "srcPath": "Persistence"
+  },
+  "PersonalityBreath": {
+    "buffType": "Neutral",
+    "desc": "Identities that have Base Attack Skills that apply or gain Poise Potency or Poise Count",
+    "name": "Poise Identity",
+    "srcPath": "PersonalityBreath"
+  },
+  "PersonalityCharge": {
+    "buffType": "Neutral",
+    "desc": "Identities that have Base Attack Skills that apply, gain, or consume Charge or Unique Charge",
+    "name": "Charge Identity",
+    "srcPath": "PersonalityCharge"
+  },
+  "PersonalityVibration": {
+    "buffType": "Neutral",
+    "desc": "Identities that have Base Attack Skills that inflict Tremor Potency, Tremor Count, or Unique Tremor",
+    "name": "Tremor Identity",
+    "srcPath": "PersonalityVibration"
   },
   "PhantomIncision": {
     "buffType": "Negative",
@@ -6932,7 +7155,7 @@
     "buffType": "Positive",
     "desc": "- Turn Start: gain 1 Defense Level Up for every Stack (max 5)\n- Turn Start: +(Stack x 3) Aggro to the leftmost Skill Slot on the Dashboard (max 15)\n- Max Stack: 5\n- Expires at Turn End",
     "name": "Protecting Sword",
-    "srcPath": "Protecting Sword"
+    "srcPath": "ProtectiveSword"
   },
   "PumpkinJelly": {
     "buffType": "Neutral",
@@ -6961,13 +7184,14 @@
   "RageResonance": {
     "buffType": "Positive",
     "desc": "Turn End: gain {0} Offense Level Up next turn (effect intensifies with each turn)",
-    "name": "Seized Wrath"
+    "name": "Seized Wrath",
+    "srcPath": "RageResonance"
   },
   "RapidGrowthApple": {
     "buffType": "Negative",
     "desc": "- Max Stack: 3\n- Lose 1 Defense Level for every Stack; minimum Defense Level due to this effect: 1\n- Lose this effect when all Arms are broken",
     "name": "Rapid Growth",
-    "srcPath": "Rapid Growth"
+    "srcPath": "RapidGrowthApple"
   },
   "ReCompulsion": {
     "buffType": "Neutral",
@@ -7009,7 +7233,7 @@
     "buffType": "Negative",
     "desc": "- Max Stack: 5",
     "name": "Recoiling",
-    "srcPath": "Recoiling"
+    "srcPath": "ReboundWei"
   },
   "RecklessDuel": {
     "buffType": "Positive",
@@ -7039,7 +7263,7 @@
     ],
     "desc": "- Base Skill Coin effects inflict +1 more Bleed\n- Max Value : 20\n- Unique Charge (fixed Potency)\n- Resource used by certain Skills for additional effects\n- Enhances the buff based on Value\n· Stage 1 (1~7) : Red Eyes\n· Stage 2 (8~15) : Red Eyes - Alert\n· Stage 3 (16~20) : Red Eyes - Devouring\n- The amount of additional bleed inflicted by the first line of this buff is equal to the buff enhancement Stage (max 3)",
     "name": "Red Eyes",
-    "srcPath": "Red Eyes"
+    "srcPath": "RedEyeFirst"
   },
   "RedEyeSecond": {
     "buffType": "Positive",
@@ -7048,7 +7272,7 @@
     ],
     "desc": "- Base Skill Coin effects inflict +2 more Bleed\n- Max Value : 20\n- Unique Charge (fixed Potency)\n- Resource used by certain Skills for additional effects\n- Enhances the buff based on Value\n· Stage 1 (1~7) : Red Eyes\n· Stage 2 (8~15) : Red Eyes - Alert\n· Stage 3 (16~20) : Red Eyes - Devouring\n- The amount of additional bleed inflicted by the first line of this buff is equal to the buff enhancement Stage (max 3)",
     "name": "Red Eyes - Alert",
-    "srcPath": "Red Eyes - Alert"
+    "srcPath": "RedEyeSecond"
   },
   "RedEyeThird": {
     "buffType": "Positive",
@@ -7057,7 +7281,7 @@
     ],
     "desc": "- Base Skill Coin effects inflict +3 more Bleed\n- Max Value : 20\n- Unique Charge (fixed Potency)\n- Resource used by certain Skills for additional effects\n- Enhances the buff based on Value\n· Stage 1 (1~7) : Red Eyes\n· Stage 2 (8~15) : Red Eyes - Alert\n· Stage 3 (16~20) : Red Eyes - Devouring\n- The amount of additional bleed inflicted by the first line of this buff is equal to the buff enhancement Stage (max 3)",
     "name": "Red Eyes - Devouring",
-    "srcPath": "Red Eyes - Devouring"
+    "srcPath": "RedEyeThird"
   },
   "RedemptionTheRings": {
     "buffType": "Negative",
@@ -7301,6 +7525,42 @@
     "name": "Extreme Strength [極力]",
     "srcPath": "Extreme Strength [極力]"
   },
+  "RestrictBoss": {
+    "buffType": "Negative",
+    "desc": "- Combat Start: When the Overseer is targeted with an Attack Skill, this effect expires, and the attacker gains 1 Tannery Rule Violation\n- Turn End: This effect expires",
+    "name": "Rule: Tanning Rush Prohibited",
+    "srcPath": "RestrictBoss"
+  },
+  "RestrictDef": {
+    "buffType": "Negative",
+    "desc": "- Combat Start: When a Defense Skill is equipped, this effect expires and gain 1 Tannery Rule Violation\n- Turn End: This effect expires",
+    "name": "Rule: Defensive Behavior Prohibited",
+    "srcPath": "RestrictDef"
+  },
+  "RestrictDenied": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 1\n- Take +30% damage from the Overseer\n- At this unit's Attack End, the Overseer uses the \"Punishing Burnishing Finishing\" Skill on this unit; then, this effect expires",
+    "name": "Tannery Rule Violation",
+    "srcPath": "RestrictDenied"
+  },
+  "RestrictFailed": {
+    "buffType": "Neutral",
+    "desc": "- Offense Level +3\n- Defense Level -3",
+    "name": "Rule Collapse",
+    "srcPath": "RestrictFailed"
+  },
+  "RestrictMob": {
+    "buffType": "Negative",
+    "desc": "- Combat Start: When Tanned Prisoner is targeted with an Attack Skill, this effect expires, and the attacker gains 1 Tannery Rule Violation\n- Turn End: This effect expires",
+    "name": "Rule: Raw Hide Damage Prohibited",
+    "srcPath": "RestrictMob"
+  },
+  "RestrictTier1": {
+    "buffType": "Negative",
+    "desc": "- Combat Start: When an Attack Skill is equipped, this effect expires and gain 1 Tannery Rule Violation (excluding E.G.O Skills)\n- Turn End: This effect expires",
+    "name": "Rule: Offensive Behavior Prohibited",
+    "srcPath": "RestrictTier1"
+  },
   "ResultEnhancement": {
     "buffType": "Positive",
     "desc": "Skills gain final Power by the effect’s Count for one turn.",
@@ -7341,7 +7601,7 @@
     "buffType": "Neutral",
     "desc": "- Turn End: Recover from Stagger and Retreat from the Encounter (excluding forced Staggers; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
     "name": "Battlefield Retreat",
-    "srcPath": "Battlefield Retreat"
+    "srcPath": "RetreatForCommon"
   },
   "Retreat_FullStop": {
     "buffType": "Neutral",
@@ -7599,6 +7859,11 @@
     "name": "Boutique: New Releases",
     "srcPath": "RougeThreeNormal"
   },
+  "RouteBOneLeg": {
+    "buffType": "Positive",
+    "desc": "- Base Offense Level +25\n- Base Defense Level +25",
+    "name": "원레그 B루트 강화"
+  },
   "RunHallway": {
     "buffType": "Neutral",
     "desc": "- Max Stack: 3\n- Combat Start: Lose 1 Stack\n- At 0 Stack, use 'Herd Migration' at Turn Start",
@@ -7677,13 +7942,13 @@
     "buffType": "Positive",
     "desc": "- Skill Slot +1\n- Deal +10% damage to The House of Spiders enemies\n- When Staggered, immediately recover from Stagger at the start of the next turn and gain 1 Attack Power Up (once per Encounter)\n- Cannot Retreat",
     "name": "Stench of Times Past",
-    "srcPath": "Stench of Times Past"
+    "srcPath": "RyoshuSlotPlusA1C9"
   },
   "RyoshuStartA1C9": {
     "buffType": "Positive",
     "desc": "- Deal +10% damage to The House of Spiders enemies\n- When Staggered, immediately recover from Stagger at the start of the next turn and gain 1 Attack Power Up (once per Encounter)",
     "name": "Rekindled Exhilaration",
-    "srcPath": "Rekindled Exhilaration"
+    "srcPath": "RyoshuStartA1C9"
   },
   "RyoshuStartA1C9P2": {
     "buffType": "Positive",
@@ -7726,6 +7991,11 @@
     "desc": "- Max Stack: 5\n- Expires at Turn End",
     "name": "Chopped Ingredients",
     "srcPath": "SapsareeCooking"
+  },
+  "SapsareeGold": {
+    "buffType": "Positive",
+    "desc": "- On Skill Use, Final Power +1 for every \"Fiery, Tongue-scorching Sauce\" on target (max 3)\n- Gain 15 SP upon killing an ally with this unit's Skill",
+    "name": "Shower of Stinging Sunshine [Sous Chef]"
   },
   "SapsareeHungry": {
     "buffType": "Positive",
@@ -7822,6 +8092,12 @@
     "name": "Lust Fragility",
     "srcPath": "Lust Fragility"
   },
+  "ScissorsMark": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 9\n- Lose Defense Level equal to Stack",
+    "name": "Mark of Shearing",
+    "srcPath": "ScissorsMark"
+  },
   "ScratchesHurt": {
     "buffType": "Negative",
     "desc": "- Max Stack: 3\n- Turn Start: Gain 2 Bleed for every Stack\n• At max Stack, gain +1 Bleed Count\n- Turn End: Gain Bind equal to Stack next turn\n• At Max Stack, gain 1 Attack Power Down as well next turn\n- Turn End: If this unit did not take any Critical Hit this turn, lose 1 Stack",
@@ -7838,7 +8114,7 @@
     "buffType": "Negative",
     "desc": "- Max Stack : 5\n- Gain 1 Stack at Turn Start\n- Gain 1 Offense Level Down and 1 Defense Level Down per Stack\n- Turn End: if an allied Sinner has 5 Stacks of this effect, it Escapes Battlefield.\n- When an allied Sinner has a Defense Skill equipped while it has this effect, they Escape Battlefield at Combat Start",
     "name": "Sea Terror Assimilation",
-    "srcPath": "Sea Terror Assimilation"
+    "srcPath": "SeaTerrorCell"
   },
   "SelfCharge": {
     "buffType": "Neutral",
@@ -7857,13 +8133,13 @@
     "buffType": "Positive",
     "desc": "- Turn Start: gain 2 Offense Level Up and 2 Defense Level Up\n- Turn End: lose 1 Stack\n- Max Stack: 5",
     "name": "Higher Thunderer",
-    "srcPath": "Higher Thunderer"
+    "srcPath": "SeniorCianjing"
   },
   "SeveredTendon": {
     "buffType": "Negative",
     "desc": "- Max Stack: 3\n- Base Attack Skill Base Power -1 for every Stack\n- Turn End: Lose 1 Stack",
     "name": "Severed Tendon",
-    "srcPath": "Severed Tendon"
+    "srcPath": "SeveredTendon"
   },
   "SeveredTendonAlly": {
     "buffType": "Negative",
@@ -7922,7 +8198,7 @@
     "buffType": "Neutral",
     "desc": "Total sum of Charge Count currently owned by all allies\n\nOn Hit with a Skill: deal +(sum of charge count on all allies / 3)% damage\nAll allies gain 1 Offense Level Up for every 100 cumulative Charge Count consumed by allies",
     "name": "Self Resonance Circuitry",
-    "srcPath": "Self Resonance Circuitry"
+    "srcPath": "ShareCharge"
   },
   "SheutFracture": {
     "buffType": "Negative",
@@ -7931,7 +8207,7 @@
     ],
     "desc": "- Unique Sinking\n- Max Stack: 10\n- For every Stack, take +1% more damage from Sloth and Gloom Skills\n- At max Stack, gain 1 Gloom Fragility (once per turn), take Gloom damage equal to Sinking Potency on self (lose 1 Sinking Count), then expires\n- If the unit that has this effect dies, transfer half of its Stack to its ally that has the highest SP (rounded down)\n- Turn Start: If there are no LCA Identities on the field, expires",
     "name": "Sheut Fracture",
-    "srcPath": "Sheut Fracture"
+    "srcPath": "SheutFracture"
   },
   "ShieldManagerCryingToad": {
     "buffType": "Neutral",
@@ -7954,16 +8230,23 @@
     "desc": "- Turn Start: Based on the missing HP on this unit...\n· Gain 1 Damage Up for every 15% missing HP (max 5)\n· Gain 1 Attack Power Up for every 40% missing HP (max 2)\n- Gain +1 more Poise Potency and Count from this unit's Skills\n- If this unit's SP is higher than the target's, deal +1% damage for every 2 SP difference (max 30%)",
     "name": "Shin (心) - Rien"
   },
+  "SickBlackYarn": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 50\n- Take +1% damage for every Stack\n- Turn Start: Gain 1 Fragile for every 25 Stacks",
+    "name": "Bursting Blackstitch",
+    "srcPath": "SickBlackYarn"
+  },
   "SignAwakenSinclair": {
     "buffType": "Positive",
     "desc": "- When Clashing against higher-level targets, Clash Power +2\n- Turn End: If Staggered, recover from Stagger next turn",
     "name": "Sign - Manifestation of the Future",
-    "srcPath": "A Sign"
+    "srcPath": "StudySignSinclair"
   },
   "SignOfDespair": {
     "buffType": "Positive",
     "desc": "Attack End: If there are targets without Cold, Black Tears, removes this effect next turn\n\nGain 1 Clash Power Up and 1 Damage Up\nInflict +1 more Cold, Black Tears",
-    "name": "Blessing of Despair"
+    "name": "Blessing of Despair",
+    "srcPath": "SignOfDespair"
   },
   "SilverOpportunity": {
     "buffType": "Positive",
@@ -8005,7 +8288,7 @@
     ],
     "desc": "- Unique Sinking\n- Base Value: 0, Max Value: 15\n- The Potency and the Count of this effect are called \"The Living\" and \"The Departed\", respectively.\n- When hit, the attacker heals (The Living/4) SP. (min 1; rounded down)\n- When hit, and if this unit's SP is at less than 0, take (Sinking Potency/5) Gloom damage for every value of The Departed. (max Gloom damage 30; rounded down; deals half damage to targets that are Non-SP Units.)\n- Turn End: Reset The Departed of this effect to 0; then, gain Sinking equal to The Living and convert The Living into The Departed.\n- No external effects can raise the amount of Butterfly inflicted. \"Inflict additional Sinking\" effects inflict additional Sinking instead of additional Butterfly.\n- This effect expires when both The Living and The Departed reach 0.",
     "name": "Butterfly",
-    "srcPath": "Butterfly"
+    "srcPath": "SinkingWhite"
   },
   "SipOfAlcohol": {
     "buffType": "Positive",
@@ -8017,7 +8300,7 @@
     "buffType": "Positive",
     "desc": "- Max Stack: 5\n- Turn End: gain (Stack x 2) Poise Potency next turn\n- Turn End: gain (Stack / 2) Haste next turn (rounded down)\n- Turn End: at 3+ Stack, heal 1.5% HP (both Core & Part)",
     "name": "Swig (眞)",
-    "srcPath": "Swig (眞)"
+    "srcPath": "SipOfAlcoholJin"
   },
   "SisyphusAmber": {
     "buffType": "Positive",
@@ -8031,6 +8314,12 @@
     "name": "Amethyst",
     "srcPath": "SisyphusAmethyst"
   },
+  "SisyphusDiamond": {
+    "buffType": "Positive",
+    "desc": "- Skills inflict 1 more Burn, Bleed, Tremor, Rupture, and Sinking Potency against enemies\n- Gain +2 more Count when gaining Charge Count and Poise Count\n- Gain +10 Charge Count when gaining this effect (once per Encounter)\n- Clash Power +2\n- Final Power +1\n- Deal +10% damage",
+    "name": "Diamond",
+    "srcPath": "SisyphusDiamond"
+  },
   "SisyphusEmerald": {
     "buffType": "Positive",
     "desc": "- Skills inflict 1 more Burn, Bleed, Tremor, Rupture, and Sinking Potency against enemies\n- Gain +1 more Count when gaining Charge Count and Poise Count\n- Gain +10 Charge Count when gaining this effect (once per Encounter)",
@@ -8043,11 +8332,23 @@
     "name": "Gold",
     "srcPath": "SisyphusGold"
   },
+  "SisyphusOnyx": {
+    "buffType": "Positive",
+    "desc": "- Skills inflict 1 more Burn, Bleed, Tremor, Rupture, and Sinking Potency against enemies\n- Gain +2 more Count when gaining Charge Count and Poise Count\n- Gain +10 Charge Count when gaining this effect (once per Encounter)\n- Clash Power +2\n- Final Power +1",
+    "name": "Onyx",
+    "srcPath": "SisyphusOnyx"
+  },
   "SisyphusRuby": {
     "buffType": "Positive",
     "desc": "- Skills inflict 1 more Burn, Bleed, Tremor, Rupture, and Sinking Potency against enemies\n- Gain +1 more Count when gaining Charge Count and Poise Count\n- Gain +10 Charge Count when gaining this effect (once per Encounter)\n- Clash Power +1\n- Final Power +1",
     "name": "Ruby",
     "srcPath": "SisyphusRuby"
+  },
+  "SisyphusSapphire": {
+    "buffType": "Positive",
+    "desc": "- Skills inflict 1 more Burn, Bleed, Tremor, Rupture, and Sinking Potency against enemies\n- Gain +2 more Count when gaining Charge Count and Poise Count\n- Gain +10 Charge Count when gaining this effect (once per Encounter)\n- Clash Power +1\n- Final Power +1",
+    "name": "Sapphire",
+    "srcPath": "SisyphusSapphire"
   },
   "SisyphusTopaz": {
     "buffType": "Positive",
@@ -8120,13 +8421,13 @@
     "buffType": "Negative",
     "desc": "- Offense Level -7\n- Defense Level -7\nTake 1% HP damage with every Clash",
     "name": "Spreading Snake Venom",
-    "srcPath": "Spreading Snake Venom"
+    "srcPath": "SnakePoisonJin"
   },
   "SnakePoisonJinWeak": {
     "buffType": "Negative",
     "desc": "- Offense Level -1\n- Defense Level -1",
     "name": "Snake Venom",
-    "srcPath": "Spreading Snake Venom"
+    "srcPath": "SnakePoisonJin"
   },
   "SnakeStance": {
     "buffType": "Positive",
@@ -8145,7 +8446,7 @@
     "buffType": "Positive",
     "desc": "- When this unit has this effect, activate the following:\n· Converts the leftmost Base Attack Skill on the Dashboard to \"Bow's Glimmer\", then uses it at Combat Start\n· This unit cannot be Staggered from taking damage, Tremor Burst, or raised Stagger Threshold\n· Does not trigger Assist Attack\n· Removed if an E.G.O Skill was equipped at Combat Start",
     "name": "Ready to Loose",
-    "srcPath": "Ready to Loose"
+    "srcPath": "SnipingArrowMode"
   },
   "SojiAbiAgeFuture": {
     "buffType": "Neutral",
@@ -8188,7 +8489,7 @@
     "desc": "- Max Stack: 4\n- Skill and Passive effects can increase Min & Max Stack of this effect to 5 and 9, respectively",
     "imageOverride": "Afterimage Entanglement",
     "name": "Entanglement",
-    "srcPath": "Afterimage Entanglement"
+    "srcPath": "TimeEntangleUnstable"
   },
   "SojiRyoshuEntangle": {
     "buffType": "Positive",
@@ -8208,6 +8509,12 @@
     "desc": "Lose the Encounter when all Sinners and Assist Units fall under the effect of Corpus Theater",
     "name": "The Exhibition is Complete!",
     "srcPath": "SpecimenTheRings"
+  },
+  "SpreadingDye": {
+    "buffType": "Positive",
+    "desc": "- If target has Bind, inflict 1 more Bleed Potency and Bleed Count\n- On Skill Use, if the main target has Dyed Thread or Tar Dye, the said Skill gains Final Power +1 and deals +20% damage",
+    "name": "Gloss Medium",
+    "srcPath": "SpreadingDye"
   },
   "StackFuture": {
     "buffType": "Neutral",
@@ -8262,7 +8569,7 @@
     "buffType": "Neutral",
     "desc": "- Max Stack: 6\n- Number of turns this unit spent active in the Encounter\n- Expires upon Retreat\n- Gain 1 Stack at Turn End",
     "name": "Launcher [始]",
-    "srcPath": "Launcher [始]"
+    "srcPath": "StartXichun"
   },
   "StarvingBarberOne": {
     "buffType": "Negative",
@@ -8333,6 +8640,12 @@
     "name": "Withered",
     "srcPath": "Withered 6"
   },
+  "StickyDye": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 1\n- Min & Max Speed -1 (min 1)",
+    "name": "Tar Dye",
+    "srcPath": "StickyDye"
+  },
   "StigmaWorkshopCelloCaseOne": {
     "buffType": "Neutral",
     "desc": "- Max Stack: 30\n- Can gain up to 20 Stacks per turn\n- On Hit using a Base Skill, gain 2 Stacks\n- Turn End: At 20+ Stacks, gain Burn next turn equal to half of surplus Stacks past 20 (rounded down)\n· At 30 Stacks, gain 5 Burn and +2 Burn Count instead",
@@ -8379,54 +8692,66 @@
     "buffType": "Positive",
     "desc": "- Heal 30 SP next turn\n- Turn End: Expires",
     "name": "A Sign",
-    "srcPath": "A Sign"
+    "srcPath": "StudySignSinclair"
   },
   "StudyStatSinclair": {
     "buffType": "Positive",
     "desc": "- Enhance effects based on the sum of Zhi, Yong, and Ren gained from classes",
     "name": "Thrashing to Hatch",
-    "srcPath": "Thrashing to Hatch"
+    "srcPath": "StudyStatSinclair"
   },
   "StudyStatSinclair_A": {
     "buffType": "Positive",
     "desc": "- Heal 3 SP every turn\n- Gain 1 Min & Max Speed\n- Gain 2 Offense Levels\n- Gain 2 Defense Levels",
     "imageOverride": "Thrashing to Hatch",
     "name": "Thrashing to Hatch Ⅰ",
-    "srcPath": "Thrashing to Hatch"
+    "srcPath": "StudyStatSinclair"
   },
   "StudyStatSinclair_B": {
     "buffType": "Positive",
     "desc": "- Heal 5 SP every turn\n- Gain 1 Min & Max Speed\n- Gain 1 Attack Power Up and 1 Protection every turn\n- Gain 2 Offense Levels\n- Gain 2 Defense Levels",
     "imageOverride": "Thrashing to Hatch",
     "name": "Thrashing to Hatch ⅠⅠ",
-    "srcPath": "Thrashing to Hatch"
+    "srcPath": "StudyStatSinclair"
   },
   "StudyStatSinclair_C": {
     "buffType": "Positive",
     "desc": "- Heal 5 SP every turn\n- Gain 1 Min & Max Speed; gain 1 Attack Power Up and 1 Protection every turn\n- Base Skills gain 1 Clash Power\n- Gain 3 Offense Levels\n- Gain 3 Defense Levels",
     "imageOverride": "Thrashing to Hatch",
     "name": "Thrashing to Hatch ⅠⅠⅠ",
-    "srcPath": "Thrashing to Hatch"
+    "srcPath": "StudyStatSinclair"
   },
   "StudyStatSinclair_D": {
     "buffType": "Positive",
     "desc": "- Heal 10 SP every turn\n- Gain 1 Min & Max Speed; gain 1 Attack Power Up and 1 Protection every turn\n- Base Skills gain 1 Clash Power\n- Gain 4 Offense Levels\n- Gain 4 Defense Levels",
     "imageOverride": "Thrashing to Hatch",
     "name": "Thrashing to Hatch ⅠⅤ",
-    "srcPath": "Thrashing to Hatch"
+    "srcPath": "StudyStatSinclair"
   },
   "StudyStatSinclair_E": {
     "buffType": "Positive",
     "desc": "- Heal 15 SP every turn\n- Gain 2 Min & Max Speed; gain 1 Attack Power Up and 1 Protection every turn\n- Base Skills gain 1 Clash Power\n- Base Skills gain 1 Coin Power\n- Gain 5 Offense Levels\n- Gain 5 Defense Levels",
     "imageOverride": "Thrashing to Hatch",
     "name": "Thrashing to Hatch Ⅴ",
-    "srcPath": "Thrashing to Hatch"
+    "srcPath": "StudyStatSinclair"
   },
   "SuperCoin": {
     "buffType": "Neutral",
     "desc": "- This coin does not break upon Clash Lose.\n- If an Attack Skill has this Coin, attack with this Coin after getting hit.\n- Upon Clash Lose, fix the Coin Power of the unbroken Coin to 1",
     "name": "Unbreakable Coin",
     "srcPath": "Unbreakable Coin"
+  },
+  "SupportAlly": {
+    "buffType": "Neutral",
+    "desc": "Skills can target allied Identities\nUpon auto-targeting Skills, or in Regular Encounters, prioritize the ally with the earliest Deployment Order\n- If target is an ally, the attack does not hit, and does not trigger Defense Skills (including Clashable Defense Skills)\nIf target is an ally, activate this Skill at Combat Start",
+    "name": "Duality",
+    "srcPath": "SupportAlly"
+  },
+  "SupportEnemy": {
+    "buffType": "Neutral",
+    "desc": "Skills can target allies\nUpon auto-targeting Skills, or in Regular Encounters, target random allies\n- If target is an ally, the attack does not hit, and does not trigger Defense Skills (including Clashable Defense Skills)\nIf target is an ally, activate this Skill at Combat Start",
+    "name": "Duality",
+    "srcPath": "SupportAlly"
   },
   "SupportProtect": {
     "buffType": "Neutral",
@@ -8472,7 +8797,7 @@
     "buffType": "Negative",
     "desc": "- Max Stack: 10\n- Double the amount of Stagger Threshold raised on this unit due to Tremor Burst\n- Reduced by 1 at Turn End",
     "name": "Galestruck",
-    "srcPath": "Galestruck"
+    "srcPath": "SweptAwayWei"
   },
   "SwirlingBlood": {
     "buffType": "Positive",
@@ -8498,7 +8823,7 @@
     "buffType": "Positive",
     "desc": "- Turn Start: gain 5 Deep Tears\n· At 3 Stack, gain additional 5 Deep Tears\n- Turn End: lose (Stack x 15) SP\n- Base Attack Skills deal +(Stack x 10)% damage (max 30%)\n- If this unit has Blessing, gain Clash Power Up by the effect's Stack at Turn Start\n- If this unit has Despair, gain Pierce Power Up by the effect's Stack at Turn Start\n- Max Stack: 3",
     "name": "Tear-sharpened",
-    "srcPath": "Tear-sharpened"
+    "srcPath": "SwordCutwithTear"
   },
   "SwordPlayOfTheHomeland": {
     "buffType": "Positive",
@@ -8517,6 +8842,12 @@
     "desc": "- Deal -100% damage using Unopposed Attacks\n- Take +80% damage from Unopposed Attacks\n- All Peccatulum Invidiae units, including this unit, equip only Defense Skills in their Skill Slots\n- Turn End: Lose 1 Stack",
     "name": "\"It\"",
     "srcPath": "TagGameBuff"
+  },
+  "TailoringTarget": {
+    "buffType": "Neutral",
+    "desc": "- Min & Max Speed +5\n- This turn's first-used Skill gains Clash Power +3\n- Combat Start: If this unit has an equipped Defense Skill, take -80% damage from Annette the Alterationist\n- Turn End: Lose 1 Stack",
+    "name": "Alteration Target",
+    "srcPath": "TailoringTarget"
   },
   "TakeHpHealIncrease": {
     "buffType": "Positive",
@@ -8542,6 +8873,12 @@
     "name": "Talisman",
     "srcPath": "Talisman"
   },
+  "TangleBlackYarn": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 30\n- Take +1% damage for every Stack\n- Base Power -1 for every 10 Stacks\n- Turn End: Gain 1 Bind next turn for every 3 Stacks (max 10)\n- On Defense Skill Use, lose half of the Stacks (rounded up)",
+    "name": "Tangling",
+    "srcPath": "TangleBlackYarn"
+  },
   "Target": {
     "buffType": "Neutral",
     "desc": "Targeted by the character with the Passive [Sharp Edge].",
@@ -8558,7 +8895,7 @@
     "buffType": "Negative",
     "desc": "- Lose 5 Offense Levels",
     "name": "The Thumb Nursefather's Command",
-    "srcPath": "The Thumb Nursefather's Command"
+    "srcPath": "TeachersCommand"
   },
   "TeachersPrey": {
     "buffType": "Negative",
@@ -8630,7 +8967,7 @@
     "buffType": "Positive",
     "desc": "- Max Stack: 2\n- Min & Max Speed +3\n- Combat Start: gain 1 Protection\n- Gain the following effects during the Combat Phase (once per Skill, 3 times per turn)\n· When this unit is the main target of an Unopposed Attack Skill, halve the chance for the Skill's first Coin to flip Heads\n· Clash Start: In the first Clash, halve the target's chance to flip Heads for all of its Coins\n· For both of the above effects, if the target uses Minus Coins, halve their chance to flip Tails instead\n- Turn End: Reduce 1 Stack",
     "name": "The Udjat [Vanguard]",
-    "srcPath": "The Udjat [Vanguard]"
+    "srcPath": "TheUdjatOutis"
   },
   "Thirst": {
     "buffType": "Positive",
@@ -8655,6 +8992,12 @@
     "desc": "- Max Stack: 3\n- Turn End: gain 2 Rupture and +2 Rupture Count\n- Turn End: at 1+ Stack, fix this unit's Speed to 1.\n- Turn End: at 2 Stack, take 20 Gluttony damage.\n- Turn End: at 3 Stack, become forcibly Staggered next turn. This effect and the connected Barbed Lasso both expire.\n- Gain 1 at Turn Start",
     "name": "Barbed Lasso",
     "srcPath": "ThornNoose"
+  },
+  "ThreadDye": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 3\n- Cannot gain Haste while having this effect\n- Turn End: Remove Haste that will be applied next turn\n- Turn End: Gain Bind next turn equal to Potency and lose 1 Stack\n- At max Stack, gain Immobilize this turn and next turn; then, this effect expires",
+    "name": "Dyed Thread",
+    "srcPath": "ThreadDye"
   },
   "ThreeMirrorpartYiSang": {
     "buffType": "Negative",
@@ -8751,7 +9094,8 @@
   "TimeEntangleUnstable": {
     "buffType": "Neutral",
     "desc": "- Max Stack: 10\n- On Hit, activate the following effects based on Stack:\n  · Deal Slash damage equal to (final damage of the Coin / 10) (activates (# of Stack) times)\n  · 2+: Inflict 1 Burn\n  · 3+: Inflict 1 Bleed\n  · 4+: Inflict 1 Bind next turn\n  · 5+: Inflict 1 Poison",
-    "name": "Paroxysm - Afterimage Entanglement"
+    "name": "Paroxysm - Afterimage Entanglement",
+    "srcPath": "TimeEntangleUnstable"
   },
   "TimeGap": {
     "buffType": "Negative",
@@ -8826,7 +9170,7 @@
     "buffType": "Positive",
     "desc": "Skill Slot +1\nModify Skill pool: Gain 1 use of Skill 3, but lose 1 use of Skill 1\nTurn Start: heal 15 SP\nIncrease the amount of Burn, Bleed, Rupture, Sinking, or Tremor inflicted by +1 (including 'Unique Status Effects')\nIncrease the amount of Poise or Charge(including 'Unique Charge') gained by +1\nOn Kill, Gain +2 E.G.O resource to the Affinity of the Skill that defeated the enemy; gain +1 E.G.O resource to rest of the Affinities",
     "name": "Training Team Captain",
-    "srcPath": "Training Team Captain"
+    "srcPath": "TrainTeamCaptain"
   },
   "TransparentWingScales": {
     "buffType": "Neutral",
@@ -8844,7 +9188,7 @@
     "buffType": "Positive",
     "desc": "- Reduce SP damage from enemies by 80%\n- Reduce Sinking damage taken by 80%\n- Reduced by 1 at Turn End",
     "name": "Trauma Shield",
-    "srcPath": "Trauma Shield"
+    "srcPath": "TraumaShield"
   },
   "TrulyWeak": {
     "buffType": "Negative",
@@ -8856,7 +9200,7 @@
     "buffType": "Positive",
     "desc": "This unit gains base Min and Max Speed by Stack\nSkills that inflict Tremor Potency, Count, or trigger Tremor Burst: gain Base Power +(Stack), deal +(Stack x 10)% damage against enemies, and when raising Stagger Thresholds via Tremor Burst, increase the amount raised by (Stack x 10)% (including E.G.O Skills)\nReduced by 1 at Turn End\nAt 1 Stack, the Stack does not drop below 0, and is maintained through the Encounter.",
     "name": "Microprecision Time Acceleration",
-    "srcPath": "Microprecision Time Acceleration"
+    "srcPath": "UltraPrecisionTimeAcceleration"
   },
   "UnfairDistribution": {
     "buffType": "Neutral",
@@ -8979,7 +9323,7 @@
     "buffType": "Negative",
     "desc": "- Max Stack: 3\n- When using 'Repressed Flesh', lose 10 Final Power for every Stack\n- At 3 Stacks after using 'Repressed Flesh', lose this effect and become Staggered until next turn",
     "name": "Impact-rattled Armor",
-    "srcPath": "Impact-rattled Armor"
+    "srcPath": "UnsteadyTheRings"
   },
   "UnstoppableFunny": {
     "buffType": "Neutral",
@@ -8991,7 +9335,7 @@
     "buffType": "Negative",
     "desc": "- Max Stack: 1\n- Turn End: escapes from the Encounter",
     "name": "I used too much power",
-    "srcPath": "I used too much power"
+    "srcPath": "UsedTooMuchPower"
   },
   "VendettaMark": {
     "buffType": "Negative",
@@ -9022,24 +9366,25 @@
     "buffType": "Positive",
     "desc": "Turn End: at less than 60% HP...\nHeal 30% HP, heal 15 SP, lose 1 Backup Candy, and 1 Hunger\nAt 0 Stack, apply 1 Incandescent Indulgence, then expires",
     "name": "Backup Candy",
-    "srcPath": "Backup Candy"
+    "srcPath": "VerEmergencyCandy"
   },
   "VerHunger": {
     "buffType": "Neutral",
     "desc": "Max Stack: 3\nTurn End: gain 2 Offense Level Up and 1 Damage Up next turn for every Stack\nAt max Stack(3), lose 5% HP at Turn End",
     "name": "Hunger",
-    "srcPath": "Hunger"
+    "srcPath": "VerHunger"
   },
   "VerShiningFullness": {
     "buffType": "Positive",
     "desc": "Gain 30% base HP for this Encounter\nTurn Start: fully heal HP and SP (once per Encounter)",
     "name": "Incandescent Indulgence",
-    "srcPath": "Incandescent Indulgence"
+    "srcPath": "VerShiningFullness"
   },
   "VergiliusSin": {
     "buffType": "Positive",
     "desc": "Deal +50% Wrath damage",
-    "name": "Shin (心) - The Red Gaze"
+    "name": "Shin (心) - The Red Gaze",
+    "srcPath": "VergiliusSin"
   },
   "Vibration": {
     "buffType": "Negative",
@@ -9066,7 +9411,7 @@
     ],
     "desc": "- On Tremor Burst, take Lust Damage equal to (sum of Tremor Potency and Bleed Potency / 2), and lose 1 Bleed Count\n- When hit by Skills that trigger Tremor Burst, raise this unit's Stagger Threshold by the effect's Potency\n- Turn End: reduce the Count by 1\n(Interacts the same way as normal Tremor does to effects that raise or reduce Tremor Potency/Count)",
     "name": "Tremor - Hemorrhage",
-    "srcPath": "Tremor - Hemorrhage"
+    "srcPath": "VibrationBleeding"
   },
   "VibrationChain": {
     "buffType": "Negative",
@@ -9172,6 +9517,12 @@
     "name": "Tremor - Superposition",
     "srcPath": "Tremor - Superposition"
   },
+  "VibrationResonance": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 2\n- Take -90% damage from Tremor Burst; -90% to Stagger Threshold raised\n- Deal +20% damage\n- Turn End: Lose 1 Stack ",
+    "name": "Negation of Conservation",
+    "srcPath": "VibrationResonance"
+  },
   "VibrationSpring": {
     "buffType": "Positive",
     "categoryKeywordList": [
@@ -9187,7 +9538,7 @@
     "buffType": "Negative",
     "desc": "- Take +10% damage from Don Quixote\n\n- Applies only to the first target to receive the effect in each turn",
     "name": "Mark of Villainy",
-    "srcPath": "Mark of Villainy"
+    "srcPath": "VillainMark"
   },
   "VioletDamageDown": {
     "buffType": "Negative",
@@ -9210,7 +9561,7 @@
     "buffType": "Negative",
     "desc": "Increase Envy Resistance based on Stack.\n(0.1 per Stack)",
     "name": "Envy Resist Down",
-    "srcPath": "Envy Resist Down"
+    "srcPath": "VioletResistDown"
   },
   "VioletResistUp": {
     "buffType": "Positive",
@@ -9239,7 +9590,7 @@
     "buffType": "Neutral",
     "desc": "- Deal +5% damage per Stack\n- Take +5% damage per Stack\n(max value : 5)",
     "name": "Understanding",
-    "srcPath": "Understanding"
+    "srcPath": "VioletUnderstand"
   },
   "Vulnerable": {
     "buffType": "Negative",
@@ -9251,19 +9602,19 @@
     "buffType": "Neutral",
     "desc": "- Max Value : 1\n- Become Immobilized\n- Take 10 + (Charge Potency on self x 5)% less damage (max 25%)\n- Turn Start: Gain Charge Barrier based on Charge Potency on self (max 5)\n- Turn End: Gain +10 Charge Count and 2 Attack Power Up next turn, and lose this effect\n- Gain Aggro to this unit's leftmost Slot based on Charge Potency on self (max 5)\n- When hit, gain +1 Charge Count and 1 Load next turn (max 5 per turn)\n- If this unit is in Panic or in E.G.O Corrosion at Turn Start, or if this unit is Staggered, lose this effect",
     "name": "Overcharge",
-    "srcPath": "Overcharge"
+    "srcPath": "WOverCharge"
   },
   "WaitingXichun": {
     "buffType": "Neutral",
     "desc": "- Max Stack: 3\n- Number of turns this unit spent in Retreat or as a Backup unit",
     "name": "Ready [待]",
-    "srcPath": "Ready [待]"
+    "srcPath": "WaitingXichun"
   },
   "WaitingforCommandMod": {
     "buffType": "Neutral",
     "desc": "- When in Standby State, this unit does not use Attack Skills until it takes damage",
     "name": "Standby State",
-    "srcPath": "Standby State"
+    "srcPath": "WaitingforCommandMod"
   },
   "WanderingFootsteps": {
     "buffType": "Negative",
@@ -9293,13 +9644,13 @@
     "buffType": "Negative",
     "desc": "- Max Stack: 3\nWhen hit, gain Sinking Potency equal to Stack\n\nTurn End: if this unit has -30 or less SP, activate the following effects (for Non-SP Units, activates at 60+ Sinking Potency)\n- Take (Sinking Potency on self x Stack) Gloom damage\n- Inflict 1 Reflux against 2 other targets with the least SP (for Abnormalities, Parts); then, deal (Sinking Potency x Stack) Gloom damage to both targets, respectively\nIf the unit with Reflux dies, transfer its Reflux Stack to its ally with the highest Reflux Stack",
     "name": "Reflux",
-    "srcPath": "Reflux"
+    "srcPath": "WaveSinking"
   },
   "WeakenDOQ": {
     "buffType": "Negative",
     "desc": "- Offense Level -??\n- Defense Level -??",
     "name": "Misery and Calamity",
-    "srcPath": "Misery and Calamity"
+    "srcPath": "WeakenDOQ"
   },
   "WeaknessAnalysis": {
     "buffType": "Negative",
@@ -9341,12 +9692,13 @@
     "buffType": "Positive",
     "desc": "- Max HP +20%. Heal +40% more from Skills, Passives, and buff effects",
     "name": "Little Handy - Wilderness Survival Module",
-    "srcPath": "Little Handy - Wilderness Survival Module"
+    "srcPath": "WildernessSurvivalModule"
   },
   "WillAwakenSinclair": {
     "buffType": "Positive",
     "desc": "- Min & Max Speed +3\n- Deal +20% damage with Unopposed Attack\n- Gain 2 more Poise Potency and +1 more Poise Count from Skills\n- At 20+ SP, +10% chance to flip Heads for Plus Coins\n- Turn End: Gain 1 Haste next turn for every 10 SP (max 4)\n- Turn End: Gain 1 Power Up next turn for every 20 SP (max 2)",
-    "name": "Shin (心) - A Certain Sinclair"
+    "name": "Shin (心) - A Certain Sinclair",
+    "srcPath": "WillAwakenSinclair"
   },
   "WindBlade": {
     "buffType": "Positive",
@@ -9376,7 +9728,7 @@
     "buffType": "Negative",
     "desc": "Take +100% damage this turn",
     "name": "Weathered Knight",
-    "srcPath": "Weathered Knight"
+    "srcPath": "WornOutKnight"
   },
   "WrappedCurseTag": {
     "buffType": "Neutral",
