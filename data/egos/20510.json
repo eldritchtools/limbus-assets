@@ -1,0 +1,462 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusNotes": "Does not account for the first coin bonuses. Assumes a single target.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 7,
+          "baseValue": 10,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 5
+            },
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 1,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.1
+                },
+                {
+                  "type": "reuse",
+                  "value": 4
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "This Coin hits only the main target",
+                "Spend 1 [BulletHole]",
+                "Deal +10% damage on Critical Hit",
+                "If this is the first Coin:\n- Deal +([Charge] Count x 5)% damage (max 100%)\n- Deal +([Breath] Potency x Count)% damage on Critical Hit (max 100%)\n- For this Coin, change target's Pierce Resist. to Fatal",
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[EndCoin] At 1+ [BulletHole], Reuse this Coin (4 times per Skill)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "Deal +30% damage on Critical Hit",
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If the target is defeated before this Skill is finished, prioritize a target that has the lowest HP (for Focused Encounters, the Part)\n\nClash Power +1 for every 4 ([Breath] Potency + [Charge] Count) on self (max 5)\nClash Power +2 for every [BulletHole] on self\n\n[BeforeAttack] Gain +3 [Breath] Count and +5 [Charge] Count\n[BeforeAttack] Consume 3(5 - [BulletHole] on self) SP to gain up to max [BulletHole]\n\n[EndSkill] Gain 2 [BlackWingHole]",
+          "id": "2051011",
+          "levelCorrection": 3,
+          "name": "Hollow",
+          "spCost": 20,
+          "uptie": 1
+        },
+        {
+          "baseValue": 12,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 7
+            },
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 1,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.15
+                },
+                {
+                  "extra": {
+                    "cond": "tolastcoin"
+                  },
+                  "type": "final",
+                  "value": 1
+                },
+                {
+                  "type": "reuse",
+                  "value": 4
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "This Coin hits only the main target",
+                "Spend 1 [BulletHole]",
+                "Deal +15% damage on Critical Hit",
+                "If this is the first Coin:\n- Deal +([Charge] Count x 5)% damage (max 100%)\n- Deal +([Breath] Potency x Count)% damage on Critical Hit (max 100%)\n- For this Coin, change target's Pierce Resist. to Fatal",
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[CriticalOnSucceedAttack] Final Coin Power +1",
+                "[EndCoin] At 1+ [BulletHole], Reuse this Coin (4 times per Skill)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.5
+                },
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.5
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "Deal +50% damage on Critical Hit",
+                "[OnStartCoin] When attacking just 1 target, deal +50% damage (in Focused Encounters, a Core)",
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "If the target is defeated before this Skill is finished, prioritize a target that has the lowest HP (for Focused Encounters, the Part)\n\nClash Power +1 for every 4 ([Breath] Potency + [Charge] Count) on self (max 7)\nClash Power +2 for every [BulletHole] on self\n\n[BeforeAttack] Gain +3 [Breath] Count and +5 [Charge] Count\n[BeforeAttack] Consume 3(5 - [BulletHole] on self) SP to gain up to max [BulletHole]\n\n[EndSkill] Gain 2 [BlackWingHole]",
+          "id": "2051011",
+          "name": "Hollow",
+          "uptie": 3
+        },
+        {
+          "baseValue": 12,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 10
+            },
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.2
+                },
+                {
+                  "extra": {
+                    "cond": "tolastcoin"
+                  },
+                  "type": "final",
+                  "value": 1
+                },
+                {
+                  "type": "reuse",
+                  "value": 4
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "This Coin hits only the main target",
+                "Spend 1 [BulletHole]",
+                "Deal +20% damage on Critical Hit",
+                "If this is the first Coin:\n- Deal +([Charge] Count x 5)% damage (max 100%)\n- Deal +([Breath] Potency x Count)% damage on Critical Hit (max 100%)\n- For this Coin, change target's Pierce Resist. to Fatal",
+                "[OnSucceedAttack] Inflict 1 [PenetrateTakeDamageUp] (once per Skill)",
+                "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "[CriticalOnSucceedAttack] Final Coin Power +1",
+                "[EndCoin] At 1+ [BulletHole], Reuse this Coin (4 times per Skill)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.5
+                },
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 1
+                },
+                {
+                  "type": "coin",
+                  "value": 5
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "Deal +50% damage on Critical Hit",
+                "[OnStartCoin] When attacking just 1 target, deal +100% damage (in Focused Encounters, a Core)",
+                "[OnStartCoin] Coin Power +1 for every 4 [Charge] Count (max 5)",
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "If the target is defeated before this Skill is finished, prioritize a target that has the lowest HP (for Focused Encounters, the Part)\n\nClash Power +1 for every 4 ([Breath] Potency + [Charge] Count) on self (max 10)\nClash Power +2 for every [BulletHole] on self\n\n[BeforeAttack] Gain +3 [Breath] Count and +5 [Charge] Count\n[BeforeAttack] Consume 3(5 - [BulletHole] on self) SP to gain up to max [BulletHole]\n\n[EndSkill] Gain 2 [BlackWingHole]",
+          "id": "2051011",
+          "name": "Hollow",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 7,
+          "baseValue": 14,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 5
+            }
+          ],
+          "coinValue": -3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnStartCoin] Gain 5 [BlackWingHole]",
+                "[OnStartCoin] Gain +5 [Charge] Count",
+                "[OnStartCoin] Gain 5 [Breath]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.6
+                },
+                {
+                  "type": "critdamage",
+                  "value": 0.7
+                },
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.1
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "This Coin has ([BulletHole] on self x 20)% chance to flip Tails regardless of this unit's SP",
+                "[CoinHead]\n- This Coin does not hit",
+                "- [EndCoin] Gain 5 [Breath]",
+                "- [EndCoin] Gain +3 [Breath] Count",
+                "- [EndCoin] Gain 2 [BulletHole]",
+                "- [EndCoin] Refund half of the E.G.O resources consumed by this Skill (rounded down)",
+                "[CoinTail]\n- Deal +([Charge] Count x 3)% damage (max 60%)",
+                "- Deal +70% damage on Critical Hit",
+                "- [OnSucceedAttack] Deal Pierce damage equal to 10% of this Coin's final damage",
+                "- [EndCoin] Consume all [BulletHole] on self",
+                "[OnSucceedAttack] Inflict 5 [Sinking]",
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly\nThis Skill does not trigger Defense Skills (including Clashable Defense Skills)\nClash Power +1 for every 4 ([Breath] Potency + [Charge] Count) on self (max 5)\n[BeforeAttack] If this unit does not have [BulletHole], gain 1 [BulletHole]\n[BeforeAttack] Base Power -2 for every Cracked Coin (max -4)",
+          "id": "2051021",
+          "levelCorrection": 5,
+          "name": "Hollow",
+          "spCost": 25,
+          "uptie": 1
+        },
+        {
+          "baseValue": 16,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 7
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1
+            }
+          ],
+          "coinValue": -2,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnStartCoin] Gain 5 [BlackWingHole]",
+                "[OnStartCoin] Gain +5 [Charge] Count",
+                "[OnStartCoin] Gain 5 [Breath]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.8
+                },
+                {
+                  "type": "critdamage",
+                  "value": 1
+                },
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.15
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "This Coin has ([BulletHole] on self x 20)% chance to flip Tails regardless of this unit's SP",
+                "[CoinHead]\n- This Coin does not hit",
+                "- [EndCoin] Gain 5 [Breath]",
+                "- [EndCoin] Gain +3 [Breath] Count",
+                "- [EndCoin] Gain 2 [BulletHole]",
+                "- [EndCoin] Refund half of the E.G.O resources consumed by this Skill (rounded down)",
+                "[CoinTail]\n- Deal +([Charge] Count x 4)% damage (max 80%)",
+                "- Deal +100% damage on Critical Hit",
+                "- [OnSucceedAttack] Deal Pierce damage equal to 15% of this Coin's final damage",
+                "- [EndCoin] Consume all [BulletHole] on self",
+                "[OnSucceedAttack] Inflict 5 [Sinking]",
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\nThis Skill does not trigger Defense Skills (including Clashable Defense Skills)\nClash Power +1 for every 4 ([Breath] Potency + [Charge] Count) on self (max 7)\n\n[BeforeAttack] When attacking just 1 target, deal +100% damage (in Focused Encounters, a Core)\n[BeforeAttack] If this unit does not have [BulletHole], gain 1 [BulletHole]\n[BeforeAttack] Base Power -2 for every Cracked Coin (max -4)",
+          "id": "2051021",
+          "name": "Hollow",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 10
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 2
+            }
+          ],
+          "coinValue": -2,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnStartCoin] Gain 5 [BlackWingHole]",
+                "[OnStartCoin] Gain +5 [Charge] Count",
+                "[OnStartCoin] Gain 5 [Breath]",
+                "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 1.0
+                },
+                {
+                  "type": "critdamage",
+                  "value": 1.3
+                },
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "This Coin has ([BulletHole] on self x 20)% chance to flip Tails regardless of this unit's SP",
+                "[CoinHead]\n- This Coin does not hit",
+                "- [EndCoin] Gain 5 [Breath]",
+                "- [EndCoin] Gain +3 [Breath] Count",
+                "- [EndCoin] Remove 1 random removable negative effect applied to self",
+                "- [EndCoin] Gain 2 [BulletHole]",
+                "- [EndCoin] Refund half of the E.G.O resources consumed by this Skill (rounded down)",
+                "[CoinTail]\n- Deal +([Charge] Count x 5)% damage (max 100%)",
+                "- Deal +130% damage on Critical Hit",
+                "- [OnSucceedAttack] Deal Pierce damage equal to 20% of this Coin's final damage",
+                "- [EnemyKill] Heal 5% HP",
+                "- [EndCoin] Consume all [BulletHole] on self",
+                "[OnSucceedAttack] Inflict 5 [Sinking]",
+                "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\nThis Skill does not trigger Defense Skills (including Clashable Defense Skills)\nClash Power +1 for every 4 ([Breath] Potency + [Charge] Count) on self (max 10)\n\n[BeforeAttack] When attacking just 1 target, deal +200% damage (in Focused Encounters, a Core)\n[BeforeAttack] Gain Final Power +([BulletHole] on self)\n[BeforeAttack] If this unit does not have [BulletHole], gain 1 [BulletHole]\n[BeforeAttack] Base Power -2 for every Cracked Coin (max -4)\n[EnemyKill] Heal 5 SP",
+          "id": "2051021",
+          "name": "Hollow",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "notes": {
+    "main": [
+      "His passive automatically lets him generate 1 {st:BulletHole} every turn even without using it first. It costs 0 resources at 5 stacks. On use, he gains {st:BlackWingHole} and starts generating it every turn. The buff gives him {st:Charge} Count and {st:AttackUp} every turn plus some bonus damage for {st:Charge} and {st:Breath} skills.",
+      "His awakening consumes SP to generate {st:BulletHole} so he always has 5 on use (this should not bypass E.G.O resources). He consumes all stacks while executing the attack.",
+      "His corrosion's 2nd coin's heads chance depends on his {st:BulletHole} stacks. If it flips heads, he generates 2 stacks, some {st:Breath}, and refunds some resources, but doesn't deal damage. If it flips tails, he consumes all stacks and deals significant damage."
+    ],
+    "other": [
+      "His passive heals his SP and gives him {st:ResultEnhancement} whenever he consumes 3 {st:Bullet}"
+    ]
+  },
+  "passiveList": [
+    {
+      "desc": "[AlwaysUseEGOPassive]\nIf this unit has 5 [BulletHole], does not consume E.G.O Resource when using \"Hollow\" E.G.O's Skills (both Awakening and Corrosion)\n\nTurn Start: Gain 1 [BulletHole]\n\n[WhenUseEGOPassive]\nTurn Start: Gain 1 [BlackWingHole]\n\nHeal 5 SP every time this unit consumes or loses 3 cumulative [Bullet], and gain 1 [ResultEnhancement] next turn (including Unique [Bullet]; counts up to 9 [Bullet] per turn)",
+      "flavor": "The gaze of another nails into me, driving a hollow from which multitudes spill forth.\nThe discharge is then forged into a bullet that punches a hollow into you.",
+      "name": "L'Hémorragie interne"
+    }
+  ]
+}

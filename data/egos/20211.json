@@ -1,0 +1,379 @@
+{
+  "awakeningSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nWhen used for the first time in an Encounter, consume 5 less SP, 2 fewer Gloom, 2 fewer Pride, and 2 fewer Envy E.G.O Resources\nAt 1+ [BulletHole], activate as \"Boucher un trou\" instead\nThis Skill does not hit an enemy, does not trigger Defense Skills, and external effects cannot trigger this Skill to be Reused\n[EndSkill] Gain 5 [BulletHole]\n[EndSkill] Gain 5 [Breath] Potency\n[EndSkill] Gain +3 [Breath] Count\n[EndSkill] Gain +5 [Charge] Count\n[EndSkill] Gain 4 [BlackWingHole]",
+          "id": "2021111",
+          "levelCorrection": 0,
+          "name": "Le Trou",
+          "spCost": 15,
+          "uptie": 1
+        },
+        {
+          "baseValue": 6,
+          "desc": "[CantDuel]\nWhen used for the first time in an Encounter, consume 5 less SP, 2 fewer Gloom, 2 fewer Pride, and 2 fewer Envy E.G.O Resources\nAt 1+ [BulletHole], activate as \"Boucher un trou\" instead\nThis Skill does not hit an enemy, does not trigger Defense Skills, and external effects cannot trigger this Skill to be Reused\n[EndSkill] Gain 5 [BulletHole]\n[EndSkill] Gain 5 [Breath] Potency\n[EndSkill] Gain +3 [Breath] Count\n[EndSkill] Gain +5 [Charge] Count\n[EndSkill] Gain 4 [BlackWingHole]",
+          "id": "2021111",
+          "name": "Le Trou",
+          "uptie": 3
+        },
+        {
+          "baseValue": 6,
+          "desc": "[CantDuel]\nWhen used for the first time in an Encounter, consume 5 less SP, 2 fewer Gloom, 2 fewer Pride, and 2 fewer Envy E.G.O Resources\nAt 1+ [BulletHole], activate as \"Boucher un trou\" instead\nThis Skill does not hit an enemy, does not trigger Defense Skills, and external effects cannot trigger this Skill to be Reused\n[EndSkill] Gain 5 [BulletHole]\n[EndSkill] Gain 5 [Breath] Potency\n[EndSkill] Gain +3 [Breath] Count\n[EndSkill] Gain +5 [Charge] Count\n[EndSkill] Gain 4 [BlackWingHole]",
+          "id": "2021111",
+          "name": "Le Trou",
+          "uptie": 4
+        }
+      ],
+      "noClash": true,
+      "type": "awakening"
+    },
+    {
+      "bonusNotes": "Assumes one target",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 7,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 8
+            },
+            {
+              "type": "clash",
+              "value": 5
+            },
+            {
+              "type": "clash",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.4
+            }
+          ],
+          "coinValue": 1,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 4
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "Reuse this Coin ([BulletHole] spent - 1) times (max 4 times)",
+                "[OnSucceedAttack] Inflict 1 [Sinking]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "External effects cannot trigger this Skill to be reused\nClash Power +1 for every 4 ([Breath] Potency + [Charge] Count) on self (max 5)\nClash Power +2 for every [BulletHole]\n[BeforeAttack] Spend all [BulletHole] and apply the following effects:\n- Gain 2 [Breath] Potency, +1 [Breath] Count, and +2 [Charge] Count for every [BulletHole] spent\n- Deal +8% damage for every [BulletHole] spent\nIf this Skill spent 5 [BulletHole], heal 5 SP\n[EndSkill] Gain 1 [BulletHole]",
+          "id": "2021112",
+          "levelCorrection": 3,
+          "name": "Boucher un trou",
+          "spCost": 15,
+          "uptie": 1
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            },
+            {
+              "type": "clash",
+              "value": 8
+            },
+            {
+              "type": "clash",
+              "value": 7
+            },
+            {
+              "type": "clash",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.4
+            }
+          ],
+          "coinValue": 1,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 4
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "(Reuse this Coin ([BulletHole] spent - 1) times (max 4 times)",
+                "[OnSucceedAttack] Inflict 1 [Sinking]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "External effects cannot trigger this Skill to be reused\nDeal +5% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Part)\nClash Power +1 for every 4 ([Breath] Potency + [Charge] Count) on self (max 7)\nClash Power +2 for every [BulletHole]\n[BeforeAttack] When attacking just 1 target, deal +50% damage (in Focused Encounters, the Core and its connected Parts count as a single target)\n[BeforeAttack] Spend all [BulletHole] and apply the following effects:\n- Gain 2 [Breath] Potency, +1 [Breath] Count, and +2 [Charge] Count for every [BulletHole] spent\n- Deal +8% damage for every [BulletHole] spent\nIf this Skill spent 5 [BulletHole], heal 5 SP\n[EndSkill] Gain 1 [BulletHole]",
+          "id": "2021112",
+          "name": "Boucher un trou",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.6
+            },
+            {
+              "type": "clash",
+              "value": 8
+            },
+            {
+              "type": "clash",
+              "value": 10
+            },
+            {
+              "type": "clash",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.4
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 4
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "(Reuse this Coin ([BulletHole] spent - 1) times (max 4 times)",
+                "[OnSucceedAttack] Inflict 1 [Sinking]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "External effects cannot trigger this Skill to be reused\nDeal +10% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Part)\nClash Power +1 for every 4 ([Breath] Potency + [Charge] Count) on self (max 10)\nClash Power +2 for every [BulletHole]\n[BeforeAttack] When attacking just 1 target, deal +100% damage (in Focused Encounters, the Core and its connected Parts count as a single target)\n[BeforeAttack] Spend all [BulletHole] and apply the following effects:\n- Gain 2 [Breath] Potency, +1 [Breath] Count, and +2 [Charge] Count for every [BulletHole] spent\n- Deal +8% damage for every [BulletHole] spent\n[EndSkill] Apply 5 [Breath] Potency and +2 [Breath] Count on (2 + highest Reson.) allies (max 7 units)\nIf this Skill spent 5 [BulletHole], heal 5 SP\n[EndSkill] Gain 1 [BulletHole]",
+          "id": "2021112",
+          "name": "Boucher un trou",
+          "uptie": 4
+        }
+      ],
+      "type": "awakening"
+    }
+  ],
+  "corrosionSkills": [
+    {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 7,
+          "baseValue": 16,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 5
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": -4,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantIdentify]\nTargets randomly\nClash Power +1 for every 4 ([Breath] Potency + [Charge] Count) on self (max 5)\n\n[BeforeAttack] Gain +3 [Breath] Count and +5 [Charge] Count\n[BeforeAttack] Consume up to 15 excess [Charge] Count beyond 10 on self to deal +([Charge] Count consumed x 2)% damage\n[BeforeAttack] At max [BulletHole], spend all [BulletHole] to apply the following effects on all allies next turn:\n- 1 [AttackUp] \n- 1 [AttackDmgUp] (once per turn)\n- 1 [CriticalDamageUp] (once per turn)\n[BeforeAttack] Base Power -3 for every Cracked Coin (max -9)\n[EndSkill] Gain 1 [BulletHole] and 2 [BlackWingHole]",
+          "id": "2021121",
+          "levelCorrection": 3,
+          "name": "Hollow",
+          "spCost": 25,
+          "uptie": 1
+        },
+        {
+          "baseValue": 16,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 7
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.45
+            }
+          ],
+          "coinValue": -3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\nClash Power +1 for every 4 ([Breath] Potency + [Charge] Count) on self (max 7)\n\n[BeforeAttack] Gain +3 [Breath] Count and +5 [Charge] Count\n[BeforeAttack] Consume up to 15 excess [Charge] Count beyond 10 on self to deal +([Charge] Count consumed x 3)% damage\n[BeforeAttack] At max [BulletHole], spend all [BulletHole] to apply the following effects on all allies next turn:\n- 1 [AttackUp] \n- 1 [AttackDmgUp] (once per turn)\n- 1 [CriticalDamageUp] (once per turn)\n[BeforeAttack] Base Power -3 for every Cracked Coin (max -9)\n[EndSkill] Gain 1 [BulletHole] and 2 [BlackWingHole]\n[EndSkill] Apply 5 [Breath] Potency and +2 [Breath] Count on (2 + highest Reson.) random allies (max 7 units)",
+          "id": "2021121",
+          "name": "Hollow",
+          "uptie": 3
+        },
+        {
+          "baseValue": 16,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 10
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.75
+            }
+          ],
+          "coinValue": -3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 2 [Sinking]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "[CantIdentify]\nTargets randomly\nClash Power +1 for every 4 ([Breath] Potency + [Charge] Count) on self (max 10)\n\n[BeforeAttack] Gain +3 [Breath] Count and +5 [Charge] Count\n[BeforeAttack] Consume up to 15 excess [Charge] Count beyond 10 on self to deal +([Charge] Count consumed x 5)% damage\n[BeforeAttack] At max [BulletHole], spend all [BulletHole] to apply the following effects on all allies next turn:\n- 1 [AttackUp] \n- 1 [AttackDmgUp] (once per turn)\n- 1 [CriticalDamageUp] (once per turn)\n[BeforeAttack] Base Power -3 for every Cracked Coin (max -9)\n[EndSkill] Gain 1 [BulletHole] and 2 [BlackWingHole]\n[EndSkill] Apply 5 [Breath] Potency, +2 [Breath] Count, and 2 [BlackWingHole] on (2 + highest Reson.) random allies (max 7 units)",
+          "id": "2021121",
+          "name": "Hollow",
+          "uptie": 4
+        }
+      ],
+      "type": "corrosion"
+    }
+  ],
+  "notes": {
+    "main": [
+      "Her first use consumes less resources, gives her some {st:Breath} and {st:Charge}, and gives her {st:BulletHole} and {st:BlackWingHole}. {st:BulletHole} is used for every succeeding use of the E.G.O, while {st:BlackWingHole} is a persistent buff for the rest of the fight giving her {st:Charge} Count and {st:AttackUp} every turn and some additional damage for {st:Charge} and {st:Breath} skills that scales up over time.",
+      "She gets 5 {st:BulletHole} on her first use of the E.G.O. All stacks are consumed on all subsequent uses to buff it, then she resets at 1 stack and gains 1 every turn. At 5 stacks, using the E.G.O does not consume resources."
+    ],
+    "other": [
+      "Her passive heals SP and gives {st:Enhancement} to allies who kill enemies. It also gives her +5 {st:Charge} Count cap and {st:Breath} whenever she overcaps on {st:Charge}."
+    ]
+  },
+  "passiveList": [
+    {
+      "desc": "If this unit has 5 [BulletHole], does not consume E.G.O Resource when using \"Hollow\" E.G.O's Skills (both Awakening and Corrosion)\n\nTurn Start: Gain 1 [BulletHole] and 1 [BlackWingHole]\n\nWhen an ally defeats an enemy, the said ally heals 5 SP and gains 1 [Enhancement] next turn (once per turn)\n\n[Charge] Count max cap +5\n\nIf this unit gains [Charge] Count past the max [Charge] Count Cap, this unit randomly gains [Breath] Potency or Count equal to the surplus [Charge] Count gained (max 6 [Charge] Count converted per turn)",
+      "flavor": "It is not penetration that bores a hollow; it is emptiness.\nThe hollow desires to be filled, yet instead, things only ever spill forth from within.",
+      "name": "Le Trou de Vidange"
+    }
+  ]
+}

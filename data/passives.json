@@ -122,6 +122,13 @@
         "name": "Unsnuffed Embers"
       }
     ],
+    "20211": [
+      {
+        "desc": "If this unit has 5 [BulletHole], does not consume E.G.O Resource when using \"Hollow\" E.G.O's Skills (both Awakening and Corrosion)\n\nTurn Start: Gain 1 [BulletHole] and 1 [BlackWingHole]\n\nWhen an ally defeats an enemy, the said ally heals 5 SP and gains 1 [Enhancement] next turn (once per turn)\n\n[Charge] Count max cap +5\n\nIf this unit gains [Charge] Count past the max [Charge] Count Cap, this unit randomly gains [Breath] Potency or Count equal to the surplus [Charge] Count gained (max 6 [Charge] Count converted per turn)",
+        "flavor": "It is not penetration that bores a hollow; it is emptiness.\nThe hollow desires to be filled, yet instead, things only ever spill forth from within.",
+        "name": "Le Trou de Vidange"
+      }
+    ],
     "20301": [
       {
         "desc": "On Hit, if target has [Laceration], heal 3 HP",
@@ -300,6 +307,13 @@
       {
         "desc": "[AlwaysUseEGOPassive2050911]\n\nOn Hit with a Base Skill, inflict 2 [Laceration] on target (once per Skill)\n\nThis Identity counts as an \"Identity that applies [Laceration] and [Breath]\"\n- This Identity's Base Skills count as \"Skills that apply [Laceration] and [Breath]\"\n\n[WhenUseEGOPassive]\n\nWhen an ally is defeated, gain 1 [AlcoholKimPersonal] next turn\n- If the defeated ally is in Blade Lineage, gain 2 [AlcoholKimPersonal] instead\n\nTurn Start: If this unit has [AlcoholKimPersonal], enter [GhostKimPersonal] state\n- Blade Lineage Mentor Meursault gains [RootSoupKimPersonal] as well when the above effect activates\n\nTurn Start: If this unit does not have [AlcoholKimPersonal], the following effects expire - [GhostKimPersonal], [GrudgePersonal], and [RootSoupKimPersonal]\n\nWhen this unit has [AlcoholKimPersonal]: When this unit takes damage that brings its HP down to 0, heal ([AlcoholKimPersonal] Stack x 25)% HP; then, [AlcoholKimPersonal] expires (once per Encounter; this effect activates after Identity Passives with similar effects)\n- When Staggered, recover from Stagger (excluding forced Staggers)",
         "name": "Beads of Liquor at Bladepoint"
+      }
+    ],
+    "20510": [
+      {
+        "desc": "[AlwaysUseEGOPassive]\nIf this unit has 5 [BulletHole], does not consume E.G.O Resource when using \"Hollow\" E.G.O's Skills (both Awakening and Corrosion)\n\nTurn Start: Gain 1 [BulletHole]\n\n[WhenUseEGOPassive]\nTurn Start: Gain 1 [BlackWingHole]\n\nHeal 5 SP every time this unit consumes or loses 3 cumulative [Bullet], and gain 1 [ResultEnhancement] next turn (including Unique [Bullet]; counts up to 9 [Bullet] per turn)",
+        "flavor": "The gaze of another nails into me, driving a hollow from which multitudes spill forth.\nThe discharge is then forged into a bullet that punches a hollow into you.",
+        "name": "L'Hémorragie interne"
       }
     ],
     "20601": [
@@ -1837,6 +1851,30 @@
             },
             "desc": "Combat Start: Heal 15 SP for the ally that has the lowest SP\n- This effect prioritizes Plus Coin Identities\n- If the affected unit is in The Index faction, they gain 1 [AttackDmgUp] as well\n- This effect does not apply to units under effects that prevent SP recovery such as E.G.O Corrosion[TabExplain], Panic, etc.",
             "name": "This, too, is the Grace of the Great Magicked Beeper!"
+          }
+        ],
+        "uptie": 3
+      }
+    ],
+    "10315": [
+      {
+        "passives": [
+          {
+            "condition": {
+              "requirement": [
+                {
+                  "type": "envy",
+                  "value": 2
+                },
+                {
+                  "type": "sloth",
+                  "value": 2
+                }
+              ],
+              "type": "owned"
+            },
+            "desc": "All allied [PersonalityCharge] take -2% damage this turn for every allied [PersonalityCharge] on the field at Combat Start (max -10%)",
+            "name": "Formation Conservation"
           }
         ],
         "uptie": 3

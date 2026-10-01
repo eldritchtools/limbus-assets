@@ -1,0 +1,964 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1031502",
+        "1031503",
+        "1031504"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1031502",
+        "1031503",
+        "1031504",
+        "1031501"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1031502",
+        "1031503",
+        "1031504",
+        "1031511"
+      ],
+      "uptie": 4
+    }
+  ],
+  "notes": {
+    "usage": [
+      "Starts with {st:Charge} Count on herself and allies. Her unique Charge is {st:ChargeNoirAlly}. {st:NoirShieldUpDonQuixote} is generated whenever she overcaps or consumes {st:ChargeNoirAlly} or when allies with Shields are hit. The buff passively gives her shields, {st:SuperCoin} at 25+ stack, and Stagger immunity at 40+ stack. At 100, her defense will consume all of it to trigger {skill:10315|06} instead.",
+      "Except for her S1, her skills apply {st:NoirNailDonQuixote} which is used for her conditionals along with {st:Vibration}. It also applies some bonus {kw:Sloth} damage on {st:VibrationExplosion} and {st:Binding} at 4+ stack. Whenever a {st:VibrationExplosion} is triggered on a target with it, her passive also gives her and an ally +2 {st:Charge} Count.",
+      "Her S3 applies {st:OathFieldDonQuixote} for 3 turns which generates shield on all allies, {st:AttackUp} and {st:DefenseUp} to Le Noir allies, and -1 speed and a minor stagger and damage taken debuff against enemies.",
+      "Both her S3 and {skill:10315|06} triggers {st:Switch_Vibration} into {st:VibrationFocusing} which is another {st:Vibration} variation that deals bonus damage on {st:VibrationExplosion}. This one is based on the {st:Charge} of the unit that triggers the {st:VibrationExplosion} but consumes an extra {st:Vibration} count unless it's a Le Noir identity.",
+      "She uses {skill:10315|05} as a bonus skill before Le Noir allies attack a target."
+    ]
+  },
+  "passiveBonuses": [
+    {
+      "extra": {
+        "cond": "tolastcoin"
+      },
+      "type": "final",
+      "value": 5
+    },
+    {
+      "extra": {
+        "skillId": 1031501
+      },
+      "type": "clash",
+      "value": 1
+    },
+    {
+      "extra": {
+        "skillId": 1031502
+      },
+      "type": "clash",
+      "value": 2
+    },
+    {
+      "extra": {
+        "skillId": 1031503
+      },
+      "type": "clash",
+      "value": 3
+    },
+    {
+      "extra": {
+        "skillId": 1031506
+      },
+      "type": "clash",
+      "value": 3
+    },
+    {
+      "extra": {
+        "op": "mul"
+      },
+      "type": "damage",
+      "value": 0.3
+    }
+  ],
+  "passiveData": {
+    "1031501": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 1
+          },
+          {
+            "type": "envy",
+            "value": 1
+          },
+          {
+            "type": "sloth",
+            "value": 1
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Combat End: If this unit has [OathFieldDonQuixote], gain 1 [Agility] next turn\n\nThis unit's Base Attack Skills deal +([ChargeNoirAlly] Potency on self x 3)% damage against the main target (max 15%)",
+      "flavor": "I heard His voice, His promise: \"Everything that exists has meaning.\"",
+      "name": "Obsidian Covenant"
+    },
+    "1031502": {
+      "desc": "Upon entering the Encounter for the first time, gain +10 [ChargeNoirAlly] Count and apply +2 [Charge] Count on other \"Le Noir\" allied Identities\n\nWhen inflicting [NoirNailDonQuixote] using Skill effects:\n- At 12+ [ChargeNoirAlly] Count, inflict +1 more [NoirNailDonQuixote] and consume 4 [ChargeNoirAlly] Count\n- At fewer than 12 [ChargeNoirAlly] Count, consume 2 [ChargeNoirAlly] Count\n- At insufficient [ChargeNoirAlly] Count, does not inflict [NoirNailDonQuixote]\n- Skills that inflict [NoirNailDonQuixote] due to this effect count as Skills that consume [Charge] Count\n\nGain 1 [ChargeNoirAlly] Potency every time this unit consumes 10 cumulative [ChargeNoirAlly] Count in this Encounter",
+      "flavor": "A hammer drives nails. This hammer strikes nothing but nails. Whatever it strikes is a nail. That is what was agreed upon.",
+      "name": "Malleus Promissionis"
+    },
+    "1031503": {
+      "desc": "Upon entering the Encounter for the first time, gain 25 [NoirShieldUpDonQuixote]\n\nWhen consuming [ChargeNoirAlly] Count, or when gaining [ChargeNoirAlly] Count past its max cap, gain ([ChargeNoirAlly] Count consumed or surplus [ChargeNoirAlly] Count x 5) [NoirShieldUpDonQuixote] (max 30 per turn)\n\nWhen an allied Identity that has Shield is hit, this unit gains 2 [NoirShieldUpDonQuixote] (max 10 per turn)\n- If the said allied Identity is a [PersonalityCharge], gain 5 [NoirShieldUpDonQuixote] instead",
+      "name": "Mission of Conservation"
+    },
+    "1031504": {
+      "desc": "Before Attack of another \"Le Noir\" allied Identity on an enemy, this unit uses \"Judgment!\" Skill as an Unopposed Attack against the main target (once per turn)\n\nOn the final Coin Start of a Base Skill, the said Coin gains Final Power +([ChargeNoirAlly] Potency on self + ([NoirNailDonQuixote] on target / 2)) (max 5)\n\nIf this unit has [OathFieldDonQuixote], Base Skill 1/2/3 gains Clash Power +1/+2/+3\n\nWhen [VibrationExplosion] triggers on a target that has [NoirNailDonQuixote], this unit and 1 other allied [PersonalityCharge] that has the lowest [Charge] Count gain +2 [Charge] Count (2 times per turn)",
+      "flavor": "The Obsidian God's words be our guiding light, our armor and shield in this troubled world of uncertainties; becometh His Voice the shining beam of light upon us, thereby bestowing us with meaning so coveted.",
+      "name": "The Lord's Will and Values Be With Us..."
+    },
+    "1031511": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "pride",
+            "value": 1
+          },
+          {
+            "type": "envy",
+            "value": 1
+          },
+          {
+            "type": "sloth",
+            "value": 1
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "Combat End: If this unit has [OathFieldDonQuixote], gain 2 [Agility] next turn\n\nThis unit's Base Attack Skills deal +([ChargeNoirAlly] Potency on self x 6)% damage against the main target (max 30%)",
+      "flavor": "I heard His voice, His promise: \"Everything that exists has meaning.\"",
+      "name": "Obsidian Covenant"
+    },
+    "1031521": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "envy",
+            "value": 2
+          },
+          {
+            "type": "sloth",
+            "value": 2
+          }
+        ],
+        "type": "owned"
+      },
+      "desc": "All allied [PersonalityCharge] take -2% damage this turn for every allied [PersonalityCharge] on the field at Combat Start (max -10%)",
+      "name": "Formation Conservation"
+    }
+  },
+  "sanity": {
+    "add": [
+      "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+      "Increase by 10 after this unit defeats an enemy whose level was higher than or equal to this unit’s",
+      "Increase by 5 after an ally defeats an enemy whose level was higher than or equal to the unit’s"
+    ],
+    "id": 9999,
+    "lowMoraleDesc": "",
+    "name": "Panic",
+    "panicDesc": "Does not act for this turn.",
+    "sub": [
+      "If the level of the defeated ally was higher than or equal to the unit’s,\ndecrease based on the level difference\n<size=95%>(Base Value is 10, raised by 10 per level)</size>"
+    ]
+  },
+  "skills": {
+    "1031501": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [ChargeNoirAlly] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 3+ [ChargeNoirAlly] Potency, Coin Power +1\n[WhenUse] Apply +2 [Charge] Count on self and 1 other \"Le Noir\" allied Identity that has the lowest [Charge] Count (once per turn)",
+          "iconId": "1031501",
+          "id": "1031501",
+          "levelCorrection": 2,
+          "name": "Cometh the Nail",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +5 [ChargeNoirAlly] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Vibration] Potency + [NoirNailDonQuixote]) on target (max 2)\n[WhenUse] At 3+ [ChargeNoirAlly] Potency, Coin Power +1 and deal +20% damage\n[WhenUse] Apply +3 [Charge] Count on self and 1 other \"Le Noir\" allied Identity that has the lowest [Charge] Count (once per turn)",
+          "iconId": "1031501",
+          "id": "1031501",
+          "name": "Cometh the Nail",
+          "uptie": 2
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +5 [ChargeNoirAlly] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Vibration] Potency + [NoirNailDonQuixote]) on target (max 2)\n[WhenUse] At 3+ [ChargeNoirAlly] Potency, Coin Power +1 and deal +20% damage\n[WhenUse] Apply +3 [Charge] Count on self and 1 other \"Le Noir\" allied Identity that has the lowest [Charge] Count (once per turn)",
+          "iconId": "1031501",
+          "id": "1031501",
+          "name": "Cometh the Nail",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 3
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.4
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +6 [ChargeNoirAlly] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Vibration] Potency + [NoirNailDonQuixote]) on target (max 3)\n[WhenUse] At 3+ [ChargeNoirAlly] Potency, Coin Power +1 and deal +40% damage\n[WhenUse] Apply +4 [Charge] Count on self and 1 other \"Le Noir\" allied Identity that has the lowest [Charge] Count (once per turn)",
+          "iconId": "1031501",
+          "id": "1031501",
+          "name": "Cometh the Nail",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1031502": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [NoirNailDonQuixote]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +6 [ChargeNoirAlly] Count",
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 3+ [ChargeNoirAlly] Potency, Coin Power +1",
+          "iconId": "1031502",
+          "id": "1031502",
+          "levelCorrection": 2,
+          "name": "Summoneth the Nail",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            },
+            {
+              "extra": {
+                "cond": "tolastcoin"
+              },
+              "type": "final",
+              "value": 4
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [NoirNailDonQuixote]",
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +7 [ChargeNoirAlly] Count",
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Vibration] Potency + [NoirNailDonQuixote]) on target (max 2)\n[WhenUse] At 3+ [ChargeNoirAlly] Potency, Coin Power +1 and deal +20% damage\n[BeforeAttack] The final Coin gains Final Power +1 for every highest Reson. (max 4)",
+          "iconId": "1031502",
+          "id": "1031502",
+          "name": "Summoneth the Nail",
+          "uptie": 2
+        },
+        {
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [NoirNailDonQuixote]",
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +7 [ChargeNoirAlly] Count",
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Vibration] Potency + [NoirNailDonQuixote]) on target (max 2)\n[WhenUse] At 3+ [ChargeNoirAlly] Potency, Coin Power +1 and deal +20% damage\n[BeforeAttack] The final Coin gains Final Power +1 for every highest Reson. (max 4)",
+          "iconId": "1031502",
+          "id": "1031502",
+          "name": "Summoneth the Nail",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 3
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            },
+            {
+              "extra": {
+                "cond": "tolastcoin"
+              },
+              "type": "final",
+              "value": 4
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [NoirNailDonQuixote]",
+                "[OnSucceedAttack] Inflict 4 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +8 [ChargeNoirAlly] Count",
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Vibration] Potency + [NoirNailDonQuixote]) on target (max 3)\n[WhenUse] At 3+ [ChargeNoirAlly] Potency, Coin Power +1 and deal +30% damage\n[BeforeAttack] The final Coin gains Final Power +1 for every highest Reson. (max 4)",
+          "iconId": "1031502",
+          "id": "1031502",
+          "name": "Summoneth the Nail",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1031503": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            },
+            {
+              "extra": {
+                "cond": "tolastcoin"
+              },
+              "type": "final",
+              "value": 4
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [NoirNailDonQuixote]",
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [ChargeNoirAlly] Count",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationFocusing]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] If target has 3+ [NoirNailDonQuixote], trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] Gain 3 [OathFieldDonQuixote] (once per turn)\n[StartBattle] Apply 2 [AttackUp] and 2 [DefenseUp] on self and 1 other \"Le Noir\" allied Identity with the fastest Speed (once per turn)\n[WhenUse] If target has 6+ ([Vibration] Potency + [NoirNailDonQuixote]), Coin Power +1\n[WhenUse] At 3+ [ChargeNoirAlly] Potency, Coin Power +1 and deal +20% damage\n[BeforeAttack] The final Coin gains Final Power +1 for every highest Reson. (max 4)",
+          "iconId": "1031503",
+          "id": "1031503",
+          "levelCorrection": 3,
+          "name": "I Sever Thine Advent!",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.4
+            },
+            {
+              "extra": {
+                "cond": "tolastcoin"
+              },
+              "type": "final",
+              "value": 4
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [NoirNailDonQuixote]",
+                "[OnSucceedAttack] Inflict 4 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [ChargeNoirAlly] Count",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationFocusing]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] If target has 3+ [NoirNailDonQuixote], trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] Gain 3 [OathFieldDonQuixote] (once per turn)\n[StartBattle] Apply 2 [AttackUp] and 2 [DefenseUp] on self and 1 other \"Le Noir\" allied Identity with the fastest Speed (once per turn)\n[WhenUse] Coin Power +1 for every 6 ([Vibration] Potency + [NoirNailDonQuixote]) on target (max 2)\n[WhenUse] At 3+ [ChargeNoirAlly] Potency, Coin Power +1 and deal +40% damage\n[BeforeAttack] The final Coin gains Final Power +1 for every highest Reson. (max 4)",
+          "iconId": "1031503",
+          "id": "1031503",
+          "name": "I Sever Thine Advent!",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1031504": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [NoirNailDonQuixote]",
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [ChargeNoirAlly] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[StartBattle] Gain 3 [OathFieldDonQuixote] (once per turn)\n[StartBattle] Heal 4 SP on self and 1 other \"Le Noir\" allied Identity that has the lowest SP (once per turn)\n[StartBattle] Gain +2 [ChargeNoirAlly] Count (once per turn)\n[WhenUse] At 3+ [ChargeNoirAlly] Potency, Coin Power +1",
+          "iconId": "1031504",
+          "id": "1031504",
+          "levelCorrection": 4,
+          "name": "Witness Ye in Silence",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [NoirNailDonQuixote]",
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [ChargeNoirAlly] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] Gain 3 [OathFieldDonQuixote] (once per turn)\n[StartBattle] Heal 5 SP on self and 1 other \"Le Noir\" allied Identity that has the lowest SP (once per turn)\n[StartBattle] Apply the following effects depending on [NoirShieldUpDonQuixote] on self:\n- At 100 [NoirShieldUpDonQuixote], activate \"With Each Smite, I Sever Thine Advent!\" instead (once per turn; can activate for Unopposed Attacks)\n- At fewer than 100 [NoirShieldUpDonQuixote], gain Shield equal to ([NoirShieldUpDonQuixote] / 10)% of this unit's max HP (once per turn)\n[StartBattle] Gain +3 [ChargeNoirAlly] Count (once per turn)\n[WhenUse] If target has 6+ ([Vibration] Potency + [NoirNailDonQuixote]), Coin Power +1\n[WhenUse] At 3+ [ChargeNoirAlly] Potency, Coin Power +1 and deal +10% damage",
+          "iconId": "1031504",
+          "id": "1031504",
+          "name": "Witness Ye in Silence",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [NoirNailDonQuixote]",
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [ChargeNoirAlly] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[StartBattle] Gain 3 [OathFieldDonQuixote] (once per turn)\n[StartBattle] Heal 6 SP on self and 1 other \"Le Noir\" allied Identity that has the lowest SP (once per turn)\n[StartBattle] Apply the following effects depending on [NoirShieldUpDonQuixote] on self:\n- At 100 [NoirShieldUpDonQuixote], activate \"With Each Smite, I Sever Thine Advent!\" instead (once per turn; can activate for Unopposed Attacks)\n- At fewer than 100 [NoirShieldUpDonQuixote], gain Shield equal to ([NoirShieldUpDonQuixote] / 10)% of this unit's max HP (once per turn)\n[StartBattle] Gain +4 [ChargeNoirAlly] Count (once per turn)\n[WhenUse] Coin Power +1 for every 6 ([Vibration] Potency + [NoirNailDonQuixote]) on target (max 2)\n[WhenUse] At 3+ [ChargeNoirAlly] Potency, Coin Power +1 and deal +20% damage",
+          "iconId": "1031504",
+          "id": "1031504",
+          "name": "Witness Ye in Silence",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1031505": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [NoirNailDonQuixote]",
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nThis Skill has the following properties:\n- Does not trigger Defense Skills\n- External effects cannot trigger this Skill to be Reused\n- Target's HP cannot be reduced below 1 until this Skill ends\n[WhenUse] Final Power +1 for every 4 ([Vibration] Potency + [NoirNailDonQuixote]) on target (max 2)\n[WhenUse] At 3+ [ChargeNoirAlly] Potency, Coin Power +1 and deal +20% damage",
+          "iconId": "1031505",
+          "id": "1031505",
+          "levelCorrection": 2,
+          "name": "Judgment!",
+          "uptie": 1
+        },
+        {
+          "baseValue": 6,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 3
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.4
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [NoirNailDonQuixote]",
+                "[OnSucceedAttack] Inflict 4 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[CantDuel]\nThis Skill has the following properties:\n- Does not trigger Defense Skills\n- External effects cannot trigger this Skill to be Reused\n- Target's HP cannot be reduced below 1 until this Skill ends\n[WhenUse] Final Power +1 for every 4 ([Vibration] Potency + [NoirNailDonQuixote]) on target (max 3)\n[WhenUse] At 3+ [ChargeNoirAlly] Potency, Coin Power +1 and deal +40% damage",
+          "iconId": "1031505",
+          "id": "1031505",
+          "name": "Judgment!",
+          "uptie": 4
+        }
+      ],
+      "noClash": true,
+      "tier": 1
+    },
+    "1031506": {
+      "bonusNotes": "Assumes a single target",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 3,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "extra": {
+                "cond": "tolastcoin"
+              },
+              "type": "final",
+              "value": 8
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [NoirNailDonQuixote]",
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [NoirNailDonQuixote]",
+                "[OnSucceedAttack] Inflict 1 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.6
+                },
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "sloth"
+                  },
+                  "type": "damage",
+                  "value": 0.45
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count",
+                "[OnSucceedAttack] Gain +3 [ChargeNoirAlly] Count (once per Coin)",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationFocusing]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] Apply the following effects on target depending on its respective [NoirNailDonQuixote] Stack\n- If target has 3+ [NoirNailDonQuixote], trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1\n- Deal Sloth damage equal to ([NoirNailDonQuixote] on target x 1.5)% of this Coin's final damage (max 45%)\n- Consume all [NoirNailDonQuixote] on target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "This Skill counts as an Attack Skill even when it activates instead of a Defense Skill; this Skill is unaffected by Defense Power-changing effects, and is instead affected by Attack Power-changing effects\n[StartBattle] Apply 2 [AttackUp] and 2 [DefenseUp] on all \"Le Noir\" allied Identities (once per turn)\n[WhenUse] At 6+ total sum of ([Vibration] Potency + [NoirNailDonQuixote]) on all targets, Coin Power +1\n[WhenUse] At 3+ [ChargeNoirAlly] Potency, Coin Power +1\n[WhenUse] Deal +30% damage for every excess Atk Weight beyond the # of actual targets (for Focused Encounters, Parts)\n[BeforeAttack] The final Coin gains Final Power +2 for every highest Reson. (max 8)\n[EndSkill] Consume all [NoirShieldUpDonQuixote]",
+          "iconId": "1031506",
+          "id": "1031506",
+          "levelCorrection": 4,
+          "name": "With Each Smite, I Sever Thine Advent!",
+          "uptie": 3
+        },
+        {
+          "baseValue": 6,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 1
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "extra": {
+                "cond": "tolastcoin"
+              },
+              "type": "final",
+              "value": 8
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [NoirNailDonQuixote]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [NoirNailDonQuixote]",
+                "[OnSucceedAttack] Inflict 2 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "sloth"
+                  },
+                  "type": "damage",
+                  "value": 0.9
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count",
+                "[OnSucceedAttack] Gain +4 [ChargeNoirAlly] Count (once per Coin)",
+                "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationFocusing]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] Apply the following effects on target depending on its respective [NoirNailDonQuixote] Stack\n- If target has 3+ [NoirNailDonQuixote], trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1\n- Deal Sloth damage equal to ([NoirNailDonQuixote] on target x 3)% of this Coin's final damage (max 90%)\n- Consume all [NoirNailDonQuixote] on target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "This Skill counts as an Attack Skill even when it activates instead of a Defense Skill; this Skill is unaffected by Defense Power-changing effects, and is instead affected by Attack Power-changing effects\n[StartBattle] Apply 2 [AttackUp] and 2 [DefenseUp] on all \"Le Noir\" allied Identities (once per turn)\n[WhenUse] Coin Power +1 for every 6 total sum of ([Vibration] Potency + [NoirNailDonQuixote]) on all targets (max 2)\n[WhenUse] At 3+ [ChargeNoirAlly] Potency, Coin Power +1\n[WhenUse] Deal +50% damage for every excess Atk Weight beyond the # of actual targets (for Focused Encounters, Parts)\n[BeforeAttack] The final Coin gains Final Power +2 for every highest Reson. (max 8)\n[EndSkill] Consume all [NoirShieldUpDonQuixote]",
+          "iconId": "1031506",
+          "id": "1031506",
+          "name": "With Each Smite, I Sever Thine Advent!",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1031521"
+      ],
+      "uptie": 3
+    }
+  ]
+}
