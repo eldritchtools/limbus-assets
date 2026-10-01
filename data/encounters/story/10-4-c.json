@@ -1,0 +1,2871 @@
+{
+  "battles": [
+    {
+      "phases": [
+        {
+          "targets": [
+            {
+              "name": "The Warden",
+              "parts": [
+                {
+                  "defCorrection": -10,
+                  "hp": 366.0,
+                  "name": "Body",
+                  "partId": 148501,
+                  "resists": {
+                    "blunt": 0.9,
+                    "envy": 1,
+                    "gloom": 1,
+                    "gluttony": 1.2,
+                    "lust": 1.2,
+                    "pierce": 0.9,
+                    "pride": 1.2,
+                    "slash": 0.9,
+                    "sloth": 1.2,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    2,
+                    2
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Encounter Start: Meursault gains [MeursaultBuffWarderFirstPhase]\n\nTurn Start: Random Sinners gain [GoldenHideWarderFirstPhase] and [GoldenFabricWarderFirstPhase]",
+                  "flavor": "\"That which betokeneth stillness and change... is reserved for none but God...!!\"",
+                  "name": "... Impossible!"
+                },
+                {
+                  "desc": "Apply the [PanicChangeLock] effect\nTurn End: If this unit is in Panic, change SP to 30\n\nEncounter Start:\n- Begin with 50% HP\n- Gain 2 [UnstableConnection]\n\nOn Turn 3, use a powerful Skill\n- During that turn, when hit by a Sinner, gain 1 [ParryingResultDown] (once per Sinner)\n\nWhen this unit's HP drops to 1 or below, or at the end of the turn 3, enter a new Phase",
+                  "flavor": "The Vicar of the Obsidian God who visits punishment upon those who have gone astray.",
+                  "name": "Vicarius Dei"
+                },
+                {
+                  "desc": "Turn Start: <color=#ff6000><mark=#ff000040><b><u>Summon 2 Candle of Retribution</u></b></mark></color>\n- Summon <color=#ff6000><mark=#ff000040><b><u>+1 more Candle of Retribution</u></b></mark></color> at Turn Start with every passing turn\n- Up to 4 Candles of Retribution can exist simultaneously on the field\n\nEvery time a Candle of Retribution is destroyed, the Warden gains 1 [Vulnerable]\n\nOn Skill Use:\n- <color=#ff6000><mark=#ff000040><b><u>If the main target has 1 Speed, convert all Coins on this unit's Skill into [SuperCoin]s, gain Final Power +2, and deal +100% damage</u></b></mark></color>\n- If there are no Candles of Retribution on the field, Clash Power -1",
+                  "flavor": "The candle that smites those sinful ones who dare defy the fate allotted by the department store.",
+                  "name": "Hallowed Candles of Retribution"
+                },
+                {
+                  "desc": "<color=#ff6000><mark=#ff000040><b><u>This unit does not lose SP from [Sinking] effects</u></b></mark></color>; instead, when [Sinking] effects trigger, this unit takes Gloom damage equal to Sinking Potency\n\nWhen hit by a Sinner, the said Sinner gains +1 [Sinking] Count (2 per turn per Sinner)",
+                  "name": "Tears shall soak the cloth"
+                },
+                {
+                  "desc": "Gain 1 [ChargeNoir] Potency for every 10 cumulative [ChargeNoir] Count this unit consumes in this Encounter\n\nTurn Start: At fewer than 3 [ChargeNoir] Potency and fewer than 10 [ChargeNoir] Count, gain +5 [ChargeNoir] Count\n\nThe \"Turn End: Lose 1 Count\" effect on [ChargeNoir] does not trigger",
+                  "flavor": "Within the Sisyphe System, conservation itself is preserved perfectly.",
+                  "name": "Perfect Conservation"
+                }
+              ],
+              "portrait": "1485",
+              "sanity": {
+                "add": [
+                  "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 10% per Clash count after 1)</size>"
+                ],
+                "id": 1116,
+                "lowMoraleDesc": "- Take +12.5% damage\n- Min & Max Speed -1\n- Deal -15% damage using Skills that consume Preservation",
+                "name": "Sync Error",
+                "panicDesc": "- Take +20% damage\n- Min & Max Speed -2\n- Deal -25% damage using Skills that consume Preservation",
+                "sub": [
+                  "Decreases after losing a Clash based on the Clash count\n<size=95%>(Base Value is 3, raised by 10% per Clash count after 1)</size>"
+                ]
+              },
+              "skills": [
+                {
+                  "affinity": "pride",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Sinking]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse]\n- <color=#ff6000><mark=#ff000040><b><u>Final Power +1 for every Candle of Retribution on the field</u></b></mark></color> (max 4)\n- At 10+ [ChargeNoir] Count, Clash Power +1\n[WhenUse] Gain +3 [ChargeNoir] Count\n[DefeatDuel] Damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 1,
+                  "name": "Thou hast sinned..."
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Sinking]",
+                        "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Inflict 1 [Binding]</u></b></mark></color> next turn"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse]\n- <color=#ff6000><mark=#ff000040><b><u>Final Power +2 for every Candle of Retribution on the field</u></b></mark></color> (max 8)\n- At 15+ [ChargeNoir] Count, consume 5 [ChargeNoir] Count to gain Final Power +2\n[WhenUse] Gain +5 [ChargeNoir] Count\n[DefeatDuel] Damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 1,
+                  "name": "Atone."
+                },
+                {
+                  "affinity": "sloth",
+                  "atkType": "blunt",
+                  "atkWeight": 2,
+                  "baseValue": 4,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Sinking] and +1 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 [Sinking] and +2 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Inflict 2 [Binding]</u></b></mark></color> next turn\n- <color=#ff6000><mark=#ff000040><b><u>Inflict 4 [Binding]</u></b></mark></color> instead to main targets",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Sinking] and +3 [Sinking] Count"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Can Clash with this Skill regardless of Speed\n[BeforeAttack] <color=#ff6000><mark=#ff000040><b><u>Gain +(# of Candle of Retribution on the field) Atk Weight (max 2)</u></b></mark></color>\n[WhenUse]\n- If the main target <color=#ff6000><mark=#ff000040><b><u>has 1 Speed</u></b></mark></color>, deal +50% damage\n- <color=#ff6000><mark=#ff000040><b><u>Final Power +2 for every Candle of Retribution on the field (max 8)</u></b></mark></color>\n- At 15+ [ChargeNoir] Count, consume 10 [ChargeNoir] Count to gain Coin Power +1\n[DefeatDuel] Gain 3 [Paralysis], deal -50% damage and damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 2,
+                  "name": "Condemnation"
+                },
+                {
+                  "affinity": "sloth",
+                  "atkType": "blunt",
+                  "atkWeight": 2,
+                  "baseValue": 4,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Inflict 1 [Binding]</u></b></mark></color> next turn\n- <color=#ff6000><mark=#ff000040><b><u>Inflict 3 [Binding]</u></b></mark></color> instead to main targets",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Sinking] Count"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Inflict 1 [Binding]</u></b></mark></color> next turn\n- <color=#ff6000><mark=#ff000040><b><u>Inflict 3 [Binding]</u></b></mark></color> instead to main targets",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Sinking]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Sinking] and +2 [Sinking] Count"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Inflict 2 [BlackStigmata] next turn"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Can Clash with this Skill regardless of Speed\n[BeforeAttack] Gain +(# of Candle of Retribution on the field) Atk Weight (max 4)\n[WhenUse]\n- If the main target <color=#ff6000><mark=#ff000040><b><u>has 1 Speed</u></b></mark></color>, deal +100% damage\n- <color=#ff6000><mark=#ff000040><b><u>Final Power +2 for every Candle of Retribution on the field (max 8)</u></b></mark></color>\n- If there are no Candle of Retribution on the field, Clash Power -3\n- At 15+ [ChargeNoir] Count, consume 10 [ChargeNoir] Count to gain Final Power +1 and Coin Power +1\n[DefeatDuel] Gain 4 [Paralysis], deal -50% damage, and damage dealt by this Skill cannot Stagger the target",
+                  "flavor": "\"Mannequins are singing...\"",
+                  "levelCorrection": 2,
+                  "name": "Your sinfulness shall constrict you."
+                },
+                {
+                  "affinity": "sloth",
+                  "atkType": "blunt",
+                  "atkWeight": 7,
+                  "baseValue": 4,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Can Clash with this Skill regardless of Speed\n[WhenUse]\n- If the main target has <color=#ff6000><mark=#ff000040><b><u>1 Speed</u></b></mark></color>, deal +100% damage\n- <color=#ff6000><mark=#ff000040><b><u>Final Power +2 for every Candle of Retribution on the field (max 8)</u></b></mark></color>\n- If there are no Candle of Retribution on the field, Clash Power -5\n- If this unit has [ChargeNoir] Count, consume all [ChargeNoir] Count on self to gain Coin Power +2\n[DefeatDuel] Gain 4 [Paralysis], deal -50% damage, and damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 3,
+                  "name": "Divine Retribution"
+                }
+              ],
+              "statuses": [
+                "Binding",
+                "ParryingResultDown",
+                "BlackStigmata",
+                "PanicChangeLock",
+                "Vulnerable",
+                "Paralysis",
+                "UnstableConnection",
+                "ChargeNoir",
+                "Sinking",
+                "GoldenFabricWarderFirstPhase",
+                "MeursaultBuffWarderFirstPhase",
+                "GoldenHideWarderFirstPhase",
+                "SuperCoin"
+              ],
+              "tags": [
+                "Sisyphe",
+                "□□ □□□□"
+              ]
+            },
+            {
+              "name": "Candle of Retribution",
+              "parts": [
+                {
+                  "defCorrection": 0,
+                  "hp": 59,
+                  "name": "Body",
+                  "partId": 152001,
+                  "resists": {
+                    "blunt": 2,
+                    "envy": 2,
+                    "gloom": 2,
+                    "gluttony": 2,
+                    "lust": 2,
+                    "pierce": 2,
+                    "pride": 2,
+                    "slash": 2,
+                    "sloth": 2,
+                    "wrath": 2
+                  },
+                  "speed": [
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Turn End: Inflict <color=#ff6000><mark=#ff000040><b><u>2 [Binding]</u></b></mark></color> next turn on all Sinners\n- This effect does not trigger after Phase change",
+                  "flavor": "Let the sinful one be bound.",
+                  "name": "Chastening Bonds"
+                },
+                {
+                  "desc": "When this unit is sub-targeted by a Sinner's Skill, take -50% damage from the said Skill\n\nUpon defeat:\n- Give 1 E.G.O resource for all Affinities\n- The last Sinner to attack this unit heals 5 SP\n  · If the said Sinner has [Binding], heal 10 SP instead\n  · If the \"last Sinner\" to attack this unit cannot be determined, above effects activate for the Sinner that has the lowest SP",
+                  "name": "Sin Aflame"
+                }
+              ],
+              "portrait": "1520",
+              "statuses": [
+                "Binding"
+              ]
+            }
+          ]
+        },
+        {
+          "targets": [
+            {
+              "name": "The Warden",
+              "parts": [
+                {
+                  "breakSection": [
+                    65,
+                    -5
+                  ],
+                  "defCorrection": -10,
+                  "hp": 366.0,
+                  "name": "Body",
+                  "partId": 148601,
+                  "resists": {
+                    "blunt": 0.9,
+                    "envy": 1,
+                    "gloom": 1,
+                    "gluttony": 1.2,
+                    "lust": 1.2,
+                    "pierce": 0.9,
+                    "pride": 1.2,
+                    "slash": 0.9,
+                    "sloth": 1.2,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    2,
+                    2
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Turn Start: Random Sinners gain [GoldenHideWarderSecondPhase] and [GoldenFabricWarderSecondPhase]",
+                  "flavor": "\"That which betokeneth stillness and change... is reserved for none but God...!!\"",
+                  "name": "... Impossible!"
+                },
+                {
+                  "desc": "When the Warden inflicts [ConfessionSecondPhase] on Sinners using its Skill effects, apply the following:\n- The following effects are <color=#ff6000><mark=#ff000040><b><u>collectively referred to as [ConfessionSecondPhase]:</u></b></mark></color>\n  · [RestrainingNailSecondPhase]\n  · [ExecutionNailSecondPhase]\n  · [CeremonialNail]\n  · [MarkingNail]\n- When the Warden inflicts Nail[TabExplain] or Hammernail on the Sinners, <color=#ff6000><mark=#ff000040><b><u>only the effect that is inflicted last remains</u></b></mark></color>; however, Stacks between Nail[TabExplain] and Hammernail accumulate\n- <color=#ff6000><mark=#ff000040><b><u>Hammernail does not convert into Nail[TabExplain]</u></b></mark></color>\n\nOn Hit against a Sinner, <color=#ff6000><mark=#ff000040><b><u>deal +3% damage for every [ConfessionSecondPhase] on target</u></b></mark></color> (max 27%, separately for each target)\n\nTurn Start: <color=#ff6000><mark=#ff000040><b><u>If the Warden has 50% or lower HP</u></b></mark></color>, all Skills inflict <color=#ff6000><mark=#ff000040><b><u>+1 more [ConfessionSecondPhase]</u></b></mark></color>",
+                  "name": "Implements of Confession"
+                },
+                {
+                  "desc": "Apply the [PanicChangeLock] effect\nTurn End: If this unit is in Panic, change SP to 30\n\nFirst Turn Start after entry:\n- Change SP to 45\n- Gain 0 [EncompassingVoiceSecondPhase] and 1 [LeaderVoiceSecondPhase]\n- [ChargeNoir] Potency and Count carry over from the preceding Phase",
+                  "name": "As Ordained by the Rule of Conservation"
+                },
+                {
+                  "desc": "Turn Start: If this unit has [SpreadingVoiceSecondPhase], gain a new pattern and <color=#ff6000><mark=#ff000040><b><u>use a powerful Skill, \"Judgment... Sentencing... Condemnation!\"</u></b></mark></color>\n- Min & Max Speed +20 for the turn\n- <color=#ff6000><mark=#ff000040><b><u>If the Warden loses the Clash while in this pattern</u></b></mark></color>, gain a changed pattern next turn, and <color=#ff6000><mark=#ff000040><b><u>use a powerful Skill, \"Death Unto the Condemned\"</u></b></mark></color>\n\nEvery time [SpreadingVoiceSecondPhase] and [EncompassingVoiceSecondPhase] are converted, <color=#ff6000><mark=#ff000040><b><u>heal 45 SP</u></b></mark></color> and <color=#ff6000><mark=#ff000040><b><u>gain 1 [LeaderVoiceSecondPhase]</u></b></mark></color>\n\nAt 50% or lower HP, end the turn (excluding certain Skills); if Staggered, recover from Stagger\nAt 1 or lower HP, enter a new Phase",
+                  "flavor": "They who have failed to atone through punishment shall perish on the Day of Judgment.",
+                  "name": "Dies Irae"
+                },
+                {
+                  "desc": "<color=#ff6000><mark=#ff000040><b><u>This unit does not lose SP from [Sinking] effects</u></b></mark></color>; instead, this unit takes Gloom damage equal to Sinking Potency\n\nWhen hit by a Sinner, the said Sinner gains +1 [Sinking] Count (2 times per turn per Sinner)\n\nThis unit cannot gain [Breath] Potency past 20; <color=#ff6000><mark=#ff000040><b><u>instead, heal SP equal to excess [Breath] Potency gained</u></b></mark></color>",
+                  "name": "Tears shall soak the cloth, cloth shall close about the throat..."
+                },
+                {
+                  "desc": "Gain 1 [ChargeNoir] Potency for every 10 cumulative [ChargeNoir] Count this unit consumes in this Encounter\n\nTurn Start: At fewer than 5 [ChargeNoir] Potency and fewer than 10 [ChargeNoir] Count, gain +5 [ChargeNoir] Count\n\nThe \"Turn End: Lose 1 Count\" effect on [ChargeNoir] does not trigger\n\nAt 5+/10+ [ChargeNoir] Potency, [ChargeNoir] Count max cap +5/+10",
+                  "flavor": "Within the Sisyphe System, conservation itself is preserved perfectly.",
+                  "name": "Perfect Conservation"
+                }
+              ],
+              "portrait": "1486",
+              "sanity": {
+                "add": [
+                  "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 10% per Clash count after 1)</size>"
+                ],
+                "id": 1116,
+                "lowMoraleDesc": "- Take +12.5% damage\n- Min & Max Speed -1\n- Deal -15% damage using Skills that consume Preservation",
+                "name": "Sync Error",
+                "panicDesc": "- Take +20% damage\n- Min & Max Speed -2\n- Deal -25% damage using Skills that consume Preservation",
+                "sub": [
+                  "Decreases after losing a Clash based on the Clash count\n<size=95%>(Base Value is 3, raised by 10% per Clash count after 1)</size>"
+                ]
+              },
+              "skills": [
+                {
+                  "affinity": "pride",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 2,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Sinking]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Gain +2 [ChargeNoir] Count\n[WhenUse] Gain 1 [Breath] and +2 [Breath] Count\n[DefeatDuel] Damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 0,
+                  "name": "Thou hast sinned..."
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +1 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Gain +2 [ChargeNoir] Count\n[WhenUse] Gain 2 [Breath] and +1 [Breath] Count\n[DefeatDuel] Damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 0,
+                  "name": "Atone."
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [MarkingNail]",
+                        "[OnSucceedAttack] Inflict 2 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Inflict 2 [MarkingNail]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Sinking]"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "<color=#ff6000><mark=#ff000040><b><u>If the Warden is at 50% or lower HP</u></b></mark></color>, convert the <color=#ff6000><mark=#ff000040><b><u>first Coin of this Skill into an [SuperCoin]</u></b></mark></color>\nIf target has <color=#ff6000><mark=#ff000040><b><u>9 [ConfessionSecondPhase], Final Power +2</u></b></mark></color>\n[WhenUse] Gain +4 [ChargeNoir] Count\n[WhenUse] Gain 1 [Breath] and +1 [Breath] Count\n[DefeatDuel] Damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 1,
+                  "name": "Nail of Penance"
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [CeremonialNail]",
+                        "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Inflict 2 [CeremonialNail]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Sinking] Count"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "<color=#ff6000><mark=#ff000040><b><u>If the Warden is at 50% or lower HP</u></b></mark></color>, convert the <color=#ff6000><mark=#ff000040><b><u>first Coin of this Skill into an [SuperCoin]</u></b></mark></color>\nIf target has <color=#ff6000><mark=#ff000040><b><u>6+/9+ [ConfessionSecondPhase], Final Power +2/+3</u></b></mark></color>\n[WhenUse] Gain +4 [ChargeNoir] Count\n[WhenUse] Gain 2 [Breath] and +2 [Breath] Count\n[DefeatDuel] Damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 1,
+                  "name": "Nail of Punishment"
+                },
+                {
+                  "affinity": "sloth",
+                  "atkType": "blunt",
+                  "atkWeight": 2,
+                  "baseValue": 3,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "This Coin <color=#ff6000><mark=#ff000040><b><u>hits only the main target</u></b></mark></color>",
+                        "Deal +(missing HP percentage on self)% damage (max 100%)",
+                        "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Inflict 4 [ExecutionNailSecondPhase]</u></b></mark></color>"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Can Clash with this Skill regardless of Speed\nIf the main target has <color=#ff6000><mark=#ff000040><b><u>3+/6+/9+ [ConfessionSecondPhase], Final Power +2/+3/+5</u></b></mark></color>\n[BeforeAttack] <color=#ff6000><mark=#ff000040><b><u>If the main target has 5+/9+ [ConfessionSecondPhase], gain +1/+3 Atk Weight</u></b></mark></color>\n[WhenUse] If this unit has [ChargeNoir] Count, consume all [ChargeNoir] Count on self to gain Coin Power +2\n[DefeatDuel] Gain 3 [Paralysis], deal -50% damage, and damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 2,
+                  "name": "Judgment"
+                },
+                {
+                  "affinity": "envy",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "guard",
+                  "desc": "<color=#ff6000><mark=#ff000040><b><u>When the Sinner that has [GoldenFabricWarderSecondPhase]</u></b></mark></color> attacks the Slot equipped with this Skill as its main target in the Chaining Phase, the said Skill used by the Sinner deals +100% damage (for E.G.O Skills, +200% damage)\n[EndBattle] At fewer than 100 [EncompassingVoiceSecondPhase] Stack, gain up to 100 Stack\n- The Warden loses SP equal to Stack gained (max 45)",
+                  "levelCorrection": 0,
+                  "name": "Atone before God."
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [MarkingNail]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [MarkingNail]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [MarkingNail]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "If target has <color=#ff6000><mark=#ff000040><b><u>9 [ConfessionSecondPhase], Final Power +2</u></b></mark></color>\n[WhenUse] Consume up to 15 [SpreadingVoiceSecondPhase]\n- Final Power +1, deal +15% damage\n[WhenUse] Gain +4 [ChargeNoir] Count\n[DefeatDuel] Damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 1,
+                  "name": "Repent."
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [CeremonialNail]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [CeremonialNail]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +3 [Sinking] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [CeremonialNail]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "If target has <color=#ff6000><mark=#ff000040><b><u>6+/9+ [ConfessionSecondPhase], Final Power +2/+3</u></b></mark></color>\n[WhenUse] Consume up to 15 [SpreadingVoiceSecondPhase]\n- Final Power +2, deal +30% damage\n[WhenUse] Gain +4 [ChargeNoir] Count\n[DefeatDuel] Damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 1,
+                  "name": "Receive thy punishment."
+                },
+                {
+                  "affinity": "sloth",
+                  "atkType": "blunt",
+                  "atkWeight": 7,
+                  "baseValue": 4,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    },
+                    {
+                      "type": "normal"
+                    },
+                    {
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Activate the effects of [ConfessionSecondPhase] on target, then consume them all</u></b></mark></color>"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "On <color=#ff6000><mark=#ff000040><b><u>Clash Lose</u></b></mark></color>, this Coin <color=#ff6000><mark=#ff000040><b><u>hits only the main target</u></b></mark></color>\n<color=#ff6000><mark=#ff000040><b><u>- [DefeatDuelAttack] Inflict 9 [RestrainingNailSecondPhase]</u></b></mark></color>",
+                        "[OnSucceedAttack] If it is the main target, inflict 3 [BlackStigmata]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Can Clash with this Skill regardless of Speed\nThis Skill does not trigger the target's Defense Skill\nCannot be Staggered before using this Skill\nIf the main target has <color=#ff6000><mark=#ff000040><b><u>3+/6+/9+ [ConfessionSecondPhase], Final Power +2/+3/+5</u></b></mark></color>\n[WhenUse] <color=#ff6000><mark=#ff000040><b><u>If the main target has [GoldenFabricWarderSecondPhase]:</u></b></mark></color>\n<color=#ff6000><mark=#ff000040><b><u>- Final Power -5, Clash Power -5</u></b></mark></color>\n[WhenUse] Consume up to 40 [SpreadingVoiceSecondPhase] to:\n- Gain Final Power +3\n- Deal +50% damage\n[WhenUse] Deal +([SpreadingVoiceSecondPhase] Stack)% damage; at Attack End, consume all [SpreadingVoiceSecondPhase] on self\n- <color=#ff6000><mark=#ff000040><b><u>On Clash Lose, this effect does not activate</u></b></mark></color>\n[WhenUse] If this unit has [ChargeNoir] Count, consume all [ChargeNoir] Count on self to gain Coin Power +2\n[DefeatDuel] Gain 5 [Paralysis], deal -75% damage, and damage dealt by this Skill cannot Stagger the target\n[EndSkill]\n- Gain 2 [Vulnerable] next turn\n- End this turn",
+                  "levelCorrection": 3,
+                  "name": "Judgment... Sentencing... Condemnation!"
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 19,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Deal fixed damage equal to 200% of target's max HP</u></b></mark></color>"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "<color=#ff6000><mark=#ff000040><b><u>[CantChangeTarget]</u></b></mark></color>\n- <color=#ff6000><mark=#ff000040><b><u>Sinners that have [GoldenHideWarderSecondPhase] can Clash with this Skill</u></b></mark></color> regardless of Speed\nPrioritizes Sinners that have [RestrainingNailSecondPhase]\nDoes not trigger the target's Defense Skill\nCannot be Staggered before using this Skill\n[WhenUse] <color=#ff6000><mark=#ff000040><b><u>If target has [GoldenHideWarderSecondPhase], Clash Power -15</u></b></mark></color>\n[DefeatDuel] Gain 5 [Vulnerable] next turn\n[EndBattle] Consume all [SpreadingVoiceSecondPhase] on self",
+                  "levelCorrection": 0,
+                  "name": "Death Unto the Condemned"
+                }
+              ],
+              "statuses": [
+                "BlackStigmata",
+                "SpreadingVoiceSecondPhase",
+                "PanicChangeLock",
+                "Vulnerable",
+                "RestrainingNailSecondPhase",
+                "ExecutionNailSecondPhase",
+                "MarkingNail",
+                "CeremonialNail",
+                "Paralysis",
+                "Breath",
+                "ChargeNoir",
+                "ConfessionSecondPhase",
+                "Sinking",
+                "GoldenFabricWarderSecondPhase",
+                "GoldenHideWarderSecondPhase",
+                "SuperCoin",
+                "EncompassingVoiceSecondPhase",
+                "LeaderVoiceSecondPhase"
+              ],
+              "tags": [
+                "Sisyphe",
+                "□□ □□□□"
+              ]
+            }
+          ]
+        },
+        {
+          "targets": [
+            {
+              "name": "The Warden",
+              "parts": [
+                {
+                  "breakSection": [
+                    65
+                  ],
+                  "defCorrection": -10,
+                  "hp": 366.0,
+                  "name": "Body",
+                  "partId": 148701,
+                  "resists": {
+                    "blunt": 0.5,
+                    "envy": 1,
+                    "gloom": 1,
+                    "gluttony": 1.2,
+                    "lust": 1.2,
+                    "pierce": 0.5,
+                    "pride": 1.2,
+                    "slash": 0.5,
+                    "sloth": 1.2,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    2,
+                    2
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Turn Start: Random Sinners gain [GoldenHideWarderThirdPhase] and [GoldenFabricWarderThirdPhase]\n\n<color=#ff6000><mark=#ff000040><b><u>When \"the Manager\" takes a certain action, the Chaplain deals damage to a random Sinner based on the said Sinner's max HP and inflicts [GoldenNail] on them</u></b></mark></color>\n\n<color=#ff6000><mark=#ff000040><b><u>At lower than 50% HP, the Chaplain manipulates his status on a system level</u></b></mark></color> to <color=#ff6000><mark=#ff000040><b><u>heal both HP and SP up to max and remove all negative effects from self</u></b></mark></color>",
+                  "flavor": "\"No system's glitch-free all the time, of course, but a bug this bad...? Tsk. Looks like I'll have to call maintenance.\"",
+                  "name": "Goddammit. How did you manage to find a glitch like that?"
+                },
+                {
+                  "desc": "When the Chaplain inflicts [ConfessionThirdPhase] on Sinners using its Skill effects, apply the following:\n- The following effects are <color=#ff6000><mark=#ff000040><b><u>collectively referred to as [ConfessionThirdPhase]</u></b></mark></color>:\n  · [RestrainingNailThirdPhase]\n  · [ExecutionNailThirdPhase]\n  · [GoldenNail]\n- When the Chaplain inflicts Nail[TabExplain] on the Sinners, <color=#ff6000><mark=#ff000040><b><u>only the effect that is inflicted last remains</u></b></mark></color>; however, Stacks between effects accumulate\n<color=#ff6000><mark=#ff000040><b><u>- [RestrainingNailThirdPhase] and [ExecutionNailThirdPhase] do not convert into [GoldenNail]</u></b></mark></color>\n\nOn Hit against a Sinner, <color=#ff6000><mark=#ff000040><b><u>deal +5% damage for every [ConfessionThirdPhase]</u></b></mark></color> on target (max 45%, separately for each target)\n\nTurn Start: <color=#ff6000><mark=#ff000040><b><u>If the Chaplain has 50% or lower HP</u></b></mark></color>, all Skills inflict <color=#ff6000><mark=#ff000040><b><u>+1 more [ConfessionThirdPhase]</u></b></mark></color>",
+                  "flavor": "\"According to the manual... when this happens, everything has to be readjusted. It's all been laid out in the regulations already. You can see it right here in the manual... ah. Right. You can't see this from where you are.\"",
+                  "name": "Sisyphe System Maintenance Tool"
+                },
+                {
+                  "desc": "<color=#ff6000><mark=#ff000040><b><u>At 10+ Clashes</u></b></mark></color>, the said Skill <color=#ff6000><mark=#ff000040><b><u>gains Clash Power by (Clash Count)</u></b></mark></color>\n\nFor [Combustion], [Laceration], [Vibration], [Burst], [Sinking]:\n- <color=#ff6000><mark=#ff000040><b><u>Max Potency cap: 50\n- Max Count cap: 15</u></b></mark></color>\n- Take -50% damage from above effects\n\nApply the [PanicChangeLock] effect, and <color=#ff6000><mark=#ff000040><b><u>this unit's SP does not drop below 0</u></b></mark></color>\n\nFirst Turn Start after entry:\n- Change SP to 45\n- Gain 0 [EncompassingVoiceThirdPhase] and 1 [LeaderVoiceThirdPhase]\n- [ChargeNoir] Potency and Count carry over from the preceding Phase",
+                  "name": "\"As Ordained by the Rule of Conservation\""
+                },
+                {
+                  "desc": "Turn Start: If this unit has [SpreadingVoiceThirdPhase], gain a new pattern and use a <color=#ff6000><mark=#ff000040><b><u>powerful Skill, \"Do you seriously mean to break the Sisyphe System?\"</u></b></mark></color>\n- Min & Max Speed +20 for the turn\n- <color=#ff6000><mark=#ff000040><b><u>If the Chaplain loses the Clash</u></b></mark></color> while in this pattern, gain a changed pattern next turn, and <color=#ff6000><mark=#ff000040><b><u>use a powerful Skill, \"Systemwide Ban\"</u></b></mark></color>\n\nEvery time [SpreadingVoiceThirdPhase] and [EncompassingVoiceThirdPhase] are converted, <color=#ff6000><mark=#ff000040><b><u>heal 45 SP</u></b></mark></color> and <color=#ff6000><mark=#ff000040><b><u>gain 1 [LeaderVoiceThirdPhase]</u></b></mark></color>",
+                  "flavor": "If getting punished still wasn't enough to make you reflect, then I guess it's time for judgment. Enough to kill you, that is.",
+                  "name": "\"Dies Irae\""
+                },
+                {
+                  "desc": "<color=#ff6000><mark=#ff000040><b><u>This unit does not lose SP from [Sinking] effects</u></b></mark></color>; instead, when [Sinking] effects trigger, this unit takes Gloom damage equal to Sinking Potency\n\nWhen hit by a Sinner, the said Sinner gains +1 [Sinking] Count (2 per turn per Sinner)\n\nThis unit cannot gain [Breath] Potency past 20; <color=#ff6000><mark=#ff000040><b><u>instead, heal SP equal to excess [Breath] Potency gained</u></b></mark></color>\n\nWhen triggering [VibrationExplosion] on Sinners, <color=#ff6000><mark=#ff000040><b><u>if the targeted Sinner does not have a Stagger Threshold</u></b></mark></color>, <color=#ff6000><mark=#ff000040><b><u>deal ([Vibration] Potency on target / 2) Sloth damage</u></b></mark></color> (except Staggered targets; calculated separately for each target)",
+                  "flavor": "“About time you started 'praying,' don't you think?”",
+                  "name": "Tears shall soak the cloth, cloth shall close about the throat... now I can't even remember what's next."
+                },
+                {
+                  "desc": "Gain 1 [ChargeNoir] Potency for every 10 cumulative [ChargeNoir] Count this unit consumes in this Encounter\n\nTurn Start: At fewer than 10 [ChargeNoir] Potency and fewer than 10 [ChargeNoir] Count, gain +5 [ChargeNoir] Count\n\nThe \"Turn End: Lose 1 Count\" effect on [ChargeNoir] does not trigger\n\nAt 5+/10+ [ChargeNoir] Potency, [ChargeNoir] Count max cap +5/+10",
+                  "flavor": "Within the Sisyphe System, conservation itself is preserved perfectly.",
+                  "name": "Perfect Conservation"
+                },
+                {
+                  "desc": "Turn End: At more than 10 [ChargeNoir] Potency, consume excess [ChargeNoir] Potency and gain ([ChargeNoir] Potency consumed) [Dominion]\n- This effect does not trigger again after all [Dominion] has been consumed by the effects of this Passive\n\nWhen this unit's HP drops to <color=#ff6000><mark=#ff000040><b><u>33% or lower for the first time in this Encounter, gain a new pattern</u></b></mark></color>\n- Consume all [Dominion] on self and <color=#ff6000><mark=#ff000040><b><u>gain persistent Shield equal to (25 + [Dominion] Stack)% of this unit's max HP</u></b></mark></color>\n- Permanently lose Defense Level equal to [Dominion] Stack consumed",
+                  "flavor": "\"Say what you want, the Sisyphe System is something N Corp. absolutely needs. If this system goes down... we're back to barbarism.\"\n\n\"So, just like the manual says, you don't get to leave this department store. No exceptions.\"",
+                  "name": "All right. Time to clock out."
+                }
+              ],
+              "portrait": "1487",
+              "sanity": {
+                "add": [
+                  "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 10% per Clash count after 1)</size>"
+                ],
+                "flavor": "Time passes at a tremendous pace within the Sisyphe System, unhindered by material resistance. Yet through their respective viewpoints, the Giants can synchronize themselves with the System's internal flow of time and communicate with its customers.\n\nAmong them, the Giant who represents the Hammers holds authority over the System's internal memories and time, with the power to reset portions of its inventory at his own discretion.",
+                "id": 1118,
+                "lowMoraleDesc": "Unobservable",
+                "name": "The Obsidian God - The Giant of Le Noir - The Chaplain - Die Hämmer",
+                "panicDesc": "Unobservable",
+                "sub": [
+                  "Decreases after losing a Clash based on the Clash count\n<size=95%>(Base Value is 3, raised by 10% per Clash count after 1)</size>"
+                ]
+              },
+              "skills": [
+                {
+                  "affinity": "pride",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Vibration]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 2 [Vibration]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "<color=#ff6000><mark=#ff000040><b><u>If target has 5+ [ConfessionThirdPhase], convert the first Coin of this Skill into [SuperCoin]</u></b></mark></color>\nIf target has <color=#ff6000><mark=#ff000040><b><u>9 [ConfessionThirdPhase], Final Power +2</u></b></mark></color>\n[WhenUse] Gain +3 [ChargeNoir] Count\n[WhenUse] Gain 2 [Breath] and +1 [Breath] Count",
+                  "levelCorrection": 2,
+                  "name": "*sigh* Can you just... get rewound already?"
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [GoldenNail]",
+                        "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Inflict 2 [GoldenNail]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Vibration] Count"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "<color=#ff6000><mark=#ff000040><b><u>If target has 5+ [ConfessionThirdPhase], convert the first Coin of this Skill into [SuperCoin]</u></b></mark></color>\nIf target has <color=#ff6000><mark=#ff000040><b><u>6+/9+ [ConfessionThirdPhase], Final Power +2/+3</u></b></mark></color>\n[WhenUse] Gain +5 [ChargeNoir] Count\n[WhenUse] Gain 2 [Breath] and +2 [Breath] Count",
+                  "levelCorrection": 2,
+                  "name": "Come on, let a guy clock out on time for once."
+                },
+                {
+                  "affinity": "sloth",
+                  "atkType": "blunt",
+                  "atkWeight": 2,
+                  "baseValue": 3,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "This Coin <color=#ff6000><mark=#ff000040><b><u>hits only the main target</u></b></mark></color>",
+                        "Deal +(missing HP percentage on self)% damage (max 100%)",
+                        "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Inflict 4 [ExecutionNailThirdPhase]</u></b></mark></color>"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Can Clash with this Skill regardless of Speed\nIf the main target has <color=#ff6000><mark=#ff000040><b><u>3+/6+/9+ [ConfessionThirdPhase], Final Power +2/+3/+5</u></b></mark></color>\n[BeforeAttack] <color=#ff6000><mark=#ff000040><b><u>If the main target has 5+/9+ [ConfessionThirdPhase], gain +1/+3 Atk Weight</u></b></mark></color>\n[WhenUse] If this unit has [ChargeNoir] Count, consume all [ChargeNoir] Count on self to gain Coin Power +2\n[DefeatDuel] Gain 3 [Paralysis], deal -75% damage, and damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 3,
+                  "name": "\"Judgment.\""
+                },
+                {
+                  "affinity": "envy",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "guard",
+                  "desc": "<color=#ff6000><mark=#ff000040><b><u>When the Sinner that has [GoldenFabricWarderThirdPhase]</u></b></mark></color> attacks the Slot equipped with this Skill as its main target in the Chaining Phase, the said Skill used by the Sinner deals +100% damage (for E.G.O Skills, +200% damage)\n[EndBattle] At fewer than 100 [EncompassingVoiceThirdPhase] Stack, gain up to 100 Stack\n- The Chaplain loses SP equal to Stack gained (max 45)",
+                  "levelCorrection": 0,
+                  "name": "\"Atone before God\"... was it?"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [GoldenNail]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Vibration]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [GoldenNail]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Vibration]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [GoldenNail]",
+                        "[UnBrokenCoinOnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "If target has <color=#ff6000><mark=#ff000040><b><u>9 [ConfessionThirdPhase], Final Power +2</u></b></mark></color>\n[WhenUse] Consume up to 15 [SpreadingVoiceThirdPhase]\n- Final Power +1, deal +15% damage\n[WhenUse] Gain +5 [ChargeNoir] Count",
+                  "levelCorrection": 2,
+                  "name": "\"Repent.\""
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [GoldenNail]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Vibration] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [GoldenNail]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict +3 [Vibration] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [GoldenNail]",
+                        "[UnBrokenCoinOnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "If target has <color=#ff6000><mark=#ff000040><b><u>6+/9+ [ConfessionThirdPhase], Final Power +2/+3</u></b></mark></color>\n[WhenUse] Consume up to 15 [SpreadingVoiceThirdPhase]\n- Final Power +2, deal +30% damage\n[WhenUse] Gain +6 [ChargeNoir] Count",
+                  "levelCorrection": 2,
+                  "name": "\"Receive thy punishment.\""
+                },
+                {
+                  "affinity": "sloth",
+                  "atkType": "blunt",
+                  "atkWeight": 7,
+                  "baseValue": 4,
+                  "coinValue": 2,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    },
+                    {
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Trigger [Switch_Vibration] into [VibrationFocusing]</u></b></mark></color>"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Activate the effects of [ConfessionThirdPhase] on target, then consume them all</u></b></mark></color>"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "On <color=#ff6000><mark=#ff000040><b><u>Clash Lose</u></b></mark></color>, this Coin <color=#ff6000><mark=#ff000040><b><u>hits only the main target</u></b></mark></color>\n<color=#ff6000><mark=#ff000040><b><u>- [DefeatDuelAttack] Inflict 9 [RestrainingNailThirdPhase]</u></b></mark></color>",
+                        "[UnBrokenCoinOnSucceedAttack] Trigger [VibrationExplosion] 2 times; then, reduce target's [Vibration] Count by 2"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Can Clash with this Skill regardless of Speed\nThis Skill does not trigger the target's Defense Skill\nCannot be Staggered before using this Skill\nDeal +5% damage for every [ConfessionThirdPhase] on target (against each target separately)\n<color=#ff6000><mark=#ff000040><b><u>If the main target has 3+/6+/9+ [ConfessionThirdPhase], Final Power +2/+3/+5</u></b></mark></color>\n[WhenUse] <color=#ff6000><mark=#ff000040><b><u>If the main target has [GoldenFabricWarderThirdPhase]:\n- Final Power -5\n- Clash Power -5</u></b></mark></color>\n- All targets of this Skill <color=#ff6000><mark=#ff000040><b><u>gain Shield equal to 50% of their max HP, respectively</u></b></mark></color>; Shield gained from this effect is removed from the Sinner's total Shield at Attack End\n[WhenUse] Consume up to 40 [SpreadingVoiceThirdPhase] to:\n- Gain Final Power +3\n- Deal +50% damage\n[WhenUse] Deal +([SpreadingVoiceThirdPhase] Stack)% damage; at Attack End, consume all [SpreadingVoiceThirdPhase] on self\n- <color=#ff6000><mark=#ff000040><b><u>On Clash Lose, this effect does not activate</u></b></mark></color>\n[WhenUse] If this unit has [ChargeNoir] Count, consume all [ChargeNoir] Count on self to gain Coin Power +2\n[DefeatDuel] Gain 5 [Paralysis], deal -90% damage, and damage dealt by this Skill cannot Stagger the target\n[EndSkill]\n- Gain 2 [Vulnerable] next turn\n- End this turn",
+                  "levelCorrection": 4,
+                  "name": "Do you seriously mean to break the Sisyphe System?"
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 23,
+                  "coinValue": 8,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[ExtractCoin]",
+                        "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Deal fixed damage equal to 200% of target's max HP</u></b></mark></color>"
+                      ],
+                      "type": "excision"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "<color=#ff6000><mark=#ff000040><b><u>[CantChangeTarget]</u></b></mark></color>\n- <color=#ff6000><mark=#ff000040><b><u>Sinners that have [GoldenHideWarderThirdPhase] can Clash with this Skill</u></b></mark></color> regardless of Speed\nPrioritizes Sinners that have [RestrainingNailThirdPhase]\nDoes not trigger the target's Defense Skill\nCannot be Staggered before using this Skill\n[WhenUse] <color=#ff6000><mark=#ff000040><b><u>If target has [GoldenHideWarderThirdPhase], Clash Power -15</u></b></mark></color>\n[DefeatDuel] Gain 5 [Vulnerable] next turn\n[EndBattle] Consume all [SpreadingVoiceThirdPhase] on self",
+                  "levelCorrection": 0,
+                  "name": "Systemwide Ban"
+                },
+                {
+                  "affinity": "sloth",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 23,
+                  "coinValue": 8,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[ExtractCoin]",
+                        "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Deal fixed damage equal to 50% of target's current HP</u></b></mark></color> (min 0)"
+                      ],
+                      "type": "excision"
+                    },
+                    {
+                      "descs": [
+                        "[ExtractCoin]",
+                        "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Deal fixed damage equal to 50% of target's current HP</u></b></mark></color> (min 0)"
+                      ],
+                      "type": "excision"
+                    },
+                    {
+                      "descs": [
+                        "[ExtractCoin]",
+                        "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Deal fixed damage equal to 200% of target's max HP</u></b></mark></color>"
+                      ],
+                      "type": "excision"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Does not trigger the target's Defense Skill\nPrioritizes Sinners other than Meursault\n<color=#ff6000><mark=#ff000040><b><u>In a Clash against Meursault</u></b></mark></color>, Clash Power -20\nCannot be Staggered before using this Skill\n[DefeatDuel] Gain 10 [Vulnerable] this turn and next turn\n[EndSkill] If the Chaplain lost the Clash, <color=#ff6000><mark=#ff000040><b><u>the Chaplain loses 50% of its current Shield</u></b></mark></color> (min 0)",
+                  "levelCorrection": 0,
+                  "name": "Shift + Delete"
+                }
+              ],
+              "statuses": [
+                "Switch_Vibration",
+                "Laceration",
+                "Combustion",
+                "LeaderVoiceThirdPhase",
+                "SpreadingVoiceThirdPhase",
+                "ExtractCoin",
+                "PanicChangeLock",
+                "Vulnerable",
+                "ExecutionNailThirdPhase",
+                "GoldenNail",
+                "RestrainingNailThirdPhase",
+                "Paralysis",
+                "Breath",
+                "ChargeNoir",
+                "Burst",
+                "Sinking",
+                "Dominion",
+                "GoldenFabricWarderThirdPhase",
+                "GoldenHideWarderThirdPhase",
+                "Vibration",
+                "VibrationFocusing",
+                "VibrationExplosion",
+                "SuperCoin",
+                "EncompassingVoiceThirdPhase",
+                "ConfessionThirdPhase"
+              ],
+              "tags": [
+                "Le Noir",
+                "Sisyphe"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "name": "The Crimson God [Adulthood]",
+          "parts": [
+            {
+              "defCorrection": 2,
+              "hp": 1500,
+              "name": "Body",
+              "partId": 151701,
+              "resists": {
+                "blunt": 0.8,
+                "envy": 0.75,
+                "gloom": 1,
+                "gluttony": 1.2,
+                "lust": 1.2,
+                "pierce": 0.8,
+                "pride": 1,
+                "slash": 0.8,
+                "sloth": 1,
+                "wrath": 0.75
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "<color=#ff6000><mark=#ff000040><b><u>Raise max Potency and Count cap</u></b></mark></color> for [Combustion], [Laceration], [Vibration], [Burst], and [Sinking] to <color=#ff6000><mark=#ff000040><b><u>50 and 15</u></b></mark></color>, respectively\n\nTake -50% HP and SP damage from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]\n- Fixed Panic\n- Turn End: If this unit is in Panic, SP becomes 0",
+              "flavor": "I saw my reflection in the water. My body, it's been... completed...",
+              "name": "Le Moi"
+            },
+            {
+              "desc": "If an ally becomes Staggered due to damage, use the \"Le Manque-à-être\" Skill on the said ally (once per turn)\n\nIf an ally is defeated, summon a Ripped Flesh of the Crimson God that has 3 [BuffetRevival] at the next Turn Start",
+              "flavor": "The violence by which things are brought into being. The God of the Rouges possesses the authority of birth.\n\nWhere does consciousness go when we die? And before we are born, from where does it emerge?\n\nTo send it back to that place, or to tear it forth from there... both are workings of the same violent power.",
+              "name": "Pouvoirs de la vie"
+            },
+            {
+              "desc": "If any of the following conditions are met, change the pattern\n- Current HP falls below 25% of max HP\n- [BuffetDream] is at 3 Stacks",
+              "flavor": "Keep teaching me things... I wanna go with you...",
+              "name": "Time to Answer"
+            },
+            {
+              "desc": "Turn Start: Gain 2 [Protection] for every Le Rouge Senior Staff on the field\n- Lose 2 [Protection] every time a Le Rouge Senior Staff is defeated\n\n<color=#ff6000><mark=#ff000040><b><u>If all Le Rouge Senior Staff are defeated</u></b></mark></color>, apply the following effects:\n- Gain 2 [Vulnerable]\n- On Skill Use, if target has [BuffetScruple], Coin Power -1",
+              "flavor": "Will you still... hold my hand?",
+              "name": "The hand they could neither push away nor hold"
+            },
+            {
+              "desc": "Turn End: Does not lose [ChargeRouge] Count\nGain +1 [ChargeRouge] Count every time [Laceration] effect is activated in an Encounter\nTurn Start: Heal 2 SP for every [ChargeRouge] Count on self",
+              "flavor": "A throbbing felt through the whole body, yet beyond the reach of words—the totality of every pulsation born of one's very nature.",
+              "name": "La Jouissance Autre"
+            },
+            {
+              "desc": "Start the Encounter with 50% missing HP\nEncounter Start: Apply [BuffetScruple] on all enemies (including Backup Units)\n\nOn Skill Use, <color=#ff6000><mark=#ff000040><b><u>if target has [BuffetScruple]</u></b></mark></color>, lose 10 SP",
+              "flavor": "... You're there at the very edge of my body, and yet somehow, you are also rooted in the deepest part of me.",
+              "name": "L'Extimité"
+            },
+            {
+              "desc": "Turn Start: If this unit does not have [BuffetRouge] and is at 15+ [ChargeRouge] Count, consume all [ChargeRouge] Count and gain 3 [BuffetRouge]; then, heal 2 SP for every [ChargeRouge] Count consumed\n\nIf this unit does not have [BuffetRouge] and is at 10+ [ChargeRouge] Count, consume 10 [ChargeRouge] Count on Skill Use to gain Coin Power +2",
+              "flavor": "There are conditions to tasting the pleasures of life, and as it is with all things conditional, this carnal pleasure is fated to fail.\n\nThe stipulated limits and end have deemed it so.",
+              "name": "La Jouissance phallique"
+            },
+            {
+              "desc": "Attack End: If the main target has <color=#ff6000><mark=#ff000040><b><u>5+ [BoneNail]</u></b></mark></color>, use a powerful Skill against the main target this unit attacked",
+              "flavor": "The jutting appendage is thrust into another, calling me from beyond the periphery.\n\nIs this compulsion to return to my birthplace an impulse for death, or impulse for life?",
+              "name": "La Moisson"
+            },
+            {
+              "desc": "Gain 1 Pulsation Potency for every 10 cumulative [ChargeRouge] Count this unit consumes in this Encounter\n\nGain all of the following effects based on [ChargeRouge] Potency on self:\n- 1+: Deal +([ChargeRouge] Potency x 20)% damage if this unit's Speed is faster than the target's\n- 2+: Skill Final Power +1\n- 3+: Skills inflict +1 more [Laceration] Potency\n- 4+: Skill Coin Power +1\n- 5+: Do not lose [BuffetRouge] Stack on self",
+              "flavor": "The destined and inevitable desire of those who live, those who are birthed.\nA curselike need, its inescapability threaded by fate.",
+              "name": "Le Besoin"
+            }
+          ],
+          "portrait": "1517",
+          "sanity": {
+            "add": [
+              "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 20% per Clash count after 1)</size>"
+            ],
+            "flavor": "I don't know any of these words. They just... came from somewhere.\nThey pop into my head on their own. They get stuck in there on their own. They're all just fancy-sounding words that came from outside. I don't really know what any of them mean.\n\n... But somehow, I get it...",
+            "id": 1114,
+            "lowMoraleDesc": "Offense Level +3, Defense Level +3",
+            "name": "Le Désir",
+            "panicDesc": "Offense Level +5, Defense Level +5",
+            "sub": [
+              "Decreases after losing a Clash based on the Clash count\n<size=95%>(Base Value is 3, raised by 10% per Clash count after 1)</size>"
+            ]
+          },
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 3,
+              "baseValue": 6,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If the main target has 6+ [Laceration], Coin Power +1\n<color=#ff6000><mark=#ff000040><b><u>[WhenUse] If the main target does not have [Laceration], convert all Coins on this Skill to [SuperCoin]s</u></b></mark></color>\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+              "flavor": "Excrete.",
+              "levelCorrection": 2,
+              "name": "Je m'expulse"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 9,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict 3 [BoneNail]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has 6+ [Laceration], Base Power +2\n[WhenUse] Gain +1 Atk Weight for every 2 [ChargeRouge] Potency on self (max 2)",
+              "flavor": "Vomit.",
+              "levelCorrection": 3,
+              "name": "Je me crache"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 3,
+              "baseValue": 6,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[OnSucceedAttack] Inflict 2 [BoneNail]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[OnSucceedAttack] If target has 3+ [BoneNail], inflict 2 [Vulnerable] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Coin Power +1 for every 4 [Laceration] on the main target (max 2)\n[WhenUse] Gain +1 Atk Weight for every 2 [ChargeRouge] Potency on self (max 2)",
+              "flavor": "And cast it to the world.",
+              "levelCorrection": 3,
+              "name": "Je m'abjecte"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 7,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[EndCoin] Apply +10 [ChargeRouge] Count",
+                    "[EndCoin] Reduce target's current HP by 50%; then, apply 5 [AttackUp]",
+                    "[EndCoin] Apply 3 [BuffetRouge]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel]\n[CantChangeTarget]\n[SupportAlly]\nTargets Le Rouge Senior Staff\n\n[WhenUse] At 10+ [ChargeRouge] Count, consume up to 10 [ChargeRouge] Count and gain +2 Atk Weight",
+              "levelCorrection": 0,
+              "name": "La Pulsion"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 18,
+              "coinValue": 17,
+              "coins": [
+                {
+                  "descs": [
+                    "[EndCoin] Recover target from Stagger",
+                    "[EndCoin] Heal HP on target equal to this Skill's Final Power",
+                    "[EndCoin] Apply 1 [BuffetRouge]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel]\n[CantChangeTarget]\n[SupportAlly]",
+              "levelCorrection": 0,
+              "name": "Le Manque-à-être"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 5,
+              "baseValue": 13,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Activate [Laceration] on target 3 times. Target loses 3 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Cannot be Staggered before using this Skill\n\n[WhenUse] <color=#ff6000><mark=#ff000040><b><u>Heal 15 SP and gain Clash Power +2 for every Le Rouge Senior Staff</u></b></mark></color> on the field\n[WhenUse] If <color=#ff6000><mark=#ff000040><b><u>all Le Rouge Senior Staff are defeated</u></b></mark></color>, Clash Power -3\n[DefeatDuel] Deal -80% damage, damage dealt by this Skill cannot Stagger the target, <color=#ff6000><mark=#ff000040><b><u>and gain 1 [BuffetDream]</u></b></mark></color>\n[EndSkill] Convert [BuffetScruple] on the main target into [BuffetResolve]",
+              "levelCorrection": 4,
+              "name": "La Jouissance"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 5,
+              "baseValue": 13,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Activate [Laceration] on target 3 times. Target loses 3 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Cannot be Staggered before using this Skill\n\n[WhenUse] <color=#ff6000><mark=#ff000040><b><u>If the main target has [BuffetScruple]</u></b></mark></color>, lose 10 SP, Coin Power -2\n[DefeatDuel] Deal -80% damage, damage dealt by this Skill cannot Stagger the target, <color=#ff6000><mark=#ff000040><b><u>and gain 1 [BuffetDream]</u></b></mark></color>\n[EndSkill] Convert [BuffetScruple] on the main target into [BuffetResolve]",
+              "levelCorrection": 4,
+              "name": "La Jouissance"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [BoneNail]",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [BoneNail]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 2)\n<color=#ff6000><mark=#ff000040><b><u>[WhenUse] If target does not have [Laceration], convert all Coins on this Skill to [SuperCoin]s</u></b></mark></color>\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 2,
+              "name": "Dégagé"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [BoneNail]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [BoneNail]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [BoneNail]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [BoneNail]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 3)\n<color=#ff6000><mark=#ff000040><b><u>[WhenUse] If target does not have [Laceration], convert all Coins on this Skill to [SuperCoin]s</u></b></mark></color>\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 2,
+              "name": "Le Point de Capiton"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 5,
+              "baseValue": 8,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [BoneNail]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [BoneNail]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [BoneNail]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [BoneNail]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] <color=#ff6000><mark=#ff000040><b><u>If this unit has [BuffetRouge]</u></b></mark></color>, convert all Coins on this Skill to [SuperCoin]s\n[WhenUse] Coin Power +1 for every 4 [Laceration] on the main target (max 2)\n[WhenUse] <color=#ff6000><mark=#ff000040><b><u>If the main target has [BuffetScruple], lose 2 Atk Weight</u></b></mark></color>\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target\n[EndSkill] Remove [BuffetScruple] on the main target",
+              "levelCorrection": 3,
+              "name": "Le Nom-du-Père"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 7,
+              "baseValue": 15,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Activate [Laceration] on target once. Target loses 1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Activate [Laceration] on target 2 times. Target loses 2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Can Clash with this Skill regardless of Speed\nCannot be Staggered before using this Skill\n\n[WhenUse] <color=#ff6000><mark=#ff000040><b><u>If this unit has fewer than 5 [BuffetDream], convert all Coins on this Skill to [SuperCoin]</u></b></mark></color>\n[WhenUse] <color=#ff6000><mark=#ff000040><b><u>If the main target has [BuffetScruple]</u></b></mark></color>, Coin Power -3\n[WhenUse] Final Power +2 for every 6 [Laceration] on the main target (max 6)\n[DefeatDuel] Deal -80% damage, damage dealt by this Skill cannot Stagger the target, <color=#ff6000><mark=#ff000040><b><u>and gain 1 [BuffetDream]</u></b></mark></color>",
+              "levelCorrection": 5,
+              "name": "La Castration"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 8,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "<color=#ff6000><mark=#ff000040><b><u>Consume [BoneNail] on all enemies</u></b></mark></color>",
+                    "[OnSucceedAttack] Deal Lust damage equal to ([BoneNail] Stack consumed x 10)% of this Coin's final damage",
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count for every 4 [BoneNail] consumed (max 5)"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[DuelCounter]\n[WhenUse] Coin Power +1 for every 4 [Laceration] on the main target (max 2)\n[WhenUse] Gain +1 Atk Weight for every 5 total sum of [BoneNail] on all enemies (max 4)",
+              "levelCorrection": 2,
+              "name": "Le Trait Unaire"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 3,
+              "baseValue": 7,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Activate [Laceration] on target once. Target loses 1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel]\n[CantChangeTarget]\nThis Skill does not trigger Defense Skills\n[WhenUse] Remove all [BoneNail] on the main target\n[WhenUse] Coin Power +1 for every 4 [Laceration] on the main target (max 2)\n[EndSkill] Remove [BuffetScruple] on the main target",
+              "levelCorrection": 3,
+              "name": "La Demande"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 3,
+              "baseValue": 15,
+              "coinValue": 15,
+              "coins": [
+                {
+                  "descs": [
+                    "[EndCoin] Revive \"Ripped Flesh of the Crimson God\" as \"Le Rouge Senior Staff\" next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel]\n[CantChangeTarget]\n[SupportAlly]\nThis Skill is used at the very end of the turn\n[EndSkill] Heal 25% HP",
+              "levelCorrection": 4,
+              "name": "La Métaphore Paternelle"
+            }
+          ],
+          "statuses": [
+            "Laceration",
+            "Combustion",
+            "BuffetResolve",
+            "SupportAlly",
+            "Vulnerable",
+            "BoneNail",
+            "AttackUp",
+            "Protection",
+            "ChargeRouge",
+            "BuffetDream",
+            "Burst",
+            "BuffetScruple",
+            "Sinking",
+            "Vibration",
+            "SuperCoin",
+            "BuffetRouge",
+            "BuffetRevival"
+          ],
+          "tags": [
+            "Le Rouge",
+            "Sisyphe"
+          ]
+        },
+        {
+          "name": "Ripped Flesh of the Crimson God",
+          "num": 3,
+          "parts": [
+            {
+              "defCorrection": 4,
+              "hp": 150,
+              "name": "Body",
+              "partId": 151801,
+              "resists": {
+                "blunt": 1.2,
+                "envy": 0.75,
+                "gloom": 1,
+                "gluttony": 1.25,
+                "lust": 1.25,
+                "pierce": 1.2,
+                "pride": 1,
+                "slash": 1.2,
+                "sloth": 1,
+                "wrath": 0.75
+              },
+              "speed": [
+                1,
+                2
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "When [BuffetRevival] expires, return to Le Rouge Senior Staff form; heal 5 SP for every 10 HP that remained while this unit was in Ripped Flesh of the Crimson God form; gain +2 [ChargeRouge] Count\n- If this unit gained 10+ [ChargeRouge] Count, consume all [ChargeRouge] Count; then, gain 1 [BuffetRouge] next turn for every 5 Stacks consumed",
+              "name": "Body Forced to Live Again"
+            },
+            {
+              "desc": "Sinners cannot target this unit",
+              "name": "Flesh Gummed to the Ground"
+            }
+          ],
+          "portrait": 1518,
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 7,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Lose 1 [BuffetRevival]",
+                    "[OnSucceedAttack] Activate [Laceration] on target once. Target loses 1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 3,
+              "name": "Take Us In..."
+            },
+            {
+              "affinity": "lust",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "Inflict +1 [Laceration] Count against the attacker when hit as long as this unit has remaining shield\n[StartBattle] Gain Shield equal to 25% of this unit's max HP\n[EndBattle] If this unit has Shield, lose 1 [BuffetRevival]",
+              "levelCorrection": 3,
+              "name": "Oh... Our Crimson Voice..."
+            }
+          ],
+          "statuses": [
+            "Laceration",
+            "ChargeRouge",
+            "BuffetRouge",
+            "BuffetRevival"
+          ],
+          "tags": [
+            "Le Rouge",
+            "Sisyphe"
+          ]
+        },
+        {
+          "name": "Le Rouge Senior Staff",
+          "parts": [
+            {
+              "breakSection": [
+                25
+              ],
+              "defCorrection": 4,
+              "hp": 92.0,
+              "name": "Body",
+              "partId": 152101,
+              "resists": {
+                "blunt": 0.8,
+                "envy": 1,
+                "gloom": 1,
+                "gluttony": 1.25,
+                "lust": 1.5,
+                "pierce": 1.2,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                3,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Upon death, grant 2 E.G.O Resource of a random Affinity among least-owned Affinities",
+              "flavor": "Traces left behind by those who live, those who lived.",
+              "name": "Traces of Life"
+            },
+            {
+              "desc": "<color=#ff6000><mark=#ff000040><b><u>If this unit has [BuffetRouge]</u></b></mark></color>, apply the following effects:\n- Take -50% damage from Skills\n- Turn Start: Heal SP to max and gain 1 [ChargeRouge]; gain +5 [ChargeRouge] Count",
+              "flavor": "To receive that divinity whole with one's body.",
+              "name": "Blessings Upon the Flesh"
+            },
+            {
+              "desc": "Gain 1 [ChargeRouge] Potency for every 10 cumulative [ChargeRouge] Count this unit consumes in this Encounter\n\nOn Skill Use, at 2+/4+ [ChargeRouge] Potency, Coin Power +1/+2\n\nGain 1 Offense Level (max 5) and deal +20% damage (max 100%) for every 10% missing HP",
+              "name": "Emptiness Begets Satiation"
+            },
+            {
+              "desc": "Prioritize targets with slower Speed than self\n\nOn Skill Use, if this unit's Speed is faster than the target's gain Offense Level equal to the Speed difference\n\nTurn Start: At 2+ [ChargeRouge] Potency, use a powerful Skill",
+              "flavor": "Pulsating predators pursue the slow prey, seeking to sink their fangs into the neck. Their fatality is determined by the speed differential.",
+              "name": "The Sickle Seeks the Slow"
+            },
+            {
+              "desc": "When The Crimson God 【Adulthood】 is on the field, this unit does not lose [ChargeRouge] Count at Turn End\n\nWhen Staggered due to getting hit: When this unit recovers from Stagger due to The Crimson God 【Adulthood】's Skill, use \"With sickles mine I answer your calling!\" as Unopposed Attack against the attacker",
+              "flavor": "Against their wishes, neither breathing nor the thumping pulse in their hearts would stop.",
+              "name": "Persistent Pulsation Beside The Cherished One"
+            }
+          ],
+          "portrait": "1521",
+          "sanity": {
+            "add": [
+              "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 20% per Clash count after 1)</size>"
+            ],
+            "id": 1120,
+            "lowMoraleDesc": "Defense Level -2, Offense Level +2",
+            "name": "Farther Past the Hide!",
+            "panicDesc": "Defense Level -5, Offense Level +3",
+            "sub": [
+              "Decreases after losing a Clash based on the Clash count\n<size=95%>(Base Value is 3, raised by 10% per Clash count after 1)</size>"
+            ]
+          },
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 7,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [ChargeRouge] Count",
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +6 [ChargeRouge] Count\n[WhenUse] At 10+ [ChargeRouge] Count, consume 5 [ChargeRouge] Count to gain Base Power +2",
+              "levelCorrection": 3,
+              "name": "With sickles mine I answer your calling!"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [ChargeRouge] Count",
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [ChargeRouge] Count",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Gain +4 [ChargeRouge] Count\n[WhenUse] If target has 6+ [Laceration], Coin Power +1\n[WhenUse] At 10+ [ChargeRouge] Count, consume 10 [ChargeRouge] Count to gain Coin Power +1",
+              "levelCorrection": 3,
+              "name": "Accept my offering of flesh!"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]",
+                    "[OnSucceedAttack] Gain +2 [ChargeRouge] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [Laceration]",
+                    "[OnSucceedAttack] Gain +2 [ChargeRouge] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Laceration] Count",
+                    "[OnSucceedAttack] Gain +2 [ChargeRouge] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] If this unit has less than 50% HP, convert all Coins on this Skill to [SuperCoin]\n[WhenUse] Coin Power +1 for every 6 [Laceration] on target (max 2)\n[WhenUse] At 10+ [ChargeRouge] Count, consume 10 [ChargeRouge] Count to gain Coin Power +1\n[DefeatDuel] Damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 3,
+              "name": "An offering from my embrace!"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                    "[UnBrokenCoinOnSucceedAttack] Consume up to 5 [ChargeRouge] Count to deal Slash damage equal to ([ChargeRouge] Count consumed x 3)% of this Coin's final damage (max 15%)\n- Heal ([ChargeRouge] Count consumed)% HP"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Consume up to 5 [ChargeRouge] Count to deal Slash damage equal to ([ChargeRouge] Count consumed x 3)% of this Coin's final damage (max 15%)\n- Heal ([ChargeRouge] Count consumed)% HP"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Consume up to 5 [ChargeRouge] Count to deal Slash damage equal to ([ChargeRouge] Count consumed x 3)% of this Coin's final damage (max 15%)\n- Heal ([ChargeRouge] Count consumed)% HP"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Activate [Laceration] on target once. Target loses 1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[StartBattle] If this unit has less than 50% HP, convert all Coins on this Skill to [SuperCoin]\n[WhenUse] Coin Power +1 for every 6 [Laceration] on target (max 2)\n[WhenUse] At 10+ [ChargeRouge] Count, consume 10 [ChargeRouge] Count to gain Coin Power +1\n[WinDuel] Gain +10 [ChargeRouge] Count\n[DefeatDuel] Deal -80% damage; damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 3,
+              "name": "We shall devour it all!"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +3 [ChargeRouge] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [ChargeRouge] Count",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "counter",
+              "desc": "[DuelCounter]\n[WhenUse] Final Power +1 for every 5 [ChargeRouge] Count on self (max 3)\n[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+              "levelCorrection": 3,
+              "name": "We shan't yet be laid to rest!"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 1,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel]\n[CantChangeTarget]\nTargets The Crimson God 【Adulthood】\n\nThis Skill has the following properties:\n- Does not trigger Defense Skills\n- External effects cannot trigger this Skill to be Reused\n- Its attack does not hit\n\n[EndCoin] Target heals 20 SP",
+              "levelCorrection": 3,
+              "name": "Supplication Toward the Voice"
+            }
+          ],
+          "statuses": [
+            "Laceration",
+            "ChargeRouge",
+            "SuperCoin",
+            "BuffetRouge"
+          ],
+          "tags": [
+            "Le Rouge",
+            "Sisyphe"
+          ]
+        }
+      ]
+    },
+    {
+      "phases": [
+        {
+          "targets": [
+            {
+              "name": "Jeanne Sartre, the Sartorial Tailor",
+              "parts": [
+                {
+                  "breakSection": [
+                    70
+                  ],
+                  "defCorrection": 4,
+                  "hp": 543,
+                  "name": "Body",
+                  "partId": 152201,
+                  "resists": {
+                    "blunt": 0.9,
+                    "envy": 0.8,
+                    "gloom": 0.8,
+                    "gluttony": 1,
+                    "lust": 1.2,
+                    "pierce": 0.9,
+                    "pride": 1.2,
+                    "slash": 0.9,
+                    "sloth": 1.2,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    2,
+                    4
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "<color=#ff6000><mark color=#ff000040><b><u>Summon 3 \"Grand Magasin Sisyphe Blueprint\" every 3 turns</color></mark></b></u> and gain Shield equal to this unit's max HP\n- For that turn, when Staggered, recover from Stagger and cannot be Staggered again for the rest of the turn\n\n<color=#ff6000><mark color=#ff000040><b><u>After killing a \"Grand Magasin Sisyphe Blueprint\" with the \"Focusing\" Skill, gain [JeanneDesign]</color></mark></b></u>\n\n<color=#ff6000><mark color=#ff000040><b><u>At 3 [JeanneDesign], convert [JeanneDesign] into [JeanneManager]</color></mark></b></u>\n<color=#ff6000><mark color=#ff000040><b><u>If this unit failed to kill a single \"Grand Magasin Sisyphe Blueprint\" with its \"Focusing\" Skill</color></mark></b></u>, gain 1 [Vulnerable] next turn",
+                  "flavor": "One of the four Giants of Sisyphe Tower.\n\nAmong them, she is the architect of the Sisyphe System—a tailor, a designer, the executor of the role, or a job, or something... that builds the world up according to a viewpoint of her own.\n\nCut to her measure, nailed into place, stitched together piece by piece—this is a sartorial world shaped so that she might look upon it without being nauseated.\n\nThis is Grand Magasin Sisyphe.",
+                  "name": "Sartre"
+                },
+                {
+                  "desc": "Start this Encounter with 45 SP\n\nWhen Meursault is defeated, the Sinners lose the Encounter\n\n<color=#ff6000><mark color=#ff000040><b><u>At 50%- HP</color></mark></b></u>, stop taking any damage and enter a new Phase\n- When entering a new Phase, remove all removable negative effects on self",
+                  "flavor": "I don't want you going back outside.\n\nCome with me onto the next stage instead, ma puce.",
+                  "name": "You know, I..."
+                },
+                {
+                  "desc": "Gain 1 [ChargeKhaki] Potency for every 10 cumulative [ChargeKhaki] Count this unit consumes in this Encounter\n- The \"Turn End: Lose 1 Count\" effect on [ChargeKhaki] does not trigger\n\nTurn End: Gain [Breath] Potency equal to [ChargeKhaki] Count on self (max 10)\nTurn End: Gain [Breath] Count equal to [ChargeKhaki] Potency on self (max 5)\n\nTake -60% damage from [Combustion], [Laceration], [Vibration], [Burst], and [Sinking]\n- Stagger Threshold raised from [Vibration] -60%\n\nAt 10+ Clashes against the same target, gain Clash Power by (Clash Count / 10)",
+                  "flavor": "Bad faith.\n\nA flight from the world—from a world of fear and anxiety. Escape is sought again and again. \n\nOne escapes onto the stage by nailing oneself firmly into place. Like an actor upon a stage, the role is inhabited completely. Total immersion gives way to deception, and deception to self-deception.",
+                  "name": "Mauvaise Foi"
+                },
+                {
+                  "desc": "At 4+ Clashes in the same Clash:\n- From the 3rd Clash, the winner of the 3rd Clash deals +15% damage for every 4th Clash won (3 times max)\n- If the Skill that won the Clash won the first Clash, Final Power +1",
+                  "flavor": "It was a shared experience, wasn't it?",
+                  "name": "Remember the rhythm of the waltz?"
+                },
+                {
+                  "desc": "Turn End: if in Panic, reset SP to 0.",
+                  "name": "Panic Recovery"
+                },
+                {
+                  "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
+                  "name": "Fixed Panic"
+                }
+              ],
+              "portrait": "1522",
+              "sanity": {
+                "add": [
+                  "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 10% per Clash count after 1)</size>",
+                  "Increases by 3 after this unit inflicts 2 Potency of a negative effect on an enemy"
+                ],
+                "flavor": "Revulsion. Nausea before the world. The world simply exists. Nothing in it bears any inherent meaning; everything before our eyes is merely the product of chance.\n\nEverything is a contingency. Everything.",
+                "id": 1122,
+                "lowMoraleDesc": "Deal -10% damage",
+                "name": "La Nausée",
+                "panicDesc": "Base Power -1, deal -10% damage",
+                "sub": [
+                  "If an ally is defeated, decrease by 4 regardless of the ally's level"
+                ]
+              },
+              "skills": [
+                {
+                  "affinity": "envy",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 3,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Sinking]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Gain +3 [ChargeKhaki] Count\n[WhenUse] Gain +2 [Breath] Count",
+                  "levelCorrection": 0,
+                  "name": "Readying the Sartorial Nails"
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 4,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Inflict +1 [Sinking] Count"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 1 [AttackDmgDown] next turn"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Gain +3 [ChargeKhaki] Count\n[WhenUse] Gain +2 [Breath] Count\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 0,
+                  "name": "Patterns and Designs"
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "pierce",
+                  "atkWeight": 3,
+                  "baseValue": 3,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 1 [PenetrateResistDown] this turn and next turn"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Inflict +1 [Sinking] Count"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Inflict 1 [Sinking]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[UnBrokenCoinOnSucceedAttack] Deal Pierce damage equal to (<color=#ff6000><mark color=#ff000040><b><u>types of negative effects on target</color></mark></b></u> x 15)% of this Coin's final damage (max 45%)"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Consume all [ChargeKhaki] Count on self to deal +25% damage for every 3 [ChargeKhaki] Count consumed (max 50%)\n[WhenUse] Gain +3 [ChargeKhaki] Count\n[WhenUse] Gain +2 [Breath] Count\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+                  "levelCorrection": 1,
+                  "name": "Fixed Viewpoint"
+                },
+                {
+                  "affinity": "sloth",
+                  "atkWeight": 1,
+                  "baseValue": 10,
+                  "coinValue": 8,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "evade",
+                  "desc": "[WhenUse] Final Power +1 for every 2 [ChargeKhaki] Count on self (max 5)\n[OnSucceedEvade] <color=#ff6000><mark color=#ff000040><b><u>Heal 2% HP</color></mark></b></u>",
+                  "levelCorrection": 1,
+                  "name": "Within Perspective"
+                },
+                {
+                  "affinity": "lust",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] If target is an ally,",
+                        "- Kill target",
+                        "- <color=#ff6000><mark color=#ff000040><b><u>Gain 1 [JeanneDesign]</color></mark></b></u>"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[CantIdentify]\n[CantDuel] [CantChangeTarget]\nPrioritizes allies\nThis Skill does not trigger Defense Skills",
+                  "levelCorrection": 0,
+                  "name": "Focusing"
+                }
+              ],
+              "statuses": [
+                "Binding",
+                "Laceration",
+                "Combustion",
+                "AttackDmgDown",
+                "JeanneManager",
+                "Vulnerable",
+                "ChargeKhaki",
+                "JeanneDesign",
+                "PenetrateResistDown",
+                "Breath",
+                "Burst",
+                "Sinking",
+                "Vibration",
+                "SuperCoin"
+              ],
+              "tags": [
+                "Le Kaki",
+                "Sisyphe"
+              ]
+            },
+            {
+              "name": "Grand Magasin Sisyphe Blueprint",
+              "parts": [
+                {
+                  "breakSection": [
+                    50
+                  ],
+                  "defCorrection": 4,
+                  "hp": 80.0,
+                  "name": "Body",
+                  "partId": 152501,
+                  "resists": {
+                    "blunt": 1,
+                    "envy": 1.2,
+                    "gloom": 1,
+                    "gluttony": 1,
+                    "lust": 1.2,
+                    "pierce": 1,
+                    "pride": 1,
+                    "slash": 1,
+                    "sloth": 1.2,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    1,
+                    3
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "During the Encounter, <color=#ff6000><mark color=#ff000040><b><u>immediately before taking a hit for the first time</color></mark></b></u>, <color=#ff6000><mark color=#ff000040><b><u>use the equipped \"Department Store Blueprint\"</color></mark></b></u> regardless of how this unit's Skills are Chained (once per turn)\n\nTake -50% damage from Base Skills\n\n<color=#ff6000><mark color=#ff000040><b><u>Take +100% damage from E.G.O Skills</color></mark></b></u>\n\nThis unit is defeated when hit by the \"Focusing\" Skill of \"Jeanne Sartre, the Sartorial Tailor\"",
+                  "flavor": "This is the department store's blueprint.",
+                  "name": "Outfit Ensemble Blueprint"
+                },
+                {
+                  "desc": "When killed by a Sinner's Skill, give 1 E.G.O resource each from 5 of the E.G.O Affinities with the least amount of resources (if 2 or more least-owned Affinities share the resource quantity, it is distributed randomly)",
+                  "flavor": "Undesigned design.",
+                  "name": "Blueprint of the Self"
+                }
+              ],
+              "portrait": "1525",
+              "skills": [
+                {
+                  "affinity": "sloth",
+                  "atkWeight": 1,
+                  "baseValue": 1,
+                  "coinValue": 1,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "guard",
+                  "desc": "[WhenUse] Take -90% damage from Skills (once per turn)",
+                  "flavor": "This is not a department store blueprint.",
+                  "levelCorrection": 0,
+                  "name": "Department Store Blueprint"
+                }
+              ],
+              "tags": [
+                "Sisyphe"
+              ]
+            }
+          ]
+        },
+        {
+          "targets": [
+            {
+              "name": "Jeanne Sartre, the Sartorial Tailor",
+              "parts": [
+                {
+                  "defCorrection": 4,
+                  "hp": 543,
+                  "name": "Body",
+                  "partId": 152301,
+                  "resists": {
+                    "blunt": 0.9,
+                    "envy": 0.8,
+                    "gloom": 0.8,
+                    "gluttony": 1,
+                    "lust": 1.2,
+                    "pierce": 0.9,
+                    "pride": 1.2,
+                    "slash": 0.9,
+                    "sloth": 1.2,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    2,
+                    4
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "Does not take any damage for this Phase\n\nTurn Start (once per Encounter): \n- Jeanne gains 1 [JeannePartnerTwo] and 1 [JeannePathos]\n- Meursault gains 1 [JeannePartner] and 1 [JeanneLogos]\n\nWhen attacked by Unopposed Attacks, or when losing a Clash, activate the \"We had our little quarrels, yes.\" Skill\n<color=#ff6000><mark color=#ff000040><b><u>Generate a unique Skill in Meursault's upper Skill Slot</color></mark></b></u>",
+                  "flavor": "That waltz in your memory—let's re-experience it.",
+                  "name": "Remember the experience of the waltz?"
+                },
+                {
+                  "desc": "When Meursault is defeated, the Sinners lose the Encounter\n\nCurrent Skill End: <color=#ff6000><mark color=#ff000040><b><u>At 100 [JeannePathos]</color></mark></b></u>, enter a new Phase\n- When entering a new Phase, remove all removable negative effects on self",
+                  "flavor": "Feeling dizzy? But the climax comes next.",
+                  "name": "La Nausée"
+                }
+              ],
+              "portrait": "1523",
+              "sanity": {
+                "add": [
+                  "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 10% per Clash count after 1)</size>",
+                  "Increases by 3 after this unit inflicts 2 Potency of a negative effect on an enemy"
+                ],
+                "flavor": "Revulsion. Nausea before the world. The world simply exists. Nothing in it bears any inherent meaning; everything before our eyes is merely the product of chance.\n\nEverything is a contingency. Everything.",
+                "id": 1122,
+                "lowMoraleDesc": "Deal -10% damage",
+                "name": "La Nausée",
+                "panicDesc": "Base Power -1, deal -10% damage",
+                "sub": [
+                  "If an ally is defeated, decrease by 4 regardless of the ally's level"
+                ]
+              },
+              "skills": [
+                {
+                  "affinity": "wrath",
+                  "atkType": "slash",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 9,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[BeforeUse] When Clashing using Meursault's Skills that are not <color=#ff6000><mark color=#ff000040><b><u>Skill 1</color></mark></b></u>, change this Skill to \"You've got to keep to the pattern\"\n[WinDuel] End this Skill and use \"Those times when we chatted together at the café\" on the target",
+                  "levelCorrection": 0,
+                  "name": "First Step"
+                },
+                {
+                  "affinity": "sloth",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 6,
+                  "coinValue": 6,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    },
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[BeforeUse] When Clashing using Meursault's Skills that are not <color=#ff6000><mark color=#ff000040><b><u>Skill 2</color></mark></b></u>, change this Skill to \"You've got to keep to the pattern\"\n[WinDuel] End this Skill and use \"Those times when we chatted together at the café\" on the target",
+                  "levelCorrection": 0,
+                  "name": "Second Pace"
+                },
+                {
+                  "affinity": "gloom",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 5,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    },
+                    {
+                      "type": "normal"
+                    },
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[BeforeUse] When Clashing using Meursault's Skills that are not <color=#ff6000><mark color=#ff000040><b><u>Skill 3 or E.G.O Skills</color></mark></b></u>, change this Skill to \"You've got to keep to the pattern\"\n[WinDuel] End this Skill and use \"Those times when we chatted together at the café\" on the target",
+                  "levelCorrection": 0,
+                  "name": "Third Movement"
+                },
+                {
+                  "affinity": "lust",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 8,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Gain 3 [JeannePathos]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Gain 3 [JeannePathos]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "This Skill always hits Critically\n[StartDuel] Target has <color=#ff6000><mark color=#ff000040><b><u>100% chance to flip Tails</color></mark></b></u>\n- Target's Minus Coins have 100% chance to flip Heads",
+                  "levelCorrection": 4,
+                  "name": "You've got to keep to the pattern."
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 1,
+                  "coinValue": 1,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[CantDuel]\nThis Skill has the following properties:\n- Does not trigger Defense Skills\n- Its attack does not hit\n[WhenUse] Both this unit and the target gain 5 [JeannePathos] and 5 [JeanneLogos]",
+                  "levelCorrection": 0,
+                  "name": "Those times when we chatted together at the café"
+                },
+                {
+                  "affinity": "lust",
+                  "atkWeight": 1,
+                  "baseValue": 12,
+                  "coinValue": 8,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "evade",
+                  "desc": "[OnSucceedEvade] Both this unit and the target gain 4 [JeannePathos] and 4 [JeanneLogos]",
+                  "levelCorrection": 0,
+                  "name": "We had our little quarrels, yes."
+                }
+              ],
+              "statuses": [
+                "JeanneLogos",
+                "JeannePathos",
+                "JeannePartner",
+                "JeannePartnerTwo"
+              ],
+              "tags": [
+                "Le Kaki",
+                "Sisyphe"
+              ]
+            }
+          ]
+        },
+        {
+          "targets": [
+            {
+              "name": "Jeanne Sartre, the Sartorial Tailor",
+              "passives": [
+                {
+                  "desc": "When Jeanne's HP drops to 10% or below...",
+                  "flavor": "We live in a hell where we're forever nailed beneath the gaze of others. So... tell me everything you're feeling, Meur. You can always decide what to make of it afterward, can't you?",
+                  "name": "L'enfer, c'est les autres"
+                },
+                {
+                  "desc": "This unit's SP is fixed at 45 \n\nTurn Start: Summon \"Sisyphe System Blueprint - Le Rouge\" and \"Sisyphe System Blueprint - Le Noir\" until there are 2 of each on the field\n\n2nd turn after Phase change: Convert 1 Blueprint unit into \"Jeanne Sartre, the Sartorial Tailor\" form\n- Prioritize the Blueprint unit that does not have [Vulnerable]\n- Exclude the Blueprint unit that entered the \"Jeanne Sartre, the Sartorial Tailor\" state on the previous turn\n- If Staggered, recover from Stagger\n\nWhen entering the \"Jeanne Sartre, the Sartorial Tailor\" state, use the \"At least on this stage, everything's set and fixed.\" Skill\n- If Meursault's Skill wins the Clash against \"At least on this stage, everything's set and fixed.\", the said Blueprint unit gains 5 [Vulnerable] every turn starting from the next turn\n\nEvery time \"Jeanne Sartre, the Sartorial Tailor\" state is disabled, 1 Blueprint unit equips Jeanne's \"Rights: Ban\" Skill next turn\n- The number of Blueprint units that equip Jeanne's Skills increases cumulatively by 1\n\nWhen a Blueprint unit is defeated,\n- Jeanne loses 5% HP\n- All other Blueprint units gain 1 [JeanneBlueprint]\n- 1 Blueprint unit equips Jeanne's \"Rights: Gaze\" Skill instead of \"Rights: Ban\" next turn",
+                  "flavor": "To Jeanne, the department store was the world she could perceive most comfortably.\n\nShe was given the office chair of Le Kaki's Giant, a role that was supposed to remain neutral. But as you can see for yourself... She wanted to bloom in all those brilliant colors more than anybody else. She wanted to burn with passion, Meur, to stand on that stage and dance with you.\n\nIt's unfortunate that she couldn't let herself do so. There were too many gazes to mind, too many expectations to satisfy... until they wound themselves around her like chains. She couldn't blossom vibrantly as she wanted. Even the budding wish had to be hidden away.\n\nI can't make Jeanne's nausea disappear, but I can give her the chance to be herself, to bloom as herself without worrying about anyone's gaze in this world she was thrown into. Perhaps, if she's deep in that passion, she'll get to forget the nausea for a little while.\n\nAnd... I don't think Jeanne is the only one who needs that. Everyone in the City does. They might refuse, but I do believe that everyone deserves the same chance.",
+                  "name": "Gaze: Grand Magasin Sisyphe"
+                }
+              ],
+              "portrait": "1524",
+              "sanity": {
+                "add": [
+                  "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 10% per Clash count after 1)</size>",
+                  "Increases by 3 after this unit inflicts 2 Potency of a negative effect on an enemy"
+                ],
+                "flavor": "Revulsion. Nausea before the world. The world simply exists. Nothing in it bears any inherent meaning; everything before our eyes is merely the product of chance.\n\nEverything is a contingency. Everything.",
+                "id": 1122,
+                "lowMoraleDesc": "Deal -10% damage",
+                "name": "La Nausée",
+                "panicDesc": "Base Power -1, deal -10% damage",
+                "sub": [
+                  "If an ally is defeated, decrease by 4 regardless of the ally's level"
+                ]
+              },
+              "skills": [
+                {
+                  "affinity": "wrath",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 24,
+                  "coinValue": 24,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "[OnSucceedAttack] Target dies"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[CantChangeTarget]\nThis Skill does not trigger the target's Defense Skill\nMainly targets Meursault\n[StartDuel] This unit has 100% chance to flip Heads",
+                  "levelCorrection": 5,
+                  "name": "Rights: Rebuild"
+                },
+                {
+                  "affinity": "pride",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 7,
+                  "coinValue": 7,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "If the Coin is not Cracked, deal +20% damage",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 1 [Vulnerable]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "If the Coin is not Cracked, deal +20% damage",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 1 [Vulnerable] next turn"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "<color=#ff6000><mark color=#ff000040><b><u>[EndSkill] Inflict 1 [JeanneCheat] next turn</color></mark></b></u>",
+                  "flavor": "Meur. If you want, you don't have to keep binding yourself in those chains anymore. You're allowed to judge for yourself. You should be allowed to speak. No more worrying about anyone's gaze, no more letting anyone else's thoughts weigh on you... Just <i>be</i> yourself.",
+                  "levelCorrection": 4,
+                  "name": "Rights: Ban"
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 4,
+                  "coinValue": 3,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    },
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[BeforeUse] When Clashing against targets <color=#ff6000><mark color=#ff000040><b><u>that are not Meursault, or if this Skill is used as an Unopposed Attack,</color></mark></b></u> change this Skill to \"You went off-pattern.\"\n[DefeatDuel] Meursault gains 10 [JeanneLogos]",
+                  "levelCorrection": 2,
+                  "name": "At least on this stage, everything's set and fixed."
+                },
+                {
+                  "affinity": "lust",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 10,
+                  "coinValue": 5,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "This Skill always hits Critically\n[StartDuel] Target has <color=#ff6000><mark color=#ff000040><b><u>100% chance to flip Tails</color></mark></b></u>\n- Target's Minus Coins have 100% chance to flip Heads\n[EndSkill] <color=#ff6000><mark color=#ff000040><b><u>Heal 50% HP</color></mark></b></u>",
+                  "flavor": "Meur, you need to execute the gimmick right.",
+                  "levelCorrection": 5,
+                  "name": "You went off-pattern."
+                },
+                {
+                  "affinity": "lust",
+                  "atkWeight": 1,
+                  "baseValue": 10,
+                  "coinValue": 8,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "evade",
+                  "desc": "[WhenUse] Final Power +1 for every 2 Unique [Charge] Count on self (max 5)",
+                  "levelCorrection": 3,
+                  "name": "The designing was up to this point."
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "blunt",
+                  "atkWeight": 3,
+                  "baseValue": 9,
+                  "coinValue": 7,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "If the Coin is not Cracked, deal +50% damage",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 2 [AttackDmgDown] next turn"
+                      ],
+                      "type": "unbreakable"
+                    },
+                    {
+                      "descs": [
+                        "[SuperCoin]",
+                        "If the Coin is not Cracked, deal +50% damage",
+                        "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Binding] next turn"
+                      ],
+                      "type": "unbreakable"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Final Power +1 for every 4 Unique [Charge] (Potency + Count) on self (max 3)\n[WhenUse] Deal +10% damage for every 2 types of negative effects on all targets (max 50%; overlapping effects between units are counted separately)\n<color=#ff6000><mark color=#ff000040><b><u>[WinDuel] Inflict 1 [JeanneCheat] next turn</color></mark></b></u>\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+                  "flavor": "You must've understood the anxiety your mother felt better than anyone. But, Meur... simply sharing the same space with someone means becoming aware of their gaze. As long as you were there together, you must've had to bear your mother's gaze. You could hardly help but gaze her in return.\n\nIs that why you feel guilty?\nIt seems to me you're still trying to make what happened to your mother into something that was your fault.",
+                  "levelCorrection": 5,
+                  "name": "Rights: Gaze"
+                }
+              ],
+              "statuses": [
+                "Binding",
+                "Charge",
+                "AttackDmgDown",
+                "JeanneBlueprint",
+                "JeanneCheat",
+                "Vulnerable",
+                "JeanneLogos",
+                "SuperCoin"
+              ],
+              "tags": [
+                "Le Kaki",
+                "Sisyphe"
+              ]
+            },
+            {
+              "name": "Sisyphe System Blueprint - Le Rouge",
+              "parts": [
+                {
+                  "breakSection": [
+                    50
+                  ],
+                  "defCorrection": 4,
+                  "hp": 80,
+                  "name": "Body",
+                  "partId": 152601,
+                  "resists": {
+                    "blunt": 0.8,
+                    "envy": 1.2,
+                    "gloom": 0.8,
+                    "gluttony": 1,
+                    "lust": 1.5,
+                    "pierce": 0.8,
+                    "pride": 1.2,
+                    "slash": 0.8,
+                    "sloth": 1,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    1,
+                    3
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "When Clashing against the same target, Clash Power +1 for every 10 Clashes\n\nStarting from the turn after this unit enters the field, 1 Blueprint unit enters the <color=#ff6000><mark color=#ff000040><b><u>\"Jeanne Sartre, the Sartorial Tailor\" state</color></mark></b></u>\n- Prioritize the Blueprint unit that does not have [Vulnerable]\n- Exclude the Blueprint unit that entered the \"Jeanne Sartre, the Sartorial Tailor\" state on the previous turn\n- If Staggered, recover from Stagger\n\nWhen entering the \"Jeanne Sartre, the Sartorial Tailor\" state, use the <color=#ff6000><mark color=#ff000040><b><u>\"At least on this stage, everything's set and fixed.\" Skill</color></mark></b></u>\n- <color=#ff6000><mark color=#ff000040><b><u>If Meursault's Skill wins the Clash</color></mark></b></u> against \"At least on this stage, everything's set and fixed.\", the said Blueprint unit <color=#ff6000><mark color=#ff000040><b><u>gains 5 [Vulnerable] every turn</color></mark></b></u> starting from the next turn\n\nWhen a Blueprint unit is defeated,\n- <color=#ff6000><mark color=#ff000040><b><u>Jeanne loses 5% HP</color></mark></b></u>\n- All other Blueprint units gain 1 [JeanneBlueprint]",
+                  "name": "Pattern: Grand Magasin Sisyphe"
+                },
+                {
+                  "desc": "Gain 1 [ChargeRouge] Potency for every 10 cumulative [ChargeRouge] Count this unit consumes in this Encounter\n\nThis unit's Skill effects cannot drop this unit's HP below 1",
+                  "flavor": "Consume, replenish, deplete, then consume again.\nSimple repetitions are born of yearning.",
+                  "name": "Metabolic Action and Reaction"
+                }
+              ],
+              "portrait": "1526",
+              "skills": [
+                {
+                  "affinity": "envy",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 7,
+                  "coinValue": 9,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 [Laceration]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] At fewer than max [ChargeRouge] Count, consume 5% HP to gain 10 [ChargeRouge] Count",
+                  "levelCorrection": 1,
+                  "name": "Pattern: \"Desire.\""
+                },
+                {
+                  "affinity": "lust",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 6,
+                  "coinValue": 6,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] At fewer than max [ChargeRouge] Count, consume 5% HP to gain 10 [ChargeRouge] Count\n[WhenUse] Consume 5 [ChargeRouge] Count to gain Final Power +2",
+                  "levelCorrection": 2,
+                  "name": "Pattern: \"Don.\""
+                },
+                {
+                  "affinity": "wrath",
+                  "atkType": "pierce",
+                  "atkWeight": 1,
+                  "baseValue": 7,
+                  "coinValue": 9,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 1 [ScarletTakeDamageUp]"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Deal Lust damage equal to (missing HP on self)% of this Coin's final damage"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Deal +3% damage for every 2% missing HP on self (max 60%)\n[WhenUse] Consume all [ChargeRouge] Count on self to gain Final Power +1 for every 2 [ChargeRouge] Count consumed (max 3)",
+                  "levelCorrection": 3,
+                  "name": "Pattern: \"Consume.\""
+                },
+                {
+                  "affinity": "envy",
+                  "atkWeight": 1,
+                  "baseValue": 10,
+                  "coinValue": 7,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "guard",
+                  "desc": "[WhenUse] Heal 25% HP\n- At 2+ [ChargeRouge], heal 50% HP instead",
+                  "levelCorrection": 3,
+                  "name": "Pattern: \"Scrape and gather.\""
+                }
+              ],
+              "statuses": [
+                "Laceration",
+                "JeanneBlueprint",
+                "Vulnerable",
+                "ScarletTakeDamageUp",
+                "ChargeRouge"
+              ],
+              "tags": [
+                "Le Rouge",
+                "Sisyphe"
+              ]
+            },
+            {
+              "name": "Sisyphe System Blueprint - Le Noir",
+              "parts": [
+                {
+                  "breakSection": [
+                    50
+                  ],
+                  "defCorrection": 4,
+                  "hp": 80,
+                  "name": "Body",
+                  "partId": 152701,
+                  "resists": {
+                    "blunt": 0.8,
+                    "envy": 1.2,
+                    "gloom": 0.8,
+                    "gluttony": 1,
+                    "lust": 1,
+                    "pierce": 0.8,
+                    "pride": 1.2,
+                    "slash": 0.8,
+                    "sloth": 1.5,
+                    "wrath": 1
+                  },
+                  "speed": [
+                    1,
+                    3
+                  ]
+                }
+              ],
+              "passives": [
+                {
+                  "desc": "When Clashing against the same target, Clash Power +1 for every 10 Clashes\n\nStarting from the turn after this unit enters the field, 1 Blueprint unit enters the <color=#ff6000><mark color=#ff000040><b><u>\"Jeanne Sartre, the Sartorial Tailor\" state</color></mark></b></u>\n- Prioritize the Blueprint unit that does not have [Vulnerable]\n- Exclude the Blueprint unit that entered the \"Jeanne Sartre, the Sartorial Tailor\" state on the previous turn\n- If Staggered, recover from Stagger\n\nWhen entering the \"Jeanne Sartre, the Sartorial Tailor\" state, use the <color=#ff6000><mark color=#ff000040><b><u>\"At least on this stage, everything's set and fixed.\" Skill</color></mark></b></u>\n- <color=#ff6000><mark color=#ff000040><b><u>If Meursault's Skill wins the Clash</color></mark></b></u> against \"At least on this stage, everything's set and fixed.\", the said Blueprint unit <color=#ff6000><mark color=#ff000040><b><u>gains 5 [Vulnerable] every turn</color></mark></b></u> starting from the next turn\n\nWhen a Blueprint unit is defeated,\n- <color=#ff6000><mark color=#ff000040><b><u>Jeanne loses 5% HP</color></mark></b></u>\n- All other Blueprint units gain 1 [JeanneBlueprint]",
+                  "name": "Pattern: Grand Magasin Sisyphe"
+                },
+                {
+                  "desc": "Gain 1 [ChargeNoir] Potency for every 10 cumulative [ChargeNoir] Count this unit consumes in this Encounter",
+                  "flavor": "Force is compressed, gathered, and fixed in place. Sometimes, it takes more force to prevent change than to cause it.",
+                  "name": "Conservation"
+                }
+              ],
+              "portrait": "1527",
+              "skills": [
+                {
+                  "affinity": "envy",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 7,
+                  "coinValue": 9,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict 3 [Vibration]"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Gain +5 [ChargeNoir] Count\n- If target has [Vibration], gain +5 additional [ChargeNoir] Count",
+                  "levelCorrection": 1,
+                  "name": "Tailoring: \"Conserve.\""
+                },
+                {
+                  "affinity": "gluttony",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 6,
+                  "coinValue": 6,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "[WhenUse] Gain 5 [ChargeNoir] Count\n- If target has [Vibration], gain 5 additional [ChargeNoir] Count\n[WhenUse] Final Power +1 for every 2 [ChargeNoir] Count on self (max 2)\n[WhenUse] At 10+ [ChargeNoir] Count, inflict 5 [Vibration] Potency on Coin Hit",
+                  "levelCorrection": 2,
+                  "name": "Tailoring: \"Witness in silence.\""
+                },
+                {
+                  "affinity": "sloth",
+                  "atkType": "blunt",
+                  "atkWeight": 1,
+                  "baseValue": 7,
+                  "coinValue": 9,
+                  "coins": [
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+                      ],
+                      "type": "normal"
+                    },
+                    {
+                      "descs": [
+                        "[OnSucceedAttack] Deal Sloth damage equal to ([Vibration] Potency on target)% of this Coin's final damage"
+                      ],
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "attack",
+                  "desc": "Deal +4% damage for every [ChargeNoir] on self (max 20%)\n[WhenUse] Consume all [ChargeNoir] Count on self to gain Final Power +1 for every 2 [ChargeNoir] Count consumed (max 3)\n- If this unit consumed 10+ [ChargeNoir] Count, inflict 5 [Vibration] Potency on Coin Hit",
+                  "levelCorrection": 3,
+                  "name": "Tailoring: \"Let all be pinned.\""
+                },
+                {
+                  "affinity": "envy",
+                  "atkWeight": 1,
+                  "baseValue": 10,
+                  "coinValue": 7,
+                  "coins": [
+                    {
+                      "type": "normal"
+                    }
+                  ],
+                  "defType": "guard",
+                  "desc": "[StartBattle] This turn and next turn, gain Shield equal to 25% of this unit's max HP (min 1)\n- At 2+ [ChargeNoir], gain Shield equal to 40% of this unit's max HP instead",
+                  "levelCorrection": 3,
+                  "name": "Tailoring: \"Cometh the nail.\""
+                }
+              ],
+              "statuses": [
+                "JeanneBlueprint",
+                "Vulnerable",
+                "ChargeNoir",
+                "Vibration",
+                "VibrationExplosion"
+              ],
+              "tags": [
+                "Le Noir",
+                "Sisyphe"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "name": "Grand Magasin Sisyphe Route C (10-4-C)",
+  "siteId": "214c26e7-84a4-4550-82d8-bcb6d747f5c3"
+}

@@ -205,10 +205,35 @@
     "statText": "<color=#fe4b48>Damage</color> Dealt +1 in the Symbolic\nDuring battle in the Shadowed, deal +10% <color=#fe4b48>damage</color> against enemies that have <color=#F8C200>Bind</color>",
     "type": "KeyItem"
   },
+  "I990003": {
+    "desc": "A rope. It fixes its target in place by means unlike a nail. There is, after all, a world of difference between driving something through and binding something fast.",
+    "name": "Rope",
+    "sources": [
+      {
+        "floor": "1",
+        "marker": "Q1",
+        "route": "c"
+      }
+    ],
+    "type": "KeyItem"
+  },
   "I990004": {
     "desc": "People speak of experiencing the present. Yet if experience is the act of anticipating what is to come and seeing it realized, then it must always lie in the future.",
     "name": "Pulsation",
     "statText": "Unlocks <color=#F8C200>Parry</color> in the Symbolic\n- Parry: While controlling Meursault, hit the enemy 0.2 seconds before its attack to cancel the attack (excluding certain attacks)\n\nUnlocks <color=#F8C200>Block</color> in the Symbolic\n- Block: Press and hold <color=#F8C200>Block</color> (C on keyboard) to maintain Meursault's <color=#F8C200>Block</color> stance\n- While <color=#F8C200>Blocking</color>, <color=#fe4b48>Damage</color> Taken -30% from the <color=#fe4b48>Blocked</color> direction\n\nUnlocks <color=#F8C200>Attack Chain 2</color> for <color=#F8C200>Avant</color> Attack in the Symbolic\n- After activating Avant, <color=#F8C200>repeat the attack</color> to activate Attack Chain 2\n- <color=#F8C200>Attack Chain 2</color>: <color=#fe4b48>Damage</color> Dealt +2 and <color=#F8C200>Hitstun</color> +0.1 seconds against the enemy",
+    "type": "KeyItem"
+  },
+  "I990005": {
+    "desc": "One may slow infinitely close to perfect stillness, but that is an unreachable state. It cannot even be pictured as an idea. Such is the architecture of the human being.\n\nThe Warden's power makes that impossibility real—\"Be still.\"\n\n\"No, that isn't me. I refuse to be still.\" These words strain to burst from within against the judgment.\n\nHe will break what has been stilled. He will rebel.\nBecause that sensation has already begun to rise.",
+    "name": "Stillness",
+    "sources": [
+      {
+        "floor": "1",
+        "marker": "Q1",
+        "route": "c"
+      }
+    ],
+    "statText": "In the Symbolic, <color=#F8C200>Level 3 Garde's charge time</color> is reduced to match Level 1 Garde\n- Once fully charged, <color=#F8C200>Garde</color> always activates as <color=#F8C200>Level 3</color>\n\nIn the Symbolic, <color=#F8C200>Attack Chain 2</color> gains +1 tile of width on both the left and right sides\n- The added side range is not affected by range-increasing effects\n\nDuring battle in the Symbolic, when the Warden summons the player to a certain area,\n- The player can destroy the candles falling upon that area (destroying a candle <color=#00ff9c></color>heals 1 <color=#00ff9c>HP</color>)\n- <color=#fe4b48>Damage</color> Taken from the Warden -25% in the said Symbolic battle",
     "type": "KeyItem"
   },
   "I990006": {
@@ -1404,6 +1429,19 @@
     "statText": "In the Symbolic, upon a successful <color=#F8C200>Perfect Block</color>, knocks back enemies within 1 tile of Meursault by 1 tile",
     "type": "Survival"
   },
+  "I990430": {
+    "desc": "Like any other stranger, he entered through 1F, became a customer, and, after a long time, endured enough to rise to Floor Manager. This is an object created by that entity.\n\nHe endured the passage of time and the Age until endurance itself became second nature.",
+    "name": "Frayed Brooch",
+    "sources": [
+      {
+        "floor": "4",
+        "marker": "Q4",
+        "route": "c"
+      }
+    ],
+    "statText": "During battle in the Shadowed, when an ally is targeted by an enemy's multi-Atk Weight attack, apply Shield equal to 15% of their max <color=#00ff9c>HP</color> immediately before they are hit\n- 2 times per Encounter\n\nDuring battle in the Shadowed, when an ally or enemy dies, inflict 2 <color=#F8C200>Bind</color> on all enemies next turn\n- Once per turn",
+    "type": "Etc"
+  },
   "I990431": {
     "desc": "This is too hard... There are so many... Too many will make it less fun... Too many shiny surfaces... won't make the shine special anymore...",
     "name": "Luminous Shoes",
@@ -1446,6 +1484,32 @@
       }
     ],
     "statText": "During battle in the Shadowed, immediately before an Identity that has 50% or lower <color=#00ff9c>HP</color> is hit by an enemy Skill, the said Identity gains Shield equal to 20% of its missing <color=#00ff9c>HP</color>\n- Once per Identity per Encounter\n- This Shield does not expire after the turn ends",
+    "type": "Etc"
+  },
+  "I990502": {
+    "desc": "He had a role assigned to him. A job.\n\nThe work was standardized, codified into manuals. He would report to Sisyphe Tower, repeat the same lines, and make the same broadcasts day after day.\n\nLike any other employee, he would count down the minutes until the end of his shift.\n\nYet there was one conviction he held firmly: that the Sisyphe System had to exist and be maintained, for the sake of N Corp. and the City as a whole.\n\nAs One Who Nails, and the one entrusted with the hammer, that conviction had taken root in him deeply.",
+    "name": "Authority",
+    "sources": [
+      {
+        "floor": "1",
+        "marker": "Q3",
+        "route": "c"
+      }
+    ],
+    "statText": "During battle in the Shadowed, on Clash Start against target with faster Speed than this unit, inflict 1 <color=#F8C200>Bind</color> on that target next turn\n- Once per turn\n\nDuring battle in the Shadowed, deal +10% <color=#fe4b48>Damage</color> to targets with slower Speed than this unit",
+    "type": "Etc"
+  },
+  "I990503": {
+    "desc": "Eat and eat, but the hunger will always return. Everyone is the same; the difference is only how long it takes. Even a full stomach will empty again.\n\nFor this child, that interval is simply unnaturally short, because they were born to hunger, born with the expectation that they would go on devouring.\n\nThey were nailed fast into the role of a god who must never cease to feed.",
+    "name": "Consumption",
+    "sources": [
+      {
+        "floor": "5",
+        "marker": "Q5",
+        "route": "c"
+      }
+    ],
+    "statText": "During battle in the Shadowed, on Clash Win, heal (Skill Final Power x 1.5) <color=#00ff9c>HP</color> (once per turn per Identity)\n- For E.G.O Skills, x1 instead of x1.5 (rounded down)\n- Identities <color=#00ff9c>healed</color> by this effect gain 1 <color=#fe4b48>Damage</color> Up next turn (once per turn per Identity)",
     "type": "Etc"
   },
   "I990801": {
@@ -2049,6 +2113,19 @@
     "name": "Colorful Skein",
     "type": "KeyItem"
   },
+  "I990931": {
+    "desc": "A scarf given by the woman in blue who bears a resemblance to Demian. Carrying it brings the strange sensation of being sheltered from all things.\n\nWhether it is pity for failure or encouragement for the road still ahead, there is a warmth to it like the sea.\n\nThe sea is frightening for how little one can know of its depths... and yet it feels as though it might take everything into its embrace.",
+    "name": "Scarf",
+    "sources": [
+      {
+        "floor": "1",
+        "marker": "Q2",
+        "route": "c"
+      }
+    ],
+    "statText": "In the Symbolic, <color=#fe4b48>Damage</color> Dealt +350\nIn the Symbolic, HP does not drop below 1",
+    "type": "KeyItem"
+  },
   "I990934": {
     "desc": "What is invisible must be coated in color until its outline emerges. Splash enough unseen things with color, and one realizes that one's own body has become stained.",
     "name": "Dirty Apron",
@@ -2065,6 +2142,32 @@
       }
     ],
     "statText": "In the Symbolic, changes the HP threshold for displaying enemy HP bars to 100%\n- While owned, enemy HP bars are displayed from the first hit onward",
+    "type": "Etc"
+  },
+  "I990935": {
+    "desc": "This one weathered the time alongside the department store itself, stitching scar after scar together with cloth.\n\nThis is proof of victory against the one who endured the weight of time and ultimately broke beneath it.",
+    "name": "Timeworn Fan",
+    "sources": [
+      {
+        "floor": "4",
+        "marker": "Q4",
+        "route": "c"
+      }
+    ],
+    "statText": "During battle in the Shadowed:\n\"Sisyphe\" Identities deal +10% <color=#fe4b48>damage</color> against enemies",
+    "type": "Etc"
+  },
+  "I990936": {
+    "desc": "The flower shoes that once carried the lingering scent of spring are now smothered in phlegmatic discharge, scarcely resembling what they once were.\n\nAnd yet, from somewhere buried beneath that viscous filth rise the subtle traces of a spring breeze...\n\nA faint aroma that brings to mind the days spent walking beside Pwie.",
+    "name": "Crimson-stained Flower Shoes",
+    "sources": [
+      {
+        "floor": "5",
+        "marker": "Q5",
+        "route": "c"
+      }
+    ],
+    "statText": "During battle in the Shadowed,\n- Turn Start: 1 unit with the lowest HP among Staggered Identities <color=#F8C200>recovers from Stagger</color>; then, the said ally <color=#00ff9c>heals</color> 20% <color=#00ff9c>HP</color>\n- If the said unit is a \"Le Rouge\" Identity, gain 2 <color=#fe4b48>Attack Power Up</color> instead of HP healing effect\n- 2 times per Encounter",
     "type": "Etc"
   },
   "I991004": {
