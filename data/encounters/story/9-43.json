@@ -1,4 +1,249 @@
 {
+  "assists": [
+    {
+      "defLevel": -1,
+      "hp": 1228,
+      "level": 80,
+      "name": "",
+      "passives": [
+        {
+          "desc": "Deal +40% damage to <Mechanical Amalgam> and <Distortion>\n\nOn Kill, all other allies heal 20 SP (once per turn)",
+          "flavor": "The Second Smoke War was a conflict between humans and humans who no longer looked the part.",
+          "name": "Dismantle Prosthesis"
+        },
+        {
+          "desc": "Turn Start: Gain [WillAwakenSinclair] (once per Encounter)",
+          "name": "Shin (心) - A Certain Sinclair"
+        },
+        {
+          "desc": "This unit does not take SP damage due to external effects and cannot become immobilized\n\nIf an ally becomes immobilized due to external effects before Turn End, use 'Abate the Smoke[TabExplain]'",
+          "flavor": "The Smoke of the Second War was no different in nature from that of the First—it invaded the mind and clouded the judgement of the victim.\nSurvival was reserved only for those who learned to accept the Smoke as part of their daily lives.",
+          "name": "Withstand the Smoke"
+        },
+        {
+          "desc": "Gain [SignAwakenSinclair] and [LimitedAwakenSinclair] when an enemy with 1,000+ max HP is killed (once per Encounter)\n- Afterward, convert all Coins into [SuperCoin]s when this unit uses Pride, Wrath, Envy Skills",
+          "name": "Lend My Ear to the Inner Self, Hold onto the Representation of its Voice..."
+        },
+        {
+          "desc": "Targets with less than 20 [Burst] do not lose [Burst] Count when this unit hits them with Skills that inflict [Burst] Potency or Count",
+          "flavor": "Guerrilla warfare played an important role during the Second Smoke War.\nThe most feared among the undertakers of these ambushes were none other than the airborne forces that descended directly upon the combat zone and turned the tide of the battle unexpectedly.\nThese airborne soldiers would appear out of nowhere by utilizing technologies such as Singularities of the Wings—they would carry out their mission immediately, and once their objectives were accomplished, they would disappear without a trace.\n\"The Abraxas Chariot\" was one of the groups that inspired the most dread in the War alongside those airborne forces such as \"Descenders of 101 Doors\" and \"The Dimension Roamers.\"",
+          "name": "Special Airborne Operations Force - Abraxas Chariot"
+        },
+        {
+          "desc": "Attack End: Remove 1 beneficial effect from target and inflict 4 [Burst] (once per turn)\n\nTurn End: Remove 1 negative effect from self and gain 5 [Breath] and +2 [Breath] Count",
+          "flavor": "Wielding a nameless halberd and a bastard sword, the young man, clad in a dull green coat, would ravage through the enemy lines before vanishing without a trace once he was done.\nSome called him the Green Damnation, while others called him the Green Deliverance.",
+          "name": "Halberd and Bastard Sword"
+        },
+        {
+          "desc": "All allies, including this unit, gain 1 more E.G.O resource when using Skills\n\nTurn End: Heal 6 SP for every other Sinner present in the Encounter",
+          "name": "Sign - Manifestation of the Future"
+        },
+        {
+          "desc": "Lose this Encounter if this unit is killed",
+          "flavor": "One may get lost and wander onto the wrong path, but willful defiance or deviation from the flow are forbidden by \"it.\"",
+          "name": "Fate Lost"
+        }
+      ],
+      "portrait": "400013",
+      "resists": {
+        "blunt": 1,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 0.75,
+        "lust": 1,
+        "pierce": 2,
+        "pride": 2,
+        "slash": 0.5,
+        "sloth": 1,
+        "wrath": 2
+      },
+      "sanity": {
+        "add": [
+          "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+          "Increase by 10 after this unit defeats an enemy regardless of their level",
+          "Increase by 5 after an ally defeats an enemy regardless of their level"
+        ],
+        "id": 1080,
+        "lowMoraleDesc": "Turn Start: Gain 1 [Vulnerable]\nSP Heal Efficiency +2",
+        "name": "Of the Second Smoke War",
+        "panicDesc": "Turn Start: Gain 2 [Vulnerable] and 2 [ParryingResultUp]",
+        "sub": [
+          "Decreases after losing a Clash based on the Clash count\n<size=95%>(Base Value is 3, raised by 10% per Clash count after 1)</size>"
+        ]
+      },
+      "skills": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 8 [Burst]",
+                "[OnSucceedAttack] Inflict 5 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 6+ Speed, deal +20% damage\n[WhenUse] Gain 4 [Breath] and +2 [Breath] Count",
+          "levelCorrection": 2,
+          "name": "Downward Swing"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Burst]",
+                "[OnSucceedAttack] Inflict 6 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 6+ Speed, deal +30% damage\n[WhenUse] Gain 1 [Breath] and +3 [Breath] Count\n[WinDuel] Deal +30% damage",
+          "levelCorrection": 3,
+          "name": "Halberd Combo"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 7,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 6 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 7+ Speed, deal +40% damage\n[WhenUse] Gain +4 [Breath] Count\n[WinDuel] Gain 1 [Enhancement]",
+          "levelCorrection": 4,
+          "name": "Trench-specialized Spear Combat"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 12,
+          "coinValue": 14,
+          "coins": [
+            {
+              "descs": [
+                "[ExtractCoin]",
+                "Deal +1% damage for every ([Burst] + [Burst] Count) on the target (max 100%)",
+                "[OnSucceedAttack] Deal ([Breath] on self x 4) Pride damage (max 80)",
+                "[CriticalOnSucceedAttack] Deal +150% damage"
+              ],
+              "type": "excision"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If this unit has [WillAwakenSinclair], +1 to target's Slash Resist. until Attack End\n[WhenUse] Base Power +2 for every 5 [Breath] (max 8)\n[WhenUse] At 5+ SP, generate 1 Mang; Base Power +3\n[EndSkill] If this Skill generated Mang, lose 5 SP",
+          "levelCorrection": 5,
+          "name": "True Decapitation Deathblow"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 13,
+          "coinValue": 12,
+          "coins": [
+            {
+              "descs": [
+                "[ExtractCoin]",
+                "[OnSucceedAttack] Inflict 7 [Laceration] and +2 [Laceration] Count",
+                "[OnSucceedAttack] Inflict 2 [Vulnerable] next turn",
+                "[CriticalOnSucceedAttack] Deal +400% damage"
+              ],
+              "type": "excision"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If this unit has [WillAwakenSinclair], +1 to target's Slash Resist. until Attack End\nCan draw any attack to this unit regardless of Speed\n[WhenUse] Base Power +1 for every 3 [Breath] (max 2)\n[WhenUse] Base Power +2 for every type of negative effect on target (max 4)\n[WhenUse] Gain 5 [Agility] next turn\n[WhenUse] Gain 10 [Breath] and +2 [Breath] Count\n[WhenUse] At 10+ SP, generate 2 Mang; Base Power +6\n[EndSkill] If this Skill generated Mang, lose 10 SP",
+          "levelCorrection": 6,
+          "name": "Plastered Sleep, Unrestrained Ripples"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 4,
+          "baseValue": 7,
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttackHead] Deal (40% of this Coin's final damage) Slash damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nTargets the enemy with the lowest max HP\nThis Skill does not trigger the target's Defense Skill\n[BeforeAttack] Gain +(total number of all enemies' Slots) Atk Weight\n[WhenUse] At 4+ Speed, deal +50% damage",
+          "levelCorrection": 2,
+          "name": "Abate the Smoke"
+        }
+      ],
+      "speed": [
+        3,
+        7
+      ],
+      "statuses": [
+        "Enhancement",
+        "Laceration",
+        "ExtractCoin",
+        "Vulnerable",
+        "Agility",
+        "Breath",
+        "Burst",
+        "WillAwakenSinclair",
+        "SignAwakenSinclair",
+        "LimitedAwakenSinclair",
+        "SuperCoin"
+      ],
+      "tags": [
+        "???",
+        "Abraxas Chariot",
+        "The Second Smoke War",
+        "The Sign [Future]"
+      ]
+    }
+  ],
   "name": "The Unsevering (9-43)",
   "siteId": "f8d18a96-b96e-4aad-bfa7-0d70a8910c52",
   "targets": [

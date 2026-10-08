@@ -1,4 +1,372 @@
 {
+  "assists": [
+    {
+      "defLevel": 0,
+      "hp": 423,
+      "level": 50,
+      "name": "",
+      "passives": [
+        {
+          "desc": "This unit prioritizes attacking enemies with the lowest max HP\n\nHeal 10 SP when killing enemies with [Combustion] damage or Attack Skills that apply [Combustion] (max once per turn)",
+          "name": "Like a Moth to a Flame"
+        },
+        {
+          "desc": "Damage from [Combustion] cannot Stagger this unit and does not reduce this unit's HP below 1; this unit cannot be immobilized due to external effects\n\nTake -50% damage from [Combustion]",
+          "name": "Fireproof"
+        },
+        {
+          "desc": "Encounter Start: Gain [LvUpFireFly]\n\nOn Hit: At less than 70% HP, apply 1 [Combustion] to target and self",
+          "name": "E.G.O Attunement Boost"
+        },
+        {
+          "desc": "Turn Start: Gain 1 [AttackUp] for every ally wearing E.G.O gear",
+          "name": "E.G.O Resonance Boost"
+        },
+        {
+          "desc": "Turn End: If all allies except for this unit are immobilized due to external effects, equip 'A.B.S Max Attunement 【Degraded Corrosion】' next turn",
+          "flavor": "'I knew it... Everyone...'",
+          "name": "The Last Resort"
+        },
+        {
+          "desc": "Lose this Encounter if this unit is killed after Hohenheim is killed",
+          "flavor": "One may get lost and wander onto the wrong path, but willful defiance or deviation from the flow are forbidden by \"it.\"",
+          "name": "Fate Lost"
+        }
+      ],
+      "portrait": "400007",
+      "resists": {
+        "blunt": 0.5,
+        "envy": 1,
+        "gloom": 2,
+        "gluttony": 1,
+        "lust": 0.75,
+        "pierce": 2,
+        "pride": 1,
+        "slash": 1,
+        "sloth": 2,
+        "wrath": 0.5
+      },
+      "sanity": {
+        "add": [
+          "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+          "Increase by 10 after this unit defeats an enemy regardless of their level",
+          "Increase by 5 after an ally defeats an enemy regardless of their level",
+          "Increase by 8 after Unopposed Attack"
+        ],
+        "id": 1071,
+        "lowMoraleDesc": "Turn Start: Gain 1 [Vulnerable]",
+        "name": "Degraded Corrosion",
+        "panicDesc": "Turn Start: Gain 1 [Vulnerable] and 5 [Combustion]",
+        "sub": [
+          "Decreases after losing a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 10% per Clash count after 1)</size>"
+        ]
+      },
+      "skills": [
+        {
+          "affinity": "pride",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Combustion] and +1 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Gain 1 [Combustion]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 3+ types of negative effects, Base Power +1\n[WhenUse] Coin Power +1 for every 6 ([Combustion] on self + [Combustion] on target) (max 2)\n[WhenUse] Gain +1 [Combustion] Count",
+          "levelCorrection": 2,
+          "name": "Ignition"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Gain 1 [Combustion]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 3+ types of negative effects, Base Power +1\n[WhenUse] Coin Power +1 for every 6 ([Combustion] on self + [Combustion] on main target) (max 2)\n[WhenUse] Gain +3 [Combustion] Count\n[BeforeAttack] At 5+ [Combustion], Atk Weight +1",
+          "levelCorrection": 3,
+          "name": "E.G.O - A.B.S Activation"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +4 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Gain 2 [Combustion]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 3+ types of negative effects, Base Power +1\n[WhenUse] Coin Power +1 for every 6 ([Combustion] on self + [Combustion] on main target) (max 2)\n[WhenUse] Deal +1% damage for every 1 ([Combustion] on self + [Combustion] on main target) (max 50%)\n[WhenUse] Gain +2 [Combustion] Count\n[BeforeAttack] Atk Weight +1 for every 5 [Combustion] on self (max 3)",
+          "levelCorrection": 4,
+          "name": "Drawn by Flame"
+        },
+        {
+          "affinity": "sloth",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 8,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[WhenUse] At 10+ [Combustion], Coin Power +3\n[WhenUse] Lose 10 [Combustion]\n[OnSucceedEvade] Lose 5 [Combustion] (once per turn)",
+          "flavor": "'Don't worry. I've thought of a way that might get me out of this alive.'",
+          "levelCorrection": 2,
+          "name": "I'm Going to Raise A.B.S's Attunement Level."
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 5,
+          "baseValue": 15,
+          "coinValue": 10,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 10 [Combustion] and +2 [Combustion] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nThis unit cannot be defeated while using this Skill\n[BeforeAttack] Gain +(total number of all enemies' Slots) Atk Weight\n[WhenUse] Deal +1% damage for every 1 ([Combustion] on self + [Combustion] on all targets) (max 100%)\n[EndSkillAll] This unit is defeated",
+          "levelCorrection": 5,
+          "name": "A.B.S Max Attunement 【Degraded Corrosion】"
+        }
+      ],
+      "speed": [
+        3,
+        5
+      ],
+      "statuses": [
+        "Combustion",
+        "LvUpFireFly",
+        "AttackUp",
+        "SuperCoin"
+      ],
+      "tags": [
+        "E.G.O Gear",
+        "LCE",
+        "Limbus Company"
+      ]
+    },
+    {
+      "defLevel": 3,
+      "hp": 376,
+      "level": 45,
+      "name": "",
+      "passives": [
+        {
+          "desc": "This unit prioritizes attacking the enemy with the fastest Max Speed\n\nWhen chaining Skills, this unit can draw enemies' attack toward self regardless of Speed (Focused Encounters only)",
+          "name": "Dazzling Lamp"
+        },
+        {
+          "desc": "Turn Start: If this unit does not have [LanternHohenheimBigBird], gain 1 [LanternHohenheimBigBird]\n\n<color=#ff6000><mark=#ff000040><b><u>Turn End: At 20 [LanternHohenheimBigBird], inflict [DelusionHohenheimBigBird] to the enemy that uses its powerful attack next turn</u></b></mark></color>",
+          "name": "Don't Blindly Follow the Light when Lost in the Black Forest"
+        },
+        {
+          "desc": "Turn Start: Apply ([Binding] on self /2) [Agility] to the ally (excluding this unit) with the slowest Speed next turn (max 2, rounded down)\n\nIf this unit has the slowest Speed, deal +10% damage with Base Attack Skills\n- If this unit's Speed is 1, deal +20% damage instead",
+          "name": "Its Eyes Have Watched Over the Entire Black Forest"
+        },
+        {
+          "desc": "Encounter Start: Gain [LvUpHohenheimBigBird]",
+          "name": "Can't Underestimate the HQ's E.G.O Attunement and its Corrosion"
+        },
+        {
+          "desc": "Turn Start: Gain 1 [DefenseUp] for every ally wearing E.G.O gear",
+          "flavor": "Written by Hohenheim.",
+          "name": "E.G.O Gear Proficiency Manual"
+        },
+        {
+          "desc": "Lose this Encounter if this unit is killed after Alyssa is killed",
+          "flavor": "One may get lost and wander onto the wrong path, but willful defiance or deviation from the flow are forbidden by \"it.\"",
+          "name": "Fate Lost"
+        }
+      ],
+      "portrait": "400008",
+      "resists": {
+        "blunt": 2,
+        "envy": 0.4,
+        "gloom": 0.7,
+        "gluttony": 1,
+        "lust": 0.8,
+        "pierce": 1,
+        "pride": 1.5,
+        "slash": 0.5,
+        "sloth": 0.7,
+        "wrath": 0.8
+      },
+      "sanity": {
+        "add": [
+          "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+          "Increase by 10 after this unit defeats an enemy regardless of their level",
+          "Increase by 5 after an ally defeats an enemy regardless of their level",
+          "Increase by 8 after Unopposed Attack"
+        ],
+        "id": 1073,
+        "lowMoraleDesc": "Gain 1 fewer [LanternHohenheimBigBird] from Skills",
+        "name": "Wave of Somnolence",
+        "panicDesc": "Does not act for this turn",
+        "sub": [
+          "Decreases after losing a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 10% per Clash count after 1)</size>"
+        ]
+      },
+      "skills": [
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion] and +1 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Sinking] and +1 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If the target's Speed is faster than this unit's, Coin Power +1 for every 2 Speed difference (max 2)\n- At 1 Speed, Coin Power +2 instead\n[WhenUse] Gain 5 [LanternHohenheimBigBird]",
+          "levelCorrection": 2,
+          "name": "Rapid Fire"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Sinking] and +1 [Sinking] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If the target's Speed is faster than this unit's, Coin Power +1 for every 2 Speed difference (max 2)\n- At 1 Speed, Coin Power +2 instead\n[WhenUse] Gain 4 [LanternHohenheimBigBird]",
+          "levelCorrection": 2,
+          "name": "Intense Stare: Zero-Range"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 12,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnStartCoin] Consume all [LanternHohenheimBigBird] Stack and deal +15% damage for every Stack consumed (max 300%)",
+                "[OnSucceedAttack] Inflict 8 [Sinking] and +2 [Sinking] Count",
+                "[OnSucceedAttack] Inflict 6 [Combustion] and +2 [Combustion] Count"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Until the end of the Unopposed Attack, this unit does not take HP damage and does not gain negative effects\nIf the target's Speed is faster than this unit's, Coin Power +1 for every 1 Speed difference (max 6)\n- At 1 Speed, Coin Power +6 instead\nIf target has [DelusionHohenheimBigBird], +0.5 to target's Pierce Resist. until Attack End\n[EndSkill] Remove [DelusionHohenheimBigBird] from target",
+          "levelCorrection": 5,
+          "name": "Salvation for those Enchanted by the Lamp"
+        }
+      ],
+      "speed": [
+        1,
+        4
+      ],
+      "statuses": [
+        "Binding",
+        "Combustion",
+        "DelusionHohenheimBigBird",
+        "DefenseUp",
+        "LvUpHohenheimBigBird",
+        "Agility",
+        "LanternHohenheimBigBird",
+        "Sinking",
+        "SuperCoin"
+      ],
+      "tags": [
+        "E.G.O Gear",
+        "LCE",
+        "Limbus Company"
+      ]
+    }
+  ],
   "name": "The Unsevering (9-37)",
   "phases": [
     {

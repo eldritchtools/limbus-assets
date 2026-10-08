@@ -1,4 +1,406 @@
 {
+  "assists": [
+    {
+      "defLevel": 0,
+      "hp": 3500,
+      "level": 90,
+      "name": "Vergilius",
+      "passives": [
+        {
+          "desc": "Lose this Encounter if this unit is killed",
+          "flavor": "One may get lost and wander onto the wrong path, but willful defiance or deviation from the flow are forbidden by \"it.\"",
+          "name": "Fate Lost"
+        },
+        {
+          "desc": "Observes Dante's command and adjusts his Skills' targets accordingly",
+          "flavor": "'Following the flow...'",
+          "name": "The Guide"
+        },
+        {
+          "desc": "Turn End: Inflict 3 [Binding] next turn against enemies with 50% or more HP\n<color=#ff6000><mark=#ff000040><b><u>Enemies that are about to use Attack Skills against this unit gain 1 [Reduction]</u></b></mark></color>",
+          "name": "The Red Gaze"
+        },
+        {
+          "desc": "Inflict 1 [AaCfPcBiv2] On Hit with a Gladius Skill",
+          "name": "White-hot Gladius"
+        },
+        {
+          "desc": "On Skill Use: Take 3% of max HP as fixed damage (this damage cannot kill this unit).\nOn Hit with a Skill: Heal 10% of HP damage dealt",
+          "name": "Bloody Tears"
+        },
+        {
+          "desc": "Every turn, all allies, including this unit, gains Shield HP",
+          "name": "Blood Barrier"
+        },
+        {
+          "desc": "'The Red Gaze' becomes available",
+          "name": "Eyes of a Friend Who ████"
+        },
+        {
+          "desc": "Encounter Start: Gain [VergiliusSin]",
+          "name": "Shin (心) - The Red Gaze"
+        },
+        {
+          "desc": "Enter Effloresced[TabExplain] E.G.O::Lavacrum Sanguinis state, and gain the following effects:\n- Gain 3 Haste every turn\n- Become immune to [Laceration] damage\n- Unlocks E.G.O Manifestation Skills",
+          "name": "Effloresced E.G.O::Lavacrum Sanguinis"
+        }
+      ],
+      "portrait": "9999",
+      "resists": {
+        "blunt": 1,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 1,
+        "pride": 1,
+        "slash": 1,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "sanity": {
+        "add": [
+          "Unobservable"
+        ],
+        "id": 9997,
+        "name": "???",
+        "panicDesc": "Unobservable",
+        "sub": [
+          "Unobservable"
+        ]
+      },
+      "skills": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 14,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Coin Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 2)",
+          "levelCorrection": 2,
+          "name": "Heated Puncture"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 15,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Coin Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 2)",
+          "levelCorrection": 3,
+          "name": "Scorching Incision"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 2,
+          "baseValue": 18,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vulnerable]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Coin Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 2)",
+          "levelCorrection": 3,
+          "name": "Following the Flow"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 3,
+          "baseValue": 21,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Combustion] Count",
+                "[OnSucceedAttack] Inflict 1 [SlashTakeDamageUp]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Coin Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 3)\n[WhenUse] At 0+ SP, generate 1 Mang (望)\n- Coin Power +1 and deal +30% damage\n[EndSkill] If this Skill generated Mang, consume 1 SP",
+          "levelCorrection": 4,
+          "name": "I Shall Open the Path"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 4,
+          "baseValue": 23,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Combustion]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Coin Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 4)\n[WhenUse] At 0+ SP, generate 2 Mang (望)\n- Coin Power +2 and deal +60% damage\n[EndSkill] If this Skill generated Mang, consume 3 SP",
+          "levelCorrection": 5,
+          "name": "Silence"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 3,
+          "baseValue": 26,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count",
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +1% damage for every ([Laceration] on self + [Laceration] on target) (max 20%)\n[WhenUse] Gain 3 [Laceration] and +5 [Laceration] Count",
+          "levelCorrection": 5,
+          "name": "Internal Bleeding"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 4,
+          "baseValue": 27,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]",
+                "[OnSucceedAttack] Inflict 1 [Vulnerable]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +1% damage for every ([Laceration] on self + [Laceration] on target) (max 20%)\n[WhenUse] Gain 3 [Laceration] and +5 [Laceration] Count",
+          "levelCorrection": 6,
+          "name": "Blinding Bloodcleaver"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 5,
+          "baseValue": 35,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Combustion] Count",
+                "[OnSucceedAttack] Inflict +4 [Laceration] Count",
+                "[OnSucceedAttack] Inflict 1 [BloodBranch] for every 5 ([Laceration] on self + [Laceration] on target) (max 3)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Combustion]",
+                "[OnSucceedAttack] Inflict 4 [Laceration]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +1% damage for every ([Laceration] on self + [Laceration] on target) (max 30%)\n[WhenUse] Gain 6 [Laceration] and +5 [Laceration] Count\n[WhenUse] At 0+ SP, generate 2 Mang (望)\n- Coin Power +2 and deal +60% damage\n[EndSkill] If this Skill generated Mang, consume 5 SP",
+          "levelCorrection": 8,
+          "name": "Drown in Blood"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 4,
+          "baseValue": 45,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration]",
+                "[OnSucceedAttack] Inflict 1 [BloodBranch] for every 5 ([Laceration] on self + [Laceration] on target) (max 5)"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +1% damage for every ([Laceration] on self + [Laceration] on target) (max 50%)\n[WhenUse] Gain 10 [Laceration] and +5 [Laceration] Count\n[WhenUse] At 0+ SP, generate 3 Mang (望)\n- Coin Power +3 and deal +90% damage\n[EndSkill] If this Skill generated Mang, consume 3 SP",
+          "levelCorrection": 10,
+          "name": "Funeral for a Dead Bloodfiend"
+        }
+      ],
+      "speed": [
+        6,
+        8
+      ],
+      "statuses": [
+        "Reduction",
+        "Binding",
+        "Laceration",
+        "BloodBranch",
+        "Combustion",
+        "Vulnerable",
+        "VergiliusSin",
+        "SlashTakeDamageUp",
+        "AaCfPcBiv2"
+      ],
+      "tags": [
+        "Color Fixer",
+        "Fixer",
+        "Limbus Company"
+      ]
+    }
+  ],
   "name": "The Unsevering (9-45)",
   "siteId": "9c5ec51e-999b-470f-8fe3-eb3f6bf75c62",
   "targets": [

@@ -1,4 +1,794 @@
 {
+  "assists": [
+    {
+      "defLevel": 0,
+      "hp": 3041,
+      "level": 85,
+      "name": "",
+      "passives": [
+        {
+          "desc": "Encounter Start: Gain [YellowHarpoon]\n\nTurn Start: If this unit has 0+ SP and The Middle Nursefather has 2 [ReinforcedTattooSpider], gain [YellowHarpoonSin]\n\nAt less than 0 SP, lose [YellowHarpoonSin]",
+          "flavor": "<color=#fde55d>\"Okay, hear me out. Hear me out, Baby bee!\nYou're good with harpoons, right?\nYou use a super snazzy special harpoon, right?\nAnd you're shootin' for the Yellow Color, right?\nBam! There ya have it!\n\n<b>The Yellow Harpoon</b>!!!\"</color>",
+          "name": "The Yellow Harpoon (named by: Ezra)"
+        },
+        {
+          "desc": "On Clash Win against targets with [BeeSting], trigger [Switch_Vibration] on their [Vibration] into [VibrationBleeding]\n\nOn Clash Win against targets with [ArtifactBeeSting], trigger [FusionVibration] on their [Vibration] into [VibrationEcho]\n\nOn Hit with the final Coin against targets with both [BeeSting] and [ArtifactBeeSting], trigger [VibrationExplosion]",
+          "flavor": "<color=#fde55d>A precious Relic of the highest rarity, found in the depths of the Ruins.\nIt was by mere coincidence that the young boy, blood-soaked, came to be in possession of this speartip; coincidentally, he also possessed the aptitude to wield it. \n\nWhat is coincidence, indeed?</color>",
+          "name": "Gungnir"
+        },
+        {
+          "desc": "In the turn Moses equips 'Inhale Deep the Red Breath', this unit gains [YellowHarpoonSin] permanently",
+          "name": "The Wasp of the Distortion Detective Office"
+        },
+        {
+          "desc": "Lose this Encounter if this unit is killed",
+          "flavor": "One may get lost and wander onto the wrong path, but willful defiance or deviation from the flow are forbidden by \"it.\"",
+          "name": "Fate Lost"
+        }
+      ],
+      "portrait": "400009",
+      "resists": {
+        "blunt": 1,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 1,
+        "pride": 1,
+        "slash": 0.5,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "sanity": {
+        "add": [
+          "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+          "Increase by 10 after this unit defeats an enemy regardless of their level",
+          "Increase by 5 after an ally defeats an enemy regardless of their level"
+        ],
+        "id": 1074,
+        "lowMoraleDesc": "Gain 1 [PenetrateResultUp] and 1 [MentalIncreaseDown]",
+        "name": "Vexation",
+        "panicDesc": "Gain 2 [PenetrateResultUp], 1 [PenetrateDamageUp], and 2 [MentalIncreaseDown]",
+        "sub": [
+          "Decreases after losing a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 10% per Clash count after 1)</size>"
+        ]
+      },
+      "skills": [
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 20,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Vibration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +50% damage for every type of negative effect on target (max 100%)\n[WhenUse] Base Power +1 for every 2 ([Laceration] + [Vibration]) on target (max 5)\n[WhenUse] Gain +3 [Breath] Count",
+          "levelCorrection": 2,
+          "name": "Obstruction"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 21,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +50% damage for every type of negative effect on target (max 100%)\n[WhenUse] Base Power +1 for every 2 ([Laceration] + [Vibration]) on target (max 5)\n[WhenUse] Gain +3 [Breath] Count",
+          "levelCorrection": 2,
+          "name": "Double Chaincleave"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 24,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict [BeeSting]",
+                "[OnSucceedAttack] Raise Stagger Threshold by 40% of damage dealt"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +50% damage for every type of negative effect on target (max 200%)\n[WhenUse] Gain 2 [CriticalDmgUpVespa] next turn",
+          "levelCorrection": 3,
+          "name": "Harpoon Throw"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 36,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict [ArtifactBeeSting]",
+                "[OnSucceedAttack] Raise Stagger Threshold by 60% of damage dealt"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +50% damage for every type of negative effect on target (max 300%)\n[WhenUse] Gain 5 [CriticalDmgUpVespa] next turn",
+          "levelCorrection": 5,
+          "name": "Harpoon Impalement - There It Is."
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 26,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Remove the Nested Harpoon on target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nTargets the unit that has Nested Harpoon (cancel this Skill when there are no available target)\nDeal +50% damage for every type of negative effect on target (max 200%)",
+          "levelCorrection": 3,
+          "name": "Harpoon Recall"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 18,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict [BeeSting] on target"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Remove [BeeSting] on the target"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +50% damage for every type of negative effect on target (max 100%)\n[WhenUse] Gain 3 [CriticalDmgUpVespa] next turn",
+          "flavor": "<color=#fde55d>\"Do not even think about resisting.\"</color>",
+          "levelCorrection": 4,
+          "name": "Yellow Apic Stinger [黄蜂針]"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 25,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict [ArtifactBeeSting] on target"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +50% damage for every type of negative effect on target (max 100%)\n[WhenUse] Deal +20% damage for every 10 [Vibration] Potency on target\n[BeforeAttack] If target is at less than 50% HP, [VibrationExplosion] triggered by this Skill does not consume Tremor Count\n[WhenUse] At 0+ SP, generate 1 Mang (望)\n- Coin Power +1, deal +50% damage\n[WhenUse] Gain 3 [CriticalDmgUpVespa] next turn\n[EndSkill] If this Skill generated Mang (望), lose 2 SP",
+          "flavor": "<color=#fde55d>\"This throw will strike and pierce through without fail.\"</color>",
+          "levelCorrection": 6,
+          "name": "Gungnir"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 26,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Activate [Laceration] on target once. Target loses 1 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Activate [Laceration] on target once. Target loses 1 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Activate [Laceration] on target once. Target loses 1 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Activate [Laceration] on target once. Target loses 1 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Stagger target"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +50% damage for every type of negative effect on target (max 100%)\n[WhenUse] Deal +20% damage for every 10 [Laceration] Potency on target\n[WhenUse] At 0+ SP, generate 2 Mang (望)\n- Coin Power +2, deal +100% damage\n[BeforeAttack] If target is at less than 50% HP, [Laceration] triggered by this Skill does not consume Bleed Count\n[EndSkill] If this Skill generated Mang (望), lose 3 SP",
+          "levelCorrection": 8,
+          "name": "Rend Space - Apic Flashburst Blade [空間斬 - 閃蜂光劍]"
+        }
+      ],
+      "speed": [
+        5,
+        8
+      ],
+      "statuses": [
+        "Switch_Vibration",
+        "FusionVibration",
+        "CriticalDmgUpVespa",
+        "Laceration",
+        "BeeSting",
+        "ArtifactBeeSting",
+        "Breath",
+        "YellowHarpoonSin",
+        "ReinforcedTattooSpider",
+        "YellowHarpoon",
+        "Vibration",
+        "VibrationBleeding",
+        "VibrationEcho",
+        "VibrationExplosion",
+        "SuperCoin"
+      ],
+      "tags": [
+        "Color Fixer",
+        "Fixer",
+        "LCD",
+        "Limbus Company"
+      ]
+    },
+    {
+      "defLevel": 0,
+      "hp": 1466,
+      "level": 70,
+      "name": "",
+      "passives": [
+        {
+          "desc": "Encounter Start: Gain [MosesWarPTSD]",
+          "name": "Deep Contemplation"
+        },
+        {
+          "desc": "If the Middle Nursefather has Lævateinn, this unit gains [MosesSin] and uses 'Inhale Deep the Red Breath' every turn\n\nIf this unit has [MosesRedBreathCharge], becomes immune to Panic\n\n<color=#ff6000><mark color=#ff000040><b><u>Turn End: At 3 [MosesRedBreathCharge], use a powerful Skill</color></mark></b></u>",
+          "flavor": "Concentrate into a single point all that constitutes the physical force and stack the layers into a cylindrical pillar—then expel it toward another single point.",
+          "name": "Crimson Point"
+        },
+        {
+          "desc": "Lose this Encounter if this unit is killed",
+          "flavor": "One may get lost and wander onto the wrong path, but willful defiance or deviation from the flow are forbidden by \"it.\"",
+          "name": "Fate Lost"
+        }
+      ],
+      "portrait": "400010",
+      "resists": {
+        "blunt": 2,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 0.5,
+        "pride": 1,
+        "slash": 1,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "sanity": {
+        "add": [
+          "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+          "Increase by 10 after this unit defeats an enemy regardless of their level",
+          "Increase by 5 after an ally defeats an enemy regardless of their level"
+        ],
+        "id": 1081,
+        "lowMoraleDesc": "Turn Start: Gain 1 [Vulnerable] and apply 2 [Endurance] to Ezra and Vespa",
+        "name": "Body Broken Beyond Repair",
+        "panicDesc": "Gain 1 [Vulnerable] and use 'Steady the Breath'",
+        "sub": [
+          "Decreases after losing a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 10% per Clash count after 1)</size>"
+        ]
+      },
+      "skills": [
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 12,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Deal 5 bonus damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Deal 5 bonus damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has a negative effect, deal +50% damage\n[WhenUse] Lose 3 SP",
+          "levelCorrection": 4,
+          "name": "Red Breath: Incision"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 5,
+          "baseValue": 16,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Target heals 15 SP",
+                "[OnSucceedAttack] Apply 2 [MosesWhiteBreathMental] on self and target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nThis Skill targets allies, does not trigger Defense Skills, and does not deal damage\n[WhenUse] Gain 5 [Breath] and +3 [Breath] Count",
+          "levelCorrection": 0,
+          "name": "White Breath: Fog. Dawn. Concealment - Safeguard the Mind"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 5,
+          "baseValue": 17,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Apply 2 [MosesRedBreathBody], 1 [AttackUp], 1 [DefenseUp] on self and target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nThis Skill targets allies, does not trigger Defense Skills, and does not deal damage\n[WhenUse] Gain 5 [Breath] and +3 [Breath] Count",
+          "levelCorrection": 0,
+          "name": "Red Breath: Body. Blood. Acceleration. Hardening - Strengthen the Body"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 14,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Deal 8 SP damage",
+                "[OnSucceedAttack] Inflict 4 [MosesPurpleBreathBind], 2 [Vulnerable], 3 [PlusCoinValueDown]",
+                "[OnSucceedAttack] Inflict 5 [Binding] next turn"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "This Skill does not trigger the target's Defense Skill\nIf target has a negative effect, deal +50% damage\n[WhenUse] Lose 8 SP\n[WhenUse] Gain 5 [Breath] and +3 [Breath] Count",
+          "levelCorrection": 2,
+          "name": "Purple Breath: Impatience. Aching. Tightening - Oppress"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 1,
+          "coinValue": 1,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nThis Skill does not hit enemies and does not trigger Defense Skills\n[WhenUse] Gain 5 [Breath] and +3 [Breath] Count",
+          "levelCorrection": -3,
+          "name": "Steady the Breath"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 5,
+          "baseValue": 17,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Apply 1 [MosesRedBreathShield] and 5 [Protection] on self and target"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nThis Skill targets allies, does not trigger Defense Skills, and does not deal damage\n[WhenUse] Gain 5 [Breath] and +3 [Breath] Count",
+          "levelCorrection": 0,
+          "name": "Red Breath: Blood. Muscle. Contraction - Protect"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 25,
+          "coinValue": 25,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nThis Skill does not hit enemies and does not trigger Defense Skills\n[StartBattle] Gain 100 Shield (once per Encounter)\n[StartBattle]<color=#ff6000><mark=#ff000040><b><u>Gain 1 [MosesRedBreathCharge]</u></b></mark></color>\n[EndBattle] Lose 15 SP",
+          "levelCorrection": 0,
+          "name": "'Inhale Deep the Red Breath.'"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 3,
+          "baseValue": 17,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Apply 1 [MosesRedBreathAttack] and 5 [AttackUp]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nThis Skill targets allies, does not trigger Defense Skills, and does not deal damage\n[WhenUse] Gain 5 [Breath] and +3 [Breath] Count",
+          "levelCorrection": 0,
+          "name": "Red Breath: Pulse. Blood. Hardening. Anger. Urge - Push the Body's Limit"
+        }
+      ],
+      "speed": [
+        5,
+        7
+      ],
+      "statuses": [
+        "Binding",
+        "MosesRedBreathCharge",
+        "DefenseUp",
+        "Vulnerable",
+        "MosesWarPTSD",
+        "AttackUp",
+        "PlusCoinValueDown",
+        "Breath",
+        "Protection",
+        "MosesPurpleBreathBind",
+        "MosesRedBreathShield",
+        "MosesRedBreathAttack",
+        "MosesRedBreathBody",
+        "MosesSin",
+        "SuperCoin",
+        "MosesWhiteBreathMental"
+      ],
+      "tags": [
+        "LCD",
+        "Limbus Company"
+      ]
+    },
+    {
+      "defLevel": 0,
+      "hp": 1606,
+      "level": 70,
+      "name": "",
+      "passives": [
+        {
+          "desc": "Encounter Start: Gain 1 [DimensionalBagEzraA]\n\nIf this unit used the current Workshop weapon more than once, switch weapons the next turn\n\nList of weapons:\n- Allas Workshop Gloves\n- Nester Workshop Hammer\n- Screw Atelier Drill Hammer\n- Namir Workshop Gauntlets",
+          "name": "Dimensional Bag [Ezra]"
+        },
+        {
+          "desc": "This unit's weapon rotation is fixed to 'YuRia Atelier Special Handmade Golden Retriever-Exclusive Axe' starting from the turn Moses equips 'Inhale Deep the Red Breath'\n\nThis unit gains [MiddleFingerEzraSin] starting from the turn Moses equips 'Inhale Deep the Red Breath'",
+          "flavor": "\"Remember that case in that hotel with the Bloodfiend? Man, that was sick.\"",
+          "name": "Detecti—I mean, Team Leader! We've Got Your Back!"
+        },
+        {
+          "desc": "Lose this Encounter if this unit is killed",
+          "flavor": "One may get lost and wander onto the wrong path, but willful defiance or deviation from the flow are forbidden by \"it.\"",
+          "name": "Fate Lost"
+        }
+      ],
+      "portrait": "400011",
+      "resists": {
+        "blunt": 0.5,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 2,
+        "pride": 1,
+        "slash": 1,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "sanity": {
+        "add": [
+          "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+          "Increase by 10 after this unit defeats an enemy regardless of their level",
+          "Increase by 5 after an ally defeats an enemy regardless of their level"
+        ],
+        "id": 1082,
+        "lowMoraleDesc": "Gain 1 [Reduction] and 2 [DefenseUp]",
+        "name": "Insecurity: Mask",
+        "panicDesc": "Gain 1 [Reduction] and 3 [DefenseUp]",
+        "sub": [
+          "Decreases after losing a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 10% per Clash count after 1)</size>"
+        ]
+      },
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 14,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Deal 3 Blunt bonus damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Deal 3 Blunt bonus damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At 6+ Speed, deal +50% damage\n[WhenUse] Gain 3 [Agility] next turn",
+          "levelCorrection": 2,
+          "name": "Allas Workshop - Acceleration Punch!"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 15,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 6 [Vibration]",
+                "- At 6+ Speed, inflict 2 additional [Vibration] Potency"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Gain 2 [Agility] next turn"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has a negative effect, deal +50% damage\n[WhenUse] If target has 5+ [Vibration], inflict +1 [Vibration] Count on Coin Hit",
+          "levelCorrection": 3,
+          "name": "Nester Workshop - One! Two! Diffuse!"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 13,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count",
+                "[OnSucceedAttack] At 6+ [Charge] Count, inflict 3 additional [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has a negative effect, deal +50% damage\n[WhenUse] Gain +5 [Charge] Count\n[WhenUse] At 10+ [Charge] Count, convert all Coins of this Skill to [SuperCoin]s",
+          "levelCorrection": 2,
+          "name": "Screw Atelier - Screw! Drill!"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 18,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion] twice; then, reduce target's [Vibration] Count by 2",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has a negative effect, deal +50% damage\n[WhenUse] If this unit does not have [Charge] Count, inflict +1 additional [Vibration] Count on target on Skill Hit\n[WhenUse] At 15+ [Charge] Count, consume all [Charge] Count and apply the following effects:\n- Trigger an additional [VibrationExplosion]\n- [VibrationExplosion] triggered by this Skill does not consume target's [Vibration] Count",
+          "levelCorrection": 4,
+          "name": "Namir Workshop - Five Times the Weight!"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 21,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Activate [Laceration] on target once. Target loses 1 [Laceration] Count",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +50% damage for every type of negative effect on target (max 100%)\n[WhenUse] If target has 6+ [Vibration], Base Power +3\n[WhenUse] At 0+ SP, generate 1 Mang (望)\n- Base Power +2, deal +20% damage\n[EndSkill] If this Skill generated Mang (望), lose 10 SP",
+          "flavor": "Special Handmade Golden Retriever-Exclusive Axe.",
+          "levelCorrection": 5,
+          "name": "YuRia Atelier - All-out Attack Mode, Mk. 17!"
+        }
+      ],
+      "speed": [
+        4,
+        6
+      ],
+      "statuses": [
+        "Laceration",
+        "Charge",
+        "DimensionalBagEzraA",
+        "DimensionalBagEzraD",
+        "DimensionalBagEzraB",
+        "DimensionalBagEzraC",
+        "DimensionalBagEzraE",
+        "Agility",
+        "MiddleFingerEzraSin",
+        "Vibration",
+        "VibrationExplosion",
+        "SuperCoin"
+      ],
+      "tags": [
+        "LCD",
+        "Limbus Company"
+      ]
+    }
+  ],
   "name": "The Unsevering (9-44)",
   "siteId": "76d22e92-6b3e-4e2d-aa99-ab7497325d85",
   "targets": [

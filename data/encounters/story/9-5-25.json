@@ -1,4 +1,468 @@
 {
+  "assists": [
+    {
+      "defLevel": 0,
+      "hp": 115,
+      "level": 0,
+      "name": "",
+      "passives": [
+        {
+          "desc": "Encounter Start: Gain [AengduNewArm]\n\nIf there is an ally at less than 50% HP on the field excluding this unit, gain 1 [SupportProtect] (once per turn)",
+          "flavor": "\"On the outside, it looks no different from prostheses you might find in other Nests or Backstreets... But apparently, this particular prosthetic limb has been created using technology unique to Limbus Company. I wonder what that could be...\"\n\n\"Since the development of this prototype was led by the LCD Department, I would assume it has something to do with the power of Distortions... Oh, that's not to say that I have any certainty regarding the matter—I was only in charge of transporting it, you see. It's just a simple speculation, really. In any case, I doubt this is your average prosthetic limb meant for body enhancement.\"",
+          "name": "Limbus Company Specialized Custom Prosthetic Prototype mk5 - Dokkaebi Arms"
+        },
+        {
+          "desc": "Skill End: Gain 1 [WindBlade] for every 3 [Breath] (max 5, 2 times per turn)\n\nOn Base Attack Skill End: At 15+ [WindBlade], activate \"Even the Balance - Lucent Rippling Flame\" on the enemy (once per turn)\n\nOn Defense Skill Clash Lose, if this unit has 3+ [Agility], this unit cannot be Staggered from taking damage until Defense Skill End, and activate \"To Claim Their Bones\" against the enemy after being hit (2 times per turn, excluding forced Staggers)",
+          "name": "Demonfire Spinecleaver"
+        },
+        {
+          "desc": "On Crit, gain 1 [Agility] next turn (3 times per Skill, 2 times per turn)",
+          "name": "Swiftblade"
+        },
+        {
+          "desc": "When 3 or more other Blade Lineage allies are defeated:\n- When gaining [Breath] Potency/Count using this unit's own Skills and Coin effects: Gain 1 more of each\n- When 5 or more other Blade Lineage allies are defeated, gain 2 more of each instead\n- Combat Start: Apply [SwordPlayOfTheHomeland] on self",
+          "name": "To Where I Must Return"
+        }
+      ],
+      "portrait": "400038",
+      "resists": {
+        "blunt": 1,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 1,
+        "pride": 1,
+        "slash": 1,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "sanity": {
+        "add": [
+          "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+          "Increase by 10 after this unit defeats an enemy regardless of their level",
+          "Increase by 5 after an ally defeats an enemy regardless of their level"
+        ],
+        "id": 1093,
+        "lowMoraleDesc": "- Turn Start: Gain 1 [Enhancement] and 1 [Disarming]\n- Turn End: Gain 2 [Agility] next turn",
+        "name": "Resentment",
+        "panicDesc": "- Turn Start: Gain 2 [Enhancement] and 2 [Disarming]\n- Turn End: Gain 2 [Agility] next turn",
+        "sub": [
+          "If an ally is defeated, decrease by 5 regardless of the ally's level"
+        ]
+      },
+      "skills": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 6 ([Breath] on self + [Laceration] on target) (max 2)\n[WhenUse] At 3+ [Agility], Base Power +2\n[WhenUse] Gain +2 [Breath] Count",
+          "levelCorrection": 2,
+          "name": "Rending Arts"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                "[CriticalOnSucceedAttack] Gain 2 [Agility] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 6 ([Breath] on self + [Laceration] on target) (max 2)\n[WhenUse] At 3+ [Agility], Base Power +2\n[WhenUse] Gain +2 [Breath] Count\n[WinDuel] Gain +2 [Breath] Count",
+          "levelCorrection": 3,
+          "name": "Acupuncture"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [Breath] Count",
+                "[CriticalOnSucceedAttack] Gain 1 [WindBlade]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[CriticalOnSucceedAttack] Gain 1 [WindBlade]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[CriticalOnSucceedAttack] Gain 1 [WindBlade]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +0.5% damage for every 1% missing HP on self (max 25%)\nDeal +25% damage on Critical Hit for every [Agility] on self (max 150%)\n[WhenUse] At 6+ ([Breath] on self + [Laceration] on target), Coin Power +1 (max 2)\n[WhenUse] At 5+ [WindBlade], convert into [SuperCoin]\n[WinDuel] Gain 5 [Breath]",
+          "levelCorrection": 3,
+          "name": "Lucent Rippling Flame"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 5 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[CriticalOnSucceedAttack] At 5+ [Agility], Reuse this Coin (once per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nThis Skill does not trigger Defense Skills\nDeal +0.5% damage for every 1% missing HP on self (max 25%)\nDeal +20% damage on Critical Hit for every [Agility] on self (max 100%)\n[EndSkill] Consume all [WindBlade] on self",
+          "levelCorrection": 4,
+          "name": "Even the Balance - Lucent Rippling Flame"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 2 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nThis Skill does not trigger Defense Skills\nDeal +0.5% damage for every 1% missing HP on self (max 25%)\nDeal +10% damage on Critical Hit for every [Agility] on self (max 50%)\n[WhenUse] Base Power +1 for every 4 ([Breath] on self + [Laceration] on target) (max 4)",
+          "levelCorrection": 3,
+          "name": "To Claim Their Bones"
+        }
+      ],
+      "speed": [
+        3,
+        6
+      ],
+      "statuses": [
+        "SupportProtect",
+        "Laceration",
+        "AengduNewArm",
+        "Agility",
+        "WindBlade",
+        "Paralysis",
+        "Breath",
+        "SwordPlayOfTheHomeland",
+        "SuperCoin"
+      ],
+      "tags": [
+        "Blade Lineage",
+        "LCD",
+        "Limbus Company",
+        "Syndicate"
+      ]
+    },
+    {
+      "defLevel": 0,
+      "hp": 1187,
+      "level": 81,
+      "name": "",
+      "passives": [
+        {
+          "desc": "Upon entering the Encounter for the first time, gain [BrandedKimSatgat]",
+          "name": "Fugitive"
+        },
+        {
+          "desc": "At 1 [Breath] Count, lose 10 HP instead of losing [Breath] Count (this effect cannot Stagger this unit and does not drop this unit's HP below 1)\n\nDeal +(missing HP percentage on self / 2) damage on Critical Hit using Base Skills (max 50%)",
+          "name": "Bearing of a Salsu"
+        },
+        {
+          "desc": "Combat Start: If Pride Reson. was activated,\n- Gain (Pride Reson. x 2) [Breath] (max 8)\n- Apply 1 [SlashResultUp] and 1 [CriticalDamageUp] on all Sinners and Assist Units excluding this unit (for Blade Lineage targets, double this effect)\n\nTurn End: Gain ([Breath] on self / 4) [Agility] next turn (max 6, rounded down)",
+          "name": "Swordplay of the Homeland"
+        },
+        {
+          "desc": "When gaining [Breath] Potency/Count using this unit's own Skills and Coin effects: Apply 1 [Breath] Potency and 1 [Breath] Count on the Sinner and 2 Assist Units that do not have [Breath] or have the lowest [Breath] Potency (excluding this unit)\n- For Blade Lineage allies, apply 3 [Breath] Potency and +2 [Breath] Count instead\n\nWhen a Blade Lineage Sinner or Assist Unit is defeated, this unit loses 10 SP",
+          "name": "Blade Lineage Mentor"
+        },
+        {
+          "desc": "In this Encounter, when this unit takes damage that brings its HP down to 0, nullify that damage; then, this unit's HP cannot drop below 1 for the turn (once per Encounter)\n\nTurn End: At 30+ [Breath] Potency, fix this unit's Speed to 20 next turn and equip \"Yield My Flesh\" on the leftmost Skill Slot\n- If \"Yield My Flesh\" becomes inaccessible due to Skill effect, this effect does not activate",
+          "name": "Yield My Flesh to Claim Their Bones"
+        }
+      ],
+      "portrait": "400040",
+      "resists": {
+        "blunt": 2,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 2,
+        "lust": 2,
+        "pierce": 1,
+        "pride": 0.75,
+        "slash": 0.5,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "sanity": {
+        "add": [
+          "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+          "Increase by 10 after this unit defeats an enemy regardless of their level",
+          "Increase by 5 after an ally defeats an enemy regardless of their level",
+          "Increase by 8 after Unopposed Attack"
+        ],
+        "id": 1095,
+        "lowMoraleDesc": "- Turn Start: Gain 2 [AttackDmgDown] and heal 40 HP",
+        "name": "Deep-rooted Regret",
+        "panicDesc": "- Turn Start: Gain 3 [AttackDmgDown] and heal 60 HP",
+        "sub": [
+          "Decreases after losing a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 10% per Clash count after 1)</size>"
+        ]
+      },
+      "skills": [
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 10,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 5 [Laceration]",
+                "[CriticalOnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 5+ [Breath], Coin Power +1\n[WhenUse] Gain +2 [Breath] Count\n[WinDuel] Gain 3 [Breath]",
+          "levelCorrection": 2,
+          "name": "Draw of the Sword"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 12,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 4 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Deal +20% damage on Critical Hit"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Deal +40% damage on Critical Hit",
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 7+ [Breath], Coin Power +1\n[WhenUse] Gain +3 [Breath] Count\n[WinDuel] Gain 2 [Breath]",
+          "levelCorrection": 3,
+          "name": "Acupuncture"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 15,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 5 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Deal +80% damage on Critical Hit",
+                "[OnSucceedAttack] Inflict 8 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\n[StartBattle] Gain 2 [SlashDamageUp] this turn and next turn\n[WhenUse] At 8+ [Breath], Coin Power +1\n[WhenUse] Gain +3 [Breath] Count\n[WinDuel] Gain 4 [Breath]",
+          "levelCorrection": 4,
+          "name": "Overthrow"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 30,
+          "coinValue": -8,
+          "coins": [
+            {
+              "descs": [
+                "Deal +150% damage on Critical Hit",
+                "[OnSucceedAttack] Inflict 2 [SlashResistDown] next turn",
+                "[OnSucceedAttack] Inflict 4 [DefenseDown] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Targets the Skill Slot that has the highest max Power\n[WhenUse] Until this Skill ends:\n- Take -2% damage from Attacks for every [Breath] on self (min -80%)\n- Clash Power -1 for every [Breath] on self (min -30)\n- Cannot be Staggered from taking damage\n[WinDuel] Gain 5 [Breath]\n[DefeatDuel] Use \"To Claim Their Bones\" after being hit\n[EndBattle] Cannot use \"Yield My Flesh\" until next turn",
+          "levelCorrection": 5,
+          "name": "Yield My Flesh"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 3,
+          "baseValue": 16,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Coin Power +2 for the final Coin (once per Coin)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Coin Power +2 for the final Coin (once per Coin)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Coin Power +2 for the final Coin (once per Coin)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 10 [Laceration] and +2 [Laceration] Count",
+                "[OnSucceedAttack] Inflict 2 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[WhenUse] At 10+ [Breath], Coin Power +1\n[WhenUse] Deal +40% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Parts)\n[WhenUse] Gain +4 [Breath] Count\n[EndSkill] Consume all [Breath] on self",
+          "levelCorrection": 5,
+          "name": "To Claim Their Bones"
+        }
+      ],
+      "speed": [
+        4,
+        6
+      ],
+      "statuses": [
+        "Laceration",
+        "BrandedKimSatgat",
+        "CriticalDamageUp",
+        "DefenseDown",
+        "Agility",
+        "Paralysis",
+        "Breath",
+        "SlashDamageUp",
+        "SlashResultUp",
+        "SlashResistDown"
+      ],
+      "tags": [
+        "Blade Lineage",
+        "LCD",
+        "Limbus Company",
+        "Syndicate"
+      ]
+    }
+  ],
   "name": "Mnestic Experience Dungeon (9.5-25)",
   "siteId": "b1f47a25-c3e4-427f-8584-6153ffe5f8a8",
   "targets": [

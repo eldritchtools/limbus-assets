@@ -1,4 +1,161 @@
 {
+  "assists": [
+    {
+      "defLevel": 3,
+      "hp": 198,
+      "level": 55,
+      "name": "",
+      "passives": [
+        {
+          "desc": "When an ally deals damage by striking an enemy, use the Skill 'Weakness Thrust' as an Unopposed Attack after the ally's attack ends (2 times per turn)",
+          "name": "Paired Assault"
+        },
+        {
+          "desc": "When an enemy attacks another ally, and if the allied unit has less than 25% HP after the attack, use the Skill 'Aiding Strike' as an Unopposed Attack against the attacker (once per Encounter)",
+          "name": "Aiding Stab"
+        },
+        {
+          "desc": "Turn End: gain 1 Defense Level Up next turn for every 3 Poise on self (max 6)",
+          "name": "Siphoning Fulfillment"
+        },
+        {
+          "desc": "On Kill, heal 10 SP for 2 Sinners with the least SP",
+          "name": "Morale Boost"
+        }
+      ],
+      "portrait": "400002",
+      "resists": {
+        "blunt": 2,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 0.5,
+        "pride": 1,
+        "slash": 1,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "sanity": {
+        "add": [
+          "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+          "Increase by 10 after this unit defeats an enemy regardless of their level",
+          "Increase by 5 after an ally defeats an enemy regardless of their level"
+        ],
+        "id": 9995,
+        "lowMoraleDesc": "Turn Start: gain 2 [DefenseUp] and lose 2 [Breath] Potency",
+        "name": "Catching Breath",
+        "panicDesc": "Turn Start: gain 5 [DefenseUp] and lose 5 [Breath] Potency",
+        "sub": [
+          "Decreases after losing a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 10% per Clash count after 1)</size>"
+        ]
+      },
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 8,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "+30% Damage on Critical Hit",
+                "[OnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 3+ types of negative effects, Base Power +1\n[WhenUse] Gain +1 [Breath] Count\n[OnDirectAttack] Inflict +1 [Burst] Count",
+          "levelCorrection": 0,
+          "name": "Weakness Thrust"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "+50% Damage on Critical Hit",
+                "[OnSucceedAttack] Inflict 3 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[StartBattle] Gain 1 [Protection]\n[WhenUse] If target has 3+ types of negative effects, Coin Power +1\n[WhenUse] Gain 3 [Breath] Potency",
+          "levelCorrection": 2,
+          "name": "Dualblade Substitution Thrust"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[CriticalOnSucceedAttack] Inflict 2 [Burst]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "+100% Damage on Critical Hit",
+                "[CriticalOnSucceedAttack] Inflict 5 [Burst]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 3+ types of negative effects, Coin Power +1\n[WhenUse] Gain +3 [Breath] Count\n[WhenUse] Gain 6 [Breath] Potency",
+          "levelCorrection": 3,
+          "name": "Aiding Strike"
+        }
+      ],
+      "speed": [
+        3,
+        6
+      ],
+      "statuses": [
+        "Breath",
+        "Protection",
+        "Burst"
+      ],
+      "tags": [
+        "H Corp."
+      ]
+    }
+  ],
   "battles": [
     {
       "targets": [
@@ -3731,6 +3888,18 @@
                   "name": "Jia Qiu's Test"
                 },
                 {
+                  "desc": "On Hit against enemy with [BurstAgility]: inflict +1 [Burst] Count on the target (3 times per turn)",
+                  "name": "Strider [Mao]"
+                },
+                {
+                  "desc": "When attacking targets with slower Speed than this unit's, inflict +1 more [Burst] or [Burst] Count",
+                  "name": "Vigor [Mao]"
+                },
+                {
+                  "desc": "If this unit's Speed is faster than the target's by 3 or more, Coin Power +1",
+                  "name": "Dominator [Mao]"
+                },
+                {
                   "desc": "Turn End: if this unit lost a Clash this turn, gain 2 [Binding] next turn",
                   "name": "Failed Ambush"
                 }
@@ -3900,6 +4069,18 @@
                 {
                   "desc": "First Turn Start: gain [RepressedMurderousIntendTwo]\nEnds Encounter when Hong Lu dies",
                   "name": "Jia Qiu's Test"
+                },
+                {
+                  "desc": "On Hit against enemy with [BurstAgility]: inflict +1 [Burst] Count on the target (3 times per turn)",
+                  "name": "Strider [Mao]"
+                },
+                {
+                  "desc": "When attacking targets with slower Speed than this unit's, inflict +1 more [Burst] or [Burst] Count",
+                  "name": "Vigor [Mao]"
+                },
+                {
+                  "desc": "If this unit's Speed is faster than the target's by 3 or more, Coin Power +1",
+                  "name": "Dominator [Mao]"
                 },
                 {
                   "desc": "Turn End: if this unit lost a Clash this turn, gain 2 [Binding] next turn",
@@ -5081,6 +5262,18 @@
                       "name": "Jia Qiu's Test"
                     },
                     {
+                      "desc": "On Hit against enemy with [BurstAgility]: inflict +1 [Burst] Count on the target (3 times per turn)",
+                      "name": "Strider [Mao]"
+                    },
+                    {
+                      "desc": "When attacking targets with slower Speed than this unit's, inflict +1 more [Burst] or [Burst] Count",
+                      "name": "Vigor [Mao]"
+                    },
+                    {
+                      "desc": "If this unit's Speed is faster than the target's by 3 or more, Coin Power +1",
+                      "name": "Dominator [Mao]"
+                    },
+                    {
                       "desc": "Turn End: if this unit lost a Clash this turn, gain 2 [Binding] next turn",
                       "name": "Failed Ambush"
                     }
@@ -5249,6 +5442,18 @@
                     {
                       "desc": "First Turn Start: gain [RepressedMurderousIntendTwo]\nEnds Encounter when Hong Lu dies",
                       "name": "Jia Qiu's Test"
+                    },
+                    {
+                      "desc": "On Hit against enemy with [BurstAgility]: inflict +1 [Burst] Count on the target (3 times per turn)",
+                      "name": "Strider [Mao]"
+                    },
+                    {
+                      "desc": "When attacking targets with slower Speed than this unit's, inflict +1 more [Burst] or [Burst] Count",
+                      "name": "Vigor [Mao]"
+                    },
+                    {
+                      "desc": "If this unit's Speed is faster than the target's by 3 or more, Coin Power +1",
+                      "name": "Dominator [Mao]"
                     },
                     {
                       "desc": "Turn End: if this unit lost a Clash this turn, gain 2 [Binding] next turn",

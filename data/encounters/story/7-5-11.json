@@ -38,8 +38,28 @@
       ],
       "passives": [
         {
+          "desc": "Encounter Start: gain [Bloodthirst]",
+          "name": "Yearning for Blood"
+        },
+        {
           "desc": "If this unit is on field, or is one of the units that can appear on this Stage, increase [BloodDinner] value by the amount of [Laceration] damage collectively received by every unit. \nWhen this unit enters the field, the sleeping blood drenching the battlefield will fill the surface.",
           "name": "Bloodfeast"
+        },
+        {
+          "desc": "Turn End: For every 3% missing HP on self, gain 1 Offense Level Up. (max 5)\nTurn End: Gain +1 Min & Max Speed next turn for every 300 [BloodDinner]\nThis unit's HP cannot be reduced below 60%.",
+          "name": "My Siblings Call to Me"
+        },
+        {
+          "desc": "Combat Start: Gain 1 [BloodArmor]\n- [BloodArmor] cannot drop below 1\n- At 10+ [BloodArmor], convert them to [BloodArmor_2nd].\n- At 20+ [BloodArmor_2nd], convert them to [BloodArmor_3rd].\nGain Min & Max Speed based on the Stage of this effect (max 2)\nIf this unit consumes [BloodArmor] and drops below the above thresholds, revert to previous Stages accordingly",
+          "name": "Hardblood"
+        },
+        {
+          "desc": "Turn End: If Panicked, recover from Panic, and consume 50 [BloodDinner] to gain 3 [Enhancement]\n- If this unit failed to consume [BloodDinner], gain 30 [Laceration], 3 [Enhancement], and 2 [AttackDmgUp]",
+          "name": "They Crave Blood"
+        },
+        {
+          "desc": "If the target is defeated at the end of this unit's Attack Skill, increase [BloodDinner] by the target's max HP",
+          "name": "More Bloodfeast"
         },
         {
           "desc": "This unit's Panic Type does not change when inflicted with an effect that changes Panic Types. Instead, this unit is inflicted with an effect that is inflicted against Non-SP Units.",
@@ -303,14 +323,19 @@
         }
       ],
       "statuses": [
+        "Enhancement",
         "Binding",
         "Laceration",
         "BloodDinner",
+        "AttackDmgUp",
         "Vulnerable",
         "BloodArmor",
+        "BloodArmor_2nd",
+        "BloodArmor_3rd",
         "Paralysis",
         "SwirlingBlood",
-        "SuperCoin"
+        "SuperCoin",
+        "Bloodthirst"
       ]
     }
   ]

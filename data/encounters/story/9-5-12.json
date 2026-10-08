@@ -1,4 +1,280 @@
 {
+  "assists": [
+    {
+      "defLevel": 0,
+      "hp": 329,
+      "level": 65,
+      "name": "",
+      "passives": [
+        {
+          "desc": "Begins Encounter with [HeatingWireOffSpider]\n\nTurn Start: At 2+ [ReinforcedTattooSpiderDaughterTwo], gain [HeatingWireOnSpiderTwo] and also inflict [Combustion] with Skills that inflict [Laceration]",
+          "name": "Thermal Weapon"
+        },
+        {
+          "desc": "If this unit hit with more than 2 Skills, gain 1 [ReinforcedTattooSpiderDaughterTwo] for every excess Skill that hit",
+          "name": "<s>The Middle</s>"
+        },
+        {
+          "desc": "When hit by a Skill, gain 2 [ResentmentSpiderDaughterTwo] (once per Skill)\n\nWhen an ally is hit, gain 1 [ResentmentSpiderDaughterTwo] (once per Skill)\n\nAt max [ResentmentSpiderDaughterTwo] Stack, use a powerful attack\n\nTurn End: At less than 80% / 60% / 40% HP, max out this unit's [ResentmentSpiderDaughterTwo] Stack",
+          "name": "Resentment"
+        }
+      ],
+      "portrait": "400037",
+      "resists": {
+        "blunt": 1,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 1.25,
+        "pride": 1,
+        "slash": 1,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "sanity": {
+        "add": [
+          "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+          "Increase by 10 after this unit defeats an enemy regardless of their level",
+          "Increase by 5 after an ally defeats an enemy regardless of their level"
+        ],
+        "id": 1076,
+        "lowMoraleDesc": "Turn Start: Gain 2 [DefenseDown]; gain 1 [AttackDmgUp] for every 30 HP damage taken last turn (max 5)",
+        "name": "Fervor",
+        "panicDesc": "Turn Start: Gain 1 [Enhancement] and 3 [DefenseDown]; gain 1 [AttackDmgUp] for every 25 HP damage taken last turn (max 5)",
+        "sub": [
+          "Decreases after losing a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 10% per Clash count after 1)</size>"
+        ]
+      },
+      "skills": [
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Deal 3 Blunt bonus damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Deal 3 Blunt bonus damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Deal 3 Blunt bonus damage",
+                "[OnSucceedAttack] If this unit has [ReinforcedTattooSpiderDaughterTwo], inflict 2 [Binding] next turn"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has 3+ ([Combustion] + [Laceration]), Final Power +2",
+          "levelCorrection": 2,
+          "name": "Time for Some Warm-up!"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Deal 5 Blunt bonus damage",
+                "[OnSucceedAttack] Raise Stagger Threshold by 5"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Deal 5 Blunt bonus damage",
+                "[OnSucceedAttack] Raise Stagger Threshold by 5",
+                "[OnSucceedAttack] At 3+ [ResentmentSpiderDaughterTwo], Reuse this Coin 3 times"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has 3+ ([Combustion] + [Laceration]), Final Power +2\n[WhenUse] If this unit has [ReinforcedTattooSpiderDaughterTwo], inflict 2 [Laceration] On Coin Hit",
+          "levelCorrection": 2,
+          "name": "Totally Badass Ass-kicking"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Thermal Blade Skill. \nWhen in [HeatingWireOnSpiderTwo] state, this Skill activates its Thermal Blade effects\nIf target has 3+ ([Combustion] + [Laceration]), Coin Power +1\n[WhenUse] If this unit has [ReinforcedTattooSpiderDaughterTwo], inflict +1 [Laceration] Count On Coin Hit\n[EndSkill] At 3+ [ResentmentSpiderDaughterTwo], gain 1 [VioletDamageUp] next turn",
+          "levelCorrection": 2,
+          "name": "Disemboweling!"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Deal 5 Blunt bonus damage",
+                "[OnSucceedAttack] If this unit has [ReinforcedTattooSpiderDaughterTwo], inflict 2 [Binding] next turn"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Thermal Blade Skill. \nWhen in [HeatingWireOnSpiderTwo] state, this Skill activates its Thermal Blade effects\nIf target has 3+ ([Combustion] + [Laceration]), Coin Power +1\n[WhenUse] If this unit has [ReinforcedTattooSpiderDaughterTwo], inflict +1 [Laceration] Count On Coin Hit",
+          "levelCorrection": 2,
+          "name": "Crossing Dervish!"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Deal 5 Blunt bonus damage",
+                "[OnSucceedAttack] Raise Stagger Threshold by 5"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Thermal Blade Skill. \nWhen in [HeatingWireOnSpiderTwo] state, this Skill activates its Thermal Blade effects\nIf target has 3+ ([Combustion] + [Laceration]), Coin Power +1\n[WhenUse] If this unit has [ReinforcedTattooSpiderDaughterTwo], inflict +1 [Laceration] Count On Coin Hit\n[WhenUse] At 40%- HP or 2+ [ReinforcedTattooSpiderDaughterTwo], deal +60% damage\n[WhenUse] At 2+ [ResentmentSpiderDaughterTwo], 50% chance to inflict 1 [Paralysis] On Coin Hit\n[EndSkill] Consume all [ResentmentSpiderDaughterTwo] on self",
+          "levelCorrection": 2,
+          "name": "Violet~ Breaking Slam!"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] Lower user's Stagger Threshold by 10"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "Thermal Blade Skill. \nWhen in [HeatingWireOnSpiderTwo] state, this Skill activates its Thermal Blade effects\nWhen hit, Reuse this Skill once for every [ReinforcedTattooSpiderDaughterTwo] on self (max 2 times)\n[WhenUse] If this unit has [ReinforcedTattooSpiderDaughterTwo], inflict 1 [Laceration] On Coin Hit\n[WhenUse] At 40%- HP or 2+ [ReinforcedTattooSpiderDaughterTwo], deal +40% damage",
+          "levelCorrection": 2,
+          "name": "I'll Get You Back for This...!"
+        }
+      ],
+      "speed": [
+        3,
+        5
+      ],
+      "statuses": [
+        "ReinforcedTattooSpiderDaughterTwo",
+        "ResentmentSpiderDaughterTwo",
+        "Binding",
+        "Laceration",
+        "Combustion",
+        "VioletDamageUp",
+        "Paralysis",
+        "HeatingWireOffSpider",
+        "HeatingWireOnSpiderTwo",
+        "SuperCoin"
+      ],
+      "tags": [
+        "LCE?",
+        "<s>The Fingers</s>",
+        "<s>The House of Spiders</s>",
+        "<s>The Middle</s>"
+      ]
+    }
+  ],
   "name": "Twining Threads (9.5-12)",
   "phases": [
     {

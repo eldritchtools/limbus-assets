@@ -1,4 +1,457 @@
 {
+  "assists": [
+    {
+      "defLevel": 0,
+      "hp": 115,
+      "level": 0,
+      "name": "",
+      "passives": [
+        {
+          "desc": "Encounter Start: Gain [AengduNewArm]\n\nIf there is an ally at less than 50% HP on the field excluding this unit, gain 1 [SupportProtect] (once per turn)",
+          "flavor": "\"On the outside, it looks no different from prostheses you might find in other Nests or Backstreets... But apparently, this particular prosthetic limb has been created using technology unique to Limbus Company. I wonder what that could be...\"\n\n\"Since the development of this prototype was led by the LCD Department, I would assume it has something to do with the power of Distortions... Oh, that's not to say that I have any certainty regarding the matter—I was only in charge of transporting it, you see. It's just a simple speculation, really. In any case, I doubt this is your average prosthetic limb meant for body enhancement.\"",
+          "name": "Limbus Company Specialized Custom Prosthetic Prototype mk5 - Dokkaebi Arms"
+        },
+        {
+          "desc": "Skill End: Gain 1 [WindBlade] for every 3 [Breath] (max 5, 2 times per turn)\n\nOn Base Attack Skill End: At 15+ [WindBlade], activate \"Even the Balance - Lucent Rippling Flame\" on the enemy (once per turn)\n\nOn Defense Skill Clash Lose, if this unit has 3+ [Agility], this unit cannot be Staggered from taking damage until Defense Skill End, and activate \"To Claim Their Bones\" against the enemy after being hit (2 times per turn, excluding forced Staggers)",
+          "name": "Demonfire Spinecleaver"
+        },
+        {
+          "desc": "On Crit, gain 1 [Agility] next turn (3 times per Skill, 2 times per turn)",
+          "name": "Swiftblade"
+        },
+        {
+          "desc": "When 3 or more other Blade Lineage allies are defeated:\n- When gaining [Breath] Potency/Count using this unit's own Skills and Coin effects: Gain 1 more of each\n- When 5 or more other Blade Lineage allies are defeated, gain 2 more of each instead\n- Combat Start: Apply [SwordPlayOfTheHomeland] on self",
+          "name": "To Where I Must Return"
+        }
+      ],
+      "portrait": "400038",
+      "resists": {
+        "blunt": 1,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 1,
+        "pride": 1,
+        "slash": 1,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "sanity": {
+        "add": [
+          "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+          "Increase by 10 after this unit defeats an enemy regardless of their level",
+          "Increase by 5 after an ally defeats an enemy regardless of their level"
+        ],
+        "id": 1093,
+        "lowMoraleDesc": "- Turn Start: Gain 1 [Enhancement] and 1 [Disarming]\n- Turn End: Gain 2 [Agility] next turn",
+        "name": "Resentment",
+        "panicDesc": "- Turn Start: Gain 2 [Enhancement] and 2 [Disarming]\n- Turn End: Gain 2 [Agility] next turn",
+        "sub": [
+          "If an ally is defeated, decrease by 5 regardless of the ally's level"
+        ]
+      },
+      "skills": [
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 6 ([Breath] on self + [Laceration] on target) (max 2)\n[WhenUse] At 3+ [Agility], Base Power +2\n[WhenUse] Gain +2 [Breath] Count",
+          "levelCorrection": 2,
+          "name": "Rending Arts"
+        },
+        {
+          "affinity": "gloom",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                "[CriticalOnSucceedAttack] Gain 2 [Agility] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Coin Power +1 for every 6 ([Breath] on self + [Laceration] on target) (max 2)\n[WhenUse] At 3+ [Agility], Base Power +2\n[WhenUse] Gain +2 [Breath] Count\n[WinDuel] Gain +2 [Breath] Count",
+          "levelCorrection": 3,
+          "name": "Acupuncture"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [Breath] Count",
+                "[CriticalOnSucceedAttack] Gain 1 [WindBlade]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]",
+                "[CriticalOnSucceedAttack] Gain 1 [WindBlade]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[CriticalOnSucceedAttack] Gain 1 [WindBlade]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +0.5% damage for every 1% missing HP on self (max 25%)\nDeal +25% damage on Critical Hit for every [Agility] on self (max 150%)\n[WhenUse] At 6+ ([Breath] on self + [Laceration] on target), Coin Power +1 (max 2)\n[WhenUse] At 5+ [WindBlade], convert into [SuperCoin]\n[WinDuel] Gain 5 [Breath]",
+          "levelCorrection": 3,
+          "name": "Lucent Rippling Flame"
+        },
+        {
+          "affinity": "wrath",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 5 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[CriticalOnSucceedAttack] At 5+ [Agility], Reuse this Coin (once per Skill)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nThis Skill does not trigger Defense Skills\nDeal +0.5% damage for every 1% missing HP on self (max 25%)\nDeal +20% damage on Critical Hit for every [Agility] on self (max 100%)\n[EndSkill] Consume all [WindBlade] on self",
+          "levelCorrection": 4,
+          "name": "Even the Balance - Lucent Rippling Flame"
+        },
+        {
+          "affinity": "pride",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 3 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Laceration]",
+                "[OnSucceedAttack] Inflict 2 [Paralysis] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[CantDuel]\nThis Skill does not trigger Defense Skills\nDeal +0.5% damage for every 1% missing HP on self (max 25%)\nDeal +10% damage on Critical Hit for every [Agility] on self (max 50%)\n[WhenUse] Base Power +1 for every 4 ([Breath] on self + [Laceration] on target) (max 4)",
+          "levelCorrection": 3,
+          "name": "To Claim Their Bones"
+        }
+      ],
+      "speed": [
+        3,
+        6
+      ],
+      "statuses": [
+        "SupportProtect",
+        "Laceration",
+        "AengduNewArm",
+        "Agility",
+        "WindBlade",
+        "Paralysis",
+        "Breath",
+        "SwordPlayOfTheHomeland",
+        "SuperCoin"
+      ],
+      "tags": [
+        "Blade Lineage",
+        "LCD",
+        "Limbus Company",
+        "Syndicate"
+      ]
+    },
+    {
+      "defLevel": 0,
+      "hp": 66,
+      "level": 0,
+      "name": "Ezra",
+      "passives": [
+        {
+          "desc": "Encounter Start: Gain 1 [DimensionalBagEzraA]\n\nIf this unit used the current Workshop weapon more than once, switch weapons the next turn\n\nList of weapons:\n- Allas Workshop Gloves\n- Nester Workshop Hammer\n- Screw Atelier Drill Hammer\n- Namir Workshop Gauntlets\n- YuRia Atelier Axe",
+          "name": "Dimensional Bag [Ezra]"
+        }
+      ],
+      "portrait": 400011,
+      "resists": {
+        "blunt": 0.5,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 2,
+        "pride": 1,
+        "slash": 1,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "sanity": {
+        "add": [
+          "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+          "Increase by 10 after this unit defeats an enemy regardless of their level",
+          "Increase by 5 after an ally defeats an enemy regardless of their level"
+        ],
+        "id": 1082,
+        "lowMoraleDesc": "Gain 1 [Reduction] and 2 [DefenseUp]",
+        "name": "Insecurity: Mask",
+        "panicDesc": "Gain 1 [Reduction] and 3 [DefenseUp]",
+        "sub": [
+          "Decreases after losing a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 10% per Clash count after 1)</size>"
+        ]
+      },
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 14,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Deal 3 Blunt bonus damage"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Deal 3 Blunt bonus damage"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "At 6+ Speed, deal +50% damage\n[WhenUse] Gain 3 [Agility] next turn",
+          "levelCorrection": 2,
+          "name": "Allas Workshop - Acceleration Punch!"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 15,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 6 [Vibration]",
+                "- At 6+ Speed, inflict 2 additional [Vibration] Potency"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Gain 2 [Agility] next turn"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has a negative effect, deal +50% damage\n[WhenUse] If target has 5+ [Vibration], inflict +1 [Vibration] Count on Coin Hit",
+          "levelCorrection": 3,
+          "name": "Nester Workshop - One! Two! Diffuse!"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 13,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count",
+                "[OnSucceedAttack] At 6+ [Charge] Count, inflict 3 additional [Vibration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [Charge] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [Charge] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has a negative effect, deal +50% damage\n[WhenUse] Gain +5 [Charge] Count\n[WhenUse] At 10+ [Charge] Count, convert all Coins of this Skill to [SuperCoin]s",
+          "levelCorrection": 2,
+          "name": "Screw Atelier - Screw! Drill!"
+        },
+        {
+          "affinity": "sloth",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 18,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion] twice; then, reduce target's [Vibration] Count by 2",
+                "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "If target has a negative effect, deal +50% damage\n[WhenUse] If this unit does not have [Charge] Count, inflict +1 additional [Vibration] Count on target on Skill Hit\n[WhenUse] At 15+ [Charge] Count, consume all [Charge] Count and apply the following effects:\n- Trigger an additional [VibrationExplosion]\n- [VibrationExplosion] triggered by this Skill does not consume target's [Vibration] Count",
+          "levelCorrection": 4,
+          "name": "Namir Workshop - Five Times the Weight!"
+        },
+        {
+          "affinity": "lust",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 21,
+          "coinValue": 1,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict 3 [Laceration]",
+                "[OnSucceedAttack] Inflict 3 [Vibration]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Activate [Laceration] on target once. Target loses 1 [Laceration] Count",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "Deal +50% damage for every type of negative effect on target (max 100%)\n[WhenUse] If target has 6+ [Vibration], Base Power +3",
+          "flavor": "Special Handmade Golden Retriever-Exclusive Axe.",
+          "levelCorrection": 5,
+          "name": "YuRia Atelier - All-out Attack Mode, Mk. 17!"
+        }
+      ],
+      "speed": [
+        4,
+        6
+      ],
+      "statuses": [
+        "Laceration",
+        "Charge",
+        "DimensionalBagEzraA",
+        "DimensionalBagEzraD",
+        "DimensionalBagEzraB",
+        "DimensionalBagEzraC",
+        "DimensionalBagEzraE",
+        "Agility",
+        "Vibration",
+        "VibrationExplosion",
+        "SuperCoin"
+      ],
+      "tags": [
+        "LCD",
+        "Limbus Company"
+      ]
+    }
+  ],
   "name": "Mnestic Experience (9.5-24)",
   "siteId": "167fa3cb-85e0-454e-b34a-28647684d51e",
   "targets": [

@@ -1,4 +1,177 @@
 {
+  "assists": [
+    {
+      "defLevel": 0,
+      "hp": 180,
+      "level": 50,
+      "name": "",
+      "passives": [
+        {
+          "desc": "On Kill with this unit's Attack Skill, gain [Breath] equal to [Burst] on the target (max 5)",
+          "name": "Bursting Strike, Breathing Siphon"
+        },
+        {
+          "desc": "Inflict +1 more [Burst] Potency or [Burst] Count (2 times per turn)\nIf this unit's Offense Level is higher than the target's, Clash Power +1",
+          "name": "Ba Jiao Banana Bolus"
+        },
+        {
+          "desc": "Clash Lose: gain 3 [DefenseUp] (2 times per turn)",
+          "name": "Jin Gang Bolus"
+        }
+      ],
+      "portrait": "400001",
+      "resists": {
+        "blunt": 0.5,
+        "envy": 1,
+        "gloom": 1,
+        "gluttony": 1,
+        "lust": 1,
+        "pierce": 1,
+        "pride": 1,
+        "slash": 2,
+        "sloth": 1,
+        "wrath": 1
+      },
+      "sanity": {
+        "add": [
+          "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+          "Increase by 10 after this unit defeats an enemy regardless of their level",
+          "Increase by 5 after an ally defeats an enemy regardless of their level"
+        ],
+        "id": 9996,
+        "lowMoraleDesc": "On Clash Win, gain 1 [AttackDmgUp]",
+        "name": "Thorns",
+        "panicDesc": "On Clash Win, gain 1 [AttackDmgUp]. At Turn End, gain 2 [ParryingResultUp] next turn.",
+        "sub": [
+          "Decreases after losing a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 10% per Clash count after 1)</size>"
+        ]
+      },
+      "skills": [
+        {
+          "affinity": "gloom",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                "[OnSucceedAttackHead] Gain 1 [AttackUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Burst] Count",
+                "[OnSucceedAttackHead] Gain 1 [AttackUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 5+ types of negative effects, Clash Power +1\n[WhenUse] Base Power +1 for every 3 [Burst] on target (max 2)",
+          "levelCorrection": 0,
+          "name": "Crimson Strike"
+        },
+        {
+          "affinity": "gluttony",
+          "atkType": "blunt",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count",
+                "[OnSucceedAttack] Inflict 3 [DefenseDown]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +1 [Burst] Count",
+                "[OnSucceedAttack] Gain 3 [AttackUp] next turn"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [Breath] Count. Gain [Breath] equal to [Burst] on target (max 5)",
+                "[OnSucceedAttackHead] Gain 3 [Breath] next turn. Gain [Breath] Count equal to [Burst] Count on target next turn (max 2)"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "Deal +50% Damage on Critical Hit",
+                "[CriticalEnemyTargetKillFail] Inflict +2 [Burst] Count",
+                "[CriticalEnemyTargetKill] Gain 3 [AttackUp] next turn"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] If target has 5+ types of negative effects, Coin Power +1\n[WhenUse] Coin Power +1 for every 6 [Burst] on target (max 2)",
+          "levelCorrection": 2,
+          "name": "Crimson Phoenix"
+        },
+        {
+          "affinity": "envy",
+          "atkType": "slash",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "coinValue": 12,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 7 Bleed",
+                "Deal +200% Damage on Critical Hit",
+                "[CriticalOnSucceedAttack] Inflict +3 Bleed Count",
+                "[CriticalOnSucceedAttack] Gain 2 [Breath] and +1 [Breath] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[BeforeAttack] Gain +1 Atk Weight for every 4 types of negative effects on target (max 2)\n[WhenUse] If target has 5+ types of negative effects, Base Power +5\n[WhenUse] If target has 15+ ([Burst] + [Burst] Count), Coin Power +5\n[WinDuel] Inflict +2 [Burst] Count",
+          "levelCorrection": 3,
+          "name": "Crimson Spring"
+        },
+        {
+          "affinity": "none",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[OnSucceedEvade] Gain 1 [Breath] next turn. (3 times per Skill)",
+          "levelCorrection": 0,
+          "name": "Adept Evasion"
+        }
+      ],
+      "speed": [
+        3,
+        7
+      ],
+      "statuses": [
+        "DefenseDown",
+        "DefenseUp",
+        "AttackUp",
+        "Breath",
+        "Burst"
+      ],
+      "tags": [
+        "Family Hierarch Candidate",
+        "H Corp.",
+        "Jia Family"
+      ]
+    }
+  ],
   "name": "The Dream Ending (7-34)",
   "siteId": "6eecccaf-77c2-4c86-a724-e1c61678f6f1",
   "targets": [
