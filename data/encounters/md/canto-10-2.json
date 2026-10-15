@@ -1,0 +1,889 @@
+{
+  "battles": [
+    {
+      "targets": [
+        {
+          "hp": 2225,
+          "level": 65,
+          "name": "Putty",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                30
+              ],
+              "defCorrection": 8,
+              "defLevel": 8,
+              "hp": 2225,
+              "name": "Body",
+              "partId": 155301,
+              "resists": {
+                "blunt": 1,
+                "envy": 1.2,
+                "gloom": 1,
+                "gluttony": 1,
+                "lust": 1,
+                "pierce": 0.75,
+                "pride": 0.75,
+                "slash": 1.2,
+                "sloth": 1.2,
+                "wrath": 1
+              },
+              "speed": [
+                3,
+                6
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "If target's <color=#ff6000><mark color=#ff000040><b><u>Speed is slower than this unit's, Clash Power +3</color></mark></b></u>\n\n<color=#ff6000><mark color=#ff000040><b><u>If this unit has 11+ [ChargeKhaki] Count at the end of the turn this unit used a Skill that consumes [ChargeKhaki] Count</color></mark></b></u>, use a powerful Skill\n\nAt 50% or less HP, use a powerful Skill (once per Encounter)",
+              "flavor": "Big Sis can reach 10,000 SPM.",
+              "name": "Ultra-High-Speed SPM"
+            },
+            {
+              "desc": "Deal +40% damage to Staggered or immobilized targets",
+              "flavor": "Nothing is easier than stitching something that cannot move.",
+              "name": "Nailed Stitch"
+            },
+            {
+              "desc": "If this unit has [SpreadingDye], inflict 1 [StickyDye] against targets this unit's Skill hit\n\nApply the following effects to targets that have [ThreadDye]:\n- Skills inflict +([ThreadDye] Potency) more [Laceration] Potency and Count\n- When inflicting [StickyDye] via the effect above, inflict 1 [StickyDye] on a random enemy that has [ThreadDye], excluding the target that has been inflicted \n\nDoes not inflict [ThreadDye] on Skill targets that have [Inactible]",
+              "flavor": "You stitch the fabric, Big Sis. I'll dye with you.",
+              "name": "Color Stitch"
+            },
+            {
+              "desc": "Encounter Start: Heal max HP and 45 SP\n\nGain 1 [ChargeKhaki] for every 10 cumulative [ChargeKhaki] Count this unit consumed in this Encounter",
+              "name": "Stitch Count Regulator Adjustment"
+            },
+            {
+              "desc": "This unit's level is raised due to the influence of the sunshine",
+              "flavor": "To those who heed the warmth of the sunlight, its shine rings out all the more searing, dazzling, and intense.",
+              "name": "Shower of Stinging Sunshine"
+            }
+          ],
+          "portrait": 1519,
+          "sanity": {
+            "add": [
+              "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 10% per Clash count after 1)</size>",
+              "Increases by 6 after this unit inflicts 2 Potency of a negative effect on an enemy"
+            ],
+            "flavor": "Can that which moves faster than oneself truly be fixed in place?",
+            "id": 1115,
+            "lowMoraleDesc": "Skills deal -5% damage against targets with slower Speed than this unit's",
+            "name": "Jammed Machine",
+            "panicDesc": "Skills deal -10% damage against targets with slower Speed than this unit's",
+            "sub": [
+              "Decreases after losing a Clash, against a slower enemy, based on the Clash count\n<size=95%>(Base Value is 2, raised by 5% per Clash count after 1)</size>"
+            ]
+          },
+          "skills": [
+            {
+              "affinity": "pride",
+              "atkWeight": 1,
+              "baseValue": 10,
+              "coinValue": 10,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle]\n<color=#ff6000><mark color=#ff000040><b><u>- Gain Shield equal to 30% of this unit's max HP</color></mark></b></u>\n- Regain [ChargeKhaki] Count up to the maximum cap\n- Gain 1 [SpreadingDye] next turn",
+              "levelCorrection": 3,
+              "name": "Revving Up"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] <color=#ff6000><mark color=#ff000040><b><u>Inflict 1 [Binding] next turn</color></mark></b></u>"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Clash Power +1 for every 2 [ChargeKhaki] Potency on self (max 3)\n[WhenUse] Gain 1 [Agility] next turn",
+              "levelCorrection": 2,
+              "name": "Threading"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 4 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [ThreadDye]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [ThreadDye]",
+                    "[OnSucceedAttack] If this is an [SuperCoin], <color=#ff6000><mark color=#ff000040><b><u>Gain +4 [ChargeKhaki] Count</color></mark></b></u>"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "If this unit's Speed is faster than the target's, deal +20% damage\nCoin Power +1 for every 2 [ChargeKhaki] Potency on self (max 2)\n[WhenUse] Consume 4 [ChargeKhaki] Count to gain Coin Power +2\n[WhenUse] <color=#ff6000><mark color=#ff000040><b><u>If this unit's Speed is faster than the target's, or if this unit has lower than 50% HP</color></mark></b></u>:\n- Convert all Coins to [SuperCoin]s\n- Deal +(Speed difference x 15)% damage (max 40%)\n<color=#ff6000><mark color=#ff000040><b><u>[DefeatDuel] Gain 1 [Binding] next turn</color></mark></b></u>",
+              "levelCorrection": 3,
+              "name": "Lockstitch"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [ThreadDye]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [ThreadDye]",
+                    "[OnSucceedAttack] If this is an [SuperCoin], <color=#ff6000><mark color=#ff000040><b><u>Gain +4 [ChargeKhaki] Count</color></mark></b></u>"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "If this unit's Speed is faster than the target's, deal +20% damage\nCoin Power +1 for every 2 [ChargeKhaki] Potency on self (max 2)\n[WhenUse] Consume 4 [ChargeKhaki] Count to gain Coin Power +2\n[WhenUse] <color=#ff6000><mark color=#ff000040><b><u>If this unit's Speed is faster than the target's, or if this unit has lower than 50% HP</color></mark></b></u>:\n- Convert all Coins to [SuperCoin]s\n- Deal +(Speed difference x 15)% damage (max 40%)\n[WinDuel] Gain 1 [Agility] next turn",
+              "levelCorrection": 3,
+              "name": "Chainstitch"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 7,
+              "baseValue": 5,
+              "coinValue": 5,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict +3 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict +3 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict +3 [Laceration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "This Coin hits all targets",
+                    "[UnBrokenCoinOnSucceedAttack] Activate [Laceration] on target once (target loses 1 [Laceration] Count)",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 3 [ThreadDye] next turn",
+                    "[OnSucceedAttack] Apply the following on targets that have [Inactible]",
+                    "- Become Staggered next turn",
+                    "- Take (20% of this Coin's final damage) Lust damage"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WideAreaRampage]\nCan Clash with this Skill regardless of Speed\nFinal Power +1 for every 2 [ChargeKhaki] Potency on self (max 3)\n[WhenUse] Consume all [ChargeKhaki] Count on self and deal +5% damage for every [ChargeKhaki] Count consumed\n[WhenUse] Coin Power +1 for every 3 ([Laceration] Potency + [Laceration] Count) on the main target (max 3)\n[DefeatDuel]\n- Gain 10 [AttackDmgDown] and 4 [Paralysis]\n- This Skill cannot Stagger the target\n[EndSkillAll] <color=#ff6000><mark color=#ff000040><b><u>End this turn</color></mark></b></u>",
+              "levelCorrection": 4,
+              "name": "2-needle Bottom Coverstitch Rainbow Overlock"
+            }
+          ],
+          "statuses": [
+            "Binding",
+            "Laceration",
+            "AttackDmgDown",
+            "ThreadDye",
+            "SpreadingDye",
+            "Agility",
+            "Inactible",
+            "ChargeKhaki",
+            "Paralysis",
+            "StickyDye",
+            "SuperCoin",
+            "WideAreaRampage"
+          ],
+          "tags": [
+            "Sisyphe"
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "hp": 2366,
+          "level": 65,
+          "name": "King of Needleworks",
+          "parts": [
+            {
+              "breakSection": [
+                60,
+                0
+              ],
+              "defCorrection": 2,
+              "defLevel": 2,
+              "hp": 2366,
+              "name": "Body",
+              "partId": 155701,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 0.75,
+                "gloom": 0.75,
+                "gluttony": 1.2,
+                "lust": 1.2,
+                "pierce": 1.2,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1.2,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Skill Final Power +1 for every Needlekin on the field",
+              "flavor": "No hand sewing survives on one pair of hands alone. A host of practiced artisans are needed to breathe life into it.",
+              "name": "Handmade"
+            },
+            {
+              "desc": "\"Cry of the Cocoon\" is heard every \"multiple of 3\" turns\nUpon entering Phase 2, \"Cry of the Cocoon\" continues to be heard every turn\n\nThis unit cannot be immobilized in the turn \"Cry of the Cocoon\" is heard\n\nIf this unit's HP is brought past its Stagger Threshold, gain 2 [Vulnerable] next turn",
+              "flavor": "Voices seep from the cocoon.\n\n\"Anything under 80-count two-ply? Not even fabric!\"\n\"Why aren't the buttonholes horizontal?\"\n\"Jersey knit on machine? Really?\"\n\"Why isn't the selvage red?\"\n\"This hasn't even been shrink-proofed.\"\n\"Anything below Super 150 is cheap cloth, obviously.\"\n\"You think the Super scale is just yarn thickness? Diameter and yarn count aren't even the same thing. Don't you know that?\"\n\"You're finishing the hem with a Union Special, right? Of course you are!\"\n\"Is this Rigid? ... Oh. Selvage?\"\n\"Wait... the stitch-per-inch count is way too even. You used a machine, didn't you?\"\n\"It's not bespoke if it's not hand-stitched.\"\n\"... That's not even a Milanese buttonhole.\"\n\"Shirting needs to be over 200-count.\"\n\"Ugh, I can see the stitching on the outside.\"\n\"There, I can see two rows of stitching there. Rejected.\"\n\"What's with this seam finish?\"\n\"Three-ply, minimum.\"",
+              "name": "Unending, Unavoidable Stream of Customer Complaints"
+            },
+            {
+              "desc": "Turn Start: Inflict [NiddleExpected] on 2 random enemies",
+              "name": "The Sewing Commences"
+            }
+          ],
+          "portrait": "1496",
+          "sanity": {
+            "add": [
+              "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+              "Increase by 10 after this unit defeats an enemy whose level was higher than or equal to this unit’s",
+              "Increase by 5 after an ally defeats an enemy whose level was higher than or equal to the unit’s"
+            ],
+            "id": 1105,
+            "lowMoraleDesc": "Turn Start: Gain 1 [Reduction]",
+            "name": "Messy Sewing",
+            "panicDesc": "Turn Start: Gain 1 [Reduction] and 1 [AttackDmgDown]",
+            "sub": [
+              "Decreases after losing a Clash based on the Clash count\n<size=95%>(Base Value is 3, raised by 10% per Clash count after 1)</size>"
+            ]
+          },
+          "skills": [
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 1,
+              "name": "Bla Bla Warp Bla"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 4,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [NiddlePin]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [NiddlePin]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [NiddlePin]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WideAreaRampage]\n\nDeal +5% damage for every [NiddlePin] on target (max 25%)\n\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 3,
+              "name": "Yap Yap Weft Yap"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [NiddlePin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [NiddlePin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [NiddlePin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 1 [NiddlePin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "",
+              "levelCorrection": 1,
+              "name": "Stitch! Per! Inch!"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "pierce",
+              "atkWeight": 7,
+              "baseValue": 8,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 4 [Laceration]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 1 [NiddlePin]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 3,
+              "name": "20 stitches an inch, minimum!!!"
+            },
+            {
+              "affinity": "sloth",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] Summon 3 Needlekin next turn",
+              "levelCorrection": 0,
+              "name": "Too even, you say? Not pick-stitching, you say? Assemble!!!"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 1,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Apply 1 Attack Power Up this turn and next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes allies that are not Staggered; deals 0 damage\nDoes not trigger the target's Defense Skill\n\n[EndSkill] Targeted Needlekin activates a random Attack Skill (ignores Stagger)",
+              "levelCorrection": 0,
+              "name": "You want me to hand-stitch this?! HAND-STITCH???!!!"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "pierce",
+              "atkWeight": 7,
+              "baseValue": 8,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Deal +100% damage against [NiddlePinned] targets"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] <color=#ff6000><mark=#ff000040><b><u>Deal +50% damage for every Needlekin on the field\n • If there are no Needlekin on the field, cancel this Skill</u></b></mark></color>\n\n[EndSkill] Kill every Needlekin\n • Gain 1 [Enhancement] next turn for every Needlekin killed by this effect",
+              "levelCorrection": 0,
+              "name": "Double stitching past the side seam? Double-needle! Rejected!"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 2,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Consume 1 [NiddlePin] on target to deal 5 fixed damage"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Consume 1 [NiddlePin] on target to deal 5 fixed damage"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[DefeatDuel] Reduce [NiddlePin] on target by 2",
+              "levelCorrection": -2,
+              "name": "No cross-stitch buttons? Rejected!"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "pierce",
+              "atkWeight": 7,
+              "baseValue": 1,
+              "coinValue": 1,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Inflict 2 [NiddlePinned] against targets that have 5+ [NiddlePin]</u></b></mark></color>"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel]",
+              "levelCorrection": 4,
+              "name": "Pick stitch too obvious, you say?! I'll pick-stitch your ass!"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 12,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>If target is [NiddlePinned], deal fixed damage equal to 99% of target's max HP</u></b></mark></color>",
+                    "[EnemyKill] Heal 5% HP on self"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Prioritizes [NiddlePinned] enemies\n- Prioritizes targets that have the highest [NiddlePin] Stack\nTargets that have 5+ [NiddlePin] Stack cannot redirect this Skill to itself\n\nDeal +10% damage for every [NiddlePin] on target (max 50%)",
+              "levelCorrection": 5,
+              "name": "Just... Eat!!"
+            }
+          ],
+          "statuses": [
+            "Enhancement",
+            "Laceration",
+            "Vulnerable",
+            "NiddlePin",
+            "NiddlePinned",
+            "NiddleExpected",
+            "SuperCoin",
+            "WideAreaRampage"
+          ],
+          "tags": [
+            "Sisyphe"
+          ]
+        },
+        {
+          "hp": 121,
+          "level": 65,
+          "name": "Warp Needlekin",
+          "parts": [
+            {
+              "breakSection": [
+                40,
+                0
+              ],
+              "defCorrection": 0,
+              "defLevel": 0,
+              "hp": 121,
+              "name": "Body",
+              "partId": 154701,
+              "resists": {
+                "blunt": 0.8,
+                "envy": 1.2,
+                "gloom": 1,
+                "gluttony": 1.2,
+                "lust": 1,
+                "pierce": 1.5,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1.2
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Inflict +1 more [NiddlePin] Stack against targets that have 1.5+ Pierce Resist. or Envy Resist.",
+              "flavor": "Ends per inch, picks per inch, stitch per inch. Important!",
+              "name": "Sewing"
+            },
+            {
+              "desc": "When using Skills to inflict [Laceration] Potency against enemies that have [NiddlePin], inflict +([NiddlePin] Stack on target) more [Laceration] Potency (max 3)",
+              "flavor": "A needle is no different from a nail.",
+              "name": "A Tiny Sharp Needle"
+            }
+          ],
+          "portrait": "91063",
+          "sanity": {
+            "add": [
+              "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+              "Increase by 10 after this unit defeats an enemy whose level was higher than or equal to this unit’s",
+              "Increase by 5 after an ally defeats an enemy whose level was higher than or equal to the unit’s"
+            ],
+            "id": 1105,
+            "lowMoraleDesc": "Turn Start: Gain 1 [Reduction]",
+            "name": "Messy Sewing",
+            "panicDesc": "Turn Start: Gain 1 [Reduction] and 1 [AttackDmgDown]",
+            "sub": [
+              "Decreases after losing a Clash based on the Clash count\n<size=95%>(Base Value is 5, raised by 10% per Clash count after 1)</size>"
+            ]
+          },
+          "skills": [
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]",
+                    "[OnSucceedAttack] Inflict 1 [PenetrateResistDown] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "If target has 4+ [Laceration], Final Power +1\n\n[WhenUse] If target has 6+ [Laceration], convert all Coins to [SuperCoin]s",
+              "levelCorrection": 1,
+              "name": "Running Stitch - Warp"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [NiddlePin]",
+                    "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "If target has 4+ [Laceration], Final Power +1 ",
+              "levelCorrection": 1,
+              "name": "Tacking Stitch - Warp"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +2 [Laceration] Count",
+                    "[UnBrokenCoinOnSucceedAttack] Reuse this Coin once (once per Skill)",
+                    "[UnBrokenCoinOnSucceedAttack] Deal Pierce damage equal to [Laceration] Potency on target (max 30)",
+                    "[ReUseOnSucceedAttack] Inflict 1 [NiddlePin]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Final Power +1 for every 4 [Laceration] on target (max 2)\n\n[WhenUse] Deal +1% damage for every [Laceration] on target (max 20%)",
+              "levelCorrection": 2,
+              "name": "Backstitch - Warp"
+            },
+            {
+              "affinity": "sloth",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] Gain 1 [PenetrateResultUp] next turn",
+              "levelCorrection": -3,
+              "name": "Blind Stitch - Warp"
+            }
+          ],
+          "statuses": [
+            "Binding",
+            "Laceration",
+            "NiddlePin",
+            "PenetrateResultUp",
+            "PenetrateResistDown",
+            "SuperCoin"
+          ],
+          "tags": [
+            "Sisyphe"
+          ]
+        },
+        {
+          "hp": 121,
+          "level": 65,
+          "name": "Weft Needlekin",
+          "parts": [
+            {
+              "breakSection": [
+                40,
+                0
+              ],
+              "defCorrection": 0,
+              "defLevel": 0,
+              "hp": 121,
+              "name": "Body",
+              "partId": 154801,
+              "resists": {
+                "blunt": 0.8,
+                "envy": 1.2,
+                "gloom": 1,
+                "gluttony": 1.2,
+                "lust": 1.2,
+                "pierce": 1.5,
+                "pride": 1,
+                "slash": 1,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "Inflict +1 more [NiddlePin] Stack against targets that have 1.5+ Pierce Resist. or Envy Resist.",
+              "flavor": "Ends per inch, picks per inch, stitch per inch. Important!",
+              "name": "Sewing"
+            },
+            {
+              "desc": "When using Skills to inflict [Laceration] Potency against enemies that have [NiddlePin], inflict +([NiddlePin] Stack on target) more [Laceration] Potency (max 3)",
+              "flavor": "A needle is no different from a nail.",
+              "name": "A Tiny Sharp Needle"
+            }
+          ],
+          "portrait": "91064",
+          "sanity": {
+            "add": [
+              "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+              "Increase by 10 after this unit defeats an enemy whose level was higher than or equal to this unit’s",
+              "Increase by 5 after an ally defeats an enemy whose level was higher than or equal to the unit’s"
+            ],
+            "id": 1105,
+            "lowMoraleDesc": "Turn Start: Gain 1 [Reduction]",
+            "name": "Messy Sewing",
+            "panicDesc": "Turn Start: Gain 1 [Reduction] and 1 [AttackDmgDown]",
+            "sub": [
+              "If the level of the defeated ally was higher than or equal to the unit’s,\ndecrease based on the level difference\n<size=95%>(Base Value is 10, raised by 10 per level)</size>"
+            ]
+          },
+          "skills": [
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                    "[OnSucceedAttack] Inflict 1 [PenetrateTakeDamageUp] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "If target has 4+ [Laceration], Final Power +1\n\n[WhenUse] If target has 6+ [Laceration], convert all Coins to [SuperCoin]s",
+              "levelCorrection": 1,
+              "name": "Running Stitch - Weft"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 1 [NiddlePin]",
+                    "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "If target has 4+ [Laceration], Final Power +1 ",
+              "levelCorrection": 1,
+              "name": "Tacking Stitch - Weft"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "pierce",
+              "atkWeight": 1,
+              "baseValue": 5,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Laceration] and +2 [Laceration] Count",
+                    "[UnBrokenCoinOnSucceedAttack] Reuse this Coin once (once per Skill)",
+                    "[UnBrokenCoinOnSucceedAttack] Deal Pierce damage equal to [Laceration] Potency on target (max 30)",
+                    "[ReUseOnSucceedAttack] Inflict 1 [NiddlePin]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "Final Power +1 for every 4 [Laceration] on target (max 2)\n\n[WhenUse] Deal +1% damage for every [Laceration] on target (max 20%)",
+              "levelCorrection": 2,
+              "name": "Backstitch - Weft"
+            },
+            {
+              "affinity": "sloth",
+              "atkWeight": 1,
+              "baseValue": 6,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "guard",
+              "desc": "[StartBattle] Gain 1 [PenetrateResultUp] next turn",
+              "levelCorrection": -3,
+              "name": "Blind Stitch - Weft"
+            }
+          ],
+          "statuses": [
+            "Binding",
+            "Laceration",
+            "NiddlePin",
+            "PenetrateTakeDamageUp",
+            "PenetrateResultUp",
+            "SuperCoin"
+          ],
+          "tags": [
+            "Sisyphe"
+          ]
+        }
+      ]
+    }
+  ],
+  "name": "An Anarchy of Colors",
+  "siteId": "441ffac7-94d7-4613-8e2a-84fd66e6c625"
+}

@@ -1,0 +1,778 @@
+{
+  "battles": [
+    {
+      "targets": [
+        {
+          "hp": 1780,
+          "level": 65,
+          "name": "Sous Chef",
+          "parts": [
+            {
+              "breakSection": [
+                30
+              ],
+              "defCorrection": 11,
+              "defLevel": 11,
+              "hp": 1780,
+              "name": "Body",
+              "partId": 155101,
+              "resists": {
+                "blunt": 0.5,
+                "envy": 1,
+                "gloom": 0.75,
+                "gluttony": 1.2,
+                "lust": 1.2,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1.2,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                2,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "<color=#ff6000><mark=#ff000040><b><u>Upon killing a target using Attack Skills, gain 1 [SapsareeCooking]</u></b></mark></color>\n- On Skill Use, gain 1 more [SapsareeCooking] for every 3 status effects on the said target (max 2)",
+              "flavor": "She may wear the title, but the restaurant on 5F would laugh her out of the kitchen.",
+              "name": "Sous Chef"
+            },
+            {
+              "desc": "<color=#ff6000><mark=#ff000040><b><u>If this unit has [SapsareeCooking], use the \"Aah! I'm on lunch break, you hear?\" Skill at the very end of the turn</u></b></mark></color>\n(does not activate if all other targets are defeated, or if this unit is Staggered)\nTurn End: If this unit failed to use the \"Aah! I'm on lunch break, you hear?\" Skill, gain 1 [SapsareeHungry]",
+              "flavor": "The restaurant on 5F would not dignify this with the word \"cooking.\"",
+              "name": "I can cook up delicious dishes so good, you hear?"
+            },
+            {
+              "desc": "Use a powerful Gluttony Skill every 4 turns\n(If this effect could not be activated due to Stagger, activate it next turn)\n- Turn End: At 5+ [SapsareeYammi], use a powerful Gluttony Skill next turn\n\nTurn End: At 3+ [SapsareeHungry], use a powerful Wrath Skill next turn",
+              "flavor": "There is a world of difference between the culinary arts and making something edible. As for you... well, you fall solidly into the latter category.",
+              "name": "Culinary Ambitions"
+            },
+            {
+              "desc": "Turn Start: Heal 3 SP for every [SapsareeYammi] on self",
+              "flavor": "Do they even deserve to engage in discourse on flavor? They live in a Food Court, for heaven's sake.",
+              "name": "Yummies yummers, you hear?"
+            }
+          ],
+          "portrait": "1474",
+          "sanity": {
+            "add": [
+              "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+              "Increase by 10 after this unit defeats an enemy whose level was higher than or equal to this unit’s",
+              "Increase by 5 after an ally defeats an enemy whose level was higher than or equal to the unit’s"
+            ],
+            "flavor": "Don't delude yourself; you're not yearning for \"culinary arts.\" You just want to feel like you're cooking and pretend to dine.",
+            "id": 1102,
+            "lowMoraleDesc": "Offense Level +1 and take +3% damage for every [SapsareeHungry] Stack on self",
+            "name": "Culinary Yearning",
+            "panicDesc": "Offense Level +2 and take +5% damage for every [SapsareeHungry] Stack on self",
+            "sub": [
+              "If the level of the defeated ally was higher than or equal to the unit’s,\ndecrease based on the level difference\n<size=95%>(Base Value is 10, raised by 10 per level)</size>"
+            ]
+          },
+          "skills": [
+            {
+              "affinity": "sloth",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has [SapsareeSpices], Final Power +1",
+              "levelCorrection": 2,
+              "name": "Cutting up the meat, you hear?"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every [SapsareeSpices] on target (max 2)",
+              "levelCorrection": 3,
+              "name": "Cutting up big chunks, you hear?"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] If target has [SapsareeSpices], Coin Power +1\n[WhenUse] Coin Power +1 for every 6 [Laceration] on target (max 2)",
+              "levelCorrection": 4,
+              "name": "Chop, mince, dice, you hear?"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 5,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Coin Power +1 for every 2 [SapsareeYammi] on self\n[WhenUse] If the main target has [SapsareeSpices], Final Power +3\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target\n[EndSkill] Consume all [SapsareeYammi] on self",
+              "flavor": "This is the technique that saw her promoted to the position of Sous Chef.",
+              "levelCorrection": 5,
+              "name": "My signature knife work, you hear?"
+            },
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 7,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>Kill the targeted ally</u></b>"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantDuel] [CantChangeTarget]\nPrioritizes allies that have the most types of effects\nDeactivates allies' \"Base factors decreasing Sanity\" while using this Skill",
+              "levelCorrection": 0,
+              "name": "I'm collecting ingredients, you hear?"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "slash",
+              "atkWeight": 4,
+              "baseValue": 4,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target is an enemy, inflict 1 [SapsareeSpices]",
+                    "[OnSucceedAttack] If target is an ally , apply 2 [AttackUp] next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target is an enemy, inflict 1 [SapsareeSpices]",
+                    "[OnSucceedAttack] If target is an ally , apply 2 [DefenseUp] next turn"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] If target is an enemy, inflict 1 [SapsareeSpices]",
+                    "[OnSucceedAttack] If target is an ally , apply 1 [ParryingResultUp] next turn"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "This Skill targets allies for both main and sub-targets\nWhen targeting an ally, always deal 0 damage",
+              "levelCorrection": 1,
+              "name": "Yummers! Slurp that up, you hear?"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "slash",
+              "atkWeight": 11,
+              "baseValue": 0,
+              "coinValue": 0,
+              "coins": [
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantIdentify]\nThis Skill does not hit and deals 0 damage\n[EndSkill] For every [SapsareeCooking] on self, heal 1% HP on self and gain 1 [SapsareeYammi]\n[EndSkill] For every [SapsareeCooking] on self, all other allies heal 20% HP and gain 1 [SapsareeYammi]\n[EndSkill] Consume all [SapsareeCooking]",
+              "levelCorrection": 0,
+              "name": "Aah! I'm on lunch break, you hear?"
+            },
+            {
+              "affinity": "wrath",
+              "atkType": "slash",
+              "atkWeight": 10,
+              "baseValue": 5,
+              "coinValue": 6,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[CantIdentify]\nSummon all available Leather Wallets to the field\n[EndSkill] Consume all [SapsareeHungry]; does not gain [SapsareeHungry] for the rest of this turn",
+              "levelCorrection": 5,
+              "name": "Cooking!! Lemme get cooking, you hear?!"
+            }
+          ],
+          "statuses": [
+            "Laceration",
+            "SapsareeCooking",
+            "ParryingResultUp",
+            "DefenseUp",
+            "SapsareeYammi",
+            "SapsareeSpices",
+            "SapsareeHungry",
+            "AttackUp",
+            "SuperCoin"
+          ],
+          "tags": [
+            "Sisyphe"
+          ]
+        },
+        {
+          "hp": 136,
+          "level": 65,
+          "name": "Leather Wallet",
+          "num": 5,
+          "parts": [
+            {
+              "breakSection": [
+                50,
+                0
+              ],
+              "defCorrection": 12,
+              "defLevel": 12,
+              "hp": 136,
+              "name": "Body",
+              "partId": 155201,
+              "resists": {
+                "blunt": 1,
+                "envy": 1,
+                "gloom": 0.75,
+                "gluttony": 1.5,
+                "lust": 1.5,
+                "pierce": 1,
+                "pride": 1,
+                "slash": 1.25,
+                "sloth": 1,
+                "wrath": 1
+              },
+              "speed": [
+                1,
+                4
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "If this unit has 5 or more status effects, gain 3 Offense Level and 3 Defense Level",
+              "flavor": "This isn't even a cooking ingredient.",
+              "name": "Flavorful Cooking Ingredient."
+            },
+            {
+              "desc": "When hit, gain 1 Defense Level Down and 1 Offense Level Up next turn (3 per turn)",
+              "flavor": "The tough leather wallet may be tenderized, but that won't change anything worth mentioning.",
+              "name": "Enzymatic Tenderization"
+            },
+            {
+              "desc": "Turn End: If Sous Chef failed to use the \"Aah! I'm on lunch break, you hear?\" Skill, gain 1 [SapsareeHungry]",
+              "flavor": "It's a <b>wallet</b> being raised as livestock for consumption. And like cattle, it hungers to be fed.",
+              "name": "Hungry..."
+            }
+          ],
+          "portrait": "1475",
+          "skills": [
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +1 for every 4 [Laceration] on target (max 2)",
+              "levelCorrection": 1,
+              "name": "Nom Nom"
+            },
+            {
+              "affinity": "gluttony",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Laceration]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Coin Power +1 for every 6 [Laceration] on target (max 2)",
+              "levelCorrection": 2,
+              "name": "Munch Munch"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "blunt",
+              "atkWeight": 1,
+              "baseValue": 7,
+              "coinValue": 8,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Deal 10 SP damage",
+                    "[OnSucceedAttack] Inflict 1 [SapsareeSpices]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse] Final Power +2 for every 4 [Laceration] on target (max 4)\n[WhenUse] At 3+ [SapsareeYammi], convert all Coins on this Skill to [SuperCoin]s\n[WhenUse] At 5+ [SapsareeYammi], gain +2 Atk Weight\n[WhenUse] Consume all [SapsareeYammi] on self",
+              "levelCorrection": 3,
+              "name": "Buuuurp"
+            }
+          ],
+          "statuses": [
+            "Laceration",
+            "SapsareeYammi",
+            "SapsareeSpices",
+            "SapsareeHungry",
+            "SuperCoin"
+          ],
+          "tags": [
+            "Sisyphe"
+          ]
+        }
+      ]
+    },
+    {
+      "targets": [
+        {
+          "hp": 2725,
+          "level": 65,
+          "name": "Annette the Alterationist",
+          "parts": [
+            {
+              "breakSection": [
+                50,
+                -10,
+                -70
+              ],
+              "defCorrection": 8,
+              "defLevel": 8,
+              "hp": 2725,
+              "name": "Body",
+              "partId": 157801,
+              "resists": {
+                "blunt": 1.2,
+                "envy": 1.25,
+                "gloom": 0.75,
+                "gluttony": 1,
+                "lust": 0.75,
+                "pierce": 0.75,
+                "pride": 1.25,
+                "slash": 1,
+                "sloth": 1.25,
+                "wrath": 0.75
+              },
+              "speed": [
+                1,
+                3
+              ]
+            }
+          ],
+          "passives": [
+            {
+              "desc": "This unit's level is raised due to the influence of the sunshine",
+              "flavor": "To those who heed the warmth of the sunlight, its shine rings out all the more searing, dazzling, and intense.",
+              "name": "Shower of Stinging Sunshine"
+            },
+            {
+              "desc": "Turn Start: <color=#ff6000><mark=#ff000040><b><u>Inflict 1 [TailoringTarget] on the Sinner that dealt the most damage</u></b></mark></color> to this unit last turn and use the \"Patterning\" Skill\n- If the [TailoringTarget] Sinner <color=#ff6000><mark=#ff000040><b><u>has 9 [ScissorsMark]</u></b></mark></color>, activate \"Patterning\" as <color=#ff6000><mark=#ff000040><b><u>\"Surfile à la Chaîne\"</u></b></mark></color> instead\n\nEvery time this unit is hit by a Sinner,\n- Inflict 1 [ScissorsMark] on the said Sinner (max 5 per turn per Sinner)\n- Gain +1 [ChargeKhaki] Count (max 5 per turn per Sinner)\n\n<color=#ff6000><mark=#ff000040><b><u>Gain 3 [ResultEnhancement] every time this unit is hit by a Sinner that has [TailoringTarget] (max 9 per turn)</u></b></mark></color>",
+              "flavor": "They say a garment is only truly finished through alteration. Unless it was made to measure, it has to be adjusted until it fits the wearer.\n\nAnd that is not true of clothing alone. Whatever is taken in from the outside must first be altered to suit oneself before it can be worn, lived in, and made to fit the heart.",
+              "name": "Alteration"
+            },
+            {
+              "desc": "At Encounter Start or at the start of the turn this unit recovered from Stagger, gain 30 [FinishedFabric]\n\nApply the [PanicChangeLock] effect\nTurn End: If this unit is in Panic, change SP to 30\n\nTurn Start:\n- <color=#ff6000><mark=#ff000040><b><u>Gain Shield equal to ([FinishedFabric] Stack)% HP</u></b></mark></color> (max 30%)\n- Heal SP equal to [FinishedFabric] Stack",
+              "flavor": "Cutting means shaping fabric to a pattern. Cutting gives a garment its form, while alteration makes it wearable.\n\nTo fabric, then, cutting itself is a form of alteration. Once cut, the fabric takes on a shape that reflects its own properties, becoming the garment the cutter intended.",
+              "name": "Tailoring"
+            },
+            {
+              "desc": "Every time Annette the Alterationist is hit by a Sinner, <color=#ff6000><mark=#ff000040><b><u>raise Stagger Threshold equal to 0.8% HP</u></b></mark></color>\n\n<color=#ff6000><mark=#ff000040><b><u>If this unit is Staggered, lose all Shield, [FinishedFabric], and [LargeTailoringShears]; then, gain 3 [Vulnerable]</u></b></mark></color>\n\nTurn Start: At 60% or less HP,\n- Gain 1 [ResultEnhancement] and 1 [SlashDamageUp] for every 20% missing HP (max 3 respectively)\n- Convert the final Coin of \"Trimming\" and Coin 2 of \"Cutting\" to [SuperCoin]",
+              "flavor": "A body whose very worth was shaped by the work of alteration goes on cutting without end, driven to alter and tailor forever.\n\nEven as the body breaks apart, she cannot bring herself to stop altering and cutting. She is made to cut things away, yet cannot cut herself free.",
+              "name": "Scissors That Do Not Rest"
+            },
+            {
+              "desc": "Gain 1 [ChargeKhaki] Potency for every 10 cumulative [ChargeKhaki] Count this unit consumes in this Encounter\n\nAt 3+/5+ [ChargeKhaki] Potency, [ChargeKhaki] Count max cap +5/+10",
+              "flavor": "They drift along the values shaped by the Age of the Department Store, swept onward by their inertia; and the stronger that inertia grows, the less able they are to stop drifting.",
+              "name": "Inertia of Drifting"
+            }
+          ],
+          "portrait": 1495,
+          "sanity": {
+            "add": [
+              "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 6, raised by 20% per Clash count after 1; max 100%)</size>",
+              "Increase by 10 after this unit defeats an enemy regardless of their level"
+            ],
+            "flavor": "My hands are starting to shake, and even the scissors won't stay steady... I won't be able to cut the pattern anymore...",
+            "id": 1110,
+            "lowMoraleDesc": "- Take +7.5% damage\n- Every time this unit is hit, gain +1 [Vibration] Count (once per Skill, max 5 per turn)",
+            "name": "Trembling Hands",
+            "panicDesc": "- Take +15% damage\n- Every time this unit is hit, gain 1 [Vibration] Potency and +1 [Vibration] Count (once per Skill, max 5 per turn)",
+            "sub": [
+              "Decreased by 3 on Clash Lose"
+            ]
+          },
+          "skills": [
+            {
+              "affinity": "lust",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 2 [Vibration] and +2 [Vibration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +2 [ChargeKhaki] Count",
+                    "[OnSucceedAttack] Inflict 2 [ScissorsMark]"
+                  ],
+                  "type": "normal"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse]\n- At 10+ [ChargeKhaki] Count, Coin Power +1\n- If this unit has [LargeTailoringShears], deal +([LargeTailoringShears] Stack x 10)% damage (max 30%)\n[WhenUse] At fewer than 15 [ChargeKhaki] Count, gain +2 [ChargeKhaki] Count",
+              "levelCorrection": 2,
+              "name": "Trimming"
+            },
+            {
+              "affinity": "pride",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Inflict 3 [Vibration] and +2 [Vibration] Count"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[OnSucceedAttack] Gain +3 [ChargeKhaki] Count",
+                    "[OnSucceedAttack] Inflict 2 [ScissorsMark]"
+                  ],
+                  "type": "normal"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [ScissorsMark]",
+                    "<color=#ff6000><mark=#ff000040><b><u>[UnBrokenCoinOnSucceedAttack] Gain 1 [FinishedFabric] next turn</u></b></mark></color>",
+                    "[UnBrokenCoinOnSucceedAttack] At 12+ [ChargeKhaki] Count, consume 4 [ChargeKhaki] Count to trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "[WhenUse]\n- At 2+ [LargeTailoringShears], gain +1 Atk Weight\n- At 10+ [ChargeKhaki] Count, Coin Power +1\n[WhenUse] Gain +4 [ChargeKhaki] Count",
+              "levelCorrection": 2,
+              "name": "Cutting"
+            },
+            {
+              "affinity": "gloom",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Gain +3 [ChargeKhaki] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict 4 [Vibration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[UnBrokenCoinOnSucceedAttack] Inflict +3 [Vibration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 5 [ScissorsMark]",
+                    "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                    "<color=#ff6000><mark=#ff000040><b><u>[UnBrokenCoinOnSucceedAttack] Gain 3 [FinishedFabric] next turn</u></b></mark></color>",
+                    "[UnBrokenCoinOnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "<color=#ff6000><mark=#ff000040><b><u>Can Clash with this Skill regardless of Speed</u></b></mark></color>\n[WhenUse]\n- At 10+ [ChargeKhaki] Count, consume 10 [ChargeKhaki] Count to gain Coin Power +2\n- Consume up to 20 remaining [ChargeKhaki] Count to deal +1% damage for every Count consumed (max 20%)\n<color=#ff6000><mark=#ff000040><b><u>[DefeatDuel]\n- Lose 3 [FinishedFabric]\n- Deal -75% damage\n- Gain 4 [Paralysis]</u></b></mark></color>\n- Damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 3,
+              "name": "Pin and Trim Along the Patterns"
+            },
+            {
+              "affinity": "envy",
+              "atkType": "slash",
+              "atkWeight": 4,
+              "baseValue": 4,
+              "coinValue": 3,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Vibration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 2 [Vibration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] If it is the main target, inflict 5 [ScissorsMark]",
+                    "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                    "<color=#ff6000><mark=#ff000040><b><u>[UnBrokenCoinOnSucceedAttack] Gain 1 [FinishedFabric] next turn</u></b></mark></color>",
+                    "[UnBrokenCoinOnSucceedAttack] If it is the main target, trigger [VibrationExplosion] 2 times; then, reduce target's [Vibration] Count by 2"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "<color=#ff6000><mark=#ff000040><b><u>Can Clash with this Skill regardless of Speed</u></b></mark></color>\n[WhenUse]\n- Gain +([LargeTailoringShears] Stack) Atk Weight (max 3)\n- At 10+ [ChargeKhaki] Count, consume 10 [ChargeKhaki] Count to gain Coin Power +2\n- Consume up to 20 remaining [ChargeKhaki] Count to deal +1% damage for every Count consumed (max 20%)\n<color=#ff6000><mark=#ff000040><b><u>[DefeatDuel]\n- Lose 3 [FinishedFabric]\n- Deal -90% damage\n- Gain 4 [Paralysis]</u></b></mark></color>\n- Damage dealt by this Skill cannot Stagger the target",
+              "levelCorrection": 4,
+              "name": "Coupez dans le Biais"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "<color=#ff6000><mark=#ff000040><b><u>[OnSucceedAttack] Inflict 9 [ScissorsMark]</u></b></mark></color>"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "<color=#ff6000><mark=#ff000040><b><u>[CantChangeTarget]\nTargets [TailoringTarget]</u></b></mark></color>",
+              "levelCorrection": 0,
+              "name": "Patterning"
+            },
+            {
+              "affinity": "sloth",
+              "atkType": "slash",
+              "atkWeight": 1,
+              "baseValue": 3,
+              "coinValue": 4,
+              "coins": [
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Inflict 3 [Vibration]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]"
+                  ],
+                  "type": "unbreakable"
+                },
+                {
+                  "descs": [
+                    "[SuperCoin]",
+                    "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                    "[UnBrokenCoinOnSucceedAttack] Trigger [VibrationExplosion] 2 times; then, reduce target's [Vibration] Count by 2"
+                  ],
+                  "type": "unbreakable"
+                }
+              ],
+              "defType": "attack",
+              "desc": "<color=#ff6000><mark=#ff000040><b><u>[CantChangeTarget]\nTargets [TailoringTarget]</u></b></mark></color>\nFinal Power +1 and deal +20% damage for every [LargeTailoringShears] on self (max 3, 60 respectively)\nDeal +4% damage for every [ChargeKhaki] Potency (max 20%)\n<color=#ff6000><mark=#ff000040><b><u>[WhenUse] If the targeted Sinner...\n- ... has equipped Defense Skills, gain 4 [Paralysis]; damage dealt by this Skill cannot Stagger the target\n- ... has not equipped Defense Skills, gain 10 [FinishedFabric] next turn</u></b></mark></color>\n[EndSkill]\n- <color=#ff6000><mark=#ff000040><b><u>After a Clash,</u></b></mark></color> inflict (Clashing Sinner's final Clash Power / 2) [DamagedFabric] on target (max 20)\n<color=#ff6000><mark=#ff000040><b><u>- Consume all [ScissorsMark] on target</u></b></mark></color>\n<color=#ff6000><mark=#ff000040><b><u>[EndBattle] Gain 1 [LargeTailoringShears] next turn</u></b></mark></color>",
+              "levelCorrection": 4,
+              "name": "Surfile à la Chaîne"
+            }
+          ],
+          "statuses": [
+            "TailoringTarget",
+            "LargeTailoringShears",
+            "FinishedFabric",
+            "PanicChangeLock",
+            "Vulnerable",
+            "ChargeKhaki",
+            "ScissorsMark",
+            "Paralysis",
+            "ResultEnhancement",
+            "DamagedFabric",
+            "SlashDamageUp",
+            "Vibration",
+            "VibrationExplosion",
+            "SuperCoin"
+          ],
+          "tags": [
+            "Sisyphe"
+          ]
+        }
+      ]
+    }
+  ],
+  "name": "Storefront Campout",
+  "siteId": "a3b865b5-f9c2-4a60-8b75-d3209d4d06e2"
+}

@@ -1143,10 +1143,19 @@
   },
   "BoneNail": {
     "buffType": "Negative",
-    "desc": "- Max Stack: 5\n- Lose 1 Speed for every Stack\n- Take +20% damage from Bleed for every Stack (rounded down)\n- On Base Attack Skill Use, gain (Stack x 2) Bleed Count",
+    "desc": "- Max Stack: 5\n- Lose 1 Speed for every Stack\n- Take +20% damage from Bleed for every Stack (rounded down)\n- On Base Attack Skill Use, gain Bleed Count equal to Stack",
     "flavor": "A cast-off appendage. Buffet pushed it out, spat it forth, spilled it from within.\n\nThough it came from one's own body, once cast outside, it ceased to belong to the self. And even should it be inserted into another, it would never belong to that body either.",
     "name": "L'Abject",
     "srcPath": "BoneNail"
+  },
+  "BoneNailSinclair": {
+    "buffType": "Negative",
+    "categoryKeywordList": [
+      "LACERATION"
+    ],
+    "desc": "- Unique Bleed\n- Max Stack: 5\n- Take +2% damage from \"Le Rouge\" Identities for every Stack (max 10%)\n- Turn Start: Gain +1 Bleed Count\n- Turn End: Gain (Stack / 2) Bind next turn (rounded down)\n- Turn Start: If Haute Couture::The Crimson God of Le Rouge Sinclair is not on the field, this effect expires",
+    "name": "L'Abject",
+    "srcPath": "BoneNailSinclair"
   },
   "BongukGiftEnhance": {
     "buffType": "Positive",
@@ -1301,6 +1310,16 @@
     "name": "Le Vomissement",
     "srcPath": "BuffetField_2"
   },
+  "BuffetFriendShield": {
+    "buffType": "Neutral",
+    "categoryKeywordList": [
+      "SUPPORTIVE_PROTECT"
+    ],
+    "desc": "- Unique Assist Defense\n- Max Stack: 1\n\n- When Haute Couture::The Crimson God of Le Rouge Sinclair is about to take an Unopposed Attack from an enemy, consume 1 Stack to redirect the enemy's targeting to self\n · Then, copy and use Haute Couture::The Crimson God of Le Rouge Sinclair's \"La Garde\"\n- When there are multiple allies that have Assist Defense Stacks, the ally that has the highest Stack has the highest activation priority\n- This effect counts as Assist Defense, and is counted toward calculating Assist Defense Stacks\n\n- Turn End: This effect expires",
+    "flavor": "Let us attend to our new God.",
+    "name": "Attending the Divine",
+    "srcPath": "BuffetFriendShield"
+  },
   "BuffetGold": {
     "buffType": "Negative",
     "desc": "- Max Speed: 5\n- Take +5% damage for every Stack\n- At max Stack, take +10% damage if this unit has Bleed",
@@ -1317,7 +1336,7 @@
   },
   "BuffetResolve": {
     "buffType": "Neutral",
-    "desc": "- Max Stack: 1\n- Deal and take +30% damage to and from The Crimson God [Adulthood]\n- Turn Start: Heal 5 SP",
+    "desc": "- Max Stack: 1\n- Deal +30% damage to The Crimson God [Adulthood]\n- Turn Start: Heal 15 SP",
     "flavor": "\"As Manager... I have to choose, don't I?\"\n\n\"Correct, Manager.\"\n\n\".......\"\n\n\".......\"\n\n\"... I've made my decision.\"",
     "name": "Decision",
     "srcPath": "BuffetResolve"
@@ -1331,14 +1350,14 @@
   },
   "BuffetRouge": {
     "buffType": "Positive",
-    "desc": "- Max Stack: 3\n- Min & Max Speed +1\n- Clash Power +1 for every Stack\n- Take -50% damage from Bleed\n- Cannot be defeated by Bleed damage\n- Turn End: Lose 1 Stack",
+    "desc": "- Max Stack: 3\n- Min & Max Speed +1\n- Take -50% damage from Bleed\n- Cannot be defeated by Bleed damage\n- Turn End: Lose 1 Stack",
     "flavor": "I can never be satisfied.\n\nEven though the desire is not truly mine, I mistake it for something that belongs to me.\n\nThis is a desire born of you—a desire that bursts forth from you, because of you.",
     "name": "Uncontrollable Rampage [Le Désir]",
     "srcPath": "BuffetRouge"
   },
   "BuffetScruple": {
     "buffType": "Positive",
-    "desc": "- Min & Max Speed +3\n- Take -50% final damage from The Crimson God [Adulthood]",
+    "desc": "- Min & Max Speed +3\n- Turn Start: Heal 15 SP\n- Take -75% final damage from The Crimson God [Adulthood]",
     "flavor": "We shared an experience with Pwie. Together. That much is certain.\n\nHesitation begins to surface.",
     "name": "Shared with Pwie",
     "srcPath": "BuffetScruple"
@@ -1356,6 +1375,19 @@
     "flavor": "This organ is the terminus of all painful sensory inputs.\nWhen it bursts, it will drown out all reason and reveal pain in its most unalloyed form.",
     "name": "Sac of Suffering",
     "srcPath": "BuffetSick"
+  },
+  "BuffetSinclair": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 3\n- Offense Level +1 for every Stack (max 3)\n- Min & Max Speed +1\n- Deal +1% damage for every Bleed on self (max 15%)\n\n- Cannot become Staggered (excluding forced Stagger)\n- Take -50% damage from Bleed\n- Cannot be defeated by Bleed damage\n\n- On Base Attack Skill Use, gain +3 Bleed Count\n- On Base Attack Skill Hit, gain Bleed equal to Uncontrollable Rampage Stack\n\n- Turn End: Lose 1 Count",
+    "name": "Uncontrollable Rampage",
+    "srcPath": "BuffetSinclair"
+  },
+  "BuffetThirst": {
+    "buffType": "Positive",
+    "desc": "- Offense Level +2\n\n- At Coin Start of a Base Attack Skill used against an enemy, consume 1 Charge Count to deal +5% damage\n · Skills that inflict Bleed Potency or Count deal +10% damage instead (including Unique Bleed)\n · At 1+ Buffet Value on the field, if this unit is not at max Charge Count, consume 1 Buffet to gain +1 Charge Count\n · If both Charge Count and Buffet are at 0, consume 1% HP on self instead to activate the effect (rounded down; damage dealt by this effect does not Stagger or reduce this unit's HP below 1; activates even at 1 HP)\n\n- Turn End: This effect expires",
+    "flavor": "The sharper one hungers, the fiercer the desperation.\nThe further one is driven, the deeper the longing.",
+    "name": "Desperate Hunger",
+    "srcPath": "BuffetThirst"
   },
   "Bull_BuzzingEmotion": {
     "buffType": "Neutral",
@@ -2506,6 +2538,13 @@
     "desc": "Draws the next Workshop weapon from the Dimensional Bag\n- Current Workshop weapon: YuRia Atelier Axe\n- Next Workshop weapon: Allas Workshop Gloves",
     "name": "Dimensional Bag - YuRia Atelier",
     "srcPath": "DimensionalBagEzraE"
+  },
+  "DinnerField": {
+    "buffType": "Neutral",
+    "desc": "- Max Value: 999\n- This value is increased by (actual HP healed / 10) whenever allies' or enemies' HP is healed on the field\n · Max 100 per instance of healing\n · Rounded up for each instance\n · Healing from E.G.O Gifts does not count\n\n- This value is shared by all characters\n- Resets when moving to a different zone",
+    "flavor": "The Buffet of flesh and meat is served. Let this be a feasting hall for all.",
+    "name": "Buffet",
+    "srcPath": "DinnerField"
   },
   "Disarming": {
     "buffType": "Negative",
@@ -3658,7 +3697,7 @@
   "GoldenNail": {
     "buffType": "Negative",
     "desc": "- Max Stack: 9\n- Combat Start: At 9 Stacks, On Hit against the Chaplain, the Sinner who has this effect for this turn takes fixed damage equal to 2% of max HP (this effect cannot Stagger this unit)\n- If this effect is triggered by \"Do you seriously mean to break the Sisyphe System?\", gain Sinking equal to Stack and raise Stagger Threshold by (Stack x 2)",
-    "flavor": "\"Let's see, the manual for this nail... 'You feel your sins crawling on your back...' Mm, no, not this one.\"\n\n\"It should be in Drawer 42 over here... I know I put it... ah, there it is! 'Console Manual for Le Noir Sisyphe System Administrator'.\"",
+    "flavor": "\"Let's see, the manual for this nail... 'You feel your sins crawling on your back...' Mm, no, not this one.\"\n\n\"It should be in Drawer 42 over here... I know I put it... ah, there it is! 'Le Noir Administrator's Guide to the Sisyphe System Console Commands'.\"",
     "name": "Nail [Console]",
     "srcPath": "GoldenNail"
   },
@@ -4100,6 +4139,12 @@
     "desc": "Max Stack: 3\nI'm starving. I want candy now",
     "name": "Hunger-Rage",
     "srcPath": "HungryCharon"
+  },
+  "HungrySinclair": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 150\n- Can gain up to 50 Stacks per turn",
+    "name": "Relentless Hunger",
+    "srcPath": "HungrySinclair"
   },
   "HurtNightStiletto": {
     "buffType": "Negative",
@@ -6667,7 +6712,7 @@
   },
   "MeursaultBuffetEnd": {
     "buffType": "Positive",
-    "desc": "- Min & Max Speed +3\n- On Skill Use, gain 2 additional E.G.O Resource for the said Skill's Affinity (2 times per turn)\n- Cannot Retreat",
+    "desc": "- Min & Max Speed +3\n- Final Power +3\n- On Skill Use, gain 2 additional E.G.O Resource for the said Skill's Affinity (2 times per turn)\n- Cannot Retreat",
     "name": "He Who Nails",
     "srcPath": "MeursaultBuffet"
   },
@@ -7066,7 +7111,7 @@
   "NoirNail": {
     "buffType": "Negative",
     "desc": "- Max Stack: 3\n- When Tremor Burst is triggered on this unit,\n · Take Sloth damage equal to Tremor Potency on self\n · Gain 1 Fragile\n · Lose 1 Stack",
-    "flavor": "The promised hammer is bound by promise to drive in a nail. Therefore, whenever the hammer falls, a nail must exist there... even if none was there before.",
+    "flavor": "The promised hammer is bound by promise to drive in a nail. Therefore, whenever the hammer falls, a nail must exist there... even if there is none.",
     "imageOverride": "NoirNailBoss",
     "name": "Promised Nail",
     "srcPath": "NoirNailBoss"
@@ -8368,6 +8413,12 @@
     "name": "Rose Wedge",
     "srcPath": "Rose Wedge"
   },
+  "RougeFamilySinclair": {
+    "buffType": "Positive",
+    "desc": "When conditions are met by other \"Le Rouge\" allies, activate corresponding effects for Haute Couture::The Crimson God of Le Rouge Sinclair\n- Effects remain active even if the corresponding ally is defeated\n\nLe Rouge Ishmael\n- If Ishmael is in \"Full Makeover\" state, Sinclair's max HP +10%; Sinclair heals 5% max HP On Base Attack Hit (rounded up, 5 times per turn)",
+    "name": "Crimson Cradle",
+    "srcPath": "RougeFamilySinclair"
+  },
   "RougeIshmaelCocoon": {
     "buffType": "Neutral",
     "desc": "- Max Stack: 2\n- Fix this unit's Speed to 1\n- Take -50% damage from Skills\n- Immediately after gaining this effect, remove Stagger Thresholds; when Staggered, recover from Stagger\n- Turn Start: Gain 10 Aggro\n- When hit, gain +1 Pulsation Count (20 times per turn)\n- Turn End: Lose 1 Stack\n- Cannot Retreat\n- Cannot enter E.G.O Corrosion; instead, enters default Panic state (is affected by Panic-changing effects)\n- While in this state, aside from its exclusive Skill \"As the Voice Says, I Gladly Withdraw into Myself\", cannot equip Defense Skills or E.G.O Skills",
@@ -8712,6 +8763,12 @@
     "desc": "- Base Power -1\n- Expires at Turn End\n- Max Stack: 1",
     "name": "Severed Tendon",
     "srcPath": "SeveredTendonAlly"
+  },
+  "SewingKingMark": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 1\n- Take +20% damage from \"Sisyphe\" Identities\n- Turn End: Gain 1 Bind next turn\n- Turn End: Take fixed damage equal to 5% of HP damage (including Shield damage) taken from the Sinners' Skills\n- On death, deal fixed damage equal to 10% of this unit's max HP on 1 random ally (in Focused Encounters, a Part)",
+    "name": "Mark of the King of Needleworks",
+    "srcPath": "NiddleExpected"
   },
   "ShamrockDamageDown": {
     "buffType": "Negative",
@@ -9787,6 +9844,12 @@
     "desc": "Skill Slot +1\nModify Skill pool: Gain 1 use of Skill 3, but lose 1 use of Skill 1\nTurn Start: heal 15 SP\nIncrease the amount of Burn, Bleed, Rupture, Sinking, or Tremor inflicted by +1 (including 'Unique Status Effects')\nIncrease the amount of Poise or Charge(including 'Unique Charge') gained by +1\nOn Kill, Gain +2 E.G.O resource to the Affinity of the Skill that defeated the enemy; gain +1 E.G.O resource to rest of the Affinities",
     "name": "Training Team Captain",
     "srcPath": "TrainTeamCaptain"
+  },
+  "TransformSinclair": {
+    "buffType": "Positive",
+    "desc": "Gain all of the following effects based on Pulsation Potency on self:\n- 2+: Take -25% damage from Bleed\n- 3+: Base Skills inflict +1 more Bleed Potency and Count\n- 4+: Base Skill Base Power +1\n\n- Min & Max Speed +1\n- When this unit takes damage that brings its HP down to 0, this unit's HP does not drop below 1 for the turn (once per Encounter)\n\n- Apply the following effects to \"Le Rouge\" allied Identities (including this unit):\n  · Min & Max Speed +1\n  · If there is not enough Charge Count to activate the effects of Skills that consume Charge Count, consume 1 Buffet to gain 1 Charge Count for every missing Charge Count required for activation",
+    "name": "Noble Dignity",
+    "srcPath": "TransformSinclair"
   },
   "TransparentWingScales": {
     "buffType": "Neutral",
