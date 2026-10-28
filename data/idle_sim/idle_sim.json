@@ -1,0 +1,721 @@
+{
+  "armor": {
+    "A-1": {
+      "defense": [0.5, 1, 2, 1, 2, 1, 1],
+      "desc": "On kill, heals the agent by 20 HP.",
+      "effects": [
+        {
+          "conditions": [
+            {
+              "type": "on_kill"
+            }
+          ],
+          "effects": [
+            {
+              "type": "heal_hp",
+              "value": 20
+            }
+          ]
+        }
+      ],
+      "name": "Impending Day",
+      "price": 20000,
+      "unlocks": [
+        {
+          "copies": 1,
+          "level": 2,
+          "subject": "S-A02"
+        },
+        {
+          "copies": 1,
+          "level": 4,
+          "subject": "S-A02"
+        },
+        {
+          "copies": 1,
+          "level": 6,
+          "subject": "S-A02"
+        },
+        {
+          "copies": 1,
+          "level": 8,
+          "subject": "S-A02"
+        },
+        {
+          "copies": 1,
+          "level": 10,
+          "subject": "S-A02"
+        }
+      ]
+    }
+  },
+  "enemies": {
+    "E-1": {
+      "defense": [1, 1, 1, 1, 1, 1, 1],
+      "max_hp": 50,
+      "name": "Hooligan",
+      "offense": [0, 0, 0, 0, 0, 3, 0],
+      "src": [
+        "90005_idle",
+        "90006_idle",
+        "90007_idle"
+      ]
+    },
+    "E-2": {
+      "defense": [1, 1, 1, 1, 1, 1, 1],
+      "max_hp": 150,
+      "name": "Head Hooligan",
+      "offense": [0, 0, 0, 0, 0, 7, 0],
+      "src": "90008_idle"
+    },
+    "E-3": {
+      "defense": [2, 1, 1, 0.75, 0.75, 2, 1],
+      "max_hp": 50,
+      "name": "Peccatulum Gulae Class 1",
+      "offense": [0, 0, 0, 5, 0, 0, 0],
+      "src": "8005_idle"
+    },
+    "E-4": {
+      "defense": [2, 0.75, 2, 1, 1, 0.75, 1],
+      "max_hp": 50,
+      "name": "Peccatulum Superbiae Class 1",
+      "offense": [0, 0, 0, 0, 0, 5, 0],
+      "src": "8018_idle"
+    },
+    "E-5": {
+      "defense": [2, 1, 1, 1, 0.5, 2, 0.75],
+      "max_hp": 200,
+      "name": "Ebony Queen's Apple (Weakened)",
+      "offense": [0, 0, 0, 5, 0, 3, 0],
+      "src": "8001_idle"
+    },
+    "E-6": {
+      "defense": [1.5, 0.5, 2, 1, 1, 1, 1],
+      "desc": "Summons a Clay Doll when no allies are present. A stronger variant is summoned when below 50% HP.",
+      "effects": [
+        {
+          "conditions": [
+            {
+              "type": "no_allies"
+            },
+            {
+              "type": "hp_percent_ge",
+              "value": 0.5
+            }
+          ],
+          "effects": [
+            {
+              "id": "E-4-1",
+              "type": "summon"
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "type": "no_allies"
+            },
+            {
+              "type": "hp_percent_lt",
+              "value": 0.5
+            }
+          ],
+          "effects": [
+            {
+              "id": "E-4-2",
+              "type": "summon"
+            }
+          ]
+        }
+      ],
+      "max_hp": 300,
+      "name": "Doomsday Calendar",
+      "offense": [0, 5, 3, 0, 0, 0, 2],
+      "src": "8002_idle"
+    },
+    "E-6-1": {
+      "defense": [1.5, 0.75, 2, 1, 1, 1, 2],
+      "max_hp": 50,
+      "name": "Doomsday Clay Doll",
+      "offense": [1, 3, 0, 0, 0, 0, 0],
+      "src": "8003_idle"
+    },
+    "E-6-2": {
+      "defense": [1.5, 0.75, 2, 1, 1, 1, 2],
+      "max_hp": 70,
+      "name": "Burning Clay Doll",
+      "offense": [2, 5, 0, 0, 0, 0, 0],
+      "src": "8004_idle"
+    },
+    "E-7": {
+      "defense": [1, 0.75, 1, 0.75, 1, 2, 2],
+      "max_hp": 50,
+      "name": "Peccatulum Luxuriae Class 1",
+      "offense": [0, 5, 0, 0, 0, 0, 0],
+      "src": "8017_idle"
+    },
+    "E-8": {
+      "defense": [1.5, 0.5, 2, 1, 1, 0.75, 0.75],
+      "desc": "Deals more and swaps to Lust damage when below 50% HP.",
+      "effects": [
+        {
+          "conditions": [
+            {
+              "type": "hp_percent_lt",
+              "value": 0.5
+            }
+          ],
+          "effects": [
+            {
+              "affinity": "lust",
+              "type": "add_damage_stat",
+              "value": 12
+            },
+            {
+              "affinity": "gluttony",
+              "type": "add_damage_stat",
+              "value": -10
+            }
+          ]
+        }
+      ],
+      "max_hp": 500,
+      "name": "Golden Apple",
+      "offense": [0, 0, 0, 10, 0, 0, 0],
+      "src": "8008_idle"
+    }
+  },
+  "events": {
+    "EV-1": {
+      "description": "Something falls to the ground from its endlessly distorting form.\n\nOne of its blocks fell out of place, pushed out amidst the constant change.",
+      "name": "Doomsday Calendar",
+      "options": [
+        {
+          "conditions": [
+            {
+              "affinities": [
+                "wrath",
+                "lust"
+              ],
+              "type": "agent_any_offense",
+              "value": 10
+            }
+          ],
+          "effects": [
+            {
+              "drop_type": "gifts",
+              "id": "G-1",
+              "type": "drop"
+            }
+          ],
+          "label": "Pick up the block."
+        },
+        {
+          "label": "Don't pick up the block."
+        }
+      ],
+      "src": 901100
+    }
+  },
+  "expeditions": {
+    "X-0": {
+      "cost": 2500,
+      "name": "Unknown Backstreets",
+      "rec_agents": 1,
+      "rec_level": 1,
+      "reward": {
+        "xp": 150
+      },
+      "waves": [
+        [
+          "E-1"
+        ],
+        [
+          "E-1",
+          "E-1"
+        ],
+        [
+          "E-2"
+        ]
+      ]
+    },
+    "X-1": {
+      "cost": 3500,
+      "name": "District 4 Lobotomy Corp Branch (Part 1)",
+      "rec_agents": 2,
+      "rec_level": 2,
+      "reward": {
+        "drops": [
+          {
+            "chance": 0.5,
+            "id": "G-1",
+            "type": "gifts"
+          }
+        ],
+        "xp": 200
+      },
+      "waves": [
+        [
+          "E-3",
+          "E-3"
+        ],
+        [
+          "E-4",
+          "E-4"
+        ],
+        [
+          "E-5"
+        ]
+      ]
+    },
+    "X-2": {
+      "cost": 4000,
+      "events": [
+        {
+          "chance": 1,
+          "id": "EV-1"
+        }
+      ],
+      "first_time_reward": {
+        "subjects": [
+          "S-A1",
+          "S-A1-1"
+        ]
+      },
+      "name": "District 4 Lobotomy Corp Branch (Part 2)",
+      "rec_agents": 2,
+      "rec_level": 3,
+      "reward": {
+        "drops": [
+          {
+            "chance": 0.05,
+            "id": "G-2",
+            "type": "gifts"
+          }
+        ],
+        "xp": 300
+      },
+      "waves": [
+        [
+          "E-6"
+        ]
+      ]
+    },
+    "X-3": {
+      "cost": 5000,
+      "first_time_reward": {
+        "subjects": [
+          "S-A2"
+        ]
+      },
+      "name": "District 4 Lobotomy Corp Branch (Part 3)",
+      "rec_agents": 2,
+      "rec_level": 5,
+      "reward": {
+        "drops": [
+          {
+            "chance": 0.5,
+            "id": "G-3",
+            "type": "gifts"
+          }
+        ],
+        "xp": 500
+      },
+      "waves": [
+        [
+          "E-3",
+          "E-3",
+          "E-7"
+        ],
+        [
+          "E-3",
+          "E-7",
+          "E-7"
+        ],
+        [
+          "E-8"
+        ]
+      ]
+    }
+  },
+  "gifts": {
+    "G-1": {
+      "desc": "Increases Gluttony offense by 2 and reduces Gluttony defense by 0.1.",
+      "effects": [
+        {
+          "affinity": "gluttony",
+          "type": "offense",
+          "value": 2
+        },
+        {
+          "affinity": "gluttony",
+          "type": "defense",
+          "value": 0.1
+        }
+      ],
+      "max_copies": 5,
+      "name": "Ebony Brooch",
+      "src": 9403
+    },
+    "G-2": {
+      "desc": "Increases Gluttony offense by 5.",
+      "effects": [
+        {
+          "affinity": "gluttony",
+          "type": "offense",
+          "value": 5
+        }
+      ],
+      "max_copies": 5,
+      "name": "Shard of Apocalypse",
+      "src": 9168
+    },
+    "G-3": {
+      "desc": "Deals a fixed 3 Lust and 3 Gluttony damage to all enemies every turn.",
+      "effects": [
+        {
+          "affinity": "lust",
+          "type": "fixed_damage",
+          "value": 3
+        },
+        {
+          "affinity": "gluttony",
+          "type": "fixed_damage",
+          "value": 3
+        }
+      ],
+      "max_copies": 5,
+      "name": "Contaminated Maggots",
+      "src": 9404
+    }
+  },
+  "quests": {
+    "assign_agent": {
+      "condition": {
+        "min": 1,
+        "type": "department_agents"
+      },
+      "description": "Agents only work on subjects in their own department. Each department can hold up to five agents.",
+      "name": "Assign an agent to a department",
+      "requires": [
+        "hire_first_agent"
+      ],
+      "reward": {
+        "currency": 1000
+      }
+    },
+    "assign_subject": {
+      "condition": {
+        "min": 1,
+        "type": "department_subjects"
+      },
+      "description": "Agents only work on subjects in their own department. Each department can hold up to four subjects.",
+      "name": "Assign a research subject to a department",
+      "requires": [
+        "assign_agent"
+      ],
+      "reward": {
+        "currency": 1000
+      }
+    },
+    "first_expedition": {
+      "condition": {
+        "min": 1,
+        "type": "expedition_count"
+      },
+      "description": "Hire another agent and send them out on an expedition in the Expeditions tab. Expeditions cost money, but give agents xp and rewards you with new equipment. Some expeditions may unlock new research subjects when cleared for the first time.",
+      "name": "Sent your agents out on your first expedition",
+      "requires": [
+        "schedule_work"
+      ],
+      "reward": {
+        "currency": 3000
+      }
+    },
+    "first_expedition_complete": {
+      "condition": {
+        "min": 1,
+        "type": "expedition_cleared_count"
+      },
+      "description": "Expeditions are much more demanding on your agents than working in the facility. They require them to fight multiple waves of enemies with no breaks in between to heal. Make sure they are prepared appropriately before sending them out.",
+      "name": "Complete your first expedition",
+      "requires": [
+        "first_expedition"
+      ],
+      "reward": {
+        "currency": 5000
+      }
+    },
+    "first_level_up": {
+      "condition": {
+        "min": 2,
+        "type": "agent_level"
+      },
+      "description": "Work earns XP. Each level grants increased stats and points to spend on offense ratings.",
+      "name": "Level up an agent",
+      "requires": [
+        "first_research_2"
+      ],
+      "reward": {
+        "currency": 3000
+      }
+    },
+    "first_research": {
+      "condition": {
+        "type": "research_started"
+      },
+      "description": "Each work block is one real life hour. Check back later to see how your agent fared.",
+      "name": "Start researching a subject",
+      "requires": [
+        "schedule_work"
+      ],
+      "reward": {
+        "currency": 1000
+      }
+    },
+    "first_research_2": {
+      "condition": {
+        "type": "none"
+      },
+      "description": "When completing a work block, the agent will receive a work result depending on their and the subject's stats. Good results will give more rewards and xp and deal less HP and SP damage to the agent. Bad results will give less rewards and deal more damage.",
+      "name": "Start researching a subject (2)",
+      "requires": [
+        "first_research"
+      ],
+      "reward": {
+        "currency": 1000
+      }
+    },
+    "first_research_level_up": {
+      "condition": {
+        "min": 1,
+        "type": "research_level"
+      },
+      "description": "Good and average work results grant research XP. Each level grants a small boost to effective work efficiency when doing work on the subject and may unlock things like purchaseable equipment.",
+      "name": "Reach research level 1 on a subject",
+      "requires": [
+        "first_research_2"
+      ],
+      "reward": {
+        "currency": 3000
+      }
+    },
+    "hire_first_agent": {
+      "condition": {
+        "min": 1,
+        "type": "agent_count"
+      },
+      "description": "Open the hiring menu, click hire, and choose a candidate.",
+      "name": "Hire your first agent",
+      "reward": {
+        "currency": 2000
+      }
+    },
+    "intro_complete": {
+      "condition": {
+        "type": "none"
+      },
+      "description": "This ends the introduction to the game. You are now ready to explore the game's systems yourself. Here's a small gift to help you get started!",
+      "name": "Introduction complete",
+      "requires": [
+        "first_level_up",
+        "first_research_level_up",
+        "first_expedition_complete"
+      ],
+      "reward": {
+        "currency": 25000,
+        "weapon": "W-0"
+      }
+    },
+    "schedule_work": {
+      "condition": {
+        "type": "work_scheduled"
+      },
+      "description": "Pick a subject for at least one block of an agent's schedule. Leave other blocks as breaks. An agent's schedule is a cycle. They will return to the start after completing the final block.",
+      "name": "Schedule some work",
+      "requires": [
+        "assign_subject"
+      ],
+      "reward": {
+        "currency": 2000
+      }
+    }
+  },
+  "subjects": {
+    "S-A1": {
+      "defense": [1.5, 0.5, 2, 1, 1, 1, 1],
+      "desc": "When not worked on, deals 20 fixed HP damage to a random agent in its department. This does not activate if Doomsday Clay Doll is in the same department.",
+      "effects": [
+        {
+          "conditions": [
+            {
+              "type": "idle"
+            },
+            {
+              "id": "S-A1-1",
+              "type": "not_in_same_dept"
+            }
+          ],
+          "effects": [
+            {
+              "type": "hp_damage_random_agent_in_dept",
+              "value": 20
+            }
+          ]
+        }
+      ],
+      "max_level": 10,
+      "name": "Doomsday Calendar",
+      "offense": [0, 5, 3, 0, 0, 0, 2],
+      "sp_cost": 5,
+      "src": "8002_idle",
+      "we_req": 70
+    },
+    "S-A1-1": {
+      "defense": [1.5, 0.75, 2, 1, 1, 1, 2],
+      "max_level": 0,
+      "name": "Doomsday Clay Doll",
+      "offense": [1, 3, 0, 0, 0, 0, 0],
+      "sp_cost": 3,
+      "src": "8003_idle",
+      "we_req": 40
+    },
+    "S-A2": {
+      "defense": [1.5, 0.5, 2, 1, 1, 0.75, 0.75],
+      "max_level": 10,
+      "name": "Golden Apple",
+      "offense": [0, 5, 0, 5, 0, 0, 0],
+      "sp_cost": 5,
+      "src": "8008_idle",
+      "we_req": 80
+    },
+    "S-P1": {
+      "defense": [0.75, 2, 0.75, 1, 2, 1, 1],
+      "max_level": 5,
+      "name": "Peccatulum Irae Class 1",
+      "offense": [5, 0, 0, 0, 0, 0, 0],
+      "sp_cost": 3,
+      "src": "8007_idle",
+      "we_req": 50
+    },
+    "S-P2": {
+      "defense": [1, 0.75, 1, 0.75, 1, 2, 2],
+      "max_level": 5,
+      "name": "Peccatulum Luxuriae Class 1",
+      "offense": [0, 5, 0, 0, 0, 0, 0],
+      "sp_cost": 3,
+      "src": "8017_idle",
+      "we_req": 50
+    },
+    "S-P3": {
+      "defense": [1, 1, 0.75, 2, 2, 1, 0.75],
+      "max_level": 5,
+      "name": "Peccatulum Pigritiae Class 1",
+      "offense": [0, 0, 5, 0, 0, 0, 0],
+      "sp_cost": 3,
+      "src": "8006_idle",
+      "we_req": 50
+    },
+    "S-P4": {
+      "defense": [2, 1, 1, 0.75, 0.75, 2, 1],
+      "max_level": 5,
+      "name": "Peccatulum Gulae Class 1",
+      "offense": [0, 0, 0, 5, 0, 0, 0],
+      "sp_cost": 3,
+      "src": "8005_idle",
+      "we_req": 50
+    },
+    "S-P5": {
+      "defense": [0.75, 1, 1, 2, 0.75, 1, 2],
+      "max_level": 5,
+      "name": "Peccatulum Morositatis Class 1",
+      "offense": [0, 0, 0, 0, 5, 0, 0],
+      "sp_cost": 3,
+      "src": "8016_idle",
+      "we_req": 50
+    },
+    "S-P6": {
+      "defense": [2, 0.75, 2, 1, 1, 0.75, 1],
+      "max_level": 5,
+      "name": "Peccatulum Superbiae Class 1",
+      "offense": [0, 0, 0, 0, 0, 5, 0],
+      "sp_cost": 3,
+      "src": "8018_idle",
+      "we_req": 50
+    }
+  },
+  "weapons": {
+    "W-0": {
+      "desc": "Increases the agent's Wrath damage by 0.5x every 4th turn.",
+      "effects": [
+        {
+          "conditions": [
+            {
+              "type": "tick_mod",
+              "value": 4
+            }
+          ],
+          "effects": [
+            {
+              "affinity": "wrath",
+              "type": "offense_mult",
+              "value": 0.5
+            }
+          ]
+        }
+      ],
+      "name": "4th Match Flame",
+      "offense": [2, 1, 0.8, 1, 0.8, 1.5, 1]
+    },
+    "W-1": {
+      "desc": "On kill, increases the agent's Wrath damage by 20 on the next turn.",
+      "effects": [
+        {
+          "conditions": [
+            {
+              "type": "on_kill"
+            }
+          ],
+          "effects": [
+            {
+              "affinity": "wrath",
+              "ticks": 1,
+              "type": "bonus_damage",
+              "value": 20
+            }
+          ]
+        }
+      ],
+      "name": "Impending Day",
+      "offense": [1.5, 1.2, 0.8, 1, 0.8, 1, 1],
+      "price": 20000,
+      "unlocks": [
+        {
+          "copies": 1,
+          "level": 1,
+          "subject": "S-A02"
+        },
+        {
+          "copies": 1,
+          "level": 3,
+          "subject": "S-A02"
+        },
+        {
+          "copies": 1,
+          "level": 5,
+          "subject": "S-A02"
+        },
+        {
+          "copies": 1,
+          "level": 7,
+          "subject": "S-A02"
+        },
+        {
+          "copies": 1,
+          "level": 9,
+          "subject": "S-A02"
+        }
+      ]
+    }
+  }
+}
