@@ -4073,10 +4073,22 @@
     "name": "Cry of the Cocoon - Frail",
     "srcPath": "HowlingCocoon"
   },
+  "HowlingCocoonAlly": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 5\n- Base Skill Final Power +1\n- On Hit using Base Skills, heal 3% HP (5 times per turn)\n\n- Turn Start: If allied Haute Couture::The Crimson God of Le Rouge Sinclair is not on the field, this effect expires",
+    "name": "Cry of the Cocoon - Frail",
+    "srcPath": "HowlingCocoon"
+  },
   "HowlingCocoonTwo": {
     "buffType": "Positive",
     "desc": "- The Cocoon does not cease its cries.\n- Skill Final Power +3",
     "flavor": "Rigid denim... and selvage... have jack to do with each other... Gnnnngh... You know this! You're just tryin' to piss me off, aren't you?! I knew it!!!",
+    "name": "Cry of the Cocoon - Vicious",
+    "srcPath": "HowlingCocoonTwo"
+  },
+  "HowlingCocoonTwoAlly": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 1\n- Base Skill Final Power +1\n- Deal +10% damage using Base Skills\n- On Hit using Base Skills, heal 6% HP (5 times per turn)\n\n- Turn Start: If allied Haute Couture::The Crimson God of Le Rouge Sinclair is not on the field, this effect expires",
     "name": "Cry of the Cocoon - Vicious",
     "srcPath": "HowlingCocoonTwo"
   },
@@ -6981,6 +6993,13 @@
     "name": "Nebulizer β",
     "srcPath": "Nebulizer β"
   },
+  "NeedlekinAlly": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 3\n- Offense Level +1 for every Stack",
+    "flavor": "Shaddap! Shaddap!",
+    "name": "Needlekin",
+    "srcPath": "NeedlekinAlly"
+  },
   "Nervous": {
     "buffType": "Negative",
     "desc": "Turn End: At -15 SP or lower, gain 5 Defense Level Up next turn",
@@ -7036,10 +7055,31 @@
     "name": "Naildle",
     "srcPath": "NiddlePin"
   },
+  "NiddlePinAlly": {
+    "buffType": "Negative",
+    "categoryKeywordList": [
+      "LACERATION"
+    ],
+    "desc": "- Unique Bleed\n- Max Stack: 10\n- Turn End: Lose 1 Stack\n\n- When losing this effect's Stack, gain 1 Bleed Potency and take 3 Lust damage for every Stack lost\n\n- Turn End: If enemy Haute Couture::The Crimson God of Le Rouge Sinclair is on the field and this unit has this effect, this unit gains 1 L'Abject",
+    "name": "Naildle",
+    "srcPath": "NiddlePin"
+  },
+  "NiddlePinGather": {
+    "buffType": "Neutral",
+    "desc": "- Max Stack: 30",
+    "name": "Tiny and Sharp Nails",
+    "srcPath": "NiddleExpected"
+  },
   "NiddlePinned": {
     "buffType": "Negative",
     "desc": "- Max Stack: 2\n\n- When hit, gain +1 Bleed Count (3 times per turn)\n- Becomes Immobilized while this unit has this effect\n\n- Turn End: Lose 15 HP and 5 Naildle on self\n- Turn End: Lose 1 Stack",
     "flavor": "As you wish... Hand-made! Bespoke! Hand-sown!",
+    "name": "Taxidermized",
+    "srcPath": "NiddlePinned"
+  },
+  "NiddlePinnedAlly": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 1\n- Skill Final Power -1\n- On Attack Skill Use, activate Bleed on self and lose 1 Bleed Count (once per Skill)\n- Turn End: Gain +2 Bleed Count, 1 Power Down, and 2 Bind next turn\n- Turn End: This effect expires",
     "name": "Taxidermized",
     "srcPath": "NiddlePinned"
   },
@@ -7100,6 +7140,12 @@
     "flavor": "Le Noir's Worsted holds the body like armor, accentuating it beneath a firm, fixed silhouette.",
     "name": "Le Noir: Worsted",
     "srcPath": "NoirBindArmor"
+  },
+  "NoirBindArmorAlly": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 15\n- Offense Level +1, Defense Level +1 for every 5 Stack\n- When hit while this unit has Shield, gain 1 Stack (5 Stacks per turn)\n- Turn End: Next turn, gain (Stack x 5) Shield and lose 1 Stack",
+    "name": "Le Noir: Worsted Overcoat",
+    "srcPath": "NoirBindArmorAlly"
   },
   "NoirField": {
     "buffType": "Positive",
@@ -7754,6 +7800,12 @@
     "desc": "Heal 15 SP at every Turn Start",
     "name": "Reverse Compulsion",
     "srcPath": "Reverse Compulsion"
+  },
+  "ReadyToListenHonglu": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 2\n- Turn End: Gain (Stack) Protection next turn\n- Turn End: At max Stack, consume all Stacks to gain 2 Time to Listen next turn\n- Can gain up to 1 Stack per turn\n- If this unit has Time to Listen, it cannot gain Ready to Narrate",
+    "name": "Ready to Narrate",
+    "srcPath": "ReadyToListenHonglu"
   },
   "RealPaperBear": {
     "buffType": "Neutral",
@@ -8415,7 +8467,7 @@
   },
   "RougeFamilySinclair": {
     "buffType": "Positive",
-    "desc": "When conditions are met by other \"Le Rouge\" allies, activate corresponding effects for Haute Couture::The Crimson God of Le Rouge Sinclair\n- Effects remain active even if the corresponding ally is defeated\n\nLe Rouge Ishmael\n- If Ishmael is in \"Full Makeover\" state, Sinclair's max HP +10%; Sinclair heals 5% max HP On Base Attack Hit (rounded up, 5 times per turn)",
+    "desc": "When conditions are met by other \"Le Rouge\" allies, activate corresponding effects for Haute Couture::The Crimson God of Le Rouge Sinclair\n- Effects remain active even if the corresponding ally is defeated\n\nHaute Couture::Boutique du Rouge Ishmael\n- If Ishmael is in \"Full Makeover\" state, Sinclair's max HP +10%; Sinclair heals 5% max HP On Base Attack Hit (rounded up, 5 times per turn)\n\nHaute Couture::Le Rouge King of Needleworks Heathcliff\n- On Hit using the \"La Demande\" Skill's Coins, gain +1 Pulsation Count and heal 5% HP",
     "name": "Crimson Cradle",
     "srcPath": "RougeFamilySinclair"
   },
@@ -9809,6 +9861,12 @@
     "name": "Time Moratorium",
     "srcPath": "Time Moratorium"
   },
+  "TimeToListenHonglu": {
+    "buffType": "Positive",
+    "desc": "- Max Stack: 2\n- Base Skill Base Power +1\n- Combat Start (once per turn per Sinner):\n  · Identities that equipped Plus Coin Skills in their leftmost Slots heal 4 SP\n  · Identities that equipped Minus Coin Skills in their leftmost Slots lose 4 SP (this effect cannot reduce the unit's SP below -40)\n- Combat Start: Apply 1 Sloth DMG Up on the following Identities (once per turn per Sinner):\n  · Identities that equipped Plus Coin Skills and have 40 or higher SP; Le Noir Identities additionally gain 1 Base Power Up\n  · Identities that equipped Minus Coin Skills and have -40 or lower SP; Le Noir Identities additionally gain 1 Base Power Up\n- Turn End: Lose 1 Stack",
+    "name": "Time to Listen",
+    "srcPath": "TimeToListenHonglu"
+  },
   "TinyCarmilla": {
     "buffType": "Negative",
     "desc": "- Max Stack: 3\n- Gain 2 Bleed every time this unit gains Little Carmilla\n- Turn End: gain +2 Bleed Count\n- Turn End: at 3 Stack, take fixed damage equal to 15% of this unit's max HP, heal HP equal to 5% of each enemy's max HP, then this effect expires",
@@ -10329,6 +10387,12 @@
     "flavor": "The unfamiliarity of the Voice is not what makes one wary; it is the Voice knocking on the heart that does so.",
     "name": "Guarded Caution",
     "srcPath": "Wariness"
+  },
+  "WarinessHonglu": {
+    "buffType": "Negative",
+    "desc": "- Max Stack: 2\n- Lose Offense Level equal to Stack\n- If there is an Identity that has Time to Listen, take +(Stack x 10)% damage from \"Le Noir\" Identities\n- Turn End: If there is an Identity that has Time to Listen, lose 1 Stack (if the Identity that inflicted this effect has been defeated or Retreated, expires)",
+    "name": "Auditive Punishment",
+    "srcPath": "WarinessHonglu"
   },
   "WaterPocket": {
     "buffType": "Positive",

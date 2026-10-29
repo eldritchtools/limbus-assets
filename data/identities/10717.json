@@ -1,0 +1,682 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1071702",
+        "1071703"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1071702",
+        "1071713",
+        "1071701"
+      ],
+      "uptie": 2
+    }
+  ],
+  "passiveBonusNotes": "Assumes {id:11016} is fielded.",
+  "passiveBonuses": [
+    {
+      "type": "offlevel",
+      "value": 3
+    },
+    {
+      "type": "final",
+      "value": 1
+    },
+    {
+      "extra": {
+        "op": "mul"
+      },
+      "type": "damage",
+      "value": 0.1
+    }
+  ],
+  "passiveData": {
+    "1071701": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 2
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "Turn End: Gain 1 [NeedlekinAlly]",
+      "name": "Too even, you say? Not pick-stitching, you say? Assemble!!!"
+    },
+    "1071702": {
+      "desc": "Gain 1 [ChargeRougeAlly] Potency for every 10 cumulative [ChargeRougeAlly] Count this unit consumes in this Encounter\n\nTurn Start: If allied Haute Couture::The Crimson God of Le Rouge Sinclair is on the field, gain 1 [HowlingCocoonAlly]\n\nTurn Start: At max [HowlingCocoonAlly] Stack, or if allied Haute Couture::The Crimson God of Le Rouge Sinclair has [TransformSinclair], convert [HowlingCocoonAlly] into [HowlingCocoonTwoAlly]; then, allied Haute Couture::The Crimson God of Le Rouge Sinclair gains the following effects:\n- Gain 1 [RougeFamilySinclair]\n- On Hit using the \"La Demande\" Skill's Coins, gain +1 [ChargeRougeAlly] Count and heal 5% HP",
+      "name": "Customer Complaints Haunting the Ears"
+    },
+    "1071703": {
+      "desc": "Every time this unit loses 3% HP, gain +1 [ChargeRougeAlly] Count (max 20 per turn)\n\nEvery time this unit loses 1.5% HP, gain 1 [NiddlePinGather]\n\nHP consumption effects from this unit's Base Skills do not Stagger or reduce this unit's HP below 1 (At 1 HP, Base Skill effects that consume HP will be activated for free)",
+      "name": "Handmade? You want me to hand-stitch this?! HAND-STITCH???!!!"
+    },
+    "1071713": {
+      "desc": "Every time this unit loses 3% HP, gain +1 [ChargeRougeAlly] Count (max 20 per turn)\n\nEvery time this unit loses 1.5% HP, gain 1 [NiddlePinGather]\n\nHP consumption effects from this unit's Base Skills do not Stagger or reduce this unit's HP below 1 (at 1 HP, Base Skill effects that consume HP will be activated for free)\n\nAt 3 [NeedlekinAlly], use the \"Double stitching past the side seam? Double-needle! Rejected!\" Skill on random enemies at Attack Skill End",
+      "name": "Handmade? You want me to hand-stitch this?! HAND-STITCH???!!!"
+    },
+    "1071721": {
+      "condition": {
+        "requirement": [
+          {
+            "type": "lust",
+            "value": 2
+          }
+        ],
+        "type": "res"
+      },
+      "desc": "1 ally with the fastest Speed: On Hit using Base Attack Skills, inflict 2 [Laceration] (once per turn)\n- If the said ally is a \"Le Rouge\" Identity, additionally inflict 1 [NiddlePinAlly]",
+      "name": "20 stitches an inch, minimum!!!"
+    }
+  },
+  "sanity": {
+    "add": [
+      "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+      "Increase by 10 after this unit defeats an enemy whose level was higher than or equal to this unit’s",
+      "Increase by 5 after an ally defeats an enemy whose level was higher than or equal to the unit’s"
+    ],
+    "id": 9999,
+    "lowMoraleDesc": "",
+    "name": "Panic",
+    "panicDesc": "Does not act for this turn.",
+    "sub": [
+      "If the level of the defeated ally was higher than or equal to the unit’s,\ndecrease based on the level difference\n<size=95%>(Base Value is 10, raised by 10 per level)</size>"
+    ]
+  },
+  "skills": {
+    "1071701": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "envy",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "coinValue": 2,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [ChargeRougeAlly] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At fewer than 5 [ChargeRougeAlly] Count, consume (2 x (5 - [ChargeRougeAlly] Count))% HP to raise [ChargeRougeAlly] Count to 5",
+          "iconId": "1071701",
+          "id": "1071701",
+          "levelCorrection": 2,
+          "name": "Bla Bla Warp Bla, Yap Yap Weft Yap",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "coinValue": 2,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.03
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [ChargeRougeAlly] Count",
+                "[OnSucceedAttack] Deal Pierce damage equal to 1% of this Coin's final damage for every [NeedlekinAlly] Stack on self (min 1)"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.03
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                "[OnSucceedAttack] Deal Pierce damage equal to 1% of this Coin's final damage for every [NeedlekinAlly] Stack on self (min 1)"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.03
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict [NiddlePinAlly] on target equal to [NeedlekinAlly] Stack on self",
+                "[OnSucceedAttack] Deal Pierce damage equal to 1% of this Coin's final damage for every [NeedlekinAlly] Stack on self (min 1)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Final Power +1 for every 2 [ChargeRougeAlly] Potency on self (max 2)\n[WhenUse] At fewer than 5 [ChargeRougeAlly] Count, consume (2 x (5 - [ChargeRougeAlly] Count))% HP to raise [ChargeRougeAlly] Count to 5",
+          "iconId": "1071701",
+          "id": "1071701",
+          "name": "Bla Bla Warp Bla, Yap Yap Weft Yap",
+          "uptie": 2
+        },
+        {
+          "coinValue": 3,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.03
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Gain +4 [ChargeRougeAlly] Count",
+                "[OnSucceedAttack] Deal Pierce damage equal to 1% of this Coin's final damage for every [NeedlekinAlly] Stack on self (min 1)"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.03
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Laceration] Count",
+                "[OnSucceedAttack] Deal Pierce damage equal to 1% of this Coin's final damage for every [NeedlekinAlly] Stack on self (min 1)"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.03
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict [NiddlePinAlly] on target equal to [NeedlekinAlly] Stack on self",
+                "[OnSucceedAttack] Deal Pierce damage equal to 1% of this Coin's final damage for every [NeedlekinAlly] Stack on self (min 1)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Final Power +1 for every 2 [ChargeRougeAlly] Potency on self (max 2)\n[WhenUse] At fewer than 5 [ChargeRougeAlly] Count, consume (2 x (5 - [ChargeRougeAlly] Count))% HP to raise [ChargeRougeAlly] Count to 5",
+          "iconId": "1071701",
+          "id": "1071701",
+          "name": "Bla Bla Warp Bla, Yap Yap Weft Yap",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "Final Power +1 for every 2 [ChargeRougeAlly] Potency on self (max 2)\n[WhenUse] At fewer than 5 [ChargeRougeAlly] Count, consume (2 x (5 - [ChargeRougeAlly] Count))% HP to raise [ChargeRougeAlly] Count to 5\n[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+          "iconId": "1071701",
+          "id": "1071701",
+          "name": "Bla Bla Warp Bla, Yap Yap Weft Yap",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1071702": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [ChargeRougeAlly] Count",
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [ChargeRougeAlly] Count",
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [ChargeRougeAlly] Count",
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At fewer than 10 [ChargeRougeAlly] Count, consume (2 x (10 - [ChargeRougeAlly] Count))% HP to raise [ChargeRougeAlly] Count to 10\n[WhenUse] Consume 7 [ChargeRougeAlly] Count on self to gain Final Power +2",
+          "iconId": "1071702",
+          "id": "1071702",
+          "levelCorrection": 3,
+          "name": "Stitch! Per! Inch!",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.03
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [ChargeRougeAlly] Count",
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] Deal Pierce damage equal to 1% of this Coin's final damage for every [NeedlekinAlly] Stack on self (min 1)"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.03
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [ChargeRougeAlly] Count",
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] Deal Pierce damage equal to 1% of this Coin's final damage for every [NeedlekinAlly] Stack on self (min 1)"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.03
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Gain +2 [ChargeRougeAlly] Count",
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] Deal Pierce damage equal to 1% of this Coin's final damage for every [NeedlekinAlly] Stack on self (min 1)"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.03
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Laceration]",
+                "[OnSucceedAttack] Inflict [NiddlePinAlly] on target equal to [NeedlekinAlly] Stack on self",
+                "[OnSucceedAttack] Deal Pierce damage equal to 1% of this Coin's final damage for every [NeedlekinAlly] Stack on self (min 1)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Final Power +1 for every 2 [ChargeRougeAlly] Potency on self (max 2)\n[WhenUse] At fewer than 10 [ChargeRougeAlly] Count, consume (2 x (10 - [ChargeRougeAlly] Count))% HP to raise [ChargeRougeAlly] Count to 10\n[WhenUse] Consume 7 [ChargeRougeAlly] Count on self to gain Final Power +2",
+          "iconId": "1071702",
+          "id": "1071702",
+          "name": "Stitch! Per! Inch!",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "Final Power +1 for every 2 [ChargeRougeAlly] Potency on self (max 2)\n[WhenUse] At fewer than 10 [ChargeRougeAlly] Count, consume (2 x (10 - [ChargeRougeAlly] Count))% HP to raise [ChargeRougeAlly] Count to 10\n[WhenUse] Consume 7 [ChargeRougeAlly] Count on self to gain Final Power +2",
+          "iconId": "1071702",
+          "id": "1071702",
+          "name": "Stitch! Per! Inch!",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "Final Power +1 for every 2 [ChargeRougeAlly] Potency on self (max 2)\n[WhenUse] At fewer than 10 [ChargeRougeAlly] Count, consume (2 x (10 - [ChargeRougeAlly] Count))% HP to raise [ChargeRougeAlly] Count to 10\n[WhenUse] Consume 7 [ChargeRougeAlly] Count on self to gain Final Power +2\n[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+          "iconId": "1071702",
+          "id": "1071702",
+          "name": "Stitch! Per! Inch!",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1071703": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "wrath",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.6
+            },
+            {
+              "type": "atkweight",
+              "value": 2
+            },
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.4
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [ChargeRougeAlly] Count (once per Skill)",
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [ChargeRougeAlly] Count (once per Skill)",
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [NiddlePinAlly]",
+                "[OnSucceedAttack] If target has 5+ [NiddlePinAlly], consume 5 [NiddlePinAlly] on target to inflict [NiddlePinnedAlly] on the said target next turn (counted per target)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain Atk Weight +1 for every 15 [NiddlePinGather] on self (max 2)\n[WhenUse] Deal +30% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Parts)\n[WhenUse] Consume up to 20 [ChargeRougeAlly] Count on self to apply the following effects:\n- Coin Power +1 for every 7 [ChargeRougeAlly] Count consumed (max 2)\n- Deal +2% damage using this Skill for every [ChargeRougeAlly] Count consumed\n[EndSkill] Consume [NiddlePinGather] on self equal to (Atk Weight gained from [NiddlePinGather] x 15)",
+          "iconId": "1071703",
+          "id": "1071703",
+          "levelCorrection": 4,
+          "name": "Pick stitch too obvious, you say?! I'll pick-stitch your bum!",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.6
+            },
+            {
+              "type": "atkweight",
+              "value": 2
+            },
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "type": "coin",
+              "value": 2
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.4
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [ChargeRougeAlly] Count (once per Skill)",
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +3 [ChargeRougeAlly] Count (once per Skill)",
+                "[OnSucceedAttack] Inflict 1 [Laceration]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 3 [NiddlePinAlly]",
+                "[OnSucceedAttack] Inflict 1 [PenetrateTakeDamageUp] next turn",
+                "[OnSucceedAttack] If target has 5+ [NiddlePinAlly], consume 5 [NiddlePinAlly] on target to inflict [NiddlePinnedAlly] on the said target next turn (counted per target)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "Final Power +1 for every 2 [ChargeRougeAlly] Potency on self (max 2)\n[WhenUse] Gain Atk Weight +1 for every 15 [NiddlePinGather] on self (max 2)\n[WhenUse] Deal +30% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Parts)\n[WhenUse] Consume up to 20 [ChargeRougeAlly] Count on self to apply the following effects:\n- Coin Power +1 for every 7 [ChargeRougeAlly] Count consumed (max 2)\n- Deal +2% damage using this Skill for every [ChargeRougeAlly] Count consumed\n[EndSkill] Consume [NiddlePinGather] on self equal to (Atk Weight gained from [NiddlePinGather] x 15)",
+          "iconId": "1071703",
+          "id": "1071703",
+          "name": "Pick stitch too obvious, you say?! I'll pick-stitch your bum!",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1071704": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 6,
+          "clashable": true,
+          "coinValue": 7,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [NiddlePinAlly]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "counter",
+          "desc": "[DuelCounter]\n[StartBattle] Consume 20% HP on self to gain 1 [Enhancement] next turn (once per turn)",
+          "iconId": "1071704",
+          "id": "1071704",
+          "levelCorrection": 4,
+          "name": "Gnnnngh...",
+          "uptie": 1
+        },
+        {
+          "baseValue": 7,
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "coinValue": 8,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [NiddlePinAlly]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[DuelCounter]\n[StartBattle] Consume 20% HP on self to gain 2 [Enhancement] and +5 [ChargeRougeAlly] Count next turn (once per turn)\n[WhenUse] Final Power +1 for every 2 [ChargeRougeAlly] Potency on self (max 2)",
+          "iconId": "1071704",
+          "id": "1071704",
+          "name": "Gnnnngh...",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1071705": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "lust",
+          "atkType": "pierce",
+          "atkWeight": 3,
+          "baseValue": 12,
+          "coinValue": 3,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [ChargeRougeAlly] Count",
+                "[OnSucceedAttack] Inflict 2 [NiddlePinAlly]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [ChargeRougeAlly] Count",
+                "[OnSucceedAttack] Inflict 2 [NiddlePinAlly]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain +1 [ChargeRougeAlly] Count",
+                "[OnSucceedAttack] Inflict 2 [NiddlePinAlly]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WideAreaRampage]\nOn Hit using this Skill, heal 8% HP\n[WhenUse] Consume all [NeedlekinAlly] on self to apply 1 [PenetrateDamageUp] to this unit and 2 other random allies next turn\n- Prioritizes \"Le Rouge\" Identities (in Deployment Order)",
+          "iconId": "1071705",
+          "id": "1071705",
+          "levelCorrection": 5,
+          "name": "Double stitching past the side seam? Double-needle! Rejected!",
+          "uptie": 2
+        }
+      ],
+      "tier": 3
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1071721"
+      ],
+      "uptie": 3
+    }
+  ]
+}
