@@ -24,27 +24,27 @@
         {
           "copies": 1,
           "level": 2,
-          "subject": "S-A02"
+          "subject": "S-A1"
         },
         {
           "copies": 1,
           "level": 4,
-          "subject": "S-A02"
+          "subject": "S-A1"
         },
         {
           "copies": 1,
           "level": 6,
-          "subject": "S-A02"
+          "subject": "S-A1"
         },
         {
           "copies": 1,
           "level": 8,
-          "subject": "S-A02"
+          "subject": "S-A1"
         },
         {
           "copies": 1,
           "level": 10,
-          "subject": "S-A02"
+          "subject": "S-A1"
         }
       ]
     }
@@ -105,7 +105,7 @@
           ],
           "effects": [
             {
-              "id": "E-4-1",
+              "id": "E-6-1",
               "type": "summon"
             }
           ]
@@ -122,7 +122,7 @@
           ],
           "effects": [
             {
-              "id": "E-4-2",
+              "id": "E-6-2",
               "type": "summon"
             }
           ]
@@ -222,10 +222,14 @@
       "cost": 2500,
       "name": "Unknown Backstreets",
       "rec_agents": 1,
+      "rec_defense": [
+        "pride"
+      ],
       "rec_level": 1,
       "reward": {
         "xp": 150
       },
+      "src": "C1-1",
       "waves": [
         [
           "E-1"
@@ -243,7 +247,15 @@
       "cost": 3500,
       "name": "District 4 Lobotomy Corp Branch (Part 1)",
       "rec_agents": 2,
+      "rec_defense": [
+        "gluttony",
+        "pride"
+      ],
       "rec_level": 2,
+      "rec_offense": [
+        "wrath",
+        "pride"
+      ],
       "reward": {
         "drops": [
           {
@@ -254,6 +266,7 @@
         ],
         "xp": 200
       },
+      "src": "C1-2",
       "waves": [
         [
           "E-3",
@@ -276,7 +289,7 @@
           "id": "EV-1"
         }
       ],
-      "first_time_reward": {
+      "first_clear_reward": {
         "subjects": [
           "S-A1",
           "S-A1-1"
@@ -284,7 +297,17 @@
       },
       "name": "District 4 Lobotomy Corp Branch (Part 2)",
       "rec_agents": 2,
+      "rec_defense": [
+        "wrath",
+        "lust",
+        "sloth"
+      ],
       "rec_level": 3,
+      "rec_offense": [
+        "wrath",
+        "sloth",
+        "envy"
+      ],
       "reward": {
         "drops": [
           {
@@ -295,6 +318,7 @@
         ],
         "xp": 300
       },
+      "src": "C1-2",
       "waves": [
         [
           "E-6"
@@ -303,14 +327,22 @@
     },
     "X-3": {
       "cost": 5000,
-      "first_time_reward": {
+      "first_clear_reward": {
         "subjects": [
           "S-A2"
         ]
       },
       "name": "District 4 Lobotomy Corp Branch (Part 3)",
       "rec_agents": 2,
+      "rec_defense": [
+        "lust",
+        "gluttony"
+      ],
       "rec_level": 5,
+      "rec_offense": [
+        "wrath",
+        "sloth"
+      ],
       "reward": {
         "drops": [
           {
@@ -321,6 +353,7 @@
         ],
         "xp": 500
       },
+      "src": "C1-3",
       "waves": [
         [
           "E-3",
@@ -350,7 +383,7 @@
         {
           "affinity": "gluttony",
           "type": "defense",
-          "value": 0.1
+          "value": -0.1
         }
       ],
       "max_copies": 5,
@@ -372,6 +405,7 @@
     },
     "G-3": {
       "desc": "Deals a fixed 3 Lust and 3 Gluttony damage to all enemies every turn.",
+      "effect_desc": "Deals a fixed 3 Lust and 3 Gluttony damage to all enemies every turn.",
       "effects": [
         {
           "affinity": "lust",
@@ -693,27 +727,27 @@
         {
           "copies": 1,
           "level": 1,
-          "subject": "S-A02"
+          "subject": "S-A1"
         },
         {
           "copies": 1,
           "level": 3,
-          "subject": "S-A02"
+          "subject": "S-A1"
         },
         {
           "copies": 1,
           "level": 5,
-          "subject": "S-A02"
+          "subject": "S-A1"
         },
         {
           "copies": 1,
           "level": 7,
-          "subject": "S-A02"
+          "subject": "S-A1"
         },
         {
           "copies": 1,
           "level": 9,
-          "subject": "S-A02"
+          "subject": "S-A1"
         }
       ]
     }
