@@ -56,9 +56,9 @@
       "name": "Hooligan",
       "offense": [0, 0, 0, 0, 0, 3, 0],
       "src": [
+        "90004_idle",
         "90005_idle",
-        "90006_idle",
-        "90007_idle"
+        "90006_idle"
       ]
     },
     "E-2": {
@@ -66,7 +66,7 @@
       "max_hp": 150,
       "name": "Head Hooligan",
       "offense": [0, 0, 0, 0, 0, 7, 0],
-      "src": "90008_idle"
+      "src": "90007_idle"
     },
     "E-3": {
       "defense": [2, 1, 1, 0.75, 0.75, 2, 1],
@@ -83,6 +83,7 @@
       "src": "8018_idle"
     },
     "E-5": {
+      "boss": true,
       "defense": [2, 1, 1, 1, 0.5, 2, 0.75],
       "max_hp": 200,
       "name": "Ebony Queen's Apple (Weakened)",
@@ -90,6 +91,7 @@
       "src": "8001_idle"
     },
     "E-6": {
+      "boss": true,
       "defense": [1.5, 0.5, 2, 1, 1, 1, 1],
       "desc": "Summons a Clay Doll when no allies are present. A stronger variant is summoned when below 50% HP.",
       "effects": [
@@ -155,6 +157,7 @@
       "src": "8017_idle"
     },
     "E-8": {
+      "boss": true,
       "defense": [1.5, 0.5, 2, 1, 1, 0.75, 0.75],
       "desc": "Deals more and swaps to Lust damage when below 50% HP.",
       "effects": [
@@ -256,6 +259,12 @@
         "wrath",
         "pride"
       ],
+      "requires": [
+        {
+          "id": "X-0",
+          "type": "expedition_cleared"
+        }
+      ],
       "reward": {
         "drops": [
           {
@@ -308,6 +317,12 @@
         "sloth",
         "envy"
       ],
+      "requires": [
+        {
+          "id": "X-1",
+          "type": "expedition_cleared"
+        }
+      ],
       "reward": {
         "drops": [
           {
@@ -342,6 +357,12 @@
       "rec_offense": [
         "wrath",
         "sloth"
+      ],
+      "requires": [
+        {
+          "id": "X-2",
+          "type": "expedition_cleared"
+        }
       ],
       "reward": {
         "drops": [
@@ -616,6 +637,31 @@
     },
     "S-A2": {
       "defense": [1.5, 0.5, 2, 1, 1, 0.75, 0.75],
+      "desc": "On a bad work result, if the working agent's level is below 5, 20% chance to instantly incapacitate the working agent.",
+      "effects": [
+        {
+          "conditions": [
+            {
+              "type": "work_result",
+              "value": "bad"
+            },
+            {
+              "comp": "lt",
+              "type": "working_agent_level",
+              "value": 5
+            },
+            {
+              "chance": 0.2,
+              "type": "random"
+            }
+          ],
+          "effects": [
+            {
+              "type": "incapacitate_working_agent"
+            }
+          ]
+        }
+      ],
       "max_level": 10,
       "name": "Golden Apple",
       "offense": [0, 5, 0, 5, 0, 0, 0],
@@ -680,7 +726,7 @@
   },
   "weapons": {
     "W-0": {
-      "desc": "Increases the agent's Wrath damage by 0.5x every 4th turn.",
+      "desc": "Increases the agent's Wrath damage by 1x every 4th turn.",
       "effects": [
         {
           "conditions": [
@@ -693,7 +739,7 @@
             {
               "affinity": "wrath",
               "type": "offense_mult",
-              "value": 0.5
+              "value": 1
             }
           ]
         }
