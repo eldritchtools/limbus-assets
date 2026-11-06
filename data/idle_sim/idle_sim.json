@@ -47,6 +47,38 @@
           "subject": "S-A1"
         }
       ]
+    },
+    "A-2": {
+      "defense": [2, 1, 2, 0.75, 1, 1, 1],
+      "name": "Legerdemain",
+      "price": 20000,
+      "unlocks": [
+        {
+          "copies": 1,
+          "level": 2,
+          "subject": "S-A2"
+        },
+        {
+          "copies": 1,
+          "level": 4,
+          "subject": "S-A2"
+        },
+        {
+          "copies": 1,
+          "level": 6,
+          "subject": "S-A2"
+        },
+        {
+          "copies": 1,
+          "level": 8,
+          "subject": "S-A2"
+        },
+        {
+          "copies": 1,
+          "level": 10,
+          "subject": "S-A2"
+        }
+      ]
     }
   },
   "enemies": {
@@ -207,7 +239,7 @@
           "effects": [
             {
               "drop_type": "gifts",
-              "id": "G-1",
+              "id": "G-2",
               "type": "drop"
             }
           ],
@@ -1028,6 +1060,64 @@
           "subject": "S-A1"
         }
       ]
+    },
+    "W-2": {
+      "name": "Legerdemain",
+      "offense": [0.8, 1, 1.3, 1.5, 0.9, 1, 1],
+      "price": 20000,
+      "unlocks": [
+        {
+          "copies": 1,
+          "level": 1,
+          "subject": "S-A2"
+        },
+        {
+          "copies": 1,
+          "level": 3,
+          "subject": "S-A2"
+        },
+        {
+          "copies": 1,
+          "level": 5,
+          "subject": "S-A2"
+        },
+        {
+          "copies": 1,
+          "level": 7,
+          "subject": "S-A2"
+        },
+        {
+          "copies": 1,
+          "level": 9,
+          "subject": "S-A2"
+        }
+      ]
+    },
+    "W-3": {
+      "name": "Tingtanger's Knife",
+      "offense": [1, 1.5, 0.8, 1.7, 0.8, 1, 1.2]
+    },
+    "W-4": {
+      "desc": "5% chance to deal 20% bonus damage.",
+      "effects": [
+        {
+          "conditions": [
+            {
+              "chance": 0.05,
+              "type": "random"
+            }
+          ],
+          "effects": [
+            {
+              "op": "mul",
+              "type": "bonus_damage",
+              "value": 0.2
+            }
+          ]
+        }
+      ],
+      "name": "Aida's Maracas",
+      "offense": [0.8, 1, 1.2, 0.8, 1.7, 1, 1.5]
     }
   }
 }
