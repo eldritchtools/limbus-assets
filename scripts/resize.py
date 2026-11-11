@@ -5,6 +5,8 @@ INPUT_DIR = Path("temp")
 OUTPUT_DIR = Path("output")
 MAX_WIDTH = 400
 MAX_HEIGHT = 400
+# MAX_WIDTH = 800
+# MAX_HEIGHT = 800
 
 SUPPORTED_FORMATS = {".png", ".webp", ".jpg", ".jpeg"}
 
