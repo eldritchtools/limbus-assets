@@ -376,6 +376,12 @@
         "name": "The City Where No One Can Hurt Another"
       }
     ],
+    "20611": [
+      {
+        "desc": "This unit's Attack Type Resist. that are higher than 1.5 are adjusted to 1.5 (except while Staggered)\nIf this unit is Staggered, take -30% damage (including forced Staggers)\n\nAt 999 [DespairKnightEGOMind], does not consume E.G.O resource when using the \"The Sword Sharpened with Tears\" E.G.O Skill (both Awakening and Corrosion)\n\nGain [DespairKnightEGOMind] equal to damage taken by allies (including this unit; including Shield damage)\nOn Ally Death, gain 1 [DespairKnightEGOSword] (once per turn)\nWhen an ally that has [DespairKnightEGOProtect] is defeated, gain 1 [DespairKnightEGOSword] (once per turn)\n\nOffense Level +1 and Defense Level -1 for every 2 defeated allies (max 5)",
+        "name": "From the Depths of Despair"
+      }
+    ],
     "20701": [
       {
         "desc": "When another ally defeats an enemy, gain 1 [Enhancement] and 1 [Agility] at the next Turn Start (max 3)",
@@ -1201,7 +1207,7 @@
               ],
               "type": "res"
             },
-            "desc": "At the start of the combat phase, heal 1 ally with the least SP for 15 SP.\nIf the ally is an 'N Corp. Fanatic', also apply 2 [AssemblePersonality].",
+            "desc": "Combat Start: Heal 15 SP for 1 ally that has the lowest SP\nIf the ally is an \"N Corp. [AssemblePersonality]\", also apply 2 [AssemblePersonality]",
             "name": "Whispers"
           }
         ],
@@ -1875,6 +1881,17 @@
             },
             "desc": "All allied [PersonalityCharge] take -2% damage this turn for every allied [PersonalityCharge] on the field at Combat Start (max -10%)",
             "name": "Formation Conservation"
+          }
+        ],
+        "uptie": 3
+      }
+    ],
+    "10316": [
+      {
+        "passives": [
+          {
+            "desc": "When 1 ally with the fastest Speed uses a Skill to Clash, inflict 3 [Vibration] Potency on the target of the Clash (once per turn; for Focused Encounters, the Part)",
+            "name": "Reconnaissance"
           }
         ],
         "uptie": 3
@@ -4420,6 +4437,17 @@
         "uptie": 3
       }
     ],
+    "11017": [
+      {
+        "passives": [
+          {
+            "desc": "Turn End: Apply 1 [Agility] next turn on the allied Identity with the slowest Speed (prioritize \"Fixer\" Identities)\n- If the said Identity is a \"Fixer\", apply 1 [AttackUp] and 1 [Agility] next turn instead",
+            "name": "Keeping Pace"
+          }
+        ],
+        "uptie": 3
+      }
+    ],
     "11101": [
       {
         "passives": [
@@ -4769,6 +4797,17 @@
             },
             "desc": "Combat Start: Apply 1 [AttackDmgUp] and 1 [Protection] on allies that equipped Counter Skills (2 times per Encounter; excluding Clashable Counters)\n- If the affected ally is in The Middle, apply 2 [VioletDamageUp] and 2 [Protection] instead",
             "name": "Someone Mess With the Family?"
+          }
+        ],
+        "uptie": 3
+      }
+    ],
+    "11116": [
+      {
+        "passives": [
+          {
+            "desc": "All allies' Pierce Skills deal +5% damage",
+            "name": "Acceleration Lance"
           }
         ],
         "uptie": 3

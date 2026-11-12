@@ -1,0 +1,696 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1101702",
+        "1101703",
+        "1101704"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1101702",
+        "1101703",
+        "1101704",
+        "1101701"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1101702",
+        "1101703",
+        "1101704",
+        "1101711"
+      ],
+      "uptie": 4
+    }
+  ],
+  "passiveBonuses": [
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1101701
+      },
+      "type": "damage",
+      "value": 0.3
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1101702
+      },
+      "type": "damage",
+      "value": 0.2
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1101703
+      },
+      "type": "damage",
+      "value": 0.15
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1101705
+      },
+      "type": "damage",
+      "value": 0.2
+    },
+    {
+      "extra": {
+        "op": "mul"
+      },
+      "type": "damage",
+      "value": 0.1
+    },
+    {
+      "type": "coin",
+      "value": 1
+    }
+  ],
+  "passiveData": {
+    "1101701": {
+      "desc": "Combat End: At 10+ [Breath] Potency, gain 1 [Agility] next turn\n\nAt more than 20 [Breath] Potency, Base Skills deal +(excess Potency)% damage on Critical Hit (max 15%)",
+      "flavor": "The streets of the City are never short of vile and savage company after dark. Rats desperate to turn their lives around, denizens of the Backstreets harboring dreams of revenge, Syndicates and Fingers embroiled in struggles over their interests... and, of course, the Sweepers.\n\nFor all the fortunes to be made from working after sundown, few Fixers are eager to accept such contracts. There are, however, those who find their greatest opportunities precisely where others dare not tread.\n\nThe discernment to read any situation with remarkable precision. The swiftness and thoroughness to bring a job to its conclusion without inviting further trouble. With these two qualities as its greatest assets, Wedge Office has weathered every contract and walked away with the handsome compensation that follows.",
+      "name": "Hunters of the City"
+    },
+    "1101702": {
+      "desc": "In the Team Loadout menu:\n- Equipping Wedge Office Fixer Sinclair automatically equips Don Quixote's Identity as Wedge Office Fixer Don Quixote\n- When Wedge Office Fixer Don Quixote is unequipped, automatically equip the most recently equipped Identity that isn't Wedge Office Fixer Sinclair (If Wedge Office Fixer Sinclair Identity was already equipped when entering the Team Loadout menu, removing this Identity will automatically equip the LCB Sinner Sinclair Identity instead)\n\nFrom Turn Start ~ before Combat Start: If this unit's Speed is slower than allied Wedge Office Fixer Don Quixote Identity's Speed, become faster until their Speed values are equal (this effect does not activate if either of the two Identities is at -45 SP, or is under an effect that fixes their Speed)",
+      "name": "Don Quixote... Please focus on the task at hand."
+    },
+    "1101703": {
+      "desc": "Turn Start: Gain 1 [BattleFieldKnow]\n\nIf any of the following conditions are met, inflict 1 [WedgeMarkGreen] on the main target (once per turn)\n- On final Coin Hit using an Attack Skill against the main target\n- Upon using this unit's Evade Skill to successfully evade all of the attacker's Coins",
+      "name": "Wedge Drive"
+    },
+    "1101704": {
+      "desc": "When the allied Dawn Office Fixer Faust Identity uses the \"Dismemberment at High Noon\" Skill, the Skill's Coin 2 gains the following effects (once per turn):\n- [ComboSkill]: Wedge Office Fixer Sinclair\n  · [OnSucceedAttack] Inflict 2 [Combustion] and +2 [Combustion] Count\n  · [OnSucceedAttack] Inflict 2 [Vibration]\n  · [OnSucceedAttack] Inflict 1 [WedgeMarkGreen]\n  · [OnSucceedAttack] Allied Wedge Office Rep Outis Identity gains 1 [ComboWedgeDawn]",
+      "name": "Back-to-back in Dawnbreak's Light"
+    },
+    "1101711": {
+      "desc": "Combat End: At 10+ [Breath] Potency, gain 1 [Agility] next turn\n\nAt more than 20 [Breath] Potency, Base Skills deal +(excess Potency)% damage on Critical Hit (max 25%)",
+      "flavor": "The streets of the City are never short of vile and savage company after dark. Rats desperate to turn their lives around, denizens of the Backstreets harboring dreams of revenge, Syndicates and Fingers embroiled in struggles over their interests... and, of course, the Sweepers.\n\nFor all the fortunes to be made from working after sundown, few Fixers are eager to accept such contracts. There are, however, those who find their greatest opportunities precisely where others dare not tread.\n\nThe discernment to read any situation with remarkable precision. The swiftness and thoroughness to bring a job to its conclusion without inviting further trouble. With these two qualities as its greatest assets, Wedge Office has weathered every contract and walked away with the handsome compensation that follows.",
+      "name": "Hunters of the City"
+    },
+    "1101721": {
+      "desc": "Turn End: Apply 1 [Agility] next turn on the allied Identity with the slowest Speed (prioritize \"Fixer\" Identities)\n- If the said Identity is a \"Fixer\", apply 1 [AttackUp] and 1 [Agility] next turn instead",
+      "name": "Keeping Pace"
+    }
+  },
+  "sanity": {
+    "add": [
+      "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+      "Increase by 10 after this unit defeats an enemy whose level was higher than or equal to this unit’s",
+      "Increase by 5 after an ally defeats an enemy whose level was higher than or equal to the unit’s"
+    ],
+    "id": 9999,
+    "lowMoraleDesc": "",
+    "name": "Panic",
+    "panicDesc": "Does not act for this turn.",
+    "sub": [
+      "If the level of the defeated ally was higher than or equal to the unit’s,\ndecrease based on the level difference\n<size=95%>(Base Value is 10, raised by 10 per level)</size>"
+    ]
+  },
+  "skills": {
+    "1101701": {
+      "bonusNotes": "Assumes combos are fulfilled.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 2,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]",
+                "[ReUseOnSucceedAttack] Inflict 1 [WedgeMarkYellow]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 1 [Breath]\n[ComboSkill]: Upon Reson. with Wedge Office Fixer Don Quixote's Skills, gain the following effects (once per turn):\n- [WhenUse] Clash Power +1\n- [WhenUse] Gain 1 [BattleFieldKnow]\n- [WhenUse] Reuse the final Coin once",
+          "iconId": "1101701",
+          "id": "1101701",
+          "levelCorrection": 2,
+          "name": "Collision",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]",
+                "[ReUseOnSucceedAttack] Inflict 1 [WedgeMarkYellow]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Breath] Potency on self + [Vibration] Potency on target) (max 2)\n[WhenUse] Gain 2 [Breath]\n[ComboSkill]: Upon Reson. with Wedge Office Fixer Don Quixote's Skills, gain the following effects (once per turn):\n- [WhenUse] Clash Power +2\n- [WhenUse] Gain 1 [BattleFieldKnow]\n- [WhenUse] Reuse the final Coin once",
+          "iconId": "1101701",
+          "id": "1101701",
+          "name": "Collision",
+          "uptie": 2
+        },
+        {
+          "baseValue": 3,
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Breath] Potency on self + [Vibration] Potency on target) (max 2)\n[WhenUse] Gain 2 [Breath]\n[ComboSkill]: Upon Reson. with Wedge Office Fixer Don Quixote's Skills, gain the following effects (once per turn):\n- [WhenUse] Clash Power +2\n- [WhenUse] Gain 1 [BattleFieldKnow]\n- [WhenUse] Reuse the final Coin once",
+          "iconId": "1101701",
+          "id": "1101701",
+          "name": "Collision",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 3
+            },
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Breath] Potency on self + [Vibration] Potency on target) (max 3)\n[WhenUse] Gain 2 [Breath]\n[ComboSkill]: Upon Reson. with Wedge Office Fixer Don Quixote's Skills, gain the following effects (once per turn):\n- [WhenUse] Clash Power +2\n- [WhenUse] Gain 1 [BattleFieldKnow]\n- [WhenUse] Reuse the final Coin once",
+          "iconId": "1101701",
+          "id": "1101701",
+          "name": "Collision",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1101702": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 2 [Breath]",
+          "iconId": "1101702",
+          "id": "1101702",
+          "levelCorrection": 2,
+          "name": "Riding the Tide of the Offensive",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.15
+                }
+              ],
+              "descs": [
+                "Deal +5% damage for every [BattleFieldKnow] on self (max 15%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 6+ ([Breath] Potency on self + [Vibration] Potency on target), Coin Power +1\n[WhenUse] Gain 3 [Breath]",
+          "iconId": "1101702",
+          "id": "1101702",
+          "name": "Riding the Tide of the Offensive",
+          "uptie": 2
+        },
+        {
+          "baseValue": 4,
+          "desc": "[WhenUse] At 6+ ([Breath] Potency on self + [Vibration] Potency on target), Coin Power +1\n[WhenUse] Gain 3 [Breath]",
+          "iconId": "1101702",
+          "id": "1101702",
+          "name": "Riding the Tide of the Offensive",
+          "uptie": 3
+        },
+        {
+          "coinValue": 4,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "Deal +5% damage for every [BattleFieldKnow] on self (max 20%)"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 6+ ([Breath] Potency on self + [Vibration] Potency on target), Coin Power +1\n[WhenUse] Gain 3 [Breath] ",
+          "iconId": "1101702",
+          "id": "1101702",
+          "name": "Riding the Tide of the Offensive",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1101703": {
+      "bonusNotes": "Assumes combos are fulfilled.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 4 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.4
+                },
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                }
+              ],
+              "descs": [
+                "Deal +10% damage for every [BattleFieldKnow] on self (max 40%)",
+                "If target is in either [Switch_Vibration] or [FusionVibration] states, deal +20% damage",
+                "[OnSucceedAttack] If target isn't in an [Switch_Vibration] state, trigger [Switch_Vibration] into [VibrationCollapse]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 6+ ([Breath] Potency on self + [Vibration] Potency on target), Coin Power +1\n[WhenUse] Gain 2 [Breath]\n[ComboSkill]: Upon Reson. with Wedge Office Fixer Don Quixote's Skills, gain the following effects (once per turn):\n- [WhenUse] Clash Power +1\n- [WhenUse] Gain 1 [BattleFieldKnow]\n- [WhenUse] Deal +20% damage",
+          "iconId": "1101703",
+          "id": "1101703",
+          "levelCorrection": 3,
+          "name": "Speared Sweep",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 3
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": 3,
+          "coins": [
+            {
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 4 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.4
+                },
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                }
+              ],
+              "descs": [
+                "Deal +10% damage for every [BattleFieldKnow] on self (max 40%)",
+                "If target is in either [Switch_Vibration] or [FusionVibration] states, deal +30% damage",
+                "[OnSucceedAttack] If target isn't in an [Switch_Vibration] state, trigger [Switch_Vibration] into [VibrationCollapse]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 6+ ([Breath] Potency on self + [Vibration] Potency on target), Coin Power +1\n[WhenUse] Gain 2 [Breath]\n[ComboSkill]: Upon Reson. with Wedge Office Fixer Don Quixote's Skills, gain the following effects (once per turn):\n- [WhenUse] Clash Power +3\n- [WhenUse] Gain 1 [BattleFieldKnow]\n- [WhenUse] Deal +30% damage",
+          "iconId": "1101703",
+          "id": "1101703",
+          "name": "Speared Sweep",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1101704": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[WhenUse] At 6+ [Breath] Potency, Coin Power +1\n[OnSucceedEvade] Gain 1 [Breath] (3 times per turn)\n[OnBattleEnd] If this unit could not gain [BattleFieldKnow] from Skill effects this turn, gain 1 [BattleFieldKnow] (once per turn)",
+          "iconId": "1101704",
+          "id": "1101704",
+          "levelCorrection": 2,
+          "name": "Catch Breath",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "[StartBattle] If target has 4+ [WedgeMarkYellow], activate \"I'll Run You Through Quick & True\" instead (once per turn; can activate for Unopposed Attacks)\n[WhenUse] At 6+ [Breath] Potency, Coin Power +1\n[OnSucceedEvade] Gain 2 [Breath] (3 times per turn)\n[OnBattleEnd] If this unit could not gain [BattleFieldKnow] from Skill effects this turn, gain 1 [BattleFieldKnow] (once per turn)",
+          "iconId": "1101704",
+          "id": "1101704",
+          "name": "Catch Breath",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "[StartBattle] If target has 4+ [WedgeMarkYellow], activate \"I'll Run You Through Quick & True\" instead (once per turn; can activate for Unopposed Attacks)\n[WhenUse] At 6+ [Breath] Potency, Coin Power +1\n[OnSucceedEvade] Gain 2 [Breath] (3 times per turn)\n[OnSucceedEvade] Gain 1 [Agility] next turn (once per turn)\n[OnBattleEnd] If this unit could not gain [BattleFieldKnow] from Skill effects this turn, gain 1 [BattleFieldKnow] (once per turn)",
+          "iconId": "1101704_4",
+          "id": "1101704",
+          "name": "Catch Breath",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1101705": {
+      "bonusNotes": "Assumes combos are fulfilled.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 4
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Gain 4 [Breath]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.4
+                },
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                },
+                {
+                  "type": "reuse",
+                  "value": 1
+                },
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.32
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "Deal +10% damage for every [BattleFieldKnow] on self (max 40%)",
+                "If target is in either [Switch_Vibration] or [FusionVibration] states, deal +30% damage",
+                "[OnSucceedAttack] Reuse this Coin (once per Skill)",
+                "[ReUseOnSucceedAttack] If target isn't in an [Switch_Vibration] state, trigger [Switch_Vibration] into [VibrationCollapse]",
+                "[ReUseOnSucceedAttack] Deal Pierce damage equal to ([WedgeMarkYellow] on target x 4)% of this Coin's final damage (max 32%)",
+                "[ReUseOnSucceedAttack] Trigger [VibrationExplosion] 2 times; then, reduce target's [Vibration] Count by 2"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "This Skill counts as an Attack Skill even when it activates instead of a Defense Skill; this Skill is unaffected by Defense Power-changing effects, and is instead affected by Attack Power-changing effects\nClash Power +1 for every 2 [WedgeMarkYellow] on target (max 4)\n[WhenUse] At 6+ ([Breath] Potency on self + [Vibration] Potency on target), Coin Power +1\n[WhenUse] Gain 2 [Breath]\n[ComboSkill]: Upon Reson. with Wedge Office Fixer Don Quixote's Skills, gain the following effects (once per turn):\n- [WhenUse] Clash Power +1\n- [WhenUse] Gain 1 [BattleFieldKnow]\n- [WhenUse] Deal +20% damage\n[EndSkill] Remove all [WedgeMarkYellow] on target\n[EndSkill] Allied Wedge Office Rep Outis Identity gains 3 [ComboWedge]",
+          "iconId": "1101705",
+          "id": "1101705",
+          "levelCorrection": 4,
+          "name": "I'll Run You Through Quick & True",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 4
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 3
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "desc": "This Skill counts as an Attack Skill even when it activates instead of a Defense Skill; this Skill is unaffected by Defense Power-changing effects, and is instead affected by Attack Power-changing effects\nClash Power +1 for every 2 [WedgeMarkYellow] on target (max 4)\n[WhenUse] At 6+ ([Breath] Potency on self + [Vibration] Potency on target), Coin Power +1\n[WhenUse] Gain 2 [Breath]\n[ComboSkill]: Upon Reson. with Wedge Office Fixer Don Quixote's Skills, gain the following effects (once per turn):\n- [WhenUse] Clash Power +3\n- [WhenUse] Gain 1 [BattleFieldKnow]\n- [WhenUse] Deal +30% damage\n[EndSkill] Remove all [WedgeMarkYellow] on target\n[EndSkill] Allied Wedge Office Rep Outis Identity gains 3 [ComboWedge]",
+          "iconId": "1101705",
+          "id": "1101705",
+          "name": "I'll Run You Through Quick & True",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1101721"
+      ],
+      "uptie": 3
+    }
+  ]
+}

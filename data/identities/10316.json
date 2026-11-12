@@ -1,0 +1,708 @@
+{
+  "combatPassives": [
+    {
+      "passives": [
+        "1031602",
+        "1031603",
+        "1031604"
+      ],
+      "uptie": 1
+    },
+    {
+      "passives": [
+        "1031602",
+        "1031603",
+        "1031604",
+        "1031601"
+      ],
+      "uptie": 2
+    },
+    {
+      "passives": [
+        "1031602",
+        "1031603",
+        "1031604",
+        "1031611"
+      ],
+      "uptie": 4
+    }
+  ],
+  "passiveBonuses": [
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1031601
+      },
+      "type": "damage",
+      "value": 0.6
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1031602
+      },
+      "type": "damage",
+      "value": 0.3
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1031603
+      },
+      "type": "damage",
+      "value": 0.2
+    },
+    {
+      "extra": {
+        "op": "mul",
+        "skillId": 1031605
+      },
+      "type": "damage",
+      "value": 0.2
+    },
+    {
+      "extra": {
+        "op": "mul"
+      },
+      "type": "damage",
+      "value": 0.1
+    },
+    {
+      "type": "coin",
+      "value": 1
+    }
+  ],
+  "passiveData": {
+    "1031601": {
+      "desc": "Combat End: At 10+ [Breath] Potency, gain 1 [Agility] next turn\n\nAt more than 20 [Breath] Potency, Base Skills deal +(excess Potency)% damage on Critical Hit (max 15%)",
+      "flavor": "The streets of the City are never short of vile and savage company after dark. Rats desperate to turn their lives around, denizens of the Backstreets harboring dreams of revenge, Syndicates and Fingers embroiled in struggles over their interests... and, of course, the Sweepers.\n\nFor all the fortunes to be made from working after sundown, few Fixers are eager to accept such contracts. There are, however, those who find their greatest opportunities precisely where others dare not tread.\n\nThe discernment to read any situation with remarkable precision. The swiftness and thoroughness to bring a job to its conclusion without inviting further trouble. With these two qualities as its greatest assets, Wedge Office has weathered every contract and walked away with the handsome compensation that follows.",
+      "name": "Hunters of the City"
+    },
+    "1031602": {
+      "desc": "In the Team Loadout menu:\n- Equipping Wedge Office Fixer Don Quixote automatically equips Sinclair's Identity as Wedge Office Fixer Sinclair\n- When Wedge Office Fixer Sinclair is unequipped, automatically equip the most recently equipped Identity that isn't Wedge Office Fixer Don Quixote (If Wedge Office Fixer Don Quixote Identity was already equipped when entering the Team Loadout menu, removing this Identity will automatically equip the LCB Sinner Don Quixote Identity instead)\n\nFrom Turn Start ~ before Combat Start: If this unit's Speed is slower than allied Wedge Office Fixer Sinclair Identity's Speed, become faster until their Speed values are equal (this effect does not activate if either of the two Identities is at -45 SP, or is under an effect that fixes their Speed)",
+      "name": "Ho, Young Sinclair! Thou Must Keep Apace!!"
+    },
+    "1031603": {
+      "desc": "Turn Start: Gain 1 [BattleFieldKnow]\n\nIf any of the following conditions are met, inflict 1 [WedgeMarkYellow] on the main target (once per turn)\n- On final Coin Hit using an Attack Skill against the main target\n- Upon using this unit's Evade Skill to successfully evade all of the attacker's Coins",
+      "name": "Wedge Drive"
+    },
+    "1031604": {
+      "desc": "When the allied Dawn Office Fixer Faust Identity uses the \"Dismemberment at High Noon\" Skill, the Skill's Coin 1 gains the following effects (once per turn):\n- [ComboSkill]: Wedge Office Fixer Don Quixote\n  · [OnSucceedAttack] Inflict 2 [Combustion] and +2 [Combustion] Count\n  · [OnSucceedAttack] Inflict 2 [Vibration]\n  · [OnSucceedAttack] Inflict 1 [WedgeMarkYellow]\n  · [OnSucceedAttack] Allied Wedge Office Rep Outis Identity gains 1 [ComboWedgeDawn]",
+      "name": "Back-to-back in Dawnbreak's Light"
+    },
+    "1031611": {
+      "desc": "Combat End: At 10+ [Breath] Potency, gain 1 [Agility] next turn\n\nAt more than 20 [Breath] Potency, Base Skills deal +(excess Potency)% damage on Critical Hit (max 25%)",
+      "flavor": "The streets of the City are never short of vile and savage company after dark. Rats desperate to turn their lives around, denizens of the Backstreets harboring dreams of revenge, Syndicates and Fingers embroiled in struggles over their interests... and, of course, the Sweepers.\n\nFor all the fortunes to be made from working after sundown, few Fixers are eager to accept such contracts. There are, however, those who find their greatest opportunities precisely where others dare not tread.\n\nThe discernment to read any situation with remarkable precision. The swiftness and thoroughness to bring a job to its conclusion without inviting further trouble. With these two qualities as its greatest assets, Wedge Office has weathered every contract and walked away with the handsome compensation that follows.",
+      "name": "Hunters of the City"
+    },
+    "1031621": {
+      "desc": "When 1 ally with the fastest Speed uses a Skill to Clash, inflict 3 [Vibration] Potency on the target of the Clash (once per turn; for Focused Encounters, the Part)",
+      "name": "Reconnaissance"
+    }
+  },
+  "sanity": {
+    "add": [
+      "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is 10, raised by 20% per Clash count after 1)</size>",
+      "Increase by 10 after this unit defeats an enemy whose level was higher than or equal to this unit’s",
+      "Increase by 5 after an ally defeats an enemy whose level was higher than or equal to the unit’s"
+    ],
+    "id": 9999,
+    "lowMoraleDesc": "",
+    "name": "Panic",
+    "panicDesc": "Does not act for this turn.",
+    "sub": [
+      "If the level of the defeated ally was higher than or equal to the unit’s,\ndecrease based on the level difference\n<size=95%>(Base Value is 10, raised by 10 per level)</size>"
+    ]
+  },
+  "skills": {
+    "1031601": {
+      "bonusNotes": "Assumes combos are fulfilled.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "sloth",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 1
+            }
+          ],
+          "coinValue": 7,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 1 [Vibration]",
+                "[ReUseOnSucceedAttack] Inflict 1 [WedgeMarkGreen]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 3 [Breath]\n[ComboSkill]: Upon Reson. with Wedge Office Fixer Sinclair's Skills, gain the following effects (once per turn):\n- [WhenUse] Clash Power +1\n- [WhenUse] Gain 1 [BattleFieldKnow]\n- [WhenUse] Reuse the final Coin once\n[WinDuel] Gain 1 [PenetrateDamageUp] next turn (once per turn)",
+          "iconId": "1031601",
+          "id": "1031601",
+          "levelCorrection": 2,
+          "name": "Collision",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            },
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "coinValue": 7,
+          "coins": [
+            {
+              "bonuses": [
+                {
+                  "type": "reuse",
+                  "value": 1
+                }
+              ],
+              "descs": [
+                "[OnSucceedAttack] Inflict 2 [Vibration]",
+                "[ReUseOnSucceedAttack] Inflict 1 [WedgeMarkGreen]"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Breath] Potency on self + [Vibration] Potency on target) (max 2)\n[WhenUse] Gain 4 [Breath]\n[ComboSkill]: Upon Reson. with Wedge Office Fixer Sinclair's Skills, gain the following effects (once per turn):\n- [WhenUse] Clash Power +2\n- [WhenUse] Gain 1 [BattleFieldKnow]\n- [WhenUse] Reuse the final Coin once\n[WinDuel] Gain 1 [PenetrateDamageUp] next turn (once per turn)",
+          "iconId": "1031601",
+          "id": "1031601",
+          "name": "Collision",
+          "uptie": 2
+        },
+        {
+          "baseValue": 6,
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Breath] Potency on self + [Vibration] Potency on target) (max 2)\n[WhenUse] Gain 4 [Breath]\n[ComboSkill]: Upon Reson. with Wedge Office Fixer Sinclair's Skills, gain the following effects (once per turn):\n- [WhenUse] Clash Power +2\n- [WhenUse] Gain 1 [BattleFieldKnow]\n- [WhenUse] Reuse the final Coin once\n[WinDuel] Gain 1 [PenetrateDamageUp] next turn (once per turn)",
+          "iconId": "1031601",
+          "id": "1031601",
+          "name": "Collision",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "reuse",
+              "value": 1
+            },
+            {
+              "type": "final",
+              "value": 3
+            },
+            {
+              "type": "clash",
+              "value": 2
+            }
+          ],
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Breath] Potency on self + [Vibration] Potency on target) (max 3)\n[WhenUse] Gain 4 [Breath]\n[ComboSkill]: Upon Reson. with Wedge Office Fixer Sinclair's Skills, gain the following effects (once per turn):\n- [WhenUse] Clash Power +2\n- [WhenUse] Gain 1 [BattleFieldKnow]\n- [WhenUse] Reuse the final Coin once\n[WinDuel] Gain 1 [PenetrateDamageUp] next turn (once per turn)",
+          "iconId": "1031601",
+          "id": "1031601",
+          "name": "Collision",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1031602": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "gluttony",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 1 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] Gain 2 [Breath]\n[WinDuel] Inflict 1 [Vibration], then trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+          "iconId": "1031602",
+          "id": "1031602",
+          "levelCorrection": 2,
+          "name": "Gap Strike",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 2
+            }
+          ],
+          "coinValue": 6,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 2 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "final",
+                  "value": 4
+                }
+              ],
+              "descs": [
+                "[OnStartCoin] This Coin gains Final Power +1 for every [BattleFieldKnow] on self (max 4)",
+                "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Breath] Potency on self + [Vibration] Potency on target) (max 2)\n[WhenUse] Gain 3 [Breath]\n[WinDuel] Inflict 1 [Vibration], then trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+          "iconId": "1031602",
+          "id": "1031602",
+          "name": "Gap Strike",
+          "uptie": 2
+        },
+        {
+          "baseValue": 5,
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Breath] Potency on self + [Vibration] Potency on target) (max 2)\n[WhenUse] Gain 3 [Breath]\n[WinDuel] Inflict 1 [Vibration], then trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+          "iconId": "1031602",
+          "id": "1031602",
+          "name": "Gap Strike",
+          "uptie": 3
+        },
+        {
+          "bonuses": [
+            {
+              "type": "final",
+              "value": 3
+            }
+          ],
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Breath] Potency on self + [Vibration] Potency on target) (max 3)\n[WhenUse] Gain 3 [Breath]\n[WinDuel] Inflict 1 [Vibration], then trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+          "iconId": "1031602",
+          "id": "1031602",
+          "name": "Gap Strike",
+          "uptie": 4
+        }
+      ],
+      "tier": 2
+    },
+    "1031603": {
+      "bonusNotes": "Assumes combos are fulfilled.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.2
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 4 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                },
+                {
+                  "type": "final",
+                  "value": 4
+                }
+              ],
+              "descs": [
+                "If target is in either [Switch_Vibration] or [FusionVibration] states, deal +20% damage",
+                "[OnStartCoin] This Coin gains Final Power +1 for every [BattleFieldKnow] on self (max 4)",
+                "[OnSucceedAttack] If target isn't in an [Switch_Vibration] state, trigger [Switch_Vibration] into [VibrationCollapse]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "defType": "attack",
+          "desc": "[WhenUse] At 6+ ([Breath] Potency on self + [Vibration] Potency on target), Coin Power +1\n[WhenUse] Gain 2 [Breath]\n[ComboSkill]: Upon Reson. with Wedge Office Fixer Sinclair's Skills, gain the following effects (once per turn):\n- [WhenUse] Clash Power +1\n- [WhenUse] Gain 1 [BattleFieldKnow]\n- [WhenUse] Deal +20% damage\n[WinDuel] Inflict 2 [Vibration], then trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+          "iconId": "1031603",
+          "id": "1031603",
+          "levelCorrection": 3,
+          "name": "Speared Sweep",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 3
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.4
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[OnSucceedAttack] Gain 4 [Breath]"
+              ],
+              "type": "normal"
+            },
+            {
+              "descs": [
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "normal"
+            },
+            {
+              "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                },
+                {
+                  "type": "final",
+                  "value": 4
+                }
+              ],
+              "descs": [
+                "If target is in either [Switch_Vibration] or [FusionVibration] states, deal +30% damage",
+                "[OnStartCoin] This Coin gains Final Power +1 for every [BattleFieldKnow] on self (max 4)",
+                "[OnSucceedAttack] If target isn't in an [Switch_Vibration] state, trigger [Switch_Vibration] into [VibrationCollapse]",
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+              ],
+              "type": "normal"
+            }
+          ],
+          "desc": "[WhenUse] At 6+ ([Breath] Potency on self + [Vibration] Potency on target), Coin Power +1\n[WhenUse] Gain 2 [Breath]\n[ComboSkill]: Upon Reson. with Wedge Office Fixer Sinclair's Skills, gain the following effects (once per turn):\n- [WhenUse] Clash Power +3\n- [WhenUse] Gain 1 [BattleFieldKnow]\n- [WhenUse] Deal +40% damage\n[WinDuel] Inflict 2 [Vibration], then trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+          "iconId": "1031603",
+          "id": "1031603",
+          "name": "Speared Sweep",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    },
+    "1031604": {
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkWeight": 1,
+          "baseValue": 3,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "coinValue": 10,
+          "coins": [
+            {
+              "type": "normal"
+            }
+          ],
+          "defType": "evade",
+          "desc": "[WhenUse] At 6+ [Breath] Potency, Coin Power +1\n[OnSucceedEvade] Gain 1 [Breath] (3 times per turn)\n[OnBattleEnd] If this unit could not gain [BattleFieldKnow] from Skill effects this turn, gain 1 [BattleFieldKnow] (once per turn)",
+          "iconId": "1031604",
+          "id": "1031604",
+          "levelCorrection": 2,
+          "name": "Catch Breath",
+          "uptie": 1
+        },
+        {
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "[StartBattle] If target has 4+ [WedgeMarkGreen], activate \"My Spear Shall Puncture Thee True!\" instead (once per turn; can activate for Unopposed Attacks)\n[WhenUse] At 6+ [Breath] Potency, Coin Power +1\n[OnSucceedEvade] Gain 2 [Breath] (3 times per turn)\n[OnBattleEnd] If this unit could not gain [BattleFieldKnow] from Skill effects this turn, gain 1 [BattleFieldKnow] (once per turn)",
+          "iconId": "1031604",
+          "id": "1031604",
+          "name": "Catch Breath",
+          "uptie": 3
+        },
+        {
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "coin",
+              "value": 1
+            }
+          ],
+          "desc": "[StartBattle] If target has 4+ [WedgeMarkGreen], activate \"My Spear Shall Puncture Thee True!\" instead (once per turn; can activate for Unopposed Attacks)\n[WhenUse] At 6+ [Breath] Potency, Coin Power +1\n[OnSucceedEvade] Gain 2 [Breath] (3 times per turn)\n[OnSucceedEvade] Gain 1 [Agility] next turn (once per turn)\n[OnBattleEnd] If this unit could not gain [BattleFieldKnow] from Skill effects this turn, gain 1 [BattleFieldKnow] (once per turn)",
+          "iconId": "1031604_4",
+          "id": "1031604",
+          "name": "Catch Breath",
+          "uptie": 4
+        }
+      ],
+      "tier": 1
+    },
+    "1031605": {
+      "bonusNotes": "Assumes combos are fulfilled.",
+      "bonusesEnabled": true,
+      "data": [
+        {
+          "affinity": "pride",
+          "atkType": "pierce",
+          "atkWeight": 1,
+          "baseValue": 4,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 4
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 1
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.3
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Gain 4 [Breath]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.2
+                },
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": "=40/100/{res.pierce}"
+                },
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                },
+                {
+                  "type": "final",
+                  "value": 8
+                },
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.4
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "Deal +20% damage on Critical Hit",
+                "Deal +(40 / target's Pierce Resist.)% damage (max 80%; rounded down)",
+                "If target is in either [Switch_Vibration] or [FusionVibration] states, deal +30% damage",
+                "[OnStartCoin] This Coin gains Final Power +2 for every [BattleFieldKnow] on self (max 8)",
+                "[OnSucceedAttack] If target isn't in an [Switch_Vibration] state, trigger [Switch_Vibration] into [VibrationCollapse]",
+                "[OnSucceedAttack] Deal Pierce damage equal to ([WedgeMarkGreen] on target x 5)% of this Coin's final damage (max 40%)",
+                "[OnSucceedAttack] Trigger [VibrationExplosion] 2 times; then, reduce target's [Vibration] Count by 2"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "defType": "attack",
+          "desc": "This Skill counts as an Attack Skill even when it activates instead of a Defense Skill; this Skill is unaffected by Defense Power-changing effects, and is instead affected by Attack Power-changing effects\nClash Power +1 for every 2 [WedgeMarkGreen] on target (max 4)\n[WhenUse] At 6+ ([Breath] Potency on self + [Vibration] Potency on target), Coin Power +1\n[WhenUse] Gain 2 [Breath]\n[ComboSkill]: Upon Reson. with Wedge Office Fixer Sinclair's Skills, gain the following effects (once per turn):\n- [WhenUse] Clash Power +1\n- [WhenUse] Gain 1 [BattleFieldKnow]\n- [WhenUse] Deal +30% damage\n[WinDuel] Inflict 4 [Vibration], then trigger [VibrationExplosion]\n[EndSkill] Remove all [WedgeMarkGreen] on target\n[EndSkill] Allied Wedge Office Rep Outis Identity gains 3 [ComboWedge]",
+          "iconId": "1031605",
+          "id": "1031605",
+          "levelCorrection": 4,
+          "name": "My Spear Shall Puncture Thee True!",
+          "uptie": 3
+        },
+        {
+          "baseValue": 5,
+          "bonuses": [
+            {
+              "type": "clash",
+              "value": 4
+            },
+            {
+              "type": "coin",
+              "value": 1
+            },
+            {
+              "type": "clash",
+              "value": 3
+            },
+            {
+              "extra": {
+                "op": "mul"
+              },
+              "type": "damage",
+              "value": 0.5
+            }
+          ],
+          "coinValue": 5,
+          "coins": [
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Gain 4 [Breath]"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "descs": [
+                "[SuperCoin]",
+                "[OnSucceedAttack] Inflict +3 [Vibration] Count"
+              ],
+              "type": "unbreakable"
+            },
+            {
+              "bonuses": [
+                {
+                  "type": "critdamage",
+                  "value": 0.4
+                },
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": "=40/100/{res.pierce}"
+                },
+                {
+                  "extra": {
+                    "op": "mul"
+                  },
+                  "type": "damage",
+                  "value": 0.3
+                },
+                {
+                  "type": "final",
+                  "value": 8
+                },
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.4
+                }
+              ],
+              "descs": [
+                "[SuperCoin]",
+                "Deal +40% damage on Critical Hit",
+                "Deal +(40 / target's Pierce Resist.)% damage (max 80%; rounded down)",
+                "If target is in either [Switch_Vibration] or [FusionVibration] states, deal +30% damage",
+                "[OnStartCoin] This Coin gains Final Power +2 for every [BattleFieldKnow] on self (max 8)",
+                "[OnSucceedAttack] If target isn't in an [Switch_Vibration] state, trigger [Switch_Vibration] into [VibrationCollapse]",
+                "[OnSucceedAttack] Deal Pierce damage equal to ([WedgeMarkGreen] on target x 5)% of this Coin's final damage (max 40%)",
+                "[OnSucceedAttack] Trigger [VibrationExplosion] 2 times; then, reduce target's [Vibration] Count by 2"
+              ],
+              "type": "unbreakable"
+            }
+          ],
+          "desc": "This Skill counts as an Attack Skill even when it activates instead of a Defense Skill; this Skill is unaffected by Defense Power-changing effects, and is instead affected by Attack Power-changing effects\nClash Power +1 for every 2 [WedgeMarkGreen] on target (max 4)\n[WhenUse] At 6+ ([Breath] Potency on self + [Vibration] Potency on target), Coin Power +1\n[WhenUse] Gain 2 [Breath]\n[ComboSkill]: Upon Reson. with Wedge Office Fixer Sinclair's Skills, gain the following effects (once per turn):\n- [WhenUse] Clash Power +3\n- [WhenUse] Gain 1 [BattleFieldKnow]\n- [WhenUse] Deal +50% damage\n[WinDuel] Inflict 4 [Vibration], then trigger [VibrationExplosion]\n[EndSkill] Remove all [WedgeMarkGreen] on target\n[EndSkill] Allied Wedge Office Rep Outis Identity gains 3 [ComboWedge]",
+          "iconId": "1031605",
+          "id": "1031605",
+          "name": "My Spear Shall Puncture Thee True!",
+          "uptie": 4
+        }
+      ],
+      "tier": 3
+    }
+  },
+  "supportPassives": [
+    {
+      "passives": [
+        "1031621"
+      ],
+      "uptie": 3
+    }
+  ]
+}

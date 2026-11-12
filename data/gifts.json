@@ -3805,8 +3805,7 @@
     "triggers": [
       "Allies have Slash Skill",
       "Shi Assoc. Identities"
-    ],
-    "updated": true
+    ]
   },
   "9141": {
     "affinity": "lust",
@@ -4982,8 +4981,7 @@
       "Allies have Poise Skill",
       "Allies have Poise",
       "Poise Skill Used"
-    ],
-    "updated": true
+    ]
   },
   "9181": {
     "affinity": "pride",
@@ -5032,7 +5030,7 @@
       "T-1B Octagonal Bolt"
     ],
     "search_desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that gain Charge Count or 'Unique Charge'. (except E.G.O Skills; except Backup Units)\n\nTurn Start: all allies gain (Charge Count/ 10) Damage Up. (max 2, rounded up; including 'Unique Charge')\n\nTurn End: allies without Charge Barrier gain 1 Charge Barrier.\n\nEach Identity gains 1 Charge Potency every time they consume 20 Charge Count. (2 times per Identity per Encounter; Unique Charge does not interact with this effect)",
-    "srcPath": "T-1B Octagonal Bolt",
+    "srcPath": "9182",
     "tier": "2",
     "triggers": [
       "Allies have Charge Skill",
@@ -6230,8 +6228,7 @@
       "Allies with Shield",
       "Critical Hit",
       "Allies have Poise"
-    ],
-    "updated": true
+    ]
   },
   "9227": {
     "affinity": "pride",
@@ -8110,6 +8107,176 @@
       "Sisyphe Identities"
     ]
   },
+  "9292": {
+    "affinity": "gluttony",
+    "descs": [
+      "If there are 2 or more \"Fixer\" Identities in the Team Loadout, activate the following effect for 1 \"Fixer\" ally with the lattermost Deployment Order (excluding Backup units):\n- Upon entering the Encounter for the first time, gain [Emulation]\n\nTurn Start: Allied \"Fixer\" Identities heal 2 SP for every 2 allied \"Fixer\" Identities on the field\n\nIf there are 3 or more \"Fixer\" Identities of the same faction on the field, activate the following effect:\n- Base Attack Skills of allies that have [Emulation] deal +(# of \"Fixer\" allies on the field x 3)% damage (max 15%)\n\nIf there are 3 or more \"Fixer\" Identities of different factions on the field, activate the following effect:\n- On Base Attack Skill Use by an ally that has [Emulation], the said ally gains 1 [Enhancement] (2 times per turn)\n- On Hit using a Base Attack Skill by an ally that has [Emulation], inflict 1 [Vulnerable] (2 times per turn; in Focused Encounters, the Part)"
+    ],
+    "events": [
+      "971121"
+    ],
+    "exclusiveTo": [
+      "1129"
+    ],
+    "keyword": "Keywordless",
+    "names": [
+      "Role Model"
+    ],
+    "new": true,
+    "search_desc": "If there are 2 or more \"Fixer\" Identities in the Team Loadout, activate the following effect for 1 \"Fixer\" ally with the lattermost Deployment Order (excluding Backup units):\n- Upon entering the Encounter for the first time, gain Learning by Example\n\nTurn Start: Allied \"Fixer\" Identities heal 2 SP for every 2 allied \"Fixer\" Identities on the field\n\nIf there are 3 or more \"Fixer\" Identities of the same faction on the field, activate the following effect:\n- Base Attack Skills of allies that have Learning by Example deal +(# of \"Fixer\" allies on the field x 3)% damage (max 15%)\n\nIf there are 3 or more \"Fixer\" Identities of different factions on the field, activate the following effect:\n- On Base Attack Skill Use by an ally that has Learning by Example, the said ally gains 1 Attack Power Up (2 times per turn)\n- On Hit using a Base Attack Skill by an ally that has Learning by Example, inflict 1 Fragile (2 times per turn; in Focused Encounters, the Part)",
+    "srcPath": "9292",
+    "tier": "3"
+  },
+  "9293": {
+    "affinity": "wrath",
+    "descs": [
+      "Attack Skills additionally triggered by Skills that have the [ComboSkill] effect or triggered by allies' Skill / Passive effects deal +10% damage\n- Deal an additional +2% damage every time the above effect activates (max 10%)\n- For Skills that have the [ComboSkill] effect, gain 1 [AttackDmgUp] every time the said Skills are used (max 2 per Identity)\n- If the ally is a \"Dawn Office\" or \"Wedge Office\" Identity, the said ally gains 1 [Enhancement] (max 2 per Identity)"
+    ],
+    "events": [
+      "971122"
+    ],
+    "exclusiveTo": [
+      "1129"
+    ],
+    "keyword": "Keywordless",
+    "names": [
+      "Carefully-selected Medicinal Herbs"
+    ],
+    "new": true,
+    "search_desc": "Attack Skills additionally triggered by Skills that have the Joint Combo effect or triggered by allies' Skill / Passive effects deal +10% damage\n- Deal an additional +2% damage every time the above effect activates (max 10%)\n- For Skills that have the Joint Combo effect, gain 1 Damage Up every time the said Skills are used (max 2 per Identity)\n- If the ally is a \"Dawn Office\" or \"Wedge Office\" Identity, the said ally gains 1 Attack Power Up (max 2 per Identity)",
+    "srcPath": "9293",
+    "tier": "3"
+  },
+  "9294": {
+    "affinity": "pride",
+    "cursedPair": "9295",
+    "descs": [
+      "Encounter Start: Apply [CursedBlessing] to 1 random ally\nThis E.G.O Gift changes into \"Pride of the Knight\" after 6 Encounter wins in which the Identity that has [CursedBlessing] survives\n"
+    ],
+    "events": [
+      "971123"
+    ],
+    "keyword": "Keywordless",
+    "names": [
+      "Hollow Pride"
+    ],
+    "new": true,
+    "search_desc": "Encounter Start: Apply A Test of Despair to 1 random ally\nThis E.G.O Gift changes into \"Pride of the Knight\" after 6 Encounter wins in which the Identity that has A Test of Despair survives\n",
+    "srcPath": "9294",
+    "tier": "1"
+  },
+  "9295": {
+    "affinity": "pride",
+    "blessedPair": "9294",
+    "descs": [
+      "[Effects apply only to #1 Deployed Identity]\nRemove all Stagger thresholds\nEncounter Start: Apply [BeyondDespair]"
+    ],
+    "keyword": "Keywordless",
+    "names": [
+      "Pride of the Knight"
+    ],
+    "new": true,
+    "search_desc": "[Effects apply only to #1 Deployed Identity]\nRemove all Stagger thresholds\nEncounter Start: Apply The One Beyond Despair",
+    "srcPath": "9295",
+    "tier": "3"
+  },
+  "9296": {
+    "affinity": "pride",
+    "descs": [
+      "Pierce Base Skills that inflict [Sinking] Potency, Count, or Unique [Sinking] gain Final Power +1\n\nOn Hit by an ally using a Skill, if target has -20 or lower SP, deal Gloom damage equal to [Sinking] Potency to target (once per Skill)\n- If the said Skill was a Pierce Skill, deal additional fixed damage equal to ([Sinking] Count on target / 2) (once per Skill)\n\n[Lobotomy E.G.O::The Sword Sharpened with Tears Rodion Exclusive Effect]\nOn Hit against an enemy using the final Coin of a Base Skill that consumes [Charge] and has 1 Atk Weight, deal Pride damage to all enemies equal to ([Charge] Potency consumed)% of final damage (including Unique [Charge])\n\n[The Sword Sharpened with Tears Hong Lu E.G.O Skill Exclusive Effect]\nE.G.O Skill Final Power +1"
+    ],
+    "events": [
+      "971123"
+    ],
+    "keyword": "Sinking",
+    "names": [
+      "Sword Laced with Grief"
+    ],
+    "new": true,
+    "search_desc": "Pierce Base Skills that inflict Sinking Potency, Count, or Unique Sinking gain Final Power +1\n\nOn Hit by an ally using a Skill, if target has -20 or lower SP, deal Gloom damage equal to Sinking Potency to target (once per Skill)\n- If the said Skill was a Pierce Skill, deal additional fixed damage equal to (Sinking Count on target / 2) (once per Skill)\n\n[Lobotomy E.G.O::The Sword Sharpened with Tears Rodion Exclusive Effect]\nOn Hit against an enemy using the final Coin of a Base Skill that consumes Charge and has 1 Atk Weight, deal Pride damage to all enemies equal to (Charge Potency consumed)% of final damage (including Unique Charge)\n\n[The Sword Sharpened with Tears Hong Lu E.G.O Skill Exclusive Effect]\nE.G.O Skill Final Power +1",
+    "srcPath": "9296",
+    "tier": "4"
+  },
+  "9297": {
+    "affinity": "sloth",
+    "descs": [
+      "Turn Start: Activates when there are 3 or more \"Wedge Office\" Identities (counts Backup Identities)\n\n[Wedge Office Rep Outis Exclusive Effect]\n- Turn Start: If the condition above was met for the first time, gain 20 [ComboWedge]\n- Upon using \"Assume Wedge Formation\", \"... All units, engage for collision.\", \"The Wedge in the Wake of Dawnbreak\", gain 1 [ComboWedgeDawn] next turn (2 times per turn)\n- If \"Assume Wedge Formation\" was used, regain half of the consumed [ComboWedge] at the next Turn Start (once per turn, rounded down)"
+    ],
+    "events": [
+      "971124"
+    ],
+    "exclusiveTo": [
+      "1129"
+    ],
+    "keyword": "Keywordless",
+    "names": [
+      "White Cravat"
+    ],
+    "new": true,
+    "search_desc": "Turn Start: Activates when there are 3 or more \"Wedge Office\" Identities (counts Backup Identities)\n\n[Wedge Office Rep Outis Exclusive Effect]\n- Turn Start: If the condition above was met for the first time, gain 20 Momentum\n- Upon using \"Assume Wedge Formation\", \"... All units, engage for collision.\", \"The Wedge in the Wake of Dawnbreak\", gain 1 Dawn's Camaraderie next turn (2 times per turn)\n- If \"Assume Wedge Formation\" was used, regain half of the consumed Momentum at the next Turn Start (once per turn, rounded down)",
+    "srcPath": "9297",
+    "tier": "3"
+  },
+  "9298": {
+    "affinity": "lust",
+    "descs": [
+      "In a Clash, inflict 2 [Vibration] on the enemy for every Clash (3 times per Skill)\n\nOn Crit by an ally using a Basic Attack Skill against enemies, if the main target has [Vibration], trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1 (once per Skill)\n- If the enemy is in [Switch_Vibration] state, deal +10% damage on Critical Hit\n- If the enemy is in [VibrationNesting] state, deal an additional +5% damage on Critical Hit for each type of superposed Unique [Vibration] (max 25%)"
+    ],
+    "events": [
+      "971124"
+    ],
+    "exclusiveTo": [
+      "1129"
+    ],
+    "keyword": "Tremor",
+    "names": [
+      "Black Tricorne"
+    ],
+    "new": true,
+    "search_desc": "In a Clash, inflict 2 Tremor on the enemy for every Clash (3 times per Skill)\n\nOn Crit by an ally using a Basic Attack Skill against enemies, if the main target has Tremor, trigger Tremor Burst; then, reduce target's Tremor Count by 1 (once per Skill)\n- If the enemy is in Amplitude Conversion state, deal +10% damage on Critical Hit\n- If the enemy is in Tremor - Superposition state, deal an additional +5% damage on Critical Hit for each type of superposed Unique Tremor (max 25%)",
+    "srcPath": "9298",
+    "tier": "2"
+  },
+  "9299": {
+    "affinity": "sloth",
+    "descs": [
+      "When triggering [VibrationExplosion] on enemies that have [VibrationCollapse], deal Sloth damage to each target equal to (each target's Defense Level reduction)% of the damage dealt (max 15%)"
+    ],
+    "events": [
+      "971125"
+    ],
+    "exclusiveTo": [
+      "1129"
+    ],
+    "keyword": "Tremor",
+    "names": [
+      "Backup Body Adaptation Device"
+    ],
+    "new": true,
+    "search_desc": "When triggering Tremor Burst on enemies that have Tremor - Decay, deal Sloth damage to each target equal to (each target's Defense Level reduction)% of the damage dealt (max 15%)",
+    "srcPath": "9299",
+    "tier": "3"
+  },
+  "9300": {
+    "affinity": "gloom",
+    "descs": [
+      "On Crit using a Pierce Base Attack Skill, inflict [EmbeddedSpearhead] on target at Attack End (once per turn per Identity; in Focused Encounters, the Parts)"
+    ],
+    "events": [
+      "971125"
+    ],
+    "exclusiveTo": [
+      "1129"
+    ],
+    "keyword": "Pierce",
+    "names": [
+      "Broken Spearhead"
+    ],
+    "new": true,
+    "search_desc": "On Crit using a Pierce Base Attack Skill, inflict Embedded Spearhead on target at Attack End (once per turn per Identity; in Focused Encounters, the Parts)",
+    "srcPath": "9300",
+    "tier": "2"
+  },
   "9301": {
     "affinity": "gloom",
     "descs": [
@@ -8124,7 +8291,6 @@
     "names": [
       "Wuthering Heights"
     ],
-    "new": true,
     "recipes": [
       [
         "9432",
@@ -8147,7 +8313,6 @@
     "names": [
       "The Measure of Frost"
     ],
-    "new": true,
     "search_desc": "Turn Start: At 40+ SP, or at -40 SP or lower, gain 1 E.G.O Resource Amp\n\n[Effect exclusive to Identities that have 2 or more Minus Coin Skills]\nTurn Start: Lose 15 SP (this unit's SP does not drop below -40 from this effect)\n\nIn this Encounter, when taking SP damage that would reduce this unit's SP to -45, this unit's SP cannot drop below -44 for the turn (once per Encounter)\n(※ Applies only to SP damage; does not apply to SP-changing effects, or SP-consuming effects such as using E.G.O Skills)\n\nBefore Attack using Skill 3 or an E.G.O Skill, consume up to 5 E.G.O Resources of the same Affinity as the said Skill to deal +(E.G.O Resources consumed x 10)% damage",
     "srcPath": "9302",
     "tier": "3"
@@ -8222,7 +8387,7 @@
       "Made-to-Order"
     ],
     "search_desc": "[Effects apply only to #3 Deployed Identity]\n\nEncounter Start: gain +3 Tremor Count.\n\nTurn Start: gain 1 Protection, 1 Damage Up, and 1 Power Up.",
-    "srcPath": "Made-to-Order",
+    "srcPath": "9407",
     "tier": "2",
     "triggers": [
       "Deployment Position"
@@ -8247,7 +8412,7 @@
       "Haunted Shoes"
     ],
     "search_desc": "[Effects apply only to #2 Deployed Identity]\n\nEncounter Start: gain +3 Sinking Count.\n\nTurn Start: gain 1 Protection, 1 Damage Up, and 1 Power Up.",
-    "srcPath": "Haunted Shoes",
+    "srcPath": "9408",
     "tier": "2",
     "triggers": [
       "Deployment Position"
@@ -8272,7 +8437,7 @@
       "Frozen Cries"
     ],
     "search_desc": "Applies only to 1 Identity with the slowest Speed at Turn Start.\n\nIf the said ally wins a Clash or is hit by an enemy, inflict 3 Sinking against the enemy.",
-    "srcPath": "Frozen Cries",
+    "srcPath": "9409",
     "tier": "2",
     "triggers": [
       "Allies with Speed Condition",
@@ -8335,7 +8500,7 @@
       "Nagel und Hammer Scriptures"
     ],
     "search_desc": "When an ally wins a Clash using a Skill that inflicts Bleed Potency, Count, or 'Unique Bleed', inflict 1~2 Nails.\n\nIf the said ally is an 'N Corp. Fanatic', gain 1 Fanatic at Turn Start.",
-    "srcPath": "Nagel und Hammer Scriptures",
+    "srcPath": "9413",
     "tier": "2",
     "triggers": [
       "Clash Win",
@@ -8361,7 +8526,7 @@
       "Blood-red Mane"
     ],
     "search_desc": "Effects apply to all Identities with Wrath or Lust Attack Skills.\n\nTurn End: if this unit did not take any damage from enemy Attack Skills this turn, gain 2 Haste and 2 Defense Power Up.\n\nTurn End: if this unit did take damage from enemy Attack Skills this turn, gain 2 Bind and Clash Power +2 next turn.",
-    "srcPath": "Blood-red Mane",
+    "srcPath": "9414",
     "tier": "2",
     "triggers": [
       "Allies have Wrath Skill",
@@ -8389,7 +8554,7 @@
       "Squalidity"
     ],
     "search_desc": "When an ally attacks an enemy that has Bleed with a Skill that inflicts Bleed Potency, Count or 'Unique Bleed', deal +15% damage against the target.\n\nIf the target has 33%- HP, inflict +25% damage against the target instead.",
-    "srcPath": "Squalidity",
+    "srcPath": "9415",
     "tier": "2",
     "triggers": [
       "Bleed Skill Used",
@@ -8425,7 +8590,7 @@
       ]
     ],
     "search_desc": "If the ally wins a Clash using a Skill that inflicts Bleed Potency, Count, or 'Unique Bleed', inflict 2~3 Nails.\n\n'N Corp. Fanatic' Identities deal +25% damage against enemies and gain 1 Fanatic at Turn Start. If the said ally's SP is maxed, or if a 3+ Lust Reson. was formed last turn, the said ally additionally gains 3 Damage Up.\n\n'N Corp. Fanatic' Identities gain Final Power +2, Plus Coin Power +1, Minus Coin Power -1, and their Attack Skills inflict +1 more Nails.\n\n'N Corp. Fanatic' Identities deal +50% damage against <Mechanical Amalgam> enemies with Base Skills",
-    "srcPath": "Wholeness",
+    "srcPath": "9416",
     "tier": "4",
     "triggers": [
       "Clash Win",
@@ -8743,8 +8908,7 @@
     "triggers": [
       "Staggered Ally",
       "Enemy Defeated"
-    ],
-    "updated": true
+    ]
   },
   "9433": {
     "affinity": "envy",
@@ -8869,8 +9033,7 @@
       "Hit Enemy with Sinking",
       "Enemies with SP Condition",
       "Sinking Skill Used"
-    ],
-    "updated": true
+    ]
   },
   "9437": {
     "affinity": "sloth",

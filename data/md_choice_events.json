@@ -16071,5 +16071,450 @@
       }
     ],
     "type": "Choice"
+  },
+  "971121": {
+    "advantages": [
+      "sloth"
+    ],
+    "desc": "I saw two young Fixers huddled at the end of a stiflingly narrow street corner, poring over a magazine together.\nOne of them wore a long coat that seemed made for someone at least twice his height. It was a comical sight, him fussing with the hems in a desperate bid to make them look remotely fitting.\n\n\"How do I look? Getting there?\"\n\"Getting to look like a parody of that Fixer, maybe. Trust me, dude. There's only so much clothes can do to make the man, even if it's the same kind of coat <i>he</i> wears.\"\n\"Tsk... Really? Still, it should at least help me feel badass... And what's being a Fixer if not all about that mindset...?\"\n\nThe other Fixer let out a sarcastic snort, then leaned toward us and whispered loudly.\n\n\"Boy, am I glad to see some real Fixers out here. You <i>are</i> Fixers, right? At least you do look the part. Why don't you come talk some sense into him? Poor guy's been popping the collar in a hundred different ways for the last 30 minutes.\"",
+    "gifts": [
+      9292
+    ],
+    "messages": [
+      "Give the young Fixer some genuine tips.",
+      "\"That coat looks great on you.\" (Lie)"
+    ],
+    "name": "The Exemplar Fixer",
+    "options": [
+      {
+        "message": "Give the young Fixer some genuine tips.",
+        "messageDesc": "Sloth Advantage check. Pass to gain a Keywordless E.G.O Gift.",
+        "result": [
+          {
+            "condition": "None",
+            "nextEvent": {
+              "advantageAffinities": [
+                "sloth"
+              ],
+              "advantageValue": 16,
+              "bonuses": [
+                {
+                  "target": {
+                    "sinnerId": 3,
+                    "type": "sinner"
+                  },
+                  "value": 6
+                }
+              ],
+              "failureResults": [
+                {
+                  "condition": "None"
+                }
+              ],
+              "rollType": "min",
+              "successResults": [
+                {
+                  "condition": "None",
+                  "results": [
+                    {
+                      "id": 9292,
+                      "type": "getEgoGift"
+                    }
+                  ]
+                }
+              ],
+              "type": "Roll",
+              "value": 32
+            }
+          }
+        ]
+      },
+      {
+        "message": "\"That coat looks great on you.\" (Lie)",
+        "messageDesc": "No particular effect",
+        "result": [
+          {
+            "condition": "None"
+          }
+        ]
+      }
+    ],
+    "type": "Choice"
+  },
+  "971122": {
+    "advantages": [
+      "wrath"
+    ],
+    "desc": "Lured by a mysterious, pleasantly bitter scent, we stopped beneath a sign that read \"Dawn Office.\"\n\nWhen we stepped inside, we saw an old man lounging on a couch, reading through papers, while a young man in glasses carefully set a steaming teacup in front of him.\n\n\"Hmm... Are you here for a contract?\"\n\"Ah, I suppose you were drawn here by the smell. This tea has quite a pleasant aroma, doesn't it? We've brewed more than enough for everyone, so don't hesitate to take a cup or two.\"\n\"Not enough for <i>everyone</i> here, Master...\"\n\nThe Fixer in glasses gave the pot a concerned glance.\n\n\"Then please, have mine. Guests come first, after all.\"",
+    "gifts": [
+      9293
+    ],
+    "messages": [
+      "Take the cup of Ssanghwa-cha.",
+      "Brew our own batch of ssanghwa-cha."
+    ],
+    "name": "Dawn Office",
+    "options": [
+      {
+        "message": "Take the cup of Ssanghwa-cha.",
+        "messageDesc": "Select to heal HP & SP for all allies",
+        "result": [
+          {
+            "condition": "None",
+            "results": [
+              {
+                "target": {
+                  "target": "all"
+                },
+                "type": "healHpPercent",
+                "value": 20
+              },
+              {
+                "target": {
+                  "target": "all"
+                },
+                "type": "healSp",
+                "value": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "message": "Brew our own batch of ssanghwa-cha.",
+        "messageDesc": "Wrath Advantage check. Pass to gain a Keywordless E.G.O Gift.",
+        "result": [
+          {
+            "condition": "None",
+            "nextEvent": {
+              "advantageAffinities": [
+                "wrath"
+              ],
+              "advantageValue": 14,
+              "bonuses": [
+                {
+                  "target": {
+                    "ids": [
+                      "11009"
+                    ],
+                    "type": "identity"
+                  },
+                  "value": 4
+                }
+              ],
+              "failureResults": [
+                {
+                  "condition": "None",
+                  "results": [
+                    {
+                      "target": {
+                        "target": "chosen"
+                      },
+                      "type": "loseSp",
+                      "value": 15
+                    },
+                    {
+                      "target": {
+                        "target": "all"
+                      },
+                      "type": "healHpPercent",
+                      "value": 10
+                    }
+                  ]
+                }
+              ],
+              "rollType": "min",
+              "successResults": [
+                {
+                  "condition": "None",
+                  "results": [
+                    {
+                      "id": 9293,
+                      "type": "getEgoGift"
+                    }
+                  ]
+                }
+              ],
+              "type": "Roll",
+              "value": 28
+            }
+          }
+        ]
+      }
+    ],
+    "type": "Choice"
+  },
+  "971123": {
+    "advantages": [
+      "pride"
+    ],
+    "desc": "At the end of a dark passage, a lone knight stands beside a sword glowing blue.\n\nAs we approach, the knight silently regards our wounds before extending a hand.\n\n\"So... there is still something left to protect.\"\n\nA bottomless sorrow hangs about the offered hand, while the tip of the sword floating nearby seems steeped in endless despair.",
+    "gifts": [
+      9296,
+      9294
+    ],
+    "messages": [
+      "Accept the blessing.",
+      "Decline the blessing.",
+      "Offer the Sword Sharpened with Tears.\n<size=75%><color=#a16a3b>Choice unlocked with the E.G.O Gift \"Sword Sharpened with Tears\"</color></size>",
+      "Accept the blessing.",
+      "Decline the blessing."
+    ],
+    "name": "The Knight of Despair",
+    "options": [
+      {
+        "message": "Accept the blessing.",
+        "messageDesc": "Pride Advantage check. Pass to gain a Keywordless E.G.O Gift.",
+        "result": [
+          {
+            "condition": "None",
+            "nextEvent": {
+              "advantageAffinities": [
+                "pride"
+              ],
+              "advantageValue": 16,
+              "bonuses": [
+                {
+                  "target": {
+                    "ids": [
+                      "10913"
+                    ],
+                    "type": "identity"
+                  },
+                  "value": 4
+                }
+              ],
+              "failureResults": [
+                {
+                  "condition": "None",
+                  "results": [
+                    {
+                      "target": {
+                        "num": 1,
+                        "target": "random"
+                      },
+                      "type": "loseSp",
+                      "value": 45
+                    }
+                  ]
+                }
+              ],
+              "rollType": "min",
+              "successResults": [
+                {
+                  "condition": "None",
+                  "results": [
+                    {
+                      "id": 9294,
+                      "type": "getEgoGift"
+                    }
+                  ]
+                }
+              ],
+              "type": "Roll",
+              "value": 32
+            }
+          }
+        ]
+      },
+      {
+        "message": "Decline the blessing.",
+        "messageDesc": "No particular effect",
+        "result": [
+          {
+            "condition": "None"
+          }
+        ]
+      },
+      {
+        "lockCondition": {
+          "id": "9807",
+          "type": "gift"
+        },
+        "message": "Offer the Sword Sharpened with Tears.\n<size=75%><color=#a16a3b>Choice unlocked with the E.G.O Gift \"Sword Sharpened with Tears\"</color></size>",
+        "messageDesc": "Select to gain a Sinking E.G.O Gift",
+        "result": [
+          {
+            "condition": "None",
+            "nextEvent": {
+              "options": [
+                {
+                  "message": "Accept the blessing.",
+                  "messageDesc": "Pride Advantage check. Pass to gain a Keywordless E.G.O Gift.",
+                  "result": [
+                    {
+                      "condition": "None",
+                      "nextEvent": {
+                        "advantageAffinities": [
+                          "pride"
+                        ],
+                        "advantageValue": 16,
+                        "bonuses": [
+                          {
+                            "target": {
+                              "ids": [
+                                "10913"
+                              ],
+                              "type": "identity"
+                            },
+                            "value": 4
+                          }
+                        ],
+                        "failureResults": [
+                          {
+                            "condition": "None",
+                            "results": [
+                              {
+                                "target": {
+                                  "num": 1,
+                                  "target": "random"
+                                },
+                                "type": "loseSp",
+                                "value": 45
+                              }
+                            ]
+                          }
+                        ],
+                        "rollType": "min",
+                        "successResults": [
+                          {
+                            "condition": "None",
+                            "results": [
+                              {
+                                "id": 9294,
+                                "type": "getEgoGift"
+                              }
+                            ]
+                          }
+                        ],
+                        "type": "Roll",
+                        "value": 32
+                      }
+                    }
+                  ]
+                },
+                {
+                  "message": "Decline the blessing.",
+                  "messageDesc": "No particular effect",
+                  "result": [
+                    {
+                      "condition": "None"
+                    }
+                  ]
+                }
+              ],
+              "type": "Choice"
+            },
+            "results": [
+              {
+                "itemReward": {
+                  "num": 1,
+                  "prob": 1,
+                  "rewardId": 9807,
+                  "type": "EGO_GIFT"
+                },
+                "nextBattleID": -1,
+                "resultEffect": "DestroyEgogift"
+              },
+              {
+                "id": 9296,
+                "type": "getEgoGift"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "type": "Choice"
+  },
+  "971124": {
+    "desc": "A sign reading \"Wedge Office\" hangs over an elegant, old-fashioned door.\n\nWe knock cautiously, and two petite Fixers answered the door and received us.\n\n\"You guys here to give us a contract?\"\n\"Is that any way to address a visitor? You should be more polite.\"\n\"Oh, don't start. What do you want me to say?\"\n\"<i>May I ask</i> if you guys are here to </i>commission</i> a contract?\"\n\"... How's that supposed to be more 'polite'?\"\n\"It's called 'professional tone.' How ignorant can you be?\"\n\nAs the two Fixers, seemingly twins, bicker with each other, a man in a neat black coat emerges from the back room to greet us.\n\n\"I don't believe we've met. You don't look like clients with a request... Are you looking for work?\"",
+    "gifts": [
+      9297,
+      9298
+    ],
+    "messages": [
+      "Ask if we can work with them.",
+      "Claim to be new recruits from their sister Office."
+    ],
+    "name": "Wedge Office",
+    "options": [
+      {
+        "message": "Ask if we can work with them.",
+        "messageDesc": "Select to gain a Keywordless E.G.O Gift",
+        "result": [
+          {
+            "condition": "None",
+            "results": [
+              {
+                "id": 9297,
+                "type": "getEgoGift"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "message": "Claim to be new recruits from their sister Office.",
+        "messageDesc": "Select to gain a Tremor E.G.O Gift",
+        "result": [
+          {
+            "condition": "None",
+            "results": [
+              {
+                "id": 9298,
+                "type": "getEgoGift"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "type": "Choice"
+  },
+  "971125": {
+    "desc": "At a counter tucked into an alley, two Fixers of markedly different heights are arguing with a clerk.\n\n\"It was a clean cut, you know. We retrieved the head after the whole situation was taken care of.\"\n\n\"My dear fellow, do you truly think we'd pay for such expensive stasis-preservation packaging just to commit insurance fraud?\"\n\n\"According to the policy, you'll need to go back and recover the torso too before we can help—\"\n\n\"Oh, c'mon. You can't be serious.\"\n\nThe shorter Fixer keeps her voice low, but her words cut sharply into the insurance clerk.\n\n\"I'm only an employee here. I have to follow the terms of your insurance policy.\"\n\n\"Then follow them. What's the problem? You're really getting on my nerves.\"\n\n... It seems there's a dispute over an insurance claim.\n\nHow should we proceed?",
+    "gifts": [
+      9299,
+      9300
+    ],
+    "messages": [
+      "Side with the insurance clerk.",
+      "Side with the Fixers."
+    ],
+    "name": "Wedge Office",
+    "options": [
+      {
+        "message": "Side with the insurance clerk.",
+        "messageDesc": "Select to gain a Tremor E.G.O Gift",
+        "result": [
+          {
+            "condition": "None",
+            "results": [
+              {
+                "id": 9299,
+                "type": "getEgoGift"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "message": "Side with the Fixers.",
+        "messageDesc": "Select to gain a Pierce E.G.O Gift",
+        "result": [
+          {
+            "condition": "None",
+            "results": [
+              {
+                "id": 9300,
+                "type": "getEgoGift"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "type": "Choice"
   }
 }
