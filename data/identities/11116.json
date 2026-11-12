@@ -312,6 +312,14 @@
                 },
                 {
                   "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 1
+                },
+                {
+                  "extra": {
                     "op": "mul"
                   },
                   "type": "damage",
@@ -325,6 +333,7 @@
                 "[OnSucceedAttack] Inflict 2 [Vibration]",
                 "[OnSucceedAttack] Inflict +2 [Vibration] Count",
                 "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] Deal Pierce damage equal to 100% of this Coin's final damage",
                 "[ComboSkill]: Dawn Office[TabExplain] Rep Gregor\n- Deal +30% damage\n- [OnSucceedAttack] Inflict +2 [Vibration] Count"
               ],
               "type": "unbreakable"
@@ -374,6 +383,14 @@
                 },
                 {
                   "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 1
+                },
+                {
+                  "extra": {
                     "op": "mul"
                   },
                   "type": "damage",
@@ -388,6 +405,7 @@
                 "[OnSucceedAttack] Inflict +2 [Vibration] Count",
                 "[OnSucceedAttack] Inflict 2 [PenetrateTakeDamageUp] (once per turn)",
                 "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] Deal Pierce damage equal to 100% of this Coin's final damage",
                 "[ComboSkill]: Dawn Office[TabExplain] Rep Gregor\n- Deal +30% damage\n- [OnSucceedAttack] Inflict +2 [Vibration] Count"
               ],
               "type": "unbreakable"
@@ -534,7 +552,7 @@
                 "op": "mul"
               },
               "type": "damage",
-              "value": 0.6
+              "value": 1.2
             },
             {
               "type": "coin",
@@ -555,6 +573,14 @@
               "bonuses": [
                 {
                   "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.15
+                },
+                {
+                  "extra": {
                     "op": "mul"
                   },
                   "type": "damage",
@@ -564,12 +590,21 @@
               "descs": [
                 "[OnSucceedAttack] Inflict +3 [Vibration] Count",
                 "[OnSucceedAttack] Trigger [FusionVibration] into [VibrationCollapse]",
+                "[OnSucceedAttack] Deal Pierce damage equal to 15% of this Coin's final damage",
                 "[ComboSkill]: Dawn Office[TabExplain] Fixer Faust\n- Deal +20% damage\n- [OnSucceedAttack] Inflict 3 [Combustion]\n- [OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]"
               ],
               "type": "normal"
             },
             {
               "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.15
+                },
                 {
                   "type": "critdamage",
                   "value": 0.2
@@ -581,13 +616,22 @@
               ],
               "descs": [
                 "[OnSucceedAttack] Inflict 1 [Vibration]",
-                "[ComboSkill]: Wedge Office[TabExplain] Fixer Don Quixote\n- Deal +20% damage on Critical Hit\n- [OnSucceedAttack] Inflict +2 [Vibration]",
+                "[OnSucceedAttack] Deal Pierce damage equal to 15% of this Coin's final damage",
+                "[ComboSkill]: Wedge Office[TabExplain] Fixer Don Quixote\n- Deal +20% damage on Critical Hit\n- [OnSucceedAttack] Inflict 2 [Vibration]",
                 "[ComboSkill]: Wedge Office[TabExplain] Fixer Sinclair\n- Deal +20% damage on Critical Hit\n- [OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
               ],
               "type": "normal"
             },
             {
               "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.15
+                },
                 {
                   "extra": {
                     "op": "mul"
@@ -599,13 +643,14 @@
               "descs": [
                 "[OnSucceedAttack] Inflict 2 [Vibration]",
                 "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] Deal Pierce damage equal to 15% of this Coin's final damage",
                 "[ComboSkill]: Dawn Office[TabExplain] Rep Gregor\n- Deal +20% damage\n- [OnSucceedAttack] Inflict 2 [Combustion]\n- [OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1\n- [OnSucceedAttack] Activate [Combustion] on target. Target loses 1 [Combustion] Count"
               ],
               "type": "normal"
             }
           ],
           "defType": "attack",
-          "desc": "[WhenUse] Coin Power +1 for every 8 [Breath] Potency on self (max 2)\n[WhenUse] Final Power +1 for every 8 [Vibration] Potency on target (max 2)\n[WhenUse]\n- Gain +3 [Breath] Count\n- Gain Atk Weight equal to the number of other non-immobilized[TabExplain] allied \"Wedge Office[TabExplain]\" Identities (max 2)\n[WhenUse] Deal +30% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Part)\n[EndSkill]\n- Consume all [ComboWedgeDawn] on self",
+          "desc": "[WhenUse] Coin Power +1 for every 8 [Breath] Potency on self (max 2)\n[WhenUse] Final Power +1 for every 8 [Vibration] Potency on target (max 2)\n[WhenUse]\n- Gain +3 [Breath] Count\n- Gain Atk Weight equal to the number of other non-immobilized[TabExplain] allied \"Wedge Office[TabExplain]\" Identities (max 2)\n[WhenUse] Deal +60% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Part)\n[EndSkill]\n- Consume all [ComboWedgeDawn] on self",
           "iconId": "1111606",
           "id": "1111606",
           "levelCorrection": 6,
@@ -675,7 +720,7 @@
                 "op": "mul"
               },
               "type": "damage",
-              "value": 0.6
+              "value": 1.2
             },
             {
               "type": "coin",
@@ -696,6 +741,14 @@
               "bonuses": [
                 {
                   "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                },
+                {
+                  "extra": {
                     "op": "mul"
                   },
                   "type": "damage",
@@ -711,6 +764,7 @@
               ],
               "descs": [
                 "[OnSucceedAttack] Inflict +3 [Vibration] Count",
+                "[OnSucceedAttack] Deal Pierce damage equal to 20% of this Coin's final damage",
                 "[ComboSkill]: Dawn Office[TabExplain] Fixer Faust\n- Deal +20% damage\n- [OnSucceedAttack] Inflict 3 [Combustion]\n- [OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]",
                 "[ComboSkill]: Dawn Office[TabExplain] Rep Gregor\n- Deal +20% damage\n- [OnSucceedAttack] Inflict 2 [Combustion]\n- [OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1\n- [OnSucceedAttack] Activate [Combustion] on target. Target loses 1 [Combustion] Count"
               ],
@@ -718,6 +772,14 @@
             },
             {
               "bonuses": [
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.2
+                },
                 {
                   "type": "critdamage",
                   "value": 0.2
@@ -729,7 +791,8 @@
               ],
               "descs": [
                 "[OnSucceedAttack] Inflict 1 [Vibration]",
-                "[ComboSkill]: Wedge Office[TabExplain] Fixer Don Quixote\n- Deal +20% damage on Critical Hit\n- [OnSucceedAttack] Inflict +2 [Vibration]",
+                "[OnSucceedAttack] Deal Pierce damage equal to 20% of this Coin's final damage",
+                "[ComboSkill]: Wedge Office[TabExplain] Fixer Don Quixote\n- Deal +20% damage on Critical Hit\n- [OnSucceedAttack] Inflict 2 [Vibration]",
                 "[ComboSkill]: Wedge Office[TabExplain] Fixer Sinclair\n- Deal +20% damage on Critical Hit\n- [OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
               ],
               "type": "normal"
@@ -739,18 +802,27 @@
                 {
                   "type": "critdamage",
                   "value": 1
+                },
+                {
+                  "extra": {
+                    "op": "mul",
+                    "type": "pierce"
+                  },
+                  "type": "damage",
+                  "value": 0.2
                 }
               ],
               "descs": [
                 "Deal +100% damage on Critical Hit",
                 "[OnSucceedAttack] Inflict 2 [Vibration]",
-                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1",
+                "[OnSucceedAttack] Deal Pierce damage equal to 20% of this Coin's final damage"
               ],
               "type": "normal"
             }
           ],
           "defType": "attack",
-          "desc": "[WhenUse] Coin Power +1 for every 8 [Breath] Potency on self (max 2)\n[WhenUse] Final Power +1 for every 8 [Vibration] Potency on target (max 2)\n[WhenUse]\n- Gain +3 [Breath] Count\n- Gain Atk Weight equal to the number of other non-immobilized[TabExplain] allied \"Wedge Office[TabExplain]\" Identities (max 2)\n[WhenUse] Deal +30% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Part)\n[WinDuel] Trigger [FusionVibration] into [VibrationCollapse]\n[EndSkill]\n- Consume all [ComboWedgeDawn] on self",
+          "desc": "[WhenUse] Coin Power +1 for every 8 [Breath] Potency on self (max 2)\n[WhenUse] Final Power +1 for every 8 [Vibration] Potency on target (max 2)\n[WhenUse]\n- Gain +3 [Breath] Count\n- Gain Atk Weight equal to the number of other non-immobilized[TabExplain] allied \"Wedge Office[TabExplain]\" Identities (max 2)\n[WhenUse] Deal +60% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Part)\n[WinDuel] Trigger [FusionVibration] into [VibrationCollapse]\n[EndSkill]\n- Consume all [ComboWedgeDawn] on self",
           "iconId": "1111608",
           "id": "1111608",
           "levelCorrection": 6,
