@@ -277,6 +277,17 @@
       "type": "corrosion"
     }
   ],
+  "notes": {
+    "main": [
+      "The first {st:SupportAlly} E.G.O allowing you to use it on an ally. Doing so buffs them with {st:Breath}, {st:Charge}, shield, SP, damage mitigation, a single debuff removal, and if they're a {st:PersonalityBreath} or {st:PersonalityCharge}, additional damage. It acts as a standard 3 atk weight damaging E.G.O if you target an enemy instead.",
+      "Gains {st:DespairKnightEGOMind} for any damage taken by allies. At 999, the E.G.O does not cost any sin resources, but consumes all stacks of the buff to use.",
+      "Each use gives him 1 {st:DespairKnightEGOSword} which increases the damage all of his {st:Charge}, {kw:Pride}, and {kw:Pierce} skills and gives him some {st:Sinking} application. Ally deaths also give a stack."
+    ],
+    "other": [
+      "Prevents his attack type resistances from going over 1.5 except when staggered. Takes -30% damage while staggered. The ally he applies {st:DespairKnightEGOProtect} to also gains this effect.",
+      "Has Synergies with other Magical Girl identities and E.G.O on the field, increasing their damage dealt."
+    ]
+  },
   "passiveList": [
     {
       "desc": "This unit's Attack Type Resist. that are higher than 1.5 are adjusted to 1.5 (except while Staggered)\nIf this unit is Staggered, take -30% damage (including forced Staggers)\n\nAt 999 [DespairKnightEGOMind], does not consume E.G.O resource when using the \"The Sword Sharpened with Tears\" E.G.O Skill (both Awakening and Corrosion)\n\nGain [DespairKnightEGOMind] equal to damage taken by allies (including this unit; including Shield damage)\nOn Ally Death, gain 1 [DespairKnightEGOSword] (once per turn)\nWhen an ally that has [DespairKnightEGOProtect] is defeated, gain 1 [DespairKnightEGOSword] (once per turn)\n\nOffense Level +1 and Defense Level -1 for every 2 defeated allies (max 5)",
@@ -284,11 +295,9 @@
     }
   ],
   "synergyList": [
-    [
-      {
-        "desc": "Activate the following effects based on the number of \"Magical Girl\" Identities or \"Magical Girl\" E.G.O on the field (Identities and E.G.O are counted together)\n(2) Allied \"Magical Girl\" Identity's or allied \"Magical Girl\" E.G.O's Skills deal +10% damage\n\n(3) All allies' Minus Coin Skills deal +10% damage\nAt Attack End against the enemy main target of \"The Sword Sharpened with Tears\" E.G.O Skill, inflict 1 [DespairKnightEGOAlly] (once per turn)",
-        "name": "Magical Arcana"
-      }
-    ]
+    {
+      "desc": "Activate the following effects based on the number of \"Magical Girl\" Identities or \"Magical Girl\" E.G.O on the field (Identities and E.G.O are counted together)\n(2) Allied \"Magical Girl\" Identity's or allied \"Magical Girl\" E.G.O's Skills deal +10% damage\n\n(3) All allies' Minus Coin Skills deal +10% damage\nAt Attack End against the enemy main target of \"The Sword Sharpened with Tears\" E.G.O Skill, inflict 1 [DespairKnightEGOAlly] (once per turn)",
+      "name": "Magical Arcana"
+    }
   ]
 }
